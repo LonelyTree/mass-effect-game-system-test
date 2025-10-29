@@ -3,14 +3,14 @@ system:
   description:
     value: >-
       <p>You learn two
-      @UUID[Compendium.dnd5e.content24.JournalEntry.phbSpells0000000.JournalEntryPage.SkHptN2PTzFGDaEj#cantrip]{Cleric
-      cantrips} of your choice.
+      @UUID[Compendium.dnd5e.content24.JournalEntry.phbSpells0000000.JournalEntryPage.SkHptN2PTzFGDaEj#basic power]{Cleric
+      basic powers} of your choice.
       <em>@UUID[Compendium.dnd5e.spells24.Item.phbsplGuidance00]{Guidance}</em>
       and <em>@UUID[Compendium.dnd5e.spells24.Item.phbsplSacredFlam]{Sacred
-      Flame}</em> are recommended. The chosen cantrips count as Paladin spells
-      for you, and Charisma is your spellcasting ability for them. Whenever you
-      gain a Paladin level, you can replace one of these cantrips with another
-      Cleric cantrip.</p>
+      Flame}</em> are recommended. The chosen basic powers count as Paladin spells
+      for you, and Charisma is your power system ability for them. Whenever you
+      gain a Paladin level, you can replace one of these basic powers with another
+      Cleric basic power.</p>
     chat: ''
   activities: {}
   uses:

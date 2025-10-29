@@ -4,14 +4,14 @@ system:
     value: >-
       <p>Choose up to three creatures within range. Each target's Hit Point
       maximum and current Hit Points increase by 5 for the
-      duration.</p><p><strong>Using a Higher-Level Spell Slot. </strong>Each
-      target's Hit Points increase by 5 for each spell slot level above
+      duration.</p><p><strong>Using a Higher-Level Power Use. </strong>Each
+      target's Hit Points increase by 5 for each power use level above
       2.</p><section id="secret-u9DpSmufNhFMDGmN"
       class="secret"><p><strong>Foundry Note</strong></p><p>The default
       <strong>Heal</strong> activity is configured with multiple Active Effects
       representing the temporary maximum Hit Points provided by this
       spell.</p><p>Users should apply the appropriate Active Effect for the
-      spell slot level used in the casting of this spell.</p></section>
+      power use level used in the casting of this spell.</p></section>
     chat: ''
   source:
     custom: ''
@@ -74,7 +74,7 @@ system:
         chatFlavor: ''
       duration:
         units: inst
-        concentration: false
+        maintained power: false
         override: false
       effects:
         - _id: XyGKCCrIhrFlixG8

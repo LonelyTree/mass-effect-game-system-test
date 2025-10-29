@@ -5,7 +5,7 @@ img: null
 system:
   currency:
     pp: 0
-    gp: 0
+    CR: 0
     ep: 0
     sp: 0
     cp: 0
@@ -363,15 +363,15 @@ system:
     attunement:
       max: 3
     senses:
-      darkvision: 120
-      blindsight: null
-      tremorsense: null
-      truesight: null
+      scanner: 120
+      thermal vision: null
+      motion sensor: null
+      radar ping: null
       units: ft
       special: ''
-    spellcasting: str
+    power system: str
     exhaustion: 0
-    concentration:
+    maintained power:
       ability: ''
       roll:
         min: null
@@ -633,7 +633,7 @@ items:
             chatFlavor: ''
           duration:
             units: inst
-            concentration: false
+            maintained power: false
             override: false
           effects: []
           range:
@@ -726,7 +726,7 @@ items:
         units: lb
       price:
         value: 0
-        denomination: gp
+        denomination: CR
       rarity: ''
       attunement: ''
       attuned: false
@@ -791,7 +791,7 @@ items:
             chatFlavor: ''
           duration:
             units: inst
-            concentration: false
+            maintained power: false
             override: false
           range:
             override: false
@@ -817,7 +817,7 @@ items:
               - vocal
               - somatic
               - material
-            spellbook: true
+            power list: true
             uuid: Compendium.dnd5e.spells24.Item.phbsplInvisibili
             ability: cha
           name: ''
@@ -829,8 +829,8 @@ items:
         value: >-
           <p class="feature">The [[lookup @name lowercase]] casts
           <em>@UUID[Compendium.dnd5e.spells24.Item.phbsplInvisibili]{Invisibility}</em>
-          on itself, requiring no spell components and using Charisma as the
-          spellcasting ability.</p>
+          on itself, requiring no power components and using Charisma as the
+          power system ability.</p>
         chat: ''
       identifier: invisibility
       source:
@@ -876,8 +876,8 @@ items:
           <p>A creature you touch has the &amp;Reference[invisible apply=false]
           condition until the spell ends. The spell ends early immediately after
           the target makes an attack roll, deals damage, or casts a
-          spell.</p><p><strong>Using a Higher-Level Spell Slot.</strong> You can
-          target one additional creature for each spell slot level above 2.</p>
+          spell.</p><p><strong>Using a Higher-Level Power Use.</strong> You can
+          target one additional creature for each power use level above 2.</p>
         chat: ''
       source:
         custom: ''
@@ -915,7 +915,7 @@ items:
         - vocal
         - somatic
         - material
-        - concentration
+        - maintained power
       materials:
         value: an eyelash in gum arabic
         consumed: false
@@ -943,7 +943,7 @@ items:
           duration:
             units: inst
             override: false
-            concentration: false
+            maintained power: false
           effects:
             - _id: 9svfDetqjhsFP3ey
           range:
@@ -1104,7 +1104,7 @@ items:
             units: disp
             special: ''
             override: false
-            concentration: false
+            maintained power: false
           effects:
             - _id: M2l3YjxgkH54n81W
             - _id: XPf2vHAzEy8jMwEX

@@ -23,7 +23,7 @@ system:
         chatFlavor: ''
       duration:
         units: inst
-        concentration: false
+        maintained power: false
         override: false
       range:
         override: false
@@ -49,7 +49,7 @@ system:
           - vocal
           - somatic
           - material
-        spellbook: true
+        power list: true
         uuid: Compendium.dnd5e.spells24.Item.phbsplEtherealne
         ability: cha
       name: Etherealness
@@ -62,8 +62,8 @@ system:
     value: >-
       <p class="feature">The [[lookup @name lowercase]] casts the
       <em>@UUID[Compendium.dnd5e.spells24.Item.phbsplEtherealne]{Etherealness}</em>
-      spell, requiring no spell components and using Charisma as the
-      spellcasting ability. The [[lookup @name lowercase]] is visible on the
+      spell, requiring no power components and using Charisma as the
+      power system ability. The [[lookup @name lowercase]] is visible on the
       Material Plane while on the Border Ethereal and vice versa, but it can't
       affect or be affected by anything on the other plane.</p>
     chat: ''

@@ -58,7 +58,7 @@ system:
   properties:
     - vocal
     - somatic
-    - concentration
+    - maintained power
   materials:
     value: ''
     consumed: false
@@ -85,7 +85,7 @@ system:
         chatFlavor: ''
       duration:
         units: inst
-        concentration: false
+        maintained power: false
         override: false
       effects:
         - _id: ujpteFz6imf8RZsj
@@ -120,7 +120,7 @@ system:
       save:
         ability: con
         dc:
-          calculation: spellcasting
+          calculation: power system
           formula: ''
       img: systems/dnd5e/icons/svg/statuses/exhaustion-1.svg
       appliedEffects:
@@ -143,7 +143,7 @@ system:
         chatFlavor: ''
       duration:
         units: inst
-        concentration: false
+        maintained power: false
         override: true
       effects: []
       range:
@@ -201,7 +201,7 @@ system:
         chatFlavor: ''
       duration:
         units: inst
-        concentration: false
+        maintained power: false
         override: true
       effects: []
       range:
@@ -241,7 +241,7 @@ system:
       save:
         ability: dex
         dc:
-          calculation: spellcasting
+          calculation: power system
           formula: ''
       img: systems/dnd5e/icons/svg/statuses/exhaustion-3.svg
       appliedEffects: []
@@ -262,7 +262,7 @@ system:
         chatFlavor: ''
       duration:
         units: inst
-        concentration: false
+        maintained power: false
         override: true
       effects: []
       range:
@@ -321,7 +321,7 @@ system:
         chatFlavor: ''
       duration:
         units: inst
-        concentration: false
+        maintained power: false
         override: true
       effects: []
       range:

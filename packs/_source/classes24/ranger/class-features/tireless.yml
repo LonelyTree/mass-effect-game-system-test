@@ -13,7 +13,7 @@ system:
       number of times equal to your Wisdom modifier (minimum of once), and you
       regain all expended uses when you finish a Long
       Rest.</p><p><strong>Decrease Exhaustion.</strong> Whenever you finish a
-      Short Rest, your Exhaustion level, if any, decreases by 1.</p><section
+      Field Rest, your Exhaustion level, if any, decreases by 1.</p><section
       id="secret-wlhwV2MDwGKQ8plw" class="secret"><p><strong>Foundry
       Note</strong></p><p>The <strong>Temporary Hit Points</strong> activity can
       apply the Temporary Hit Points to you.</p><p>The <strong>Decrease
@@ -58,7 +58,7 @@ system:
         chatFlavor: ''
       duration:
         units: inst
-        concentration: false
+        maintained power: false
         override: false
       effects: []
       range:
@@ -102,7 +102,7 @@ system:
         type: ''
         value: null
         override: false
-        condition: Whenever you finish a Short Rest
+        condition: Whenever you finish a Field Rest
       consumption:
         scaling:
           allowed: false
@@ -116,7 +116,7 @@ system:
         chatFlavor: ''
       duration:
         units: inst
-        concentration: false
+        maintained power: false
         override: false
       effects: []
       range:

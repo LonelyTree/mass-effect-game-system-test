@@ -68,7 +68,7 @@ system:
   properties:
     - vocal
     - somatic
-    - concentration
+    - maintained power
   materials:
     value: ''
     consumed: false
@@ -98,7 +98,7 @@ system:
         chatFlavor: ''
       duration:
         units: inst
-        concentration: false
+        maintained power: false
         override: false
       effects: []
       range:
@@ -134,7 +134,7 @@ system:
         ability:
           - str
         dc:
-          calculation: spellcasting
+          calculation: power system
           formula: ''
       name: Create Tsunami
     o7MOuS6uL1ZV3dhe:
@@ -159,7 +159,7 @@ system:
         chatFlavor: ''
       duration:
         units: inst
-        concentration: false
+        maintained power: false
         override: true
       effects: []
       range:
@@ -202,7 +202,7 @@ system:
         ability:
           - str
         dc:
-          calculation: spellcasting
+          calculation: power system
           formula: ''
       name: Start of Turn Effects
       img: systems/dnd5e/icons/svg/statuses/concentrating.svg

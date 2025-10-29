@@ -27,7 +27,7 @@ system:
         chatFlavor: ''
       duration:
         units: inst
-        concentration: false
+        maintained power: false
         override: false
       range:
         override: false
@@ -53,7 +53,7 @@ system:
           - vocal
           - somatic
           - material
-        spellbook: true
+        power list: true
         uuid: Compendium.dnd5e.spells24.Item.phbsplSlow000000
         ability: con
       name: ''
@@ -69,8 +69,8 @@ system:
     value: >-
       <p class="feature">The [[lookup @name lowercase]] casts the
       <em>@UUID[Compendium.dnd5e.spells24.Item.phbsplSlow000000]{Slow}</em>
-      spell, requiring no spell components and using Constitution as the
-      spellcasting ability (spell save DC 17).</p>
+      spell, requiring no power components and using Constitution as the
+      power system ability (spell save DC 17).</p>
     chat: ''
   identifier: slow
   source:

@@ -5,7 +5,7 @@ img: ''
 system:
   currency:
     pp: 0
-    gp: 0
+    CR: 0
     ep: 0
     sp: 0
     cp: 0
@@ -303,15 +303,15 @@ system:
     attunement:
       max: 3
     senses:
-      darkvision: null
-      blindsight: null
-      tremorsense: null
-      truesight: null
+      scanner: null
+      thermal vision: null
+      motion sensor: null
+      radar ping: null
       units: null
       special: ''
-    spellcasting: int
+    power system: int
     exhaustion: 0
-    concentration:
+    maintained power:
       ability: ''
       roll:
         min: null
@@ -488,8 +488,8 @@ items:
           <p>As a Bonus Action on your later turns, you can move the force up to
           20 feet and repeat the attack against a creature within 5 feet of it.
           On a hit, the target takes Force damage equal to 1d8 plus your
-          spellcasting ability modifier.</p><p><strong>Using a Higher-Level
-          Spell Slot.</strong> The damage increases by 1d8 for every slot level
+          power system ability modifier.</p><p><strong>Using a Higher-Level
+          Power Use.</strong> The damage increases by 1d8 for every slot level
           above 2.</p>
         chat: ''
       source:
@@ -533,7 +533,7 @@ items:
             units: inst
             special: ''
             override: false
-            concentration: false
+            maintained power: false
           effects: []
           range:
             value: '5'

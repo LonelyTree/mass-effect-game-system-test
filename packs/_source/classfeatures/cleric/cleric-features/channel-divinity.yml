@@ -17,7 +17,7 @@ system:
       equals your cleric spell save DC.</p><p>Beginning at 6th level, you can
       use your Channel Divinity twice between rests, and beginning at 18th
       level, you can use it three times between rests. When you finish a short
-      or long rest, you regain your expended uses.</p><section class="secret
+      or full rest, you regain your expended uses.</p><section class="secret
       foundry-note" id="secret-AZYZtT1NonF68bPW"><p><strong>Foundry
       Note</strong></p><p>Use this to track all the various uses of Channel
       Divinity for the cleric.</p></section>
@@ -63,7 +63,7 @@ system:
       description:
         chatFlavor: ''
       duration:
-        concentration: false
+        maintained power: false
         value: ''
         units: ''
         special: ''

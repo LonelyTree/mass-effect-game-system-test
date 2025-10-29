@@ -75,15 +75,15 @@ system:
     attunement:
       max: 3
     senses:
-      darkvision: 0
-      blindsight: 0
-      tremorsense: 0
-      truesight: 120
+      scanner: 0
+      thermal vision: 0
+      motion sensor: 0
+      radar ping: 120
       units: ft
       special: ''
-    spellcasting: int
+    power system: int
     exhaustion: 0
-    concentration:
+    maintained power:
       ability: ''
       roll:
         min: null
@@ -159,7 +159,7 @@ system:
       bypasses: []
   currency:
     pp: 0
-    gp: 0
+    CR: 0
     ep: 0
     sp: 0
     cp: 0
@@ -498,12 +498,12 @@ prototypeToken:
   movementAction: null
 items:
   - _id: 6PwbK4d0W11LsEkf
-    name: Cantrip
+    name: Basic Power
     type: feat
     img: icons/magic/unholy/strike-hand-glow-pink.webp
     system:
       description:
-        value: <p>The lich casts a cantrip.</p>
+        value: <p>The lich casts a basic power.</p>
         chat: ''
       source:
         custom: ''
@@ -545,7 +545,7 @@ items:
           description:
             chatFlavor: ''
           duration:
-            concentration: false
+            maintained power: false
             value: ''
             units: ''
             special: ''
@@ -584,7 +584,7 @@ items:
       enchant: {}
       prerequisites:
         level: null
-      identifier: cantrip
+      identifier: basic power
     effects: []
     folder: null
     sort: 0
@@ -645,7 +645,7 @@ items:
             chatFlavor: ''
           duration:
             units: inst
-            concentration: false
+            maintained power: false
             override: false
           effects: []
           range:
@@ -757,7 +757,7 @@ items:
           description:
             chatFlavor: ''
           duration:
-            concentration: false
+            maintained power: false
             value: ''
             units: ''
             special: ''
@@ -872,7 +872,7 @@ items:
           description:
             chatFlavor: ''
           duration:
-            concentration: false
+            maintained power: false
             value: ''
             units: ''
             special: ''
@@ -994,7 +994,7 @@ items:
           description:
             chatFlavor: ''
           duration:
-            concentration: false
+            maintained power: false
             value: ''
             units: ''
             special: ''
@@ -1099,7 +1099,7 @@ items:
           description:
             chatFlavor: ''
           duration:
-            concentration: false
+            maintained power: false
             value: ''
             units: ''
             special: ''
@@ -1157,15 +1157,15 @@ items:
       exportSource: null
     _key: '!actors.items!bfh29vIEoGzI240e.stk9i3rPK7z99CDf'
   - _id: UMoMhboTLq75ZJW8
-    name: Spellcasting
+    name: Power System
     type: feat
     img: icons/magic/light/projectiles-star-purple.webp
     system:
       description:
         value: >-
-          <p>The lich is an 18th-level spellcaster. Its spellcasting ability is
+          <p>The lich is an 18th-level spellcaster. Its power system ability is
           Intelligence (spell save DC 20, +12 to hit with spell attacks). The
-          lich has the following wizard spells prepared:</p><p>Cantrips (at
+          lich has the following wizard spells prepared:</p><p>Basic Powers (at
           will): [[/item .Utk1OQRwYkMkFRD3]]{mage hand}, [[/item
           .udsLtG0BugXHR2JQ]]{prestidigitation}, [[/item .ctW81uiX56xZR2c5]]{ray
           of frost}</p><p>1st level (4 slots): [[/item
@@ -1190,7 +1190,7 @@ items:
           .35j2QIMmIk6aEdxj]]{power word stun}</p><p>9th level (1 slot): [[/item
           .dmvaMLFWFtv0qx0S]]{power word kill}</p>
         chat: >-
-          <p>The lich is an spellcaster. Its spellcasting ability is
+          <p>The lich is an spellcaster. Its power system ability is
           Intelligence.</p>
       source:
         custom: ''
@@ -1212,7 +1212,7 @@ items:
       enchant: {}
       prerequisites:
         level: null
-      identifier: spellcasting
+      identifier: power system
     effects: []
     folder: null
     sort: 0
@@ -1259,7 +1259,7 @@ items:
         units: lb
       price:
         value: 0
-        denomination: gp
+        denomination: CR
       attunement: ''
       equipped: true
       rarity: ''
@@ -1334,7 +1334,7 @@ items:
           description:
             chatFlavor: ''
           duration:
-            concentration: false
+            maintained power: false
             value: ''
             units: inst
             special: ''
@@ -1400,7 +1400,7 @@ items:
           description:
             chatFlavor: ''
           duration:
-            concentration: false
+            maintained power: false
             value: ''
             units: ''
             special: ''
@@ -1745,7 +1745,7 @@ items:
             chatFlavor: ''
           duration:
             units: inst
-            concentration: false
+            maintained power: false
             override: false
           effects: []
           range:
@@ -1882,7 +1882,7 @@ items:
             chatFlavor: ''
           duration:
             units: inst
-            concentration: false
+            maintained power: false
             override: false
           effects: []
           range:
@@ -1931,7 +1931,7 @@ items:
       description:
         value: >-
           <p>A frigid beam of blue-white light streaks toward a creature within
-          range. Make a ranged spell attack against the target. On a hit, it
+          range. Make a ranged power attack against the target. On a hit, it
           takes 1d8 cold damage, and its speed is reduced by 10 feet until the
           start of your next turn.</p><p>The spell's damage increases by 1d8
           when you reach 5th level (2d8), 11th level (3d8), and 17th level
@@ -1997,7 +1997,7 @@ items:
             chatFlavor: ''
           duration:
             units: inst
-            concentration: false
+            maintained power: false
             override: false
           effects: []
           range:
@@ -2116,7 +2116,7 @@ items:
         - vocal
         - somatic
         - ritual
-        - concentration
+        - maintained power
       activities:
         dnd5eactivity000:
           _id: dnd5eactivity000
@@ -2135,7 +2135,7 @@ items:
             chatFlavor: ''
           duration:
             units: inst
-            concentration: false
+            maintained power: false
             override: false
           effects: []
           range:
@@ -2182,7 +2182,7 @@ items:
     type: spell
     system:
       description:
-        value: "<p>You create three glowing darts of magical force. Each dart hits a creature of your choice that you can see within range. A dart deals 1d4 + 1 force damage to its target. The darts all strike simultaneously, and you can direct them to hit one creature or several.</p><p><strong>Higher Levels.\_</strong>When you cast this spell using a spell slot of 2nd level or higher, the spell creates one more dart for each slot level above 1st.</p>"
+        value: "<p>You create three glowing darts of magical force. Each dart hits a creature of your choice that you can see within range. A dart deals 1d4 + 1 force damage to its target. The darts all strike simultaneously, and you can direct them to hit one creature or several.</p><p><strong>Higher Levels.\_</strong>When you cast this spell using a power use of 2nd level or higher, the spell creates one more dart for each slot level above 1st.</p>"
         chat: ''
       source:
         custom: ''
@@ -2244,7 +2244,7 @@ items:
             chatFlavor: ''
           duration:
             units: inst
-            concentration: false
+            maintained power: false
             override: false
           effects: []
           range:
@@ -2368,7 +2368,7 @@ items:
             chatFlavor: ''
           duration:
             units: inst
-            concentration: false
+            maintained power: false
             override: false
           effects:
             - _id: 6pbotGIvqQkraPva
@@ -2465,7 +2465,7 @@ items:
           automatically pushed 10 feet away from you by the spell's effect, and
           the spell emits a thunderous boom audible out to 300
           feet.</p><p><strong>At Higher Levels.</strong> When you cast this
-          spell using a spell slot of 2nd level or higher, the damage increases
+          spell using a power use of 2nd level or higher, the damage increases
           by 1d8 for each slot level above 1st.</p>
         chat: ''
       source:
@@ -2527,7 +2527,7 @@ items:
             chatFlavor: ''
           duration:
             units: inst
-            concentration: false
+            maintained power: false
             override: false
           effects: []
           range:
@@ -2562,7 +2562,7 @@ items:
           save:
             ability: con
             dc:
-              calculation: spellcasting
+              calculation: power system
               formula: '20'
           sort: 0
       identifier: thunderwave
@@ -2596,7 +2596,7 @@ items:
           acid damage at the end of its next turn. On a miss, the arrow splashes
           the target with acid for half as much of the initial damage and no
           damage at the end of its next turn.</p><p><strong>At Higher
-          Levels.</strong> When you cast this spell using a spell slot of 3rd
+          Levels.</strong> When you cast this spell using a power use of 3rd
           level or higher, the damage (both initial and later) increases by 1d4
           for each slot level above 2nd.</p>
         chat: ''
@@ -2661,7 +2661,7 @@ items:
             chatFlavor: ''
           duration:
             units: inst
-            concentration: false
+            maintained power: false
             override: false
           effects: []
           range:
@@ -2722,7 +2722,7 @@ items:
             chatFlavor: ''
           duration:
             units: inst
-            concentration: false
+            maintained power: false
             override: false
           effects: []
           range:
@@ -2855,7 +2855,7 @@ items:
         - vocal
         - somatic
         - material
-        - concentration
+        - maintained power
       activities:
         dnd5eactivity000:
           _id: dnd5eactivity000
@@ -2874,7 +2874,7 @@ items:
             chatFlavor: ''
           duration:
             units: inst
-            concentration: false
+            maintained power: false
             override: false
           effects: []
           range:
@@ -2897,7 +2897,7 @@ items:
           save:
             ability: wis
             dc:
-              calculation: spellcasting
+              calculation: power system
               formula: '20'
           sort: 0
       identifier: detect-thoughts
@@ -2929,7 +2929,7 @@ items:
           Anything the target is wearing or carrying is invisible as long as it
           is on the target's person. The spell ends for a target that attacks or
           casts a spell.</p><p><strong>At Higher Levels.</strong> When you cast
-          this spell using a spell slot of 3rd level or higher, you can target
+          this spell using a power use of 3rd level or higher, you can target
           one additional creature for each slot level above 2nd.</p>
         chat: ''
       source:
@@ -2974,7 +2974,7 @@ items:
         - vocal
         - somatic
         - material
-        - concentration
+        - maintained power
       activities:
         dnd5eactivity000:
           _id: dnd5eactivity000
@@ -2993,7 +2993,7 @@ items:
             chatFlavor: ''
           duration:
             units: inst
-            concentration: false
+            maintained power: false
             override: false
           effects: []
           range:
@@ -3060,8 +3060,8 @@ items:
           destroyed.</p>
 
           <p>A creature is unaffected by this spell if it can't see, if it
-          relies on senses other than sight, such as blindsight, or if it can
-          perceive illusions as false, as with truesight.</p>
+          relies on senses other than sight, such as thermal vision, or if it can
+          perceive illusions as false, as with radar ping.</p>
         chat: ''
       source:
         custom: ''
@@ -3121,7 +3121,7 @@ items:
             chatFlavor: ''
           duration:
             units: inst
-            concentration: false
+            maintained power: false
             override: false
           effects: []
           range:
@@ -3191,7 +3191,7 @@ items:
           24-hour period ends. This use of the spell reasserts your control over
           up to four creatures you have animated with this spell, rather than
           animating a new one.</p><p><strong>At Higher Levels.</strong> When you
-          cast this spell using a spell slot of 4th level or higher, you animate
+          cast this spell using a power use of 4th level or higher, you animate
           or reassert control over two additional undead creatures for each slot
           level above 3rd. Each of the creatures must come from a different
           corpse or pile of bones.</p>
@@ -3257,7 +3257,7 @@ items:
             chatFlavor: ''
           duration:
             units: inst
-            concentration: false
+            maintained power: false
             override: false
           effects: []
           range:
@@ -3304,7 +3304,7 @@ items:
     type: spell
     system:
       description:
-        value: "<p>You attempt to interrupt a creature in the process of casting a spell. If the creature is casting a spell of 3rd level or lower, its spell fails and has no effect. If it is casting a spell of 4th level or higher, make an ability check using your spellcasting ability. The DC equals 10 + the spell's level. On a success, the creature's spell fails and has no effect.</p><p><strong>Higher Levels.\_</strong>When you cast this spell using a spell slot of 4th level or higher, the interrupted spell has no effect if its level is less than or equal to the level of the spell slot you used.</p>"
+        value: "<p>You attempt to interrupt a creature in the process of casting a spell. If the creature is casting a spell of 3rd level or lower, its spell fails and has no effect. If it is casting a spell of 4th level or higher, make an ability check using your power system ability. The DC equals 10 + the spell's level. On a success, the creature's spell fails and has no effect.</p><p><strong>Higher Levels.\_</strong>When you cast this spell using a power use of 4th level or higher, the interrupted spell has no effect if its level is less than or equal to the level of the power use you used.</p>"
         chat: ''
       source:
         custom: ''
@@ -3367,7 +3367,7 @@ items:
             chatFlavor: ''
           duration:
             units: inst
-            concentration: false
+            maintained power: false
             override: false
           effects: []
           range:
@@ -3418,12 +3418,12 @@ items:
           <p>Choose one creature, object, or magical effect within range. Any
           spell of 3rd level or lower on the target ends. For each spell of 4th
           level or higher on the target, make an ability check using your
-          spellcasting ability. The DC equals 10 + the spell's level. On a
+          power system ability. The DC equals 10 + the spell's level. On a
           successful check, the spell ends.</p><p><strong>Higher
-          Levels.</strong> When you cast this spell using a spell slot of 4th
+          Levels.</strong> When you cast this spell using a power use of 4th
           level or higher, you automatically end the effects of a spell on the
           target if the spell's level is equal to or less than the level of the
-          spell slot you used.</p>
+          power use you used.</p>
         chat: ''
       source:
         custom: ''
@@ -3485,7 +3485,7 @@ items:
             chatFlavor: ''
           duration:
             units: inst
-            concentration: false
+            maintained power: false
             override: false
           effects: []
           range:
@@ -3541,7 +3541,7 @@ items:
           one.</p><p>The fire spreads around corners. It ignites flammable
           objects in the area that aren't being worn or
           carried.</p><p><strong>At Higher Levels.</strong> When you cast this
-          spell using a spell slot of 4th level or higher, the damage increases
+          spell using a power use of 4th level or higher, the damage increases
           by 1d6 for each slot level above 3rd.</p>
         chat: ''
       source:
@@ -3605,7 +3605,7 @@ items:
             chatFlavor: ''
           duration:
             units: inst
-            concentration: false
+            maintained power: false
             override: false
           effects: []
           range:
@@ -3640,7 +3640,7 @@ items:
           save:
             ability: dex
             dc:
-              calculation: spellcasting
+              calculation: power system
               formula: '20'
           sort: 0
       identifier: fireball
@@ -3678,7 +3678,7 @@ items:
           maximum damage to it.</p><p>If you target a nonmagical plant that
           isn't a creature, such as a tree or shrub, it doesn't make a saving
           throw, it simply withers and dies.</p><p><strong>At Higher
-          Levels.</strong> When you cast this spell using a spell slot of 5th
+          Levels.</strong> When you cast this spell using a power use of 5th
           level or higher, the damage increases by 1d8 for each slot level above
           4th.</p>
         chat: ''
@@ -3742,7 +3742,7 @@ items:
             chatFlavor: ''
           duration:
             units: inst
-            concentration: false
+            maintained power: false
             override: false
           effects: []
           range:
@@ -3777,7 +3777,7 @@ items:
           save:
             ability: con
             dc:
-              calculation: spellcasting
+              calculation: power system
               formula: '20'
           sort: 0
       identifier: blight
@@ -3876,7 +3876,7 @@ items:
             chatFlavor: ''
           duration:
             units: inst
-            concentration: false
+            maintained power: false
             override: false
           effects: []
           range:
@@ -3935,7 +3935,7 @@ items:
     type: spell
     system:
       description:
-        value: "<p>You create a 20-foot-radius sphere of poisonous, yellow-green fog centered on a point you choose within range. The fog spreads around corners. It lasts for the duration or until strong wind disperses the fog, ending the spell. Its area is heavily obscured.</p><p>When a creature enters the spell's area for the first time on a turn or starts its turn there, that creature must make a Constitution saving throw. The creature takes 5d8 poison damage on a failed save, or half as much damage on a successful one. Creatures are affected even if they hold their breath or don't need to breathe.</p><p>The fog moves 10 feet away from you at the start of each of your turns, rolling along the surface of the ground. The vapors, being heavier than air, sink to the lowest level of the land, even pouring down openings.</p><p><strong>Higher Levels.\_</strong>When you cast this spell using a spell slot of 6th level or higher, the damage increases by 1d8 for each slot level above 5th.</p>"
+        value: "<p>You create a 20-foot-radius sphere of poisonous, yellow-green fog centered on a point you choose within range. The fog spreads around corners. It lasts for the duration or until strong wind disperses the fog, ending the spell. Its area is heavily obscured.</p><p>When a creature enters the spell's area for the first time on a turn or starts its turn there, that creature must make a Constitution saving throw. The creature takes 5d8 poison damage on a failed save, or half as much damage on a successful one. Creatures are affected even if they hold their breath or don't need to breathe.</p><p>The fog moves 10 feet away from you at the start of each of your turns, rolling along the surface of the ground. The vapors, being heavier than air, sink to the lowest level of the land, even pouring down openings.</p><p><strong>Higher Levels.\_</strong>When you cast this spell using a power use of 6th level or higher, the damage increases by 1d8 for each slot level above 5th.</p>"
         chat: ''
       source:
         custom: ''
@@ -3979,7 +3979,7 @@ items:
       properties:
         - vocal
         - somatic
-        - concentration
+        - maintained power
       activities:
         dnd5eactivity000:
           _id: dnd5eactivity000
@@ -3998,7 +3998,7 @@ items:
             chatFlavor: ''
           duration:
             units: inst
-            concentration: false
+            maintained power: false
             override: false
           effects: []
           range:
@@ -4033,7 +4033,7 @@ items:
           save:
             ability: con
             dc:
-              calculation: spellcasting
+              calculation: power system
               formula: '20'
           sort: 0
       identifier: cloudkill
@@ -4192,7 +4192,7 @@ items:
       school: div
       materials:
         value: >-
-          A focus worth at least 1,000 gp, such as a crystal ball, a silver
+          A focus worth at least 1,000 CR, such as a crystal ball, a silver
           mirror, or a font filled with holy water.
         consumed: false
         cost: 1000
@@ -4204,7 +4204,7 @@ items:
         - vocal
         - somatic
         - material
-        - concentration
+        - maintained power
       activities:
         dnd5eactivity000:
           _id: dnd5eactivity000
@@ -4223,7 +4223,7 @@ items:
             chatFlavor: ''
           duration:
             units: inst
-            concentration: false
+            maintained power: false
             override: false
           effects: []
           range:
@@ -4246,7 +4246,7 @@ items:
           save:
             ability: wis
             dc:
-              calculation: spellcasting
+              calculation: power system
               formula: '20'
           sort: 0
       identifier: scrying
@@ -4288,7 +4288,7 @@ items:
           magical force. If the target is a Huge or larger object or creation of
           force, this spell disintegrates a 10-foot-cube portion of it. A magic
           item is unaffected by this spell.</p><p><strong>At Higher
-          Levels.</strong> When you cast this spell using a spell slot of 7th
+          Levels.</strong> When you cast this spell using a power use of 7th
           level or higher, the damage increases by 3d6 for each slot level above
           6th.</p>
         chat: ''
@@ -4353,7 +4353,7 @@ items:
             chatFlavor: ''
           duration:
             units: inst
-            concentration: false
+            maintained power: false
             override: false
           effects: []
           range:
@@ -4388,7 +4388,7 @@ items:
           save:
             ability: dex
             dc:
-              calculation: spellcasting
+              calculation: power system
               formula: '20'
           sort: 0
       identifier: disintegrate
@@ -4484,7 +4484,7 @@ items:
             chatFlavor: ''
           duration:
             units: inst
-            concentration: false
+            maintained power: false
             override: false
           effects: []
           range:
@@ -4519,7 +4519,7 @@ items:
           save:
             ability: con
             dc:
-              calculation: spellcasting
+              calculation: power system
               formula: '20'
           sort: 0
       identifier: finger-of-death
@@ -4561,7 +4561,7 @@ items:
           hold all the creatures you transported, they appear in the closest
           unoccupied spaces next to the circle.</p><p>You can use this spell to
           banish an unwilling creature to another plane. Choose a creature
-          within your reach and make a melee spell attack against it. On a hit,
+          within your reach and make a close combat power attack against it. On a hit,
           the creature must make a Charisma saving throw. If the creature fails
           this save, it is transported to a random location on the plane of
           existence you specify. A creature so transported must find its own way
@@ -4599,7 +4599,7 @@ items:
       school: con
       materials:
         value: >-
-          A forked, metal rod worth at least 250 gp, attuned to a particular
+          A forked, metal rod worth at least 250 CR, attuned to a particular
           plane of existence
         consumed: false
         cost: 250
@@ -4629,7 +4629,7 @@ items:
             chatFlavor: ''
           duration:
             units: inst
-            concentration: false
+            maintained power: false
             override: false
           effects: []
           range:
@@ -4678,7 +4678,7 @@ items:
             chatFlavor: ''
           duration:
             units: inst
-            concentration: false
+            maintained power: false
             override: false
           effects: []
           range:
@@ -4701,7 +4701,7 @@ items:
           save:
             ability: cha
             dc:
-              calculation: spellcasting
+              calculation: power system
               formula: '20'
           sort: 0
       identifier: plane-shift
@@ -4748,8 +4748,8 @@ items:
           you to use your own reaction as well.</p><p>Each time the target takes
           damage, it makes a new Wisdom saving throw against the spell. If the
           saving throw succeeds, the spell ends.</p><p><strong>At Higher
-          Levels.</strong> When you cast this spell with a 9th-level spell slot,
-          the duration is concentration, up to 8 hours.</p>
+          Levels.</strong> When you cast this spell with a 9th-level power use,
+          the duration is maintained power, up to 8 hours.</p>
         chat: ''
       source:
         custom: ''
@@ -4793,7 +4793,7 @@ items:
       properties:
         - vocal
         - somatic
-        - concentration
+        - maintained power
       activities:
         dnd5eactivity000:
           _id: dnd5eactivity000
@@ -4812,7 +4812,7 @@ items:
             chatFlavor: ''
           duration:
             units: inst
-            concentration: false
+            maintained power: false
             override: false
           effects: []
           range:
@@ -4835,7 +4835,7 @@ items:
           save:
             ability: wis
             dc:
-              calculation: spellcasting
+              calculation: power system
               formula: '20'
           sort: 0
       identifier: dominate-monster
@@ -4926,7 +4926,7 @@ items:
             chatFlavor: ''
           duration:
             units: inst
-            concentration: false
+            maintained power: false
             override: false
           effects: []
           range:
@@ -5040,7 +5040,7 @@ items:
             chatFlavor: ''
           duration:
             units: inst
-            concentration: false
+            maintained power: false
             override: false
           effects: []
           range:
@@ -5063,7 +5063,7 @@ items:
           save:
             ability: con
             dc:
-              calculation: spellcasting
+              calculation: power system
               formula: '20'
           sort: 0
       identifier: power-word-stun
@@ -5095,11 +5095,11 @@ items:
           10-foot radius around you and remains for the Duration.</p><p>Any
           spell of 5th level or lower cast from outside the barrier can't affect
           creatures or Objects within it, even if the spell is cast using a
-          higher level spell slot. Such a spell can target creatures and Objects
+          higher level power use. Such a spell can target creatures and Objects
           within the barrier, but the spell has no effect on them. Similarly,
           the area within the barrier is excluded from the areas affected by
           such Spells.</p><p><strong>At Higher Levels.</strong> When you cast
-          this spell using a spell slot of 7th level or higher, the barrier
+          this spell using a power use of 7th level or higher, the barrier
           blocks Spells of one level higher for each slot level above 6th.</p>
         chat: ''
       source:
@@ -5144,7 +5144,7 @@ items:
         - vocal
         - somatic
         - material
-        - concentration
+        - maintained power
       activities:
         dnd5eactivity000:
           _id: dnd5eactivity000
@@ -5163,7 +5163,7 @@ items:
             chatFlavor: ''
           duration:
             units: inst
-            concentration: false
+            maintained power: false
             override: false
           effects: []
           range:

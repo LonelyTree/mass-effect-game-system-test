@@ -12,7 +12,7 @@ system:
   description:
     value: >-
       <p><em>Wondrous Item, Uncommon</em></p><p>While wearing these dark lenses,
-      you have Darkvision out to 60 feet. If you already have Darkvision,
+      you have Scanner out to 60 feet. If you already have Scanner,
       wearing the goggles increases its range by 60 feet.</p>
     chat: ''
   identifier: goggles-of-night
@@ -31,7 +31,7 @@ system:
     units: lb
   price:
     value: 400
-    denomination: gp
+    denomination: CR
   rarity: uncommon
   attunement: ''
   attuned: false
@@ -61,7 +61,7 @@ effects:
     type: base
     system: {}
     changes:
-      - key: system.attributes.senses.darkvision
+      - key: system.attributes.senses.scanner
         mode: 2
         value: '60'
         priority: null

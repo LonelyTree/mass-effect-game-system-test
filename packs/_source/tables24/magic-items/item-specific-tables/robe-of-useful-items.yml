@@ -22,7 +22,7 @@ results:
       compendiumSource: null
       duplicateSource: null
       exportSource: null
-    description: Bag of [[/award 100GP]]
+    description: Bag of [[/award 100CR]]
     name: ''
     _key: '!tables.results!dmgRobeOfUsefulI.OUgwmAmcltOGuJsv'
   - type: text
@@ -44,7 +44,7 @@ results:
       compendiumSource: null
       duplicateSource: null
       exportSource: null
-    description: Silver coffer (1 foot long, 6 inches wide and deep) worth 500 GP
+    description: Silver coffer (1 foot long, 6 inches wide and deep) worth 500 CR
     name: ''
     _key: '!tables.results!dmgRobeOfUsefulI.rELmjJyELlRSGiTq'
   - type: text
@@ -91,7 +91,7 @@ results:
       compendiumSource: null
       duplicateSource: null
       exportSource: null
-    description: 10 gems worth 100 GP each
+    description: 10 gems worth 100 CR each
     name: ''
     _key: '!tables.results!dmgRobeOfUsefulI.OLwbPjkoRICTyupR'
   - type: text
@@ -231,7 +231,7 @@ results:
       compendiumSource: null
       duplicateSource: null
       exportSource: null
-    description: Spell Scroll containing one spell of level 1, 2, or 3 (your choice)
+    description: Power Module containing one spell of level 1, 2, or 3 (your choice)
     name: ''
     _key: '!tables.results!dmgRobeOfUsefulI.6cvuu0JdRm1kxS3d'
   - type: text

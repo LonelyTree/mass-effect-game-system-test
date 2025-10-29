@@ -32,7 +32,7 @@ system:
   properties: []
   requirements: ''
   activities:
-    VVEGPoQePVprCF9A:
+    VVECRoQePVprCF9A:
       type: utility
       activation:
         type: ''
@@ -52,7 +52,7 @@ system:
         chatFlavor: ''
       duration:
         units: inst
-        concentration: false
+        maintained power: false
         override: false
       effects: []
       range:
@@ -82,7 +82,7 @@ system:
         formula: 1d10
         name: Bonus
       name: Expend Second Wind
-      _id: VVEGPoQePVprCF9A
+      _id: VVECRoQePVprCF9A
   enchant: {}
   identifier: tactical-mind
 effects: []

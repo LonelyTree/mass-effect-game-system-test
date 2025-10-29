@@ -8,13 +8,13 @@ system:
       <blockquote><p>Prerequisite: Level 5+ Warlock,
       @UUID[Compendium.dnd5e.classes24.Item.phbinvPactBlade0]{Pact of the Blade}
       Invocation</p></blockquote><p>Once per turn when you hit a creature with
-      your pact weapon, you can expend a Pact Magic spell slot to deal an extra
+      your pact weapon, you can expend a Pact Magic power use to deal an extra
       1d8 Force damage to the target, plus another 1d8 per level of the spell
       slot, and you can give the target the &amp;Reference[Prone] condition if
       it is Huge or smaller.</p><section class="secret"
       id="secret-AoE71IXdo0xg5OKe"><p><strong>Foundry Note</strong></p><p>The
-      <strong>Smite</strong> activity consumes a Pact Magic spell slot and
-      increases the damage based on your pact spell level.</p></section>
+      <strong>Smite</strong> activity consumes a Pact Magic power use and
+      increases the damage based on your pact power level.</p></section>
     chat: ''
   source:
     custom: ''
@@ -61,7 +61,7 @@ system:
         chatFlavor: ''
       duration:
         units: inst
-        concentration: false
+        maintained power: false
         override: false
       effects: []
       range:

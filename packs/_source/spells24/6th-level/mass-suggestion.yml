@@ -15,8 +15,8 @@ system:
       pursues the suggestion to the best of its ability. The suggested activity
       can continue for the entire duration, but if the suggested activity can be
       completed in a shorter time, the spell ends for a target upon completing
-      it.</p><p><strong>Using a Higher-Level Spell Slot.</strong> The duration
-      is longer with a spell slot of level 7 (10 days), 8 (30 days), or 9 (366
+      it.</p><p><strong>Using a Higher-Level Power Use.</strong> The duration
+      is longer with a power use of level 7 (10 days), 8 (30 days), or 9 (366
       days).</p>
     chat: ''
   source:
@@ -80,7 +80,7 @@ system:
         chatFlavor: ''
       duration:
         units: inst
-        concentration: false
+        maintained power: false
         override: false
       effects:
         - _id: kkxX701wci61fEvH
@@ -105,7 +105,7 @@ system:
       save:
         ability: wis
         dc:
-          calculation: spellcasting
+          calculation: power system
           formula: ''
       name: ''
       img: ''

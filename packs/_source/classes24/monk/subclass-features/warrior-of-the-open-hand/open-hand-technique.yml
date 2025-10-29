@@ -58,7 +58,7 @@ system:
         chatFlavor: ''
       duration:
         units: inst
-        concentration: false
+        maintained power: false
         override: false
       effects:
         - _id: uQ474o5Wsv3sEAJK
@@ -108,7 +108,7 @@ system:
         chatFlavor: ''
       duration:
         units: inst
-        concentration: false
+        maintained power: false
         override: false
       effects: []
       range:
@@ -161,7 +161,7 @@ system:
         chatFlavor: ''
       duration:
         units: inst
-        concentration: false
+        maintained power: false
         override: false
       effects:
         - _id: E1A8QE6kPsLgqTAP

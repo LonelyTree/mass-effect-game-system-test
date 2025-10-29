@@ -75,15 +75,15 @@ system:
     attunement:
       max: 3
     senses:
-      darkvision: 0
-      blindsight: 0
-      tremorsense: 0
-      truesight: 0
+      scanner: 0
+      thermal vision: 0
+      motion sensor: 0
+      radar ping: 0
       units: ft
       special: ''
-    spellcasting: wis
+    power system: wis
     exhaustion: 0
-    concentration:
+    maintained power:
       ability: ''
       roll:
         min: null
@@ -144,7 +144,7 @@ system:
       bypasses: []
   currency:
     pp: 0
-    gp: 0
+    CR: 0
     ep: 0
     sp: 0
     cp: 0
@@ -506,7 +506,7 @@ items:
         units: lb
       price:
         value: 10
-        denomination: gp
+        denomination: CR
       attunement: ''
       equipped: true
       rarity: ''
@@ -607,7 +607,7 @@ items:
       exportSource: null
     _key: '!actors.items!tYfQIxCJT0WaaKmc.lSteE7vBmM70Jy3Z'
   - _id: KRbUbk5AkQOabBhO
-    name: Spellcasting
+    name: Power System
     type: feat
     img: icons/magic/light/projectiles-star-purple.webp
     system:
@@ -616,7 +616,7 @@ items:
           <p>The fanatic is a 4th-level spellcaster. Its spell casting ability
           is Wisdom (spell save DC 11, +3 to hit with spell attacks).</p><p>The
           fanatic has the following cleric spells
-          prepared:</p><p><strong>Cantrips</strong> (at will): [[/item
+          prepared:</p><p><strong>Basic Powers</strong> (at will): [[/item
           .Bnn9Nzajixvow9xi]]{light}, [[/item .n9pJzTDsAwQxJVRl]]{sacred flame},
           [[/item .MUO1uYN7JR1hm4dR]]{thaumaturgy}</p><p><strong>1st level
           </strong>(4 slots): [[/item .arzCrMRgcNiQuh43]]{command}, [[/item
@@ -647,7 +647,7 @@ items:
       enchant: {}
       prerequisites:
         level: null
-      identifier: spellcasting
+      identifier: power system
     effects: []
     folder: null
     sort: 0
@@ -707,7 +707,7 @@ items:
           description:
             chatFlavor: ''
           duration:
-            concentration: false
+            maintained power: false
             value: ''
             units: ''
             special: ''
@@ -785,7 +785,7 @@ items:
         units: lb
       price:
         value: 2
-        denomination: gp
+        denomination: CR
       attunement: ''
       equipped: true
       rarity: ''
@@ -863,7 +863,7 @@ items:
           description:
             chatFlavor: ''
           duration:
-            concentration: false
+            maintained power: false
             value: ''
             units: ''
             special: ''
@@ -1006,7 +1006,7 @@ items:
             chatFlavor: ''
           duration:
             units: inst
-            concentration: false
+            maintained power: false
             override: false
           effects: []
           range:
@@ -1029,7 +1029,7 @@ items:
           save:
             ability: dex
             dc:
-              calculation: spellcasting
+              calculation: power system
               formula: '11'
           sort: 0
       identifier: light
@@ -1123,7 +1123,7 @@ items:
             chatFlavor: ''
           duration:
             units: inst
-            concentration: false
+            maintained power: false
             override: false
           effects: []
           range:
@@ -1158,7 +1158,7 @@ items:
           save:
             ability: dex
             dc:
-              calculation: spellcasting
+              calculation: power system
               formula: '11'
           sort: 0
       identifier: sacred-flame
@@ -1269,7 +1269,7 @@ items:
             chatFlavor: ''
           duration:
             units: inst
-            concentration: false
+            maintained power: false
             override: false
           effects: []
           range:
@@ -1316,7 +1316,7 @@ items:
     type: spell
     system:
       description:
-        value: "<p>You speak a one-word command to a creature you can see within range. The target must succeed on a Wisdom saving throw or follow the command on its next turn. The spell has no effect if the target is undead, if it doesn't understand your language, or if your command is directly harmful to it.</p><p>Some typical commands and their effects follow. You might issue a command other than one described here. If you do so, the DM determines how the target behaves. If the target can't follow your command, the spell ends.</p><p><strong>Approach.</strong> The target moves toward you by the shortest and most direct route, ending its turn if it moves within 5 feet of you.</p><p><strong>Drop.</strong> The target drops whatever it is holding and then ends its turn.</p><p><strong>Flee.</strong> The target spends its turn moving away from you by the fastest available means.</p><p><strong>Grovel.</strong> The target falls prone and then ends its turn.</p><p><strong>Halt.</strong> The target doesn't move and takes no actions. A flying creature stays aloft, provided that it is able to do so. If it must move to stay aloft, it flies the minimum distance needed to remain in the air.</p><p><strong>Higher Levels.\_</strong>When you cast this spell using a spell slot of 2nd level or higher, you can affect one additional creature for each slot level above 1st. The creatures must be within 30 feet of each other when you target them.</p>"
+        value: "<p>You speak a one-word command to a creature you can see within range. The target must succeed on a Wisdom saving throw or follow the command on its next turn. The spell has no effect if the target is undead, if it doesn't understand your language, or if your command is directly harmful to it.</p><p>Some typical commands and their effects follow. You might issue a command other than one described here. If you do so, the DM determines how the target behaves. If the target can't follow your command, the spell ends.</p><p><strong>Approach.</strong> The target moves toward you by the shortest and most direct route, ending its turn if it moves within 5 feet of you.</p><p><strong>Drop.</strong> The target drops whatever it is holding and then ends its turn.</p><p><strong>Flee.</strong> The target spends its turn moving away from you by the fastest available means.</p><p><strong>Grovel.</strong> The target falls prone and then ends its turn.</p><p><strong>Halt.</strong> The target doesn't move and takes no actions. A flying creature stays aloft, provided that it is able to do so. If it must move to stay aloft, it flies the minimum distance needed to remain in the air.</p><p><strong>Higher Levels.\_</strong>When you cast this spell using a power use of 2nd level or higher, you can affect one additional creature for each slot level above 1st. The creatures must be within 30 feet of each other when you target them.</p>"
         chat: ''
       source:
         custom: ''
@@ -1377,7 +1377,7 @@ items:
             chatFlavor: ''
           duration:
             units: inst
-            concentration: false
+            maintained power: false
             override: false
           effects: []
           range:
@@ -1400,7 +1400,7 @@ items:
           save:
             ability: wis
             dc:
-              calculation: spellcasting
+              calculation: power system
               formula: '11'
           sort: 0
       identifier: command
@@ -1430,7 +1430,7 @@ items:
         value: >-
           <p>Make a melee spell Attack against a creature you can reach. On a
           hit, the target takes 3d10 necrotic damage.</p><p><strong>At Higher
-          Levels.</strong> When you cast this spell using a spell slot of 2nd
+          Levels.</strong> When you cast this spell using a power use of 2nd
           level or higher, the damage increases by 1d10 for each slot level
           above 1st.</p>
         chat: ''
@@ -1493,7 +1493,7 @@ items:
             chatFlavor: ''
           duration:
             units: inst
-            concentration: false
+            maintained power: false
             override: false
           effects: []
           range:
@@ -1608,7 +1608,7 @@ items:
         - vocal
         - somatic
         - material
-        - concentration
+        - maintained power
       activities:
         dnd5eactivity000:
           _id: dnd5eactivity000
@@ -1627,7 +1627,7 @@ items:
             chatFlavor: ''
           duration:
             units: inst
-            concentration: false
+            maintained power: false
             override: false
           effects: []
           range:
@@ -1674,7 +1674,7 @@ items:
     type: spell
     system:
       description:
-        value: "<p>Choose a humanoid that you can see within range. The target must succeed on a Wisdom saving throw or be paralyzed for the duration. At the end of each of its turns, the target can make another Wisdom saving throw. On a success, the spell ends on the target.</p><p><strong>Higher Levels.\_</strong>When you cast this spell using a spell slot of 3rd level or higher, you can target one additional humanoid for each slot level above 2nd. The humanoids must be within 30 feet of each other when you target them.</p>"
+        value: "<p>Choose a humanoid that you can see within range. The target must succeed on a Wisdom saving throw or be paralyzed for the duration. At the end of each of its turns, the target can make another Wisdom saving throw. On a success, the spell ends on the target.</p><p><strong>Higher Levels.\_</strong>When you cast this spell using a power use of 3rd level or higher, you can target one additional humanoid for each slot level above 2nd. The humanoids must be within 30 feet of each other when you target them.</p>"
         chat: ''
       source:
         custom: ''
@@ -1719,7 +1719,7 @@ items:
         - vocal
         - somatic
         - material
-        - concentration
+        - maintained power
       activities:
         dnd5eactivity000:
           _id: dnd5eactivity000
@@ -1738,7 +1738,7 @@ items:
             chatFlavor: ''
           duration:
             units: inst
-            concentration: false
+            maintained power: false
             override: false
           effects: []
           range:
@@ -1761,7 +1761,7 @@ items:
           save:
             ability: wis
             dc:
-              calculation: spellcasting
+              calculation: power system
               formula: '11'
           sort: 0
       identifier: hold-person
@@ -1790,16 +1790,16 @@ items:
         value: >-
           <p>You create a floating, spectral weapon within range that lasts for
           the duration or until you cast this spell again. When you cast the
-          spell, you can make a melee spell attack against a creature within 5
+          spell, you can make a close combat power attack against a creature within 5
           feet of the weapon. On a hit, the target takes force damage equal to
-          1d8 + your spellcasting ability modifier.</p><p>As a bonus action on
+          1d8 + your power system ability modifier.</p><p>As a bonus action on
           your turn, you can move the weapon up to 20 feet and repeat the attack
           against a creature within 5 feet of it.</p><p>The weapon can take
           whatever form you choose. Clerics of deities who are associated with a
           particular weapon (as St. Cuthbert is known for his mace and Thor for
           his hammer) make this spell's effect resemble that
           weapon.</p><p><strong>At Higher Levels.</strong> When you cast this
-          spell using a spell slot of 3rd level or higher, the damage increases
+          spell using a power use of 3rd level or higher, the damage increases
           by 1d8 for every two slot levels above the 2nd.</p>
         chat: ''
       source:
@@ -1862,7 +1862,7 @@ items:
             chatFlavor: ''
           duration:
             units: inst
-            concentration: false
+            maintained power: false
             override: false
           effects: []
           range:

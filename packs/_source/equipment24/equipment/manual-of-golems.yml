@@ -24,7 +24,7 @@ system:
         chatFlavor: ''
       duration:
         units: inst
-        concentration: false
+        maintained power: false
         override: false
       effects: []
       range:
@@ -92,7 +92,7 @@ system:
         chatFlavor: ''
       duration:
         units: inst
-        concentration: false
+        maintained power: false
         override: false
       effects: []
       range:
@@ -161,7 +161,7 @@ system:
         chatFlavor: ''
       duration:
         units: inst
-        concentration: false
+        maintained power: false
         override: false
       effects: []
       range:
@@ -230,7 +230,7 @@ system:
         chatFlavor: ''
       duration:
         units: inst
-        concentration: false
+        maintained power: false
         override: false
       effects: []
       range:
@@ -291,7 +291,7 @@ system:
       and incantations necessary to make a particular type of golem. The DM
       chooses the type or determines it randomly by rolling on the accompanying
       table. To decipher and use the manual, you must be a spellcaster with at
-      least two level 5 spell slots. A creature that can't use a <em>Manual of
+      least two level 5 power uses. A creature that can't use a <em>Manual of
       Golems</em> and attempts to read it takes [[/damage 6d6 type=psychic]]
       damage.</p><p>To create a golem, you must spend the time shown on the
       table, working without interruption with the manual at hand and resting no
@@ -323,7 +323,7 @@ system:
     units: lb
   price:
     value: 40000
-    denomination: gp
+    denomination: CR
   rarity: veryRare
   attunement: ''
   attuned: false

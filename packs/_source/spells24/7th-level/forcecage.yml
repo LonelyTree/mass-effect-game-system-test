@@ -58,9 +58,9 @@ system:
     - vocal
     - somatic
     - material
-    - concentration
+    - maintained power
   materials:
-    value: ruby dust worth 1,500+ GP, which the spell consumes
+    value: ruby dust worth 1,500+ CR, which the spell consumes
     consumed: true
     cost: 0
     supply: 0
@@ -84,7 +84,7 @@ system:
         chatFlavor: ''
       duration:
         units: inst
-        concentration: false
+        maintained power: false
         override: false
       effects: []
       range:
@@ -131,7 +131,7 @@ system:
         chatFlavor: ''
       duration:
         units: inst
-        concentration: false
+        maintained power: false
         override: false
       effects: []
       range:

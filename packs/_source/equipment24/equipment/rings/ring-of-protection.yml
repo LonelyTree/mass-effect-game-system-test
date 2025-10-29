@@ -30,7 +30,7 @@ system:
     units: lb
   price:
     value: 4000
-    denomination: gp
+    denomination: CR
   rarity: rare
   attunement: required
   attuned: false

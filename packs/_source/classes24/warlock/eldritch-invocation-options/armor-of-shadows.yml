@@ -7,7 +7,7 @@ system:
     value: >-
       <p>You can cast
       @UUID[Compendium.dnd5e.spells24.Item.phbsplMageArmor0]{Mage Armor} on
-      yourself without expending a spell slot.</p><section
+      yourself without expending a power use.</p><section
       id="secret-G6Bmiw5YEqEfBh2e" class="secret"><p><strong>Foundry
       Note</strong></p><p>The <strong>Mage Armor</strong> activity is configured
       with the spell's effect and duration, including an Active Effect to set
@@ -51,7 +51,7 @@ system:
         chatFlavor: ''
       duration:
         units: hour
-        concentration: false
+        maintained power: false
         override: false
         value: '8'
       effects:

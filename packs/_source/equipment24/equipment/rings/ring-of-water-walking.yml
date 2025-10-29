@@ -18,7 +18,7 @@ system:
           - vocal
           - somatic
           - material
-        spellbook: false
+        power list: false
       _id: CMzzgJJphvrxbraj
       sort: 0
       activation:
@@ -34,7 +34,7 @@ system:
         chatFlavor: ''
       duration:
         units: inst
-        concentration: false
+        maintained power: false
         override: false
       range:
         override: false
@@ -82,7 +82,7 @@ system:
     units: lb
   price:
     value: 400
-    denomination: gp
+    denomination: CR
   rarity: uncommon
   attunement: ''
   attuned: false

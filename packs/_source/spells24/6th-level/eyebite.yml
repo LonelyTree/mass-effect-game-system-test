@@ -56,7 +56,7 @@ system:
   properties:
     - vocal
     - somatic
-    - concentration
+    - maintained power
   materials:
     value: ''
     consumed: false
@@ -82,7 +82,7 @@ system:
         chatFlavor: ''
       duration:
         units: inst
-        concentration: false
+        maintained power: false
         override: false
       effects:
         - _id: 5btX5iwwleMMzkvj
@@ -111,7 +111,7 @@ system:
       save:
         ability: wis
         dc:
-          calculation: spellcasting
+          calculation: power system
           formula: ''
       name: Initial Cast
       img: ''
@@ -134,7 +134,7 @@ system:
         chatFlavor: ''
       duration:
         units: inst
-        concentration: false
+        maintained power: false
         override: true
       effects:
         - _id: 5btX5iwwleMMzkvj
@@ -164,7 +164,7 @@ system:
       save:
         ability: wis
         dc:
-          calculation: spellcasting
+          calculation: power system
           formula: ''
       name: While Concentrating
       _id: 3PZbzzH8sBJl3heA

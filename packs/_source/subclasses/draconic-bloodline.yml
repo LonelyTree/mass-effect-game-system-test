@@ -99,7 +99,7 @@ system:
       title: ''
       value:
         chosen: []
-  spellcasting:
+  power system:
     progression: none
     ability: ''
     preparation: {}

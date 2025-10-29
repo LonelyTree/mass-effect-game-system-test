@@ -24,7 +24,7 @@ system:
         chatFlavor: ''
       duration:
         units: inst
-        concentration: false
+        maintained power: false
         override: false
       range:
         override: false
@@ -50,7 +50,7 @@ system:
           - vocal
           - somatic
           - material
-        spellbook: false
+        power list: false
         uuid: Compendium.dnd5e.spells24.Item.phbsplMindSpike0
         ability: ''
       name: ''
@@ -61,7 +61,7 @@ system:
     max: ''
   description:
     value: >-
-      <p class="feature">The dragon uses [[/item Spellcasting]] to cast
+      <p class="feature">The dragon uses [[/item Power System]] to cast
       <em>@UUID[Compendium.dnd5e.spells24.Item.phbsplMindSpike0]{Mind
       Spike}</em> (level 3 version).</p>
     chat: ''

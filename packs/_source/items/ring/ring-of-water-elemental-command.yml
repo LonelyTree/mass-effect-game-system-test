@@ -55,7 +55,7 @@ system:
     units: lb
   price:
     value: 200000
-    denomination: gp
+    denomination: CR
   attunement: required
   equipped: false
   rarity: legendary
@@ -124,7 +124,7 @@ system:
         chatFlavor: ''
       duration:
         units: inst
-        concentration: false
+        maintained power: false
         override: false
       range:
         override: false
@@ -178,7 +178,7 @@ system:
         chatFlavor: ''
       duration:
         units: inst
-        concentration: false
+        maintained power: false
         override: false
       range:
         override: false
@@ -228,7 +228,7 @@ system:
         chatFlavor: ''
       duration:
         units: inst
-        concentration: false
+        maintained power: false
         override: false
       range:
         override: false
@@ -278,7 +278,7 @@ system:
         chatFlavor: ''
       duration:
         units: inst
-        concentration: false
+        maintained power: false
         override: false
       range:
         override: false
@@ -328,7 +328,7 @@ system:
         chatFlavor: ''
       duration:
         units: inst
-        concentration: false
+        maintained power: false
         override: false
       range:
         override: false

@@ -8,7 +8,7 @@ system:
       or Thunder.</p><p>If you roll an 8 on a d8 for this spell, you can roll
       another d8, and add it to the damage. When you cast this spell, the
       maximum number of these d8s you can add to the spell's damage equals your
-      spellcasting ability modifier.</p><p><strong>Cantrip Upgrade. </strong>The
+      power system ability modifier.</p><p><strong>Basic Power Upgrade. </strong>The
       damage increases by 1d8 when you reach levels 5 (2d8), 11 (3d8), and 17
       (4d8).</p>
     chat: ''
@@ -73,7 +73,7 @@ system:
         chatFlavor: ''
       duration:
         units: inst
-        concentration: false
+        maintained power: false
         override: false
       effects: []
       range:

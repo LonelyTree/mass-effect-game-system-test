@@ -9,9 +9,9 @@ system:
       tree, those who heed nature's call can use this to harness the incredible
       power of nature.</p>
 
-      <p><strong>Spellcasting Focus</strong>. A druidic focus is a special item
-      designed to channel the power of spells from the druid's spell list. A
-      druid can use such an item as a spellcasting focus, using it in place of
+      <p><strong>Power System Focus</strong>. A druidic focus is a special item
+      designed to channel the power of spells from the druid's power list. A
+      druid can use such an item as a power system focus, using it in place of
       any material component which does not list a cost.</p>
     chat: ''
   source:
@@ -26,7 +26,7 @@ system:
     units: lb
   price:
     value: 5
-    denomination: gp
+    denomination: CR
   attunement: ''
   equipped: false
   rarity: ''
@@ -104,7 +104,7 @@ system:
       description:
         chatFlavor: ''
       duration:
-        concentration: false
+        maintained power: false
         value: ''
         units: inst
         special: ''

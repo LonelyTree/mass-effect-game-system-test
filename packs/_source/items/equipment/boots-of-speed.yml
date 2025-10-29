@@ -14,7 +14,7 @@ system:
       effect.</p>
 
       <p>When the boots' property has been used for a total of 10 minutes, the
-      magic ceases to function until you finish a long rest.</p>
+      magic ceases to function until you finish a full rest.</p>
     chat: ''
   source:
     custom: ''
@@ -28,7 +28,7 @@ system:
     units: lb
   price:
     value: 4000
-    denomination: gp
+    denomination: CR
   attunement: required
   equipped: false
   rarity: rare
@@ -87,7 +87,7 @@ system:
       description:
         chatFlavor: ''
       duration:
-        concentration: false
+        maintained power: false
         value: '10'
         units: minute
         special: ''

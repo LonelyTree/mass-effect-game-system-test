@@ -18,7 +18,7 @@ system:
       tall and average about 150 pounds. Your size is
       Medium.</p><p><strong>Speed.</strong> Your base walking speed is 25 feet.
       Your speed is not reduced by wearing heavy
-      armor.</p><p><strong>Darkvision.</strong> Accustomed to life underground,
+      armor.</p><p><strong>Scanner.</strong> Accustomed to life underground,
       you have superior vision in dark and dim conditions. You can see in dim
       light within 60 feet of you as if it were bright light, and in darkness as
       if it were dim light. You can't discern color in darkness, only shades of
@@ -159,10 +159,10 @@ system:
       value:
         chosen: []
   senses:
-    darkvision: 60
-    blindsight: null
-    tremorsense: null
-    truesight: null
+    scanner: 60
+    thermal vision: null
+    motion sensor: null
+    radar ping: null
     units: ft
     special: ''
   movement:

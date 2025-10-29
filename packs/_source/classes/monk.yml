@@ -22,7 +22,7 @@ system:
       Defense},
       @UUID[Compendium.dnd5e.classfeatures.Item.l50hjTxO2r0iecKw]{Martial
       Arts}</td></tr><tr><td>2nd</td><td>+2</td><td>1d4</td><td>2</td><td>+10
-      ft.</td><td>@UUID[Compendium.dnd5e.classfeatures.Item.10b6z2W1txNkrGP7]{Ki},
+      ft.</td><td>@UUID[Compendium.dnd5e.classfeatures.Item.10b6z2W1txNkrCR7]{Ki},
       @UUID[Compendium.dnd5e.classfeatures.Item.zCeqyQ8uIPNdYJSW]{Unarmored
       Movement}</td></tr><tr><td>3rd</td><td>+2</td><td>1d4</td><td>3</td><td>+10
       ft.</td><td>@UUID[Compendium.dnd5e.classfeatures.Item.rtpQdX77dYWbDIOH]{Monastic
@@ -204,7 +204,7 @@ system:
     - type: ItemGrant
       configuration:
         items:
-          - uuid: Compendium.dnd5e.classfeatures.10b6z2W1txNkrGP7
+          - uuid: Compendium.dnd5e.classfeatures.10b6z2W1txNkrCR7
             optional: false
           - uuid: Compendium.dnd5e.classfeatures.5MwNlVZK7m6VolOH
             optional: false
@@ -544,7 +544,7 @@ system:
       value: {}
       level: 3
       title: Monastic Tradition
-  spellcasting:
+  power system:
     progression: none
     ability: ''
     preparation: {}

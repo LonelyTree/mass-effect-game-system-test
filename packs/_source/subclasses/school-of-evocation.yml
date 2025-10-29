@@ -86,7 +86,7 @@ system:
       value: {}
       level: 14
       title: Features
-  spellcasting:
+  power system:
     progression: none
     ability: ''
     preparation: {}

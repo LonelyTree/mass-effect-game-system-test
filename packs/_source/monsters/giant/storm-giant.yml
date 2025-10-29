@@ -75,15 +75,15 @@ system:
     attunement:
       max: 3
     senses:
-      darkvision: 0
-      blindsight: 0
-      tremorsense: 0
-      truesight: 0
+      scanner: 0
+      thermal vision: 0
+      motion sensor: 0
+      radar ping: 0
       units: ft
       special: ''
-    spellcasting: cha
+    power system: cha
     exhaustion: 0
-    concentration:
+    maintained power:
       ability: ''
       roll:
         min: null
@@ -149,7 +149,7 @@ system:
       bypasses: []
   currency:
     pp: 0
-    gp: 0
+    CR: 0
     ep: 0
     sp: 0
     cp: 0
@@ -511,7 +511,7 @@ items:
         units: lb
       price:
         value: 50
-        denomination: gp
+        denomination: CR
       attunement: ''
       equipped: true
       rarity: ''
@@ -631,7 +631,7 @@ items:
         units: lb
       price:
         value: 0
-        denomination: gp
+        denomination: CR
       attunement: ''
       equipped: true
       rarity: ''
@@ -706,7 +706,7 @@ items:
           description:
             chatFlavor: ''
           duration:
-            concentration: false
+            maintained power: false
             value: ''
             units: ''
             special: ''
@@ -774,13 +774,13 @@ items:
       exportSource: null
     _key: '!actors.items!68bAMIpe4jvDeR9G.iwN0z7f5LF9AAbRJ'
   - _id: 2tzFjiAiXJLEpuCn
-    name: Innate Spellcasting
+    name: Innate Power System
     type: feat
     img: icons/magic/light/projectiles-star-purple.webp
     system:
       description:
         value: >-
-          <p>The giant's innate spellcasting ability is Charisma (spell save DC
+          <p>The giant's innate power system ability is Charisma (spell save DC
           17). It can innately cast the following spells, requiring no material
           components:</p>
 
@@ -811,7 +811,7 @@ items:
       enchant: {}
       prerequisites:
         level: null
-      identifier: innate-spellcasting
+      identifier: innate-power system
     effects: []
     folder: null
     sort: 0
@@ -858,7 +858,7 @@ items:
         units: lb
       price:
         value: 0
-        denomination: gp
+        denomination: CR
       attunement: ''
       equipped: true
       rarity: ''
@@ -933,7 +933,7 @@ items:
           description:
             chatFlavor: ''
           duration:
-            concentration: false
+            maintained power: false
             value: ''
             units: inst
             special: ''
@@ -1050,7 +1050,7 @@ items:
           description:
             chatFlavor: ''
           duration:
-            concentration: false
+            maintained power: false
             value: ''
             units: ''
             special: ''
@@ -1128,7 +1128,7 @@ items:
         units: lb
       price:
         value: 0
-        denomination: gp
+        denomination: CR
       attunement: ''
       equipped: true
       rarity: ''
@@ -1203,7 +1203,7 @@ items:
           description:
             chatFlavor: ''
           duration:
-            concentration: false
+            maintained power: false
             value: ''
             units: ''
             special: ''
@@ -1329,7 +1329,7 @@ items:
         - vocal
         - somatic
         - ritual
-        - concentration
+        - maintained power
       activities:
         dnd5eactivity000:
           _id: dnd5eactivity000
@@ -1348,7 +1348,7 @@ items:
             chatFlavor: ''
           duration:
             units: inst
-            concentration: false
+            maintained power: false
             override: false
           effects: []
           range:
@@ -1462,7 +1462,7 @@ items:
             chatFlavor: ''
           duration:
             units: inst
-            concentration: false
+            maintained power: false
             override: false
           effects: []
           range:
@@ -1568,7 +1568,7 @@ items:
         - vocal
         - somatic
         - material
-        - concentration
+        - maintained power
       activities:
         dnd5eactivity000:
           _id: dnd5eactivity000
@@ -1587,7 +1587,7 @@ items:
             chatFlavor: ''
           duration:
             units: inst
-            concentration: false
+            maintained power: false
             override: false
           effects: []
           range:
@@ -1610,7 +1610,7 @@ items:
           save:
             ability: con
             dc:
-              calculation: spellcasting
+              calculation: power system
               formula: '17'
           sort: 0
       identifier: levitate
@@ -1706,7 +1706,7 @@ items:
             chatFlavor: ''
           duration:
             units: inst
-            concentration: false
+            maintained power: false
             override: false
           effects: []
           range:
@@ -1729,7 +1729,7 @@ items:
           save:
             ability: dex
             dc:
-              calculation: spellcasting
+              calculation: power system
               formula: '17'
           sort: 0
       identifier: light
@@ -1862,7 +1862,7 @@ items:
         - vocal
         - somatic
         - material
-        - concentration
+        - maintained power
       activities:
         dnd5eactivity000:
           _id: dnd5eactivity000
@@ -1887,7 +1887,7 @@ items:
             chatFlavor: ''
           duration:
             units: inst
-            concentration: false
+            maintained power: false
             override: false
           effects: []
           range:
@@ -2009,7 +2009,7 @@ items:
             chatFlavor: ''
           duration:
             units: inst
-            concentration: false
+            maintained power: false
             override: false
           effects: []
           range:

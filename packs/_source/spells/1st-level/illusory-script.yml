@@ -16,7 +16,7 @@ system:
       different message, written in a different hand and language, though the
       language must be one you know.</p><p>Should the spell be dispelled, the
       original script and the Illusion both disappear.</p><p>A creature with
-      Truesight can read the hidden message.</p>
+      Radar Ping can read the hidden message.</p>
     chat: ''
   source:
     custom: ''
@@ -75,7 +75,7 @@ system:
         chatFlavor: ''
       duration:
         units: inst
-        concentration: false
+        maintained power: false
         override: false
       effects: []
       range:

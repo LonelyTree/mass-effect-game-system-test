@@ -7,7 +7,7 @@ system:
     value: >-
       <blockquote><p>Cost: 1 Sorcery Point</p></blockquote><p>When you cast a
       spell, such as <em>Charm Person</em>, that can be cast with a higher-level
-      spell slot to target an additional creature, you can spend 1 Sorcery Point
+      power use to target an additional creature, you can spend 1 Sorcery Point
       to increase the spell's effective level by 1.</p>
     chat: ''
   source:
@@ -53,7 +53,7 @@ system:
         chatFlavor: ''
       duration:
         units: inst
-        concentration: false
+        maintained power: false
         override: false
       effects: []
       range:

@@ -1,5 +1,5 @@
-_id: mmSpellcasting00
-name: Spellcasting
+_id: mmPower System00
+name: Power System
 type: feat
 system:
   type:
@@ -22,7 +22,7 @@ system:
       description: {}
       duration:
         units: inst
-        concentration: false
+        maintained power: false
         override: false
       range:
         override: false
@@ -47,7 +47,7 @@ system:
           - vocal
           - somatic
           - material
-        spellbook: true
+        power list: true
         uuid: null
   uses:
     spent: 0
@@ -57,13 +57,13 @@ system:
     value: >-
       <p class="feature">The [[lookup @name lowercase]] casts one of the
       following spells, requiring no {type} components and using {ability} as
-      the spellcasting ability (spell save DC [[lookup
+      the power system ability (spell save DC [[lookup
       @attributes.spell.dc]]):</p><p class="feature-trait"><strong>At
       Will:</strong> <em>{spell}</em></p><p
       class="feature-trait"><strong>{count}/Day Each:</strong>
       <em>{spell}</em></p>
     chat: ''
-  identifier: spellcasting
+  identifier: power system
   source:
     revision: 1
     rules: '2024'
@@ -92,4 +92,4 @@ _stats:
 sort: 6100000
 ownership:
   default: 0
-_key: '!items!mmSpellcasting00'
+_key: '!items!mmPower System00'

@@ -11,7 +11,7 @@ system:
       number rolled plus your Wisdom modifier (minimum of 1 Hit Point
       regained).</p><p>You can use this feature a number of times equal to your
       Wisdom modifier (minimum of once), and you regain all expended uses when
-      you finish a Long Rest.</p>
+      you finish a Full Rest.</p>
     chat: ''
   source:
     custom: ''
@@ -55,7 +55,7 @@ system:
         chatFlavor: ''
       duration:
         units: inst
-        concentration: false
+        maintained power: false
         override: false
       effects: []
       range:

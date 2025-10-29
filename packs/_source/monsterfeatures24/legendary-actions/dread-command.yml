@@ -24,7 +24,7 @@ system:
         chatFlavor: ''
       duration:
         units: inst
-        concentration: false
+        maintained power: false
         override: false
       range:
         override: false
@@ -47,7 +47,7 @@ system:
           override: false
         level: '2'
         properties: []
-        spellbook: true
+        power list: true
         uuid: Compendium.dnd5e.spells24.Item.phbsplCommand000
         ability: ''
       name: Command
@@ -60,7 +60,7 @@ system:
     value: >-
       <p class="feature">The [[lookup @name lowercase]] casts
       <em>@UUID[Compendium.dnd5e.spells24.Item.phbsplCommand000]{Command}</em>
-      (level 2 version), using the same spellcasting ability as Spellcasting.
+      (level 2 version), using the same power system ability as Power System.
       The [[lookup @name lowercase]] can't take this action again until the
       start of its next turn.</p>
     chat: ''

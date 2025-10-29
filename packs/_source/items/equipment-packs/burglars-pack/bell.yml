@@ -17,7 +17,7 @@ system:
     units: lb
   price:
     value: 1
-    denomination: gp
+    denomination: CR
   rarity: ''
   identified: true
   container: xsB7Y2WI476kvOt4

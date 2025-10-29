@@ -24,7 +24,7 @@ system:
         chatFlavor: Damage from Running Water
       duration:
         units: inst
-        concentration: false
+        maintained power: false
         override: false
       effects: []
       range:
@@ -80,7 +80,7 @@ system:
         chatFlavor: Damage from Sunligvht
       duration:
         units: inst
-        concentration: false
+        maintained power: false
         override: false
       effects:
         - _id: v2EdEMrtcddO1p8U
@@ -135,7 +135,7 @@ system:
         chatFlavor: ''
       duration:
         units: inst
-        concentration: false
+        maintained power: false
         override: false
       effects: []
       range:

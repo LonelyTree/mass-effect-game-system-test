@@ -102,7 +102,7 @@ system:
       save:
         ability: cha
         dc:
-          calculation: spellcasting
+          calculation: power system
           formula: ''
       img: ''
       appliedEffects: []

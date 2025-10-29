@@ -5,7 +5,7 @@ img: null
 system:
   currency:
     pp: 0
-    gp: 0
+    CR: 0
     ep: 0
     sp: 0
     cp: 0
@@ -363,15 +363,15 @@ system:
     attunement:
       max: 3
     senses:
-      darkvision: null
-      blindsight: null
-      tremorsense: null
-      truesight: null
+      scanner: null
+      thermal vision: null
+      motion sensor: null
+      radar ping: null
       units: null
       special: ''
-    spellcasting: int
+    power system: int
     exhaustion: 0
-    concentration:
+    maintained power:
       ability: ''
       roll:
         min: null
@@ -563,11 +563,11 @@ items:
         value: >-
           <p>An @UUID[Compendium.dnd5e.equipment24.Item.phbagArcaneFocus]{Arcane
           Focus} is bejeweled or carved to channel arcane magic. A Sorcerer,
-          Warlock, or Wizard can use such an item as a Spellcasting Focus.</p>
+          Warlock, or Wizard can use such an item as a Power System Focus.</p>
         chat: ''
       price:
         value: 10
-        denomination: gp
+        denomination: CR
       source:
         custom: ''
         rules: '2024'
@@ -710,7 +710,7 @@ items:
             chatFlavor: ''
           duration:
             units: inst
-            concentration: false
+            maintained power: false
             override: false
           effects: []
           range:
@@ -809,7 +809,7 @@ items:
             chatFlavor: ''
           duration:
             units: inst
-            concentration: false
+            maintained power: false
             override: false
           effects: []
           range:
@@ -892,7 +892,7 @@ items:
         units: lb
       price:
         value: 0
-        denomination: gp
+        denomination: CR
       rarity: ''
       attunement: ''
       attuned: false
@@ -961,7 +961,7 @@ items:
             chatFlavor: ''
           duration:
             units: inst
-            concentration: false
+            maintained power: false
             override: false
           range:
             override: false
@@ -984,7 +984,7 @@ items:
               override: false
             level: 2
             properties: []
-            spellbook: true
+            power list: true
             uuid: Compendium.dnd5e.spells24.Item.phbsplMistyStep0
             ability: ''
           name: ''
@@ -998,8 +998,8 @@ items:
         value: >-
           <p class="feature">The [[lookup @name lowercase]] casts
           <em>@UUID[Compendium.dnd5e.spells24.Item.phbsplMistyStep0]{Misty
-          Step}</em>, requiring no spell components and using the same
-          spellcasting ability as Spellcasting.</p>
+          Step}</em>, requiring no power components and using the same
+          power system ability as Power System.</p>
         chat: ''
       identifier: misty-step
       source:
@@ -1103,7 +1103,7 @@ items:
           duration:
             units: inst
             override: false
-            concentration: false
+            maintained power: false
           effects: []
           range:
             override: false
@@ -1216,7 +1216,7 @@ items:
             chatFlavor: ''
           duration:
             units: inst
-            concentration: false
+            maintained power: false
             override: false
           range:
             override: false
@@ -1239,7 +1239,7 @@ items:
               override: false
             level: 3
             properties: []
-            spellbook: true
+            power list: true
             uuid: Compendium.dnd5e.spells24.Item.phbsplCounterspe
             ability: ''
           name: ''
@@ -1265,7 +1265,7 @@ items:
             chatFlavor: ''
           duration:
             units: inst
-            concentration: false
+            maintained power: false
             override: false
           range:
             override: false
@@ -1288,7 +1288,7 @@ items:
               override: false
             level: 1
             properties: []
-            spellbook: true
+            power list: true
             uuid: Compendium.dnd5e.spells24.Item.phbsplShield0000
             ability: ''
           name: ''
@@ -1304,8 +1304,8 @@ items:
           <em>@UUID[Compendium.dnd5e.spells24.Item.phbsplCounterspe]{Counterspell}</em>
           or
           <em>@UUID[Compendium.dnd5e.spells24.Item.phbsplShield0000]{Shield}</em>
-          in response to the spell's trigger, using the same spellcasting
-          ability as Spellcasting.</p>
+          in response to the spell's trigger, using the same power system
+          ability as Power System.</p>
         chat: ''
       identifier: protective-magic
       source:
@@ -1352,7 +1352,7 @@ items:
           spell. The creature makes a Constitution saving throw. On a failed
           save, the spell dissipates with no effect, and the action, Bonus
           Action, or Reaction used to cast it is wasted. If that spell was cast
-          with a spell slot, the slot isn't expended.</p>
+          with a power use, the slot isn't expended.</p>
         chat: ''
       source:
         custom: ''
@@ -1415,7 +1415,7 @@ items:
           duration:
             units: inst
             override: false
-            concentration: false
+            maintained power: false
           effects: []
           range:
             override: false
@@ -1434,7 +1434,7 @@ items:
             ability:
               - con
             dc:
-              calculation: spellcasting
+              calculation: power system
               formula: ''
           uses:
             spent: 0
@@ -1576,7 +1576,7 @@ items:
           duration:
             units: inst
             override: false
-            concentration: false
+            maintained power: false
           effects:
             - _id: Bv3EoHGfYCprLdG1
           range:
@@ -1704,8 +1704,8 @@ items:
       exportSource: null
     _id: 49ScnMv8K3QZJhlf
     _key: '!actors.items!mmArchmage000000.49ScnMv8K3QZJhlf'
-  - _id: mmSpellcasting00
-    name: Spellcasting
+  - _id: mmPower System00
+    name: Power System
     type: feat
     system:
       type:
@@ -1729,7 +1729,7 @@ items:
             chatFlavor: ''
           duration:
             units: inst
-            concentration: false
+            maintained power: false
             override: false
           range:
             override: false
@@ -1752,7 +1752,7 @@ items:
               override: false
             level: 1
             properties: []
-            spellbook: true
+            power list: true
             uuid: Compendium.dnd5e.spells24.Item.phbsplDetectMagi
             ability: ''
           name: ''
@@ -1766,7 +1766,7 @@ items:
               override: false
             level: 2
             properties: []
-            spellbook: true
+            power list: true
             ability: ''
           _id: yHNpRRDnVu5gPs4c
           sort: 200000
@@ -1783,7 +1783,7 @@ items:
             chatFlavor: ''
           duration:
             units: inst
-            concentration: false
+            maintained power: false
             override: false
           range:
             override: false
@@ -1810,7 +1810,7 @@ items:
               override: false
             level: 1
             properties: []
-            spellbook: true
+            power list: true
             ability: ''
           _id: LOQzaXcyLwwmhCOM
           sort: 300000
@@ -1827,7 +1827,7 @@ items:
             chatFlavor: ''
           duration:
             units: inst
-            concentration: false
+            maintained power: false
             override: false
           range:
             override: false
@@ -1854,7 +1854,7 @@ items:
               override: false
             level: 2
             properties: []
-            spellbook: true
+            power list: true
             ability: ''
           _id: PUsuSu2x1GYoOybD
           sort: 400000
@@ -1871,7 +1871,7 @@ items:
             chatFlavor: ''
           duration:
             units: inst
-            concentration: false
+            maintained power: false
             override: false
           range:
             override: false
@@ -1898,7 +1898,7 @@ items:
               override: false
             level: null
             properties: []
-            spellbook: true
+            power list: true
             ability: ''
           _id: 9GuIbifC5Ti45jyZ
           sort: 500000
@@ -1915,7 +1915,7 @@ items:
             chatFlavor: ''
           duration:
             units: inst
-            concentration: false
+            maintained power: false
             override: false
           range:
             override: false
@@ -1942,7 +1942,7 @@ items:
               override: false
             level: 1
             properties: []
-            spellbook: true
+            power list: true
             ability: ''
           _id: 1jpkndiQJ5Q14pFr
           sort: 600000
@@ -1959,7 +1959,7 @@ items:
             chatFlavor: ''
           duration:
             units: inst
-            concentration: false
+            maintained power: false
             override: false
           range:
             override: false
@@ -1986,7 +1986,7 @@ items:
               override: false
             level: null
             properties: []
-            spellbook: true
+            power list: true
             ability: ''
           _id: cY23MLeD0DX9PUBy
           sort: 700000
@@ -2003,7 +2003,7 @@ items:
             chatFlavor: ''
           duration:
             units: inst
-            concentration: false
+            maintained power: false
             override: false
           range:
             override: false
@@ -2030,7 +2030,7 @@ items:
               override: false
             level: 3
             properties: []
-            spellbook: true
+            power list: true
             ability: ''
           _id: VKzoQEEPwKupp4m9
           sort: 900000
@@ -2050,7 +2050,7 @@ items:
             chatFlavor: ''
           duration:
             units: inst
-            concentration: false
+            maintained power: false
             override: false
           range:
             override: false
@@ -2079,7 +2079,7 @@ items:
               override: false
             level: 7
             properties: []
-            spellbook: true
+            power list: true
             ability: ''
           _id: vGFIxLcAsiwClMib
           sort: 1000000
@@ -2099,7 +2099,7 @@ items:
             chatFlavor: ''
           duration:
             units: inst
-            concentration: false
+            maintained power: false
             override: false
           range:
             override: false
@@ -2128,7 +2128,7 @@ items:
               override: false
             level: 9
             properties: []
-            spellbook: true
+            power list: true
             ability: ''
           _id: 0rKTTbx9RvrZtX4g
           sort: 1100000
@@ -2148,7 +2148,7 @@ items:
             chatFlavor: ''
           duration:
             units: inst
-            concentration: false
+            maintained power: false
             override: false
           range:
             override: false
@@ -2177,7 +2177,7 @@ items:
               override: false
             level: 8
             properties: []
-            spellbook: true
+            power list: true
             ability: ''
           _id: uBynhvgh6fXhm7QZ
           sort: 1200000
@@ -2197,7 +2197,7 @@ items:
             chatFlavor: ''
           duration:
             units: inst
-            concentration: false
+            maintained power: false
             override: false
           range:
             override: false
@@ -2226,7 +2226,7 @@ items:
               override: false
             level: 5
             properties: []
-            spellbook: true
+            power list: true
             ability: ''
           _id: MPmqoSKKLLPmSQPV
           sort: 1300000
@@ -2246,7 +2246,7 @@ items:
             chatFlavor: ''
           duration:
             units: inst
-            concentration: false
+            maintained power: false
             override: false
           range:
             override: false
@@ -2275,7 +2275,7 @@ items:
               override: false
             level: 7
             properties: []
-            spellbook: true
+            power list: true
             ability: ''
           _id: zPUnEyL3pYEJVh3c
           sort: 1400000
@@ -2295,7 +2295,7 @@ items:
             chatFlavor: ''
           duration:
             units: inst
-            concentration: false
+            maintained power: false
             override: false
           range:
             override: false
@@ -2324,7 +2324,7 @@ items:
               override: false
             level: null
             properties: []
-            spellbook: true
+            power list: true
             ability: ''
           _id: Hg3UTI1e2ajoJ0Rh
           sort: 650000
@@ -2341,7 +2341,7 @@ items:
             chatFlavor: ''
           duration:
             units: inst
-            concentration: false
+            maintained power: false
             override: false
           range:
             override: false
@@ -2365,7 +2365,7 @@ items:
       description:
         value: >-
           <p class="feature">The [[lookup @name lowercase]] casts one of the
-          following spells, using Intelligence as the spellcasting ability
+          following spells, using Intelligence as the power system ability
           (spell save DC [[lookup @attributes.spell.dc]]):</p><p
           class="feature-trait"><strong>At Will:</strong>
           <em>@UUID[Compendium.dnd5e.spells24.Item.phbsplDetectMagi]{Detect
@@ -2393,7 +2393,7 @@ items:
           <em>@UUID[Compendium.dnd5e.spells24.Item.phbsplScrying000]{Scrying}</em>,
           <em>@UUID[Compendium.dnd5e.spells24.Item.phbsplTeleport00]{Teleport}</em></p>
         chat: ''
-      identifier: spellcasting
+      identifier: power system
       source:
         revision: 1
         rules: '2024'
@@ -2417,7 +2417,7 @@ items:
           activity: []
           effect: []
     _stats:
-      compendiumSource: Compendium.dnd-monster-manual.features.Item.mmSpellcasting00
+      compendiumSource: Compendium.dnd-monster-manual.features.Item.mmPower System00
       duplicateSource: null
       coreVersion: '13.344'
       systemId: dnd5e
@@ -2429,7 +2429,7 @@ items:
     ownership:
       default: 0
     sort: 5
-    _key: '!actors.items!mmArchmage000000.mmSpellcasting00'
+    _key: '!actors.items!mmArchmage000000.mmPower System00'
   - name: Detect Magic
     system:
       description:
@@ -2480,7 +2480,7 @@ items:
       properties:
         - vocal
         - somatic
-        - concentration
+        - maintained power
         - ritual
       materials:
         value: ''
@@ -2509,7 +2509,7 @@ items:
           duration:
             units: inst
             override: false
-            concentration: false
+            maintained power: false
           effects:
             - _id: BHw91lQmVgdx39WZ
           range:
@@ -2577,7 +2577,7 @@ items:
         name: Spell Changes
         img: systems/dnd5e/icons/svg/activity/cast.svg
         origin: >-
-          Compendium.dnd5e.actors24.Actor.mmArchmage000000.Item.mmSpellcasting00.Activity.3MkhXZwZstyLUC3q
+          Compendium.dnd5e.actors24.Actor.mmArchmage000000.Item.mmPower System00.Activity.3MkhXZwZstyLUC3q
         changes: []
         system: {}
         disabled: false
@@ -2616,7 +2616,7 @@ items:
         riders:
           activity: []
           effect: []
-        cachedFor: .Item.mmSpellcasting00.Activity.3MkhXZwZstyLUC3q
+        cachedFor: .Item.mmPower System00.Activity.3MkhXZwZstyLUC3q
     _stats:
       compendiumSource: Compendium.dnd5e.spells24.Item.phbsplDetectMagi
       duplicateSource: null
@@ -2694,7 +2694,7 @@ items:
         - vocal
         - somatic
         - material
-        - concentration
+        - maintained power
       materials:
         value: 1 Copper Piece
         consumed: false
@@ -2722,7 +2722,7 @@ items:
           duration:
             units: inst
             override: false
-            concentration: false
+            maintained power: false
           effects: []
           range:
             override: true
@@ -2748,7 +2748,7 @@ items:
             ability:
               - wis
             dc:
-              calculation: spellcasting
+              calculation: power system
               formula: ''
           uses:
             spent: 0
@@ -2774,7 +2774,7 @@ items:
             chatFlavor: ''
           duration:
             units: inst
-            concentration: false
+            maintained power: false
             override: false
           effects: []
           range:
@@ -2806,7 +2806,7 @@ items:
         name: Spell Changes
         img: systems/dnd5e/icons/svg/activity/cast.svg
         origin: >-
-          Compendium.dnd5e.actors24.Actor.mmArchmage000000.Item.mmSpellcasting00.Activity.yHNpRRDnVu5gPs4c
+          Compendium.dnd5e.actors24.Actor.mmArchmage000000.Item.mmPower System00.Activity.yHNpRRDnVu5gPs4c
         changes: []
         system: {}
         disabled: false
@@ -2845,7 +2845,7 @@ items:
         riders:
           activity: []
           effect: []
-        cachedFor: .Item.mmSpellcasting00.Activity.yHNpRRDnVu5gPs4c
+        cachedFor: .Item.mmPower System00.Activity.yHNpRRDnVu5gPs4c
     _stats:
       compendiumSource: Compendium.dnd5e.spells24.Item.phbsplDetectThou
       duplicateSource: null
@@ -2936,7 +2936,7 @@ items:
           duration:
             units: inst
             override: false
-            concentration: false
+            maintained power: false
           effects:
             - _id: SrIb7dbaZs5F4zi9
           range:
@@ -3007,7 +3007,7 @@ items:
         name: Spell Changes
         img: systems/dnd5e/icons/svg/activity/cast.svg
         origin: >-
-          Compendium.dnd5e.actors24.Actor.mmArchmage000000.Item.mmSpellcasting00.Activity.LOQzaXcyLwwmhCOM
+          Compendium.dnd5e.actors24.Actor.mmArchmage000000.Item.mmPower System00.Activity.LOQzaXcyLwwmhCOM
         changes: []
         system: {}
         disabled: false
@@ -3043,7 +3043,7 @@ items:
       default: 0
     flags:
       dnd5e:
-        cachedFor: .Item.mmSpellcasting00.Activity.LOQzaXcyLwwmhCOM
+        cachedFor: .Item.mmPower System00.Activity.LOQzaXcyLwwmhCOM
     _stats:
       compendiumSource: Compendium.dnd5e.spells24.Item.phbsplDisguiseSe
       duplicateSource: null
@@ -3063,8 +3063,8 @@ items:
           <p>A creature you touch has the &amp;Reference[invisible apply=false]
           condition until the spell ends. The spell ends early immediately after
           the target makes an attack roll, deals damage, or casts a
-          spell.</p><p><strong>Using a Higher-Level Spell Slot.</strong> You can
-          target one additional creature for each spell slot level above 2.</p>
+          spell.</p><p><strong>Using a Higher-Level Power Use.</strong> You can
+          target one additional creature for each power use level above 2.</p>
         chat: ''
       source:
         custom: ''
@@ -3102,7 +3102,7 @@ items:
         - vocal
         - somatic
         - material
-        - concentration
+        - maintained power
       materials:
         value: an eyelash in gum arabic
         consumed: false
@@ -3130,7 +3130,7 @@ items:
           duration:
             units: inst
             override: false
-            concentration: false
+            maintained power: false
           effects:
             - _id: 9svfDetqjhsFP3ey
           range:
@@ -3198,7 +3198,7 @@ items:
         name: Spell Changes
         img: systems/dnd5e/icons/svg/activity/cast.svg
         origin: >-
-          Compendium.dnd5e.actors24.Actor.mmArchmage000000.Item.mmSpellcasting00.Activity.PUsuSu2x1GYoOybD
+          Compendium.dnd5e.actors24.Actor.mmArchmage000000.Item.mmPower System00.Activity.PUsuSu2x1GYoOybD
         changes: []
         system: {}
         disabled: false
@@ -3234,7 +3234,7 @@ items:
       default: 0
     flags:
       dnd5e:
-        cachedFor: .Item.mmSpellcasting00.Activity.PUsuSu2x1GYoOybD
+        cachedFor: .Item.mmPower System00.Activity.PUsuSu2x1GYoOybD
     _stats:
       compendiumSource: Compendium.dnd5e.spells24.Item.phbsplInvisibili
       duplicateSource: null
@@ -3318,7 +3318,7 @@ items:
             chatFlavor: ''
           duration:
             units: inst
-            concentration: false
+            maintained power: false
             override: false
           range:
             override: false
@@ -3375,7 +3375,7 @@ items:
         name: Spell Changes
         img: systems/dnd5e/icons/svg/activity/cast.svg
         origin: >-
-          Compendium.dnd5e.actors24.Actor.mmArchmage000000.Item.mmSpellcasting00.Activity.9GuIbifC5Ti45jyZ
+          Compendium.dnd5e.actors24.Actor.mmArchmage000000.Item.mmPower System00.Activity.9GuIbifC5Ti45jyZ
         changes: []
         system: {}
         disabled: false
@@ -3411,7 +3411,7 @@ items:
       default: 0
     flags:
       dnd5e:
-        cachedFor: .Item.mmSpellcasting00.Activity.9GuIbifC5Ti45jyZ
+        cachedFor: .Item.mmPower System00.Activity.9GuIbifC5Ti45jyZ
     _stats:
       compendiumSource: Compendium.dnd5e.spells24.Item.phbsplLight00000
       duplicateSource: null
@@ -3495,7 +3495,7 @@ items:
           duration:
             units: inst
             override: false
-            concentration: false
+            maintained power: false
           effects:
             - _id: I59O22yjAwzqZOhN
           range:
@@ -3567,7 +3567,7 @@ items:
         name: Spell Changes
         img: systems/dnd5e/icons/svg/activity/cast.svg
         origin: >-
-          Compendium.dnd5e.actors24.Actor.mmArchmage000000.Item.mmSpellcasting00.Activity.1jpkndiQJ5Q14pFr
+          Compendium.dnd5e.actors24.Actor.mmArchmage000000.Item.mmPower System00.Activity.1jpkndiQJ5Q14pFr
         changes: []
         system: {}
         disabled: false
@@ -3606,7 +3606,7 @@ items:
         riders:
           activity: []
           effect: []
-        cachedFor: .Item.mmSpellcasting00.Activity.1jpkndiQJ5Q14pFr
+        cachedFor: .Item.mmPower System00.Activity.1jpkndiQJ5Q14pFr
     _stats:
       compendiumSource: Compendium.dnd5e.spells24.Item.phbsplMageArmor0
       duplicateSource: null
@@ -3702,7 +3702,7 @@ items:
           description: {}
           duration:
             units: inst
-            concentration: false
+            maintained power: false
             override: false
           effects: []
           range:
@@ -3730,7 +3730,7 @@ items:
         name: Spell Changes
         img: systems/dnd5e/icons/svg/activity/cast.svg
         origin: >-
-          Compendium.dnd5e.actors24.Actor.mmArchmage000000.Item.mmSpellcasting00.Activity.cY23MLeD0DX9PUBy
+          Compendium.dnd5e.actors24.Actor.mmArchmage000000.Item.mmPower System00.Activity.cY23MLeD0DX9PUBy
         changes: []
         system: {}
         disabled: false
@@ -3766,7 +3766,7 @@ items:
       default: 0
     flags:
       dnd5e:
-        cachedFor: .Item.mmSpellcasting00.Activity.cY23MLeD0DX9PUBy
+        cachedFor: .Item.mmPower System00.Activity.cY23MLeD0DX9PUBy
     _stats:
       compendiumSource: Compendium.dnd5e.spells24.Item.phbsplPrestidigi
       duplicateSource: null
@@ -3786,8 +3786,8 @@ items:
           <p>You touch a willing creature. For the duration, the target gains a
           Fly Speed of 60 feet and can hover. When the spell ends, the target
           falls if it is still aloft unless it can stop the
-          fall.</p><p><strong>Using a Higher-Level Spell Slot.</strong> You can
-          target one additional creature for each spell slot level above 3.</p>
+          fall.</p><p><strong>Using a Higher-Level Power Use.</strong> You can
+          target one additional creature for each power use level above 3.</p>
         chat: ''
       source:
         custom: ''
@@ -3825,7 +3825,7 @@ items:
         - vocal
         - somatic
         - material
-        - concentration
+        - maintained power
       materials:
         value: a feather
         consumed: false
@@ -3853,7 +3853,7 @@ items:
           duration:
             units: inst
             override: false
-            concentration: false
+            maintained power: false
           effects:
             - _id: EHFLuTHqI6cXn1zb
           range:
@@ -3926,7 +3926,7 @@ items:
         name: Spell Changes
         img: systems/dnd5e/icons/svg/activity/cast.svg
         origin: >-
-          Compendium.dnd5e.actors24.Actor.mmArchmage000000.Item.mmSpellcasting00.Activity.VKzoQEEPwKupp4m9
+          Compendium.dnd5e.actors24.Actor.mmArchmage000000.Item.mmPower System00.Activity.VKzoQEEPwKupp4m9
         changes: []
         system: {}
         disabled: false
@@ -3962,7 +3962,7 @@ items:
       default: 0
     flags:
       dnd5e:
-        cachedFor: .Item.mmSpellcasting00.Activity.VKzoQEEPwKupp4m9
+        cachedFor: .Item.mmPower System00.Activity.VKzoQEEPwKupp4m9
     _stats:
       compendiumSource: Compendium.dnd5e.spells24.Item.phbsplFly0000000
       duplicateSource: null
@@ -3983,8 +3983,8 @@ items:
           blasts out from you in a direction you choose. Each creature in the
           Line makes a Dexterity saving throw, taking 8d6 Lightning damage on a
           failed save or half as much damage on a successful
-          one.</p><p><strong>Using a Higher-Level Spell Slot.</strong> The
-          damage increases by 1d6 for each spell slot level above 3.</p>
+          one.</p><p><strong>Using a Higher-Level Power Use.</strong> The
+          damage increases by 1d6 for each power use level above 3.</p>
         chat: ''
       source:
         custom: ''
@@ -4047,7 +4047,7 @@ items:
           duration:
             units: inst
             override: false
-            concentration: false
+            maintained power: false
           effects: []
           range:
             override: false
@@ -4078,7 +4078,7 @@ items:
             ability:
               - dex
             dc:
-              calculation: spellcasting
+              calculation: power system
               formula: ''
           uses:
             spent: 0
@@ -4093,7 +4093,7 @@ items:
         name: Spell Changes
         img: systems/dnd5e/icons/svg/activity/cast.svg
         origin: >-
-          Compendium.dnd5e.actors24.Actor.mmArchmage000000.Item.mmSpellcasting00.Activity.vGFIxLcAsiwClMib
+          Compendium.dnd5e.actors24.Actor.mmArchmage000000.Item.mmPower System00.Activity.vGFIxLcAsiwClMib
         changes: []
         system: {}
         disabled: false
@@ -4129,7 +4129,7 @@ items:
       default: 0
     flags:
       dnd5e:
-        cachedFor: .Item.mmSpellcasting00.Activity.vGFIxLcAsiwClMib
+        cachedFor: .Item.mmPower System00.Activity.vGFIxLcAsiwClMib
     _stats:
       compendiumSource: Compendium.dnd5e.spells24.Item.phbsplLightningB
       duplicateSource: null
@@ -4150,8 +4150,8 @@ items:
           originating from you makes a Constitution saving throw, taking 8d8
           Cold damage on a failed save or half as much damage on a successful
           one. A creature killed by this spell becomes a frozen statue until it
-          thaws.</p><p><strong>Using a Higher-Level Spell Slot.</strong> The
-          damage increases by 1d8 for each spell slot level above 5.</p>
+          thaws.</p><p><strong>Using a Higher-Level Power Use.</strong> The
+          damage increases by 1d8 for each power use level above 5.</p>
         chat: ''
       source:
         custom: ''
@@ -4213,7 +4213,7 @@ items:
           duration:
             units: inst
             override: false
-            concentration: false
+            maintained power: false
           effects: []
           range:
             override: false
@@ -4244,7 +4244,7 @@ items:
             ability:
               - con
             dc:
-              calculation: spellcasting
+              calculation: power system
               formula: ''
           uses:
             spent: 0
@@ -4259,7 +4259,7 @@ items:
         name: Spell Changes
         img: systems/dnd5e/icons/svg/activity/cast.svg
         origin: >-
-          Compendium.dnd5e.actors24.Actor.mmArchmage000000.Item.mmSpellcasting00.Activity.0rKTTbx9RvrZtX4g
+          Compendium.dnd5e.actors24.Actor.mmArchmage000000.Item.mmPower System00.Activity.0rKTTbx9RvrZtX4g
         changes: []
         system: {}
         disabled: false
@@ -4295,7 +4295,7 @@ items:
       default: 0
     flags:
       dnd5e:
-        cachedFor: .Item.mmSpellcasting00.Activity.0rKTTbx9RvrZtX4g
+        cachedFor: .Item.mmPower System00.Activity.0rKTTbx9RvrZtX4g
     _stats:
       compendiumSource: Compendium.dnd5e.spells24.Item.phbsplConeofCold
       duplicateSource: null
@@ -4381,7 +4381,7 @@ items:
             chatFlavor: ''
           duration:
             units: inst
-            concentration: false
+            maintained power: false
             override: false
           effects:
             - _id: po9iJIqq4OqhvMw0
@@ -4457,7 +4457,7 @@ items:
         name: Spell Changes
         img: systems/dnd5e/icons/svg/activity/cast.svg
         origin: >-
-          Compendium.dnd5e.actors24.Actor.mmArchmage000000.Item.mmSpellcasting00.Activity.uBynhvgh6fXhm7QZ
+          Compendium.dnd5e.actors24.Actor.mmArchmage000000.Item.mmPower System00.Activity.uBynhvgh6fXhm7QZ
         changes: []
         system: {}
         disabled: false
@@ -4493,7 +4493,7 @@ items:
       default: 0
     flags:
       dnd5e:
-        cachedFor: .Item.mmSpellcasting00.Activity.uBynhvgh6fXhm7QZ
+        cachedFor: .Item.mmPower System00.Activity.uBynhvgh6fXhm7QZ
     _stats:
       compendiumSource: Compendium.dnd5e.spells24.Item.phbsplMindBlank0
       duplicateSource: null
@@ -4571,10 +4571,10 @@ items:
         - vocal
         - somatic
         - material
-        - concentration
+        - maintained power
       materials:
         value: >-
-          a focus worth 1,000+ GP, such as a crystal ball, mirror, or
+          a focus worth 1,000+ CR, such as a crystal ball, mirror, or
           water-filled font
         consumed: false
         cost: 0
@@ -4600,7 +4600,7 @@ items:
           duration:
             units: inst
             override: false
-            concentration: false
+            maintained power: false
           effects: []
           range:
             override: false
@@ -4643,7 +4643,7 @@ items:
           duration:
             units: inst
             override: false
-            concentration: false
+            maintained power: false
           effects: []
           range:
             override: false
@@ -4687,7 +4687,7 @@ items:
           duration:
             units: inst
             override: false
-            concentration: false
+            maintained power: false
           effects: []
           range:
             override: false
@@ -4731,7 +4731,7 @@ items:
           duration:
             units: inst
             override: false
-            concentration: false
+            maintained power: false
           effects: []
           range:
             override: false
@@ -4775,7 +4775,7 @@ items:
           duration:
             units: inst
             override: false
-            concentration: false
+            maintained power: false
           effects: []
           range:
             override: false
@@ -4819,7 +4819,7 @@ items:
           duration:
             units: inst
             override: false
-            concentration: false
+            maintained power: false
           effects: []
           range:
             override: false
@@ -4863,7 +4863,7 @@ items:
           duration:
             units: inst
             override: false
-            concentration: false
+            maintained power: false
           effects: []
           range:
             override: false
@@ -4907,7 +4907,7 @@ items:
           duration:
             units: inst
             override: false
-            concentration: false
+            maintained power: false
           effects: []
           range:
             override: false
@@ -4951,7 +4951,7 @@ items:
           duration:
             units: inst
             override: false
-            concentration: false
+            maintained power: false
           effects: []
           range:
             override: false
@@ -4997,7 +4997,7 @@ items:
           duration:
             units: inst
             override: false
-            concentration: false
+            maintained power: false
           range:
             override: false
           target:
@@ -5054,7 +5054,7 @@ items:
         name: Spell Changes
         img: systems/dnd5e/icons/svg/activity/cast.svg
         origin: >-
-          Compendium.dnd5e.actors24.Actor.mmArchmage000000.Item.mmSpellcasting00.Activity.MPmqoSKKLLPmSQPV
+          Compendium.dnd5e.actors24.Actor.mmArchmage000000.Item.mmPower System00.Activity.MPmqoSKKLLPmSQPV
         changes: []
         system: {}
         disabled: false
@@ -5090,7 +5090,7 @@ items:
       default: 0
     flags:
       dnd5e:
-        cachedFor: .Item.mmSpellcasting00.Activity.MPmqoSKKLLPmSQPV
+        cachedFor: .Item.mmPower System00.Activity.MPmqoSKKLLPmSQPV
     _stats:
       compendiumSource: Compendium.dnd5e.spells24.Item.phbsplScrying000
       duplicateSource: null
@@ -5218,7 +5218,7 @@ items:
             chatFlavor: ''
           duration:
             units: inst
-            concentration: false
+            maintained power: false
             override: false
           effects: []
           range:
@@ -5252,7 +5252,7 @@ items:
         name: Spell Changes
         img: systems/dnd5e/icons/svg/activity/cast.svg
         origin: >-
-          Compendium.dnd5e.actors24.Actor.mmArchmage000000.Item.mmSpellcasting00.Activity.zPUnEyL3pYEJVh3c
+          Compendium.dnd5e.actors24.Actor.mmArchmage000000.Item.mmPower System00.Activity.zPUnEyL3pYEJVh3c
         changes: []
         system: {}
         disabled: false
@@ -5288,7 +5288,7 @@ items:
       default: 0
     flags:
       dnd5e:
-        cachedFor: .Item.mmSpellcasting00.Activity.zPUnEyL3pYEJVh3c
+        cachedFor: .Item.mmPower System00.Activity.zPUnEyL3pYEJVh3c
     _stats:
       compendiumSource: Compendium.dnd5e.spells24.Item.phbsplTeleport00
       duplicateSource: null
@@ -5378,7 +5378,7 @@ items:
             chatFlavor: ''
           duration:
             units: inst
-            concentration: false
+            maintained power: false
             override: false
           range:
             override: false
@@ -5430,7 +5430,7 @@ items:
         name: Spell Changes
         img: systems/dnd5e/icons/svg/activity/cast.svg
         origin: >-
-          Compendium.dnd5e.actors24.Actor.mmArchmage000000.Item.mmSpellcasting00.Activity.Hg3UTI1e2ajoJ0Rh
+          Compendium.dnd5e.actors24.Actor.mmArchmage000000.Item.mmPower System00.Activity.Hg3UTI1e2ajoJ0Rh
         changes: []
         system: {}
         disabled: false
@@ -5469,7 +5469,7 @@ items:
         riders:
           activity: []
           effect: []
-        cachedFor: .Item.mmSpellcasting00.Activity.Hg3UTI1e2ajoJ0Rh
+        cachedFor: .Item.mmPower System00.Activity.Hg3UTI1e2ajoJ0Rh
     _stats:
       compendiumSource: Compendium.dnd5e.spells24.Item.phbsplMageHand00
       duplicateSource: null

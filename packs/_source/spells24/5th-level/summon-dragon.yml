@@ -11,14 +11,14 @@ system:
       it takes its turn immediately after yours. It obeys your verbal commands
       (no action required by you). If you don't issue any, it takes the Dodge
       action and uses its movement to avoid danger.</p><p><strong>Using a
-      Higher-Level Spell Slot. </strong>Use the spell slot's level for the
+      Higher-Level Power Use. </strong>Use the power use's level for the
       spell's level in the stat block.</p><section class="fvtt advice"
       style="margin:0.5rem;padding:0.5rem"><article><p>In addition to the noted
       usage of the spell's level in the spirit's Traits and Actions, the
       following attributes are also affected.</p><table><caption>Draconic
       Spirit</caption><tbody><tr><td><strong>AC</strong></td><td>14 + the
       spell's level</td></tr><tr><td><strong>HP</strong></td><td>50 + 10 for
-      each spell level above
+      each power level above
       5</td></tr><tr><td><strong>PB</strong></td><td>equals your Proficiency
       Bonus</td></tr></tbody></table></article></section>
     chat: ''
@@ -58,9 +58,9 @@ system:
     - vocal
     - somatic
     - material
-    - concentration
+    - maintained power
   materials:
-    value: an object with the image of a dragon engraved on it worth 500+ GP
+    value: an object with the image of a dragon engraved on it worth 500+ CR
     consumed: false
     cost: 0
     supply: 0

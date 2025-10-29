@@ -6,8 +6,8 @@ system:
       out from you in a direction you choose. Each creature in the Line makes a
       Dexterity saving throw, taking 8d6 Lightning damage on a failed save or
       half as much damage on a successful one.</p><p><strong>Using a
-      Higher-Level Spell Slot.</strong> The damage increases by 1d6 for each
-      spell slot level above 3.</p>
+      Higher-Level Power Use.</strong> The damage increases by 1d6 for each
+      power use level above 3.</p>
     chat: ''
   source:
     custom: ''
@@ -97,7 +97,7 @@ system:
       save:
         ability: dex
         dc:
-          calculation: spellcasting
+          calculation: power system
           formula: ''
       uses:
         spent: 0

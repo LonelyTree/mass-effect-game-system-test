@@ -48,7 +48,7 @@ system:
   materials:
     value: >-
       A set of divinatory tools—such as bones, ivory sticks, cards, teeth, or
-      carved runes—worth 100 gp and an object from the location you wish to find
+      carved runes—worth 100 CR and an object from the location you wish to find
     consumed: false
     cost: 100
     supply: 0
@@ -59,7 +59,7 @@ system:
     - vocal
     - somatic
     - material
-    - concentration
+    - maintained power
   activities:
     dnd5eactivity000:
       _id: dnd5eactivity000
@@ -78,7 +78,7 @@ system:
         chatFlavor: ''
       duration:
         units: inst
-        concentration: false
+        maintained power: false
         override: false
       effects: []
       range:

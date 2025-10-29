@@ -57,7 +57,7 @@ system:
   school: con
   materials:
     value: >-
-      Rare chalks and inks infused with precious gems with 50 gp, which the
+      Rare chalks and inks infused with precious gems with 50 CR, which the
       spell consumes
     consumed: true
     cost: 50
@@ -86,7 +86,7 @@ system:
         chatFlavor: ''
       duration:
         units: inst
-        concentration: false
+        maintained power: false
         override: false
       effects: []
       range:

@@ -79,7 +79,7 @@ system:
       description: {}
       duration:
         units: inst
-        concentration: false
+        maintained power: false
         override: false
       effects: []
       range:

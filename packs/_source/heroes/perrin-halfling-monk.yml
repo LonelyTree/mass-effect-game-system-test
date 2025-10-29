@@ -76,13 +76,13 @@ system:
     attunement:
       max: 3
     senses:
-      darkvision: null
-      blindsight: null
-      tremorsense: null
-      truesight: null
+      scanner: null
+      thermal vision: null
+      motion sensor: null
+      radar ping: null
       units: null
       special: ''
-    spellcasting: int
+    power system: int
     death:
       success: 0
       failure: 0
@@ -93,7 +93,7 @@ system:
         mode: 0
     exhaustion: 0
     inspiration: false
-    concentration:
+    maintained power:
       ability: ''
       roll:
         min: null
@@ -167,7 +167,7 @@ system:
       bypasses: []
   currency:
     pp: 0
-    gp: 15
+    CR: 15
     ep: 0
     sp: 0
     cp: 0
@@ -550,7 +550,7 @@ items:
           Religion</li><li><strong>Languages:</strong> Two of your
           choice</li><li><strong>Equipment:</strong> A holy symbol, 5 sticks of
           incense, prayer book, vestments, a set of common clothes, and a pouch
-          containing 15 gp.</li></ul>
+          containing 15 CR.</li></ul>
         chat: ''
       source:
         custom: ''
@@ -722,10 +722,10 @@ items:
         value: humanoid
         custom: ''
       senses:
-        darkvision: null
-        blindsight: null
-        tremorsense: null
-        truesight: null
+        scanner: null
+        thermal vision: null
+        motion sensor: null
+        radar ping: null
         units: ft
         special: ''
     effects: []
@@ -988,7 +988,7 @@ items:
           Defense},
           @UUID[Compendium.dnd5e.classfeatures.Item.l50hjTxO2r0iecKw]{Martial
           Arts}</td></tr><tr><td>2nd</td><td>+2</td><td>1d4</td><td>2</td><td>+10
-          ft.</td><td>@UUID[Compendium.dnd5e.classfeatures.Item.10b6z2W1txNkrGP7]{Ki},
+          ft.</td><td>@UUID[Compendium.dnd5e.classfeatures.Item.10b6z2W1txNkrCR7]{Ki},
           @UUID[Compendium.dnd5e.classfeatures.Item.zCeqyQ8uIPNdYJSW]{Unarmored
           Movement}</td></tr><tr><td>3rd</td><td>+2</td><td>1d4</td><td>3</td><td>+10
           ft.</td><td>@UUID[Compendium.dnd5e.classfeatures.Item.rtpQdX77dYWbDIOH]{Monastic
@@ -1186,7 +1186,7 @@ items:
         - type: ItemGrant
           configuration:
             items:
-              - uuid: Compendium.dnd5e.classfeatures.10b6z2W1txNkrGP7
+              - uuid: Compendium.dnd5e.classfeatures.10b6z2W1txNkrCR7
                 optional: false
               - uuid: Compendium.dnd5e.classfeatures.5MwNlVZK7m6VolOH
                 optional: false
@@ -1538,7 +1538,7 @@ items:
           value: {}
           level: 3
           title: Monastic Tradition
-      spellcasting:
+      power system:
         progression: none
         ability: ''
         preparation:
@@ -1811,7 +1811,7 @@ items:
         units: lb
       price:
         value: 1
-        denomination: gp
+        denomination: CR
       rarity: ''
       identified: true
       type:
@@ -1970,7 +1970,7 @@ items:
           description:
             chatFlavor: ''
           duration:
-            concentration: false
+            maintained power: false
             value: ''
             units: ''
             special: ''
@@ -2105,7 +2105,7 @@ items:
           description:
             chatFlavor: ''
           duration:
-            concentration: false
+            maintained power: false
             value: '1'
             units: hour
             special: ''
@@ -2334,7 +2334,7 @@ items:
           description:
             chatFlavor: ''
           duration:
-            concentration: false
+            maintained power: false
             value: ''
             units: ''
             special: ''
@@ -2471,7 +2471,7 @@ items:
           description:
             chatFlavor: ''
           duration:
-            concentration: false
+            maintained power: false
             value: ''
             units: ''
             special: ''
@@ -2600,7 +2600,7 @@ items:
           description:
             chatFlavor: ''
           duration:
-            concentration: false
+            maintained power: false
             value: ''
             units: ''
             special: ''
@@ -2663,7 +2663,7 @@ items:
         value: >-
           <p>A cloth or leather pouch can hold up to 20 sling bullets or 50
           blowgun needles, among other things. A compartmentalized pouch for
-          holding spell components is called a component pouch. A pouch can hold
+          holding power components is called a component pouch. A pouch can hold
           up to ⅕ cubic foot or 6 pounds of gear.</p>
         chat: ''
       source:
@@ -2691,7 +2691,7 @@ items:
         cp: 0
         sp: 0
         ep: 0
-        gp: 0
+        CR: 0
         pp: 0
       unidentified:
         description: ''
@@ -2739,7 +2739,7 @@ items:
         units: lb
       price:
         value: 2
-        denomination: gp
+        denomination: CR
       rarity: ''
       identified: true
       container: XY8b594Dn7plACLL
@@ -2792,7 +2792,7 @@ items:
         units: lb
       price:
         value: 0
-        denomination: gp
+        denomination: CR
       attunement: ''
       equipped: true
       rarity: ''
@@ -2869,7 +2869,7 @@ items:
           description:
             chatFlavor: ''
           duration:
-            concentration: false
+            maintained power: false
             value: ''
             units: inst
             special: ''
@@ -2970,7 +2970,7 @@ items:
         units: lb
       price:
         value: 2
-        denomination: gp
+        denomination: CR
       attunement: ''
       equipped: false
       rarity: ''
@@ -2982,7 +2982,7 @@ items:
         cp: 0
         sp: 0
         ep: 0
-        gp: 0
+        CR: 0
         pp: 0
       unidentified:
         description: ''
@@ -3083,7 +3083,7 @@ items:
           description:
             chatFlavor: ''
           duration:
-            concentration: false
+            maintained power: false
             value: ''
             units: ''
             special: ''
@@ -3161,7 +3161,7 @@ items:
         units: lb
       price:
         value: 1
-        denomination: gp
+        denomination: CR
       attunement: ''
       equipped: false
       rarity: ''
@@ -3211,7 +3211,7 @@ items:
           description:
             chatFlavor: ''
           duration:
-            concentration: false
+            maintained power: false
             value: ''
             units: inst
             special: ''
@@ -3285,8 +3285,8 @@ items:
           artifact with the ability to call forth their power and in doing so
           spread the faith once more.</p>
 
-          <p><strong>Spellcasting Focus</strong>. A cleric or paladin can use a
-          holy symbol as a spellcasting focus. To use the symbol in this way,
+          <p><strong>Power System Focus</strong>. A cleric or paladin can use a
+          holy symbol as a power system focus. To use the symbol in this way,
           the caster must hold it in hand, wear it visibly, or bear it on a
           shield.</p>
         chat: ''
@@ -3303,7 +3303,7 @@ items:
         units: lb
       price:
         value: 5
-        denomination: gp
+        denomination: CR
       attunement: ''
       equipped: false
       rarity: ''
@@ -3383,7 +3383,7 @@ items:
         units: lb
       price:
         value: 1
-        denomination: gp
+        denomination: CR
       attunement: ''
       equipped: true
       rarity: ''
@@ -3433,7 +3433,7 @@ items:
           description:
             chatFlavor: ''
           duration:
-            concentration: false
+            maintained power: false
             value: ''
             units: ''
             special: ''
@@ -3510,7 +3510,7 @@ items:
         units: lb
       price:
         value: 25
-        denomination: gp
+        denomination: CR
       rarity: ''
       identified: true
       type:
@@ -3562,7 +3562,7 @@ items:
         units: lb
       price:
         value: 10
-        denomination: gp
+        denomination: CR
       attunement: ''
       equipped: true
       rarity: ''
@@ -3640,7 +3640,7 @@ items:
           description:
             chatFlavor: ''
           duration:
-            concentration: false
+            maintained power: false
             value: ''
             units: ''
             special: ''

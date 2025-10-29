@@ -189,7 +189,7 @@ pages:
         content: >-
           @Embed[Compendium.dnd5e.content24.JournalEntry.mmMonstersAtoZ00.JournalEntryPage.g2nO7BdHr87x4LcU
           caption=false cite=false]<h2>Crawling
-          Claw</h2>@Embed[Compendium.dnd5e.content24.JournalEntry.mmMonstersAtoZ00.JournalEntryPage.qVzJYYgD5qGPzC5T]
+          Claw</h2>@Embed[Compendium.dnd5e.content24.JournalEntry.mmMonstersAtoZ00.JournalEntryPage.qVzJYYgD5qCRzC5T]
           caption=false cite=false]<h2>Swarm of Crawling
           Claws</h2>@Embed[Compendium.dnd5e.content24.JournalEntry.mmMonstersAtoZ00.JournalEntryPage.H0hptBJtqqsq7vnK]
           caption=false cite=false]
@@ -5992,7 +5992,7 @@ pages:
           caption=false cite=false]<h2>Sphinx of
           Valor</h2>@Embed[Compendium.dnd-monster-manual.content.JournalEntry.mmMonstersAtoZ00.JournalEntryPage.lb8l0oAUq5gHE7SE]
           caption=false cite=false]<h2>Sphinx
-          Lairs</h2>@Embed[Compendium.dnd-monster-manual.content.JournalEntry.mmMonstersAtoZ00.JournalEntryPage.GPhDyArKCA2mX2NX]
+          Lairs</h2>@Embed[Compendium.dnd-monster-manual.content.JournalEntry.mmMonstersAtoZ00.JournalEntryPage.CRhDyArKCA2mX2NX]
           caption=false cite=false]
     title:
       show: true

@@ -20,7 +20,7 @@ system:
       Sense}, @UUID[Compendium.dnd5e.classfeatures.Item.OdrvL3afwLOPeuYZ]{Lay on
       Hands}</td></tr><tr><td>2nd</td><td>+2</td><td>@UUID[Compendium.dnd5e.classfeatures.Item.Ho7dVxBlOYFlfBHk]{Fighting
       Style},
-      @UUID[Compendium.dnd5e.classfeatures.Item.ihoQHsmVZlyDbPhX]{Spellcasting},
+      @UUID[Compendium.dnd5e.classfeatures.Item.ihoQHsmVZlyDbPhX]{Power System},
       @UUID[Compendium.dnd5e.classfeatures.Item.ySMPQ6zNSlvkrl2f]{Divine
       Smite}</td></tr><tr><td>3rd</td><td>+2</td><td>@UUID[Compendium.dnd5e.classfeatures.Item.dY9yrqkyEDuF0CG2]{Divine
       Health},
@@ -44,7 +44,7 @@ system:
       Touch}</td></tr><tr><td>15th</td><td>+5</td><td>Sacred Oath
       feature</td></tr><tr><td>16th</td><td>+5</td><td>@UUID[Compendium.dnd5e.classfeatures.Item.s0Cc2zcX0JzIgam5]{Ability
       Score Improvement}</td></tr><tr><td>17th</td><td>+6</td><td>5th Level
-      Spell Slot</td></tr><tr><td>18th</td><td>+6</td><td>Aura
+      Power Use</td></tr><tr><td>18th</td><td>+6</td><td>Aura
       improvements</td></tr><tr><td>19th</td><td>+6</td><td>@UUID[Compendium.dnd5e.classfeatures.Item.s0Cc2zcX0JzIgam5]{Ability
       Score Improvement}</td></tr><tr><td>20th</td><td>+6</td><td>Sacred Oath
       feature</td></tr></tbody></table><h1>Sacred Oaths</h1><p>Becoming a
@@ -344,7 +344,7 @@ system:
         added: {}
         replaced: {}
       title: Fighting Style
-      _id: GPzUDRFo5bfrhU1K
+      _id: CRzUDRFo5bfrhU1K
       hint: >-
         Choose one of the following options. You can’t take a Fighting Style
         option more than once, even if you later get to choose again.
@@ -453,7 +453,7 @@ system:
       value: {}
       level: 3
       title: Sacred Oath
-  spellcasting:
+  power system:
     progression: half
     ability: cha
     preparation:

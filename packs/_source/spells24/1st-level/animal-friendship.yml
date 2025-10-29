@@ -6,7 +6,7 @@ system:
       on a Wisdom saving throw or have the &amp;Reference[charmed apply=false]
       condition for the duration. If you or one of your allies deals damage to
       the target, the spells ends.</p><p><strong>Using a Higher-Level Spell
-      Slot.</strong> You can target one additional Beast for each spell slot
+      Slot.</strong> You can target one additional Beast for each power use
       level above 1.</p>
     chat: ''
   source:
@@ -90,7 +90,7 @@ system:
       save:
         ability: wis
         dc:
-          calculation: spellcasting
+          calculation: power system
           formula: ''
       uses:
         spent: 0

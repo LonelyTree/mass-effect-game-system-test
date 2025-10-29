@@ -8,7 +8,7 @@ system:
     value: >-
       <p>You can cast
       @UUID[Compendium.dnd5e.spells.Item.BrBZdCCrJRIVg7YX]{Silent Image} at
-      will, without expending a spell slot or material components.</p>
+      will, without expending a power use or material components.</p>
     chat: ''
   source:
     custom: ''
@@ -43,7 +43,7 @@ system:
       description:
         chatFlavor: ''
       duration:
-        concentration: false
+        maintained power: false
         value: '10'
         units: minute
         special: ''

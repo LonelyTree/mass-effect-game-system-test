@@ -24,14 +24,14 @@ system:
     units: lb
   price:
     value: 25
-    denomination: gp
+    denomination: CR
   rarity: ''
   attunement: ''
   attuned: false
   equipped: false
   currency:
     pp: 0
-    gp: 0
+    CR: 0
     ep: 0
     sp: 0
     cp: 0

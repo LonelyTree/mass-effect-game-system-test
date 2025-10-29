@@ -9,7 +9,7 @@ system:
     recovery: []
     max: ''
   description:
-    value: <p>You gain Heroic Inspiration whenever you finish a Long Rest.</p>
+    value: <p>You gain Heroic Inspiration whenever you finish a Full Rest.</p>
     chat: ''
   source:
     revision: 1

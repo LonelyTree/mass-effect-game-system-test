@@ -53,7 +53,7 @@ system:
     - vocal
     - somatic
     - material
-    - concentration
+    - maintained power
   materials:
     value: iron filings
     consumed: false
@@ -79,7 +79,7 @@ system:
         chatFlavor: ''
       duration:
         units: inst
-        concentration: false
+        maintained power: false
         override: false
       effects: []
       range:

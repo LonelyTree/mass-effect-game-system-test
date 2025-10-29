@@ -30,7 +30,7 @@ system:
     units: lb
   price:
     value: 200
-    denomination: gp
+    denomination: CR
   attunement: ''
   equipped: false
   rarity: uncommon
@@ -83,7 +83,7 @@ system:
       description:
         chatFlavor: ''
       duration:
-        concentration: false
+        maintained power: false
         value: ''
         units: minute
         special: ''

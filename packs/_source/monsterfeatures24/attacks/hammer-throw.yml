@@ -24,7 +24,7 @@ system:
         chatFlavor: 'On Hit: Target pushed 15 feet away.'
       duration:
         units: inst
-        concentration: false
+        maintained power: false
         override: false
       effects:
         - _id: Jvy5UeJBi7Y0WmAp
@@ -95,7 +95,7 @@ system:
     units: lb
   price:
     value: 0
-    denomination: gp
+    denomination: CR
   rarity: ''
   attunement: ''
   attuned: false

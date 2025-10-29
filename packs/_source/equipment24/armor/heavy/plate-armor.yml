@@ -5,7 +5,7 @@ system:
     chat: ''
   price:
     value: 1500
-    denomination: gp
+    denomination: CR
   source:
     custom: ''
     rules: '2024'

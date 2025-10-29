@@ -1,4 +1,4 @@
-_id: GP8JMSDugRxuLOD2
+_id: CR8JMSDugRxuLOD2
 name: Adult Green Dragon
 type: npc
 img: null
@@ -75,15 +75,15 @@ system:
     attunement:
       max: 3
     senses:
-      darkvision: 120
-      blindsight: 60
-      tremorsense: 0
-      truesight: 0
+      scanner: 120
+      thermal vision: 60
+      motion sensor: 0
+      radar ping: 0
       units: ft
       special: ''
-    spellcasting: ''
+    power system: ''
     exhaustion: 0
-    concentration:
+    maintained power:
       ability: ''
       roll:
         min: null
@@ -148,7 +148,7 @@ system:
       bypasses: []
   currency:
     pp: 0
-    gp: 0
+    CR: 0
     ep: 0
     sp: 0
     cp: 0
@@ -528,7 +528,7 @@ items:
       modifiedTime: 1745449560162
       lastModifiedBy: dnd5ebuilder0000
       exportSource: null
-    _key: '!actors.items!GP8JMSDugRxuLOD2.iSMssiqxkZFEt2ch'
+    _key: '!actors.items!CR8JMSDugRxuLOD2.iSMssiqxkZFEt2ch'
   - _id: dOplnQbE1lIu7Rt8
     name: Legendary Resistance
     type: feat
@@ -580,7 +580,7 @@ items:
           description:
             chatFlavor: ''
           duration:
-            concentration: false
+            maintained power: false
             value: ''
             units: ''
             special: ''
@@ -636,7 +636,7 @@ items:
       modifiedTime: 1745449560162
       lastModifiedBy: dnd5ebuilder0000
       exportSource: null
-    _key: '!actors.items!GP8JMSDugRxuLOD2.dOplnQbE1lIu7Rt8'
+    _key: '!actors.items!CR8JMSDugRxuLOD2.dOplnQbE1lIu7Rt8'
   - _id: dhanHpeimPZOKFTP
     name: Multiattack
     type: feat
@@ -683,7 +683,7 @@ items:
           description:
             chatFlavor: ''
           duration:
-            concentration: false
+            maintained power: false
             value: ''
             units: ''
             special: ''
@@ -739,7 +739,7 @@ items:
       modifiedTime: 1745449565860
       lastModifiedBy: dnd5ebuilder0000
       exportSource: null
-    _key: '!actors.items!GP8JMSDugRxuLOD2.dhanHpeimPZOKFTP'
+    _key: '!actors.items!CR8JMSDugRxuLOD2.dhanHpeimPZOKFTP'
   - _id: ZJR61a1mg2JHdHE0
     name: Bite
     type: weapon
@@ -761,7 +761,7 @@ items:
         units: lb
       price:
         value: 0
-        denomination: gp
+        denomination: CR
       attunement: ''
       equipped: true
       rarity: ''
@@ -836,7 +836,7 @@ items:
           description:
             chatFlavor: ''
           duration:
-            concentration: false
+            maintained power: false
             value: ''
             units: ''
             special: ''
@@ -914,7 +914,7 @@ items:
       modifiedTime: 1745449565159
       lastModifiedBy: dnd5ebuilder0000
       exportSource: null
-    _key: '!actors.items!GP8JMSDugRxuLOD2.ZJR61a1mg2JHdHE0'
+    _key: '!actors.items!CR8JMSDugRxuLOD2.ZJR61a1mg2JHdHE0'
   - _id: I4ycwNCADZj1bun0
     name: Claw
     type: weapon
@@ -936,7 +936,7 @@ items:
         units: lb
       price:
         value: 0
-        denomination: gp
+        denomination: CR
       attunement: ''
       equipped: true
       rarity: ''
@@ -1011,7 +1011,7 @@ items:
           description:
             chatFlavor: ''
           duration:
-            concentration: false
+            maintained power: false
             value: ''
             units: ''
             special: ''
@@ -1077,7 +1077,7 @@ items:
       modifiedTime: 1745449565159
       lastModifiedBy: dnd5ebuilder0000
       exportSource: null
-    _key: '!actors.items!GP8JMSDugRxuLOD2.I4ycwNCADZj1bun0'
+    _key: '!actors.items!CR8JMSDugRxuLOD2.I4ycwNCADZj1bun0'
   - _id: HwjAaKkl4iBsFB24
     name: Tail
     type: weapon
@@ -1099,7 +1099,7 @@ items:
         units: lb
       price:
         value: 0
-        denomination: gp
+        denomination: CR
       attunement: ''
       equipped: true
       rarity: ''
@@ -1174,7 +1174,7 @@ items:
           description:
             chatFlavor: ''
           duration:
-            concentration: false
+            maintained power: false
             value: ''
             units: ''
             special: ''
@@ -1241,7 +1241,7 @@ items:
       modifiedTime: 1745449624048
       lastModifiedBy: dnd5ebuilder0000
       exportSource: null
-    _key: '!actors.items!GP8JMSDugRxuLOD2.HwjAaKkl4iBsFB24'
+    _key: '!actors.items!CR8JMSDugRxuLOD2.HwjAaKkl4iBsFB24'
   - _id: k9uTT39kBp2sDDUE
     name: Frightful Presence
     type: feat
@@ -1295,7 +1295,7 @@ items:
           description:
             chatFlavor: ''
           duration:
-            concentration: false
+            maintained power: false
             value: '1'
             units: minute
             special: ''
@@ -1355,7 +1355,7 @@ items:
       modifiedTime: 1745449588006
       lastModifiedBy: dnd5ebuilder0000
       exportSource: null
-    _key: '!actors.items!GP8JMSDugRxuLOD2.k9uTT39kBp2sDDUE'
+    _key: '!actors.items!CR8JMSDugRxuLOD2.k9uTT39kBp2sDDUE'
   - _id: WAglSb6wsm8V1iCd
     name: Poison Breath
     type: feat
@@ -1414,7 +1414,7 @@ items:
           description:
             chatFlavor: ''
           duration:
-            concentration: false
+            maintained power: false
             value: ''
             units: inst
             special: ''
@@ -1485,7 +1485,7 @@ items:
       modifiedTime: 1745449603574
       lastModifiedBy: dnd5ebuilder0000
       exportSource: null
-    _key: '!actors.items!GP8JMSDugRxuLOD2.WAglSb6wsm8V1iCd'
+    _key: '!actors.items!CR8JMSDugRxuLOD2.WAglSb6wsm8V1iCd'
   - _id: jls6tBzceKBhLIJ9
     name: Legendary Actions
     type: feat
@@ -1531,7 +1531,7 @@ items:
       modifiedTime: 1745449560162
       lastModifiedBy: dnd5ebuilder0000
       exportSource: null
-    _key: '!actors.items!GP8JMSDugRxuLOD2.jls6tBzceKBhLIJ9'
+    _key: '!actors.items!CR8JMSDugRxuLOD2.jls6tBzceKBhLIJ9'
   - _id: hj8x2cAmsCz65VMp
     name: Detect
     type: feat
@@ -1574,7 +1574,7 @@ items:
           description:
             chatFlavor: ''
           duration:
-            concentration: false
+            maintained power: false
             value: ''
             units: ''
             special: ''
@@ -1634,7 +1634,7 @@ items:
       modifiedTime: 1745449614908
       lastModifiedBy: dnd5ebuilder0000
       exportSource: null
-    _key: '!actors.items!GP8JMSDugRxuLOD2.hj8x2cAmsCz65VMp'
+    _key: '!actors.items!CR8JMSDugRxuLOD2.hj8x2cAmsCz65VMp'
   - _id: jp6U9gVAnEqYxjal
     name: Tail Attack
     type: weapon
@@ -1656,7 +1656,7 @@ items:
         units: lb
       price:
         value: 0
-        denomination: gp
+        denomination: CR
       attunement: ''
       equipped: true
       rarity: ''
@@ -1727,7 +1727,7 @@ items:
           description:
             chatFlavor: ''
           duration:
-            concentration: false
+            maintained power: false
             value: ''
             units: ''
             special: ''
@@ -1788,7 +1788,7 @@ items:
       modifiedTime: 1745449641756
       lastModifiedBy: dnd5ebuilder0000
       exportSource: null
-    _key: '!actors.items!GP8JMSDugRxuLOD2.jp6U9gVAnEqYxjal'
+    _key: '!actors.items!CR8JMSDugRxuLOD2.jp6U9gVAnEqYxjal'
   - _id: mjuHphDtsXPuLymt
     name: Wing Attack
     type: weapon
@@ -1814,7 +1814,7 @@ items:
         units: lb
       price:
         value: 0
-        denomination: gp
+        denomination: CR
       attunement: ''
       equipped: true
       rarity: ''
@@ -1889,7 +1889,7 @@ items:
           description:
             chatFlavor: ''
           duration:
-            concentration: false
+            maintained power: false
             value: ''
             units: inst
             special: ''
@@ -1966,7 +1966,7 @@ items:
       modifiedTime: 1745453103538
       lastModifiedBy: dnd5ebuilder0000
       exportSource: null
-    _key: '!actors.items!GP8JMSDugRxuLOD2.mjuHphDtsXPuLymt'
+    _key: '!actors.items!CR8JMSDugRxuLOD2.mjuHphDtsXPuLymt'
 effects: []
 folder: PNekSR74iAZ5dJwZ
 sort: 0
@@ -1982,4 +1982,4 @@ _stats:
   modifiedTime: 1745449664962
   lastModifiedBy: dnd5ebuilder0000
   exportSource: null
-_key: '!actors!GP8JMSDugRxuLOD2'
+_key: '!actors!CR8JMSDugRxuLOD2'

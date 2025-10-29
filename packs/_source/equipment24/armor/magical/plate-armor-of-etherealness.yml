@@ -18,7 +18,7 @@ system:
           - vocal
           - somatic
           - material
-        spellbook: true
+        power list: true
       _id: 4dRHNHbVFlWq34Ow
       sort: 200000
       activation:
@@ -37,7 +37,7 @@ system:
         chatFlavor: ''
       duration:
         units: spec
-        concentration: false
+        maintained power: false
         override: true
         value: ''
         special: >-
@@ -83,7 +83,7 @@ system:
         chatFlavor: ''
       duration:
         units: inst
-        concentration: false
+        maintained power: false
         override: false
       effects:
         - _id: Y44mAwCmfNroVwOJ
@@ -159,7 +159,7 @@ system:
     units: lb
   price:
     value: 200000
-    denomination: gp
+    denomination: CR
   rarity: legendary
   attunement: required
   attuned: false

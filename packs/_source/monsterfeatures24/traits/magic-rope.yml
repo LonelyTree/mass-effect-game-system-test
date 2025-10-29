@@ -19,7 +19,7 @@ system:
       feet away from the [[lookup @name lowercase]] for 1 hour or more, or if
       the [[lookup @name lowercase]] dies. If the rope is damaged or destroyed,
       the [[lookup @name lowercase]] can fully restore it when finishing a Short
-      or Long Rest.</p>
+      or Full Rest.</p>
     chat: ''
   identifier: magic-rope
   source:

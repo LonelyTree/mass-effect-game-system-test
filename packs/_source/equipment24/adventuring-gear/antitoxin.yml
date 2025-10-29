@@ -7,7 +7,7 @@ system:
     chat: ''
   price:
     value: 50
-    denomination: gp
+    denomination: CR
   source:
     rules: '2024'
     license: CC-BY-4.0
@@ -65,7 +65,7 @@ system:
       description:
         chatFlavor: ''
       duration:
-        concentration: false
+        maintained power: false
         value: '1'
         units: hour
         special: ''

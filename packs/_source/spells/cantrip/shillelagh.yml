@@ -7,7 +7,7 @@ system:
   description:
     value: >-
       <p>The wood of a club or quarterstaff you are holding is imbued with
-      nature's power. For the duration, you can use your spellcasting ability
+      nature's power. For the duration, you can use your power system ability
       instead of Strength for the attack and damage rolls of melee attacks using
       that weapon, and the weapon's damage die becomes a d8. The weapon also
       becomes magical, if it isn't already. The spell ends if you cast it again
@@ -75,7 +75,7 @@ system:
         chatFlavor: ''
       duration:
         units: inst
-        concentration: false
+        maintained power: false
         override: false
       effects:
         - _id: QPsqj6jfS0iXSrTs
@@ -132,7 +132,7 @@ system:
         units: ''
         special: ''
         override: false
-        concentration: false
+        maintained power: false
       effects: []
       range:
         units: ''
@@ -155,7 +155,7 @@ system:
         prompt: true
         override: false
       attack:
-        ability: spellcasting
+        ability: power system
         bonus: ''
         critical:
           threshold: null
@@ -174,7 +174,7 @@ system:
         max: ''
       sort: 0
       _id: ONVab5lmTqJwwMBC
-      name: Spellcasting Attack
+      name: Power System Attack
       img: ''
       appliedEffects: []
   identifier: shillelagh

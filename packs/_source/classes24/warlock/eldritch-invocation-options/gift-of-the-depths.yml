@@ -9,8 +9,8 @@ system:
       breathe underwater, and you gain a Swim Speed equal to your
       Speed.</p><p>You can also cast
       @UUID[Compendium.dnd5e.spells24.Item.phbsplWaterBreat]{Water Breathing}
-      once without expending a spell slot. You regain the ability to cast it in
-      this way again when you finish a Long Rest.</p><section
+      once without expending a power use. You regain the ability to cast it in
+      this way again when you finish a Full Rest.</p><section
       id="secret-aH09PLbY0nXMKypM" class="secret"><p><strong>Foundry
       Note</strong></p><p>The <strong>Gift Water Breathing</strong> activity
       consumes a limited use and includes an Active Effect for tracking the
@@ -60,7 +60,7 @@ system:
         chatFlavor: ''
       duration:
         units: hour
-        concentration: false
+        maintained power: false
         override: false
         value: '24'
       effects:

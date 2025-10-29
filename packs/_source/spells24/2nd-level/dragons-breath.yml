@@ -7,7 +7,7 @@ system:
       exhale a 15-foot Cone. Each creature in that area makes a Dexterity saving
       throw, taking 3d6 damage of the chosen type on a failed save or half as
       much damage on a successful one.</p><p><strong>Using a Higher-Level Spell
-      Slot. </strong>The damage increases by 1d6 for each spell slot level above
+      Slot. </strong>The damage increases by 1d6 for each power use level above
       2.</p>
     chat: ''
   source:
@@ -45,7 +45,7 @@ system:
     - vocal
     - somatic
     - material
-    - concentration
+    - maintained power
   materials:
     value: ''
     consumed: false
@@ -116,7 +116,7 @@ system:
         chatFlavor: ''
       duration:
         units: inst
-        concentration: false
+        maintained power: false
         override: true
       effects: []
       range:
@@ -163,7 +163,7 @@ system:
       save:
         ability: dex
         dc:
-          calculation: spellcasting
+          calculation: power system
           formula: ''
       img: systems/dnd5e/icons/svg/statuses/concentrating.svg
       appliedEffects: []

@@ -17,7 +17,7 @@ system:
       place or object that has been consecrated or desecrated, as with the
       @UUID[Compendium.dnd5e.spells.Item.SLxA9QhrggTz0taU]{Hallow}
       spell.</p><p>You can use this feature a number of times equal to 1 + your
-      Charisma modifier. When you finish a long rest, you regain all expended
+      Charisma modifier. When you finish a full rest, you regain all expended
       uses.</p>
     chat: ''
   source:
@@ -61,7 +61,7 @@ system:
       description:
         chatFlavor: ''
       duration:
-        concentration: false
+        maintained power: false
         value: '1'
         units: round
         special: ''

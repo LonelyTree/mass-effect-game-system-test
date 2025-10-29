@@ -19,7 +19,7 @@ system:
       not.</p><p><em><strong>Size.</strong></em> Elves range from under 5 to
       over 6 feet tall and have slender builds. Your size is
       Medium.</p><p><em><strong>Speed.</strong></em> Your base walking speed is
-      30 feet.</p><p><em><strong>Darkvision.</strong></em> Accustomed to twilit
+      30 feet.</p><p><em><strong>Scanner.</strong></em> Accustomed to twilit
       forests and the night sky, you have superior vision in dark and dim
       conditions. You can see in dim light within 60 feet of you as if it were
       bright light, and in darkness as if it were dim light. You can't discern
@@ -47,8 +47,8 @@ system:
       Intelligence score increases by 1.</p><p><em><strong>Elf Weapon
       Training.</strong></em> You have proficiency with the longsword,
       shortsword, shortbow, and
-      longbow.</p><p><em><strong>Cantrip.</strong></em> You know one cantrip of
-      your choice from the wizard spell list. Intelligence is your spellcasting
+      longbow.</p><p><em><strong>Basic Power.</strong></em> You know one basic power of
+      your choice from the wizard power list. Intelligence is your power system
       ability for it.</p><p><em><strong>Extra Language.</strong></em> You can
       speak, read, and write one extra language of your choice.</p>
     chat: ''
@@ -102,10 +102,10 @@ system:
       value:
         added: {}
         replaced: {}
-      title: Cantrip
+      title: Basic Power
       hint: >-
-        You know one cantrip of your choice from the wizard spell list.
-        Intelligence is your spellcasting ability for it.
+        You know one basic power of your choice from the wizard power list.
+        Intelligence is your power system ability for it.
     - _id: Z9hvZFkWUNvowbQX
       type: AbilityScoreImprovement
       configuration:
@@ -179,10 +179,10 @@ system:
       value:
         chosen: []
   senses:
-    darkvision: 60
-    blindsight: null
-    tremorsense: null
-    truesight: null
+    scanner: 60
+    thermal vision: null
+    motion sensor: null
+    radar ping: null
     units: ft
     special: ''
   movement:

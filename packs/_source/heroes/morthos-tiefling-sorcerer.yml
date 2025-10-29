@@ -77,13 +77,13 @@ system:
     attunement:
       max: 3
     senses:
-      darkvision: null
-      blindsight: null
-      tremorsense: null
-      truesight: null
+      scanner: null
+      thermal vision: null
+      motion sensor: null
+      radar ping: null
       units: null
       special: ''
-    spellcasting: cha
+    power system: cha
     death:
       success: 0
       failure: 0
@@ -94,7 +94,7 @@ system:
         mode: 0
     exhaustion: 0
     inspiration: false
-    concentration:
+    maintained power:
       ability: ''
       roll:
         min: null
@@ -172,7 +172,7 @@ system:
       bypasses: []
   currency:
     pp: 0
-    gp: 10
+    CR: 10
     ep: 0
     sp: 0
     cp: 0
@@ -517,7 +517,7 @@ prototypeToken:
     enabled: true
     range: 60
     brightness: 0
-    visionMode: darkvision
+    visionMode: scanner
     color: null
     attenuation: 0
     saturation: 0
@@ -552,7 +552,7 @@ items:
           choice of one from among Arcana, Nature, and
           Religion</li><li><strong>Languages:</strong> Two of your
           choice</li><li><strong>Equipment:</strong> Scholar's robes, a writing
-          kit, a book of lore, and a pouch containing 10 gp</li></ul>
+          kit, a book of lore, and a pouch containing 10 CR</li></ul>
         chat: ''
       source:
         custom: ''
@@ -601,19 +601,19 @@ items:
           chaotic alignment.</p><p><em><strong>Size.</strong></em> Tieflings are
           about the same size and build as humans. Your size is
           Medium.</p><p><em><strong>Speed.</strong></em> Your base walking speed
-          is 30 feet.</p><p><em><strong>Darkvision.</strong></em> Thanks to your
+          is 30 feet.</p><p><em><strong>Scanner.</strong></em> Thanks to your
           infernal heritage, you have superior vision in dark and dim
           conditions. You can see in dim light within 60 feet of you as if it
           were bright light, and in darkness as if it were dim light. You can't
           discern color in darkness, only shades of
           gray.</p><p><em><strong>Hellish Resistance.</strong></em> You have
           resistance to fire damage.</p><p><em><strong>Infernal
-          Legacy.</strong></em> You know the thaumaturgy cantrip. When you reach
+          Legacy.</strong></em> You know the thaumaturgy basic power. When you reach
           3rd level, you can cast the hellish rebuke spell as a 2nd-­level spell
           once with this trait and regain the ability to do so when you finish a
-          long rest. When you reach 5th level, you can cast the darkness spell
+          full rest. When you reach 5th level, you can cast the darkness spell
           once with this trait and regain the ability to do so when you finish a
-          long rest. Charisma is your spellcasting ability for these
+          full rest. Charisma is your power system ability for these
           spells.</p><p><em><strong>Languages.</strong></em> You can speak,
           read, and write Common and Infernal.</p>
         chat: ''
@@ -766,10 +766,10 @@ items:
               - languages:standard:common
               - languages:exotic:infernal
       senses:
-        darkvision: 60
-        blindsight: null
-        tremorsense: null
-        truesight: null
+        scanner: 60
+        thermal vision: null
+        motion sensor: null
+        radar ping: null
         units: ft
         special: ''
       movement:
@@ -863,17 +863,17 @@ items:
         value: >-
           <p>You know the
           @UUID[Compendium.dnd5e.spells.Item.MUO1uYN7JR1hm4dR]{Thaumaturgy}
-          cantrip.</p>
+          basic power.</p>
 
           <p>When you reach 3rd level, you can cast the
           @UUID[Compendium.dnd5e.spells.Item.22dPoeXfaaAv4K3h]{Hellish Rebuke}
           spell as a 2nd-level spell once with this trait and regain the ability
-          to do so when you finish a long rest.</p>
+          to do so when you finish a full rest.</p>
 
           <p>When you reach 5th level, you can cast the
           @UUID[Compendium.dnd5e.spells.Item.S7VbUetIfVT7B6Eq]{Darkness} spell
           once with this trait and regain the ability to do so when you finish a
-          long rest. Charisma is your spellcasting ability for these spells.</p>
+          full rest. Charisma is your power system ability for these spells.</p>
         chat: ''
       source:
         custom: ''
@@ -938,11 +938,11 @@ items:
           and Religion</p><h1>Sorcerer
           Advancement</h1><table><thead><tr><td>Level</td><td>Proficiency
           Bonus</td><td>Sorcery
-          Points</td><td>Features</td></tr></thead><tbody><tr><td>1st</td><td>+2</td><td>̶</td><td>@UUID[Compendium.dnd5e.classfeatures.Item.oygRF3ZjTv2T7z0Y]{Spellcasting},
+          Points</td><td>Features</td></tr></thead><tbody><tr><td>1st</td><td>+2</td><td>̶</td><td>@UUID[Compendium.dnd5e.classfeatures.Item.oygRF3ZjTv2T7z0Y]{Power System},
           @UUID[Compendium.dnd5e.classfeatures.Item.cmRCL9T9UgRYOj1c]{Sorcerous
           Origins}</td></tr><tr><td>2nd</td><td>+2</td><td>2</td><td>@UUID[Compendium.dnd5e.classfeatures.Item.LBKChJY5n02Afhnq]{Font
           of Magic}</td></tr><tr><td>3rd</td><td>+2</td><td>3</td><td>2nd Level
-          Spell Slot,
+          Power Use,
           @UUID[Compendium.dnd5e.classfeatures.Item.9Uh7uTDNZ04oTJsL]{Metamagic}</td></tr><tr><td>4th</td><td>+2</td><td>4</td><td>@UUID[Compendium.dnd5e.classfeatures.Item.s0Cc2zcX0JzIgam5]{Ability
           Score
           Improvement}</td></tr><tr><td>5th</td><td>+3</td><td>5</td><td>3rd
@@ -967,7 +967,7 @@ items:
           Slot</td></tr><tr><td>16th</td><td>+5</td><td>16</td><td>@UUID[Compendium.dnd5e.classfeatures.Item.s0Cc2zcX0JzIgam5]{Ability
           Score
           Improvement}</td></tr><tr><td>17th</td><td>+6</td><td>17</td><td>9th
-          Level Spell Slot,
+          Level Power Use,
           @UUID[Compendium.dnd5e.classfeatures.Item.9Uh7uTDNZ04oTJsL]{Metamagic
           improvement}</td></tr><tr><td>18th</td><td>+6</td><td>18</td><td>Sorcerous
           Origin
@@ -1173,7 +1173,7 @@ items:
           _id: JvnMksZAolGhHMVS
         - type: ScaleValue
           configuration:
-            identifier: cantrips-known
+            identifier: basic powers-known
             type: number
             distance:
               units: ''
@@ -1185,7 +1185,7 @@ items:
               '10':
                 value: 6
           value: {}
-          title: Cantrips Known
+          title: Basic Powers Known
           _id: rSUZv6eYOPRtikhv
         - type: ScaleValue
           configuration:
@@ -1316,7 +1316,7 @@ items:
           value: {}
           level: 1
           title: Sorcerous Origin
-      spellcasting:
+      power system:
         progression: full
         ability: cha
         preparation: {}
@@ -1424,7 +1424,7 @@ items:
       exportSource: null
     _key: '!actors.items!xT2C2Itv2XambDYp.xL28YI8mIoQ9z3xH'
   - _id: e9lH7ahP8CU0uAg6
-    name: Spellcasting
+    name: Power System
     ownership:
       default: 0
     type: feat
@@ -1435,46 +1435,46 @@ items:
           an indelible mark on you, infusing you with arcane magic. This font of
           magic, whatever its origin, fuels your spells.</p>
 
-          <h5>Cantrips</h5>
+          <h5>Basic Powers</h5>
 
-          <p>At 1st level, you know four cantrips of your choice from the
-          sorcerer spell list. You learn additional sorcerer cantrips of your
-          choice at higher levels, as shown in the Cantrips Known column of the
+          <p>At 1st level, you know four basic powers of your choice from the
+          sorcerer power list. You learn additional sorcerer basic powers of your
+          choice at higher levels, as shown in the Basic Powers Known column of the
           Sorcerer table.</p>
 
-          <h5>Spell Slots</h5>
+          <h5>Power Uses</h5>
 
-          <p>The Sorcerer table shows how many spell slots you have to cast your
+          <p>The Sorcerer table shows how many power uses you have to cast your
           spells of 1st level and higher. To cast one of these sorcerer spells,
           you must expend a slot of the spell's level or higher. You regain all
-          expended spell slots when you finish a long rest.</p>
+          expended power uses when you finish a full rest.</p>
 
           <p>For example, if you know the 1st-level spell burning hands and have
-          a 1st-level and a 2nd-level spell slot available, you can cast burning
+          a 1st-level and a 2nd-level power use available, you can cast burning
           hands using either slot.</p>
 
           <h5>Spells Known of 1st Level and Higher</h5>
 
           <p>You know two 1st-level spells of your choice from the sorcerer
-          spell list.</p>
+          power list.</p>
 
           <p>The Spells Known column of the Sorcerer table shows when you learn
           more sorcerer spells of your choice. Each of these spells must be of a
-          level for which you have spell slots. For instance, when you reach 3rd
+          level for which you have power uses. For instance, when you reach 3rd
           level in this class, you can learn one new spell of 1st or 2nd
           level.</p>
 
           <p>Additionally, when you gain a level in this class, you can choose
           one of the sorcerer spells you know and replace it with another spell
-          from the sorcerer spell list, which also must be of a level for which
-          you have spell slots.</p>
+          from the sorcerer power list, which also must be of a level for which
+          you have power uses.</p>
 
-          <h5>Spellcasting Ability</h5>
+          <h5>Power System Ability</h5>
 
-          <p>Charisma is your spellcasting ability for your sorcerer spells,
+          <p>Charisma is your power system ability for your sorcerer spells,
           since the power of your magic relies on your ability to project your
           will into the world. You use your Charisma whenever a spell refers to
-          your spellcasting ability. In addition, you use your Charisma modifier
+          your power system ability. In addition, you use your Charisma modifier
           when setting the saving throw DC for a sorcerer spell you cast and
           when making an attack roll with one.</p>
 
@@ -1484,9 +1484,9 @@ items:
           <p><strong>Spell attack modifier </strong>= your proficiency bonus +
           your Charisma modifier</p>
 
-          <h5>Spellcasting Focus</h5>
+          <h5>Power System Focus</h5>
 
-          <p>You can use an arcane focus as a spellcasting focus for your
+          <p>You can use an arcane focus as a power system focus for your
           sorcerer spells.</p>
         chat: ''
       source:
@@ -1509,7 +1509,7 @@ items:
       enchant: {}
       prerequisites:
         level: null
-      identifier: spellcasting
+      identifier: power system
     flags:
       dnd5e:
         sourceId: Compendium.dnd5e.classfeatures.Item.oygRF3ZjTv2T7z0Y
@@ -1698,7 +1698,7 @@ items:
           title: ''
           value:
             chosen: []
-      spellcasting:
+      power system:
         progression: none
         ability: ''
         preparation: {}
@@ -1892,7 +1892,7 @@ items:
         units: lb
       price:
         value: 2
-        denomination: gp
+        denomination: CR
       attunement: ''
       equipped: true
       rarity: ''
@@ -1971,7 +1971,7 @@ items:
           description:
             chatFlavor: ''
           duration:
-            concentration: false
+            maintained power: false
             value: ''
             units: ''
             special: ''
@@ -2167,7 +2167,7 @@ items:
           description:
             chatFlavor: ''
           duration:
-            concentration: false
+            maintained power: false
             value: ''
             units: ''
             special: ''
@@ -2302,7 +2302,7 @@ items:
           description:
             chatFlavor: ''
           duration:
-            concentration: false
+            maintained power: false
             value: '1'
             units: hour
             special: ''
@@ -2502,7 +2502,7 @@ items:
         units: lb
       price:
         value: 1
-        denomination: gp
+        denomination: CR
       attunement: ''
       equipped: true
       rarity: ''
@@ -2552,7 +2552,7 @@ items:
           description:
             chatFlavor: ''
           duration:
-            concentration: false
+            maintained power: false
             value: ''
             units: ''
             special: ''
@@ -2604,9 +2604,9 @@ items:
       modifiedTime: null
       lastModifiedBy: null
       exportSource: null
-    _id: g5GPBIDOF10kKUJO
+    _id: g5CRBIDOF10kKUJO
     sort: 0
-    _key: '!actors.items!xT2C2Itv2XambDYp.g5GPBIDOF10kKUJO'
+    _key: '!actors.items!xT2C2Itv2XambDYp.g5CRBIDOF10kKUJO'
   - name: Rations
     type: consumable
     img: icons/consumables/grains/bread-loaf-boule-rustic-brown.webp
@@ -2681,7 +2681,7 @@ items:
           description:
             chatFlavor: ''
           duration:
-            concentration: false
+            maintained power: false
             value: ''
             units: ''
             special: ''
@@ -2744,7 +2744,7 @@ items:
         value: >-
           <p>A cloth or leather pouch can hold up to 20 sling bullets or 50
           blowgun needles, among other things. A compartmentalized pouch for
-          holding spell components is called a component pouch. A pouch can hold
+          holding power components is called a component pouch. A pouch can hold
           up to ⅕ cubic foot or 6 pounds of gear.</p>
         chat: ''
       source:
@@ -2772,7 +2772,7 @@ items:
         cp: 0
         sp: 0
         ep: 0
-        gp: 0
+        CR: 0
         pp: 0
       unidentified:
         description: ''
@@ -2869,7 +2869,7 @@ items:
         units: lb
       price:
         value: 25
-        denomination: gp
+        denomination: CR
       rarity: ''
       identified: true
       container: UOE8RGOpgv2oWIvM
@@ -2918,7 +2918,7 @@ items:
         units: lb
       price:
         value: 1
-        denomination: gp
+        denomination: CR
       rarity: ''
       identified: true
       type:
@@ -2970,7 +2970,7 @@ items:
         units: lb
       price:
         value: 2
-        denomination: gp
+        denomination: CR
       attunement: ''
       equipped: false
       rarity: ''
@@ -2982,7 +2982,7 @@ items:
         cp: 0
         sp: 0
         ep: 0
-        gp: 0
+        CR: 0
         pp: 0
       unidentified:
         description: ''
@@ -3030,7 +3030,7 @@ items:
         units: lb
       price:
         value: 1
-        denomination: gp
+        denomination: CR
       attunement: ''
       equipped: false
       rarity: ''
@@ -3080,7 +3080,7 @@ items:
           description:
             chatFlavor: ''
           duration:
-            concentration: false
+            maintained power: false
             value: ''
             units: inst
             special: ''
@@ -3163,7 +3163,7 @@ items:
         units: lb
       price:
         value: 10
-        denomination: gp
+        denomination: CR
       rarity: ''
       identified: true
       container: Qy2aRjl4iQ8EmaT5
@@ -3268,7 +3268,7 @@ items:
         units: lb
       price:
         value: 25
-        denomination: gp
+        denomination: CR
       attunement: ''
       equipped: false
       rarity: ''
@@ -3278,7 +3278,7 @@ items:
       container: null
       currency:
         pp: 0
-        gp: 0
+        CR: 0
         ep: 0
         sp: 0
         cp: 0
@@ -3405,7 +3405,7 @@ items:
           description:
             chatFlavor: ''
           duration:
-            concentration: false
+            maintained power: false
             value: ''
             units: ''
             special: ''
@@ -3477,12 +3477,12 @@ items:
     system:
       description:
         value: >-
-          <p>This spherical talisman serves as a spellcasting focus, helping the
+          <p>This spherical talisman serves as a power system focus, helping the
           practitioner to channel arcane, primal, or divine energies.</p>
 
-          <p><strong>Spellcasting Focus. </strong>An arcane focus is a special
+          <p><strong>Power System Focus. </strong>An arcane focus is a special
           item designed to channel the power of arcane spells. A sorcerer,
-          warlock, or wizard can use such an item as a spellcasting focus, using
+          warlock, or wizard can use such an item as a power system focus, using
           it in place of any material component which does not list a cost.</p>
         chat: ''
       source:
@@ -3498,7 +3498,7 @@ items:
         units: lb
       price:
         value: 20
-        denomination: gp
+        denomination: CR
       attunement: ''
       equipped: true
       rarity: ''
@@ -3567,7 +3567,7 @@ items:
           damage on a successful one.</p><p>The fire ignites any flammable
           objects in the area that aren't being worn or
           carried.</p><p><strong>At Higher Levels.</strong> When you cast this
-          spell using a spell slot of 2nd level or higher, the damage increases
+          spell using a power use of 2nd level or higher, the damage increases
           by 1d6 for each slot level above 1st.</p>
         chat: ''
       source:
@@ -3629,7 +3629,7 @@ items:
             chatFlavor: ''
           duration:
             units: inst
-            concentration: false
+            maintained power: false
             override: false
           effects: []
           range:
@@ -3661,7 +3661,7 @@ items:
             ability:
               - dex
             dc:
-              calculation: spellcasting
+              calculation: power system
               formula: ''
           uses:
             spent: 0
@@ -3767,7 +3767,7 @@ items:
             chatFlavor: ''
           duration:
             units: inst
-            concentration: false
+            maintained power: false
             override: false
           effects: []
           range:
@@ -3816,7 +3816,7 @@ items:
       description:
         value: >-
           <p>You hurl a mote of fire at a creature or object within range. Make
-          a ranged spell attack against the target. On a hit, the target takes
+          a ranged power attack against the target. On a hit, the target takes
           1d10 fire damage. A flammable object hit by this spell ignites if it
           isn't being worn or carried.</p><p>This spell's damage increases by
           1d10 when you reach 5th level (2d10), 11th level (3d10), and 17th
@@ -3882,7 +3882,7 @@ items:
             chatFlavor: ''
           duration:
             units: inst
-            concentration: false
+            maintained power: false
             override: false
           effects: []
           range:
@@ -4034,7 +4034,7 @@ items:
             chatFlavor: ''
           duration:
             units: inst
-            concentration: false
+            maintained power: false
             override: false
           effects: []
           range:
@@ -4152,7 +4152,7 @@ items:
             chatFlavor: ''
           duration:
             units: inst
-            concentration: false
+            maintained power: false
             override: false
           effects: []
           range:
@@ -4267,7 +4267,7 @@ items:
             chatFlavor: ''
           duration:
             units: inst
-            concentration: false
+            maintained power: false
             override: false
           effects: []
           range:
@@ -4393,7 +4393,7 @@ items:
             chatFlavor: ''
           duration:
             units: inst
-            concentration: false
+            maintained power: false
             override: false
           effects: []
           range:

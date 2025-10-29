@@ -24,7 +24,7 @@ results:
     name: Weasel
     documentUuid: Compendium.dnd5e.monsters.Actor.WOdeacKCYVhgLDuN
     description: ''
-    _key: '!tables.results!VPGP621PW7k03YfB.zK3WHv79k3whB5dD'
+    _key: '!tables.results!VPCR621PW7k03YfB.zK3WHv79k3whB5dD'
   - type: document
     weight: 1
     range:
@@ -47,7 +47,7 @@ results:
     name: Giant Rat
     documentUuid: Compendium.dnd5e.monsters.Actor.q1YJIeIt6rK8fCKn
     description: ''
-    _key: '!tables.results!VPGP621PW7k03YfB.LqVprn6dUqFAAW3M'
+    _key: '!tables.results!VPCR621PW7k03YfB.LqVprn6dUqFAAW3M'
   - type: document
     weight: 1
     range:
@@ -70,7 +70,7 @@ results:
     name: Badger
     documentUuid: Compendium.dnd5e.monsters.Actor.oQvORD924obyPdCc
     description: ''
-    _key: '!tables.results!VPGP621PW7k03YfB.VMkWW0P2DNVSdC3x'
+    _key: '!tables.results!VPCR621PW7k03YfB.VMkWW0P2DNVSdC3x'
   - type: document
     weight: 1
     range:
@@ -93,7 +93,7 @@ results:
     name: Boar
     documentUuid: Compendium.dnd5e.monsters.Actor.lZR4lhNmYSf89s4Q
     description: ''
-    _key: '!tables.results!VPGP621PW7k03YfB.jtknIKUrwe6q7BnB'
+    _key: '!tables.results!VPCR621PW7k03YfB.jtknIKUrwe6q7BnB'
   - type: document
     weight: 1
     range:
@@ -116,7 +116,7 @@ results:
     name: Panther
     documentUuid: Compendium.dnd5e.monsters.Actor.AijNdqMurWxDxUSl
     description: ''
-    _key: '!tables.results!VPGP621PW7k03YfB.Hkb7RfaIvycJyD0g'
+    _key: '!tables.results!VPCR621PW7k03YfB.Hkb7RfaIvycJyD0g'
   - type: document
     weight: 1
     range:
@@ -139,7 +139,7 @@ results:
     name: Giant Badger
     documentUuid: Compendium.dnd5e.monsters.Actor.cJGY1ZywUOo6heNR
     description: ''
-    _key: '!tables.results!VPGP621PW7k03YfB.PoSPaGFtAlPIUqYf'
+    _key: '!tables.results!VPCR621PW7k03YfB.PoSPaGFtAlPIUqYf'
   - type: document
     weight: 1
     range:
@@ -162,7 +162,7 @@ results:
     name: Dire Wolf
     documentUuid: Compendium.dnd5e.monsters.Actor.EYiQZ3rFL25fEJY5
     description: ''
-    _key: '!tables.results!VPGP621PW7k03YfB.dawZlC1uojkWsi1y'
+    _key: '!tables.results!VPCR621PW7k03YfB.dawZlC1uojkWsi1y'
   - type: document
     weight: 1
     range:
@@ -185,12 +185,12 @@ results:
     name: Giant Elk
     documentUuid: Compendium.dnd5e.monsters.Actor.hQt3qIahnB1Odb40
     description: ''
-    _key: '!tables.results!VPGP621PW7k03YfB.RZAsZIES2TNYBrX4'
+    _key: '!tables.results!VPCR621PW7k03YfB.RZAsZIES2TNYBrX4'
 formula: 1d8
 replacement: true
 displayRoll: true
 flags: {}
-_id: VPGP621PW7k03YfB
+_id: VPCR621PW7k03YfB
 _stats:
   duplicateSource: null
   coreVersion: '13.344'
@@ -204,4 +204,4 @@ sort: 0
 folder: null
 ownership:
   default: 0
-_key: '!tables!VPGP621PW7k03YfB'
+_key: '!tables!VPCR621PW7k03YfB'

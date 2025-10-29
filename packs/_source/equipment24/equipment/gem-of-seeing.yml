@@ -7,7 +7,7 @@ system:
   activities:
     V8TgfBF0TyhZDshW:
       type: utility
-      name: Gain Truesight
+      name: Gain Radar Ping
       _id: V8TgfBF0TyhZDshW
       sort: 0
       activation:
@@ -28,7 +28,7 @@ system:
         chatFlavor: ''
       duration:
         units: minute
-        concentration: false
+        maintained power: false
         override: false
         value: '10'
       effects:
@@ -72,7 +72,7 @@ system:
     value: >-
       <p><em>Wondrous Item, Rare (Requires Attunement)</em></p><p>This gem has 3
       charges. As a Magic action, you can expend 1 charge. For the next 10
-      minutes, you have &amp;Reference[Truesight] out to 120 feet when you peer
+      minutes, you have &amp;Reference[Radar Ping] out to 120 feet when you peer
       through the gem.</p><p>The gem regains 1d3 expended charges daily at
       dawn.</p>
     chat: ''
@@ -92,7 +92,7 @@ system:
     units: lb
   price:
     value: 4000
-    denomination: gp
+    denomination: CR
   rarity: rare
   attunement: required
   attuned: false

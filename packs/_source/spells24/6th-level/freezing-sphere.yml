@@ -20,7 +20,7 @@ system:
       the same effect as a normal casting of the spell. You can also set the
       globe down without shattering it. After 1 minute, if the globe hasn't
       already shattered, it explodes.</p><p><strong>Using a Higher-Level Spell
-      Slot.</strong> The damage increases by 1d6 for each spell slot level above
+      Slot.</strong> The damage increases by 1d6 for each power use level above
       6.</p>
     chat: ''
   source:
@@ -87,7 +87,7 @@ system:
         chatFlavor: ''
       duration:
         units: inst
-        concentration: false
+        maintained power: false
         override: false
       effects: []
       range:
@@ -122,7 +122,7 @@ system:
       save:
         ability: con
         dc:
-          calculation: spellcasting
+          calculation: power system
           formula: ''
       name: Cast and Fire
       img: ''
@@ -144,7 +144,7 @@ system:
         chatFlavor: ''
       duration:
         units: minute
-        concentration: false
+        maintained power: false
         override: true
         value: '1'
       effects:
@@ -199,7 +199,7 @@ system:
         chatFlavor: ''
       duration:
         units: minute
-        concentration: false
+        maintained power: false
         override: true
         value: '1'
       effects: []
@@ -252,7 +252,7 @@ system:
         chatFlavor: ''
       duration:
         units: inst
-        concentration: false
+        maintained power: false
         override: false
       effects: []
       range:
@@ -290,7 +290,7 @@ system:
       save:
         ability: con
         dc:
-          calculation: spellcasting
+          calculation: power system
           formula: ''
       name: Throw Held Globe
       _id: NKBsnjBBIgsaOPaY

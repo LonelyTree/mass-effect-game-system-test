@@ -11,7 +11,7 @@ system:
       a [[/save ability=wis dc=@attributes.spell.dc]] saving throw at the end of
       each of its turns. On a failed save, it takes the Psychic damage again. On
       a successful save, the spell ends.</p><p><strong>Using a Higher-Level
-      Spell Slot.</strong>The damage increases by 1d10 for each spell slot level
+      Power Use.</strong>The damage increases by 1d10 for each power use level
       above 4.</p>
     chat: ''
   source:
@@ -50,7 +50,7 @@ system:
   properties:
     - vocal
     - somatic
-    - concentration
+    - maintained power
   materials:
     value: ''
     consumed: false
@@ -108,7 +108,7 @@ system:
       save:
         ability: ''
         dc:
-          calculation: spellcasting
+          calculation: power system
           formula: ''
       uses:
         spent: 0

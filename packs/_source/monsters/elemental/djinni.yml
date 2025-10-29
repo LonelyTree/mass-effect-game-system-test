@@ -75,15 +75,15 @@ system:
     attunement:
       max: 3
     senses:
-      darkvision: 120
-      blindsight: 0
-      tremorsense: 0
-      truesight: 0
+      scanner: 120
+      thermal vision: 0
+      motion sensor: 0
+      radar ping: 0
       units: ft
       special: ''
-    spellcasting: cha
+    power system: cha
     exhaustion: 0
-    concentration:
+    maintained power:
       ability: ''
       roll:
         min: null
@@ -147,7 +147,7 @@ system:
       bypasses: []
   currency:
     pp: 0
-    gp: 0
+    CR: 0
     ep: 0
     sp: 0
     cp: 0
@@ -534,13 +534,13 @@ items:
       exportSource: null
     _key: '!actors.items!5P1VGAZQwOilwZQf.fL3AlIo9kQ591fz5'
   - _id: PvddSEYCJ3fSHEOr
-    name: Innate Spellcasting
+    name: Innate Power System
     type: feat
     img: icons/magic/light/projectiles-star-purple.webp
     system:
       description:
         value: >-
-          <p>The djinni's innate spellcasting ability is Charisma (spell save DC
+          <p>The djinni's innate power system ability is Charisma (spell save DC
           17, +9 to hit with spell attacks). It can innately cast the following
           spells, requiring no material components:</p>
 
@@ -578,7 +578,7 @@ items:
       enchant: {}
       prerequisites:
         level: null
-      identifier: innate-spellcasting
+      identifier: innate-power system
     effects: []
     folder: null
     sort: 0
@@ -603,7 +603,7 @@ items:
     system:
       description:
         value: >-
-          <p>The djinni makes three [[/item .DGP7lnAJT1cv8SA4]]{scimitar}
+          <p>The djinni makes three [[/item .DCR7lnAJT1cv8SA4]]{scimitar}
           attacks.</p>
         chat: ''
       source:
@@ -640,7 +640,7 @@ items:
           description:
             chatFlavor: ''
           duration:
-            concentration: false
+            maintained power: false
             value: ''
             units: ''
             special: ''
@@ -697,7 +697,7 @@ items:
       lastModifiedBy: dnd5ebuilder0000
       exportSource: null
     _key: '!actors.items!5P1VGAZQwOilwZQf.Q7JcaZkLaYQq4CE5'
-  - _id: DGP7lnAJT1cv8SA4
+  - _id: DCR7lnAJT1cv8SA4
     name: Scimitar
     type: weapon
     img: icons/weapons/swords/sword-katana.webp
@@ -718,7 +718,7 @@ items:
         units: lb
       price:
         value: 0
-        denomination: gp
+        denomination: CR
       attunement: ''
       equipped: true
       rarity: ''
@@ -793,7 +793,7 @@ items:
           description:
             chatFlavor: ''
           duration:
-            concentration: false
+            maintained power: false
             value: ''
             units: inst
             special: ''
@@ -876,7 +876,7 @@ items:
       modifiedTime: 1745173840296
       lastModifiedBy: dnd5ebuilder0000
       exportSource: null
-    _key: '!actors.items!5P1VGAZQwOilwZQf.DGP7lnAJT1cv8SA4'
+    _key: '!actors.items!5P1VGAZQwOilwZQf.DCR7lnAJT1cv8SA4'
   - _id: nE7YNnVM7srBcdfl
     name: Create Whirlwind
     type: feat
@@ -886,7 +886,7 @@ items:
         value: >-
           <p>A 5-foot-radius, 30-foot-tall cylinder of swirling air magically
           forms on a point the djinni can see within 120 feet of it. The
-          whirlwind lasts as long as the djinni maintains concentration (as if
+          whirlwind lasts as long as the djinni maintains maintained power (as if
           concentrating on a spell).</p><p>Any creature but the djinni that
           enters the whirlwind must succeed on a [[/save]] saving throw or be
           restrained by it. The djinni can move the whirlwind up to 60 feet as
@@ -941,7 +941,7 @@ items:
           description:
             chatFlavor: ''
           duration:
-            concentration: true
+            maintained power: true
             value: ''
             units: spec
             special: ''
@@ -1001,7 +1001,7 @@ items:
             chatFlavor: ''
           duration:
             units: inst
-            concentration: false
+            maintained power: false
             override: false
           effects: []
           range:
@@ -1062,7 +1062,7 @@ items:
     img: icons/magic/symbols/runes-star-pentagon-orange.webp
     system:
       description:
-        value: "<p>You call forth an air elemental servant. Choose an area of air that fills a 10-foot cube within range. An elemental of challenge rating 5 or lower appropriate to the area you chose appears in an unoccupied space within 10 feet of it. For example, a fire elemental emerges from a bonfire, and an earth elemental rises up from the ground. The elemental disappears when it drops to 0 hit points or when the spell ends.</p>\n<p>The elemental is friendly to you and your companions for the duration. Roll initiative for the elemental, which has its own turns. It obeys any verbal commands that you issue to it (no action required by you). If you don't issue any commands to the elemental, it defends itself from hostile creatures but otherwise takes no actions.</p>\n<p>If your concentration is broken, the elemental doesn't disappear. Instead, you lose control of the elemental, it becomes hostile toward you and your companions, and it might attack. An uncontrolled elemental can't be dismissed by you, and it disappears 1 hour after you summoned it.</p>\n<p><strong>Higher Levels.\_</strong>When you cast this spell using a spell slot of 6th level or higher, the challenge rating increases by 1 for each slot level above 5th.</p>"
+        value: "<p>You call forth an air elemental servant. Choose an area of air that fills a 10-foot cube within range. An elemental of threat level 5 or lower appropriate to the area you chose appears in an unoccupied space within 10 feet of it. For example, a fire elemental emerges from a bonfire, and an earth elemental rises up from the ground. The elemental disappears when it drops to 0 hit points or when the spell ends.</p>\n<p>The elemental is friendly to you and your companions for the duration. Roll initiative for the elemental, which has its own turns. It obeys any verbal commands that you issue to it (no action required by you). If you don't issue any commands to the elemental, it defends itself from hostile creatures but otherwise takes no actions.</p>\n<p>If your maintained power is broken, the elemental doesn't disappear. Instead, you lose control of the elemental, it becomes hostile toward you and your companions, and it might attack. An uncontrolled elemental can't be dismissed by you, and it disappears 1 hour after you summoned it.</p>\n<p><strong>Higher Levels.\_</strong>When you cast this spell using a power use of 6th level or higher, the threat level increases by 1 for each slot level above 5th.</p>"
         chat: ''
       source:
         custom: ''
@@ -1112,7 +1112,7 @@ items:
       properties:
         - vocal
         - somatic
-        - concentration
+        - maintained power
       activities:
         dnd5eactivity000:
           _id: dnd5eactivity000
@@ -1137,7 +1137,7 @@ items:
             chatFlavor: ''
           duration:
             units: inst
-            concentration: false
+            maintained power: false
             override: false
           effects: []
           range:
@@ -1235,7 +1235,7 @@ items:
       properties:
         - vocal
         - somatic
-        - concentration
+        - maintained power
       activities:
         dnd5eactivity000:
           _id: dnd5eactivity000
@@ -1254,7 +1254,7 @@ items:
             chatFlavor: ''
           duration:
             units: inst
-            concentration: false
+            maintained power: false
             override: false
           effects: []
           range:
@@ -1352,7 +1352,7 @@ items:
         - vocal
         - somatic
         - ritual
-        - concentration
+        - maintained power
       activities:
         dnd5eactivity000:
           _id: dnd5eactivity000
@@ -1371,7 +1371,7 @@ items:
             chatFlavor: ''
           duration:
             units: inst
-            concentration: false
+            maintained power: false
             override: false
           effects: []
           range:
@@ -1428,7 +1428,7 @@ items:
           automatically pushed 10 feet away from you by the spell's effect, and
           the spell emits a thunderous boom audible out to 300
           feet.</p><p><strong>At Higher Levels.</strong> When you cast this
-          spell using a spell slot of 2nd level or higher, the damage increases
+          spell using a power use of 2nd level or higher, the damage increases
           by 1d8 for each slot level above 1st.</p>
         chat: ''
       source:
@@ -1490,7 +1490,7 @@ items:
             chatFlavor: ''
           duration:
             units: inst
-            concentration: false
+            maintained power: false
             override: false
           effects: []
           range:
@@ -1525,7 +1525,7 @@ items:
           save:
             ability: con
             dc:
-              calculation: spellcasting
+              calculation: power system
               formula: '17'
           sort: 0
       identifier: thunderwave
@@ -1626,7 +1626,7 @@ items:
             chatFlavor: ''
           duration:
             units: inst
-            concentration: false
+            maintained power: false
             override: false
           effects: []
           range:
@@ -1746,7 +1746,7 @@ items:
             chatFlavor: ''
           duration:
             units: inst
-            concentration: false
+            maintained power: false
             override: false
           effects: []
           range:
@@ -1874,7 +1874,7 @@ items:
             chatFlavor: ''
           duration:
             units: inst
-            concentration: false
+            maintained power: false
             override: false
           effects: []
           range:
@@ -1921,7 +1921,7 @@ items:
     type: spell
     system:
       description:
-        value: "<p>You pull wisps of shadow material from the Shadowfell to create a nonliving object of vegetable matter within 'range': soft goods, rope, wood, or something similar. You can also use this spell to create mineral objects such as stone, crystal, or metal. The object created must be no larger than a 5-foot cube, and the object must be of a form and material that you have seen before.</p><p>The duration depends on the object's material. If the object is composed of multiple materials, use the shortest duration.</p>\n<ul>\n<li>Vegetable matter\_- 1 day</li>\n<li>Stone or crystal\_- 12 hours</li>\n<li>Precious metals\_- 1 hour</li>\n<li>Gems\_- 10 minutes</li>\n<li>Adamantine or mithral\_- 1 minute</li>\n</ul>\n<p>Using any material created by this spell as another spell's material component causes that spell to fail.</p><p><strong>At Higher Levels.</strong>\_When you cast this spell using a spell slot of 6th level or higher, the cube increases by 5 feet for each slot level above 5th.</p>"
+        value: "<p>You pull wisps of shadow material from the Shadowfell to create a nonliving object of vegetable matter within 'range': soft goods, rope, wood, or something similar. You can also use this spell to create mineral objects such as stone, crystal, or metal. The object created must be no larger than a 5-foot cube, and the object must be of a form and material that you have seen before.</p><p>The duration depends on the object's material. If the object is composed of multiple materials, use the shortest duration.</p>\n<ul>\n<li>Vegetable matter\_- 1 day</li>\n<li>Stone or crystal\_- 12 hours</li>\n<li>Precious metals\_- 1 hour</li>\n<li>Gems\_- 10 minutes</li>\n<li>Adamantine or mithral\_- 1 minute</li>\n</ul>\n<p>Using any material created by this spell as another spell's material component causes that spell to fail.</p><p><strong>At Higher Levels.</strong>\_When you cast this spell using a power use of 6th level or higher, the cube increases by 5 feet for each slot level above 5th.</p>"
         chat: ''
       source:
         custom: ''
@@ -1994,7 +1994,7 @@ items:
             chatFlavor: ''
           duration:
             units: inst
-            concentration: false
+            maintained power: false
             override: false
           effects: []
           range:
@@ -2102,7 +2102,7 @@ items:
         - vocal
         - somatic
         - material
-        - concentration
+        - maintained power
       activities:
         dnd5eactivity000:
           _id: dnd5eactivity000
@@ -2127,7 +2127,7 @@ items:
             chatFlavor: ''
           duration:
             units: inst
-            concentration: false
+            maintained power: false
             override: false
           effects: []
           range:
@@ -2179,7 +2179,7 @@ items:
           Anything the target is wearing or carrying is invisible as long as it
           is on the target's person. The spell ends for a target that attacks or
           casts a spell.</p><p><strong>At Higher Levels.</strong> When you cast
-          this spell using a spell slot of 3rd level or higher, you can target
+          this spell using a power use of 3rd level or higher, you can target
           one additional creature for each slot level above 2nd.</p>
         chat: ''
       source:
@@ -2226,7 +2226,7 @@ items:
         - vocal
         - somatic
         - material
-        - concentration
+        - maintained power
       activities:
         dnd5eactivity000:
           _id: dnd5eactivity000
@@ -2251,7 +2251,7 @@ items:
             chatFlavor: ''
           duration:
             units: inst
-            concentration: false
+            maintained power: false
             override: false
           effects: []
           range:
@@ -2321,9 +2321,9 @@ items:
           save DC. If a creature discerns the illusion for what it is, the
           creature can see through the image, and its other sensory qualities
           become faint to the creature.</p><p><strong>At Higher Levels.</strong>
-          When you cast this spell using a spell slot of 6th level or higher,
+          When you cast this spell using a power use of 6th level or higher,
           the spell lasts until dispelled, without requiring your
-          concentration.</p>
+          maintained power.</p>
         chat: ''
       source:
         custom: ''
@@ -2370,7 +2370,7 @@ items:
         - vocal
         - somatic
         - material
-        - concentration
+        - maintained power
       activities:
         dnd5eactivity000:
           _id: dnd5eactivity000
@@ -2395,7 +2395,7 @@ items:
             chatFlavor: ''
           duration:
             units: inst
-            concentration: false
+            maintained power: false
             override: false
           effects: []
           range:
@@ -2457,7 +2457,7 @@ items:
           hold all the creatures you transported, they appear in the closest
           unoccupied spaces next to the circle.</p><p>You can use this spell to
           banish an unwilling creature to another plane. Choose a creature
-          within your reach and make a melee spell attack against it. On a hit,
+          within your reach and make a close combat power attack against it. On a hit,
           the creature must make a Charisma saving throw. If the creature fails
           this save, it is transported to a random location on the plane of
           existence you specify. A creature so transported must find its own way
@@ -2497,7 +2497,7 @@ items:
       school: con
       materials:
         value: >-
-          A forked, metal rod worth at least 250 gp, attuned to a particular
+          A forked, metal rod worth at least 250 CR, attuned to a particular
           plane of existence
         consumed: false
         cost: 250
@@ -2533,7 +2533,7 @@ items:
             chatFlavor: ''
           duration:
             units: inst
-            concentration: false
+            maintained power: false
             override: false
           effects: []
           range:
@@ -2588,7 +2588,7 @@ items:
             chatFlavor: ''
           duration:
             units: inst
-            concentration: false
+            maintained power: false
             override: false
           effects: []
           range:
@@ -2611,7 +2611,7 @@ items:
           save:
             ability: cha
             dc:
-              calculation: spellcasting
+              calculation: power system
               formula: '17'
           sort: 0
       identifier: plane-shift

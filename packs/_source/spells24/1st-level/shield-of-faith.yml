@@ -41,7 +41,7 @@ system:
     - vocal
     - somatic
     - material
-    - concentration
+    - maintained power
   materials:
     value: a prayer scroll
     consumed: false

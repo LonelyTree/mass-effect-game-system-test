@@ -20,7 +20,7 @@ system:
       description: {}
       duration:
         units: inst
-        concentration: false
+        maintained power: false
         override: false
       effects: []
       range:
@@ -58,7 +58,7 @@ system:
           - vocal
           - somatic
           - material
-        spellbook: true
+        power list: true
       _id: csRhMMBN2tuiCgQI
       sort: 0
       activation:
@@ -78,7 +78,7 @@ system:
         chatFlavor: ''
       duration:
         units: inst
-        concentration: false
+        maintained power: false
         override: false
       range:
         override: false
@@ -109,7 +109,7 @@ system:
           - vocal
           - somatic
           - material
-        spellbook: true
+        power list: true
       _id: 9jOlvc6oFRuJJV3j
       sort: 0
       activation:
@@ -129,7 +129,7 @@ system:
         chatFlavor: ''
       duration:
         units: inst
-        concentration: false
+        maintained power: false
         override: false
       range:
         override: false
@@ -160,7 +160,7 @@ system:
           - vocal
           - somatic
           - material
-        spellbook: true
+        power list: true
       _id: HZJDEiK50FONr6zO
       sort: 0
       activation:
@@ -179,7 +179,7 @@ system:
         chatFlavor: ''
       duration:
         units: inst
-        concentration: false
+        maintained power: false
         override: false
       range:
         override: false
@@ -210,7 +210,7 @@ system:
           - vocal
           - somatic
           - material
-        spellbook: true
+        power list: true
       _id: 5jvMsJjf4j8A4iC1
       sort: 0
       activation:
@@ -230,7 +230,7 @@ system:
         chatFlavor: ''
       duration:
         units: inst
-        concentration: false
+        maintained power: false
         override: false
       range:
         override: false
@@ -291,7 +291,7 @@ system:
     units: lb
   price:
     value: 40000
-    denomination: gp
+    denomination: CR
   rarity: veryRare
   attunement: required
   attuned: false

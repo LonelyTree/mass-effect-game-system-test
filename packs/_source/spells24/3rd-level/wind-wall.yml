@@ -57,7 +57,7 @@ system:
     - vocal
     - somatic
     - material
-    - concentration
+    - maintained power
   materials:
     value: a fan and a feather
     consumed: false
@@ -119,7 +119,7 @@ system:
       save:
         ability: str
         dc:
-          calculation: spellcasting
+          calculation: power system
           formula: ''
       uses:
         spent: 0
@@ -146,7 +146,7 @@ system:
       duration:
         units: inst
         override: false
-        concentration: false
+        maintained power: false
       effects: []
       range:
         override: false
@@ -182,7 +182,7 @@ system:
       save:
         ability: str
         dc:
-          calculation: spellcasting
+          calculation: power system
           formula: ''
       uses:
         spent: 0

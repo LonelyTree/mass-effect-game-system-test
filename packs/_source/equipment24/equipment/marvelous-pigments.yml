@@ -28,7 +28,7 @@ system:
         chatFlavor: ''
       duration:
         units: inst
-        concentration: false
+        maintained power: false
         override: false
       effects: []
       range:
@@ -81,7 +81,7 @@ system:
         chatFlavor: ''
       duration:
         units: inst
-        concentration: true
+        maintained power: true
         override: false
       effects: []
       range:
@@ -125,15 +125,15 @@ system:
       trees, flowers, weapons, webs, and pits), provided these elements are all
       confined to a 20-foot Cube. The effort takes 10 minutes (regardless of the
       number of elements you create), during which time you must remain in the
-      Cube, and requires Concentration. If your Concentration is broken or you
+      Cube, and requires Maintained Power. If your Maintained Power is broken or you
       leave the Cube before the work is done, all the painted elements vanish,
       and the pot of pigment is wasted.</p><p>When the work is done, all the
       painted objects and terrain features become real. Thus, painting a door on
       a wall creates an actual door, which can be opened to whatever is beyond.
       Painting a pit creates a real pit, the entire depth of which must lie
       within the 20-foot Cube.</p><p>No object created by a pot of pigment can
-      have a value greater than 25 GP, and the total value of all objects
-      created by a pot of pigment can't exceed 500 GP. If you paint objects of
+      have a value greater than 25 CR, and the total value of all objects
+      created by a pot of pigment can't exceed 500 CR. If you paint objects of
       greater value (such as a large pile of gold), they look authentic, but
       close inspection reveals they're made from paste, cookies, or some other
       worthless material.</p><p>If you paint a form of energy such as fire or
@@ -160,7 +160,7 @@ system:
     units: lb
   price:
     value: 20000
-    denomination: gp
+    denomination: CR
   rarity: veryRare
   attunement: ''
   attuned: false

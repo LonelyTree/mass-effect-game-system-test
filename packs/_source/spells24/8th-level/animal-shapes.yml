@@ -4,7 +4,7 @@ system:
     value: >-
       <p>Choose any number of willing creatures that you can see within range.
       Each target shape-shifts into a Large or smaller Beast of your choice that
-      has a Challenge Rating of 4 or lower. You can choose a different form for
+      has a Threat Level of 4 or lower. You can choose a different form for
       each target. On later turns, you can take a Magic action to transform the
       targets again.</p><p>A target's game statistics are replaced by the chosen
       Beast's statistics, but the target retains its creature type; Hit Points;
@@ -78,7 +78,7 @@ system:
         chatFlavor: ''
       duration:
         units: inst
-        concentration: false
+        maintained power: false
         override: false
       effects: []
       range:

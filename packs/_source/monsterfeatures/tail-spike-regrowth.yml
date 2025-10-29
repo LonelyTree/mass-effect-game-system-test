@@ -7,7 +7,7 @@ system:
   description:
     value: >-
       <p>the [[lookup @name lowercase]] has twenty-four tail spikes. Used spikes
-      regrow when the [[lookup @name lowercase]] finishes a long rest.</p>
+      regrow when the [[lookup @name lowercase]] finishes a full rest.</p>
     chat: ''
   source:
     custom: ''

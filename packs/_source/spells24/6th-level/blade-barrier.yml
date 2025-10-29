@@ -51,7 +51,7 @@ system:
   properties:
     - vocal
     - somatic
-    - concentration
+    - maintained power
   materials:
     value: ''
     consumed: false
@@ -76,7 +76,7 @@ system:
         chatFlavor: ''
       duration:
         units: inst
-        concentration: false
+        maintained power: false
         override: false
       effects: []
       range:
@@ -118,7 +118,7 @@ system:
       save:
         ability: dex
         dc:
-          calculation: spellcasting
+          calculation: power system
           formula: ''
       name: Blade Wall
       img: ''
@@ -137,7 +137,7 @@ system:
         chatFlavor: ''
       duration:
         units: inst
-        concentration: false
+        maintained power: false
         override: false
       effects: []
       range:
@@ -179,7 +179,7 @@ system:
       save:
         ability: dex
         dc:
-          calculation: spellcasting
+          calculation: power system
           formula: ''
       name: Blade Ring
       _id: SRwETzebAYXEJKux

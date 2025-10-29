@@ -21,8 +21,8 @@ system:
       against your spell save DC. If a creature discerns the illusion for what
       it is, the creature can see through the image, and its other sensory
       qualities become faint to the creature.</p><p><strong>Using a Higher-Level
-      Spell Slot.</strong> The spell lasts until dispelled, without requiring
-      Concentration, if cast with a level 4+ spell slot.</p>
+      Power Use.</strong> The spell lasts until dispelled, without requiring
+      Maintained Power, if cast with a level 4+ power use.</p>
     chat: ''
   source:
     custom: ''
@@ -61,7 +61,7 @@ system:
     - vocal
     - somatic
     - material
-    - concentration
+    - maintained power
   materials:
     value: a bit of fleece
     consumed: false

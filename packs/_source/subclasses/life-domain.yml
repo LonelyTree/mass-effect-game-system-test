@@ -150,7 +150,7 @@ system:
             modifiers: []
       value: {}
       title: Divine Strike Damage
-  spellcasting:
+  power system:
     progression: none
     ability: ''
     preparation: {}

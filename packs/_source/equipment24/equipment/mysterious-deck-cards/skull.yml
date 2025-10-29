@@ -17,7 +17,7 @@ system:
     chat: ''
   price:
     value: 0
-    denomination: gp
+    denomination: CR
   activities:
     nFXEoUa92fZkV5Q4:
       type: summon
@@ -42,7 +42,7 @@ system:
         chatFlavor: Card's effect occurs immediately upon draw
       duration:
         units: spec
-        concentration: false
+        maintained power: false
         override: false
         special: until the avatar drops to 0 Hit Points or you die
       effects: []

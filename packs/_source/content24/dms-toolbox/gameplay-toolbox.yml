@@ -52,52 +52,52 @@ pages:
         ingested, inhaled, or injury), and a description of the poison's
         debilitating effects.</p><hr
         /><h3>@UUID[Compendium.dnd5e.equipment24.Item.dmgAssassinsBloo]{Assassin's
-        Blood} (150 GP)</h3><p><em>Ingested Poison</em></p><p>A creature
+        Blood} (150 CR)</h3><p><em>Ingested Poison</em></p><p>A creature
         subjected to Assassin's Blood makes a DC 10 Constitution saving throw.
         On a failed save, the creature takes 6 (1d12) Poison damage and has the
         Poisoned condition for 24 hours. On a successful save, the creature
         takes half as much damage only.</p><hr
         /><h3>@UUID[Compendium.dnd5e.equipment24.Item.dmgBurntOthurFum]{Burnt
-        Othur Fumes} (500 GP)</h3><p><em>Inhaled Poison</em></p><p>A creature
+        Othur Fumes} (500 CR)</h3><p><em>Inhaled Poison</em></p><p>A creature
         subjected to Burnt Othur Fumes must succeed on a DC 13 Constitution
         saving throw or take 10 (3d6) Poison damage, and it must repeat the save
         at the start of each of its turns. On each successive failed save, the
         creature takes 3 (1d6) Poison damage. After three successful saves, the
         poison ends.</p><hr
         /><h3>@UUID[Compendium.dnd5e.equipment24.Item.dmgCarrionCrawle]{Crawler
-        Mucus} (200 GP)</h3><p><em>Contact Poison</em></p><p>A creature
+        Mucus} (200 CR)</h3><p><em>Contact Poison</em></p><p>A creature
         subjected to Carrion Crawler Mucus must succeed on a DC 13 Constitution
         saving throw or have the Poisoned condition for 1 minute. The creature
         also has the Paralyzed condition while Poisoned in this way. The
         creature repeats the save at the end of each of its turns, ending the
         effect on itself on a success.</p><hr
         /><h3>@UUID[Compendium.dnd5e.equipment24.Item.dmgEssenceOfEthe]{Essence
-        of Ether} (300 GP)</h3><p><em>Inhaled Poison</em></p><p>A creature
+        of Ether} (300 CR)</h3><p><em>Inhaled Poison</em></p><p>A creature
         subjected to Essence of Ether must succeed on a DC 15 Constitution
         saving throw or have the Poisoned condition for 8 hours. The creature
         also has the Unconscious condition while Poisoned in this way. The
         creature wakes up if it takes damage or if another creature takes an
         action to shake it awake.</p><hr
         /><h3>@UUID[Compendium.dnd5e.equipment24.Item.dmgMalice0000000]{Malice}
-        (250 GP)</h3><p><em>Inhaled Poison</em></p><p>A creature subjected to
+        (250 CR)</h3><p><em>Inhaled Poison</em></p><p>A creature subjected to
         Malice must succeed on a DC 15 Constitution saving throw or have the
         Poisoned condition for 1 hour. The creature also has the Blinded
         condition while Poisoned in this way.</p><hr
         /><h3>@UUID[Compendium.dnd5e.equipment24.Item.dmgMidnightTears]{Midnight
-        Tears} (1,500 GP)</h3><p><em>Ingested Poison</em></p><p>A creature that
+        Tears} (1,500 CR)</h3><p><em>Ingested Poison</em></p><p>A creature that
         ingests Midnight Tears suffers no effect until the stroke of midnight.
         Any effect that ends the Poisoned condition neutralizes this poison. If
         the poison hasn't been neutralized before midnight, the creature makes a
         DC 17 Constitution saving throw, taking 31 (9d6) Poison damage on a
         failed save or half as much damage on a successful one.</p><hr
         /><h3>@UUID[Compendium.dnd5e.equipment24.Item.dmgOilOfTaggit00]{Oil of
-        Taggit} (400 GP)</h3><p><em>Contact Poison</em></p><p>A creature
+        Taggit} (400 CR)</h3><p><em>Contact Poison</em></p><p>A creature
         subjected to Oil of Taggit must succeed on a DC 13 Constitution saving
         throw or have the Poisoned condition for 24 hours. The creature also has
         the Unconscious condition while Poisoned in this way. It wakes up if it
         takes damage.</p><hr
         /><h3>@UUID[Compendium.dnd5e.equipment24.Item.dmgPaleTincture0]{Pale
-        Tincture} (250 GP)</h3><p><em>Ingested Poison</em></p><p>A creature
+        Tincture} (250 CR)</h3><p><em>Ingested Poison</em></p><p>A creature
         subjected to Pale Tincture must succeed on a DC 16 Constitution saving
         throw or take 3 (1d6) Poison damage and have the Poisoned condition. The
         Poisoned creature repeats the save every 24 hours, taking 3 (1d6) Poison
@@ -105,34 +105,34 @@ pages:
         any means while the creature remains Poisoned. After seven successful
         saves against the poison, the creature is no longer Poisoned.</p><hr
         /><h3>@UUID[Compendium.dnd5e.equipment24.Item.dmgPurpleWormPoi]{Purple
-        Worm Poison} (2,000 GP)</h3><p><em>Injury Poison</em></p><p>A creature
+        Worm Poison} (2,000 CR)</h3><p><em>Injury Poison</em></p><p>A creature
         subjected to Purple Worm Poison makes a DC 21 Constitution saving throw,
         taking 35 (10d6) Poison damage on a failed save or half as much damage
         on a successful one.</p><hr
         /><h3>@UUID[Compendium.dnd5e.equipment24.Item.dmgSerpentVenom0]{Serpent
-        Venom} (200 GP)</h3><p><em>Injury Poison</em></p><p>A creature subjected
+        Venom} (200 CR)</h3><p><em>Injury Poison</em></p><p>A creature subjected
         to Serpent Venom must succeed on a DC 11 Constitution saving throw,
         taking 10 (3d6) Poison damage on a failed save or half as much damage on
         a successful one.</p><hr
         /><h3>@UUID[Compendium.dnd5e.equipment24.Item.dmgLolthsSting00]{Spider's
-        Sting} (200 GP)</h3><p><em>Injury Poison</em></p><p>A creature subjected
+        Sting} (200 CR)</h3><p><em>Injury Poison</em></p><p>A creature subjected
         to Lolth's Sting must succeed on a DC 13 Constitution saving throw or
         have the Poisoned condition for 1 hour. If the creature fails the save
         by 5 or more, the creature also has the Unconscious condition while
         Poisoned in this way. The creature wakes up if it takes damage or if
         another creature takes an action to shake it awake.</p><hr
         /><h3>@UUID[Compendium.dnd5e.equipment24.Item.dmgTorpor0000000]{Torpor}
-        (600 GP)</h3><p><em>Ingested Poison</em></p><p>A creature subjected to
+        (600 CR)</h3><p><em>Ingested Poison</em></p><p>A creature subjected to
         Torpor poison must succeed on a DC 15 Constitution saving throw or have
         the Poisoned condition for 4d6 hours. The creature's Speed is halved
         while the creature is Poisoned in this way.</p><hr
         /><h3>@UUID[Compendium.dnd5e.equipment24.Item.dmgTruthSerum000]{Truth
-        Serum} (150 GP)</h3><p><em>Ingested Poison</em></p><p>A creature
+        Serum} (150 CR)</h3><p><em>Ingested Poison</em></p><p>A creature
         subjected to Truth Serum must succeed on a DC 11 Constitution saving
         throw or have the Poisoned condition for 1 hour. The Poisoned creature
         can't knowingly communicate a lie.</p><hr
         /><h3>@UUID[Compendium.dnd5e.equipment24.Item.dmgWyvernPoison0]{Wyvern
-        Poison} (1,200 GP)</h3><p><em>Injury Poison</em></p><p>A creature
+        Poison} (1,200 CR)</h3><p><em>Injury Poison</em></p><p>A creature
         subjected to Wyvern Poison makes a DC 14 Constitution saving throw,
         taking 24 (7d6) Poison damage on a failed save or half as much damage on
         a successful one.</p>
@@ -364,7 +364,7 @@ pages:
         increases.</p><h2>4: Choose a Tool Proficiency</h2><p>Choose one tool
         used in the practice of the background or often associated with
         it.</p><h2>5: Choose Equipment</h2><p>Assemble a package of equipment
-        worth 50 GP (including unspent gold). Don’t include Martial weapons or
+        worth 50 CR (including unspent gold). Don’t include Martial weapons or
         armor, as characters get them from their class choices.</p>
     video:
       controls: true
@@ -442,7 +442,7 @@ pages:
         creature and determines the creature’s behavior thereafter. At the end
         of each of the possessed creature’s later turns, the creature makes a
         [[/save cha 15]] saving throw, regaining control of itself on a
-        success.</p><p class="_idGenParaOverride-1">After finishing a Long Rest,
+        success.</p><p class="_idGenParaOverride-1">After finishing a Full Rest,
         a creature with Demonic Possession makes a [[/save cha 15]] saving
         throw. On a successful save, the effect ends on the creature. A
         <em>Dispel Evil and Good </em>spell or any magic that removes a curse
@@ -473,7 +473,7 @@ pages:
         condition as it laughs uncontrollably. At the end of each of its turns,
         the creature repeats the save, ending the effect on itself on a success.
         After 1 minute, it succeeds automatically.</p><p><em><strong>Fighting
-        the Contagion.</strong></em> At the end of each Long Rest, an infected
+        the Contagion.</strong></em> At the end of each Full Rest, an infected
         creature makes a [[/save con 13]] saving throw. After the creature
         succeeds on three of these saves, the contagion ends on it, and the
         creature is immune to Cackle Fever for 1
@@ -496,7 +496,7 @@ pages:
         level.</p><p><strong>Weakness.</strong> While the creature has any
         Exhaustion levels, it regains only half the normal number of Hit Points
         from spending Hit Point Dice.</p><p><strong>Restlessness.</strong> While
-        the creature has any Exhaustion levels, finishing a Long Rest neither
+        the creature has any Exhaustion levels, finishing a Full Rest neither
         restores lost Hit Points nor reduces the creature’s Exhaustion
         level.</p><p><em><strong>Fighting the Contagion.</strong></em> Daily at
         dawn, an infected creature makes a [[/save con 11]] saving throw. On a
@@ -759,7 +759,7 @@ pages:
         more of them might need to use healing resources, however. As a rough
         guideline, a single monster generally presents a low-difficulty
         challenge for a party of four characters whose level equals the
-        monster’s Challenge Rating.</p><p><strong>Moderate Difficulty.</strong>
+        monster’s Threat Level.</p><p><strong>Moderate Difficulty.</strong>
         Absent healing and other resources, an encounter of moderate difficulty
         could go badly for the adventurers. Weaker characters might get taken
         out of the fight, and there’s a slim chance that one or more characters
@@ -843,7 +843,7 @@ pages:
         blow.</p><p><em><strong>Unusual Features.</strong></em> If a monster has
         a feature that lower-level characters can’t easily overcome, consider
         not adding that monster to an encounter for characters whose level is
-        lower than the monster’s Challenge Rating.</p>
+        lower than the monster’s Threat Level.</p>
     video:
       controls: true
       volume: 0.5

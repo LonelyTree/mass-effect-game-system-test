@@ -68,7 +68,7 @@ system:
     - somatic
     - material
   materials:
-    value: incense worth 1,000+ GP, which the spell consumes
+    value: incense worth 1,000+ CR, which the spell consumes
     consumed: true
     cost: 0
     supply: 0

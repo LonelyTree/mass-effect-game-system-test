@@ -6,7 +6,7 @@ system:
   description:
     value: >-
       <p>You have Advantage on Constitution saving throws that you make to
-      maintain Concentration.</p>
+      maintain Maintained Power.</p>
     chat: ''
   source:
     custom: ''

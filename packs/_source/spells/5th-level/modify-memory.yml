@@ -32,7 +32,7 @@ system:
       memory too nonsensical to affect a creature in a significant
       manner.</p><p>A Remove Curse or Greater Restoration spell cast on the
       target restores the creature's true memory.</p><p><strong>At Higher
-      Levels</strong>. If you cast this spell using a spell slot of 6th level or
+      Levels</strong>. If you cast this spell using a power use of 6th level or
       higher, you can alter the target's memories of an event that took place up
       to 7 days ago (6th level), 30 days ago (7th level), 1 year ago (8th
       level), or any time in the creature's past (9th level).</p>
@@ -78,7 +78,7 @@ system:
   properties:
     - vocal
     - somatic
-    - concentration
+    - maintained power
   activities:
     dnd5eactivity000:
       _id: dnd5eactivity000
@@ -97,7 +97,7 @@ system:
         chatFlavor: ''
       duration:
         units: inst
-        concentration: false
+        maintained power: false
         override: false
       effects: []
       range:
@@ -116,7 +116,7 @@ system:
       save:
         ability: wis
         dc:
-          calculation: spellcasting
+          calculation: power system
           formula: ''
       uses:
         spent: 0

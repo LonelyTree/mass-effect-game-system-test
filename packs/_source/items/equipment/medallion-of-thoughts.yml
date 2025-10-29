@@ -1,4 +1,4 @@
-_id: skoUe223EvRYGPL6
+_id: skoUe223EvRYCRL6
 name: Medallion of Thoughts
 type: equipment
 img: icons/equipment/neck/pendant-bronze-gem-blue.webp
@@ -25,7 +25,7 @@ system:
     units: lb
   price:
     value: 400
-    denomination: gp
+    denomination: CR
   attunement: required
   equipped: false
   rarity: uncommon
@@ -94,7 +94,7 @@ system:
         chatFlavor: ''
       duration:
         units: inst
-        concentration: false
+        maintained power: false
         override: false
       range:
         override: false
@@ -133,4 +133,4 @@ _stats:
   modifiedTime: 1750697344647
   lastModifiedBy: dnd5ebuilder0000
   exportSource: null
-_key: '!items!skoUe223EvRYGPL6'
+_key: '!items!skoUe223EvRYCRL6'

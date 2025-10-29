@@ -23,7 +23,7 @@ system:
       you can grow one, or a thicker beard if you already have one.</p><p>If you
       aren't a dwarf or duergar, you gain the following additional benefits
       while wearing the belt:</p><div
-      class="def-block"><p><strong>Darkvision.</strong> You have Darkvision with
+      class="def-block"><p><strong>Scanner.</strong> You have Scanner with
       a range of 60 feet.</p><p><strong>Resilience.</strong> You have Resistance
       to Poison damage. You also have Advantage on saving throws you make to
       avoid or end the Poisoned condition.</p></div>
@@ -44,7 +44,7 @@ system:
     units: lb
   price:
     value: 4000
-    denomination: gp
+    denomination: CR
   rarity: rare
   attunement: required
   attuned: false
@@ -81,7 +81,7 @@ effects:
         mode: 2
         value: '2'
         priority: null
-      - key: system.attributes.senses.darkvision
+      - key: system.attributes.senses.scanner
         mode: 4
         value: '60'
         priority: null
@@ -109,7 +109,7 @@ effects:
       duergar.</p><p><strong>Toughness.</strong> Your Constitution increases by
       2, to a maximum of 20.</p><p>If you aren’t a dwarf or duergar, you gain
       the following additional benefits while wearing the belt:</p><div
-      class="def-block"><p><strong>Darkvision.</strong> You have Darkvision with
+      class="def-block"><p><strong>Scanner.</strong> You have Scanner with
       a range of 60 feet.</p><p><strong>Resilience.</strong> You have Resistance
       to Poison damage. You also have Advantage on saving throws you make to
       avoid or end the Poisoned condition.</p></div></div>

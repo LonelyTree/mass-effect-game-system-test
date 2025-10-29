@@ -9,7 +9,7 @@ system:
       When a creature enters the Cylinder for the first time on a turn or starts
       its turn there, it must succeed on a Dexterity saving throw or have the
       &amp;Reference[prone] condition and lose
-      &amp;Reference[concentration].</p>
+      &amp;Reference[maintained power].</p>
     chat: ''
   source:
     custom: ''
@@ -49,7 +49,7 @@ system:
     - vocal
     - somatic
     - material
-    - concentration
+    - maintained power
   materials:
     value: a miniature umbrella
     consumed: false
@@ -93,7 +93,7 @@ system:
       save:
         ability: dex
         dc:
-          calculation: spellcasting
+          calculation: power system
           formula: ''
       uses:
         spent: 0

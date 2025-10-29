@@ -5,7 +5,7 @@ img: null
 system:
   currency:
     pp: 0
-    gp: 0
+    CR: 0
     ep: 0
     sp: 0
     cp: 0
@@ -363,15 +363,15 @@ system:
     attunement:
       max: 3
     senses:
-      darkvision: 60
-      blindsight: null
-      tremorsense: null
-      truesight: null
+      scanner: 60
+      thermal vision: null
+      motion sensor: null
+      radar ping: null
       units: null
       special: ''
-    spellcasting: ''
+    power system: ''
     exhaustion: 0
-    concentration:
+    maintained power:
       ability: ''
       roll:
         min: null
@@ -577,7 +577,7 @@ items:
             chatFlavor: ''
           duration:
             units: inst
-            concentration: false
+            maintained power: false
             override: false
           effects:
             - _id: PTmNYKeeD3d7EbJn
@@ -624,7 +624,7 @@ items:
             chatFlavor: ''
           duration:
             units: inst
-            concentration: false
+            maintained power: false
             override: false
           effects: []
           range:
@@ -769,7 +769,7 @@ items:
             chatFlavor: ''
           duration:
             units: inst
-            concentration: false
+            maintained power: false
             override: false
           effects: []
           range:
@@ -823,7 +823,7 @@ items:
             chatFlavor: ''
           duration:
             units: inst
-            concentration: false
+            maintained power: false
             override: false
           effects: []
           range:
@@ -938,7 +938,7 @@ items:
         units: lb
       price:
         value: 0
-        denomination: gp
+        denomination: CR
       rarity: ''
       attunement: ''
       attuned: false
@@ -1003,10 +1003,10 @@ items:
             chatFlavor: ''
           duration:
             units: inst
-            concentration: false
+            maintained power: false
             override: false
           effects:
-            - _id: grTPAGPf3Hftz86s
+            - _id: grTPACRf3Hftz86s
           range:
             override: false
           target:
@@ -1066,7 +1066,7 @@ items:
             chatFlavor: ''
           duration:
             units: inst
-            concentration: false
+            maintained power: false
             override: false
           effects: []
           range:
@@ -1124,7 +1124,7 @@ items:
         units: lb
       price:
         value: 0
-        denomination: gp
+        denomination: CR
       rarity: ''
       attunement: ''
       attuned: false
@@ -1173,7 +1173,7 @@ items:
       - name: Grappled
         img: systems/dnd5e/icons/svg/statuses/grappled.svg
         origin: Compendium.dnd5e.actors24.Actor.mmMimic000000000.Item.mmPseudopod00000
-        _id: grTPAGPf3Hftz86s
+        _id: grTPACRf3Hftz86s
         type: base
         system: {}
         changes: []
@@ -1211,7 +1211,7 @@ items:
           lastModifiedBy: null
           exportSource: null
         _key: >-
-          !actors.items.effects!mmMimic000000000.mmPseudopod00000.grTPAGPf3Hftz86s
+          !actors.items.effects!mmMimic000000000.mmPseudopod00000.grTPACRf3Hftz86s
     flags:
       dnd5e:
         riders:
@@ -1258,7 +1258,7 @@ items:
             chatFlavor: ''
           duration:
             units: disp
-            concentration: false
+            maintained power: false
             override: false
           effects: []
           range:

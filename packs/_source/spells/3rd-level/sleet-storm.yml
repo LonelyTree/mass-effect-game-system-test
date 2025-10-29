@@ -15,7 +15,7 @@ system:
       throw. On a failed save, it falls Prone.</p><p>If a creature is
       concentrating in the spell's area, the creature must make a successful
       Constitution saving throw against your spell save DC or lose
-      concentration.</p>
+      maintained power.</p>
     chat: ''
   source:
     custom: ''
@@ -59,7 +59,7 @@ system:
     - vocal
     - somatic
     - material
-    - concentration
+    - maintained power
   activities:
     dnd5eactivity000:
       _id: dnd5eactivity000
@@ -78,7 +78,7 @@ system:
         chatFlavor: ''
       duration:
         units: inst
-        concentration: false
+        maintained power: false
         override: false
       effects: []
       range:
@@ -97,7 +97,7 @@ system:
       save:
         ability: dex
         dc:
-          calculation: spellcasting
+          calculation: power system
           formula: ''
       uses:
         spent: 0

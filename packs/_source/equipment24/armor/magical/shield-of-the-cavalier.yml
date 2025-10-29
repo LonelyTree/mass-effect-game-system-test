@@ -24,7 +24,7 @@ system:
         chatFlavor: ''
       duration:
         units: inst
-        concentration: false
+        maintained power: false
         override: false
       effects:
         - _id: TNWNbk14uUGiJGvv
@@ -99,7 +99,7 @@ system:
         chatFlavor: ''
       duration:
         units: minute
-        concentration: true
+        maintained power: true
         override: false
         value: '1'
       effects: []
@@ -160,7 +160,7 @@ system:
       or objects not fully contained within it are pushed into the nearest
       unoccupied spaces outside it. The attack or area of effect that triggered
       the Reaction has no effect on creatures and objects inside the Emanation,
-      which lasts as long as you maintain Concentration, up to 1 minute. Nothing
+      which lasts as long as you maintain Maintained Power, up to 1 minute. Nothing
       can pass into or out of the Emanation. A creature or object inside the
       Emanation can't be damaged by attacks or effects originating from outside,
       nor can a creature inside the Emanation damage anything outside it. Once
@@ -182,7 +182,7 @@ system:
     units: lb
   price:
     value: 0
-    denomination: gp
+    denomination: CR
   rarity: veryRare
   attunement: required
   attuned: false

@@ -13,7 +13,7 @@ system:
       of that side or inside the wall. A creature takes the same damage when it
       enters the wall for the first time on a turn or ends its turn there. The
       other side of the wall deals no damage.</p><p><strong>Using a Higher-Level
-      Spell Slot.</strong> The damage increases by 1d8 for each spell slot level
+      Power Use.</strong> The damage increases by 1d8 for each power use level
       above 4.</p>
     chat: ''
   source:
@@ -55,7 +55,7 @@ system:
     - vocal
     - somatic
     - material
-    - concentration
+    - maintained power
   materials:
     value: a piece of charcoal
     consumed: false
@@ -119,7 +119,7 @@ system:
       save:
         ability: dex
         dc:
-          calculation: spellcasting
+          calculation: power system
           formula: ''
       uses:
         spent: 0
@@ -146,7 +146,7 @@ system:
       duration:
         units: inst
         override: false
-        concentration: false
+        maintained power: false
       effects: []
       range:
         override: false
@@ -184,7 +184,7 @@ system:
       save:
         ability: dex
         dc:
-          calculation: spellcasting
+          calculation: power system
           formula: ''
       uses:
         spent: 0
@@ -212,7 +212,7 @@ system:
         chatFlavor: ''
       duration:
         units: inst
-        concentration: false
+        maintained power: false
         override: false
       effects: []
       range:

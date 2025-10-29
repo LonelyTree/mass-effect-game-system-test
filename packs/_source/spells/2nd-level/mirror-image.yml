@@ -24,8 +24,8 @@ system:
       spell ends when all three duplicates are destroyed.</p>
 
       <p>A creature is unaffected by this spell if it can't see, if it relies on
-      senses other than sight, such as blindsight, or if it can perceive
-      illusions as false, as with truesight.</p>
+      senses other than sight, such as thermal vision, or if it can perceive
+      illusions as false, as with radar ping.</p>
     chat: ''
   source:
     custom: ''
@@ -84,7 +84,7 @@ system:
         chatFlavor: ''
       duration:
         units: inst
-        concentration: false
+        maintained power: false
         override: false
       effects: []
       range:

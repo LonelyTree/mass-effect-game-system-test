@@ -5,7 +5,7 @@ img: null
 system:
   currency:
     pp: 0
-    gp: 0
+    CR: 0
     ep: 0
     sp: 0
     cp: 0
@@ -363,15 +363,15 @@ system:
     attunement:
       max: 3
     senses:
-      darkvision: 120
-      blindsight: null
-      tremorsense: null
-      truesight: null
+      scanner: 120
+      thermal vision: null
+      motion sensor: null
+      radar ping: null
       units: null
       special: ''
-    spellcasting: cha
+    power system: cha
     exhaustion: 0
-    concentration:
+    maintained power:
       ability: ''
       roll:
         min: null
@@ -582,7 +582,7 @@ items:
             chatFlavor: ''
           duration:
             units: inst
-            concentration: false
+            maintained power: false
             override: false
           effects: []
           range:
@@ -687,7 +687,7 @@ items:
             chatFlavor: ''
           duration:
             units: inst
-            concentration: false
+            maintained power: false
             override: false
           effects:
             - _id: SGrTBpl938UIe4e3
@@ -887,7 +887,7 @@ items:
           description: {}
           duration:
             units: inst
-            concentration: false
+            maintained power: false
             override: false
           effects: []
           range:
@@ -979,7 +979,7 @@ items:
             chatFlavor: Vampire Form Only
           duration:
             units: inst
-            concentration: false
+            maintained power: false
             override: false
           effects:
             - _id: BCbp3JZoHEGQ3Nzu
@@ -1042,7 +1042,7 @@ items:
             chatFlavor: ''
           duration:
             units: inst
-            concentration: false
+            maintained power: false
             override: false
           effects: []
           range:
@@ -1101,7 +1101,7 @@ items:
         units: lb
       price:
         value: 0
-        denomination: gp
+        denomination: CR
       rarity: ''
       attunement: ''
       attuned: false
@@ -1231,7 +1231,7 @@ items:
             chatFlavor: ''
           duration:
             units: inst
-            concentration: false
+            maintained power: false
             override: false
           effects: []
           range:
@@ -1305,7 +1305,7 @@ items:
             chatFlavor: ''
           duration:
             units: inst
-            concentration: false
+            maintained power: false
             override: false
           effects: []
           range:
@@ -1413,7 +1413,7 @@ items:
         units: lb
       price:
         value: 0
-        denomination: gp
+        denomination: CR
       rarity: ''
       attunement: ''
       attuned: false
@@ -1473,7 +1473,7 @@ items:
               - vocal
               - somatic
               - material
-            spellbook: true
+            power list: true
             ability: cha
           _id: fcRXSTOlFJShCl52
           sort: 0
@@ -1494,7 +1494,7 @@ items:
             chatFlavor: ''
           duration:
             units: hour
-            concentration: false
+            maintained power: false
             override: true
             value: '24'
           range:
@@ -1523,7 +1523,7 @@ items:
         value: >-
           <p>The [[lookup @name lowercase]] casts
           <em>@UUID[Compendium.dnd5e.spells24.Item.phbsplCharmPerso]</em>,
-          requiring no spell components and using Charisma as the spellcasting
+          requiring no power components and using Charisma as the power system
           ability (spell save DC [[lookup @abilities.cha.dc]]), and the duration
           is [[lookup @duration.value activity=fcRXSTOlFJShCl52]] hours. The
           &amp;Reference[Charmed apply=false] target is a willing recipient of
@@ -1579,8 +1579,8 @@ items:
           condition until the spell ends or until you or your allies damage it.
           The Charmed creature is Friendly to you. When the spell ends, the
           target knows it was Charmed by you.</p><p><strong>Using a Higher-Level
-          Spell Slot.</strong> You can target one additional creature for each
-          spell slot level above 1.</p>
+          Power Use.</strong> You can target one additional creature for each
+          power use level above 1.</p>
         chat: ''
       source:
         custom: ''
@@ -1645,7 +1645,7 @@ items:
           duration:
             units: inst
             override: false
-            concentration: false
+            maintained power: false
           effects:
             - _id: 78JcD7wFiSCOfmns
               onSave: false
@@ -1666,7 +1666,7 @@ items:
             ability:
               - wis
             dc:
-              calculation: spellcasting
+              calculation: power system
               formula: ''
           uses:
             spent: 0
@@ -1728,7 +1728,7 @@ items:
             priority: null
           - key: system.duration
             mode: 5
-            value: '{"units":"hour","concentration":false,"value":"24"}'
+            value: '{"units":"hour","maintained power":false,"value":"24"}'
             priority: null
           - key: system.ability
             mode: 5
@@ -1819,7 +1819,7 @@ items:
             chatFlavor: ''
           duration:
             units: inst
-            concentration: false
+            maintained power: false
             override: false
           effects: []
           range:
@@ -1952,7 +1952,7 @@ items:
             chatFlavor: ''
           duration:
             units: inst
-            concentration: false
+            maintained power: false
             override: false
           range:
             override: false
@@ -1978,7 +1978,7 @@ items:
               - vocal
               - somatic
               - material
-            spellbook: true
+            power list: true
             uuid: Compendium.dnd5e.spells24.Item.phbsplCommand000
             ability: cha
           name: ''
@@ -1990,7 +1990,7 @@ items:
         value: >-
           <p>The [[lookup @name lowercase]] casts
           <em>@UUID[Compendium.dnd5e.spells24.Item.phbsplCommand000]</em>,
-          requiring no spell components and using Charisma as the spellcasting
+          requiring no power components and using Charisma as the power system
           ability (spell save DC [[lookup @abilities.cha.dc]]). The [[lookup
           @name lowercase]] can't take this action again until the start of its
           next turn.</p>
@@ -2048,8 +2048,8 @@ items:
           means.</p><p><strong>Grovel.</strong> The target has the Prone
           condition and then ends its turn.</p><p><strong>Halt.</strong> On its
           turn, the target doesn't move and takes no action or Bonus
-          Action.</p><p><strong>Using a Higher-Level Spell Slot.</strong> You
-          can affect one additional creature for each spell slot level above
+          Action.</p><p><strong>Using a Higher-Level Power Use.</strong> You
+          can affect one additional creature for each power use level above
           1.</p>
         chat: ''
       source:
@@ -2114,7 +2114,7 @@ items:
           duration:
             units: inst
             override: false
-            concentration: false
+            maintained power: false
           effects: []
           range:
             override: false
@@ -2133,7 +2133,7 @@ items:
             ability:
               - wis
             dc:
-              calculation: spellcasting
+              calculation: power system
               formula: ''
           uses:
             spent: 0
@@ -2243,7 +2243,7 @@ items:
             chatFlavor: ''
           duration:
             units: inst
-            concentration: false
+            maintained power: false
             override: false
           effects: []
           range:
@@ -2344,7 +2344,7 @@ items:
             chatFlavor: Damage from Running Water
           duration:
             units: inst
-            concentration: false
+            maintained power: false
             override: false
           effects: []
           range:
@@ -2398,7 +2398,7 @@ items:
             chatFlavor: Damage from Sunligvht
           duration:
             units: inst
-            concentration: false
+            maintained power: false
             override: false
           effects:
             - _id: v2EdEMrtcddO1p8U
@@ -2452,7 +2452,7 @@ items:
             chatFlavor: ''
           duration:
             units: inst
-            concentration: false
+            maintained power: false
             override: false
           effects: []
           range:

@@ -27,7 +27,7 @@ system:
         chatFlavor: ''
       duration:
         units: inst
-        concentration: false
+        maintained power: false
         override: false
       effects:
         - _id: 1dBN1NUlcymoWlxz
@@ -89,7 +89,7 @@ system:
     units: lb
   price:
     value: 20000
-    denomination: gp
+    denomination: CR
   rarity: veryRare
   attunement: ''
   attuned: false

@@ -12,7 +12,7 @@ system:
       at the end of its next turn. On a miss, the arrow splashes the target with
       acid for half as much of the initial damage and no damage at the end of
       its next turn.</p><p><strong>At Higher Levels.</strong> When you cast this
-      spell using a spell slot of 3rd level or higher, the damage (both initial
+      spell using a power use of 3rd level or higher, the damage (both initial
       and later) increases by 1d4 for each slot level above 2nd.</p>
     chat: ''
   source:
@@ -75,7 +75,7 @@ system:
         chatFlavor: ''
       duration:
         units: inst
-        concentration: false
+        maintained power: false
         override: false
       effects: []
       range:
@@ -135,7 +135,7 @@ system:
         chatFlavor: ''
       duration:
         units: inst
-        concentration: false
+        maintained power: false
         override: false
       effects: []
       range:

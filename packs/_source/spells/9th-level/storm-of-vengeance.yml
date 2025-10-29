@@ -12,7 +12,7 @@ system:
       creature under the cloud (no more than 5,000 feet beneath the cloud) when
       it appears must make a Constitution saving throw. On a failed save, a
       creature takes 2d6 thunder damage and becomes Deafened for 5
-      minutes.</p><p>Each round you maintain Concentration on this spell, the
+      minutes.</p><p>Each round you maintain Maintained Power on this spell, the
       storm produces different Effects on your turn.</p><p><strong>Round
       2</strong>. Acidic rain falls from the cloud. Each creature and object
       under the cloud takes 1d6 acid damage.</p><p><strong>Round 3</strong>. You
@@ -27,7 +27,7 @@ system:
       difficult terrain and is heavily obscured. Each creature there takes 1d6
       cold damage. Ranged weapon attacks in the area are impossible. The wind
       and rain count as a severe distraction for the purposes of maintaining
-      Concentration on Spells. Finally, gusts of strong wind (ranging from 20 to
+      Maintained Power on Spells. Finally, gusts of strong wind (ranging from 20 to
       50 miles per hour) automatically disperse fog, mists, and similar
       phenomena in the area, whether mundane or magical.</p>
     chat: ''
@@ -71,7 +71,7 @@ system:
   properties:
     - vocal
     - somatic
-    - concentration
+    - maintained power
   activities:
     dnd5eactivity000:
       _id: dnd5eactivity000
@@ -90,7 +90,7 @@ system:
         chatFlavor: ''
       duration:
         units: inst
-        concentration: false
+        maintained power: false
         override: false
       effects: []
       range:
@@ -121,7 +121,7 @@ system:
       save:
         ability: con
         dc:
-          calculation: spellcasting
+          calculation: power system
           formula: ''
       uses:
         spent: 0
@@ -144,7 +144,7 @@ system:
         chatFlavor: ''
       duration:
         units: inst
-        concentration: false
+        maintained power: false
         override: false
       effects: []
       range:

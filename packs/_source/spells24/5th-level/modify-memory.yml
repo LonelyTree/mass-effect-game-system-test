@@ -30,10 +30,10 @@ system:
       Curse}</em> or
       <em>@UUID[Compendium.dnd5e.spells24.Item.phbsplGreaterRes]{Greater
       Restoration}</em> spell cast on the target restores the creature's true
-      memory.</p><p><strong>Using a Higher-Level Spell Slot.</strong> You can
+      memory.</p><p><strong>Using a Higher-Level Power Use.</strong> You can
       alter the target's memories of an event that took place up to 7 days ago
-      (level 6 spell slot), 30 days ago (level 7 spell slot), 365 days ago
-      (level 8 spell slot), or any time in the creature's past (level 9 spell
+      (level 6 power use), 30 days ago (level 7 power use), 365 days ago
+      (level 8 power use), or any time in the creature's past (level 9 spell
       slot).</p>
     chat: ''
   source:
@@ -71,7 +71,7 @@ system:
   properties:
     - vocal
     - somatic
-    - concentration
+    - maintained power
   materials:
     value: ''
     consumed: false
@@ -117,7 +117,7 @@ system:
       save:
         ability: wis
         dc:
-          calculation: spellcasting
+          calculation: power system
           formula: ''
       uses:
         spent: 0

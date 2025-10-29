@@ -20,7 +20,7 @@ system:
     units: lb
   price:
     value: 45
-    denomination: gp
+    denomination: CR
   attunement: ''
   equipped: false
   rarity: ''

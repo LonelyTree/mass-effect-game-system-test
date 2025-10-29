@@ -14,12 +14,12 @@ system:
       (<strong>Curse Actions</strong> activity).</li><li>If you deal damage to
       the target with an attack roll or a spell, the target takes an extra 1d8
       Necrotic damage (<strong>Curse Resilience</strong>
-      activity).</li></ul><p><strong>Using a Higher-Level Spell Slot.</strong>
-      If you cast this spell using a level 4 spell slot, you can maintain
-      Concentration on it for up to 10 minutes. If you use a level 5+ spell
-      slot, the spell doesn't require Concentration, and the duration becomes 8
+      activity).</li></ul><p><strong>Using a Higher-Level Power Use.</strong>
+      If you cast this spell using a level 4 power use, you can maintain
+      Maintained Power on it for up to 10 minutes. If you use a level 5+ spell
+      slot, the spell doesn't require Maintained Power, and the duration becomes 8
       hours (level 5–6 slot) or 24 hours (level 7–8 slot). If you use a level 9
-      spell slot, the spell lasts until dispelled.</p>
+      power use, the spell lasts until dispelled.</p>
     chat: ''
   source:
     custom: ''
@@ -56,7 +56,7 @@ system:
   properties:
     - vocal
     - somatic
-    - concentration
+    - maintained power
   materials:
     value: ''
     consumed: false
@@ -82,7 +82,7 @@ system:
         chatFlavor: ''
       duration:
         units: inst
-        concentration: false
+        maintained power: false
         override: false
       effects: []
       range:
@@ -106,14 +106,14 @@ system:
       save:
         ability: wis
         dc:
-          calculation: spellcasting
+          calculation: power system
           formula: ''
       name: Curse Ability
       img: ''
       appliedEffects: []
-    azVyTkiGPeIqMzxu:
+    azVyTkiCReIqMzxu:
       type: save
-      _id: azVyTkiGPeIqMzxu
+      _id: azVyTkiCReIqMzxu
       activation:
         type: action
         value: null
@@ -127,7 +127,7 @@ system:
         chatFlavor: ''
       duration:
         units: inst
-        concentration: false
+        maintained power: false
         override: false
       effects:
         - _id: u7Yc7mxHYPDvipS1
@@ -152,7 +152,7 @@ system:
       save:
         ability: wis
         dc:
-          calculation: spellcasting
+          calculation: power system
           formula: ''
       name: Curse Attacks
       img: ''
@@ -173,7 +173,7 @@ system:
         chatFlavor: ''
       duration:
         units: inst
-        concentration: false
+        maintained power: false
         override: false
       effects:
         - _id: u7Yc7mxHYPDvipS1
@@ -198,7 +198,7 @@ system:
       save:
         ability: wis
         dc:
-          calculation: spellcasting
+          calculation: power system
           formula: ''
       name: Curse Actions
       _id: nWXSXy8ybiVolvEP
@@ -220,7 +220,7 @@ system:
         chatFlavor: ''
       duration:
         units: inst
-        concentration: false
+        maintained power: false
         override: false
       effects:
         - _id: DRsQi8p3Zvhte2G0
@@ -256,7 +256,7 @@ system:
       save:
         ability: wis
         dc:
-          calculation: spellcasting
+          calculation: power system
           formula: ''
       name: Curse Resilience
       _id: fkQUKM8bxHgAUcg5

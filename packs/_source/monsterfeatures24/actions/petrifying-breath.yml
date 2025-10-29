@@ -26,7 +26,7 @@ system:
         chatFlavor: ''
       duration:
         units: inst
-        concentration: false
+        maintained power: false
         override: false
       effects:
         - _id: SY6t8UAImw8B9PVT

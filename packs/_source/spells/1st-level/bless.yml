@@ -11,7 +11,7 @@ system:
       throw.</p>
 
       <p><strong>At Higher Levels.</strong> When you cast this spell using a
-      spell slot of 2nd level or higher, you can target one additional creature
+      power use of 2nd level or higher, you can target one additional creature
       for each slot level above 1st.</p>
     chat: ''
   source:
@@ -56,7 +56,7 @@ system:
     - vocal
     - somatic
     - material
-    - concentration
+    - maintained power
   activities:
     dnd5eactivity000:
       _id: dnd5eactivity000
@@ -75,7 +75,7 @@ system:
         chatFlavor: ''
       duration:
         units: inst
-        concentration: false
+        maintained power: false
         override: false
       effects:
         - _id: 8rP3gwmXVTgZqYZE

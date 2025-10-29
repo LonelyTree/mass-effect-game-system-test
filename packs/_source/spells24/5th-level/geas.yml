@@ -19,8 +19,8 @@ system:
       Restoration}</em>, or
       <em>@UUID[Compendium.dnd5e.spells24.Item.phbsplWish000000]{Wish}</em>
       spell ends this spell.</p><p><strong>Using a Higher-Level Spell
-      Slot.</strong> If you use a level 7 or 8 spell slot, the duration is 365
-      days. If you use a level 9 spell slot, the spell lasts until it is ended
+      Slot.</strong> If you use a level 7 or 8 power use, the duration is 365
+      days. If you use a level 9 power use, the spell lasts until it is ended
       by one of the spells mentioned above.</p>
     chat: ''
   source:
@@ -113,7 +113,7 @@ system:
       save:
         ability: wis
         dc:
-          calculation: spellcasting
+          calculation: power system
           formula: ''
       uses:
         spent: 0

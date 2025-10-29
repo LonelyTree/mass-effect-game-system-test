@@ -15,8 +15,8 @@ system:
       solid surfaces.</p><p>The target can't talk or manipulate objects, and any
       objects it was carrying or holding can't be dropped, used, or otherwise
       interacted with. Finally, the target can't attack or cast
-      spells.</p><p><strong>Using a Higher-Level Spell Slot.</strong> You can
-      target one additional creature for each spell slot level above 3.</p>
+      spells.</p><p><strong>Using a Higher-Level Power Use.</strong> You can
+      target one additional creature for each power use level above 3.</p>
     chat: ''
   source:
     custom: ''
@@ -50,7 +50,7 @@ system:
     - vocal
     - somatic
     - material
-    - concentration
+    - maintained power
   materials:
     value: a bit of gauze
     consumed: false

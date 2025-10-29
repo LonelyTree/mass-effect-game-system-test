@@ -11,7 +11,7 @@ system:
       creature also makes this save when it enters the spell's area for the
       first time on a turn or ends its turn there. A creature makes this save
       only once per turn.</p><p><strong>Using a Higher-Level Spell
-      Slot.</strong>The damage increases by 1d10 for each spell slot level above
+      Slot.</strong>The damage increases by 1d10 for each power use level above
       5.</p>
     chat: ''
   source:
@@ -47,7 +47,7 @@ system:
     - vocal
     - somatic
     - material
-    - concentration
+    - maintained power
   materials:
     value: a locust
     consumed: false
@@ -103,7 +103,7 @@ system:
       save:
         ability: con
         dc:
-          calculation: spellcasting
+          calculation: power system
           formula: ''
       uses:
         spent: 0

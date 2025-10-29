@@ -5,11 +5,11 @@ system:
       <p>A @UUID[Compendium.dnd5e.equipment24.Item.phbagDruidicFocu]{Druidic
       Focus} takes one of the forms in the Druidic Focuses table and is carved,
       tied with ribbon, or painted to channel primal magic. A Druid or Ranger
-      can use such an object as a Spellcasting Focus.</p>
+      can use such an object as a Power System Focus.</p>
     chat: ''
   price:
     value: 1
-    denomination: gp
+    denomination: CR
   source:
     custom: ''
     rules: '2024'

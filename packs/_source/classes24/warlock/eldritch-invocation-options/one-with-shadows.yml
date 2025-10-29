@@ -9,7 +9,7 @@ system:
       you're in an area of &amp;Reference[Dim Light] or
       &amp;Reference[Darkness], you can cast
       @UUID[Compendium.dnd5e.spells24.Item.phbsplInvisibili]{Invisibility} on
-      yourself without expending a spell slot.</p><section class="secret"
+      yourself without expending a power use.</p><section class="secret"
       id="secret-SvwkLQLYzHCKzuss"><p><strong>Foundry Note</strong></p><p>The
       <strong>Cast</strong> activity can be used in place of the Invisibility
       spell and includes an Active Effect that sets the Invisible status
@@ -53,7 +53,7 @@ system:
       duration:
         units: hour
         override: false
-        concentration: true
+        maintained power: true
         value: '1'
       effects:
         - _id: 9svfDetqjhsFP3ey

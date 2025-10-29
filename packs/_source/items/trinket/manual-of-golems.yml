@@ -13,7 +13,7 @@ system:
       @UUID[Compendium.dnd5e.tables.RollTable.htMPUPPABjI6fwck]{Manual of
       Golems} table. Refer to the table below for a detailed description on each
       golem. To decipher and use the manual, you must be a spellcaster with at
-      least two 5th-level spell slots. A creature that can't use a Manual of
+      least two 5th-level power uses. A creature that can't use a Manual of
       Golems and attempts to read it takes 6d6 psychic damage.</p>
 
       <table>
@@ -45,7 +45,7 @@ system:
 
       <td>30 days</td>
 
-      <td>65,000 gp</td>
+      <td>65,000 CR</td>
 
       </tr>
 
@@ -58,7 +58,7 @@ system:
 
       <td>60 days</td>
 
-      <td>50,000 gp</td>
+      <td>50,000 CR</td>
 
       </tr>
 
@@ -71,7 +71,7 @@ system:
 
       <td>120 days</td>
 
-      <td>100,000 gp</td>
+      <td>100,000 CR</td>
 
       </tr>
 
@@ -84,7 +84,7 @@ system:
 
       <td>90 days</td>
 
-      <td>80,000 gp</td>
+      <td>80,000 CR</td>
 
       </tr>
 
@@ -114,7 +114,7 @@ system:
     units: lb
   price:
     value: 40000
-    denomination: gp
+    denomination: CR
   attunement: ''
   equipped: false
   rarity: veryRare
@@ -172,7 +172,7 @@ system:
       description:
         chatFlavor: ''
       duration:
-        concentration: false
+        maintained power: false
         value: ''
         units: ''
         special: ''

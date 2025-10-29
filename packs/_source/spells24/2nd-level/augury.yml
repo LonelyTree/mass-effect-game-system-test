@@ -11,7 +11,7 @@ system:
       good nor bad</td></tr></tbody></table><p>The spell doesn't account for
       circumstances, such as other spells, that might change the
       results.</p><p>If you cast the spell more than once before finishing a
-      Long Rest, there is a cumulative 25 percent chance for each casting after
+      Full Rest, there is a cumulative 25 percent chance for each casting after
       the first that you get no answer.</p>
     chat: ''
   source:
@@ -52,7 +52,7 @@ system:
   materials:
     value: >-
       specially marked sticks, bones, cards, or other divinatory tokens worth
-      25+ GP
+      25+ CR
     consumed: false
     cost: 0
     supply: 0

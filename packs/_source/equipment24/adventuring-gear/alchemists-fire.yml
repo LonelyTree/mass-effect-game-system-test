@@ -11,7 +11,7 @@ system:
     chat: ''
   price:
     value: 50
-    denomination: gp
+    denomination: CR
   source:
     rules: '2024'
     license: CC-BY-4.0
@@ -72,7 +72,7 @@ system:
         chatFlavor: ''
       duration:
         units: inst
-        concentration: false
+        maintained power: false
         override: false
       effects:
         - _id: HL12olRyPOCmmMQ5

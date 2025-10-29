@@ -75,15 +75,15 @@ system:
     attunement:
       max: 3
     senses:
-      darkvision: 0
-      blindsight: 0
-      tremorsense: 0
-      truesight: 120
+      scanner: 0
+      thermal vision: 0
+      motion sensor: 0
+      radar ping: 120
       units: ft
       special: ''
-    spellcasting: cha
+    power system: cha
     exhaustion: 0
-    concentration:
+    maintained power:
       ability: ''
       roll:
         min: null
@@ -157,7 +157,7 @@ system:
       bypasses: []
   currency:
     pp: 0
-    gp: 0
+    CR: 0
     ep: 0
     sp: 0
     cp: 0
@@ -594,13 +594,13 @@ items:
       exportSource: null
     _key: '!actors.items!XEByBLeOkDgL3mrr.2kBUlTLMlwq3KoUB'
   - _id: 9hrSczyYfl4fSrpZ
-    name: Innate Spellcasting
+    name: Innate Power System
     type: feat
     img: icons/magic/light/projectiles-star-purple.webp
     system:
       description:
         value: >-
-          <p>The planetar's spellcasting ability is Charisma (spell save DC 20).
+          <p>The planetar's power system ability is Charisma (spell save DC 20).
           The planetar can innately cast the following spells, requiring no
           material components:</p>
 
@@ -636,7 +636,7 @@ items:
       enchant: {}
       prerequisites:
         level: null
-      identifier: innate-spellcasting
+      identifier: innate-power system
     effects: []
     folder: null
     sort: 0
@@ -665,7 +665,7 @@ items:
           Anything the target is wearing or carrying is invisible as long as it
           is on the target's person. The spell ends for a target that attacks or
           casts a spell.</p><p><strong>At Higher Levels.</strong> When you cast
-          this spell using a spell slot of 3rd level or higher, you can target
+          this spell using a power use of 3rd level or higher, you can target
           one additional creature for each slot level above 2nd.</p>
         chat: ''
       source:
@@ -709,7 +709,7 @@ items:
       properties:
         - vocal
         - somatic
-        - concentration
+        - maintained power
       activities:
         dnd5eactivity000:
           _id: dnd5eactivity000
@@ -728,7 +728,7 @@ items:
             chatFlavor: ''
           duration:
             units: inst
-            concentration: false
+            maintained power: false
             override: false
           effects: []
           range:
@@ -859,7 +859,7 @@ items:
           description:
             chatFlavor: ''
           duration:
-            concentration: false
+            maintained power: false
             value: ''
             units: ''
             special: ''
@@ -937,7 +937,7 @@ items:
         units: lb
       price:
         value: 50
-        denomination: gp
+        denomination: CR
       attunement: ''
       equipped: true
       rarity: ''
@@ -1014,7 +1014,7 @@ items:
           description:
             chatFlavor: ''
           duration:
-            concentration: false
+            maintained power: false
             value: ''
             units: ''
             special: ''
@@ -1150,7 +1150,7 @@ items:
           description:
             chatFlavor: ''
           duration:
-            concentration: false
+            maintained power: false
             value: ''
             units: ''
             special: ''
@@ -1272,7 +1272,7 @@ items:
       properties:
         - vocal
         - somatic
-        - concentration
+        - maintained power
       activities:
         dnd5eactivity000:
           _id: dnd5eactivity000
@@ -1291,7 +1291,7 @@ items:
             chatFlavor: ''
           duration:
             units: inst
-            concentration: false
+            maintained power: false
             override: false
           effects: []
           range:
@@ -1394,7 +1394,7 @@ items:
       properties:
         - vocal
         - somatic
-        - concentration
+        - maintained power
       activities:
         dnd5eactivity000:
           _id: dnd5eactivity000
@@ -1419,7 +1419,7 @@ items:
             chatFlavor: ''
           duration:
             units: inst
-            concentration: false
+            maintained power: false
             override: false
           effects: []
           range:
@@ -1454,7 +1454,7 @@ items:
           save:
             ability: dex
             dc:
-              calculation: spellcasting
+              calculation: power system
               formula: '20'
           sort: 0
       identifier: blade-barrier
@@ -1542,7 +1542,7 @@ items:
         - vocal
         - somatic
         - material
-        - concentration
+        - maintained power
       activities:
         dnd5eactivity000:
           _id: dnd5eactivity000
@@ -1567,7 +1567,7 @@ items:
             chatFlavor: ''
           duration:
             units: inst
-            concentration: false
+            maintained power: false
             override: false
           effects: []
           range:
@@ -1622,7 +1622,7 @@ items:
             chatFlavor: ''
           duration:
             units: inst
-            concentration: false
+            maintained power: false
             override: false
           effects: []
           range:
@@ -1645,7 +1645,7 @@ items:
           save:
             ability: cha
             dc:
-              calculation: spellcasting
+              calculation: power system
               formula: '20'
           sort: 0
       identifier: dispel-evil-and-good
@@ -1679,7 +1679,7 @@ items:
           throw. A creature takes 4d6 fire damage and 4d6 radiant damage on a
           failed save, or half as much damage on a successful
           one.</p><p><strong>At Higher Levels.</strong> When you cast this spell
-          using a spell slot of 6th level or higher, the fire damage or the
+          using a power use of 6th level or higher, the fire damage or the
           radiant damage (your choice) increases by 1d6 for each slot level
           above 5th.</p>
         chat: ''
@@ -1752,7 +1752,7 @@ items:
             chatFlavor: ''
           duration:
             units: inst
-            concentration: false
+            maintained power: false
             override: false
           effects: []
           range:
@@ -1799,7 +1799,7 @@ items:
           save:
             ability: dex
             dc:
-              calculation: spellcasting
+              calculation: power system
               formula: '20'
           sort: 0
       identifier: flame-strike
@@ -1841,7 +1841,7 @@ items:
           head, for instance—the spell automatically fails.</p><p>Coming back
           from the dead is an ordeal. The target takes a −4 penalty to all
           attack rolls, saving throws, and ability checks. Every time the target
-          finishes a long rest, the penalty is reduced by 1 until it
+          finishes a full rest, the penalty is reduced by 1 until it
           disappears.</p>
         chat: ''
       source:
@@ -1912,7 +1912,7 @@ items:
             chatFlavor: ''
           duration:
             units: inst
-            concentration: false
+            maintained power: false
             override: false
           effects: []
           range:
@@ -1977,7 +1977,7 @@ items:
           one-word answer could be misleading or contrary to the deity's
           interests, the DM might offer a short phrase as an answer
           instead.</p><p>If you cast the spell two or more times before
-          finishing your next long rest, there is a cumulative 25 percent chance
+          finishing your next full rest, there is a cumulative 25 percent chance
           for each casting after the first that you get no answer. The DM makes
           this roll in secret.</p>
         chat: ''
@@ -2049,7 +2049,7 @@ items:
             chatFlavor: ''
           duration:
             units: inst
-            concentration: false
+            maintained power: false
             override: false
           effects: []
           range:
@@ -2202,7 +2202,7 @@ items:
         - vocal
         - somatic
         - material
-        - concentration
+        - maintained power
       activities:
         dnd5eactivity000:
           _id: dnd5eactivity000
@@ -2227,7 +2227,7 @@ items:
             chatFlavor: ''
           duration:
             units: inst
-            concentration: false
+            maintained power: false
             override: false
           effects: []
           range:
@@ -2284,7 +2284,7 @@ items:
           successful one. A creature must also make this saving throw when it
           enters the spell's area for the first time on a turn or ends its turn
           there.</p><p><strong>At Higher Levels.</strong> When you cast this
-          spell using a spell slot of 6th level or higher, the damage increases
+          spell using a power use of 6th level or higher, the damage increases
           by 1d10 for each slot level above 5th.</p>
         chat: ''
       source:
@@ -2332,7 +2332,7 @@ items:
         - vocal
         - somatic
         - material
-        - concentration
+        - maintained power
       activities:
         dnd5eactivity000:
           _id: dnd5eactivity000
@@ -2357,7 +2357,7 @@ items:
             chatFlavor: ''
           duration:
             units: inst
-            concentration: false
+            maintained power: false
             override: false
           effects: []
           range:
@@ -2392,7 +2392,7 @@ items:
           save:
             ability: con
             dc:
-              calculation: spellcasting
+              calculation: power system
               formula: '20'
           sort: 0
       identifier: insect-plague

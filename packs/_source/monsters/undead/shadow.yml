@@ -75,15 +75,15 @@ system:
     attunement:
       max: 3
     senses:
-      darkvision: 60
-      blindsight: 0
-      tremorsense: 0
-      truesight: 0
+      scanner: 60
+      thermal vision: 0
+      motion sensor: 0
+      radar ping: 0
       units: ft
       special: ''
-    spellcasting: ''
+    power system: ''
     exhaustion: 0
-    concentration:
+    maintained power:
       ability: ''
       roll:
         min: null
@@ -164,7 +164,7 @@ system:
       bypasses: []
   currency:
     pp: 0
-    gp: 0
+    CR: 0
     ep: 0
     sp: 0
     cp: 0
@@ -594,7 +594,7 @@ items:
           description:
             chatFlavor: ''
           duration:
-            concentration: false
+            maintained power: false
             value: ''
             units: inst
             special: ''
@@ -709,7 +709,7 @@ items:
           <p>[[/attack extended]]. [[/damage extended]].</p><p>The target's
           Strength score is reduced by 1d4. The target dies if this reduces its
           Strength to 0. Otherwise, the reduction lasts until the target
-          finishes a short or long rest.If a non-evil humanoid dies from this
+          finishes a short or full rest.If a non-evil humanoid dies from this
           attack, a new shadow rises from the corpse 1d4 hours later.</p>
         chat: <p>The Shadow attacks with its Strength Drain.</p>
       source:
@@ -725,7 +725,7 @@ items:
         units: lb
       price:
         value: 0
-        denomination: gp
+        denomination: CR
       attunement: ''
       equipped: true
       rarity: ''
@@ -800,7 +800,7 @@ items:
           description:
             chatFlavor: ''
           duration:
-            concentration: false
+            maintained power: false
             value: ''
             units: ''
             special: ''

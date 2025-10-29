@@ -11,7 +11,7 @@ system:
       momentarily surrounded by hellish flames. The creature must make a
       Dexterity saving throw. It takes 2d10 fire damage on a failed save, or
       half as much damage on a successful one.</p><p><strong>At Higher
-      Levels.</strong> When you cast this spell using a spell slot of 2nd level
+      Levels.</strong> When you cast this spell using a power use of 2nd level
       or higher, the damage increases by 1d10 for each slot level above 1st.</p>
     chat: ''
   source:
@@ -75,7 +75,7 @@ system:
         chatFlavor: ''
       duration:
         units: inst
-        concentration: false
+        maintained power: false
         override: false
       effects: []
       range:
@@ -106,7 +106,7 @@ system:
       save:
         ability: dex
         dc:
-          calculation: spellcasting
+          calculation: power system
           formula: ''
       uses:
         spent: 0

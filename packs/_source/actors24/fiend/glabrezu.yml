@@ -5,7 +5,7 @@ img: null
 system:
   currency:
     pp: 0
-    gp: 0
+    CR: 0
     ep: 0
     sp: 0
     cp: 0
@@ -363,15 +363,15 @@ system:
     attunement:
       max: 3
     senses:
-      darkvision: null
-      blindsight: null
-      tremorsense: null
-      truesight: 120
+      scanner: null
+      thermal vision: null
+      motion sensor: null
+      radar ping: 120
       units: null
       special: ''
-    spellcasting: int
+    power system: int
     exhaustion: 0
-    concentration:
+    maintained power:
       ability: ''
       roll:
         min: null
@@ -690,7 +690,7 @@ items:
             chatFlavor: ''
           duration:
             units: inst
-            concentration: false
+            maintained power: false
             override: false
           effects: []
           range:
@@ -725,7 +725,7 @@ items:
         value: >-
           <p>The [[lookup @name lowercase]] makes two [[/item
           .mmPincer00000000]] attacks and uses [[/item .mmPummel00000000]] or
-          [[/item .mmSpellcasting00]].</p>
+          [[/item .mmPower System00]].</p>
         chat: ''
       identifier: multiattack
       source:
@@ -790,7 +790,7 @@ items:
             chatFlavor: ''
           duration:
             units: inst
-            concentration: false
+            maintained power: false
             override: false
           effects:
             - _id: GCED8YlF6qXTgEkd
@@ -843,7 +843,7 @@ items:
             chatFlavor: ''
           duration:
             units: inst
-            concentration: false
+            maintained power: false
             override: false
           effects: []
           range:
@@ -902,7 +902,7 @@ items:
         units: lb
       price:
         value: 0
-        denomination: gp
+        denomination: CR
       rarity: ''
       attunement: ''
       attuned: false
@@ -1031,7 +1031,7 @@ items:
             chatFlavor: ''
           duration:
             units: inst
-            concentration: false
+            maintained power: false
             override: false
           effects: []
           range:
@@ -1124,8 +1124,8 @@ items:
       default: 0
     sort: 4
     _key: '!actors.items!mmGlabrezu000000.mmPummel00000000'
-  - _id: mmSpellcasting00
-    name: Spellcasting
+  - _id: mmPower System00
+    name: Power System
     type: feat
     system:
       type:
@@ -1149,7 +1149,7 @@ items:
             chatFlavor: ''
           duration:
             units: inst
-            concentration: false
+            maintained power: false
             override: false
           range:
             override: false
@@ -1173,7 +1173,7 @@ items:
             level: 2
             properties:
               - material
-            spellbook: true
+            power list: true
             uuid: Compendium.dnd5e.spells24.Item.phbsplDarkness00
             ability: ''
           name: ''
@@ -1188,7 +1188,7 @@ items:
             level: 1
             properties:
               - material
-            spellbook: true
+            power list: true
             ability: ''
           _id: nEpDExWVANrXkUgp
           sort: 0
@@ -1205,7 +1205,7 @@ items:
             chatFlavor: ''
           duration:
             units: inst
-            concentration: false
+            maintained power: false
             override: false
           range:
             override: false
@@ -1233,7 +1233,7 @@ items:
             level: 3
             properties:
               - material
-            spellbook: true
+            power list: true
             ability: ''
           _id: 7H7mdx9fpf9sLUrX
           sort: 0
@@ -1250,7 +1250,7 @@ items:
             chatFlavor: ''
           duration:
             units: inst
-            concentration: false
+            maintained power: false
             override: false
           range:
             override: false
@@ -1278,7 +1278,7 @@ items:
             level: 4
             properties:
               - material
-            spellbook: true
+            power list: true
             ability: ''
           _id: Dbj4GfTAMKDQ5t5m
           sort: 0
@@ -1298,7 +1298,7 @@ items:
             chatFlavor: ''
           duration:
             units: inst
-            concentration: false
+            maintained power: false
             override: false
           range:
             override: false
@@ -1328,7 +1328,7 @@ items:
             level: 3
             properties:
               - material
-            spellbook: true
+            power list: true
             ability: ''
           _id: 3fZhewrQQ6C50wvL
           sort: 0
@@ -1348,7 +1348,7 @@ items:
             chatFlavor: ''
           duration:
             units: inst
-            concentration: false
+            maintained power: false
             override: false
           range:
             override: false
@@ -1378,7 +1378,7 @@ items:
             level: 8
             properties:
               - material
-            spellbook: true
+            power list: true
             ability: ''
           _id: OpOHkxXeeNLEeEaS
           sort: 0
@@ -1398,7 +1398,7 @@ items:
             chatFlavor: ''
           duration:
             units: inst
-            concentration: false
+            maintained power: false
             override: false
           range:
             override: false
@@ -1425,7 +1425,7 @@ items:
         value: >-
           <p class="feature">The [[lookup @name lowercase]] casts one of the
           following spells, requiring no Material components and using
-          Intelligence as the spellcasting ability (spell save DC [[lookup
+          Intelligence as the power system ability (spell save DC [[lookup
           @attributes.spell.dc]]):</p><p class="feature-trait"><strong>At
           Will:</strong>
           <em>@UUID[Compendium.dnd5e.spells24.Item.phbsplDarkness00]{Darkness}</em>,
@@ -1438,7 +1438,7 @@ items:
           <em>@UUID[Compendium.dnd5e.spells24.Item.phbsplPowerWordS]{Power Word
           Stun}</em></p>
         chat: ''
-      identifier: spellcasting
+      identifier: power system
       source:
         revision: 1
         rules: '2024'
@@ -1462,7 +1462,7 @@ items:
           activity: []
           effect: []
     _stats:
-      compendiumSource: Compendium.dnd-monster-manual.features.Item.mmSpellcasting00
+      compendiumSource: Compendium.dnd-monster-manual.features.Item.mmPower System00
       duplicateSource: null
       coreVersion: '13.344'
       systemId: dnd5e
@@ -1474,13 +1474,13 @@ items:
     ownership:
       default: 0
     sort: 5
-    _key: '!actors.items!mmGlabrezu000000.mmSpellcasting00'
+    _key: '!actors.items!mmGlabrezu000000.mmPower System00'
   - name: Darkness
     system:
       description:
         value: >-
           <p>For the duration, magical &amp;Reference[darkness] spreads from a
-          point within range and fills a 15-foot-radius Sphere. Darkvision can't
+          point within range and fills a 15-foot-radius Sphere. Scanner can't
           see through it, and nonmagical light can't illuminate
           it.</p><p>Alternatively, you cast the spell on an object that isn't
           being worn or carried, causing the Darkness to fill a 15-foot
@@ -1523,7 +1523,7 @@ items:
       properties:
         - vocal
         - material
-        - concentration
+        - maintained power
       materials:
         value: bat fur and a piece of coal
         consumed: false
@@ -1551,7 +1551,7 @@ items:
           duration:
             units: inst
             override: false
-            concentration: false
+            maintained power: false
           effects: []
           range:
             override: false
@@ -1581,7 +1581,7 @@ items:
         name: Spell Changes
         img: systems/dnd5e/icons/svg/activity/cast.svg
         origin: >-
-          Compendium.dnd5e.actors24.Actor.mmGlabrezu000000.Item.mmSpellcasting00.Activity.3MkhXZwZstyLUC3q
+          Compendium.dnd5e.actors24.Actor.mmGlabrezu000000.Item.mmPower System00.Activity.3MkhXZwZstyLUC3q
         changes:
           - key: system.properties
             mode: 2
@@ -1621,7 +1621,7 @@ items:
       default: 0
     flags:
       dnd5e:
-        cachedFor: .Item.mmSpellcasting00.Activity.3MkhXZwZstyLUC3q
+        cachedFor: .Item.mmPower System00.Activity.3MkhXZwZstyLUC3q
     _stats:
       compendiumSource: Compendium.dnd5e.spells24.Item.phbsplDarkness00
       duplicateSource: null
@@ -1684,7 +1684,7 @@ items:
       properties:
         - vocal
         - somatic
-        - concentration
+        - maintained power
         - ritual
       materials:
         value: ''
@@ -1713,7 +1713,7 @@ items:
           duration:
             units: inst
             override: false
-            concentration: false
+            maintained power: false
           effects:
             - _id: BHw91lQmVgdx39WZ
           range:
@@ -1781,7 +1781,7 @@ items:
         name: Spell Changes
         img: systems/dnd5e/icons/svg/activity/cast.svg
         origin: >-
-          Compendium.dnd5e.actors24.Actor.mmGlabrezu000000.Item.mmSpellcasting00.Activity.nEpDExWVANrXkUgp
+          Compendium.dnd5e.actors24.Actor.mmGlabrezu000000.Item.mmPower System00.Activity.nEpDExWVANrXkUgp
         changes:
           - key: system.properties
             mode: 2
@@ -1824,7 +1824,7 @@ items:
         riders:
           activity: []
           effect: []
-        cachedFor: .Item.mmSpellcasting00.Activity.nEpDExWVANrXkUgp
+        cachedFor: .Item.mmPower System00.Activity.nEpDExWVANrXkUgp
     _stats:
       compendiumSource: Compendium.dnd5e.spells24.Item.phbsplDetectMagi
       duplicateSource: null
@@ -1840,7 +1840,7 @@ items:
   - name: Dispel Magic
     system:
       description:
-        value: "<p>Choose one creature, object, or magical effect within range. Any ongoing spell of level 3 or lower on the target ends. For each ongoing spell of level\_4 or higher on the target, make an ability check using your spellcasting ability (DC 10 plus that spell's level). On a successful check, the spell ends.</p><p><strong>Using a Higher-Level Spell Slot.</strong> You automatically end a spell on the target if the spell's level is equal to or less than the level of the spell slot you use.</p>"
+        value: "<p>Choose one creature, object, or magical effect within range. Any ongoing spell of level 3 or lower on the target ends. For each ongoing spell of level\_4 or higher on the target, make an ability check using your power system ability (DC 10 plus that spell's level). On a successful check, the spell ends.</p><p><strong>Using a Higher-Level Power Use.</strong> You automatically end a spell on the target if the spell's level is equal to or less than the level of the power use you use.</p>"
         chat: ''
       source:
         custom: ''
@@ -1902,7 +1902,7 @@ items:
           duration:
             units: inst
             override: false
-            concentration: false
+            maintained power: false
           effects: []
           range:
             override: false
@@ -1932,7 +1932,7 @@ items:
         name: Spell Changes
         img: systems/dnd5e/icons/svg/activity/cast.svg
         origin: >-
-          Compendium.dnd5e.actors24.Actor.mmGlabrezu000000.Item.mmSpellcasting00.Activity.7H7mdx9fpf9sLUrX
+          Compendium.dnd5e.actors24.Actor.mmGlabrezu000000.Item.mmPower System00.Activity.7H7mdx9fpf9sLUrX
         changes:
           - key: system.properties
             mode: 2
@@ -1972,7 +1972,7 @@ items:
       default: 0
     flags:
       dnd5e:
-        cachedFor: .Item.mmSpellcasting00.Activity.7H7mdx9fpf9sLUrX
+        cachedFor: .Item.mmPower System00.Activity.7H7mdx9fpf9sLUrX
     _stats:
       compendiumSource: Compendium.dnd5e.spells24.Item.phbsplDispelMagi
       duplicateSource: null
@@ -1998,8 +1998,8 @@ items:
           rollable cite=false classes="caption-top"]{Behavior for the
           Turn}</p><p>At the end of each of its turns, an affected target
           repeats the save, ending the spell on itself on a
-          success.</p><p><strong>Using a Higher-Level Spell Slot.</strong> The
-          Sphere's radius increases by 5 feet for each spell slot level above
+          success.</p><p><strong>Using a Higher-Level Power Use.</strong> The
+          Sphere's radius increases by 5 feet for each power use level above
           4.</p>
         chat: ''
       source:
@@ -2040,7 +2040,7 @@ items:
         - vocal
         - somatic
         - material
-        - concentration
+        - maintained power
       materials:
         value: three nut shells
         consumed: false
@@ -2068,7 +2068,7 @@ items:
           duration:
             units: inst
             override: false
-            concentration: false
+            maintained power: false
           effects:
             - _id: VxmsgUz9OIUet6WC
               onSave: false
@@ -2089,7 +2089,7 @@ items:
             ability:
               - wis
             dc:
-              calculation: spellcasting
+              calculation: power system
               formula: ''
           uses:
             spent: 0
@@ -2146,7 +2146,7 @@ items:
         name: Spell Changes
         img: systems/dnd5e/icons/svg/activity/cast.svg
         origin: >-
-          Compendium.dnd5e.actors24.Actor.mmGlabrezu000000.Item.mmSpellcasting00.Activity.Dbj4GfTAMKDQ5t5m
+          Compendium.dnd5e.actors24.Actor.mmGlabrezu000000.Item.mmPower System00.Activity.Dbj4GfTAMKDQ5t5m
         changes:
           - key: system.properties
             mode: 2
@@ -2186,7 +2186,7 @@ items:
       default: 0
     flags:
       dnd5e:
-        cachedFor: .Item.mmSpellcasting00.Activity.Dbj4GfTAMKDQ5t5m
+        cachedFor: .Item.mmPower System00.Activity.Dbj4GfTAMKDQ5t5m
     _stats:
       compendiumSource: Compendium.dnd5e.spells24.Item.phbsplConfusion0
       duplicateSource: null
@@ -2206,8 +2206,8 @@ items:
           <p>You touch a willing creature. For the duration, the target gains a
           Fly Speed of 60 feet and can hover. When the spell ends, the target
           falls if it is still aloft unless it can stop the
-          fall.</p><p><strong>Using a Higher-Level Spell Slot.</strong> You can
-          target one additional creature for each spell slot level above 3.</p>
+          fall.</p><p><strong>Using a Higher-Level Power Use.</strong> You can
+          target one additional creature for each power use level above 3.</p>
         chat: ''
       source:
         custom: ''
@@ -2245,7 +2245,7 @@ items:
         - vocal
         - somatic
         - material
-        - concentration
+        - maintained power
       materials:
         value: a feather
         consumed: false
@@ -2273,7 +2273,7 @@ items:
           duration:
             units: inst
             override: false
-            concentration: false
+            maintained power: false
           effects:
             - _id: EHFLuTHqI6cXn1zb
           range:
@@ -2346,7 +2346,7 @@ items:
         name: Spell Changes
         img: systems/dnd5e/icons/svg/activity/cast.svg
         origin: >-
-          Compendium.dnd5e.actors24.Actor.mmGlabrezu000000.Item.mmSpellcasting00.Activity.3fZhewrQQ6C50wvL
+          Compendium.dnd5e.actors24.Actor.mmGlabrezu000000.Item.mmPower System00.Activity.3fZhewrQQ6C50wvL
         changes:
           - key: system.properties
             mode: 2
@@ -2386,7 +2386,7 @@ items:
       default: 0
     flags:
       dnd5e:
-        cachedFor: .Item.mmSpellcasting00.Activity.3fZhewrQQ6C50wvL
+        cachedFor: .Item.mmPower System00.Activity.3fZhewrQQ6C50wvL
     _stats:
       compendiumSource: Compendium.dnd5e.spells24.Item.phbsplFly0000000
       duplicateSource: null
@@ -2470,7 +2470,7 @@ items:
             chatFlavor: ''
           duration:
             units: inst
-            concentration: false
+            maintained power: false
             override: false
           effects:
             - _id: o7XJceFSBTiIIPFo
@@ -2597,7 +2597,7 @@ items:
         name: Spell Changes
         img: systems/dnd5e/icons/svg/activity/cast.svg
         origin: >-
-          Compendium.dnd5e.actors24.Actor.mmGlabrezu000000.Item.mmSpellcasting00.Activity.OpOHkxXeeNLEeEaS
+          Compendium.dnd5e.actors24.Actor.mmGlabrezu000000.Item.mmPower System00.Activity.OpOHkxXeeNLEeEaS
         changes:
           - key: system.properties
             mode: 2
@@ -2637,7 +2637,7 @@ items:
       default: 0
     flags:
       dnd5e:
-        cachedFor: .Item.mmSpellcasting00.Activity.OpOHkxXeeNLEeEaS
+        cachedFor: .Item.mmPower System00.Activity.OpOHkxXeeNLEeEaS
     _stats:
       compendiumSource: Compendium.dnd5e.spells24.Item.phbsplPowerWordS
       duplicateSource: null

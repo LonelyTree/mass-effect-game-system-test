@@ -1,11 +1,11 @@
 _id: phbwzdPotentCant
-name: Potent Cantrip
+name: Potent Basic Power
 type: feat
 folder: ZHJ6ibjd1J4CSyNw
 img: icons/magic/earth/projectiles-fire-stone-salvo.webp
 system:
   description:
-    value: "<p>Your damaging cantrips affect even creatures that avoid the brunt of the effect. When you cast a cantrip at a creature and you miss with the attack roll or the target succeeds on a saving throw against the cantrip, the target takes half the cantrip's damage (if any) but suffers no additional effect from the cantrip.</p><section id=\"secret-fJby40y1vz8RXGG4\" class=\"secret\"><p><strong>Foundry Note</strong></p><p>With their token selected you can either right click on the damage roll's chat card and select <span class=\"reference\"><em class=\"fas fa-user-shield\">\_</em>Apply Half Damage</span> or click the \"1/2\" button and then the <span class=\"reference\"><em class=\"fa-solid fa-reply-all\">\_</em>Apply</span> button.</p></section>"
+    value: "<p>Your damaging basic powers affect even creatures that avoid the brunt of the effect. When you cast a basic power at a creature and you miss with the attack roll or the target succeeds on a saving throw against the basic power, the target takes half the basic power's damage (if any) but suffers no additional effect from the basic power.</p><section id=\"secret-fJby40y1vz8RXGG4\" class=\"secret\"><p><strong>Foundry Note</strong></p><p>With their token selected you can either right click on the damage roll's chat card and select <span class=\"reference\"><em class=\"fas fa-user-shield\">\_</em>Apply Half Damage</span> or click the \"1/2\" button and then the <span class=\"reference\"><em class=\"fa-solid fa-reply-all\">\_</em>Apply</span> button.</p></section>"
     chat: ''
   source:
     custom: ''
@@ -27,7 +27,7 @@ system:
   requirements: ''
   activities: {}
   enchant: {}
-  identifier: potent-cantrip
+  identifier: potent-basic power
 effects: []
 flags:
   dnd5e:

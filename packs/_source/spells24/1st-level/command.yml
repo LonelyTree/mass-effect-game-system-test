@@ -13,8 +13,8 @@ system:
       means.</p><p><strong>Grovel.</strong> The target has the Prone condition
       and then ends its turn.</p><p><strong>Halt.</strong> On its turn, the
       target doesn't move and takes no action or Bonus
-      Action.</p><p><strong>Using a Higher-Level Spell Slot.</strong> You can
-      affect one additional creature for each spell slot level above 1.</p>
+      Action.</p><p><strong>Using a Higher-Level Power Use.</strong> You can
+      affect one additional creature for each power use level above 1.</p>
     chat: ''
   source:
     custom: ''
@@ -93,7 +93,7 @@ system:
       save:
         ability: wis
         dc:
-          calculation: spellcasting
+          calculation: power system
           formula: ''
       uses:
         spent: 0

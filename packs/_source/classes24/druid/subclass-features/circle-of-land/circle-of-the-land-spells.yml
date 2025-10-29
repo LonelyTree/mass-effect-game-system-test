@@ -5,7 +5,7 @@ img: icons/magic/nature/leaf-glow-triple-green.webp
 system:
   description:
     value: >-
-      <p>Whenever you finish a Long Rest, choose one type of land: arid, polar,
+      <p>Whenever you finish a Full Rest, choose one type of land: arid, polar,
       temperate, or tropical. Consult the table below that corresponds to the
       chosen type; you have the spells listed for your Druid level and lower
       prepared.</p><table><caption>Arid Land</caption><thead><tr><td>Druid
@@ -40,7 +40,7 @@ system:
       Cloud}</td></tr><tr><td>7</td><td>@UUID[Compendium.dnd5e.spells24.Item.phbsplPolymorph0]{Polymorph}</td></tr><tr><td>9</td><td>@UUID[Compendium.dnd5e.spells24.Item.phbsplInsectPlag]{Insect
       Plague}</td></tr></tbody></table><section class="secret"
       id="secret-0B8V69GLRm5swkth"><p><strong>Foundry Note</strong></p><p>This
-      feature does not automate swapping between prepared spell
+      feature does not automate swapping between prepared power
       options.</p></section>
     chat: ''
   source:

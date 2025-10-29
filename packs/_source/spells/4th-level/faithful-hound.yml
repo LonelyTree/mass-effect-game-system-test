@@ -15,7 +15,7 @@ system:
       barking loudly. The hound sees invisible creatures and can see into the
       Ethereal Plane. It ignores illusions.</p><p>At the start of each of your
       turns, the hound attempts to bite one creature within 5 feet of it that is
-      hostile to you. The hound's Attack bonus is equal to your Spellcasting
+      hostile to you. The hound's Attack bonus is equal to your Power System
       ability modifier + your Proficiency Bonus. On a hit, it deals 4d8 piercing
       damage.</p>
     chat: ''
@@ -78,7 +78,7 @@ system:
         chatFlavor: ''
       duration:
         units: inst
-        concentration: false
+        maintained power: false
         override: false
       effects: []
       range:

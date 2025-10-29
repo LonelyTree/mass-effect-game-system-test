@@ -26,7 +26,7 @@ system:
         chatFlavor: ''
       duration:
         units: spec
-        concentration: false
+        maintained power: false
         override: false
         value: ''
       effects: []
@@ -101,7 +101,7 @@ system:
     units: lb
   price:
     value: 1500
-    denomination: gp
+    denomination: CR
   rarity: ''
   attunement: ''
   attuned: false

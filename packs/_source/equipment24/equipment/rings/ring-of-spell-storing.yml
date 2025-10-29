@@ -21,7 +21,7 @@ system:
       is expended without effect. The level of the slot used to cast the spell
       determines how much space it uses.</p><p>While wearing this ring, you can
       cast any spell stored in it. The spell uses the slot level, spell save DC,
-      spell attack bonus, and spellcasting ability of the original caster but is
+      spell attack bonus, and power system ability of the original caster but is
       otherwise treated as if you cast the spell. The spell cast from the ring
       is no longer stored in it, freeing up space.</p><section class="secret"
       id="secret-HxkxM5cqqoVK0W9S"><p><strong>Foundry Note</strong></p><p>To
@@ -49,7 +49,7 @@ system:
     units: lb
   price:
     value: 4000
-    denomination: gp
+    denomination: CR
   rarity: rare
   attunement: required
   attuned: false

@@ -5,7 +5,7 @@ img: null
 system:
   currency:
     pp: 0
-    gp: 0
+    CR: 0
     ep: 0
     sp: 0
     cp: 0
@@ -363,15 +363,15 @@ system:
     attunement:
       max: 3
     senses:
-      darkvision: 120
-      blindsight: null
-      tremorsense: null
-      truesight: null
+      scanner: 120
+      thermal vision: null
+      motion sensor: null
+      radar ping: null
       units: null
       special: ''
-    spellcasting: con
+    power system: con
     exhaustion: 0
-    concentration:
+    maintained power:
       ability: ''
       roll:
         min: null
@@ -684,7 +684,7 @@ items:
           description: {}
           duration:
             units: inst
-            concentration: false
+            maintained power: false
             override: false
           effects: []
           range:
@@ -775,7 +775,7 @@ items:
             chatFlavor: ''
           duration:
             units: inst
-            concentration: false
+            maintained power: false
             override: false
           effects: []
           range:
@@ -842,7 +842,7 @@ items:
         units: lb
       price:
         value: 0
-        denomination: gp
+        denomination: CR
       rarity: ''
       attunement: ''
       attuned: false
@@ -933,7 +933,7 @@ items:
             chatFlavor: ''
           duration:
             units: inst
-            concentration: false
+            maintained power: false
             override: false
           effects: []
           range:
@@ -1002,7 +1002,7 @@ items:
         units: lb
       price:
         value: 0
-        denomination: gp
+        denomination: CR
       rarity: ''
       attunement: ''
       attuned: false
@@ -1097,7 +1097,7 @@ items:
             chatFlavor: ''
           duration:
             units: inst
-            concentration: false
+            maintained power: false
             override: false
           range:
             override: false
@@ -1123,7 +1123,7 @@ items:
               - vocal
               - somatic
               - material
-            spellbook: true
+            power list: true
             uuid: Compendium.dnd5e.spells24.Item.phbsplSlow000000
             ability: con
           name: ''
@@ -1138,8 +1138,8 @@ items:
         value: >-
           <p class="feature">The [[lookup @name lowercase]] casts the
           <em>@UUID[Compendium.dnd5e.spells24.Item.phbsplSlow000000]{Slow}</em>
-          spell, requiring no spell components and using Constitution as the
-          spellcasting ability (spell save DC [[lookup
+          spell, requiring no power components and using Constitution as the
+          power system ability (spell save DC [[lookup
           @attributes.spell.dc]]).</p>
         chat: ''
       identifier: slow
@@ -1236,7 +1236,7 @@ items:
         - vocal
         - somatic
         - material
-        - concentration
+        - maintained power
       materials:
         value: a drop of molasses
         consumed: false
@@ -1264,7 +1264,7 @@ items:
           duration:
             units: inst
             override: false
-            concentration: false
+            maintained power: false
           effects:
             - _id: z1lkguBohjqXRSHm
               onSave: false
@@ -1285,7 +1285,7 @@ items:
             ability:
               - wis
             dc:
-              calculation: spellcasting
+              calculation: power system
               formula: ''
           uses:
             spent: 0
@@ -1309,7 +1309,7 @@ items:
           duration:
             units: inst
             override: false
-            concentration: false
+            maintained power: false
           effects:
             - _id: z1lkguBohjqXRSHm
           range:

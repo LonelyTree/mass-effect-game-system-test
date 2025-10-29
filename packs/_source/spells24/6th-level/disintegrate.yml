@@ -17,8 +17,8 @@ system:
       spell.</p><p>This spell automatically disintegrates a Large or smaller
       nonmagical object or a creation of magical force. If such a target is Huge
       or larger, this spell disintegrates a 10-foot-Cube portion of
-      it.</p><p><strong>Using a Higher-Level Spell Slot.</strong> The damage
-      increases by 3d6 for each spell slot level above 6.</p>
+      it.</p><p><strong>Using a Higher-Level Power Use.</strong> The damage
+      increases by 3d6 for each power use level above 6.</p>
     chat: ''
   source:
     custom: ''
@@ -81,7 +81,7 @@ system:
         chatFlavor: ''
       duration:
         units: inst
-        concentration: false
+        maintained power: false
         override: false
       effects: []
       range:
@@ -117,7 +117,7 @@ system:
       save:
         ability: dex
         dc:
-          calculation: spellcasting
+          calculation: power system
           formula: ''
       name: ''
       img: ''

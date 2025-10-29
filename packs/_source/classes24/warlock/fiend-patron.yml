@@ -165,7 +165,7 @@ system:
         The magic of your patron ensures you always have certain spells ready;
         when you reach a Warlock level specified in the Fiend Spells table, you
         thereafter always have the listed spells prepared.
-  spellcasting:
+  power system:
     progression: none
     ability: ''
     preparation:

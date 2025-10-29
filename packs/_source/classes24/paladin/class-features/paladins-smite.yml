@@ -8,8 +8,8 @@ system:
     value: >-
       <p>You always have the
       @UUID[Compendium.dnd5e.spells24.Item.phbsplDivineSmit]{Divine Smite} spell
-      prepared. In addition, you can cast it without expending a spell slot, but
-      you must finish a Long Rest before you can cast it in this way
+      prepared. In addition, you can cast it without expending a power use, but
+      you must finish a Full Rest before you can cast it in this way
       again.</p><section id="secret-47mDL7wHB8aQP7SD"
       class="secret"><p><strong>Foundry Note</strong></p><p>When you reach this
       level the Divine Smite spell is added to your spells as Always Prepared

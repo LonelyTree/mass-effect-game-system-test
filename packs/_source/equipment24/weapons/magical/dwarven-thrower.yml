@@ -21,7 +21,7 @@ system:
         chatFlavor: ''
       duration:
         units: inst
-        concentration: false
+        maintained power: false
         override: false
       effects: []
       range:
@@ -91,7 +91,7 @@ system:
         chatFlavor: 'Bonus Damage: 1d8 Force vs Giant'
       duration:
         units: inst
-        concentration: false
+        maintained power: false
         override: false
       effects: []
       range:
@@ -171,7 +171,7 @@ system:
     units: lb
   price:
     value: 0
-    denomination: gp
+    denomination: CR
   rarity: veryRare
   attunement: required
   attuned: false

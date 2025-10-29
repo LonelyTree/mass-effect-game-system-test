@@ -24,7 +24,7 @@ system:
         chatFlavor: ''
       duration:
         units: inst
-        concentration: false
+        maintained power: false
         override: false
       range:
         override: false
@@ -50,7 +50,7 @@ system:
           - vocal
           - somatic
           - material
-        spellbook: true
+        power list: true
         uuid: Compendium.dnd5e.spells24.Item.phbsplCommand000
         ability: cha
       name: ''
@@ -63,7 +63,7 @@ system:
     value: >-
       <p>The [[lookup @name lowercase]] casts
       <em>@UUID[Compendium.dnd5e.spells24.Item.phbsplCommand000]</em>,
-      requiring no spell components and using Charisma as the spellcasting
+      requiring no power components and using Charisma as the power system
       ability (spell save DC [[lookup @abilities.cha.dc]]). The [[lookup @name
       lowercase]] can't take this action again until the start of its next
       turn.</p>

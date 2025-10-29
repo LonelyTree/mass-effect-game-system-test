@@ -12,7 +12,7 @@ system:
       Hit Points.</p><p>The transformation lasts for the Duration, or until the
       target drops to 0 Hit Points or dies. The new form can be any beast whose
       Challenge rating is equal to or less than the target's (or the target's
-      level, if it doesn't have a challenge rating). The target's game
+      level, if it doesn't have a threat level). The target's game
       statistics, including mental Ability Scores, are replaced by the
       Statistics of the chosen beast. It retains its Alignment and
       personality.</p><p>The target assumes the Hit Points of its new form. When
@@ -69,7 +69,7 @@ system:
     - vocal
     - somatic
     - material
-    - concentration
+    - maintained power
   activities:
     dnd5eactivity000:
       _id: dnd5eactivity000
@@ -88,7 +88,7 @@ system:
         chatFlavor: ''
       duration:
         units: inst
-        concentration: false
+        maintained power: false
         override: false
       effects:
         - _id: tM8Yj0dw52paxVc4
@@ -109,7 +109,7 @@ system:
       save:
         ability: wis
         dc:
-          calculation: spellcasting
+          calculation: power system
           formula: ''
       uses:
         spent: 0

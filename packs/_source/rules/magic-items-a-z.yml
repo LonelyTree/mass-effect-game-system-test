@@ -337,7 +337,7 @@ pages:
         <h3>@UUID[Compendium.dnd5e.items.Item.rRMaaGZ7qbzqMvoI]{Bowl of
         Commanding Water Elementals}</h3>
 
-        <h3>@UUID[Compendium.dnd5e.items.Item.ZYEqOSY9BLZs2GPx]{Bracers of
+        <h3>@UUID[Compendium.dnd5e.items.Item.ZYEqOSY9BLZs2CRx]{Bracers of
         Archery}</h3>
 
         <h3>@UUID[Compendium.dnd5e.items.Item.DSHi7yT6OUyDoCcu]{Bracers of
@@ -678,7 +678,7 @@ pages:
         <p> › @UUID[Compendium.dnd5e.items.Item.iLt7wTWr4cJnQulJ]{Figurine of
         Wondrous Power Ivory Goat of Traveling}</p>
 
-        <p> › @UUID[Compendium.dnd5e.items.Item.GP2bvHlxVi30OEmo]{Figurine of
+        <p> › @UUID[Compendium.dnd5e.items.Item.CR2bvHlxVi30OEmo]{Figurine of
         Wondrous Power Marble Elephant}</p>
 
         <p> › @UUID[Compendium.dnd5e.items.Item.9nxSHbqlDdngtuuz]{Figurine of
@@ -1123,7 +1123,7 @@ pages:
         <h3>@UUID[Compendium.dnd5e.items.Item.e3XQygrXkzNvkDGF]{Marvelous
         Pigments}</h3>
 
-        <h3>@UUID[Compendium.dnd5e.items.Item.skoUe223EvRYGPL6]{Medallion of
+        <h3>@UUID[Compendium.dnd5e.items.Item.skoUe223EvRYCRL6]{Medallion of
         Thoughts}</h3>
 
         <h3>@UUID[Compendium.dnd5e.items.Item.hf5j1meGsA33HkUj]{Mirror of Life
@@ -1364,7 +1364,7 @@ pages:
         <h3>@UUID[Compendium.dnd5e.items.Item.wNKYbKYwOHbA7SH8]{Potion of
         Heroism}</h3>
 
-        <h3>@UUID[Compendium.dnd5e.items.Item.rTn4p9nJr4Aq2GPB]{Potion of
+        <h3>@UUID[Compendium.dnd5e.items.Item.rTn4p9nJr4Aq2CRB]{Potion of
         Invisibility}</h3>
 
         <h3>@UUID[Compendium.dnd5e.items.Item.Ct9LR9Ft1FG4a6Y1]{Potion of Mind
@@ -1639,36 +1639,36 @@ pages:
         <h3>@UUID[Compendium.dnd5e.items.Item.zJ5LhDvTxYKzPIx4]{Sovereign
         Glue}</h3>
 
-        <h3>Spell Scroll</h3>
+        <h3>Power Module</h3>
 
-        <p> › @UUID[Compendium.dnd5e.items.Item.rQ6sO7HDWzqMhSI3]{Spell Scroll
-        Cantrip Level}</p>
+        <p> › @UUID[Compendium.dnd5e.items.Item.rQ6sO7HDWzqMhSI3]{Power Module
+        Basic Power Level}</p>
 
-        <p> › @UUID[Compendium.dnd5e.items.Item.9GSfMg0VOA2b4uFN]{Spell Scroll
+        <p> › @UUID[Compendium.dnd5e.items.Item.9GSfMg0VOA2b4uFN]{Power Module
         1st Level}</p>
 
-        <p> › @UUID[Compendium.dnd5e.items.Item.XdDp6CKh9qEvPTuS]{Spell Scroll
+        <p> › @UUID[Compendium.dnd5e.items.Item.XdDp6CKh9qEvPTuS]{Power Module
         2nd Level}</p>
 
-        <p> › @UUID[Compendium.dnd5e.items.Item.hqVKZie7x9w3Kqds]{Spell Scroll
+        <p> › @UUID[Compendium.dnd5e.items.Item.hqVKZie7x9w3Kqds]{Power Module
         3rd Level}</p>
 
-        <p> › @UUID[Compendium.dnd5e.items.Item.DM7hzgL836ZyUFB1]{Spell Scroll
+        <p> › @UUID[Compendium.dnd5e.items.Item.DM7hzgL836ZyUFB1]{Power Module
         4th Level}</p>
 
-        <p> › @UUID[Compendium.dnd5e.items.Item.wa1VF8TXHmkrrR35]{Spell Scroll
+        <p> › @UUID[Compendium.dnd5e.items.Item.wa1VF8TXHmkrrR35]{Power Module
         5th Level}</p>
 
-        <p> › @UUID[Compendium.dnd5e.items.Item.tI3rWx4bxefNCexS]{Spell Scroll
+        <p> › @UUID[Compendium.dnd5e.items.Item.tI3rWx4bxefNCexS]{Power Module
         6th Level}</p>
 
-        <p> › @UUID[Compendium.dnd5e.items.Item.mtyw4NS1s7j2EJaD]{Spell Scroll
+        <p> › @UUID[Compendium.dnd5e.items.Item.mtyw4NS1s7j2EJaD]{Power Module
         7th Level}</p>
 
-        <p> › @UUID[Compendium.dnd5e.items.Item.aOrinPg7yuDZEuWr]{Spell Scroll
+        <p> › @UUID[Compendium.dnd5e.items.Item.aOrinPg7yuDZEuWr]{Power Module
         8th Level}</p>
 
-        <p> › @UUID[Compendium.dnd5e.items.Item.O4YbkJkLlnsgUszZ]{Spell Scroll
+        <p> › @UUID[Compendium.dnd5e.items.Item.O4YbkJkLlnsgUszZ]{Power Module
         9th Level}</p>
 
         <h3>@UUID[Compendium.dnd5e.items.Item.kpDbCYgUivh7NApp]{Spellguard

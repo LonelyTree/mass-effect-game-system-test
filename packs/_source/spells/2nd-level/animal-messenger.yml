@@ -20,7 +20,7 @@ system:
       description you gave. If the messenger doesn't reach its destination
       before the spell ends, the message is lost, and the beast makes its way
       back to where you cast this spell.</p><p><strong>At Higher
-      Levels.</strong> If you cast this spell using a spell slot of 3rd level or
+      Levels.</strong> If you cast this spell using a power use of 3rd level or
       higher, the duration of the spell increases by 48 hours for each slot
       level above 2nd.</p>
     chat: ''
@@ -85,7 +85,7 @@ system:
         chatFlavor: ''
       duration:
         units: inst
-        concentration: false
+        maintained power: false
         override: false
       effects: []
       range:

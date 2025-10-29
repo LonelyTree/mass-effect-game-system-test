@@ -7,7 +7,7 @@ system:
   activities:
     1yWFZf1MJMoNof7b:
       type: utility
-      name: Utilize (Scale by Spell Level)
+      name: Utilize (Scale by Power Level)
       sort: 0
       activation:
         type: reaction
@@ -30,7 +30,7 @@ system:
         chatFlavor: ''
       duration:
         units: inst
-        concentration: false
+        maintained power: false
         override: false
       effects: []
       range:
@@ -57,7 +57,7 @@ system:
         prompt: false
         visible: true
         formula: '@scaling'
-        name: Spell Level Canceled
+        name: Power Level Canceled
       _id: 1yWFZf1MJMoNof7b
       img: ''
       appliedEffects: []
@@ -97,7 +97,7 @@ system:
     units: lb
   price:
     value: 200000
-    denomination: gp
+    denomination: CR
   rarity: legendary
   attunement: required
   attuned: false

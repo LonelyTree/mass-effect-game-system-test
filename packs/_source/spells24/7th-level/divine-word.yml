@@ -79,7 +79,7 @@ system:
         chatFlavor: ''
       duration:
         units: inst
-        concentration: false
+        maintained power: false
         override: false
       effects:
         - _id: poB090Yp3gKXXcMH
@@ -110,7 +110,7 @@ system:
       save:
         ability: cha
         dc:
-          calculation: spellcasting
+          calculation: power system
           formula: ''
       name: ''
       img: ''

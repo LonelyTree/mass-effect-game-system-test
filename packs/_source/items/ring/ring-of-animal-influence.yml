@@ -34,7 +34,7 @@ system:
     units: lb
   price:
     value: 4000
-    denomination: gp
+    denomination: CR
   attunement: ''
   equipped: false
   rarity: rare
@@ -102,7 +102,7 @@ system:
         chatFlavor: ''
       duration:
         units: inst
-        concentration: false
+        maintained power: false
         override: false
       range:
         override: false
@@ -120,7 +120,7 @@ system:
         max: ''
       name: ''
       img: ''
-    3Ag2tI8TAhvtGP7V:
+    3Ag2tI8TAhvtCR7V:
       type: cast
       spell:
         uuid: Compendium.dnd5e.spells.Item.XXUDGFELgoskdOD0
@@ -133,7 +133,7 @@ system:
           - vocal
           - somatic
           - material
-      _id: 3Ag2tI8TAhvtGP7V
+      _id: 3Ag2tI8TAhvtCR7V
       sort: 0
       activation:
         type: action
@@ -152,7 +152,7 @@ system:
         chatFlavor: ''
       duration:
         units: inst
-        concentration: false
+        maintained power: false
         override: false
       range:
         override: false
@@ -205,7 +205,7 @@ system:
         chatFlavor: ''
       duration:
         units: inst
-        concentration: false
+        maintained power: false
         override: false
       range:
         override: false

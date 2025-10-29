@@ -118,7 +118,7 @@ system:
       duration:
         units: inst
         override: false
-        concentration: false
+        maintained power: false
       effects: []
       range:
         override: false

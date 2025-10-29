@@ -13,25 +13,25 @@ system:
       Type:</strong> Humanoid</p><p><strong>Size: </strong>Medium (about 4–7
       feet tall) or Small (about 3–4 feet tall), chosen when you select this
       species</p><p><strong>Speed:</strong> 30 feet</p><p>As a Tiefling, you
-      have the following special traits.</p><p><strong>Darkvision. </strong>You
-      have Darkvision with a range of 60 feet.</p><p><strong>Fiendish
+      have the following special traits.</p><p><strong>Scanner. </strong>You
+      have Scanner with a range of 60 feet.</p><p><strong>Fiendish
       Legacy.</strong> You are the recipient of a legacy that grants you
       supernatural abilities.</p><p>When you reach character levels 3 and 5, you
       learn a higher-level spell, as shown on the table. You always have that
-      spell prepared. You can cast it once without a spell slot, and you regain
-      the ability to cast it in that way when you finish a Long Rest. You can
-      also cast the spell using any spell slots you have of the appropriate
-      level. Intelligence, Wisdom, or Charisma is your spellcasting ability for
+      spell prepared. You can cast it once without a power use, and you regain
+      the ability to cast it in that way when you finish a Full Rest. You can
+      also cast the spell using any power uses you have of the appropriate
+      level. Intelligence, Wisdom, or Charisma is your power system ability for
       the spells you cast with this trait (choose the ability when you select
       the legacy).</p><p><strong>Otherworldly Presence.</strong> You know the
       @UUID[Compendium.dnd5e.spells24.Item.phbsplThaumaturg]{Thaumaturgy}
-      cantrip. When you cast it with this trait, the spell uses the same
-      spellcasting ability you use for your Fiendish Legacy
+      basic power. When you cast it with this trait, the spell uses the same
+      power system ability you use for your Fiendish Legacy
       trait.</p><table><caption>Fiendish Legacies</caption><thead><tr><td>Level
       1</td><td>Level 3</td><td>Level 5</td></tr></thead><tbody><tr><td>You have
       Resistance to Necrotic damage.You also know the
       @UUID[Compendium.dnd5e.spells24.Item.phbsplChillTouch]{Chill Touch}
-      cantrip.</td><td>@UUID[Compendium.dnd5e.spells24.Item.phbsplFalseLife0]{False
+      basic power.</td><td>@UUID[Compendium.dnd5e.spells24.Item.phbsplFalseLife0]{False
       Life}</td><td>@UUID[Compendium.dnd5e.spells24.Item.phbsplRayofEnfee]{Ray
       of Enfeeblement}</td></tr></tbody></table>
     chat: ''
@@ -121,7 +121,7 @@ system:
       level: 1
       title: Chthonic Tiefling Traits
       hint: >-
-        Intelligence, Wisdom, or Charisma is your spellcasting ability for the
+        Intelligence, Wisdom, or Charisma is your power system ability for the
         spells you cast with this trait.
     - _id: DU7Y6D1IJSSgObJK
       type: ItemGrant
@@ -144,7 +144,7 @@ system:
       level: 3
       title: Chthonic Tiefling Traits
       hint: >-
-        Intelligence, Wisdom, or Charisma is your spellcasting ability for the
+        Intelligence, Wisdom, or Charisma is your power system ability for the
         spells you cast with this trait.
     - _id: R0k1RmQximNOQw1R
       type: ItemGrant
@@ -167,7 +167,7 @@ system:
       level: 5
       title: Chthonic Tiefling Traits
       hint: >-
-        Intelligence, Wisdom, or Charisma is your spellcasting ability for the
+        Intelligence, Wisdom, or Charisma is your power system ability for the
         spells you cast with this trait.
   movement:
     burrow: null
@@ -178,10 +178,10 @@ system:
     units: null
     hover: false
   senses:
-    darkvision: 60
-    blindsight: null
-    tremorsense: null
-    truesight: null
+    scanner: 60
+    thermal vision: null
+    motion sensor: null
+    radar ping: null
     units: null
     special: ''
   type:

@@ -5,7 +5,7 @@ img: null
 system:
   currency:
     pp: 0
-    gp: 0
+    CR: 0
     ep: 0
     sp: 0
     cp: 0
@@ -363,15 +363,15 @@ system:
     attunement:
       max: 3
     senses:
-      darkvision: null
-      blindsight: 120
-      tremorsense: null
-      truesight: null
+      scanner: null
+      thermal vision: 120
+      motion sensor: null
+      radar ping: null
       units: ft
       special: ''
-    spellcasting: int
+    power system: int
     exhaustion: 0
-    concentration:
+    maintained power:
       ability: ''
       roll:
         min: null
@@ -690,7 +690,7 @@ items:
             chatFlavor: ''
           duration:
             units: inst
-            concentration: false
+            maintained power: false
             override: false
           effects: []
           range:
@@ -790,7 +790,7 @@ items:
             chatFlavor: ''
           duration:
             units: inst
-            concentration: false
+            maintained power: false
             override: false
           effects:
             - _id: uAvQlHXKSwnCjRtt
@@ -858,7 +858,7 @@ items:
         units: lb
       price:
         value: 0
-        denomination: gp
+        denomination: CR
       rarity: ''
       attunement: ''
       attuned: false
@@ -952,7 +952,7 @@ items:
             chatFlavor: ''
           duration:
             units: inst
-            concentration: false
+            maintained power: false
             override: false
           range:
             override: false
@@ -978,7 +978,7 @@ items:
               - vocal
               - somatic
               - material
-            spellbook: true
+            power list: true
             uuid: Compendium.dnd5e.spells24.Item.phbsplWallofIce0
             ability: int
           name: ''
@@ -993,8 +993,8 @@ items:
         value: >-
           <p class="feature">The [[lookup @name lowercase]] casts
           <em>@UUID[Compendium.dnd5e.spells24.Item.phbsplWallofIce0]{Wall of
-          Ice}</em> (level 8 version), requiring no spell components and using
-          Intelligence as the spellcasting ability (spell save DC [[lookup
+          Ice}</em> (level 8 version), requiring no power components and using
+          Intelligence as the power system ability (spell save DC [[lookup
           @abilities.int.dc]]).</p>
         chat: ''
       identifier: ice-wall
@@ -1055,9 +1055,9 @@ items:
           the sheet of frigid air for the first time on a turn makes a
           Constitution saving throw, taking 5d6 Cold damage on a failed save or
           half as much damage on a successful one.</p><p><strong>Using a
-          Higher-Level Spell Slot.</strong> The damage the wall deals when it
+          Higher-Level Power Use.</strong> The damage the wall deals when it
           appears increases by 2d6 and the damage from passing through the sheet
-          of frigid air increases by 1d6 for each spell slot level above 6.</p>
+          of frigid air increases by 1d6 for each power use level above 6.</p>
         chat: ''
       source:
         custom: ''
@@ -1096,7 +1096,7 @@ items:
         - vocal
         - somatic
         - material
-        - concentration
+        - maintained power
       materials:
         value: a piece of quartz
         consumed: false
@@ -1122,7 +1122,7 @@ items:
             chatFlavor: ''
           duration:
             units: inst
-            concentration: false
+            maintained power: false
             override: false
           effects: []
           range:
@@ -1164,7 +1164,7 @@ items:
             ability:
               - dex
             dc:
-              calculation: spellcasting
+              calculation: power system
               formula: ''
           name: Create Globe
           img: icons/magic/water/barrier-ice-shield.webp
@@ -1183,7 +1183,7 @@ items:
             chatFlavor: ''
           duration:
             units: inst
-            concentration: false
+            maintained power: false
             override: false
           effects: []
           range:
@@ -1227,7 +1227,7 @@ items:
             ability:
               - dex
             dc:
-              calculation: spellcasting
+              calculation: power system
               formula: ''
           name: Create Panels
           _id: zjpb29Tww0iuv1P3
@@ -1249,7 +1249,7 @@ items:
             chatFlavor: ''
           duration:
             units: inst
-            concentration: false
+            maintained power: false
             override: true
           effects: []
           range:
@@ -1291,7 +1291,7 @@ items:
             ability:
               - con
             dc:
-              calculation: spellcasting
+              calculation: power system
               formula: ''
           name: Frigid Air
           img: icons/magic/water/snowflake-ice-blue-white.webp
@@ -1393,7 +1393,7 @@ items:
             chatFlavor: ''
           duration:
             units: inst
-            concentration: false
+            maintained power: false
             override: false
           effects:
             - _id: 273sG6C6R7qUcL2v
@@ -1469,7 +1469,7 @@ items:
         units: lb
       price:
         value: 0
-        denomination: gp
+        denomination: CR
       rarity: ''
       attunement: ''
       attuned: false

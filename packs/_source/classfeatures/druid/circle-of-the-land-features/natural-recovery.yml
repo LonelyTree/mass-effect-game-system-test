@@ -8,12 +8,12 @@ system:
     value: >-
       <p>Starting at 2nd level, you can regain some of your magical energy by
       sitting in meditation and communing with nature.</p><p>During a short
-      rest, you choose expended spell slots to recover. The spell slots can have
+      rest, you choose expended power uses to recover. The power uses can have
       a combined level that is equal to or less than half your druid level
       (rounded up), and none of the slots can be 6th level or higher. You can't
-      use this feature again until you finish a long rest.</p><p>For example,
+      use this feature again until you finish a full rest.</p><p>For example,
       when you are a 4th-level druid, you can recover up to two levels worth of
-      spell slots. You can recover either a 2nd-level slot or two 1st-level
+      power uses. You can recover either a 2nd-level slot or two 1st-level
       slots.</p>
     chat: ''
   source:
@@ -56,10 +56,10 @@ system:
         spellSlot: true
       description:
         chatFlavor: >-
-          The druid can recover this number worth of spell slots (of 5th level
+          The druid can recover this number worth of power uses (of 5th level
           or lower):
       duration:
-        concentration: false
+        maintained power: false
         value: ''
         units: ''
         special: ''

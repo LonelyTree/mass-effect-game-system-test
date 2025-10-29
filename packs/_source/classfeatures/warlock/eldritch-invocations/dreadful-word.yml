@@ -8,7 +8,7 @@ system:
     value: >-
       <p>You can cast
       @UUID[Compendium.dnd5e.spells.Item.9hQXdMSmerkTsHDe]{Confusion} once using
-      a warlock spell slot. You can't do so again until you finish a long
+      a warlock power use. You can't do so again until you finish a long
       rest.</p>
     chat: ''
   source:
@@ -54,7 +54,7 @@ system:
       description:
         chatFlavor: ''
       duration:
-        concentration: false
+        maintained power: false
         value: '1'
         units: minute
         special: ''

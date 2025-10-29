@@ -10,11 +10,11 @@ system:
       make a DC 10 Constitution saving throw. If you succeed, your Hit Points
       instead change to a number equal to twice your Barbarian level.</p><p>Each
       time you use this feature after the first, the DC increases by 5. When you
-      finish a Short or Long Rest, the DC resets to 10.</p><section
+      finish a Short or Full Rest, the DC resets to 10.</p><section
       class="secret" id="secret-GTpuSHXh1ZobcQYd"><p><strong>Foundry
       Note</strong></p><p>This feature will automatically increase the DC by 5
       if you consume the resource when activating it. It will also automatically
-      reset to 10 after a Short or Long Rest.</p></section>
+      reset to 10 after a Short or Full Rest.</p></section>
     chat: ''
   source:
     custom: ''
@@ -62,7 +62,7 @@ system:
         units: inst
         special: ''
         override: false
-        concentration: false
+        maintained power: false
       effects: []
       range:
         units: self
@@ -118,7 +118,7 @@ system:
         chatFlavor: ''
       duration:
         units: inst
-        concentration: false
+        maintained power: false
         override: false
       effects: []
       range:

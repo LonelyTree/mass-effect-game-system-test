@@ -18,7 +18,7 @@ system:
           - vocal
           - somatic
           - material
-        spellbook: true
+        power list: true
       _id: 0Ecazu341cv88FXR
       sort: 0
       activation:
@@ -39,7 +39,7 @@ system:
         chatFlavor: ''
       duration:
         units: inst
-        concentration: false
+        maintained power: false
         override: false
       range:
         override: false
@@ -87,7 +87,7 @@ system:
     units: lb
   price:
     value: 200
-    denomination: gp
+    denomination: CR
   rarity: uncommon
   attunement: ''
   attuned: false

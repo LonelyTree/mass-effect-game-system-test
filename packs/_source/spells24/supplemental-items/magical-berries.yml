@@ -24,7 +24,7 @@ system:
     units: lb
   price:
     value: 0
-    denomination: gp
+    denomination: CR
   rarity: ''
   attunement: ''
   attuned: false
@@ -81,7 +81,7 @@ system:
         units: inst
         special: ''
         override: false
-        concentration: false
+        maintained power: false
       effects: []
       range:
         units: self

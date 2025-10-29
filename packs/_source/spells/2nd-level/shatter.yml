@@ -14,8 +14,8 @@ system:
       crystal, or metal has disadvantage on this saving throw.</p><p>A
       nonmagical object that isn't being worn or carried also takes the damage
       if it's in the spell's area.</p><p><strong>At Higher Levels.</strong> When
-      you cast this spell using a 3 or higher level spell slot, the damage of
-      the spell increases by 1d8 for each level of higher spell slot 2.</p>
+      you cast this spell using a 3 or higher level power use, the damage of
+      the spell increases by 1d8 for each level of higher power use 2.</p>
     chat: ''
   source:
     custom: ''
@@ -77,7 +77,7 @@ system:
         chatFlavor: ''
       duration:
         units: inst
-        concentration: false
+        maintained power: false
         override: false
       effects: []
       range:
@@ -108,7 +108,7 @@ system:
       save:
         ability: con
         dc:
-          calculation: spellcasting
+          calculation: power system
           formula: ''
       uses:
         spent: 0

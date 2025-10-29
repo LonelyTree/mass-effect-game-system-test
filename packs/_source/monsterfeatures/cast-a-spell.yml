@@ -7,7 +7,7 @@ system:
   description:
     value: >-
       <p>the [[lookup @name lowercase]] casts a spell from its list of prepared
-      spells, using a spell slot as normal.</p>
+      spells, using a power use as normal.</p>
     chat: ''
   source:
     custom: ''
@@ -47,7 +47,7 @@ system:
       description:
         chatFlavor: ''
       duration:
-        concentration: false
+        maintained power: false
         value: ''
         units: ''
         special: ''

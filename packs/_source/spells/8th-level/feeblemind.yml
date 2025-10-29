@@ -77,7 +77,7 @@ system:
         chatFlavor: ''
       duration:
         units: inst
-        concentration: false
+        maintained power: false
         override: false
       effects:
         - _id: flpBCg1pgZchf5Hz
@@ -110,7 +110,7 @@ system:
       save:
         ability: int
         dc:
-          calculation: spellcasting
+          calculation: power system
           formula: ''
       uses:
         spent: 0

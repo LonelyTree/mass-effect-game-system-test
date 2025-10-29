@@ -12,11 +12,11 @@ system:
       Hit Points equal to your Proficiency Bonus. You can use this trait a
       number of times equal to your Proficiency Bonus, and you regain all
       expended uses when you finish a Short or Long
-      Rest.</p><p><strong>Darkvision.</strong> You have Darkvision with a range
+      Rest.</p><p><strong>Scanner.</strong> You have Scanner with a range
       of 120 feet.</p><p><strong>Relentless Endurance.</strong> When you are
       reduced to 0 Hit Points but not killed outright, you can drop to 1 Hit
       Point instead. Once you use this trait, you can't do so again until you
-      finish a Long Rest.</p>
+      finish a Full Rest.</p>
     chat: ''
   source:
     custom: ''
@@ -57,10 +57,10 @@ system:
     units: null
     hover: false
   senses:
-    darkvision: 120
-    blindsight: null
-    tremorsense: null
-    truesight: null
+    scanner: 120
+    thermal vision: null
+    motion sensor: null
+    radar ping: null
     units: null
     special: ''
   type:

@@ -5,7 +5,7 @@ img: ''
 system:
   currency:
     pp: 0
-    gp: 0
+    CR: 0
     ep: 0
     sp: 0
     cp: 0
@@ -303,15 +303,15 @@ system:
     attunement:
       max: 3
     senses:
-      darkvision: null
-      blindsight: null
-      tremorsense: null
-      truesight: null
+      scanner: null
+      thermal vision: null
+      motion sensor: null
+      radar ping: null
       units: null
       special: ''
-    spellcasting: int
+    power system: int
     exhaustion: 0
-    concentration:
+    maintained power:
       ability: ''
       roll:
         min: null
@@ -504,7 +504,7 @@ items:
             chatFlavor: ''
           duration:
             units: inst
-            concentration: false
+            maintained power: false
             override: false
           effects:
             - _id: sEpCnDgBAYjTuRgI
@@ -558,7 +558,7 @@ items:
           img: ''
           appliedEffects:
             - sEpCnDgBAYjTuRgI
-        ooHKOg5gGPyp0Jzy:
+        ooHKOg5gCRyp0Jzy:
           type: attack
           activation:
             type: bonus
@@ -575,7 +575,7 @@ items:
             chatFlavor: ''
           duration:
             units: inst
-            concentration: false
+            maintained power: false
             override: false
           effects:
             - _id: sEpCnDgBAYjTuRgI
@@ -626,7 +626,7 @@ items:
                 scaling:
                   number: 1
           name: Teleport and Attack
-          _id: ooHKOg5gGPyp0Jzy
+          _id: ooHKOg5gCRyp0Jzy
           img: ''
           appliedEffects:
             - sEpCnDgBAYjTuRgI

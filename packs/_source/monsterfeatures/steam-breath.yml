@@ -1,4 +1,4 @@
-_id: 4UuuUKjATTixrZGP
+_id: 4UuuUKjATTixrZCR
 name: Steam Breath
 ownership:
   default: 0
@@ -56,7 +56,7 @@ system:
       description:
         chatFlavor: ''
       duration:
-        concentration: false
+        maintained power: false
         value: ''
         units: inst
         special: ''
@@ -114,4 +114,4 @@ _stats:
   modifiedTime: 1725992571061
   lastModifiedBy: dnd5ebuilder0000
   exportSource: null
-_key: '!items!4UuuUKjATTixrZGP'
+_key: '!items!4UuuUKjATTixrZCR'

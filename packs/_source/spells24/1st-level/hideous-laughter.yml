@@ -11,7 +11,7 @@ system:
       [[/save ability=wis dc=@attributes.spell.dc]] saving throw. The target has
       Advantage on the save if the save is triggered by damage. On a successful
       save, the spell ends.</p><p><strong>Using a Higher-Level Spell
-      Slot.</strong> You can target one additional creature for each spell slot
+      Slot.</strong> You can target one additional creature for each power use
       level about 1.</p>
     chat: ''
   source:
@@ -52,7 +52,7 @@ system:
     - vocal
     - somatic
     - material
-    - concentration
+    - maintained power
   materials:
     value: a tart and a feather
     consumed: false
@@ -98,7 +98,7 @@ system:
       save:
         ability: wis
         dc:
-          calculation: spellcasting
+          calculation: power system
           formula: ''
       uses:
         spent: 0

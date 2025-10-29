@@ -59,7 +59,7 @@ system:
         chatFlavor: ''
       duration:
         units: inst
-        concentration: false
+        maintained power: false
         override: false
       effects:
         - _id: iY8KgqafX22tiBVw
@@ -95,7 +95,7 @@ system:
         ability:
           - wis
         dc:
-          calculation: spellcasting
+          calculation: power system
           formula: ''
       name: ''
   enchant: {}

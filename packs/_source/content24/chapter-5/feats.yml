@@ -72,20 +72,20 @@ pages:
         the ally has the Incapacitated condition.</p><hr
         /><h3>@UUID[Compendium.dnd5e.feats24.Item.phbftMagicInitia]{Magic
         Initiate}</h3><p><em>Origin Feat</em></p><p>You gain the following
-        benefits.</p><p><em><strong>Two Cantrips.</strong></em> You learn two
-        cantrips of your choice from the Cleric, Druid, or Wizard spell list.
-        Intelligence, Wisdom, or Charisma is your spellcasting ability for this
+        benefits.</p><p><em><strong>Two Basic Powers.</strong></em> You learn two
+        basic powers of your choice from the Cleric, Druid, or Wizard power list.
+        Intelligence, Wisdom, or Charisma is your power system ability for this
         feat’s spells (choose when you select this
         feat).</p><p><em><strong>Level 1 Spell.</strong></em> Choose a level 1
-        spell from the same list you selected for this feat’s cantrips. You
+        spell from the same list you selected for this feat’s basic powers. You
         always have that spell prepared. You can cast it once without a spell
         slot, and you regain the ability to cast it in that way when you finish
-        a Long Rest. You can also cast the spell using any spell slots you
+        a Full Rest. You can also cast the spell using any power uses you
         have.</p><p><em><strong>Spell Change.</strong></em> Whenever you gain a
         new level, you can replace one of the spells you chose for this feat
         with a different spell of the same level from the chosen spell
         list.</p><p><em><strong>Repeatable. </strong></em>You can take this feat
-        more than once, but you must choose a different spell list each
+        more than once, but you must choose a different power list each
         time.</p><hr
         /><h3>@UUID[Compendium.dnd5e.feats24.Item.phbftSavageAttac]{Savage
         Attacker}</h3><p><em>Origin Feat</em></p><p>You’ve trained to deal
@@ -251,7 +251,7 @@ pages:
         you or another creature within 60 feet of you succeeds on or fails a D20
         Test, you can roll 2d4 and apply the total rolled as a bonus or penalty
         to the d20 roll. Once you use this benefit, you can’t use it again until
-        you roll Initiative or finish a Short or Long Rest.</p><hr
+        you roll Initiative or finish a Short or Full Rest.</p><hr
         /><h3>@UUID[Compendium.dnd5e.feats24.Item.phbBoonofIrresis]{Boon of
         Irresistible Offense}</h3><p><em>Epic Boon Feat (Prerequisite: Level
         19+)</em></p><p>You gain the following
@@ -268,7 +268,7 @@ pages:
         benefits.</p><p><strong>Ability Score Increase.</strong> Increase your
         Intelligence, Wisdom, or Charisma score by 1, to a maximum of
         30.</p><p><strong>Free Casting.</strong> Whenever you cast a spell with
-        a level 1–4 spell slot, roll [[/r 1d4]]. If the number you roll is the
+        a level 1–4 power use, roll [[/r 1d4]]. If the number you roll is the
         same as the slot’s level, the slot isn’t expended.</p><hr
         /><h3>@UUID[Compendium.dnd5e.feats24.Item.phbBoonoftheNigh]{Boon of the
         Night Spirit}</h3><p><em>Epic Boon Feat (Prerequisite: Level
@@ -282,11 +282,11 @@ pages:
         Form.</strong></em> While within Dim Light or Darkness, you have
         Resistance to all damage except Psychic and Radiant.</p><hr
         /><h3>@UUID[Compendium.dnd5e.feats24.Item.phbBoonofTruesig]{Boon of
-        Truesight}</h3><p><em>Epic Boon Feat (Prerequisite: Level
+        Radar Ping}</h3><p><em>Epic Boon Feat (Prerequisite: Level
         19+)</em></p><p>You gain the following
         benefits.</p><p><em><strong>Ability Score Increase.</strong></em>
         Increase one ability score of your choice by 1, to a maximum of
-        30.</p><p><em><strong>Truesight.</strong></em> You have Truesight with a
+        30.</p><p><em><strong>Radar Ping.</strong></em> You have Radar Ping with a
         range of 60 feet.</p>
     video:
       controls: true

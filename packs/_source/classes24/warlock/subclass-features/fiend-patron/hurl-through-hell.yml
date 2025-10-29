@@ -14,11 +14,11 @@ system:
       &amp;Reference[Incapacitated] condition until the end of your next turn,
       when it returns to the space it previously occupied or the nearest
       unoccupied space.</p><p>Once you use this feature, you can't use it again
-      until you finish a Long Rest unless you expend a Pact Magic spell slot (no
+      until you finish a Full Rest unless you expend a Pact Magic power use (no
       action required) to restore your use of it.</p><section class="secret"
       id="secret-gG3gHikiPJVXNkev"><p><strong>Foundry Note</strong></p><p>This
       feature includes one limited use.</p><p>The <strong>Regain Use</strong>
-      activity will expend a Pact Magic spell slot and restore a use of this
+      activity will expend a Pact Magic power use and restore a use of this
       feature.</p></section>
     chat: ''
   source:
@@ -64,7 +64,7 @@ system:
         chatFlavor: ''
       duration:
         units: inst
-        concentration: false
+        maintained power: false
         override: false
       effects: []
       range:
@@ -105,7 +105,7 @@ system:
         ability:
           - cha
         dc:
-          calculation: spellcasting
+          calculation: power system
           formula: ''
     0e3VQjiAyCisCoxN:
       type: utility
@@ -133,7 +133,7 @@ system:
         chatFlavor: ''
       duration:
         units: inst
-        concentration: false
+        maintained power: false
         override: false
       effects: []
       range:

@@ -19,8 +19,8 @@ system:
       the spell ends, it travels to you to report this fact if you are on the
       same plane of existence. If you are on a different plane, it returns to
       the place where you bound it and remains there until the spell
-      ends.</p><p><strong>Using a Higher-Level Spell Slot.</strong> The duration
-      increases with a spell slot of level 6 (10 days), 7 (30 days), 8 (180
+      ends.</p><p><strong>Using a Higher-Level Power Use.</strong> The duration
+      increases with a power use of level 6 (10 days), 7 (30 days), 8 (180
       days), and 9 (366 days).</p>
     chat: ''
   source:
@@ -60,7 +60,7 @@ system:
     - somatic
     - material
   materials:
-    value: a jewel worth 1,000+ GP, which the spell consumes
+    value: a jewel worth 1,000+ CR, which the spell consumes
     consumed: true
     cost: 0
     supply: 0
@@ -104,7 +104,7 @@ system:
       save:
         ability: cha
         dc:
-          calculation: spellcasting
+          calculation: power system
           formula: ''
       uses:
         spent: 0

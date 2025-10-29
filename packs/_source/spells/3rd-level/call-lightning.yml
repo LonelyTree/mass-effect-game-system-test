@@ -21,7 +21,7 @@ system:
       gives you control over the existing storm instead of creating a new one.
       Under such conditions, the spell's damage increases by
       1d10.</p><p><strong>At Higher Levels.</strong> When you cast this spell
-      using a spell slot of 4th or higher level, the damage increases by 1d10
+      using a power use of 4th or higher level, the damage increases by 1d10
       for each slot level above 3rd.</p>
     chat: ''
   source:
@@ -65,7 +65,7 @@ system:
   properties:
     - vocal
     - somatic
-    - concentration
+    - maintained power
   activities:
     dnd5eactivity000:
       _id: dnd5eactivity000
@@ -84,7 +84,7 @@ system:
         chatFlavor: ''
       duration:
         units: inst
-        concentration: false
+        maintained power: false
         override: false
       effects: []
       range:
@@ -115,7 +115,7 @@ system:
       save:
         ability: dex
         dc:
-          calculation: spellcasting
+          calculation: power system
           formula: ''
       uses:
         spent: 0
@@ -138,7 +138,7 @@ system:
         chatFlavor: ''
       duration:
         units: inst
-        concentration: false
+        maintained power: false
         override: false
       effects: []
       range:

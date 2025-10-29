@@ -9,7 +9,7 @@ system:
       <section class="secret">
 
       <p>the [[lookup @name lowercase]] magically turns invisible until she
-      attacks or casts a spell, or until her concentration ends (as if
+      attacks or casts a spell, or until her maintained power ends (as if
       concentrating on a spell). While invisible, she leaves no physical
       evidence of her passage, so she can be tracked only by magic. Any
       equipment she wears or carries is invisible with her.</p>
@@ -51,7 +51,7 @@ system:
       description:
         chatFlavor: ''
       duration:
-        concentration: false
+        maintained power: false
         value: ''
         units: ''
         special: ''

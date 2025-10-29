@@ -19,8 +19,8 @@ system:
       effect but is stored within the [[lookup @name lowercase]]. Any previously
       stored spell is lost when a new spell is stored. The [[lookup @name
       lowercase]] can cast the spell stored with any parameters set by the
-      original caster, requiring no spell components and using the caster's
-      spellcasting ability. The stored spell is then lost.</p>
+      original caster, requiring no power components and using the caster's
+      power system ability. The stored spell is then lost.</p>
     chat: ''
   identifier: spell-storing
   source:

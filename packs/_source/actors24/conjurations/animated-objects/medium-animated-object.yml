@@ -94,7 +94,7 @@ system:
       custom: Understands the languages you know
   currency:
     pp: 0
-    gp: 0
+    CR: 0
     ep: 0
     sp: 0
     cp: 0
@@ -349,15 +349,15 @@ system:
     attunement:
       max: 3
     senses:
-      darkvision: null
-      blindsight: 30
-      tremorsense: null
-      truesight: null
+      scanner: null
+      thermal vision: 30
+      motion sensor: null
+      radar ping: null
       units: null
       special: ''
-    spellcasting: int
+    power system: int
     exhaustion: 0
-    concentration:
+    maintained power:
       ability: ''
       roll:
         min: null
@@ -463,7 +463,7 @@ prototypeToken:
     saturation: 0
     contrast: 0
   detectionModes:
-    - id: blindsight
+    - id: thermal vision
       range: 30
       enabled: true
   occludable:
@@ -531,7 +531,7 @@ items:
             units: inst
             special: ''
             override: false
-            concentration: false
+            maintained power: false
           effects: []
           range:
             value: '5'

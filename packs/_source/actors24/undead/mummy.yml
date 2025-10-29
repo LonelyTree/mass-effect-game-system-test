@@ -5,7 +5,7 @@ img: null
 system:
   currency:
     pp: 0
-    gp: 0
+    CR: 0
     ep: 0
     sp: 0
     cp: 0
@@ -363,15 +363,15 @@ system:
     attunement:
       max: 3
     senses:
-      darkvision: 60
-      blindsight: null
-      tremorsense: null
-      truesight: null
+      scanner: 60
+      thermal vision: null
+      motion sensor: null
+      radar ping: null
       units: null
       special: ''
-    spellcasting: str
+    power system: str
     exhaustion: 0
-    concentration:
+    maintained power:
       ability: ''
       roll:
         min: null
@@ -583,7 +583,7 @@ items:
           description: {}
           duration:
             units: inst
-            concentration: false
+            maintained power: false
             override: false
           effects: []
           range:
@@ -674,7 +674,7 @@ items:
             chatFlavor: ''
           duration:
             units: inst
-            concentration: false
+            maintained power: false
             override: false
           effects:
             - _id: t7Anyyhyg6fmTdXw
@@ -737,7 +737,7 @@ items:
             chatFlavor: ''
           duration:
             units: inst
-            concentration: false
+            maintained power: false
             override: false
           effects: []
           range:
@@ -772,7 +772,7 @@ items:
           <p class="feature">[[/attack extended]]. [[/damage average extended]].
           If the target is a creature, it is cursed. While cursed, the target
           can't regain Hit Points, its Hit Point maximum doesn't return to
-          normal when finishing a Long Rest, and its Hit Point maximum decreases
+          normal when finishing a Full Rest, and its Hit Point maximum decreases
           by [[/r 3d6#HP Max Decrease]]{10 (3d6)} every 24 hours that elapse. A
           creature dies and turns to dust if reduced to 0 Hit Points by this
           attack.</p>
@@ -793,7 +793,7 @@ items:
         units: lb
       price:
         value: 0
-        denomination: gp
+        denomination: CR
       rarity: ''
       attunement: ''
       attuned: false
@@ -858,7 +858,7 @@ items:
         description: >-
           <p>If the target is a creature, it is cursed. While cursed, the target
           can’t regain Hit Points, its Hit Point maximum doesn’t return to
-          normal when finishing a Long Rest, and its Hit Point maximum decreases
+          normal when finishing a Full Rest, and its Hit Point maximum decreases
           by [[/r 3d6#HP Max Decrease]]{10 (3d6)} every 24 hours that elapse. A
           creature dies and turns to dust if reduced to 0 Hit Points by this
           attack.</p>
@@ -925,7 +925,7 @@ items:
             chatFlavor: ''
           duration:
             units: inst
-            concentration: false
+            maintained power: false
             override: false
           effects:
             - _id: hRSvOovTSlu4Dw8c

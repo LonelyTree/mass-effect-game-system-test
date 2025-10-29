@@ -11,9 +11,9 @@ system:
       such as Demogorgon, Orcus, Fraz'Urb-luu, and Baphomet; archdevils such as
       Asmodeus, Dispater, Mephistopheles, and Belial; pit fiends and balors that
       are especially mighty; and ultroloths and other lords of the
-      yugoloths.</p><h4>Expanded Spell List</h4><p>The Fiend lets you choose
+      yugoloths.</p><h4>Expanded Power List</h4><p>The Fiend lets you choose
       from an expanded list of spells when you learn a warlock spell. The
-      following spells are added to the warlock spell list for
+      following spells are added to the warlock power list for
       you.</p><table><caption>Fiend Expanded
       Spells</caption><thead><tr><td>Spell
       Level</td><td>Spells</td></tr></thead><tbody><tr><td>1st</td><td>@UUID[Compendium.dnd5e.spells.Item.5SuJewoa1CRWaj1F]{Burning
@@ -103,7 +103,7 @@ system:
       value: {}
       level: 14
       title: Features
-  spellcasting:
+  power system:
     progression: none
     ability: ''
     preparation: {}

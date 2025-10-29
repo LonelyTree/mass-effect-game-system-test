@@ -14,7 +14,7 @@ system:
       visibly thicker beard if you already have one.<br />If you aren't a dwarf,
       you gain the following additional benefits while wearing the
       belt:</p><ul><li>You have advantage on saving throws against poison, and
-      you have resistance against poison damage.</li><li>You have darkvision out
+      you have resistance against poison damage.</li><li>You have scanner out
       to a range of 60 feet.</li><li>You can speak, read, and write
       Dwarvish.</li></ul>
     chat: ''
@@ -30,7 +30,7 @@ system:
     units: lb
   price:
     value: 4000
-    denomination: gp
+    denomination: CR
   attunement: required
   equipped: false
   rarity: rare
@@ -78,7 +78,7 @@ effects:
         mode: 2
         value: '2'
         priority: null
-      - key: system.attributes.senses.darkvision
+      - key: system.attributes.senses.scanner
         mode: 4
         value: '60'
         priority: null

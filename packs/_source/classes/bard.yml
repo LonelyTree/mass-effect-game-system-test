@@ -16,7 +16,7 @@ system:
       instruments of your choice<br /><strong>Saving Throws:</strong> Dexterity,
       Charisma<br /><strong>Skills:</strong> Choose any three</p><h1>Bard
       Advancement</h1><table border="0"><thead><tr><td>Level</td><td>Proficiency
-      Bonus</td><td>Features</td></tr></thead><tbody><tr><td>1st</td><td>+2</td><td>@UUID[Compendium.dnd5e.classfeatures.Item.u4NLajXETJhJU31v]{Spellcasting},
+      Bonus</td><td>Features</td></tr></thead><tbody><tr><td>1st</td><td>+2</td><td>@UUID[Compendium.dnd5e.classfeatures.Item.u4NLajXETJhJU31v]{Power System},
       @UUID[Compendium.dnd5e.classfeatures.Item.hpLNiGq7y67d2EHA]{Bardic
       Inspiration
       (d6)}</td></tr><tr><td>2nd</td><td>+2</td><td>@UUID[Compendium.dnd5e.classfeatures.Item.ezWijmCnlnQ9ZRX2]{Jack
@@ -43,16 +43,16 @@ system:
       Secrets}</td></tr><tr><td>11th</td><td>+4</td><td>6th Level Spell
       Slot</td></tr><tr><td>12th</td><td>+4</td><td>@UUID[Compendium.dnd5e.classfeatures.Item.s0Cc2zcX0JzIgam5]{Ability
       Score Improvement}</td></tr><tr><td>13th</td><td>+5</td><td>7th Level
-      Spell Slot,
+      Power Use,
       @UUID[Compendium.dnd5e.classfeatures.Item.he8RpPXwSl2lVSIk]{Song of Rest
       (d10)}</td></tr><tr><td>14th</td><td>+5</td><td>@UUID[Compendium.dnd5e.classfeatures.Item.aonJ2YjkqkYB9WYB]{Magical
       Secrets}, Bard College
-      feature</td></tr><tr><td>15th</td><td>+5</td><td>8th Level Spell Slot,
+      feature</td></tr><tr><td>15th</td><td>+5</td><td>8th Level Power Use,
       @UUID[Compendium.dnd5e.classfeatures.Item.hpLNiGq7y67d2EHA]{Bardic
       Inspiration
       (d12)}</td></tr><tr><td>16th</td><td>+5</td><td>@UUID[Compendium.dnd5e.classfeatures.Item.s0Cc2zcX0JzIgam5]{Ability
       Score Improvement}</td></tr><tr><td>17th</td><td>+6</td><td>9th Level
-      Spell Slot,
+      Power Use,
       @UUID[Compendium.dnd5e.classfeatures.Item.he8RpPXwSl2lVSIk]{Song of Rest
       (d12)}</td></tr><tr><td>18th</td><td>+6</td><td>@UUID[Compendium.dnd5e.classfeatures.Item.aonJ2YjkqkYB9WYB]{Magical
       Secrets}</td></tr><tr><td>19th</td><td>+6</td><td>@UUID[Compendium.dnd5e.classfeatures.Item.s0Cc2zcX0JzIgam5]{Ability
@@ -361,7 +361,7 @@ system:
       hint: >-
         Choose two spells from any classes, including this one. A spell you
         choose must be of a level you can cast, as shown on the Bard table, or a
-        cantrip.
+        basic power.
     - type: ScaleValue
       configuration:
         identifier: inspiration
@@ -416,7 +416,7 @@ system:
       _id: TK2RAm9EFQtVjDrU
     - type: ScaleValue
       configuration:
-        identifier: cantrips-known
+        identifier: basic powers-known
         type: number
         distance:
           units: ''
@@ -428,7 +428,7 @@ system:
           '10':
             value: 4
       value: {}
-      title: Cantrips Known
+      title: Basic Powers Known
       _id: ovKbtrhfIkYTuThu
     - type: ScaleValue
       configuration:
@@ -563,7 +563,7 @@ system:
       value: {}
       level: 3
       title: Bard College
-  spellcasting:
+  power system:
     progression: full
     ability: cha
     preparation: {}

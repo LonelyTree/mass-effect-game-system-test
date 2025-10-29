@@ -13,7 +13,7 @@ system:
       expend these points to enhance or fuel certain Monk features. You start
       knowing three such features: Flurry of Blows, Patient Defense, and Step of
       the Wind, each of which is detailed below.</p><p>When you expend a Focus
-      Point, it is unavailable until you finish a Short or Long Rest, at the end
+      Point, it is unavailable until you finish a Short or Full Rest, at the end
       of which you regain all your expended points.</p><p>Some features that use
       Focus Points require your target to make a saving throw. The save DC
       equals 8 plus your Wisdom modifier and Proficiency
@@ -81,7 +81,7 @@ system:
         chatFlavor: ''
       duration:
         units: inst
-        concentration: false
+        maintained power: false
         override: false
       effects: []
       range:
@@ -151,7 +151,7 @@ system:
         chatFlavor: ''
       duration:
         units: inst
-        concentration: false
+        maintained power: false
         override: false
       effects:
         - _id: UYHRNxrU74xiUJAy
@@ -199,7 +199,7 @@ system:
         chatFlavor: ''
       duration:
         units: inst
-        concentration: false
+        maintained power: false
         override: false
       effects:
         - _id: 92bFICMzRpJmnO56
@@ -253,7 +253,7 @@ system:
         chatFlavor: ''
       duration:
         units: inst
-        concentration: false
+        maintained power: false
         override: false
       effects:
         - _id: 92bFICMzRpJmnO56

@@ -5,7 +5,7 @@ img: null
 system:
   currency:
     pp: 0
-    gp: 0
+    CR: 0
     ep: 0
     sp: 0
     cp: 0
@@ -363,15 +363,15 @@ system:
     attunement:
       max: 3
     senses:
-      darkvision: null
-      blindsight: 60
-      tremorsense: null
-      truesight: null
+      scanner: null
+      thermal vision: 60
+      motion sensor: null
+      radar ping: null
       units: null
       special: ''
-    spellcasting: ''
+    power system: ''
     exhaustion: 0
-    concentration:
+    maintained power:
       ability: ''
       roll:
         min: null
@@ -575,7 +575,7 @@ items:
             chatFlavor: ''
           duration:
             units: inst
-            concentration: false
+            maintained power: false
             override: false
           effects:
             - _id: xoOyjbkZSz44HMbD
@@ -629,7 +629,7 @@ items:
             chatFlavor: ''
           duration:
             units: inst
-            concentration: false
+            maintained power: false
             override: false
           effects: []
           range:
@@ -694,7 +694,7 @@ items:
         units: lb
       price:
         value: 0
-        denomination: gp
+        denomination: CR
       rarity: ''
       attunement: ''
       attuned: false
@@ -872,7 +872,7 @@ items:
             chatFlavor: ''
           duration:
             units: minute
-            concentration: true
+            maintained power: true
             override: false
             value: '10'
           effects: []
@@ -914,8 +914,8 @@ items:
           <p>Magical Darkness fills a [[lookup @target.template.size
           activity=amat5Ii4NydseA0h]]-foot Emanation originating from the
           [[lookup @name]]. This effect lasts while the [[lookup @name]]
-          maintains Concentration on it, up to [[lookup @duration.value
-          activity=amat5Ii4NydseA0h]] minutes. Darkvision can't penetrate this
+          maintains Maintained Power on it, up to [[lookup @duration.value
+          activity=amat5Ii4NydseA0h]] minutes. Scanner can't penetrate this
           area, and no light can illuminate it.</p>
         chat: ''
       identifier: darkness-aura

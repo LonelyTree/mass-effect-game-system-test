@@ -12,12 +12,12 @@ system:
       Channel Divinity, choose which Channel Divinity effect from this class to
       create. You gain additional effect options at higher Cleric
       levels.</p><p>You can use this class's Channel Divinity twice. You regain
-      one of its expended uses when you finish a Short Rest, and you regain all
-      expended uses when you finish a Long Rest. You gain additional uses when
+      one of its expended uses when you finish a Field Rest, and you regain all
+      expended uses when you finish a Full Rest. You gain additional uses when
       you reach certain Cleric levels, as shown in the Channel Divinity column
       of the Cleric Features table.</p><p>If a Channel Divinity effect requires
       a saving throw, the DC equals the spell save DC from this class's
-      Spellcasting feature.</p><p><strong>Divine Spark.</strong> As a Magic
+      Power System feature.</p><p><strong>Divine Spark.</strong> As a Magic
       action, you point your Holy Symbol at another creature you can see within
       30 feet of yourself and focus divine energy at it. Roll 1d8 and add your
       Wisdom modifier. You either restore Hit Points to the creature equal to
@@ -34,7 +34,7 @@ system:
       effect ends early on the creature if it takes any damage, if you have the
       Incapacitated condition, or if you die.</p><section class="secret"
       id="secret-1ECtJAnUinEegKtL"><p><strong>Foundry Note</strong></p><p>This
-      feature will automatically restore 1 use on a Short Rest and all on a Long
+      feature will automatically restore 1 use on a Field Rest and all on a Long
       Rest. The uses scale automatically as you level up.</p><p>The
       <strong>Divine Spark: Heal</strong> activity includes the healing
       effect.</p><p>The <strong>Divine Spark: Save</strong> activity includes
@@ -87,7 +87,7 @@ system:
         chatFlavor: ''
       duration:
         units: inst
-        concentration: false
+        maintained power: false
         override: false
       effects: []
       range:
@@ -145,7 +145,7 @@ system:
         chatFlavor: ''
       duration:
         units: inst
-        concentration: false
+        maintained power: false
         override: false
       effects: []
       range:
@@ -188,7 +188,7 @@ system:
         ability:
           - con
         dc:
-          calculation: spellcasting
+          calculation: power system
           formula: ''
     aOptL5pMaj3WtR8S:
       type: utility
@@ -212,7 +212,7 @@ system:
         chatFlavor: ''
       duration:
         units: inst
-        concentration: false
+        maintained power: false
         override: false
       effects:
         - _id: iUeSbfduM7K8XrCF

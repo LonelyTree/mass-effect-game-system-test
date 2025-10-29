@@ -87,7 +87,7 @@ system:
       custom: Understands the languages you know
   currency:
     pp: 0
-    gp: 0
+    CR: 0
     ep: 0
     sp: 0
     cp: 0
@@ -342,15 +342,15 @@ system:
     attunement:
       max: 3
     senses:
-      darkvision: 60
-      blindsight: null
-      tremorsense: null
-      truesight: null
+      scanner: 60
+      thermal vision: null
+      motion sensor: null
+      radar ping: null
       units: null
       special: ''
-    spellcasting: int
+    power system: int
     exhaustion: 0
-    concentration:
+    maintained power:
       ability: ''
       roll:
         min: null
@@ -449,7 +449,7 @@ prototypeToken:
     enabled: false
     range: 60
     angle: 360
-    visionMode: darkvision
+    visionMode: scanner
     color: null
     attenuation: 0.1
     brightness: 0
@@ -575,7 +575,7 @@ items:
             units: inst
             special: ''
             override: false
-            concentration: false
+            maintained power: false
           effects: []
           range:
             units: self
@@ -687,7 +687,7 @@ items:
             units: inst
             special: ''
             override: false
-            concentration: false
+            maintained power: false
           effects: []
           range:
             value: '10'
@@ -830,7 +830,7 @@ items:
             units: ''
             special: ''
             override: false
-            concentration: false
+            maintained power: false
           effects:
             - _id: Gvwt9wpCcJgC0yMl
           range:
@@ -1014,7 +1014,7 @@ items:
             units: round
             special: ''
             override: false
-            concentration: false
+            maintained power: false
           effects:
             - _id: jVWtHTrlPNi4dpDi
               onSave: false
@@ -1046,7 +1046,7 @@ items:
             ability:
               - con
             dc:
-              calculation: spellcasting
+              calculation: power system
               formula: ''
           uses:
             spent: 0

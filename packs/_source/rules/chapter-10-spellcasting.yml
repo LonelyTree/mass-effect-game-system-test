@@ -1,6 +1,6 @@
-name: 'Chapter 10: Spellcasting'
+name: 'Chapter 10: Power System'
 pages:
-  - name: Spellcasting
+  - name: Power System
     type: text
     title:
       show: false
@@ -58,7 +58,7 @@ pages:
         Conditions}), drain life energy away, and restore life to the
         dead.</p><p>Uncounted thousands of spells have been created over the
         course of the multiverse's history, and many of them are long forgotten.
-        Some might yet lie recorded in crumbling spellbooks hidden in ancient
+        Some might yet lie recorded in crumbling power lists hidden in ancient
         ruins or trapped in the minds of dead gods. Or they might someday be
         reinvented by a character who has amassed enough power and wisdom to do
         so.</p><h2>Spell
@@ -71,7 +71,7 @@ pages:
         src="icons/equipment/chest/robe-layered-red.webp" class="round"
         /></figure><article><h4>Casting in
         Armor</h4><p>@Embed[Compendium.dnd5e.rules.JournalEntry.NizgRXLNUqtdlC1s.JournalEntryPage.z4A8vHSK2pb8YA9X
-        inline]</p></article></div><h2>Cantrips</h2><p>@Embed[Compendium.dnd5e.rules.JournalEntry.NizgRXLNUqtdlC1s.JournalEntryPage.jZD5mCTnMPJ9jW67
+        inline]</p></article></div><h2>Basic Powers</h2><p>@Embed[Compendium.dnd5e.rules.JournalEntry.NizgRXLNUqtdlC1s.JournalEntryPage.jZD5mCTnMPJ9jW67
         inline]</p><h2>Rituals</h2><p>@Embed[Compendium.dnd5e.rules.JournalEntry.NizgRXLNUqtdlC1s.JournalEntryPage.FjWqT5iyJ89kohdA
         inline]</p>
       markdown: ''
@@ -108,7 +108,7 @@ pages:
         <p>When a character casts any spell, the same basic rules are followed,
         regardless of the character’s class or the spell’s effects.</p><p>Each
         spell description begins with a block of information, including the
-        spell’s name, level, school of magic, casting time, range, components,
+        spell’s name, level, school of magic, activation time, range, components,
         and duration. The rest of a spell entry describes the spell’s
         effect.</p><h2>Casting
         Time</h2><p>@Embed[Compendium.dnd5e.rules.JournalEntry.NizgRXLNUqtdlC1s.JournalEntryPage.zRVW8Tvyk6BECjZD

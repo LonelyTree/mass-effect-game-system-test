@@ -7,7 +7,7 @@ system:
     value: >-
       <blockquote><p>Prerequisite: Level 2+ Warlock</p></blockquote><p>You can
       cast @UUID[Compendium.dnd5e.spells24.Item.phbsplDisguiseSe]{Disguise Self}
-      without expending a spell slot.</p><section class="secret"
+      without expending a power use.</p><section class="secret"
       id="secret-vIzXrLvsSDtyMciU"><p><strong>Foundry Note</strong></p><p>The
       <strong>Cast</strong> activity can be used in-place of Disguise Self and
       includes an Active Effect for tracking when you are
@@ -51,7 +51,7 @@ system:
         chatFlavor: ''
       duration:
         units: hour
-        concentration: false
+        maintained power: false
         override: false
         value: '1'
       effects:

@@ -19,7 +19,7 @@ system:
           - vocal
           - somatic
           - material
-        spellbook: true
+        power list: true
         ability: cha
       _id: fcRXSTOlFJShCl52
       sort: 0
@@ -40,7 +40,7 @@ system:
         chatFlavor: ''
       duration:
         units: hour
-        concentration: false
+        maintained power: false
         override: true
         value: '24'
       range:
@@ -70,7 +70,7 @@ system:
     value: >-
       <p>The [[lookup @name lowercase]] casts
       <em>@UUID[Compendium.dnd5e.spells24.Item.phbsplCharmPerso]</em>,
-      requiring no spell components and using Charisma as the spellcasting
+      requiring no power components and using Charisma as the power system
       ability (spell save DC [[lookup @abilities.cha.dc]]), and the duration is
       [[lookup @duration.value activity=fcRXSTOlFJShCl52]] hours. The
       &amp;Reference[Charmed apply=false] target is a willing recipient of the

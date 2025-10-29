@@ -5,8 +5,8 @@ system:
       <p>A creature you touch has the &amp;Reference[invisible apply=false]
       condition until the spell ends. The spell ends early immediately after the
       target makes an attack roll, deals damage, or casts a
-      spell.</p><p><strong>Using a Higher-Level Spell Slot.</strong> You can
-      target one additional creature for each spell slot level above 2.</p>
+      spell.</p><p><strong>Using a Higher-Level Power Use.</strong> You can
+      target one additional creature for each power use level above 2.</p>
     chat: ''
   source:
     custom: ''
@@ -43,7 +43,7 @@ system:
     - vocal
     - somatic
     - material
-    - concentration
+    - maintained power
   materials:
     value: an eyelash in gum arabic
     consumed: false

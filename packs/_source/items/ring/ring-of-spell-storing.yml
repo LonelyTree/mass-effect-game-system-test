@@ -19,7 +19,7 @@ system:
       determines how much space it uses.</p>
 
       <p>While wearing this ring, you can cast any spell stored in it. The spell
-      uses the slot level, spell save DC, spell attack bonus, and spellcasting
+      uses the slot level, spell save DC, spell attack bonus, and power system
       ability of the original caster, but is otherwise treated as if you cast
       the spell. The spell cast from the ring is no longer stored in it, freeing
       up space.</p>
@@ -36,7 +36,7 @@ system:
     units: lb
   price:
     value: 4000
-    denomination: gp
+    denomination: CR
   attunement: required
   equipped: false
   rarity: rare
@@ -93,7 +93,7 @@ system:
       description:
         chatFlavor: ''
       duration:
-        concentration: false
+        maintained power: false
         value: ''
         units: ''
         special: ''

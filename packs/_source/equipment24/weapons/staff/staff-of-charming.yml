@@ -20,7 +20,7 @@ system:
       description: {}
       duration:
         units: inst
-        concentration: false
+        maintained power: false
         override: false
       effects: []
       range:
@@ -58,7 +58,7 @@ system:
           - vocal
           - somatic
           - material
-        spellbook: true
+        power list: true
       _id: 7bZzIRhMxei7kmFO
       sort: 200000
       activation:
@@ -77,7 +77,7 @@ system:
         chatFlavor: ''
       duration:
         units: inst
-        concentration: false
+        maintained power: false
         override: false
       range:
         override: false
@@ -108,7 +108,7 @@ system:
           - vocal
           - somatic
           - material
-        spellbook: true
+        power list: true
       _id: jqnIS8yB9Mbih7tp
       sort: 400000
       activation:
@@ -127,7 +127,7 @@ system:
         chatFlavor: ''
       duration:
         units: inst
-        concentration: false
+        maintained power: false
         override: false
       range:
         override: false
@@ -145,7 +145,7 @@ system:
         max: ''
       name: ''
       img: ''
-    zlCbbGPfUWPIMItx:
+    zlCbbCRfUWPIMItx:
       type: cast
       spell:
         uuid: Compendium.dnd5e.spells24.Item.phbsplComprehend
@@ -158,8 +158,8 @@ system:
           - vocal
           - somatic
           - material
-        spellbook: true
-      _id: zlCbbGPfUWPIMItx
+        power list: true
+      _id: zlCbbCRfUWPIMItx
       sort: 500000
       activation:
         type: action
@@ -177,7 +177,7 @@ system:
         chatFlavor: ''
       duration:
         units: inst
-        concentration: false
+        maintained power: false
         override: false
       range:
         override: false
@@ -218,7 +218,7 @@ system:
         chatFlavor: ''
       duration:
         units: inst
-        concentration: false
+        maintained power: false
         override: false
       effects: []
       range:
@@ -267,7 +267,7 @@ system:
         chatFlavor: ''
       duration:
         units: inst
-        concentration: false
+        maintained power: false
         override: false
       effects: []
       range:
@@ -342,7 +342,7 @@ system:
     units: lb
   price:
     value: 4000
-    denomination: gp
+    denomination: CR
   rarity: rare
   attunement: required
   attuned: false

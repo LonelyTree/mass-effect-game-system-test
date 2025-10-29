@@ -41,7 +41,7 @@ system:
     - somatic
     - material
   materials:
-    value: a pinch of diamond dust worth 25+ GP, which the spell consumes
+    value: a pinch of diamond dust worth 25+ CR, which the spell consumes
     consumed: true
     cost: 0
     supply: 0

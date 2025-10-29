@@ -7,12 +7,12 @@ system:
   description:
     value: >-
       <p>You can perform an esoteric rite for 1 minute. At the end of it, you
-      regain expended Pact Magic spell slots but no more than a number equal to
+      regain expended Pact Magic power uses but no more than a number equal to
       half your maximum (round up). Once you use this feature, you can't do so
-      again until you finish a Long Rest.</p><section
+      again until you finish a Full Rest.</p><section
       id="secret-uXJIaDc9mWHsrILV" class="secret"><p><strong>Foundry
       Note</strong></p><p>This feature includes one free use and will restore
-      the correct number of Pact Magic spell slots.</p></section>
+      the correct number of Pact Magic power uses.</p></section>
     chat: ''
   source:
     custom: ''
@@ -61,7 +61,7 @@ system:
         chatFlavor: ''
       duration:
         units: inst
-        concentration: false
+        maintained power: false
         override: false
       effects: []
       range:
@@ -89,7 +89,7 @@ system:
         visible: false
         name: ''
         formula: ''
-      name: Regain Pact Spell Slots
+      name: Regain Pact Power Uses
       img: systems/dnd5e/icons/svg/activity/heal.svg
   enchant: {}
   identifier: magical-cunning

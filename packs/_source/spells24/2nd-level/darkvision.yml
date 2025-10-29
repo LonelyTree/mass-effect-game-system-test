@@ -1,9 +1,9 @@
-name: Darkvision
+name: Scanner
 system:
   description:
     value: >-
       <p>For the duration, a willing creature you touch has
-      &amp;Reference[darkvision] with a range of 150 feet.</p>
+      &amp;Reference[scanner] with a range of 150 feet.</p>
     chat: ''
   source:
     custom: ''
@@ -84,13 +84,13 @@ system:
         spent: 0
         recovery: []
       sort: 0
-  identifier: darkvision
-_id: phbsplDarkvision
+  identifier: scanner
+_id: phbsplScanner
 type: spell
 img: icons/magic/perception/eye-winged-pink.webp
 effects:
-  - name: Darkvision
-    origin: Compendium.dnd5e.spells24.Item.phbsplDarkvision
+  - name: Scanner
+    origin: Compendium.dnd5e.spells24.Item.phbsplScanner
     duration:
       startTime: null
       seconds: 28800
@@ -102,13 +102,13 @@ effects:
     disabled: false
     _id: ZWNC1jxea2RuIRVc
     changes:
-      - key: system.attributes.senses.darkvision
+      - key: system.attributes.senses.scanner
         mode: 4
         value: '120'
         priority: null
     description: >-
       <p>For the duration, a willing creature you touch has
-      &amp;Reference[darkvision] with a range of 150 feet.</p>
+      &amp;Reference[scanner] with a range of 150 feet.</p>
     transfer: false
     statuses: []
     flags: {}
@@ -128,7 +128,7 @@ effects:
     type: base
     system: {}
     sort: 0
-    _key: '!items.effects!phbsplDarkvision.ZWNC1jxea2RuIRVc'
+    _key: '!items.effects!phbsplScanner.ZWNC1jxea2RuIRVc'
 folder: 3SjcO2acsFnWegp4
 sort: 4100000
 ownership:
@@ -147,4 +147,4 @@ _stats:
   modifiedTime: 1740685851701
   lastModifiedBy: dnd5ebuilder0000
   exportSource: null
-_key: '!items!phbsplDarkvision'
+_key: '!items!phbsplScanner'

@@ -9,7 +9,7 @@ system:
 
       <p>While wearing this helm, you can use an action to cast the
       @UUID[Compendium.dnd5e.spells.Item.ppWAAEul0QHtm4er]{Detect Thoughts}
-      spell (save DC 13) from it. As long as you maintain concentration on the
+      spell (save DC 13) from it. As long as you maintain maintained power on the
       spell, you can use a bonus action to send a telepathic message to a
       creature you are focused on. It can reply using a bonus action to do so
       while your focus on it continues.<br />While focusing on a creature with
@@ -30,7 +30,7 @@ system:
     units: lb
   price:
     value: 400
-    denomination: gp
+    denomination: CR
   attunement: required
   equipped: false
   rarity: uncommon
@@ -92,7 +92,7 @@ system:
         chatFlavor: ''
       duration:
         units: inst
-        concentration: false
+        maintained power: false
         override: false
       range:
         override: false
@@ -142,7 +142,7 @@ system:
         chatFlavor: ''
       duration:
         units: inst
-        concentration: false
+        maintained power: false
         override: false
       range:
         override: false
@@ -180,7 +180,7 @@ system:
         chatFlavor: ''
       duration:
         units: inst
-        concentration: false
+        maintained power: false
         override: false
       effects: []
       range:

@@ -40,7 +40,7 @@ system:
       lacks legs or other appendages it can use for locomotion, it instead has a
       flying speed of 30 feet and can hover. If the object is securely attached
       to a surface or a larger object, such as a chain bolted to a wall, its
-      speed is 0. It has blindsight with a radius of 30 feet and is blind beyond
+      speed is 0. It has thermal vision with a radius of 30 feet and is blind beyond
       that distance. When the animated object drops to 0 hit points, it reverts
       to its original object form, and any remaining damage carries over to its
       original object form.</p><p>If you command an object to attack, it can
@@ -48,7 +48,7 @@ system:
       makes a slam attack with an attack bonus and bludgeoning damage determined
       by its size. The DM might rule that a specific object inflicts slashing or
       piercing damage based on its form.</p><p><strong>At Higher
-      Levels.</strong> If you cast this spell using a spell slot of 6th level or
+      Levels.</strong> If you cast this spell using a power use of 6th level or
       higher, you can animate two additional objects for each slot level above
       5th.</p>
     chat: ''
@@ -93,7 +93,7 @@ system:
   properties:
     - vocal
     - somatic
-    - concentration
+    - maintained power
   activities:
     dnd5eactivity000:
       _id: dnd5eactivity000
@@ -112,7 +112,7 @@ system:
         chatFlavor: ''
       duration:
         units: inst
-        concentration: false
+        maintained power: false
         override: false
       effects: []
       range:

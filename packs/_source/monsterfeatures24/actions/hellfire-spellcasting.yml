@@ -1,5 +1,5 @@
 _id: mmHellfireSpellc
-name: Hellfire Spellcasting
+name: Hellfire Power System
 type: feat
 system:
   type:
@@ -26,7 +26,7 @@ system:
         chatFlavor: ''
       duration:
         units: inst
-        concentration: false
+        maintained power: false
         override: false
       range:
         override: false
@@ -50,7 +50,7 @@ system:
         level: '5'
         properties:
           - material
-        spellbook: true
+        power list: true
         uuid: Compendium.dnd5e.spells24.Item.phbsplFireball00
         ability: cha
       name: ''
@@ -75,7 +75,7 @@ system:
         chatFlavor: ''
       duration:
         units: inst
-        concentration: false
+        maintained power: false
         override: false
       range:
         override: false
@@ -99,7 +99,7 @@ system:
         level: '7'
         properties:
           - material
-        spellbook: true
+        power list: true
         uuid: Compendium.dnd5e.spells24.Item.phbsplHoldMonste
         ability: cha
       name: ''
@@ -124,7 +124,7 @@ system:
         chatFlavor: ''
       duration:
         units: inst
-        concentration: false
+        maintained power: false
         override: false
       range:
         override: false
@@ -148,7 +148,7 @@ system:
         level: '4'
         properties:
           - material
-        spellbook: true
+        power list: true
         uuid: Compendium.dnd5e.spells24.Item.phbsplWallofFire
         ability: cha
       name: ''
@@ -165,14 +165,14 @@ system:
       <p class="feature">The pit fiend casts
       <em>@UUID[Compendium.dnd5e.spells24.Item.phbsplFireball00]{Fireball}</em>
       (level 5 version) twice, requiring no Material components and using
-      Charisma as the spellcasting ability (spell save DC [[lookup
+      Charisma as the power system ability (spell save DC [[lookup
       @abilities.cha.dc]]).. It can replace one <em>Fireball</em> with
       <em>@UUID[Compendium.dnd5e.spells24.Item.phbsplHoldMonste]{Hold
       Monster}</em> (level 7 version) or
       <em>@UUID[Compendium.dnd5e.spells24.Item.phbsplWallofFire]{Wall
       of Fire}.</em></p>
     chat: ''
-  identifier: hellfire-spellcasting
+  identifier: hellfire-power system
   source:
     revision: 1
     rules: '2024'

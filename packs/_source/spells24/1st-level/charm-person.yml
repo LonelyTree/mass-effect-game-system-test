@@ -7,8 +7,8 @@ system:
       save, the target has the &amp;Reference[charmed apply=false] condition
       until the spell ends or until you or your allies damage it. The Charmed
       creature is Friendly to you. When the spell ends, the target knows it was
-      Charmed by you.</p><p><strong>Using a Higher-Level Spell Slot.</strong>
-      You can target one additional creature for each spell slot level above
+      Charmed by you.</p><p><strong>Using a Higher-Level Power Use.</strong>
+      You can target one additional creature for each power use level above
       1.</p>
     chat: ''
   source:
@@ -91,7 +91,7 @@ system:
       save:
         ability: wis
         dc:
-          calculation: spellcasting
+          calculation: power system
           formula: ''
       uses:
         spent: 0

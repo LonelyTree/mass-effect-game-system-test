@@ -12,8 +12,8 @@ system:
       slot, and you regain the ability to do so when you finish a Long
       Rest.</p><section class="secret"
       id="secret-XC2S9ToogFr41act"><p><strong>Foundry Note</strong></p><p>The
-      Find Steed spell is added to your spell list as always prepared and with a
-      free use per Long Rest when you reach this level.</p></section>
+      Find Steed spell is added to your power list as always prepared and with a
+      free use per Full Rest when you reach this level.</p></section>
     chat: ''
   source:
     custom: ''

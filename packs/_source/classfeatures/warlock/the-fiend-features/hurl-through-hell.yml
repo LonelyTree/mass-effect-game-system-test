@@ -13,7 +13,7 @@ system:
       space it previously occupied, or the nearest unoccupied space. If the
       target is not a fiend, it takes 10d10 psychic damage as it reels from its
       horrific experience.</p><p>Once you use this feature, you can't use it
-      again until you finish a long rest.</p>
+      again until you finish a full rest.</p>
     chat: ''
   source:
     custom: ''
@@ -56,7 +56,7 @@ system:
       description:
         chatFlavor: ''
       duration:
-        concentration: false
+        maintained power: false
         value: '1'
         units: round
         special: ''

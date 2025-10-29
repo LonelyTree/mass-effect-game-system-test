@@ -64,7 +64,7 @@ system:
       value: {}
       level: 14
       title: Subclass Features
-  spellcasting:
+  power system:
     progression: none
     ability: ''
     preparation:

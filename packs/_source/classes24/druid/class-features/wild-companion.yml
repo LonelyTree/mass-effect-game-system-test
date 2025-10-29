@@ -6,7 +6,7 @@ system:
   description:
     value: >-
       <p>You can summon a nature spirit that assumes an animal form to aid you.
-      As a Magic action, you can expend a spell slot or a use of Wild Shape to
+      As a Magic action, you can expend a power use or a use of Wild Shape to
       cast the @UUID[Compendium.dnd5e.spells24.Item.phbsplFindFamili]{Find
       Familiar} spell without Material components.</p><p>When you cast the spell
       in this way, the familiar is Fey and disappears when you finish a Long
@@ -15,7 +15,7 @@ system:
       includes a Summon activity which can be used to summon your wild
       companion. You can choose whether to expend a use of wild shape or a spell
       slot when activating it.</p><p>The summon does not automatically disappear
-      when you finish a Long Rest.</p></section>
+      when you finish a Full Rest.</p></section>
     chat: ''
   source:
     custom: ''
@@ -63,7 +63,7 @@ system:
         units: inst
         special: ''
         override: false
-        concentration: false
+        maintained power: false
       range:
         value: ''
         units: self
@@ -119,7 +119,7 @@ system:
         recovery: []
         max: ''
       sort: 0
-      name: Summon with Spell Slot
+      name: Summon with Power Use
       effects: []
     jKEcwnfOpZdxX2JV:
       type: summon
@@ -146,7 +146,7 @@ system:
         units: inst
         special: ''
         override: false
-        concentration: false
+        maintained power: false
       range:
         value: ''
         units: self

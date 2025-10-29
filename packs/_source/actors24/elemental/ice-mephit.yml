@@ -5,7 +5,7 @@ img: null
 system:
   currency:
     pp: 0
-    gp: 0
+    CR: 0
     ep: 0
     sp: 0
     cp: 0
@@ -363,15 +363,15 @@ system:
     attunement:
       max: 3
     senses:
-      darkvision: 60
-      blindsight: null
-      tremorsense: null
-      truesight: null
+      scanner: 60
+      thermal vision: null
+      motion sensor: null
+      radar ping: null
       units: null
       special: ''
-    spellcasting: cha
+    power system: cha
     exhaustion: 0
-    concentration:
+    maintained power:
       ability: ''
       roll:
         min: null
@@ -581,7 +581,7 @@ items:
             chatFlavor: ''
           duration:
             units: inst
-            concentration: false
+            maintained power: false
             override: false
           effects: []
           range:
@@ -706,7 +706,7 @@ items:
             chatFlavor: ''
           duration:
             units: inst
-            concentration: false
+            maintained power: false
             override: false
           effects: []
           range:
@@ -773,7 +773,7 @@ items:
         units: lb
       price:
         value: 0
-        denomination: gp
+        denomination: CR
       rarity: ''
       attunement: ''
       attuned: false
@@ -869,7 +869,7 @@ items:
             chatFlavor: ''
           duration:
             units: inst
-            concentration: false
+            maintained power: false
             override: false
           effects: []
           range:
@@ -986,7 +986,7 @@ items:
               - vocal
               - somatic
               - material
-            spellbook: true
+            power list: true
             ability: ''
           _id: sKdIh2G1RS2oqp8t
           sort: 0
@@ -1006,7 +1006,7 @@ items:
             chatFlavor: ''
           duration:
             units: inst
-            concentration: false
+            maintained power: false
             override: false
           range:
             override: false
@@ -1033,7 +1033,7 @@ items:
         value: >-
           <p>The mephit casts
           <em>@UUID[Compendium.dnd5e.spells24.Item.phbsplFogCloud00]</em>,
-          requiring no spell components and using Charisma as the spellcasting
+          requiring no power components and using Charisma as the power system
           ability.</p>
         chat: ''
       identifier: fog-cloud
@@ -1120,7 +1120,7 @@ items:
       properties:
         - vocal
         - somatic
-        - concentration
+        - maintained power
       materials:
         value: ''
         consumed: false
@@ -1148,7 +1148,7 @@ items:
           duration:
             units: inst
             override: false
-            concentration: false
+            maintained power: false
           effects: []
           range:
             override: false

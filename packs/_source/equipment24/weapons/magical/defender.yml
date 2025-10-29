@@ -22,7 +22,7 @@ system:
         chatFlavor: ''
       duration:
         units: inst
-        concentration: false
+        maintained power: false
         override: false
       effects:
         - _id: yBwZfNAoRtuUk5mz
@@ -97,7 +97,7 @@ system:
     units: lb
   price:
     value: 200000
-    denomination: gp
+    denomination: CR
   rarity: legendary
   attunement: required
   attuned: false
@@ -234,7 +234,7 @@ effects:
         priority: null
       - key: system.price.denomination
         mode: 5
-        value: gp
+        value: CR
         priority: null
     duration:
       startTime: null

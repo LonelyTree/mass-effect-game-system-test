@@ -24,7 +24,7 @@ system:
         chatFlavor: ''
       duration:
         units: inst
-        concentration: false
+        maintained power: false
         override: false
       effects:
         - _id: VesaHwtQEHKpxdAB
@@ -82,7 +82,7 @@ system:
         chatFlavor: 'Damage: Every 10 min. unless skin is wet.'
       duration:
         units: inst
-        concentration: false
+        maintained power: false
         override: false
       effects: []
       range:

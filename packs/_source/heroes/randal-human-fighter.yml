@@ -76,13 +76,13 @@ system:
     attunement:
       max: 3
     senses:
-      darkvision: null
-      blindsight: null
-      tremorsense: null
-      truesight: null
+      scanner: null
+      thermal vision: null
+      motion sensor: null
+      radar ping: null
       units: null
       special: ''
-    spellcasting: int
+    power system: int
     death:
       success: 0
       failure: 0
@@ -93,7 +93,7 @@ system:
         mode: 0
     exhaustion: 0
     inspiration: false
-    concentration:
+    maintained power:
       ability: ''
       roll:
         min: null
@@ -172,7 +172,7 @@ system:
       bypasses: []
   currency:
     pp: 0
-    gp: 10
+    CR: 10
     ep: 0
     sp: 0
     cp: 0
@@ -606,7 +606,7 @@ items:
           <ul><li><strong>Skill Proficiencies:</strong> Athletics,
           Insight</li><li><strong>Languages:</strong> Two of your
           choice</li><li><strong>Equipment:</strong> A guard's uniform, a horn
-          with which to summon help, and a pouch containing 10 gp</li></ul>
+          with which to summon help, and a pouch containing 10 CR</li></ul>
         chat: ''
       source:
         custom: ''
@@ -725,10 +725,10 @@ items:
         units: ft
         hover: false
       senses:
-        darkvision: 0
-        blindsight: 0
-        tremorsense: 0
-        truesight: 0
+        scanner: 0
+        thermal vision: 0
+        motion sensor: 0
+        radar ping: 0
         units: ft
         special: ''
       type:
@@ -1202,7 +1202,7 @@ items:
           value: {}
           level: 3
           title: Martial Archetype
-      spellcasting:
+      power system:
         progression: none
         ability: ''
         preparation: {}
@@ -1425,7 +1425,7 @@ items:
           <p>You have a limited well of stamina that you can draw on to protect
           yourself from harm. On your turn, you can use a bonus action to regain
           hit points equal to 1d10 + your fighter level.</p><p>Once you use this
-          feature, you must finish a short or long rest before you can use it
+          feature, you must finish a short or full rest before you can use it
           again.</p>
         chat: ''
       source:
@@ -1470,7 +1470,7 @@ items:
           description:
             chatFlavor: ''
           duration:
-            concentration: false
+            maintained power: false
             value: ''
             units: ''
             special: ''
@@ -1646,7 +1646,7 @@ items:
         units: lb
       price:
         value: 15
-        denomination: gp
+        denomination: CR
       attunement: ''
       equipped: true
       rarity: ''
@@ -1723,7 +1723,7 @@ items:
           description:
             chatFlavor: ''
           duration:
-            concentration: false
+            maintained power: false
             value: ''
             units: ''
             special: ''
@@ -1812,7 +1812,7 @@ items:
         units: lb
       price:
         value: 1
-        denomination: gp
+        denomination: CR
       rarity: ''
       identified: true
       type:
@@ -1971,7 +1971,7 @@ items:
           description:
             chatFlavor: ''
           duration:
-            concentration: false
+            maintained power: false
             value: ''
             units: ''
             special: ''
@@ -2106,7 +2106,7 @@ items:
           description:
             chatFlavor: ''
           duration:
-            concentration: false
+            maintained power: false
             value: '1'
             units: hour
             special: ''
@@ -2280,7 +2280,7 @@ items:
         units: lb
       price:
         value: 50
-        denomination: gp
+        denomination: CR
       attunement: ''
       equipped: true
       rarity: ''
@@ -2359,7 +2359,7 @@ items:
           description:
             chatFlavor: ''
           duration:
-            concentration: false
+            maintained power: false
             value: ''
             units: ''
             special: ''
@@ -2447,7 +2447,7 @@ items:
         units: lb
       price:
         value: 1
-        denomination: gp
+        denomination: CR
       attunement: ''
       equipped: false
       rarity: ''
@@ -2459,7 +2459,7 @@ items:
         cp: 0
         sp: 0
         ep: 0
-        gp: 0
+        CR: 0
         pp: 0
       unidentified:
         description: ''
@@ -2559,7 +2559,7 @@ items:
           description:
             chatFlavor: ''
           duration:
-            concentration: false
+            maintained power: false
             value: ''
             units: ''
             special: ''
@@ -2622,7 +2622,7 @@ items:
         value: >-
           <p>A cloth or leather pouch can hold up to 20 sling bullets or 50
           blowgun needles, among other things. A compartmentalized pouch for
-          holding spell components is called a component pouch. A pouch can hold
+          holding power components is called a component pouch. A pouch can hold
           up to ⅕ cubic foot or 6 pounds of gear.</p>
         chat: ''
       source:
@@ -2650,7 +2650,7 @@ items:
         cp: 0
         sp: 0
         ep: 0
-        gp: 0
+        CR: 0
         pp: 0
       unidentified:
         description: ''
@@ -2698,7 +2698,7 @@ items:
         units: lb
       price:
         value: 2
-        denomination: gp
+        denomination: CR
       rarity: ''
       identified: true
       container: XY8b594Dn7plACLL
@@ -2747,7 +2747,7 @@ items:
         units: lb
       price:
         value: 1
-        denomination: gp
+        denomination: CR
       rarity: ''
       identified: true
       type:
@@ -2799,7 +2799,7 @@ items:
         units: lb
       price:
         value: 2
-        denomination: gp
+        denomination: CR
       attunement: ''
       equipped: false
       rarity: ''
@@ -2811,7 +2811,7 @@ items:
         cp: 0
         sp: 0
         ep: 0
-        gp: 0
+        CR: 0
         pp: 0
       unidentified:
         description: ''
@@ -2912,7 +2912,7 @@ items:
           description:
             chatFlavor: ''
           duration:
-            concentration: false
+            maintained power: false
             value: ''
             units: ''
             special: ''
@@ -2990,7 +2990,7 @@ items:
         units: lb
       price:
         value: 1
-        denomination: gp
+        denomination: CR
       attunement: ''
       equipped: false
       rarity: ''
@@ -3040,7 +3040,7 @@ items:
           description:
             chatFlavor: ''
           duration:
-            concentration: false
+            maintained power: false
             value: ''
             units: inst
             special: ''
@@ -3166,7 +3166,7 @@ items:
           <p>If you have proficiency with a given musical instrument, you can
           add your proficiency bonus to any ability checks you make to play
           music with the instrument. A bard can use a musical instrument as a
-          spellcasting focus. Each type of musical instrument requires a
+          power system focus. Each type of musical instrument requires a
           separate proficiency. </p>
         chat: ''
       source:
@@ -3182,7 +3182,7 @@ items:
         units: lb
       price:
         value: 3
-        denomination: gp
+        denomination: CR
       attunement: ''
       equipped: false
       rarity: ''
@@ -3220,7 +3220,7 @@ items:
           description:
             chatFlavor: ''
           duration:
-            concentration: false
+            maintained power: false
             value: ''
             units: ''
             special: ''
@@ -3296,7 +3296,7 @@ items:
         units: lb
       price:
         value: 5
-        denomination: gp
+        denomination: CR
       attunement: ''
       equipped: true
       rarity: ''
@@ -3374,7 +3374,7 @@ items:
           description:
             chatFlavor: ''
           duration:
-            concentration: false
+            maintained power: false
             value: ''
             units: ''
             special: ''
@@ -3464,7 +3464,7 @@ items:
         units: lb
       price:
         value: 75
-        denomination: gp
+        denomination: CR
       attunement: ''
       equipped: true
       rarity: ''
@@ -3541,7 +3541,7 @@ items:
         units: lb
       price:
         value: 10
-        denomination: gp
+        denomination: CR
       attunement: ''
       equipped: true
       rarity: ''

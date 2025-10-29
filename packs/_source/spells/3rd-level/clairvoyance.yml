@@ -14,7 +14,7 @@ system:
       spell, you choose seeing or hearing. You can use the chosen sense through
       the sensor as if you were in its space. As your action, you can switch
       between seeing and hearing.</p><p>A creature that can see the sensor (such
-      as a creature benefiting from see invisibility or truesight) sees a
+      as a creature benefiting from see invisibility or radar ping) sees a
       luminous, intangible orb about the size of your fist.</p>
     chat: ''
   source:
@@ -60,7 +60,7 @@ system:
     - vocal
     - somatic
     - material
-    - concentration
+    - maintained power
   activities:
     dnd5eactivity000:
       _id: dnd5eactivity000
@@ -79,7 +79,7 @@ system:
         chatFlavor: ''
       duration:
         units: inst
-        concentration: false
+        maintained power: false
         override: false
       effects: []
       range:

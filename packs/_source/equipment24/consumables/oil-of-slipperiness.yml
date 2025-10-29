@@ -35,14 +35,14 @@ system:
     units: lb
   price:
     value: 200
-    denomination: gp
+    denomination: CR
   rarity: uncommon
   attunement: ''
   attuned: false
   equipped: false
   currency:
     pp: 0
-    gp: 0
+    CR: 0
     ep: 0
     sp: 0
     cp: 0
@@ -70,7 +70,7 @@ system:
           - vocal
           - somatic
           - material
-        spellbook: false
+        power list: false
       _id: dgp4czAiBiwgDJ2X
       sort: 0
       activation:
@@ -91,7 +91,7 @@ system:
         chatFlavor: ''
       duration:
         units: inst
-        concentration: false
+        maintained power: false
         override: false
       range:
         override: true
@@ -124,7 +124,7 @@ system:
           - vocal
           - somatic
           - material
-        spellbook: false
+        power list: false
       _id: IQsAg45adQPcbS86
       sort: 0
       activation:
@@ -140,7 +140,7 @@ system:
         chatFlavor: ''
       duration:
         units: inst
-        concentration: false
+        maintained power: false
         override: false
       range:
         override: false

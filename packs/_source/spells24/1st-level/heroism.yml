@@ -4,9 +4,9 @@ system:
     value: >-
       <p>A willing creature you touch is imbued with bravery. Until the spell
       ends, the creature is immune to the Frightened condition and gains
-      Temporary Hit Points equal to your spellcasting ability modifier at the
+      Temporary Hit Points equal to your power system ability modifier at the
       start of each of its turns.</p><p><strong>Using a Higher-Level Spell
-      Slot.</strong> You can target one additional creature for each spell slot
+      Slot.</strong> You can target one additional creature for each power use
       level above 1.</p>
     chat: ''
   source:
@@ -40,7 +40,7 @@ system:
   properties:
     - vocal
     - somatic
-    - concentration
+    - maintained power
   materials:
     value: ''
     consumed: false
@@ -124,7 +124,7 @@ effects:
         priority: null
     description: >-
       <p>The creature is immune to the Frightened condition and gains Temporary
-      Hit Points equal to your spellcasting ability modifier at the start of
+      Hit Points equal to your power system ability modifier at the start of
       each of its turns.</p>
     tint: '#ffffff'
     transfer: false

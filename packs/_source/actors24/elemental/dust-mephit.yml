@@ -5,7 +5,7 @@ img: null
 system:
   currency:
     pp: 0
-    gp: 0
+    CR: 0
     ep: 0
     sp: 0
     cp: 0
@@ -363,15 +363,15 @@ system:
     attunement:
       max: 3
     senses:
-      darkvision: 60
-      blindsight: null
-      tremorsense: null
-      truesight: null
+      scanner: 60
+      thermal vision: null
+      motion sensor: null
+      radar ping: null
       units: null
       special: ''
-    spellcasting: cha
+    power system: cha
     exhaustion: 0
-    concentration:
+    maintained power:
       ability: ''
       roll:
         min: null
@@ -580,7 +580,7 @@ items:
             chatFlavor: ''
           duration:
             units: inst
-            concentration: false
+            maintained power: false
             override: false
           effects: []
           range:
@@ -702,7 +702,7 @@ items:
           description: {}
           duration:
             units: inst
-            concentration: false
+            maintained power: false
             override: false
           effects: []
           range:
@@ -750,7 +750,7 @@ items:
         units: lb
       price:
         value: 0
-        denomination: gp
+        denomination: CR
       rarity: ''
       attunement: ''
       attuned: false
@@ -841,7 +841,7 @@ items:
             chatFlavor: ''
           duration:
             units: inst
-            concentration: false
+            maintained power: false
             override: false
           effects:
             - _id: uNffaKFUEBaATXHm
@@ -987,7 +987,7 @@ items:
               - vocal
               - somatic
               - material
-            spellbook: true
+            power list: true
             ability: ''
           _id: cSodzDxxCJH0nwai
           sort: 0
@@ -1007,7 +1007,7 @@ items:
             chatFlavor: ''
           duration:
             units: inst
-            concentration: false
+            maintained power: false
             override: false
           range:
             override: false
@@ -1034,7 +1034,7 @@ items:
         value: >-
           <p>The [[lookup @name lowercase]] casts the
           @UUID[Compendium.dnd5e.spells24.Item.phbsplSleep00000] spell,
-          requiring no spell components and using Charisma as the spellcasting
+          requiring no power components and using Charisma as the power system
           ability (spell save DC [[lookup @attributes.spell.dc]]).</p>
         chat: ''
       identifier: sleep
@@ -1125,7 +1125,7 @@ items:
         - vocal
         - somatic
         - material
-        - concentration
+        - maintained power
       materials:
         value: a pinch of sand or rose petals
         consumed: false
@@ -1153,7 +1153,7 @@ items:
           duration:
             units: inst
             override: false
-            concentration: false
+            maintained power: false
           effects:
             - _id: 04Wa4xUzjA31kPno
               onSave: false
@@ -1174,7 +1174,7 @@ items:
             ability:
               - wis
             dc:
-              calculation: spellcasting
+              calculation: power system
               formula: ''
           uses:
             spent: 0

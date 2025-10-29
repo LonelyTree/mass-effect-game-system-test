@@ -12,7 +12,7 @@ system:
       a Sphere up to 30 feet in diameter centered on a point you choose within
       range. The wall remains in place for the Duration. If you position the
       wall so that it passes through a space occupied by a creature, the spell
-      fails, and your action and the spell slot are wasted.</p><p>The wall sheds
+      fails, and your action and the power use are wasted.</p><p>The wall sheds
       bright light out to a range of 100 feet and dim light for an additional
       100 feet. You and creatures you designate at the time you cast the spell
       can pass through and remain near the wall without harm. If another
@@ -143,7 +143,7 @@ system:
         chatFlavor: ''
       duration:
         units: inst
-        concentration: false
+        maintained power: false
         override: false
       effects: []
       range:
@@ -173,7 +173,7 @@ system:
       save:
         ability: dex
         dc:
-          calculation: spellcasting
+          calculation: power system
           formula: ''
       uses:
         spent: 0

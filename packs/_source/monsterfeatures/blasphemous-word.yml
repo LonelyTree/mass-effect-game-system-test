@@ -1,4 +1,4 @@
-_id: Xwj2GPqTxngS0j2L
+_id: Xwj2CRqTxngS0j2L
 name: Blasphemous Word
 ownership:
   default: 0
@@ -59,7 +59,7 @@ system:
       description:
         chatFlavor: ''
       duration:
-        concentration: false
+        maintained power: false
         value: ''
         units: ''
         special: ''
@@ -117,4 +117,4 @@ _stats:
   modifiedTime: 1725992573209
   lastModifiedBy: dnd5ebuilder0000
   exportSource: null
-_key: '!items!Xwj2GPqTxngS0j2L'
+_key: '!items!Xwj2CRqTxngS0j2L'

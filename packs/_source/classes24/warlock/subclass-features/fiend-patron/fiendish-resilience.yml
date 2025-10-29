@@ -7,7 +7,7 @@ system:
   description:
     value: >-
       <p>Choose one damage type, other than Force, whenever you finish a Short
-      or Long Rest. You have Resistance to that damage type until you choose a
+      or Full Rest. You have Resistance to that damage type until you choose a
       different one with this feature.</p><section class="secret"
       id="secret-MG3loWptcg4gpsdG"><p><strong>Foundry Note</strong></p><p>This
       feature includes an Active Effect for each type of damage which will grant

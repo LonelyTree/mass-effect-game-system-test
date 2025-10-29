@@ -44,7 +44,7 @@ system:
     chat: ''
   price:
     value: 4000
-    denomination: gp
+    denomination: CR
   activities:
     hDc2bhCP7qL52Z1J:
       type: summon
@@ -68,7 +68,7 @@ system:
         chatFlavor: ''
       duration:
         units: hour
-        concentration: false
+        maintained power: false
         override: false
         value: '3'
       effects: []
@@ -149,7 +149,7 @@ system:
         chatFlavor: ''
       duration:
         units: spec
-        concentration: false
+        maintained power: false
         override: false
         value: '3'
         special: 24 hours of use (non-contiguous)
@@ -232,7 +232,7 @@ system:
         chatFlavor: Each hour or portion thereof it spends in goat form costs 1 charge.
       duration:
         units: spec
-        concentration: false
+        maintained power: false
         override: false
         value: '3'
         special: 24 hours of use (non-contiguous)
@@ -308,7 +308,7 @@ system:
         chatFlavor: ''
       duration:
         units: hour
-        concentration: false
+        maintained power: false
         override: false
         value: '3'
         special: 24 hours of use (non-contiguous)

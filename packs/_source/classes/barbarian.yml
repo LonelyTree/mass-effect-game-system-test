@@ -456,7 +456,7 @@ system:
       value: {}
       level: 3
       title: Primal Path
-  spellcasting:
+  power system:
     progression: none
     ability: ''
     preparation: {}

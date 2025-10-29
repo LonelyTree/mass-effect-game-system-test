@@ -10,7 +10,7 @@ system:
     chat: ''
   price:
     value: 0
-    denomination: gp
+    denomination: CR
   activities:
     iMo4aIfzOzKP01Cz:
       type: utility
@@ -35,7 +35,7 @@ system:
         chatFlavor: ''
       duration:
         units: perm
-        concentration: false
+        maintained power: false
         override: false
       effects: []
       range:

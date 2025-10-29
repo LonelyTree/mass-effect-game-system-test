@@ -5,7 +5,7 @@ img: icons/magic/nature/root-vine-beanstalk-moon.webp
 system:
   currency:
     pp: 0
-    gp: 0
+    CR: 0
     ep: 0
     sp: 0
     cp: 0
@@ -303,15 +303,15 @@ system:
     attunement:
       max: 3
     senses:
-      darkvision: null
-      blindsight: null
-      tremorsense: null
-      truesight: null
+      scanner: null
+      thermal vision: null
+      motion sensor: null
+      radar ping: null
       units: null
       special: ''
-    spellcasting: int
+    power system: int
     exhaustion: 0
-    concentration:
+    maintained power:
       ability: ''
       roll:
         min: null
@@ -485,7 +485,7 @@ items:
     system:
       description:
         value: >-
-          <p>Make a melee spell attack against a creature within 30 feet of the
+          <p>Make a close combat power attack against a creature within 30 feet of the
           vine. On a hit, the target takes 4d8 Bludgeoning damage and is pulled
           up to 30 feet toward the vine; if the target is Huge or smaller, it
           has the &amp;Reference[Grappled] condition (escape DC equal to your
@@ -537,7 +537,7 @@ items:
             units: inst
             special: ''
             override: false
-            concentration: false
+            maintained power: false
           effects: []
           range:
             value: '30'

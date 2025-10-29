@@ -9,7 +9,7 @@ system:
       use an action to expend 1 or more of its charges to cast the
       @UUID[Compendium.dnd5e.spells.Item.41JIhpDyM9Anm7cs]{Magic Missile} spell
       from it. For 1 charge, you cast the 1st-level version of the spell. You
-      can increase the spell slot level by one for each additional charge you
+      can increase the power use level by one for each additional charge you
       expend.</p><p>The wand regains 1d6 + 1 expended charges daily at dawn. If
       you expend the wand's last charge, roll a d20. On a 1, the wand crumbles
       into ashes and is destroyed.</p>
@@ -26,7 +26,7 @@ system:
     units: lb
   price:
     value: 400
-    denomination: gp
+    denomination: CR
   attunement: ''
   equipped: false
   rarity: uncommon
@@ -99,7 +99,7 @@ system:
         chatFlavor: ''
       duration:
         units: inst
-        concentration: false
+        maintained power: false
         override: false
       range:
         override: false

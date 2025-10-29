@@ -55,9 +55,9 @@ system:
     - vocal
     - somatic
     - material
-    - concentration
+    - maintained power
   materials:
-    value: a statuette of yourself worth 5+ GP
+    value: a statuette of yourself worth 5+ CR
     consumed: false
     cost: 0
     supply: 0
@@ -81,7 +81,7 @@ system:
         chatFlavor: ''
       duration:
         units: inst
-        concentration: false
+        maintained power: false
         override: false
       range:
         override: false

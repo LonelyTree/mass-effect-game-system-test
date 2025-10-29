@@ -17,7 +17,7 @@ system:
           - vocal
           - somatic
           - material
-        spellbook: true
+        power list: true
         ability: ''
       _id: cSodzDxxCJH0nwai
       sort: 0
@@ -36,7 +36,7 @@ system:
         chatFlavor: ''
       duration:
         units: inst
-        concentration: false
+        maintained power: false
         override: false
       range:
         override: false
@@ -64,7 +64,7 @@ system:
     value: >-
       <p>The [[lookup @name lowercase]] casts the
       @UUID[Compendium.dnd5e.spells24.Item.phbsplSleep00000] spell,
-      requiring no spell components and using Charisma as the spellcasting
+      requiring no power components and using Charisma as the power system
       ability (spell save DC [[lookup @attributes.spell.dc]]).</p>
     chat: ''
   identifier: sleep

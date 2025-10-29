@@ -17,7 +17,7 @@ system:
       equal to twice the number of feet you are moved.</p><p>This spell ends
       instantly if you cast it while you are on the Ethereal Plane or a plane
       that doesn't border it, such as one of the Outer
-      Planes.</p><p><strong>Using a Higher-Level Spell Slot.</strong>You can
+      Planes.</p><p><strong>Using a Higher-Level Power Use.</strong>You can
       target up to three willing creatures (including yourself) for each spell
       slot level above 7. The creatures must be within 10 feet of you when you
       cast the spell.</p>
@@ -81,7 +81,7 @@ system:
         chatFlavor: ''
       duration:
         units: inst
-        concentration: false
+        maintained power: false
         override: false
       effects:
         - _id: louTI4Z9bNUYBa8K

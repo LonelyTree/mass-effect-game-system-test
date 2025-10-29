@@ -11,8 +11,8 @@ system:
       this save when the Sphere moves into its space and when it enters the
       Sphere or ends its turn there. A creature makes this save only once per
       turn.</p><p>The Sphere moves 10 feet away from you at the start of each of
-      your turns.</p><p><strong>Using a Higher-Level Spell Slot.</strong> The
-      damage increases by 1d8 for each spell slot level above 5.</p>
+      your turns.</p><p><strong>Using a Higher-Level Power Use.</strong> The
+      damage increases by 1d8 for each power use level above 5.</p>
     chat: ''
   source:
     custom: ''
@@ -46,7 +46,7 @@ system:
   properties:
     - vocal
     - somatic
-    - concentration
+    - maintained power
   materials:
     value: ''
     consumed: false
@@ -102,7 +102,7 @@ system:
       save:
         ability: con
         dc:
-          calculation: spellcasting
+          calculation: power system
           formula: ''
       uses:
         spent: 0

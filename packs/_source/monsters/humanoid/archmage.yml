@@ -75,15 +75,15 @@ system:
     attunement:
       max: 3
     senses:
-      darkvision: 0
-      blindsight: 0
-      tremorsense: 0
-      truesight: 0
+      scanner: 0
+      thermal vision: 0
+      motion sensor: 0
+      radar ping: 0
       units: ft
       special: ''
-    spellcasting: int
+    power system: int
     exhaustion: 0
-    concentration:
+    maintained power:
       ability: ''
       roll:
         min: null
@@ -144,7 +144,7 @@ system:
       bypasses: []
   currency:
     pp: 0
-    gp: 0
+    CR: 0
     ep: 0
     sp: 0
     cp: 0
@@ -483,17 +483,17 @@ prototypeToken:
   movementAction: null
 items:
   - _id: gSrKQbka5aLxlcJz
-    name: Spellcasting
+    name: Power System
     type: feat
     img: icons/magic/light/projectiles-star-purple.webp
     system:
       description:
         value: >-
-          <p>The archmage is an 18th-level spellcaster. Its spellcasting ability
+          <p>The archmage is an 18th-level spellcaster. Its power system ability
           is Intelligence (spell save DC 17, +9 to hit with spell attacks). The
           archmage can cast [[/item .A3q2gTNqG6fvNGrv]]{disguise self} and
           [[/item .1N8dDMMgZ1h1YJ3B]]{invisibility} at will and has the
-          following wizard spells prepared:</p><p>Cantrips (at will): [[/item
+          following wizard spells prepared:</p><p>Basic Powers (at will): [[/item
           .EOmsUcFQJTfG2oio]]{fire bolt}, [[/item .Bnn9Nzajixvow9xi]]{light},
           [[/item .Utk1OQRwYkMkFRD3]]{mage hand}, [[/item
           .udsLtG0BugXHR2JQ]]{prestidigitation}, [[/item
@@ -518,7 +518,7 @@ items:
           .JYuRBwxpoFhXduvD]]{time stop}*</p><p>*-The archmage casts these
           spells on itself before combat.</p>
         chat: >-
-          <p>The archmage is an spellcaster. Its spellcasting ability is
+          <p>The archmage is an spellcaster. Its power system ability is
           Intelligence.</p>
       source:
         custom: ''
@@ -540,7 +540,7 @@ items:
       enchant: {}
       prerequisites:
         level: null
-      identifier: spellcasting
+      identifier: power system
     effects: []
     folder: null
     sort: 0
@@ -627,7 +627,7 @@ items:
         units: lb
       price:
         value: 2
-        denomination: gp
+        denomination: CR
       attunement: ''
       equipped: true
       rarity: ''
@@ -705,7 +705,7 @@ items:
           description:
             chatFlavor: ''
           duration:
-            concentration: false
+            maintained power: false
             value: ''
             units: ''
             special: ''
@@ -781,7 +781,7 @@ items:
       description:
         value: >-
           <p>You hurl a mote of fire at a creature or object within range. Make
-          a ranged spell attack against the target. On a hit, the target takes
+          a ranged power attack against the target. On a hit, the target takes
           1d10 fire damage. A flammable object hit by this spell ignites if it
           isn't being worn or carried.</p><p>This spell's damage increases by
           1d10 when you reach 5th level (2d10), 11th level (3d10), and 17th
@@ -847,7 +847,7 @@ items:
             chatFlavor: ''
           duration:
             units: inst
-            concentration: false
+            maintained power: false
             override: false
           effects: []
           range:
@@ -984,7 +984,7 @@ items:
             chatFlavor: ''
           duration:
             units: inst
-            concentration: false
+            maintained power: false
             override: false
           effects: []
           range:
@@ -1007,7 +1007,7 @@ items:
           save:
             ability: dex
             dc:
-              calculation: spellcasting
+              calculation: power system
               formula: '17'
           sort: 0
       identifier: light
@@ -1105,7 +1105,7 @@ items:
             chatFlavor: ''
           duration:
             units: inst
-            concentration: false
+            maintained power: false
             override: false
           effects: []
           range:
@@ -1242,7 +1242,7 @@ items:
             chatFlavor: ''
           duration:
             units: inst
-            concentration: false
+            maintained power: false
             override: false
           effects: []
           range:
@@ -1291,7 +1291,7 @@ items:
       description:
         value: >-
           <p>Lightning springs from your hand to deliver a shock to a creature
-          you try to touch. Make a melee spell attack against the target. You
+          you try to touch. Make a close combat power attack against the target. You
           have advantage on the attack roll if the target is wearing armor made
           of metal. On a hit, the target takes 1d8 lightning damage, and it
           can't take reactions until the start of its next turn.</p><p>The
@@ -1357,7 +1357,7 @@ items:
             chatFlavor: ''
           duration:
             units: inst
-            concentration: false
+            maintained power: false
             override: false
           effects: []
           range:
@@ -1476,7 +1476,7 @@ items:
         - vocal
         - somatic
         - ritual
-        - concentration
+        - maintained power
       activities:
         dnd5eactivity000:
           _id: dnd5eactivity000
@@ -1495,7 +1495,7 @@ items:
             chatFlavor: ''
           duration:
             units: inst
-            concentration: false
+            maintained power: false
             override: false
           effects: []
           range:
@@ -1613,7 +1613,7 @@ items:
             chatFlavor: ''
           duration:
             units: inst
-            concentration: false
+            maintained power: false
             override: false
           effects: []
           range:
@@ -1725,7 +1725,7 @@ items:
             chatFlavor: ''
           duration:
             units: inst
-            concentration: false
+            maintained power: false
             override: false
           effects: []
           range:
@@ -1811,7 +1811,7 @@ items:
     type: spell
     system:
       description:
-        value: "<p>You create three glowing darts of magical force. Each dart hits a creature of your choice that you can see within range. A dart deals 1d4 + 1 force damage to its target. The darts all strike simultaneously, and you can direct them to hit one creature or several.</p><p><strong>Higher Levels.\_</strong>When you cast this spell using a spell slot of 2nd level or higher, the spell creates one more dart for each slot level above 1st.</p>"
+        value: "<p>You create three glowing darts of magical force. Each dart hits a creature of your choice that you can see within range. A dart deals 1d4 + 1 force damage to its target. The darts all strike simultaneously, and you can direct them to hit one creature or several.</p><p><strong>Higher Levels.\_</strong>When you cast this spell using a power use of 2nd level or higher, the spell creates one more dart for each slot level above 1st.</p>"
         chat: ''
       source:
         custom: ''
@@ -1873,7 +1873,7 @@ items:
             chatFlavor: ''
           duration:
             units: inst
-            concentration: false
+            maintained power: false
             override: false
           effects: []
           range:
@@ -2007,7 +2007,7 @@ items:
         - vocal
         - somatic
         - material
-        - concentration
+        - maintained power
       activities:
         dnd5eactivity000:
           _id: dnd5eactivity000
@@ -2026,7 +2026,7 @@ items:
             chatFlavor: ''
           duration:
             units: inst
-            concentration: false
+            maintained power: false
             override: false
           effects: []
           range:
@@ -2049,7 +2049,7 @@ items:
           save:
             ability: wis
             dc:
-              calculation: spellcasting
+              calculation: power system
               formula: '17'
           sort: 0
       identifier: detect-thoughts
@@ -2096,8 +2096,8 @@ items:
           destroyed.</p>
 
           <p>A creature is unaffected by this spell if it can't see, if it
-          relies on senses other than sight, such as blindsight, or if it can
-          perceive illusions as false, as with truesight.</p>
+          relies on senses other than sight, such as thermal vision, or if it can
+          perceive illusions as false, as with radar ping.</p>
         chat: ''
       source:
         custom: ''
@@ -2157,7 +2157,7 @@ items:
             chatFlavor: ''
           duration:
             units: inst
-            concentration: false
+            maintained power: false
             override: false
           effects: []
           range:
@@ -2267,7 +2267,7 @@ items:
             chatFlavor: ''
           duration:
             units: inst
-            concentration: false
+            maintained power: false
             override: false
           effects: []
           range:
@@ -2314,7 +2314,7 @@ items:
     type: spell
     system:
       description:
-        value: "<p>You attempt to interrupt a creature in the process of casting a spell. If the creature is casting a spell of 3rd level or lower, its spell fails and has no effect. If it is casting a spell of 4th level or higher, make an ability check using your spellcasting ability. The DC equals 10 + the spell's level. On a success, the creature's spell fails and has no effect.</p><p><strong>Higher Levels.\_</strong>When you cast this spell using a spell slot of 4th level or higher, the interrupted spell has no effect if its level is less than or equal to the level of the spell slot you used.</p>"
+        value: "<p>You attempt to interrupt a creature in the process of casting a spell. If the creature is casting a spell of 3rd level or lower, its spell fails and has no effect. If it is casting a spell of 4th level or higher, make an ability check using your power system ability. The DC equals 10 + the spell's level. On a success, the creature's spell fails and has no effect.</p><p><strong>Higher Levels.\_</strong>When you cast this spell using a power use of 4th level or higher, the interrupted spell has no effect if its level is less than or equal to the level of the power use you used.</p>"
         chat: ''
       source:
         custom: ''
@@ -2377,7 +2377,7 @@ items:
             chatFlavor: ''
           duration:
             units: inst
-            concentration: false
+            maintained power: false
             override: false
           effects: []
           range:
@@ -2428,7 +2428,7 @@ items:
           <p>You touch a willing creature. The target gains a flying speed of 60
           feet for the Duration. When the spell ends, the target falls if it is
           still aloft, unless it can stop the fall.</p><p><strong>At Higher
-          Levels.</strong> When you cast this spell using a spell slot of 4th
+          Levels.</strong> When you cast this spell using a power use of 4th
           level or higher, you can target one additional creature for each slot
           level above 3rd.</p>
         chat: ''
@@ -2474,7 +2474,7 @@ items:
         - vocal
         - somatic
         - material
-        - concentration
+        - maintained power
       activities:
         dnd5eactivity000:
           _id: dnd5eactivity000
@@ -2493,7 +2493,7 @@ items:
             chatFlavor: ''
           duration:
             units: inst
-            concentration: false
+            maintained power: false
             override: false
           effects: []
           range:
@@ -2547,7 +2547,7 @@ items:
           lightning damage on a failed save, or half as much damage on a
           successful one.</p><p>The lightning ignites flammable objects in the
           area that aren't being worn or carried.</p><p><strong>At Higher
-          Levels.</strong> When you cast this spell using a spell slot of 4th
+          Levels.</strong> When you cast this spell using a power use of 4th
           level or higher, the damage increases by 1d6 for each slot level above
           3rd.</p>
         chat: ''
@@ -2611,7 +2611,7 @@ items:
             chatFlavor: ''
           duration:
             units: inst
-            concentration: false
+            maintained power: false
             override: false
           effects: []
           range:
@@ -2646,7 +2646,7 @@ items:
           save:
             ability: dex
             dc:
-              calculation: spellcasting
+              calculation: power system
               formula: '17'
           sort: 0
       identifier: lightning-bolt
@@ -2687,7 +2687,7 @@ items:
           before 1 minute has passed, the target reappears in the space it left
           or in the nearest unoccupied space if that space is occupied.
           Otherwise, the target doesn't return.</p><p><strong>At Higher
-          Levels.</strong> When you cast this spell using a spell slot of 5th
+          Levels.</strong> When you cast this spell using a power use of 5th
           level or higher, you can target one additional creature for each slot
           level above 4th.</p>
         chat: ''
@@ -2734,7 +2734,7 @@ items:
         - vocal
         - somatic
         - material
-        - concentration
+        - maintained power
       activities:
         dnd5eactivity000:
           _id: dnd5eactivity000
@@ -2753,7 +2753,7 @@ items:
             chatFlavor: ''
           duration:
             units: inst
-            concentration: false
+            maintained power: false
             override: false
           effects: []
           range:
@@ -2776,7 +2776,7 @@ items:
           save:
             ability: cha
             dc:
-              calculation: spellcasting
+              calculation: power system
               formula: '17'
           sort: 0
       identifier: banishment
@@ -2877,7 +2877,7 @@ items:
             chatFlavor: ''
           duration:
             units: inst
-            concentration: false
+            maintained power: false
             override: false
           effects:
             - _id: lVKx8swB08jm6IFE
@@ -3050,7 +3050,7 @@ items:
       level: 4
       school: abj
       materials:
-        value: Diamond dust worth 100 gp, which the spell consumes
+        value: Diamond dust worth 100 CR, which the spell consumes
         consumed: true
         cost: 100
         supply: 0
@@ -3061,7 +3061,7 @@ items:
         - vocal
         - somatic
         - material
-        - concentration
+        - maintained power
       activities:
         dnd5eactivity000:
           _id: dnd5eactivity000
@@ -3080,7 +3080,7 @@ items:
             chatFlavor: ''
           duration:
             units: inst
-            concentration: false
+            maintained power: false
             override: false
           effects: []
           range:
@@ -3177,7 +3177,7 @@ items:
     type: spell
     system:
       description:
-        value: "<p>A blast of cold air erupts from your hands. Each creature in a 60-foot cone must make a Constitution saving throw. A creature takes 8d8 cold damage on a failed save, or half as much damage on a successful one.</p><p>A creature killed by this spell becomes a frozen statue until it thaws.</p><p><strong>Higher Levels.\_</strong>When you cast this spell using a spell slot of 6th level or higher, the damage increases by 1d8 for each slot level above 5th.</p>"
+        value: "<p>A blast of cold air erupts from your hands. Each creature in a 60-foot cone must make a Constitution saving throw. A creature takes 8d8 cold damage on a failed save, or half as much damage on a successful one.</p><p>A creature killed by this spell becomes a frozen statue until it thaws.</p><p><strong>Higher Levels.\_</strong>When you cast this spell using a power use of 6th level or higher, the damage increases by 1d8 for each slot level above 5th.</p>"
         chat: ''
       source:
         custom: ''
@@ -3239,7 +3239,7 @@ items:
             chatFlavor: ''
           duration:
             units: inst
-            concentration: false
+            maintained power: false
             override: false
           effects: []
           range:
@@ -3274,7 +3274,7 @@ items:
           save:
             ability: con
             dc:
-              calculation: spellcasting
+              calculation: power system
               formula: '17'
           sort: 0
       identifier: cone-of-cold
@@ -3433,7 +3433,7 @@ items:
       school: div
       materials:
         value: >-
-          A focus worth at least 1,000 gp, such as a crystal ball, a silver
+          A focus worth at least 1,000 CR, such as a crystal ball, a silver
           mirror, or a font filled with holy water.
         consumed: false
         cost: 1000
@@ -3445,7 +3445,7 @@ items:
         - vocal
         - somatic
         - material
-        - concentration
+        - maintained power
       activities:
         dnd5eactivity000:
           _id: dnd5eactivity000
@@ -3464,7 +3464,7 @@ items:
             chatFlavor: ''
           duration:
             units: inst
-            concentration: false
+            maintained power: false
             override: false
           effects: []
           range:
@@ -3487,7 +3487,7 @@ items:
           save:
             ability: wis
             dc:
-              calculation: spellcasting
+              calculation: power system
               formula: '17'
           sort: 0
       identifier: scrying
@@ -3573,7 +3573,7 @@ items:
         - vocal
         - somatic
         - material
-        - concentration
+        - maintained power
       activities:
         dnd5eactivity000:
           _id: dnd5eactivity000
@@ -3592,7 +3592,7 @@ items:
             chatFlavor: ''
           duration:
             units: inst
-            concentration: false
+            maintained power: false
             override: false
           effects: []
           range:
@@ -3644,11 +3644,11 @@ items:
           10-foot radius around you and remains for the Duration.</p><p>Any
           spell of 5th level or lower cast from outside the barrier can't affect
           creatures or Objects within it, even if the spell is cast using a
-          higher level spell slot. Such a spell can target creatures and Objects
+          higher level power use. Such a spell can target creatures and Objects
           within the barrier, but the spell has no effect on them. Similarly,
           the area within the barrier is excluded from the areas affected by
           such Spells.</p><p><strong>At Higher Levels.</strong> When you cast
-          this spell using a spell slot of 7th level or higher, the barrier
+          this spell using a power use of 7th level or higher, the barrier
           blocks Spells of one level higher for each slot level above 6th.</p>
         chat: ''
       source:
@@ -3693,7 +3693,7 @@ items:
         - vocal
         - somatic
         - material
-        - concentration
+        - maintained power
       activities:
         dnd5eactivity000:
           _id: dnd5eactivity000
@@ -3712,7 +3712,7 @@ items:
             chatFlavor: ''
           duration:
             units: inst
-            concentration: false
+            maintained power: false
             override: false
           effects: []
           range:
@@ -3989,7 +3989,7 @@ items:
             chatFlavor: ''
           duration:
             units: inst
-            concentration: false
+            maintained power: false
             override: false
           effects: []
           range:
@@ -4102,7 +4102,7 @@ items:
             chatFlavor: ''
           duration:
             units: inst
-            concentration: false
+            maintained power: false
             override: false
           effects: []
           range:
@@ -4216,7 +4216,7 @@ items:
             chatFlavor: ''
           duration:
             units: inst
-            concentration: false
+            maintained power: false
             override: false
           effects: []
           range:
@@ -4268,7 +4268,7 @@ items:
           Anything the target is wearing or carrying is invisible as long as it
           is on the target's person. The spell ends for a target that attacks or
           casts a spell.</p><p><strong>At Higher Levels.</strong> When you cast
-          this spell using a spell slot of 3rd level or higher, you can target
+          this spell using a power use of 3rd level or higher, you can target
           one additional creature for each slot level above 2nd.</p>
         chat: ''
       source:
@@ -4313,7 +4313,7 @@ items:
         - vocal
         - somatic
         - material
-        - concentration
+        - maintained power
       activities:
         dnd5eactivity000:
           _id: dnd5eactivity000
@@ -4332,7 +4332,7 @@ items:
             chatFlavor: ''
           duration:
             units: inst
-            concentration: false
+            maintained power: false
             override: false
           effects: []
           range:
@@ -4454,7 +4454,7 @@ items:
             chatFlavor: ''
           duration:
             units: inst
-            concentration: false
+            maintained power: false
             override: false
           effects: []
           range:

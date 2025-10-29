@@ -20,7 +20,7 @@ system:
       a Huge or larger object or creation of force, this spell disintegrates a
       10-foot-cube portion of it. A magic item is unaffected by this
       spell.</p><p><strong>At Higher Levels.</strong> When you cast this spell
-      using a spell slot of 7th level or higher, the damage increases by 3d6 for
+      using a power use of 7th level or higher, the damage increases by 3d6 for
       each slot level above 6th.</p>
     chat: ''
   source:
@@ -83,7 +83,7 @@ system:
         chatFlavor: ''
       duration:
         units: inst
-        concentration: false
+        maintained power: false
         override: false
       effects: []
       range:
@@ -114,7 +114,7 @@ system:
       save:
         ability: dex
         dc:
-          calculation: spellcasting
+          calculation: power system
           formula: ''
       uses:
         spent: 0

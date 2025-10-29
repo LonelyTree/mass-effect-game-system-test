@@ -6,8 +6,8 @@ system:
       attack. Until the spell ends, the target sheds &amp;Reference[BrightLight]
       in a 5-foot radius, attack rolls against it have Advantage, and it can't
       benefit from the &amp;Reference[Invisible] condition.</p><p><strong>Using
-      a Higher-Level Spell Slot.</strong> The damage increases by 1d6 for each
-      spell slot level above 2.</p>
+      a Higher-Level Power Use.</strong> The damage increases by 1d6 for each
+      power use level above 2.</p>
     chat: ''
   source:
     custom: ''
@@ -44,7 +44,7 @@ system:
   school: trs
   properties:
     - vocal
-    - concentration
+    - maintained power
   materials:
     value: ''
     consumed: false

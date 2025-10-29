@@ -75,15 +75,15 @@ system:
     attunement:
       max: 3
     senses:
-      darkvision: 0
-      blindsight: 0
-      tremorsense: 0
-      truesight: 120
+      scanner: 0
+      thermal vision: 0
+      motion sensor: 0
+      radar ping: 120
       units: ft
       special: ''
-    spellcasting: wis
+    power system: wis
     exhaustion: 0
-    concentration:
+    maintained power:
       ability: ''
       roll:
         min: null
@@ -152,7 +152,7 @@ system:
       bypasses: []
   currency:
     pp: 0
-    gp: 0
+    CR: 0
     ep: 0
     sp: 0
     cp: 0
@@ -587,16 +587,16 @@ items:
       exportSource: null
     _key: '!actors.items!nEC1BRwM8Lx9hLXW.wmqCsq80pewLPg4c'
   - _id: zXzGfPnSFJbfZ7oW
-    name: Spellcasting
+    name: Power System
     type: feat
     img: icons/magic/light/projectiles-star-purple.webp
     system:
       description:
         value: >-
-          <p>The sphinx is a 12th-level spellcaster. Its spellcasting ability is
+          <p>The sphinx is a 12th-level spellcaster. Its power system ability is
           Wisdom (spell save DC 18, +10 to hit with spell attacks). It requires
           no material components to cast its spells. The sphinx has the
-          following cleric spells prepared:</p><p>• Cantrips (at will): [[/item
+          following cleric spells prepared:</p><p>• Basic Powers (at will): [[/item
           .n9pJzTDsAwQxJVRl]]{sacred flame}, [[/item .8zT7njvqbpXs4Cel]]{spare
           the dying}, [[/item .MUO1uYN7JR1hm4dR]]{thaumaturgy}• 1st level (4
           slots): [[/item .arzCrMRgcNiQuh43]]{command}, [[/item
@@ -611,7 +611,7 @@ items:
           strike}, [[/item .WzvJ7G3cqvIubsLk]]{greater restoration}• 6th level
           (1 slot): [[/item .mgFqi0ev8f7Ut19y]]{heroes' feast}</p>
         chat: >-
-          <p>The sphinx is a spellcaster. Its spellcasting ability is
+          <p>The sphinx is a spellcaster. Its power system ability is
           Wisdom.</p>
       source:
         custom: ''
@@ -633,7 +633,7 @@ items:
       enchant: {}
       prerequisites:
         level: null
-      identifier: spellcasting
+      identifier: power system
     effects: []
     folder: null
     sort: 0
@@ -672,7 +672,7 @@ items:
         units: lb
       price:
         value: 0
-        denomination: gp
+        denomination: CR
       attunement: ''
       equipped: true
       rarity: ''
@@ -747,7 +747,7 @@ items:
           description:
             chatFlavor: ''
           duration:
-            concentration: false
+            maintained power: false
             value: ''
             units: ''
             special: ''
@@ -856,7 +856,7 @@ items:
           description:
             chatFlavor: ''
           duration:
-            concentration: false
+            maintained power: false
             value: ''
             units: ''
             special: ''
@@ -921,7 +921,7 @@ items:
       description:
         value: >-
           <p>The sphinx emits a magical roar. Each time it roars before
-          finishing a long rest, the roar is louder and the effect is different,
+          finishing a full rest, the roar is louder and the effect is different,
           as detailed below. Each creature within 500 feet of the sphinx and
           able to hear the roar must make a saving throw.</p><p>**First Roar.**
           Each creature that fails a  <strong>DC 18 Wisdom</strong> saving throw
@@ -938,7 +938,7 @@ items:
           prone.</p>
         chat: >-
           <p>The sphinx emits a magical roar. Each time it roars before
-          finishing a long rest, the roar is louder and the effect is different.
+          finishing a full rest, the roar is louder and the effect is different.
           Each creature within 500 feet of the sphinx and able to hear the roar
           must make a saving throw.</p>
       source:
@@ -983,7 +983,7 @@ items:
           description:
             chatFlavor: ''
           duration:
-            concentration: false
+            maintained power: false
             value: ''
             units: ''
             special: ''
@@ -1087,7 +1087,7 @@ items:
           description:
             chatFlavor: ''
           duration:
-            concentration: false
+            maintained power: false
             value: '1'
             units: minute
             special: ''
@@ -1193,7 +1193,7 @@ items:
           description:
             chatFlavor: ''
           duration:
-            concentration: false
+            maintained power: false
             value: '1'
             units: minute
             special: ''
@@ -1299,7 +1299,7 @@ items:
           description:
             chatFlavor: ''
           duration:
-            concentration: false
+            maintained power: false
             value: ''
             units: ''
             special: ''
@@ -1469,7 +1469,7 @@ items:
           description:
             chatFlavor: ''
           duration:
-            concentration: false
+            maintained power: false
             value: ''
             units: ''
             special: ''
@@ -1577,7 +1577,7 @@ items:
           description:
             chatFlavor: ''
           duration:
-            concentration: false
+            maintained power: false
             value: ''
             units: ''
             special: ''
@@ -1641,8 +1641,8 @@ items:
     system:
       description:
         value: >-
-          <p>The sphinx casts a spell from its list of prepared spells, using a
-          spell slot as normal.</p>
+          <p>The sphinx casts a spell from its list of prepared powers, using a
+          power use as normal.</p>
         chat: ''
       source:
         custom: ''
@@ -1684,7 +1684,7 @@ items:
           description:
             chatFlavor: ''
           duration:
-            concentration: false
+            maintained power: false
             value: ''
             units: ''
             special: ''
@@ -1916,7 +1916,7 @@ items:
             chatFlavor: ''
           duration:
             units: inst
-            concentration: false
+            maintained power: false
             override: false
           effects: []
           range:
@@ -1951,7 +1951,7 @@ items:
           save:
             ability: dex
             dc:
-              calculation: spellcasting
+              calculation: power system
               formula: '18'
           sort: 0
       identifier: sacred-flame
@@ -2041,7 +2041,7 @@ items:
             chatFlavor: ''
           duration:
             units: inst
-            concentration: false
+            maintained power: false
             override: false
           effects: []
           range:
@@ -2179,7 +2179,7 @@ items:
             chatFlavor: ''
           duration:
             units: inst
-            concentration: false
+            maintained power: false
             override: false
           effects: []
           range:
@@ -2226,7 +2226,7 @@ items:
     type: spell
     system:
       description:
-        value: "<p>You speak a one-word command to a creature you can see within range. The target must succeed on a Wisdom saving throw or follow the command on its next turn. The spell has no effect if the target is undead, if it doesn't understand your language, or if your command is directly harmful to it.</p><p>Some typical commands and their effects follow. You might issue a command other than one described here. If you do so, the DM determines how the target behaves. If the target can't follow your command, the spell ends.</p><p><strong>Approach.</strong> The target moves toward you by the shortest and most direct route, ending its turn if it moves within 5 feet of you.</p><p><strong>Drop.</strong> The target drops whatever it is holding and then ends its turn.</p><p><strong>Flee.</strong> The target spends its turn moving away from you by the fastest available means.</p><p><strong>Grovel.</strong> The target falls prone and then ends its turn.</p><p><strong>Halt.</strong> The target doesn't move and takes no actions. A flying creature stays aloft, provided that it is able to do so. If it must move to stay aloft, it flies the minimum distance needed to remain in the air.</p><p><strong>Higher Levels.\_</strong>When you cast this spell using a spell slot of 2nd level or higher, you can affect one additional creature for each slot level above 1st. The creatures must be within 30 feet of each other when you target them.</p>"
+        value: "<p>You speak a one-word command to a creature you can see within range. The target must succeed on a Wisdom saving throw or follow the command on its next turn. The spell has no effect if the target is undead, if it doesn't understand your language, or if your command is directly harmful to it.</p><p>Some typical commands and their effects follow. You might issue a command other than one described here. If you do so, the DM determines how the target behaves. If the target can't follow your command, the spell ends.</p><p><strong>Approach.</strong> The target moves toward you by the shortest and most direct route, ending its turn if it moves within 5 feet of you.</p><p><strong>Drop.</strong> The target drops whatever it is holding and then ends its turn.</p><p><strong>Flee.</strong> The target spends its turn moving away from you by the fastest available means.</p><p><strong>Grovel.</strong> The target falls prone and then ends its turn.</p><p><strong>Halt.</strong> The target doesn't move and takes no actions. A flying creature stays aloft, provided that it is able to do so. If it must move to stay aloft, it flies the minimum distance needed to remain in the air.</p><p><strong>Higher Levels.\_</strong>When you cast this spell using a power use of 2nd level or higher, you can affect one additional creature for each slot level above 1st. The creatures must be within 30 feet of each other when you target them.</p>"
         chat: ''
       source:
         custom: ''
@@ -2287,7 +2287,7 @@ items:
             chatFlavor: ''
           duration:
             units: inst
-            concentration: false
+            maintained power: false
             override: false
           effects: []
           range:
@@ -2310,7 +2310,7 @@ items:
           save:
             ability: wis
             dc:
-              calculation: spellcasting
+              calculation: power system
               formula: '18'
           sort: 0
       identifier: command
@@ -2387,7 +2387,7 @@ items:
       properties:
         - vocal
         - somatic
-        - concentration
+        - maintained power
       activities:
         dnd5eactivity000:
           _id: dnd5eactivity000
@@ -2406,7 +2406,7 @@ items:
             chatFlavor: ''
           duration:
             units: inst
-            concentration: false
+            maintained power: false
             override: false
           effects: []
           range:
@@ -2504,7 +2504,7 @@ items:
         - vocal
         - somatic
         - ritual
-        - concentration
+        - maintained power
       activities:
         dnd5eactivity000:
           _id: dnd5eactivity000
@@ -2523,7 +2523,7 @@ items:
             chatFlavor: ''
           duration:
             units: inst
-            concentration: false
+            maintained power: false
             override: false
           effects: []
           range:
@@ -2634,7 +2634,7 @@ items:
             chatFlavor: ''
           duration:
             units: inst
-            concentration: false
+            maintained power: false
             override: false
           effects: []
           range:
@@ -2751,7 +2751,7 @@ items:
             chatFlavor: ''
           duration:
             units: inst
-            concentration: false
+            maintained power: false
             override: false
           effects: []
           range:
@@ -2774,7 +2774,7 @@ items:
           save:
             ability: cha
             dc:
-              calculation: spellcasting
+              calculation: power system
               formula: '18'
           sort: 0
       identifier: zone-of-truth
@@ -2805,12 +2805,12 @@ items:
           <p>Choose one creature, object, or magical effect within range. Any
           spell of 3rd level or lower on the target ends. For each spell of 4th
           level or higher on the target, make an ability check using your
-          spellcasting ability. The DC equals 10 + the spell's level. On a
+          power system ability. The DC equals 10 + the spell's level. On a
           successful check, the spell ends.</p><p><strong>Higher
-          Levels.</strong> When you cast this spell using a spell slot of 4th
+          Levels.</strong> When you cast this spell using a power use of 4th
           level or higher, you automatically end the effects of a spell on the
           target if the spell's level is equal to or less than the level of the
-          spell slot you used.</p>
+          power use you used.</p>
         chat: ''
       source:
         custom: ''
@@ -2872,7 +2872,7 @@ items:
             chatFlavor: ''
           duration:
             units: inst
-            concentration: false
+            maintained power: false
             override: false
           effects: []
           range:
@@ -2984,7 +2984,7 @@ items:
             chatFlavor: ''
           duration:
             units: inst
-            concentration: false
+            maintained power: false
             override: false
           effects: []
           range:
@@ -3045,7 +3045,7 @@ items:
           before 1 minute has passed, the target reappears in the space it left
           or in the nearest unoccupied space if that space is occupied.
           Otherwise, the target doesn't return.</p><p><strong>At Higher
-          Levels.</strong> When you cast this spell using a spell slot of 5th
+          Levels.</strong> When you cast this spell using a power use of 5th
           level or higher, you can target one additional creature for each slot
           level above 4th.</p>
         chat: ''
@@ -3092,7 +3092,7 @@ items:
         - vocal
         - somatic
         - material
-        - concentration
+        - maintained power
       activities:
         dnd5eactivity000:
           _id: dnd5eactivity000
@@ -3111,7 +3111,7 @@ items:
             chatFlavor: ''
           duration:
             units: inst
-            concentration: false
+            maintained power: false
             override: false
           effects: []
           range:
@@ -3134,7 +3134,7 @@ items:
           save:
             ability: cha
             dc:
-              calculation: spellcasting
+              calculation: power system
               formula: '18'
           sort: 0
       identifier: banishment
@@ -3231,7 +3231,7 @@ items:
             chatFlavor: ''
           duration:
             units: inst
-            concentration: false
+            maintained power: false
             override: false
           effects: []
           range:
@@ -3285,7 +3285,7 @@ items:
           throw. A creature takes 4d6 fire damage and 4d6 radiant damage on a
           failed save, or half as much damage on a successful
           one.</p><p><strong>At Higher Levels.</strong> When you cast this spell
-          using a spell slot of 6th level or higher, the fire damage or the
+          using a power use of 6th level or higher, the fire damage or the
           radiant damage (your choice) increases by 1d6 for each slot level
           above 5th.</p>
         chat: ''
@@ -3350,7 +3350,7 @@ items:
             chatFlavor: ''
           duration:
             units: inst
-            concentration: false
+            maintained power: false
             override: false
           effects: []
           range:
@@ -3397,7 +3397,7 @@ items:
           save:
             ability: dex
             dc:
-              calculation: spellcasting
+              calculation: power system
               formula: '18'
           sort: 0
       identifier: flame-strike
@@ -3502,7 +3502,7 @@ items:
             chatFlavor: ''
           duration:
             units: inst
-            concentration: false
+            maintained power: false
             override: false
           effects: []
           range:
@@ -3619,7 +3619,7 @@ items:
             chatFlavor: ''
           duration:
             units: inst
-            concentration: false
+            maintained power: false
             override: false
           effects: []
           range:

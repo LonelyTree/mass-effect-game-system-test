@@ -4,8 +4,8 @@ system:
     value: >-
       <p>Your body becomes blurred. For the duration, any creature has
       Disadvantage on attack rolls against you. An attacker is immune to this
-      effect if it perceives you with &amp;Reference[blindsight] or
-      &amp;Reference[truesight].</p>
+      effect if it perceives you with &amp;Reference[thermal vision] or
+      &amp;Reference[radar ping].</p>
     chat: ''
   source:
     custom: ''
@@ -39,7 +39,7 @@ system:
   school: ill
   properties:
     - vocal
-    - concentration
+    - maintained power
   materials:
     value: ''
     consumed: false
@@ -110,7 +110,7 @@ effects:
     description: >-
       <p>For the duration, any creature has Disadvantage on attack rolls against
       you. An attacker is immune to this effect if it perceives you with
-      Blindsight or Truesight.</p>
+      Thermal Vision or Radar Ping.</p>
     tint: '#ffffff'
     transfer: false
     statuses: []

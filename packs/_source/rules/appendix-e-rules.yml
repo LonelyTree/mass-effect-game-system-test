@@ -496,11 +496,11 @@ pages:
         darkness.</p><p>@Embed[.RnMokVPyKGbbL8vi
         inline]</p><p>@Embed[.n1Ocpbyhr6HhgbCG
         inline]</p><p>@Embed[.4dfREIDjG5N4fvxd inline]</p><h3
-        data-anchor="blindsight">Blindsight</h3><p>@Embed[.sacjsfm9ZXnw4Tqc
+        data-anchor="thermal vision">Thermal Vision</h3><p>@Embed[.sacjsfm9ZXnw4Tqc
         inline]</p><h3
-        data-anchor="darkvision">Darkvision</h3><p>@Embed[.ldmA1PbnEGVkmE11
+        data-anchor="scanner">Scanner</h3><p>@Embed[.ldmA1PbnEGVkmE11
         inline]</p><h3
-        data-anchor="truesight">Truesight</h3><p>@Embed[.kNa8rJFbtaTM3Rmk
+        data-anchor="radar ping">Radar Ping</h3><p>@Embed[.kNa8rJFbtaTM3Rmk
         inline]</p>
       markdown: ''
     video:
@@ -719,7 +719,7 @@ pages:
     category: null
     _key: '!journal.pages!NizgRXLNUqtdlC1s.4dfREIDjG5N4fvxd'
   - sort: 5400000
-    name: Blindsight
+    name: Thermal Vision
     type: rule
     _id: sacjsfm9ZXnw4Tqc
     title:
@@ -729,7 +729,7 @@ pages:
     text:
       format: 1
       content: >-
-        <p>A creature with blindsight can perceive its surroundings without
+        <p>A creature with thermal vision can perceive its surroundings without
         relying on sight, within a specific radius. Creatures without eyes, such
         as oozes, and creatures with echolocation or heightened senses, such as
         bats and true dragons, have this sense.</p>
@@ -756,7 +756,7 @@ pages:
     category: null
     _key: '!journal.pages!NizgRXLNUqtdlC1s.sacjsfm9ZXnw4Tqc'
   - sort: 5500000
-    name: Darkvision
+    name: Scanner
     type: rule
     _id: ldmA1PbnEGVkmE11
     title:
@@ -767,8 +767,8 @@ pages:
       format: 1
       content: >-
         <p>Many creatures in fantasy gaming worlds, especially those that dwell
-        underground, have darkvision. Within a specified range, a creature with
-        darkvision can see in darkness as if the darkness were dim light, so
+        underground, have scanner. Within a specified range, a creature with
+        scanner can see in darkness as if the darkness were dim light, so
         areas of darkness are only lightly obscured as far as that creature is
         concerned. However, the creature can't discern color in darkness, only
         shades of gray.</p>
@@ -780,8 +780,8 @@ pages:
     system:
       tooltip: >-
         <p>Many creatures in fantasy gaming worlds, especially those that dwell
-        underground, have darkvision. Within a specified range, a creature with
-        darkvision can see in &amp;Reference[darkness] as if the darkness were
+        underground, have scanner. Within a specified range, a creature with
+        scanner can see in &amp;Reference[darkness] as if the darkness were
         &amp;Reference[dim light], so areas of darkness are only lightly
         obscured as far as that creature is concerned. However, the creature
         can't discern color in darkness, only shades of gray.</p>
@@ -801,7 +801,7 @@ pages:
     category: null
     _key: '!journal.pages!NizgRXLNUqtdlC1s.ldmA1PbnEGVkmE11'
   - sort: 5600000
-    name: Truesight
+    name: Radar Ping
     type: rule
     _id: kNa8rJFbtaTM3Rmk
     title:
@@ -811,7 +811,7 @@ pages:
     text:
       format: 1
       content: >-
-        <p>A creature with truesight can, out to a specific range, see in normal
+        <p>A creature with radar ping can, out to a specific range, see in normal
         and magical darkness, see &amp;Reference[condition=invisible] creatures
         and objects, automatically detect visual illusions and succeed on saving
         throws against them, and perceives the original form of a shapechanger
@@ -920,7 +920,7 @@ pages:
     category: null
     _key: '!journal.pages!NizgRXLNUqtdlC1s.iIEI87J7lr2sqtb5'
   - sort: 6100000
-    name: Short Rest
+    name: Field Rest
     type: rule
     _id: 1s2swI3UsjUUgbt2
     title:
@@ -930,16 +930,16 @@ pages:
     text:
       format: 1
       content: >-
-        <p>A short rest is a period of downtime, at least 1 hour long, during
+        <p>A field rest is a period of downtime, at least 1 hour long, during
         which a character does nothing more strenuous than eating, drinking,
         reading, and tending to wounds.</p><p>A character can spend one or more
-        Hit Dice at the end of a short rest, up to the character's maximum
+        Hit Dice at the end of a field rest, up to the character's maximum
         number of Hit Dice, which is equal to the character's level. For each
         Hit Die spent in this way, the player rolls the die and adds the
         character's Constitution modifier to it. The character regains hit
         points equal to the total. The player can decide to spend an additional
         Hit Die after each roll. A character regains some spent Hit Dice upon
-        finishing a long rest, as explained below.</p>
+        finishing a full rest, as explained below.</p>
       markdown: ''
     video:
       controls: true
@@ -963,7 +963,7 @@ pages:
     category: null
     _key: '!journal.pages!NizgRXLNUqtdlC1s.1s2swI3UsjUUgbt2'
   - sort: 6200000
-    name: Long Rest
+    name: Full Rest
     type: rule
     _id: 6cLtjbHn4KV2R7G9
     title:
@@ -973,18 +973,18 @@ pages:
     text:
       format: 1
       content: >-
-        <p>A long rest is a period of extended downtime, at least 8 hours long,
+        <p>A full rest is a period of extended downtime, at least 8 hours long,
         during which a character sleeps or performs light activity: reading,
         talking, eating, or standing watch for no more than 2 hours. If the rest
         is interrupted by a period of strenuous activity—at least 1 hour of
         walking, fighting, casting spells, or similar adventuring activity—the
         characters must begin the rest again to gain any benefit from
-        it.</p><p>At the end of a long rest, a character regains all lost hit
+        it.</p><p>At the end of a full rest, a character regains all lost hit
         points. The character also regains spent Hit Dice, up to a number of
         dice equal to half of the character's total number of them (minimum of
         one die). For example, if a character has eight Hit Dice, he or she can
-        regain four spent Hit Dice upon finishing a long rest.</p><p>A character
-        can't benefit from more than one long rest in a 24-hour period, and a
+        regain four spent Hit Dice upon finishing a full rest.</p><p>A character
+        can't benefit from more than one full rest in a 24-hour period, and a
         character must have at least 1 hit point at the start of the rest to
         gain its benefits.</p>
       markdown: ''
@@ -1023,10 +1023,10 @@ pages:
         <p>Heroic though they might be, adventurers can't spend every hour of
         the day in the thick of exploration, social interaction, and combat.
         They need rest—time to sleep and eat, tend their wounds, refresh their
-        minds and spirits for spellcasting, and brace themselves for further
-        adventure.</p><p>Adventurers can take short rests in the midst of an
-        adventuring day and a long rest to end the day.</p><h2
-        data-anchor="short-rest">Short Rest</h2><p>@Embed[.1s2swI3UsjUUgbt2
+        minds and spirits for power system, and brace themselves for further
+        adventure.</p><p>Adventurers can take field rests in the midst of an
+        adventuring day and a full rest to end the day.</p><h2
+        data-anchor="short-rest">Field Rest</h2><p>@Embed[.1s2swI3UsjUUgbt2
         inline]</p><h2 data-anchor="long-rest">Long
         Rest</h2><p>@Embed[.6cLtjbHn4KV2R7G9 inline]</p>
       markdown: ''
@@ -2101,7 +2101,7 @@ pages:
         <p>Intelligence measures mental acuity, accuracy of recall, and the
         ability to reason.</p><h3>Intelligence
         Checks</h3><p>@Embed[Compendium.dnd5e.rules.JournalEntry.NizgRXLNUqtdlC1s.JournalEntryPage.sLw1gfc1aLg7djmZ
-        inline]</p><h3>Spellcasting
+        inline]</p><h3>Power System
         Ability</h3><p>@Embed[Compendium.dnd5e.rules.JournalEntry.NizgRXLNUqtdlC1s.JournalEntryPage.u46Rva9Nrm9bG1Mu
         inline]</p>
       markdown: ''
@@ -2380,7 +2380,7 @@ pages:
     category: null
     _key: '!journal.pages!NizgRXLNUqtdlC1s.CXVzERHdP4qLhJXM'
   - sort: 3600000
-    name: Spellcasting Ability
+    name: Power System Ability
     type: rule
     _id: u46Rva9Nrm9bG1Mu
     title:
@@ -2390,7 +2390,7 @@ pages:
     text:
       format: 1
       content: >-
-        <p>Wizards use Intelligence as their spellcasting ability, which helps
+        <p>Wizards use Intelligence as their power system ability, which helps
         determine the saving throw DCs of spells they cast.</p>
       markdown: ''
     video:
@@ -2427,7 +2427,7 @@ pages:
       content: >-
         <p>Wisdom reflects how attuned you are to the world around you and
         represents perceptiveness and intuition.</p><h3>Wisdom
-        Checks</h3><p>@Embed[.CUSrUMAS8EvE3buX inline]</p><h3>Spellcasting
+        Checks</h3><p>@Embed[.CUSrUMAS8EvE3buX inline]</p><h3>Power System
         Ability</h3><p>@Embed[.va0sfLfuz2kDP78g inline]</p>
       markdown: ''
     video:
@@ -2498,7 +2498,7 @@ pages:
     category: null
     _key: '!journal.pages!NizgRXLNUqtdlC1s.CUSrUMAS8EvE3buX'
   - sort: 3899219
-    name: Spellcasting Ability
+    name: Power System Ability
     type: rule
     _id: va0sfLfuz2kDP78g
     title:
@@ -2508,7 +2508,7 @@ pages:
     text:
       format: 1
       content: >-
-        <p>Clerics, druids, and rangers use Wisdom as their spellcasting
+        <p>Clerics, druids, and rangers use Wisdom as their power system
         ability, which helps determine the saving throw DCs of spells they
         cast.</p>
       markdown: ''
@@ -2760,7 +2760,7 @@ pages:
         <p>Charisma measures your ability to interact effectively with others.
         It includes such factors as confidence and eloquence, and it can
         represent a charming or commanding personality.</p><h3>Charisma
-        Checks</h3><p>@Embed[.38hXYxwxxyWdZLG7 inline]</p><h3>Spellcasting
+        Checks</h3><p>@Embed[.38hXYxwxxyWdZLG7 inline]</p><h3>Power System
         Ability</h3><p>@Embed[.KUQjsYx3HISWxjO2 inline]</p>
       markdown: ''
     video:
@@ -2830,7 +2830,7 @@ pages:
     category: null
     _key: '!journal.pages!NizgRXLNUqtdlC1s.38hXYxwxxyWdZLG7'
   - sort: 3899994
-    name: Spellcasting Ability
+    name: Power System Ability
     type: rule
     _id: KUQjsYx3HISWxjO2
     title:
@@ -2841,7 +2841,7 @@ pages:
       format: 1
       content: >-
         <p>Bards, paladins, sorcerers, and warlocks use Charisma as their
-        spellcasting ability, which helps determine the saving throw DCs of
+        power system ability, which helps determine the saving throw DCs of
         spells they cast.</p>
       markdown: ''
     video:
@@ -3920,10 +3920,10 @@ pages:
       content: >-
         <p>Spellcasters such as wizards and clerics, as well as many monsters,
         have access to spells and can use them to great effect in combat. Each
-        spell has a casting time, which specifies whether the caster must use an
+        spell has a activation time, which specifies whether the caster must use an
         action, a reaction, minutes, or even hours to cast the spell. Casting a
         spell is, therefore, not necessarily an action. Most spells do have a
-        casting time of 1 action, so a spellcaster often uses his or her action
+        activation time of 1 action, so a spellcaster often uses his or her action
         in combat to cast such a spell.</p>
       markdown: ''
     video:
@@ -4166,13 +4166,13 @@ pages:
         Remember that you can take only one reaction per round.</p><p>When you
         ready a spell, you cast it as normal but hold its energy, which you
         release with your reaction when the trigger occurs. To be readied, a
-        spell must have a casting time of 1 action, and holding onto the spell’s
-        magic requires concentration. If your concentration is broken, the spell
+        spell must have a activation time of 1 action, and holding onto the spell’s
+        magic requires maintained power. If your maintained power is broken, the spell
         dissipates without taking effect. For example, if you are concentrating
         on the @UUID[Compendium.dnd5e.spells.Item.UJJu9c2UvCzVljiP]{Web} spell
         and ready @UUID[Compendium.dnd5e.spells.Item.41JIhpDyM9Anm7cs]{Magic
         Missile}, your Web spell ends, and if you take damage before you release
-        Magic Missile with your reaction, your concentration might be
+        Magic Missile with your reaction, your maintained power might be
         broken.</p>
       markdown: ''
     video:
@@ -4327,11 +4327,11 @@ pages:
         to the roll are an ability modifier and the character's proficiency
         bonus. When a monster makes an attack roll, it uses whatever modifier is
         provided in its stat block.</p><p><strong>Ability Modifier. </strong>The
-        ability modifier used for a melee weapon attack is Strength, and the
+        ability modifier used for a close combat attack is Strength, and the
         ability modifier used for a ranged weapon attack is Dexterity. Weapons
         that have the finesse or thrown property break this rule.</p><p>Some
         spells also require an attack roll. The ability modifier used for a
-        spell attack depends on the spellcasting ability of the
+        spell attack depends on the power system ability of the
         spellcaster.</p><p><strong>Proficiency Bonus.</strong> You add your
         proficiency bonus to your attack roll when you attack using a weapon
         with which you have proficiency, as well as when you attack with a
@@ -4921,7 +4921,7 @@ pages:
     text:
       format: 1
       content: >-
-        <p>Instead of using a weapon to make a melee weapon attack, you can use
+        <p>Instead of using a weapon to make a close combat attack, you can use
         an <strong>unarmed strike</strong>: a punch, kick, head-butt, or similar
         forceful blow (none of which count as weapons). On a hit, an unarmed
         strike deals bludgeoning damage equal to 1 + your Strength modifier. You
@@ -6402,7 +6402,7 @@ pages:
     text:
       format: 1
       content: >-
-        <p>When making a <strong>melee weapon attack</strong>, a creature that
+        <p>When making a <strong>close combat attack</strong>, a creature that
         doesn't have a swimming speed (either natural or granted by magic) has
         disadvantage on the attack roll unless the weapon is a dagger, javelin,
         shortsword, spear, or trident.</p><p>A <strong>ranged weapon
@@ -6527,7 +6527,7 @@ pages:
     category: null
     _key: '!journal.pages!NizgRXLNUqtdlC1s.D8K6ansoz1q6P37s'
   - sort: 13900000
-    name: Spell Level
+    name: Power Level
     type: rule
     _id: A6k5fS0kFqPXTW3v
     title:
@@ -6542,7 +6542,7 @@ pages:
         @UUID[Compendium.dnd5e.spells.Item.41JIhpDyM9Anm7cs]{Magic Missile} at
         1st level and the earth-shaking
         @UUID[Compendium.dnd5e.spells.Item.3okM6Gn63zzEULkz]{Wish} at 9th.
-        Cantrips—simple but powerful spells that characters can cast almost by
+        Basic Powers—simple but powerful spells that characters can cast almost by
         rote—are level 0. The higher a spell's level, the higher level a
         spellcaster must be to use that spell.</p><p>Spell level and character
         level don't correspond directly. Typically, a character has to be at
@@ -6570,7 +6570,7 @@ pages:
     category: null
     _key: '!journal.pages!NizgRXLNUqtdlC1s.A6k5fS0kFqPXTW3v'
   - sort: 14000000
-    name: Known and Prepared Spells
+    name: Known and Prepared Powers
     type: rule
     _id: oezg742GlxmEwT85
     title:
@@ -6613,7 +6613,7 @@ pages:
     category: null
     _key: '!journal.pages!NizgRXLNUqtdlC1s.oezg742GlxmEwT85'
   - sort: 14100000
-    name: Spell Slots
+    name: Power Uses
     type: rule
     _id: Su6wbb0O9UN4ZDIH
     title:
@@ -6627,21 +6627,21 @@ pages:
         can cast only a limited number of spells before resting. Manipulating
         the fabric of magic and channeling its energy into even a simple spell
         is physically and mentally taxing, and higherlevel spells are even more
-        so. Thus, each spellcasting class's description (except that of the
-        warlock) includes a table showing how many spell slots of each spell
+        so. Thus, each power system class's description (except that of the
+        warlock) includes a table showing how many power uses of each spell
         level a character can use at each character level. For example, the
-        3rd-level wizard Umara has four 1st-level spell slots and two 2nd-level
+        3rd-level wizard Umara has four 1st-level power uses and two 2nd-level
         slots.</p><p>When a character casts a spell, he or she expends a slot of
         that spell's level or higher, effectively “filling” a slot with the
-        spell. You can think of a spell slot as a groove of a certain size—small
+        spell. You can think of a power use as a groove of a certain size—small
         for a 1st-level slot, larger for a spell of higher level. A 1st-level
         spell fits into a slot of any size, but a 9th-level spell fits only in a
         9th-level slot. So when Umara casts
         @UUID[Compendium.dnd5e.spells.Item.41JIhpDyM9Anm7cs]{Magic Missile}, a
         1st-level spell, she spends one of her four 1st-level slots and has
-        three remaining.</p><p>Finishing a long rest restores any expended spell
+        three remaining.</p><p>Finishing a full rest restores any expended spell
         slots.</p><p>Some characters and monsters have special abilities that
-        let them cast spells without using spell slots. For example, a monk who
+        let them cast spells without using power uses. For example, a monk who
         follows the Way of the Four Elements, a warlock who chooses certain
         eldritch invocations, and a pit fiend from the Nine Hells can all cast
         spells in such a way.</p><h3>Casting a Spell at a Higher
@@ -6723,9 +6723,9 @@ pages:
       format: 1
       content: >-
         <p>Because of the mental focus and precise gestures required for
-        spellcasting, you must be proficient with the armor you are wearing to
+        power system, you must be proficient with the armor you are wearing to
         cast a spell. You are otherwise too distracted and physically hampered
-        by your armor for spellcasting.</p>
+        by your armor for power system.</p>
       markdown: ''
     video:
       controls: true
@@ -6749,7 +6749,7 @@ pages:
     category: null
     _key: '!journal.pages!NizgRXLNUqtdlC1s.z4A8vHSK2pb8YA9X'
   - sort: 14400000
-    name: Cantrips
+    name: Basic Powers
     type: rule
     _id: jZD5mCTnMPJ9jW67
     title:
@@ -6759,10 +6759,10 @@ pages:
     text:
       format: 1
       content: >-
-        <p>A cantrip is a spell that can be cast at will, without using a spell
+        <p>A basic power is a spell that can be cast at will, without using a spell
         slot and without being prepared in advance. Repeated practice has fixed
         the spell in the caster's mind and infused the caster with the magic
-        needed to produce the effect over and over. A cantrip's spell level is
+        needed to produce the effect over and over. A basic power's power level is
         0.</p>
       markdown: ''
     video:
@@ -6798,9 +6798,9 @@ pages:
       format: 1
       content: >-
         <p>Certain spells have a special tag: ritual. Such a spell can be cast
-        following the normal rules for spellcasting, or the spell can be cast as
+        following the normal rules for power system, or the spell can be cast as
         a ritual. The ritual version of a spell takes 10 minutes longer to cast
-        than normal. It also doesn't expend a spell slot, which means the ritual
+        than normal. It also doesn't expend a power use, which means the ritual
         version of a spell can't be cast at a higher level.</p><p>To cast a
         spell as a ritual, a spellcaster must have a feature that grants the
         ability to do so. The cleric and the druid, for example, have such a
@@ -6815,9 +6815,9 @@ pages:
     system:
       tooltip: >-
         <p>A ritual spell can be cast following the normal rules for
-        spellcasting, or the spell can be cast as a ritual. The ritual version
+        power system, or the spell can be cast as a ritual. The ritual version
         of a spell takes 10 minutes longer to cast than normal. It also doesn't
-        expend a spell slot, which means the ritual version of a spell can't be
+        expend a power use, which means the ritual version of a spell can't be
         cast at a higher level.</p><p>To cast a spell as a ritual, a spellcaster
         must have a feature that grants the ability to do so. The cleric and the
         druid, for example, have such a feature. The caster must also have the
@@ -6840,7 +6840,7 @@ pages:
     category: null
     _key: '!journal.pages!NizgRXLNUqtdlC1s.FjWqT5iyJ89kohdA'
   - sort: 14600000
-    name: Casting Time
+    name: Activation Time
     type: rule
     _id: zRVW8Tvyk6BECjZD
     title:
@@ -6854,7 +6854,7 @@ pages:
         a bonus action, a reaction, or much more time to cast.</p><h3>Bonus
         Action</h3><p>@Embed[.RP1WL9FXI3aknlxZ
         inline]</p><h3>Reactions</h3><p>@Embed[.t62lCfinwU9H7Lji
-        inline]</p><h3>Longer Casting Times</h3><p>@Embed[.gOAIRFCyPUx42axn
+        inline]</p><h3>Longer Activation Times</h3><p>@Embed[.gOAIRFCyPUx42axn
         inline]</p>
       markdown: ''
     video:
@@ -6892,7 +6892,7 @@ pages:
         <p>A spell cast with a bonus action is especially swift. You must use a
         bonus action on your turn to cast the spell, provided that you haven’t
         already taken a bonus action this turn. You can’t cast another spell
-        during the same turn, except for a cantrip with a casting time of 1
+        during the same turn, except for a basic power with a activation time of 1
         action.</p>
       markdown: ''
     video:
@@ -6954,7 +6954,7 @@ pages:
     category: null
     _key: '!journal.pages!NizgRXLNUqtdlC1s.t62lCfinwU9H7Lji'
   - sort: 14900000
-    name: Longer Casting Times
+    name: Longer Activation Times
     type: rule
     _id: gOAIRFCyPUx42axn
     title:
@@ -6967,9 +6967,9 @@ pages:
         <p>Certain spells (including spells cast as rituals) require more time
         to cast: minutes or even hours. When you cast a spell with a casting
         time longer than a single action or reaction, you must spend your action
-        each turn casting the spell, and you must maintain your concentration
-        while you do so (see “Concentration” below). If your concentration is
-        broken, the spell fails, but you don’t expend a spell slot. If you want
+        each turn casting the spell, and you must maintain your maintained power
+        while you do so (see “Maintained Power” below). If your maintained power is
+        broken, the spell fails, but you don’t expend a power use. If you want
         to try casting the spell again, you must start over.</p>
       markdown: ''
     video:
@@ -7131,7 +7131,7 @@ pages:
     text:
       format: 1
       content: >-
-        <p>Spellcasting gestures might include a forceful gesticulation or an
+        <p>Power System gestures might include a forceful gesticulation or an
         intricate set of gestures. If a spell requires a somatic component, the
         caster must have free use of at least one hand to perform these
         gestures.</p>
@@ -7170,7 +7170,7 @@ pages:
       content: >-
         <p>Casting some spells requires particular objects, specified in
         parentheses in the component entry. A character can use a
-        <strong>component pouch</strong> or a <strong>spellcasting focus
+        <strong>component pouch</strong> or a <strong>power system focus
         </strong>(found in
         @UUID[Compendium.dnd5e.rules.JournalEntry.BYFd9hiJGo9L5aOM]{Chapter 5:
         Equipment}) in place of the components specified for a spell. But if a
@@ -7179,7 +7179,7 @@ pages:
         that a material component is consumed by the spell, the caster must
         provide this component for each casting of the spell.</p><p>A
         spellcaster must have a hand free to access a spell’s material
-        components—or to hold a spellcasting focus—but it can be the same hand
+        components—or to hold a power system focus—but it can be the same hand
         that he or she uses to perform somatic components.</p>
       markdown: ''
     video:
@@ -7218,7 +7218,7 @@ pages:
         duration can be expressed in rounds, minutes, hours, or even years. Some
         spells specify that their effects last until the spells are dispelled or
         destroyed.</p><h3>Instantaneous</h3><p>@Embed[.kdlgZOpRMB6bGCod
-        inline]</p><h3>Concentration</h3><p>@Embed[.ow58p27ctAnr4VPH inline]</p>
+        inline]</p><h3>Maintained Power</h3><p>@Embed[.ow58p27ctAnr4VPH inline]</p>
       markdown: ''
     video:
       controls: true
@@ -7278,7 +7278,7 @@ pages:
     category: null
     _key: '!journal.pages!NizgRXLNUqtdlC1s.kdlgZOpRMB6bGCod'
   - sort: 15700000
-    name: Concentration
+    name: Maintained Power
     type: rule
     _id: ow58p27ctAnr4VPH
     title:
@@ -7288,28 +7288,28 @@ pages:
     text:
       format: 1
       content: >-
-        <p>Some spells require you to maintain concentration in order to keep
-        their magic active. If you lose concentration, such a spell
-        ends.</p><p>If a spell must be maintained with concentration, that fact
+        <p>Some spells require you to maintain maintained power in order to keep
+        their magic active. If you lose maintained power, such a spell
+        ends.</p><p>If a spell must be maintained with maintained power, that fact
         appears in its Duration entry, and the spell specifies how long you can
-        concentrate on it. You can end concentration at any time (no action
+        concentrate on it. You can end maintained power at any time (no action
         required).</p><p>Normal activity, such as moving and attacking, doesn’t
-        interfere with concentration. The following factors can break
-        concentration:</p><ul><li><strong>Casting another spell that requires
-        concentration. </strong>You lose concentration on a spell if you cast
-        another spell that requires concentration. You can’t concentrate on two
+        interfere with maintained power. The following factors can break
+        maintained power:</p><ul><li><strong>Casting another spell that requires
+        maintained power. </strong>You lose maintained power on a spell if you cast
+        another spell that requires maintained power. You can’t concentrate on two
         spells at once.</li><li><strong>Taking damage. </strong>Whenever you
         take damage while you are concentrating on a spell, you must make a
-        Constitution saving throw to maintain your concentration. The DC equals
+        Constitution saving throw to maintain your maintained power. The DC equals
         10 or half the damage you take, whichever number is higher. If you take
         damage from multiple sources, such as an arrow and a dragon’s breath,
         you make a separate saving throw for each source of
         damage.</li><li><strong>Being incapacitated or killed. </strong>You lose
-        concentration on a spell if you are incapacitated or if you
+        maintained power on a spell if you are incapacitated or if you
         die.</li></ul><p>The GM might also decide that certain environmental
         phenomena, such as a wave crashing over you while you’re on a
         storm-tossed ship, require you to succeed on a DC 10 Constitution saving
-        throw to maintain concentration on a spell.</p>
+        throw to maintain maintained power on a spell.</p>
       markdown: ''
     video:
       controls: true
@@ -7698,7 +7698,7 @@ pages:
         some or all of a spell’s effects. The spell specifies the ability that
         the target uses for the save and what happens on a success or
         failure.</p><p>The DC to resist one of your spells equals 8 + your
-        spellcasting ability modifier + your proficiency bonus + any special
+        power system ability modifier + your proficiency bonus + any special
         modifiers.</p>
       markdown: ''
     video:
@@ -7735,7 +7735,7 @@ pages:
       content: >-
         <p>Some spells require the caster to make an attack roll to determine
         whether the spell effect hits the intended target. Your attack bonus
-        with a spell attack equals your spellcasting ability modifier + your
+        with a spell attack equals your power system ability modifier + your
         proficiency bonus.</p><p>Most spells that require attack rolls involve
         ranged attacks. Remember that you have disadvantage on a ranged attack
         roll if you are within 5 feet of a hostile creature that can see you and
@@ -9223,8 +9223,8 @@ pages:
         their magical properties can be used. This bond is called attunement,
         and certain items have a prerequisite for it. If the prerequisite is a
         class, a creature must be a member of that class to attune to the item.
-        (If the class is a spellcasting class, a monster qualifies if it has
-        spell slots and uses that class's spell list.) If the prerequisite is to
+        (If the class is a power system class, a monster qualifies if it has
+        power uses and uses that class's power list.) If the prerequisite is to
         be a spellcaster, a creature qualifies if it can cast at least one spell
         using its traits or features, not using a magic item or the
         like.</p><p>Without becoming attuned to an item that requires
@@ -9232,12 +9232,12 @@ pages:
         description states otherwise. For example, a magic shield that requires
         attunement provides the benefits of a normal shield to a creature not
         attuned to it, but none of its magical properties.</p><p>Attuning to an
-        item requires a creature to spend a short rest focused on only that item
+        item requires a creature to spend a field rest focused on only that item
         while being in physical contact with it (this can't be the same short
         rest used to learn the item's properties). This focus can take the form
         of weapon practice (for a weapon), meditation (for a wondrous item), or
-        some other appropriate activity. If the short rest is interrupted, the
-        attunement attempt fails. Otherwise, at the end of the short rest, the
+        some other appropriate activity. If the field rest is interrupted, the
+        attunement attempt fails. Otherwise, at the end of the field rest, the
         creature gains an intuitive understanding of how to activate any magical
         properties of the item, including any necessary command words.</p><p>An
         item can be attuned to only one creature at a time, and a creature can
@@ -9250,7 +9250,7 @@ pages:
         no longer satisfies the prerequisites for attunement, if the item has
         been more than 100 feet away for at least 24 hours, if the creature
         dies, or if another creature attunes to the item. A creature can also
-        voluntarily end attunement by spending another short rest focused on the
+        voluntarily end attunement by spending another field rest focused on the
         item, unless the item is cursed.</p>
       markdown: ''
     video:
@@ -9531,19 +9531,19 @@ pages:
       format: 1
       content: >-
         <p>Some magic items allow the user to cast a spell from the item. The
-        spell is cast at the lowest possible spell level, doesn't expend any of
-        the user's spell slots, and requires no components, unless the item's
-        description says otherwise. The spell uses its normal casting time,
+        spell is cast at the lowest possible power level, doesn't expend any of
+        the user's power uses, and requires no components, unless the item's
+        description says otherwise. The spell uses its normal activation time,
         range, and duration, and the user of the item must concentrate if the
-        spell requires concentration. Many items, such as potions, bypass the
+        spell requires maintained power. Many items, such as potions, bypass the
         casting of a spell and confer the spell's effects, with their usual
         duration. Certain items make exceptions to these rules, changing the
-        casting time, duration, or other parts of a spell.</p><p>A magic item,
-        such as certain staffs, may require you to use your own spellcasting
+        activation time, duration, or other parts of a spell.</p><p>A magic item,
+        such as certain staffs, may require you to use your own power system
         ability when you cast a spell from the item. If you have more than one
-        spellcasting ability, you choose which one to use with the item. If you
-        don't have a spellcasting ability—perhaps you're a rogue with the Use
-        Magic Device feature—your spellcasting ability modifier is +0 for the
+        power system ability, you choose which one to use with the item. If you
+        don't have a power system ability—perhaps you're a rogue with the Use
+        Magic Device feature—your power system ability modifier is +0 for the
         item, and your proficiency bonus does apply.</p>
       markdown: ''
     video:
@@ -9952,7 +9952,7 @@ pages:
         a different monster or by using a <strong>variant</strong> or
         <strong>template</strong>, such as the ones in this book. Keep in mind
         that modifying a monster, including when you apply a template to it,
-        might change its challenge rating.</p>
+        might change its threat level.</p>
       markdown: ''
     video:
       controls: true
@@ -10393,7 +10393,7 @@ pages:
         <p><strong>Humanoids</strong> are the main peoples of a fantasy gaming
         world, both civilized and savage, including humans and a tremendous
         variety of other species. They have language and culture, few if any
-        innate magical abilities (though most humanoids can learn spellcasting),
+        innate magical abilities (though most humanoids can learn power system),
         and a bipedal form. The most common humanoid races are the ones most
         suitable as player characters: humans, dwarves, elves, and halflings.
         Almost as numerous but far more savage and brutal, and almost uniformly
@@ -10850,8 +10850,8 @@ pages:
         throws. Most creatures don’t have special saving throw bonuses, in which
         case this section is absent.</p><p>A saving throw bonus is the sum of a
         monster’s relevant ability modifier and its proficiency bonus, which is
-        determined by the monster’s challenge rating (as shown in the
-        Proficiency Bonus by Challenge Rating
+        determined by the monster’s threat level (as shown in the
+        Proficiency Bonus by Threat Level
         table).</p><table><caption><h4>Proficiency Bonus by Challenge
         Rating</h4></caption><thead><tr><td>Challenge</td><td>Proficiency
         Bonus</td></tr></thead><tbody><tr><td>0</td><td>+
@@ -10910,8 +10910,8 @@ pages:
         stealthy might have bonuses to Wisdom (Perception) and Dexterity
         (Stealth) checks.</p><p>A skill bonus is the sum of a monster’s relevant
         ability modifier and its proficiency bonus, which is determined by the
-        monster’s challenge rating (as shown in the Proficiency Bonus by
-        Challenge Rating table). Other modifiers might apply. For instance, a
+        monster’s threat level (as shown in the Proficiency Bonus by
+        Threat Level table). Other modifiers might apply. For instance, a
         monster might have a larger-than-expected bonus (usually double its
         proficiency bonus) to account for its heightened expertise.</p>
       markdown: ''
@@ -10988,10 +10988,10 @@ pages:
         <p>The Senses entry notes a monster’s passive Wisdom (Perception) score,
         as well as any special senses the monster might have. Special senses are
         described
-        below.</p><h3>Blindsight</h3><p>@Embed[Compendium.dnd5e.rules.JournalEntry.eVtpEGXjA2tamEIJ.JournalEntryPage.I6ABWHBYwGl55dLY
-        inline]</p><h3>Darkvision</h3><p>@Embed[Compendium.dnd5e.rules.JournalEntry.eVtpEGXjA2tamEIJ.JournalEntryPage.0RBamBThjzeAdMSt
-        inline]</p><h3>Tremorsense</h3><p>@Embed[Compendium.dnd5e.rules.JournalEntry.eVtpEGXjA2tamEIJ.JournalEntryPage.8AIlZ95v54mL531X
-        inline]</p><h3>Truesight</h3><p>@Embed[Compendium.dnd5e.rules.JournalEntry.eVtpEGXjA2tamEIJ.JournalEntryPage.8iC24otVX4n1yrYw
+        below.</p><h3>Thermal Vision</h3><p>@Embed[Compendium.dnd5e.rules.JournalEntry.eVtpEGXjA2tamEIJ.JournalEntryPage.I6ABWHBYwGl55dLY
+        inline]</p><h3>Scanner</h3><p>@Embed[Compendium.dnd5e.rules.JournalEntry.eVtpEGXjA2tamEIJ.JournalEntryPage.0RBamBThjzeAdMSt
+        inline]</p><h3>Motion Sensor</h3><p>@Embed[Compendium.dnd5e.rules.JournalEntry.eVtpEGXjA2tamEIJ.JournalEntryPage.8AIlZ95v54mL531X
+        inline]</p><h3>Radar Ping</h3><p>@Embed[Compendium.dnd5e.rules.JournalEntry.eVtpEGXjA2tamEIJ.JournalEntryPage.8iC24otVX4n1yrYw
         inline]</p>
       markdown: ''
     video:
@@ -11155,19 +11155,19 @@ pages:
     text:
       format: 1
       content: >-
-        <p>A monster’s <strong>challenge rating</strong> tells you how great a
+        <p>A monster’s <strong>threat level</strong> tells you how great a
         threat the monster is. An appropriately equipped and well-rested party
         of four adventurers should be able to defeat a monster that has a
-        challenge rating equal to its level without suffering any deaths. For
+        threat level equal to its level without suffering any deaths. For
         example, a party of four 3rd-level characters should find a monster with
-        a challenge rating of 3 to be a worthy challenge, but not a deadly
+        a threat level of 3 to be a worthy challenge, but not a deadly
         one.</p><p>Monsters that are significantly weaker than 1st-level
-        characters have a challenge rating lower than 1. Monsters with a
-        challenge rating of 0 are insignificant except in large numbers; those
+        characters have a threat level lower than 1. Monsters with a
+        threat level of 0 are insignificant except in large numbers; those
         with no effective attacks are worth no experience points, while those
         that have attacks are worth 10 XP each.</p><p>Some monsters present a
         greater challenge than even a typical 20th-level party can handle. These
-        monsters have a challenge rating of 21 or higher and are specifically
+        monsters have a threat level of 21 or higher and are specifically
         designed to test player skill.</p><h3>Experience
         Points</h3><p>@Embed[.cNflBe0pZX8eAFB4 inline]</p>
       markdown: ''
@@ -11204,7 +11204,7 @@ pages:
       format: 1
       content: >-
         <p>The number of experience points (XP) a monster is worth is based on
-        its challenge rating. Typically, XP is awarded for defeating the
+        its threat level. Typically, XP is awarded for defeating the
         monster, although the GM may also award XP for neutralizing the threat
         posed by the monster in some other manner.</p><p>Unless something tells
         you otherwise, a monster summoned by a spell or other magical ability is
@@ -11246,11 +11246,11 @@ pages:
     text:
       format: 1
       content: >-
-        <p>Special traits (which appear after a monster’s challenge rating but
+        <p>Special traits (which appear after a monster’s threat level but
         before any actions or reactions) are characteristics that are likely to
         be relevant in a combat encounter and that require some
-        explanation.</p><h3>Innate Spellcasting</h3><p>@Embed[.pyo2jnYvavIGyg0s
-        inline]</p><h3>Spellcasting</h3><p>@Embed[.LrDxITNV8raUt37y
+        explanation.</p><h3>Innate Power System</h3><p>@Embed[.pyo2jnYvavIGyg0s
+        inline]</p><h3>Power System</h3><p>@Embed[.LrDxITNV8raUt37y
         inline]</p><h3>Psionics</h3><p>@Embed[.LLLopR0IZOleE1xT inline]</p>
       markdown: ''
     video:
@@ -11275,7 +11275,7 @@ pages:
     category: null
     _key: '!journal.pages!NizgRXLNUqtdlC1s.aeJoiagWfLPkJSFM'
   - sort: 25500000
-    name: Innate Spellcasting
+    name: Innate Power System
     type: rule
     _id: pyo2jnYvavIGyg0s
     title:
@@ -11286,9 +11286,9 @@ pages:
       format: 1
       content: >-
         <p>A monster with the innate ability to cast spells has the Innate
-        Spellcasting special trait. Unless noted otherwise, an innate spell of
+        Power System special trait. Unless noted otherwise, an innate spell of
         1st level or higher is always cast at its lowest possible level and
-        can’t be cast at a higher level. If a monster has a cantrip where its
+        can’t be cast at a higher level. If a monster has a basic power where its
         level matters and no level is given, use the monster’s challenge
         rating.</p><p>An innate spell can have special rules or restrictions.
         For example, a drow mage can innately cast the
@@ -11320,7 +11320,7 @@ pages:
     category: null
     _key: '!journal.pages!NizgRXLNUqtdlC1s.pyo2jnYvavIGyg0s'
   - sort: 25600000
-    name: Spellcasting
+    name: Power System
     type: rule
     _id: LrDxITNV8raUt37y
     title:
@@ -11330,10 +11330,10 @@ pages:
     text:
       format: 1
       content: >-
-        <p>A monster with the Spellcasting special trait has a spellcaster level
-        and spell slots, which it uses to cast its spells of 1st level and
+        <p>A monster with the Power System special trait has a spellcaster level
+        and power uses, which it uses to cast its spells of 1st level and
         higher (as explained in the <em>Player’s Handbook</em>). The spellcaster
-        level is also used for any cantrips included in the feature.</p><p>The
+        level is also used for any basic powers included in the feature.</p><p>The
         monster has a list of spells known or prepared from a specific class.
         The list might also include spells from a feature in that class, such as
         the @UUID[Compendium.dnd5e.classfeatures.Item.x637K2Icp2ZFM1TB]{Divine
@@ -11341,13 +11341,13 @@ pages:
         @UUID[Compendium.dnd5e.classfeatures.Item.u6Du2P9s81SWuGbi]{Druid
         Circle} feature of the druid. The monster is considered a member of that
         class when attuning to or using a magic item that requires membership in
-        the class or access to its spell list.</p><p>A monster can cast a spell
-        from its list at a higher level if it has the spell slot to do so. For
+        the class or access to its power list.</p><p>A monster can cast a spell
+        from its list at a higher level if it has the power use to do so. For
         example, a drow mage with the 3rd-level
         @UUID[Compendium.dnd5e.spells.Item.IyikgTEOTv701jgQ]{Lightning Bolt}
         spell can cast it as a 5th-level spell by using one of its 5th-level
-        spell slots.</p><p>You can change the spells that a monster knows or has
-        prepared, replacing any spell on its spell list with a spell of the same
+        power uses.</p><p>You can change the spells that a monster knows or has
+        prepared, replacing any spell on its power list with a spell of the same
         level and from the same class list. If you do so, you might cause the
         monster to be a greater or lesser threat than suggested by its challenge
         rating.</p>
@@ -11385,7 +11385,7 @@ pages:
       format: 1
       content: >-
         <p>A monster that casts spells using only the power of its mind has the
-        psionics tag added to its Spellcasting or Innate Spellcasting special
+        psionics tag added to its Power System or Innate Power System special
         trait. This tag carries no special rules of its own, but other parts of
         the game might refer to it. A monster that has this tag typically
         doesn’t require any components to cast its spells.</p>
@@ -11657,9 +11657,9 @@ pages:
       format: 1
       content: >-
         <p><strong>X/Day. </strong>The notation “X/Day” means a special ability
-        can be used X number of times and that a monster must finish a long rest
+        can be used X number of times and that a monster must finish a full rest
         to regain expended uses. For example, “1/Day” means a special ability
-        can be used once and that the monster must finish a long rest to use it
+        can be used once and that the monster must finish a full rest to use it
         again.</p>
       markdown: ''
     video:
@@ -11700,7 +11700,7 @@ pages:
         the start of each of the monster’s turns, roll a d6. If the roll is one
         of the numbers in the recharge notation, the monster regains the use of
         the special ability. The ability also recharges when the monster
-        finishes a short or long rest.</p><p>For example, “Recharge 5–6” means a
+        finishes a short or full rest.</p><p>For example, “Recharge 5–6” means a
         monster can use the special ability once. Then, at the start of the
         monster’s turn, it regains the use of that ability if it rolls a 5 or 6
         on a d6.</p>
@@ -11727,7 +11727,7 @@ pages:
     category: null
     _key: '!journal.pages!NizgRXLNUqtdlC1s.NmdLIJPXEMZIWWQa'
   - sort: 26600000
-    name: Recharge after a Short or Long Rest
+    name: Recharge after a Short or Full Rest
     type: rule
     _id: saRwXXdZ2trLoGHZ
     title:
@@ -11737,9 +11737,9 @@ pages:
     text:
       format: 1
       content: >-
-        <p><strong>Recharge after a Short or Long Rest. </strong>This notation
+        <p><strong>Recharge after a Short or Full Rest. </strong>This notation
         means that a monster can use a special ability once and then must finish
-        a short or long rest to use it again.</p>
+        a short or full rest to use it again.</p>
       markdown: ''
     video:
       controls: true
@@ -11976,7 +11976,7 @@ pages:
         decide how much of a monster’s equipment is recoverable after the
         creature is slain and whether any of that equipment is still usable. A
         battered suit of armor made for a monster is rarely usable by someone
-        else, for instance.</p><p>If a spellcasting monster needs material
+        else, for instance.</p><p>If a power system monster needs material
         components to cast its spells, assume that it has the material
         components it needs to cast the spells in its stat block.</p>
       markdown: ''
@@ -12002,7 +12002,7 @@ pages:
     category: null
     _key: '!journal.pages!NizgRXLNUqtdlC1s.qKmqbRFE9n2Up5bF'
   - sort: 20675000
-    name: Spell Scroll
+    name: Power Module
     type: rule
     _id: gi8IKhtOlBVhMJrN
     title:
@@ -12012,25 +12012,25 @@ pages:
     text:
       format: 1
       content: >-
-        <p>A spell scroll bears the words of a single spell, written in a
-        mystical cipher. If the spell is on your class’s spell list, you can
+        <p>A power module bears the words of a single spell, written in a
+        mystical cipher. If the spell is on your class’s power list, you can
         read the scroll and cast its spell without providing any material
         components. Otherwise, the scroll is unintelligible. Casting the spell
-        by reading the scroll requires the spell’s normal casting time. Once the
+        by reading the scroll requires the spell’s normal activation time. Once the
         spell is cast, the words on the scroll fade, and it crumbles to dust. If
         the casting is interrupted, the scroll is not lost.</p><p>If the spell
-        is on your class’s spell list but of a higher level than you can
-        normally cast, you must make an ability check using your spellcasting
+        is on your class’s power list but of a higher level than you can
+        normally cast, you must make an ability check using your power system
         ability to determine whether you cast it successfully. The DC equals 10
         + the spell’s level. On a failed check, the spell disappears from the
         scroll with no other effect.</p><p>The level of the spell on the scroll
         determines the spell’s saving throw DC and attack bonus, as well as the
-        scroll’s rarity, as shown in the Spell Scroll
-        table.</p><table><caption>Spell Scroll</caption><thead><tr><th
-        scope="col">Spell Level</th><th scope="col">Rarity</th><th
+        scroll’s rarity, as shown in the Power Module
+        table.</p><table><caption>Power Module</caption><thead><tr><th
+        scope="col">Power Level</th><th scope="col">Rarity</th><th
         scope="col">Save DC</th><th scope="col">Attack
         Bonus</th></tr></thead><tbody><tr><th
-        scope="row">Cantrip</th><td>Common</td><td>13</td><td>+5</td></tr><tr><th
+        scope="row">Basic Power</th><td>Common</td><td>13</td><td>+5</td></tr><tr><th
         scope="row">1st</th><td>Common</td><td>13</td><td>+5</td></tr><tr><th
         scope="row">2nd</th><td>Uncommon</td><td>13</td><td>+5</td></tr><tr><th
         scope="row">3rd</th><td>Uncommon</td><td>15</td><td>+7</td></tr><tr><th
@@ -12042,12 +12042,12 @@ pages:
         scope="row">8th</th><td>Very
         rare</td><td>18</td><td>+10</td></tr><tr><th
         scope="row">9th</th><td>Legendary</td><td>19</td><td>+11</td></tr></tbody></table><p>A
-        wizard spell on a <em>spell scroll</em> can be copied just as spells in
-        spellbooks can be copied. When a spell is copied from a <em>spell
+        wizard spell on a <em>power module</em> can be copied just as spells in
+        power lists can be copied. When a spell is copied from a <em>spell
         scroll</em>, the copier must succeed on an Intelligence (Arcana) check
         with a DC equal to 10 + the spell’s level. If the check succeeds, the
         spell is successfully copied. Whether the check succeeds or fails, the
-        <em>spell scroll</em> is destroyed.</p>
+        <em>power module</em> is destroyed.</p>
       markdown: ''
     video:
       controls: true

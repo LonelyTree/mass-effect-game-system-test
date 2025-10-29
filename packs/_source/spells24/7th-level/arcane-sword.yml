@@ -3,9 +3,9 @@ system:
   description:
     value: >-
       <p>You create a spectral sword that hovers within range. It lasts for the
-      duration.</p><p>When the sword appears, you make a melee spell attack
+      duration.</p><p>When the sword appears, you make a close combat power attack
       against a target within 5 feet of the sword. On a hit, the target takes
-      Force damage equal to 4d12 plus your spellcasting ability
+      Force damage equal to 4d12 plus your power system ability
       modifier.</p><p>On your later turns, you can take a Bonus Action to move
       the sword up to 30 feet to a spot you can see and repeat the attack
       against the same target or a different one.</p>
@@ -48,9 +48,9 @@ system:
     - vocal
     - somatic
     - material
-    - concentration
+    - maintained power
   materials:
-    value: a miniature sword worth 250+ GP
+    value: a miniature sword worth 250+ CR
     consumed: false
     cost: 0
     supply: 0
@@ -74,7 +74,7 @@ system:
         chatFlavor: ''
       duration:
         units: inst
-        concentration: false
+        maintained power: false
         override: false
       range:
         override: false

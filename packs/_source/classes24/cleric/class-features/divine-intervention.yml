@@ -12,7 +12,7 @@ system:
       spell} of level 5 or lower that doesn't require a Reaction to cast. As
       part of the same action, you cast that spell without expending a spell
       slot or needing Material components. You can't use this feature again
-      until you finish a Long Rest.</p><section id="secret-LP7yqqobTjOqeswv"
+      until you finish a Full Rest.</p><section id="secret-LP7yqqobTjOqeswv"
       class="secret"><p><strong>Foundry Note</strong></p><p>Uncheck the
       "Consumption" box when casting the spell for the free use. This feature
       can be used to track available uses.</p></section>
@@ -63,7 +63,7 @@ system:
         units: inst
         special: ''
         override: false
-        concentration: false
+        maintained power: false
       effects: []
       range:
         units: self

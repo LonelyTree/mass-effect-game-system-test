@@ -8,8 +8,8 @@ system:
     value: >-
       <p>The might of the elements flows through you. You gain one of the
       following options of your choice.</p><p><strong>Potent
-      Spellcasting.</strong> Add your Wisdom modifier to the damage you deal
-      with any Druid cantrip.</p><p><strong>Primal Strike.</strong> Once on each
+      Power System.</strong> Add your Wisdom modifier to the damage you deal
+      with any Druid basic power.</p><p><strong>Primal Strike.</strong> Once on each
       of your turns when you hit a creature with an attack roll using a weapon
       or a Beast form's attack in Wild Shape, you can cause the target to take
       an extra 1d8 [[/damage 1d8 type=cold]]{cold}, [[/damage 1d8

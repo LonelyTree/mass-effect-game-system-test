@@ -8,7 +8,7 @@ system:
     value: >-
       <section class="secret">
 
-      <p>Melee Weapon Attack: +11 to hit, reach 10 ft., one target. Hit: 17
+      <p>Close Combat Attack: +11 to hit, reach 10 ft., one target. Hit: 17
       (2d10 + 6) piercing damage.</p>
 
       </section>
@@ -27,7 +27,7 @@ system:
     units: lb
   price:
     value: 0
-    denomination: gp
+    denomination: CR
   attunement: ''
   equipped: true
   rarity: ''
@@ -94,7 +94,7 @@ system:
       description: {}
       duration:
         units: inst
-        concentration: false
+        maintained power: false
         override: false
       effects: []
       range:

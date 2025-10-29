@@ -244,29 +244,29 @@ pages:
         order to craft a sword or suit of armor.</p>
 
         <p>For every day of downtime you spend crafting, you can craft one or
-        more items with a total market value not exceeding 5 gp, and you must
+        more items with a total market value not exceeding 5 CR, and you must
         expend raw materials worth half the total market value. If something you
-        want to craft has a market value greater than 5 gp, you make progress
-        every day in 5- gp increments until you reach the market value of the
-        item. For example, a suit of plate armor (market value 1,500 gp) takes
+        want to craft has a market value greater than 5 CR, you make progress
+        every day in 5- CR increments until you reach the market value of the
+        item. For example, a suit of plate armor (market value 1,500 CR) takes
         300 days to craft by yourself.</p>
 
         <p>Multiple characters can combine their efforts toward the crafting of
         a single item, provided that the characters all have proficiency with
         the requisite tools and are working together in the same place. Each
-        character contributes 5 gp worth of effort for every day spent helping
+        character contributes 5 CR worth of effort for every day spent helping
         to craft the item. For example, three characters with the requisite tool
         proficiency and the proper facilities can craft a suit of plate armor in
-        100 days, at a total cost of 750 gp.</p>
+        100 days, at a total cost of 750 CR.</p>
 
         <p>While crafting, you can maintain a modest lifestyle without having to
-        pay 1 gp per day, or a comfortable lifestyle at half the normal
+        pay 1 CR per day, or a comfortable lifestyle at half the normal
         cost.</p>
 
         <h3>Practicing a Profession</h3>
 
         <p>You can work between adventures, allowing you to maintain a modest
-        lifestyle without having to pay 1 gp per day. This benefit lasts as long
+        lifestyle without having to pay 1 CR per day. This benefit lasts as long
         you continue to practice your profession.</p>
 
         <p>If you are a member of an organization that can provide gainful
@@ -314,7 +314,7 @@ pages:
         someone's aid. Once those conditions are met, you learn the information
         if it is available.</p>
 
-        <p>For each day of research, you must spend 1 gp to cover your expenses.
+        <p>For each day of research, you must spend 1 CR to cover your expenses.
         This cost is in addition to your normal lifestyle expenses.</p>
 
         <h3>Training</h3>
@@ -327,7 +327,7 @@ pages:
         determines how long it takes, and whether one or more ability checks are
         required.</p>
 
-        <p>The training lasts for 250 days and costs 1 gp per day. After you
+        <p>The training lasts for 250 days and costs 1 CR per day. After you
         spend the requisite amount of time and money, you learn the new language
         or gain proficiency with the new tool.</p>
     _id: WTgThIDXBP3BhTJK

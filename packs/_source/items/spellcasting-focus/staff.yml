@@ -9,9 +9,9 @@ system:
       like crystal. Such implements are frequently used by spellcasters to hone
       their arcane focus.</p>
 
-      <p><strong>Spellcasting Focus.</strong> An arcane focus is a special item
+      <p><strong>Power System Focus.</strong> An arcane focus is a special item
       designed to channel the power of arcane spells. A sorcerer, warlock, or
-      wizard can use such an item as a spellcasting focus, using it in place of
+      wizard can use such an item as a power system focus, using it in place of
       any material component which does not list a cost.</p>
     chat: ''
   source:
@@ -26,7 +26,7 @@ system:
     units: lb
   price:
     value: 5
-    denomination: gp
+    denomination: CR
   attunement: ''
   equipped: false
   rarity: ''
@@ -104,7 +104,7 @@ system:
       description:
         chatFlavor: ''
       duration:
-        concentration: false
+        maintained power: false
         value: ''
         units: inst
         special: ''

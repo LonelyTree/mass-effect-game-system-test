@@ -31,7 +31,7 @@ system:
     units: lb
   price:
     value: 4000
-    denomination: gp
+    denomination: CR
   attunement: required
   equipped: false
   rarity: rare
@@ -88,7 +88,7 @@ system:
       description:
         chatFlavor: ''
       duration:
-        concentration: false
+        maintained power: false
         value: ''
         units: ''
         special: ''
@@ -140,7 +140,7 @@ system:
           - vocal
           - somatic
           - material
-        spellbook: false
+        power list: false
       _id: MQiFj6kmbG849P2I
       sort: 0
       activation:
@@ -156,7 +156,7 @@ system:
         chatFlavor: ''
       duration:
         units: inst
-        concentration: false
+        maintained power: false
         override: false
       range:
         override: true
@@ -190,7 +190,7 @@ system:
           - vocal
           - somatic
           - material
-        spellbook: false
+        power list: false
       _id: 6DZzvyzd46LbnfIL
       sort: 0
       activation:
@@ -206,7 +206,7 @@ system:
         chatFlavor: ''
       duration:
         units: inst
-        concentration: false
+        maintained power: false
         override: false
       range:
         override: true
@@ -240,7 +240,7 @@ system:
           - vocal
           - somatic
           - material
-        spellbook: false
+        power list: false
       _id: CasBiIZXL54laOOx
       sort: 0
       activation:
@@ -256,7 +256,7 @@ system:
         chatFlavor: ''
       duration:
         units: inst
-        concentration: false
+        maintained power: false
         override: false
       range:
         override: false
@@ -287,7 +287,7 @@ system:
           - vocal
           - somatic
           - material
-        spellbook: false
+        power list: false
       _id: scEVZazoOleSrYw2
       sort: 0
       activation:
@@ -303,7 +303,7 @@ system:
         chatFlavor: ''
       duration:
         units: inst
-        concentration: false
+        maintained power: false
         override: false
       range:
         override: true
@@ -337,7 +337,7 @@ system:
           - vocal
           - somatic
           - material
-        spellbook: false
+        power list: false
       _id: 4xPLz74G1GRXtSmB
       sort: 0
       activation:
@@ -353,7 +353,7 @@ system:
         chatFlavor: ''
       duration:
         units: inst
-        concentration: false
+        maintained power: false
         override: false
       range:
         override: true
@@ -387,7 +387,7 @@ system:
           - vocal
           - somatic
           - material
-        spellbook: true
+        power list: true
       _id: mfe676QinSfB6v8H
       sort: 0
       activation:
@@ -403,7 +403,7 @@ system:
         chatFlavor: ''
       duration:
         units: inst
-        concentration: false
+        maintained power: false
         override: false
       range:
         override: false
@@ -434,7 +434,7 @@ system:
           - vocal
           - somatic
           - material
-        spellbook: false
+        power list: false
       _id: V6TIchqdN8i6seVY
       sort: 0
       activation:
@@ -450,7 +450,7 @@ system:
         chatFlavor: ''
       duration:
         units: inst
-        concentration: false
+        maintained power: false
         override: false
       range:
         override: true
@@ -484,7 +484,7 @@ system:
           - vocal
           - somatic
           - material
-        spellbook: true
+        power list: true
       _id: 3dSvQUQq9gxu0HSl
       sort: 0
       activation:
@@ -500,7 +500,7 @@ system:
         chatFlavor: ''
       duration:
         units: inst
-        concentration: false
+        maintained power: false
         override: false
       range:
         override: true
@@ -534,7 +534,7 @@ system:
           - vocal
           - somatic
           - material
-        spellbook: true
+        power list: true
       _id: fcFugwiJmL6UEXvv
       sort: 0
       activation:
@@ -550,7 +550,7 @@ system:
         chatFlavor: ''
       duration:
         units: inst
-        concentration: false
+        maintained power: false
         override: false
       range:
         override: false

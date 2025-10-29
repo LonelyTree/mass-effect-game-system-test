@@ -75,15 +75,15 @@ system:
     attunement:
       max: 3
     senses:
-      darkvision: 0
-      blindsight: 0
-      tremorsense: 0
-      truesight: 0
+      scanner: 0
+      thermal vision: 0
+      motion sensor: 0
+      radar ping: 0
       units: ft
       special: ''
-    spellcasting: int
+    power system: int
     exhaustion: 0
-    concentration:
+    maintained power:
       ability: ''
       roll:
         min: null
@@ -144,7 +144,7 @@ system:
       bypasses: []
   currency:
     pp: 0
-    gp: 0
+    CR: 0
     ep: 0
     sp: 0
     cp: 0
@@ -483,15 +483,15 @@ prototypeToken:
   movementAction: null
 items:
   - _id: tbKbwgcprUBciliF
-    name: Spellcasting
+    name: Power System
     type: feat
     img: icons/magic/light/projectiles-star-purple.webp
     system:
       description:
         value: >-
-          <p>The mage is a 9th-level spellcaster. Its spellcasting ability is
+          <p>The mage is a 9th-level spellcaster. Its power system ability is
           Intelligence (spell save DC 14, +6 to hit with spell attacks). The
-          mage has the following wizard spells prepared:</p><p>Cantrip (at
+          mage has the following wizard spells prepared:</p><p>Basic Power (at
           will): [[/item .EOmsUcFQJTfG2oio]]{fire bolt}, [[/item
           .Bnn9Nzajixvow9xi]]{light}, [[/item .Utk1OQRwYkMkFRD3]]{mage hand},
           [[/item .udsLtG0BugXHR2JQ]]{prestidigitation}</p><p>1st level (4
@@ -507,7 +507,7 @@ items:
           .WN2LWEljYU6QqnRH]]{ice storm}</p><p>5th level (1 slots): [[/item
           .RpKjTlYASrfqUPVA]]{cone of cold}</p>
         chat: >-
-          <p>The mage is a spellcaster. Its spellcasting ability is
+          <p>The mage is a spellcaster. Its power system ability is
           Intelligence.</p>
       source:
         custom: ''
@@ -530,7 +530,7 @@ items:
       enchant: {}
       prerequisites:
         level: null
-      identifier: spellcasting
+      identifier: power system
     effects: []
     folder: null
     sort: 0
@@ -557,7 +557,7 @@ items:
       description:
         value: >-
           <p>You hurl a mote of fire at a creature or object within range. Make
-          a ranged spell attack against the target. On a hit, the target takes
+          a ranged power attack against the target. On a hit, the target takes
           1d10 fire damage. A flammable object hit by this spell ignites if it
           isn't being worn or carried.</p><p>This spell's damage increases by
           1d10 when you reach 5th level (2d10), 11th level (3d10), and 17th
@@ -623,7 +623,7 @@ items:
             chatFlavor: ''
           duration:
             units: inst
-            concentration: false
+            maintained power: false
             override: false
           effects: []
           range:
@@ -760,7 +760,7 @@ items:
             chatFlavor: ''
           duration:
             units: inst
-            concentration: false
+            maintained power: false
             override: false
           effects: []
           range:
@@ -783,7 +783,7 @@ items:
           save:
             ability: dex
             dc:
-              calculation: spellcasting
+              calculation: power system
               formula: '14'
           sort: 0
       identifier: light
@@ -881,7 +881,7 @@ items:
             chatFlavor: ''
           duration:
             units: inst
-            concentration: false
+            maintained power: false
             override: false
           effects: []
           range:
@@ -1018,7 +1018,7 @@ items:
             chatFlavor: ''
           duration:
             units: inst
-            concentration: false
+            maintained power: false
             override: false
           effects: []
           range:
@@ -1116,7 +1116,7 @@ items:
         - vocal
         - somatic
         - ritual
-        - concentration
+        - maintained power
       activities:
         dnd5eactivity000:
           _id: dnd5eactivity000
@@ -1135,7 +1135,7 @@ items:
             chatFlavor: ''
           duration:
             units: inst
-            concentration: false
+            maintained power: false
             override: false
           effects: []
           range:
@@ -1247,7 +1247,7 @@ items:
             chatFlavor: ''
           duration:
             units: inst
-            concentration: false
+            maintained power: false
             override: false
           effects: []
           range:
@@ -1333,7 +1333,7 @@ items:
     type: spell
     system:
       description:
-        value: "<p>You create three glowing darts of magical force. Each dart hits a creature of your choice that you can see within range. A dart deals 1d4 + 1 force damage to its target. The darts all strike simultaneously, and you can direct them to hit one creature or several.</p><p><strong>Higher Levels.\_</strong>When you cast this spell using a spell slot of 2nd level or higher, the spell creates one more dart for each slot level above 1st.</p>"
+        value: "<p>You create three glowing darts of magical force. Each dart hits a creature of your choice that you can see within range. A dart deals 1d4 + 1 force damage to its target. The darts all strike simultaneously, and you can direct them to hit one creature or several.</p><p><strong>Higher Levels.\_</strong>When you cast this spell using a power use of 2nd level or higher, the spell creates one more dart for each slot level above 1st.</p>"
         chat: ''
       source:
         custom: ''
@@ -1395,7 +1395,7 @@ items:
             chatFlavor: ''
           duration:
             units: inst
-            concentration: false
+            maintained power: false
             override: false
           effects: []
           range:
@@ -1519,7 +1519,7 @@ items:
             chatFlavor: ''
           duration:
             units: inst
-            concentration: false
+            maintained power: false
             override: false
           effects:
             - _id: 6pbotGIvqQkraPva
@@ -1668,7 +1668,7 @@ items:
             chatFlavor: ''
           duration:
             units: inst
-            concentration: false
+            maintained power: false
             override: false
           effects: []
           range:
@@ -1776,7 +1776,7 @@ items:
       properties:
         - vocal
         - material
-        - concentration
+        - maintained power
       activities:
         dnd5eactivity000:
           _id: dnd5eactivity000
@@ -1795,7 +1795,7 @@ items:
             chatFlavor: ''
           duration:
             units: inst
-            concentration: false
+            maintained power: false
             override: false
           effects: []
           range:
@@ -1818,7 +1818,7 @@ items:
           save:
             ability: wis
             dc:
-              calculation: spellcasting
+              calculation: power system
               formula: '14'
           sort: 0
       identifier: suggestion
@@ -1845,7 +1845,7 @@ items:
     type: spell
     system:
       description:
-        value: "<p>You attempt to interrupt a creature in the process of casting a spell. If the creature is casting a spell of 3rd level or lower, its spell fails and has no effect. If it is casting a spell of 4th level or higher, make an ability check using your spellcasting ability. The DC equals 10 + the spell's level. On a success, the creature's spell fails and has no effect.</p><p><strong>Higher Levels.\_</strong>When you cast this spell using a spell slot of 4th level or higher, the interrupted spell has no effect if its level is less than or equal to the level of the spell slot you used.</p>"
+        value: "<p>You attempt to interrupt a creature in the process of casting a spell. If the creature is casting a spell of 3rd level or lower, its spell fails and has no effect. If it is casting a spell of 4th level or higher, make an ability check using your power system ability. The DC equals 10 + the spell's level. On a success, the creature's spell fails and has no effect.</p><p><strong>Higher Levels.\_</strong>When you cast this spell using a power use of 4th level or higher, the interrupted spell has no effect if its level is less than or equal to the level of the power use you used.</p>"
         chat: ''
       source:
         custom: ''
@@ -1908,7 +1908,7 @@ items:
             chatFlavor: ''
           duration:
             units: inst
-            concentration: false
+            maintained power: false
             override: false
           effects: []
           range:
@@ -1964,7 +1964,7 @@ items:
           one.</p><p>The fire spreads around corners. It ignites flammable
           objects in the area that aren't being worn or
           carried.</p><p><strong>At Higher Levels.</strong> When you cast this
-          spell using a spell slot of 4th level or higher, the damage increases
+          spell using a power use of 4th level or higher, the damage increases
           by 1d6 for each slot level above 3rd.</p>
         chat: ''
       source:
@@ -2028,7 +2028,7 @@ items:
             chatFlavor: ''
           duration:
             units: inst
-            concentration: false
+            maintained power: false
             override: false
           effects: []
           range:
@@ -2063,7 +2063,7 @@ items:
           save:
             ability: dex
             dc:
-              calculation: spellcasting
+              calculation: power system
               formula: '14'
           sort: 0
       identifier: fireball
@@ -2094,7 +2094,7 @@ items:
           <p>You touch a willing creature. The target gains a flying speed of 60
           feet for the Duration. When the spell ends, the target falls if it is
           still aloft, unless it can stop the fall.</p><p><strong>At Higher
-          Levels.</strong> When you cast this spell using a spell slot of 4th
+          Levels.</strong> When you cast this spell using a power use of 4th
           level or higher, you can target one additional creature for each slot
           level above 3rd.</p>
         chat: ''
@@ -2140,7 +2140,7 @@ items:
         - vocal
         - somatic
         - material
-        - concentration
+        - maintained power
       activities:
         dnd5eactivity000:
           _id: dnd5eactivity000
@@ -2159,7 +2159,7 @@ items:
             chatFlavor: ''
           duration:
             units: inst
-            concentration: false
+            maintained power: false
             override: false
           effects: []
           range:
@@ -2252,7 +2252,7 @@ items:
       properties:
         - vocal
         - somatic
-        - concentration
+        - maintained power
       activities:
         dnd5eactivity000:
           _id: dnd5eactivity000
@@ -2271,7 +2271,7 @@ items:
             chatFlavor: ''
           duration:
             units: inst
-            concentration: false
+            maintained power: false
             override: false
           effects: []
           range:
@@ -2326,7 +2326,7 @@ items:
           as much damage on a successful one.</p><p>Hailstones turn the storm's
           area of effect into difficult terrain until the end of your next
           turn.</p><p><strong>At Higher Levels.</strong> When you cast this
-          spell using a spell slot of 5th level or higher, the bludgeoning
+          spell using a power use of 5th level or higher, the bludgeoning
           damage increases by 1d8 for each slot level above 4th.</p>
         chat: ''
       source:
@@ -2390,7 +2390,7 @@ items:
             chatFlavor: ''
           duration:
             units: inst
-            concentration: false
+            maintained power: false
             override: false
           effects: []
           range:
@@ -2437,7 +2437,7 @@ items:
           save:
             ability: dex
             dc:
-              calculation: spellcasting
+              calculation: power system
               formula: '14'
           sort: 0
       identifier: ice-storm
@@ -2464,7 +2464,7 @@ items:
     type: spell
     system:
       description:
-        value: "<p>A blast of cold air erupts from your hands. Each creature in a 60-foot cone must make a Constitution saving throw. A creature takes 8d8 cold damage on a failed save, or half as much damage on a successful one.</p><p>A creature killed by this spell becomes a frozen statue until it thaws.</p><p><strong>Higher Levels.\_</strong>When you cast this spell using a spell slot of 6th level or higher, the damage increases by 1d8 for each slot level above 5th.</p>"
+        value: "<p>A blast of cold air erupts from your hands. Each creature in a 60-foot cone must make a Constitution saving throw. A creature takes 8d8 cold damage on a failed save, or half as much damage on a successful one.</p><p>A creature killed by this spell becomes a frozen statue until it thaws.</p><p><strong>Higher Levels.\_</strong>When you cast this spell using a power use of 6th level or higher, the damage increases by 1d8 for each slot level above 5th.</p>"
         chat: ''
       source:
         custom: ''
@@ -2526,7 +2526,7 @@ items:
             chatFlavor: ''
           duration:
             units: inst
-            concentration: false
+            maintained power: false
             override: false
           effects: []
           range:
@@ -2561,7 +2561,7 @@ items:
           save:
             ability: con
             dc:
-              calculation: spellcasting
+              calculation: power system
               formula: '14'
           sort: 0
       identifier: cone-of-cold
@@ -2602,7 +2602,7 @@ items:
         units: lb
       price:
         value: 2
-        denomination: gp
+        denomination: CR
       attunement: ''
       rarity: ''
       identified: true
@@ -2680,7 +2680,7 @@ items:
           description:
             chatFlavor: ''
           duration:
-            concentration: false
+            maintained power: false
             value: ''
             units: inst
             special: ''

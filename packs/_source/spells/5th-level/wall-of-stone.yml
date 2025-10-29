@@ -26,7 +26,7 @@ system:
       object made of stone that can be damaged and thus breached. Each panel has
       AC 15 and 30 Hit Points per inch of thickness. Reducing a panel to 0 Hit
       Points destroys it and might cause connected panels to collapse at the
-      DM's discretion.</p><p>If you maintain your Concentration on this spell
+      DM's discretion.</p><p>If you maintain your Maintained Power on this spell
       for its whole Duration, the wall becomes permanent and can't be dispelled.
       Otherwise, the wall disappears when the spell ends.</p>
     chat: ''
@@ -72,7 +72,7 @@ system:
     - vocal
     - somatic
     - material
-    - concentration
+    - maintained power
   activities:
     dnd5eactivity000:
       _id: dnd5eactivity000
@@ -91,7 +91,7 @@ system:
         chatFlavor: ''
       duration:
         units: inst
-        concentration: false
+        maintained power: false
         override: false
       effects: []
       range:
@@ -110,7 +110,7 @@ system:
       save:
         ability: dex
         dc:
-          calculation: spellcasting
+          calculation: power system
           formula: ''
       uses:
         spent: 0

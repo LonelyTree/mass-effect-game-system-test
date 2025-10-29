@@ -22,7 +22,7 @@ system:
         chatFlavor: 'Bonus Damage: 1d8 Radiant vs Undead'
       duration:
         units: inst
-        concentration: false
+        maintained power: false
         override: false
       effects: []
       range:
@@ -102,7 +102,7 @@ system:
     units: lb
   price:
     value: 4000
-    denomination: gp
+    denomination: CR
   rarity: rare
   attunement: required
   attuned: false

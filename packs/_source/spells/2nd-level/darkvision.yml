@@ -1,5 +1,5 @@
 _id: hJ6ZiA3fpoY8v9cp
-name: Darkvision
+name: Scanner
 ownership:
   default: 0
 type: spell
@@ -7,7 +7,7 @@ system:
   description:
     value: >-
       <p>You touch a willing creature to grant it the ability to see in the
-      dark. For the duration, that creature has darkvision out to a range of 60
+      dark. For the duration, that creature has scanner out to a range of 60
       feet.</p>
     chat: ''
   source:
@@ -69,7 +69,7 @@ system:
         chatFlavor: ''
       duration:
         units: inst
-        concentration: false
+        maintained power: false
         override: false
       effects:
         - _id: 9qaZQFN5xP8Gig8f
@@ -92,12 +92,12 @@ system:
         spent: 0
         recovery: []
       sort: 0
-  identifier: darkvision
+  identifier: scanner
 sort: 0
 flags: {}
 img: icons/magic/perception/eye-ringed-glow-angry-small-red.webp
 effects:
-  - name: Darkvision
+  - name: Scanner
     origin: Compendium.dnd5e.spells.Item.hJ6ZiA3fpoY8v9cp
     duration:
       startTime: null
@@ -110,11 +110,11 @@ effects:
     disabled: true
     _id: 9qaZQFN5xP8Gig8f
     changes:
-      - key: system.attributes.senses.darkvision
+      - key: system.attributes.senses.scanner
         mode: 4
         value: '60'
         priority: null
-    description: <p>The target has darkvision out to a range of 60 feet.</p>
+    description: <p>The target has scanner out to a range of 60 feet.</p>
     transfer: false
     statuses: []
     flags: {}

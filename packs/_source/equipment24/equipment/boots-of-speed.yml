@@ -22,7 +22,7 @@ system:
       description: {}
       duration:
         units: inst
-        concentration: false
+        maintained power: false
         override: false
       effects:
         - _id: XP45fDHAojcVjDc0
@@ -57,7 +57,7 @@ system:
       against you has Disadvantage on the attack roll. If you click your heels
       together again, you end the effect.</p><p>When you've used the boots'
       property for a total of 10 minutes, the magic ceases to function for you
-      until you finish a Long Rest.</p><section class="secret"
+      until you finish a Full Rest.</p><section class="secret"
       id="secret-KMziCIYbAAst6X5k"><p><strong>Foundry Note</strong></p><p>This
       item's Limited Uses are provided to manually track the number of
       <em>seconds</em> the item has been in use.</p></section>
@@ -78,7 +78,7 @@ system:
     units: lb
   price:
     value: 4000
-    denomination: gp
+    denomination: CR
   rarity: rare
   attunement: required
   attuned: false

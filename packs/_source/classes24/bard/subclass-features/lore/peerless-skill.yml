@@ -55,7 +55,7 @@ system:
         units: inst
         special: ''
         override: false
-        concentration: false
+        maintained power: false
       effects: []
       range:
         units: self

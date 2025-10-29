@@ -5,7 +5,7 @@ img: null
 system:
   currency:
     pp: 0
-    gp: 0
+    CR: 0
     ep: 0
     sp: 0
     cp: 0
@@ -363,15 +363,15 @@ system:
     attunement:
       max: 3
     senses:
-      darkvision: 120
-      blindsight: 60
-      tremorsense: null
-      truesight: null
+      scanner: 120
+      thermal vision: 60
+      motion sensor: null
+      radar ping: null
       units: null
       special: ''
-    spellcasting: cha
+    power system: cha
     exhaustion: 0
-    concentration:
+    maintained power:
       ability: ''
       roll:
         min: null
@@ -628,7 +628,7 @@ items:
             chatFlavor: ''
           duration:
             units: inst
-            concentration: false
+            maintained power: false
             override: false
           effects: []
           range:
@@ -732,7 +732,7 @@ items:
           description: {}
           duration:
             units: inst
-            concentration: false
+            maintained power: false
             override: false
           effects: []
           range:
@@ -758,7 +758,7 @@ items:
       description:
         value: >-
           <p>The [[lookup @name lowercase]] makes three [[/item Rend]] attacks.
-          It can replace one attack with a use of [[/item Spellcasting]] to cast
+          It can replace one attack with a use of [[/item Power System]] to cast
           <em>@UUID[Compendium.dnd5e.spells24.Item.phbsplMindSpike0]{Mind
           Spike}</em> (level 3 version).</p>
         chat: ''
@@ -825,7 +825,7 @@ items:
             chatFlavor: ''
           duration:
             units: inst
-            concentration: false
+            maintained power: false
             override: false
           effects: []
           range:
@@ -892,7 +892,7 @@ items:
         units: lb
       price:
         value: 0
-        denomination: gp
+        denomination: CR
       rarity: ''
       attunement: ''
       attuned: false
@@ -987,7 +987,7 @@ items:
             chatFlavor: ''
           duration:
             units: inst
-            concentration: false
+            maintained power: false
             override: false
           effects: []
           range:
@@ -1087,8 +1087,8 @@ items:
       default: 0
     sort: 4
     _key: '!actors.items!mmAdultGreenDrag.mmPoisonBreath00'
-  - _id: mmSpellcasting00
-    name: Spellcasting
+  - _id: mmPower System00
+    name: Power System
     type: feat
     system:
       type:
@@ -1106,7 +1106,7 @@ items:
             level: 1
             properties:
               - material
-            spellbook: true
+            power list: true
             ability: ''
           _id: cqi2NEwfNQ6tLmhe
           sort: 0
@@ -1123,7 +1123,7 @@ items:
             chatFlavor: ''
           duration:
             units: inst
-            concentration: false
+            maintained power: false
             override: false
           range:
             override: false
@@ -1151,7 +1151,7 @@ items:
             level: 3
             properties:
               - material
-            spellbook: true
+            power list: true
             ability: ''
           _id: wWcMNOhvarPgpPIT
           sort: 0
@@ -1168,7 +1168,7 @@ items:
             chatFlavor: ''
           duration:
             units: inst
-            concentration: false
+            maintained power: false
             override: false
           range:
             override: false
@@ -1196,7 +1196,7 @@ items:
             level: 5
             properties:
               - material
-            spellbook: true
+            power list: true
             ability: ''
           _id: wjZhxhQ2wYKCpZSn
           sort: 0
@@ -1216,7 +1216,7 @@ items:
             chatFlavor: ''
           duration:
             units: inst
-            concentration: false
+            maintained power: false
             override: false
           range:
             override: false
@@ -1243,7 +1243,7 @@ items:
         value: >-
           <p class="feature">The [[lookup @name lowercase]] casts one of the
           following spells, requiring no Material components and using Charisma
-          as the spellcasting ability (spell save DC [[lookup
+          as the power system ability (spell save DC [[lookup
           @attributes.spell.dc]]):</p><p class="feature-trait"><strong>At
           Will:</strong>
           <em>@UUID[Compendium.dnd5e.spells24.Item.phbsplDetectMagi]{Detect
@@ -1253,7 +1253,7 @@ items:
           class="feature-trait"><strong>1/Day:</strong>
           <em>@UUID[Compendium.dnd5e.spells24.Item.phbsplGeas000000]{Geas}</em></p>
         chat: ''
-      identifier: spellcasting
+      identifier: power system
       source:
         revision: 1
         rules: '2024'
@@ -1277,7 +1277,7 @@ items:
           activity: []
           effect: []
     _stats:
-      compendiumSource: Compendium.dnd-monster-manual.features.Item.mmSpellcasting00
+      compendiumSource: Compendium.dnd-monster-manual.features.Item.mmPower System00
       duplicateSource: null
       coreVersion: '13.344'
       systemId: dnd5e
@@ -1289,7 +1289,7 @@ items:
     ownership:
       default: 0
     sort: 5
-    _key: '!actors.items!mmAdultGreenDrag.mmSpellcasting00'
+    _key: '!actors.items!mmAdultGreenDrag.mmPower System00'
   - name: Detect Magic
     system:
       description:
@@ -1340,7 +1340,7 @@ items:
       properties:
         - vocal
         - somatic
-        - concentration
+        - maintained power
         - ritual
       materials:
         value: ''
@@ -1369,7 +1369,7 @@ items:
           duration:
             units: inst
             override: false
-            concentration: false
+            maintained power: false
           effects:
             - _id: BHw91lQmVgdx39WZ
           range:
@@ -1437,7 +1437,7 @@ items:
         name: Spell Changes
         img: systems/dnd5e/icons/svg/activity/cast.svg
         origin: >-
-          Compendium.dnd5e.actors24.Actor.mmAdultGreenDrag.Item.mmSpellcasting00.Activity.cqi2NEwfNQ6tLmhe
+          Compendium.dnd5e.actors24.Actor.mmAdultGreenDrag.Item.mmPower System00.Activity.cqi2NEwfNQ6tLmhe
         changes:
           - key: system.properties
             mode: 2
@@ -1480,7 +1480,7 @@ items:
         riders:
           activity: []
           effect: []
-        cachedFor: .Item.mmSpellcasting00.Activity.cqi2NEwfNQ6tLmhe
+        cachedFor: .Item.mmPower System00.Activity.cqi2NEwfNQ6tLmhe
     _stats:
       compendiumSource: Compendium.dnd5e.spells24.Item.phbsplDetectMagi
       duplicateSource: null
@@ -1506,7 +1506,7 @@ items:
           can't become hidden from you, and if it has the
           &amp;Reference[invisible apply=false] condition, it gains no benefit
           from that condition against you.</p><p><strong>Using a Higher-Level
-          Spell Slot. </strong>The damage increases by 1d8 for each spell slot
+          Power Use. </strong>The damage increases by 1d8 for each power use
           level above 2.</p>
         chat: ''
       source:
@@ -1541,7 +1541,7 @@ items:
       school: div
       properties:
         - somatic
-        - concentration
+        - maintained power
       materials:
         value: ''
         consumed: false
@@ -1569,7 +1569,7 @@ items:
           duration:
             units: inst
             override: false
-            concentration: false
+            maintained power: false
           effects:
             - _id: AbNgTsT2gRxwmBpg
               onSave: false
@@ -1602,7 +1602,7 @@ items:
             ability:
               - wis
             dc:
-              calculation: spellcasting
+              calculation: power system
               formula: ''
           uses:
             spent: 0
@@ -1656,7 +1656,7 @@ items:
         name: Spell Changes
         img: systems/dnd5e/icons/svg/activity/cast.svg
         origin: >-
-          Compendium.dnd5e.actors24.Actor.mmAdultGreenDrag.Item.mmSpellcasting00.Activity.wWcMNOhvarPgpPIT
+          Compendium.dnd5e.actors24.Actor.mmAdultGreenDrag.Item.mmPower System00.Activity.wWcMNOhvarPgpPIT
         changes:
           - key: system.properties
             mode: 2
@@ -1696,7 +1696,7 @@ items:
       default: 0
     flags:
       dnd5e:
-        cachedFor: .Item.mmSpellcasting00.Activity.wWcMNOhvarPgpPIT
+        cachedFor: .Item.mmPower System00.Activity.wWcMNOhvarPgpPIT
     _stats:
       compendiumSource: Compendium.dnd5e.spells24.Item.phbsplMindSpike0
       duplicateSource: null
@@ -1730,8 +1730,8 @@ items:
           Restoration}</em>, or
           <em>@UUID[Compendium.dnd5e.spells24.Item.phbsplWish000000]{Wish}</em>
           spell ends this spell.</p><p><strong>Using a Higher-Level Spell
-          Slot.</strong> If you use a level 7 or 8 spell slot, the duration is
-          365 days. If you use a level 9 spell slot, the spell lasts until it is
+          Slot.</strong> If you use a level 7 or 8 power use, the duration is
+          365 days. If you use a level 9 power use, the spell lasts until it is
           ended by one of the spells mentioned above.</p>
         chat: ''
       source:
@@ -1796,7 +1796,7 @@ items:
           duration:
             units: inst
             override: false
-            concentration: false
+            maintained power: false
           effects:
             - _id: TXwfzpj9bERo0X1r
               onSave: false
@@ -1828,7 +1828,7 @@ items:
             ability:
               - wis
             dc:
-              calculation: spellcasting
+              calculation: power system
               formula: ''
           uses:
             spent: 0
@@ -1884,7 +1884,7 @@ items:
         name: Spell Changes
         img: systems/dnd5e/icons/svg/activity/cast.svg
         origin: >-
-          Compendium.dnd5e.actors24.Actor.mmAdultGreenDrag.Item.mmSpellcasting00.Activity.wjZhxhQ2wYKCpZSn
+          Compendium.dnd5e.actors24.Actor.mmAdultGreenDrag.Item.mmPower System00.Activity.wjZhxhQ2wYKCpZSn
         changes:
           - key: system.properties
             mode: 2
@@ -1927,7 +1927,7 @@ items:
         riders:
           activity: []
           effect: []
-        cachedFor: .Item.mmSpellcasting00.Activity.wjZhxhQ2wYKCpZSn
+        cachedFor: .Item.mmPower System00.Activity.wjZhxhQ2wYKCpZSn
     _stats:
       compendiumSource: Compendium.dnd5e.spells24.Item.phbsplGeas000000
       duplicateSource: null
@@ -1966,7 +1966,7 @@ items:
             chatFlavor: ''
           duration:
             units: inst
-            concentration: false
+            maintained power: false
             override: false
           range:
             override: false
@@ -1992,7 +1992,7 @@ items:
               - vocal
               - somatic
               - material
-            spellbook: false
+            power list: false
             uuid: Compendium.dnd5e.spells24.Item.phbsplMindSpike0
             ability: ''
           name: ''
@@ -2002,7 +2002,7 @@ items:
         max: ''
       description:
         value: >-
-          <p class="feature">The dragon uses [[/item Spellcasting]] to cast
+          <p class="feature">The dragon uses [[/item Power System]] to cast
           <em>@UUID[Compendium.dnd5e.spells24.Item.phbsplMindSpike0]{Mind
           Spike}</em> (level 3 version).</p>
         chat: ''
@@ -2056,7 +2056,7 @@ items:
           can't become hidden from you, and if it has the
           &amp;Reference[invisible apply=false] condition, it gains no benefit
           from that condition against you.</p><p><strong>Using a Higher-Level
-          Spell Slot. </strong>The damage increases by 1d8 for each spell slot
+          Power Use. </strong>The damage increases by 1d8 for each power use
           level above 2.</p>
         chat: ''
       source:
@@ -2091,7 +2091,7 @@ items:
       school: div
       properties:
         - somatic
-        - concentration
+        - maintained power
       materials:
         value: ''
         consumed: false
@@ -2119,7 +2119,7 @@ items:
           duration:
             units: inst
             override: false
-            concentration: false
+            maintained power: false
           effects:
             - _id: AbNgTsT2gRxwmBpg
               onSave: false
@@ -2152,7 +2152,7 @@ items:
             ability:
               - wis
             dc:
-              calculation: spellcasting
+              calculation: power system
               formula: ''
           uses:
             spent: 0
@@ -2297,7 +2297,7 @@ items:
             chatFlavor: ''
           duration:
             units: turn
-            concentration: false
+            maintained power: false
             override: false
             value: '1'
           effects:
@@ -2479,7 +2479,7 @@ items:
             chatFlavor: ''
           duration:
             units: inst
-            concentration: false
+            maintained power: false
             override: false
           effects: []
           range:

@@ -75,15 +75,15 @@ system:
     attunement:
       max: 3
     senses:
-      darkvision: 0
-      blindsight: 10
-      tremorsense: 0
-      truesight: 0
+      scanner: 0
+      thermal vision: 10
+      motion sensor: 0
+      radar ping: 0
       units: ft
       special: ''
-    spellcasting: ''
+    power system: ''
     exhaustion: 0
-    concentration:
+    maintained power:
       ability: ''
       roll:
         min: null
@@ -155,7 +155,7 @@ system:
       bypasses: []
   currency:
     pp: 0
-    gp: 0
+    CR: 0
     ep: 0
     sp: 0
     cp: 0
@@ -550,7 +550,7 @@ items:
     system:
       description:
         value: >-
-          <p>Melee Weapon Attack: [[/attack]], 0 ft., one creature in the
+          <p>Close Combat Attack: [[/attack]], 0 ft., one creature in the
           swarm's space. Hit: [[/damage average]] damage, or [[/damage 1d6
           piercing average]] damage if the swarm has half of its hit points or
           fewer.</p><p>The target must make a [[/save]] saving throw, taking
@@ -572,7 +572,7 @@ items:
         units: lb
       price:
         value: 0
-        denomination: gp
+        denomination: CR
       attunement: ''
       equipped: true
       rarity: ''
@@ -648,7 +648,7 @@ items:
           description:
             chatFlavor: ''
           duration:
-            concentration: false
+            maintained power: false
             value: ''
             units: inst
             special: ''
@@ -713,7 +713,7 @@ items:
           description:
             chatFlavor: ''
           duration:
-            concentration: false
+            maintained power: false
             value: ''
             units: inst
             special: ''

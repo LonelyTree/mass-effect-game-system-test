@@ -197,10 +197,10 @@ system:
     units: ft
     hover: false
   senses:
-    darkvision: null
-    blindsight: null
-    tremorsense: null
-    truesight: null
+    scanner: null
+    thermal vision: null
+    motion sensor: null
+    radar ping: null
     units: ft
     special: ''
   type:
@@ -221,5 +221,5 @@ _stats:
   lastModifiedBy: dnd5ebuilder0000
   exportSource: null
 sort: 0
-folder: gpuhARM4UqdXSEto
+folder: CRuhARM4UqdXSEto
 _key: '!items!K4DNDcR6vngbp0pf'

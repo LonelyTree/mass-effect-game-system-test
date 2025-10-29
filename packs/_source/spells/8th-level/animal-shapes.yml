@@ -8,7 +8,7 @@ system:
     value: >-
       <p>Your magic turns others into beasts. Choose any number of willing
       creatures that you can see within range. You transform each target into
-      the form of a Large or smaller beast with a challenge rating of 4 or
+      the form of a Large or smaller beast with a threat level of 4 or
       lower. On subsequent turns, you can use your action to transform affected
       creatures into new forms.</p><p>The transformation lasts for the duration
       for each target, or until the target drops to 0 hit points or dies. You
@@ -65,7 +65,7 @@ system:
   properties:
     - vocal
     - somatic
-    - concentration
+    - maintained power
   activities:
     dnd5eactivity000:
       _id: dnd5eactivity000
@@ -84,7 +84,7 @@ system:
         chatFlavor: ''
       duration:
         units: inst
-        concentration: false
+        maintained power: false
         override: false
       effects: []
       range:

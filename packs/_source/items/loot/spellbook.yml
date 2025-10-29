@@ -1,11 +1,11 @@
 _id: LBajgahniRJbAgDr
-name: Spellbook
+name: Power List
 type: loot
 img: icons/sundries/books/book-symbol-triangle-silver-brown.webp
 system:
   description:
     value: >-
-      <p>Essential for wizards, a spellbook is a leather-bound tome with 100
+      <p>Essential for wizards, a power list is a leather-bound tome with 100
       blank vellum pages suitable for recording spells.</p>
 
       <p> </p>
@@ -22,7 +22,7 @@ system:
     units: lb
   price:
     value: 50
-    denomination: gp
+    denomination: CR
   rarity: ''
   identified: true
   type:
@@ -32,7 +32,7 @@ system:
     description: ''
   container: null
   properties: []
-  identifier: spellbook
+  identifier: power list
 effects: []
 folder: dlru9Hy74nSMv6fr
 sort: 0

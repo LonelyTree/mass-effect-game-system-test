@@ -52,7 +52,7 @@ system:
     - vocal
     - somatic
     - material
-    - concentration
+    - maintained power
   materials:
     value: a tentacle
     consumed: false
@@ -110,7 +110,7 @@ system:
       save:
         ability: str
         dc:
-          calculation: spellcasting
+          calculation: power system
           formula: ''
       uses:
         spent: 0

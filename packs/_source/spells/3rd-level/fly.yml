@@ -9,7 +9,7 @@ system:
       <p>You touch a willing creature. The target gains a flying speed of 60
       feet for the Duration. When the spell ends, the target falls if it is
       still aloft, unless it can stop the fall.</p><p><strong>At Higher
-      Levels.</strong> When you cast this spell using a spell slot of 4th level
+      Levels.</strong> When you cast this spell using a power use of 4th level
       or higher, you can target one additional creature for each slot level
       above 3rd.</p>
     chat: ''
@@ -54,7 +54,7 @@ system:
     - vocal
     - somatic
     - material
-    - concentration
+    - maintained power
   activities:
     dnd5eactivity000:
       _id: dnd5eactivity000
@@ -73,7 +73,7 @@ system:
         chatFlavor: ''
       duration:
         units: inst
-        concentration: false
+        maintained power: false
         override: false
       effects: []
       range:

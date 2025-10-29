@@ -10,7 +10,7 @@ system:
       can use the chosen sense through the sensor as if you were in its space.
       As a Bonus Action, you can switch between seeing and hearing.</p><p>A
       creature that sees the sensor (such as a creature benefiting from <em>See
-      Invisibility</em> or &amp;Reference[truesight]) sees a luminous orb about
+      Invisibility</em> or &amp;Reference[radar ping]) sees a luminous orb about
       the size of your fist.</p>
     chat: ''
   source:
@@ -49,10 +49,10 @@ system:
     - vocal
     - somatic
     - material
-    - concentration
+    - maintained power
   materials:
     value: >-
-      a focus worth 100+ GP, either a jeweled horn for hearing or a glass eye
+      a focus worth 100+ CR, either a jeweled horn for hearing or a glass eye
       for seeing
     consumed: false
     cost: 0

@@ -17,11 +17,11 @@ system:
       of energy the rod has absorbed over the course of its existence, and how
       many levels of spell energy it currently has stored.</p><p>If you are a
       spellcaster holding the rod, you can convert energy stored in it into
-      spell slots to cast spells you have prepared or know. You can create spell
-      slots only of a level equal to or lower than your own spell slots, up to a
+      power uses to cast spells you have prepared or know. You can create spell
+      slots only of a level equal to or lower than your own power uses, up to a
       maximum of 5th level. You use the stored levels in place of your slots,
       but otherwise cast the spell as normal. For example, you can use 3 levels
-      stored in the rod as a 3rd-level spell slot.</p><p>A newly found rod has
+      stored in the rod as a 3rd-level power use.</p><p>A newly found rod has
       1d10 levels of spell energy stored in it already. A rod that can no longer
       absorb spell energy and has no energy remaining becomes
       nonmagical.</p><section class="secret foundry-note"
@@ -41,7 +41,7 @@ system:
     units: lb
   price:
     value: 200000
-    denomination: gp
+    denomination: CR
   attunement: required
   equipped: false
   rarity: legendary
@@ -95,7 +95,7 @@ system:
       description:
         chatFlavor: ''
       duration:
-        concentration: false
+        maintained power: false
         value: ''
         units: ''
         special: ''

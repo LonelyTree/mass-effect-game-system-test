@@ -26,7 +26,7 @@ system:
       are moved.</p><p>This spell has no effect if you cast it while you are on
       the Ethereal Plane or a plane that doesn't border it, such as one of the
       Outer Planes.</p><p><strong>At Higher Levels.</strong> When you cast this
-      spell using a spell slot of 8th level or higher, you can target up to
+      spell using a power use of 8th level or higher, you can target up to
       three willing creatures (including you) for each slot level above 7th. The
       creatures must be within 10 feet of you when you cast the spell.</p>
     chat: ''
@@ -86,7 +86,7 @@ system:
         chatFlavor: ''
       duration:
         units: inst
-        concentration: false
+        maintained power: false
         override: false
       effects: []
       range:

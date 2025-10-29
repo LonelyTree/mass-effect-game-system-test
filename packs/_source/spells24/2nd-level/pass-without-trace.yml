@@ -38,7 +38,7 @@ system:
     - vocal
     - somatic
     - material
-    - concentration
+    - maintained power
   materials:
     value: ashes from burned mistletoe
     consumed: false

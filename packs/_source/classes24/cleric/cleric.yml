@@ -23,8 +23,8 @@ system:
       @UUID[Compendium.dnd5e.equipment24.Item.phbwepMace000000]{Mace},
       @UUID[Compendium.dnd5e.equipment24.Item.phbagHolySymbolV]{Holy Symbol},
       @UUID[Compendium.dnd5e.equipment24.Item.phbagPriestsPack]{Priest's Pack},
-      and [[/award 7GP]]; or (B) [[/award
-      110GP]]</p></td></tr></tbody></table><p>@Embed[Compendium.dnd5e.content24.JournalEntry.phbAppendixClass.JournalEntryPage.phbclcCleric0000
+      and [[/award 7CR]]; or (B) [[/award
+      110CR]]</p></td></tr></tbody></table><p>@Embed[Compendium.dnd5e.content24.JournalEntry.phbAppendixClass.JournalEntryPage.phbclcCleric0000
       inline classes="free-rules-embed"]</p><h2>Becoming a Cleric …</h2><h3>As a
       Level 1 Character</h3><ul><li>Gain all the traits in the Core Cleric
       Traits table.</li><li>Gain the Cleric's level 1 features, which are listed
@@ -33,7 +33,7 @@ system:
       Traits table: Hit Point Die and training with Light and Medium armor and
       Shields.</li><li>Gain the Cleric's level 1 features, which are listed in
       the Cleric Features table. See the multiclassing rules in chapter 2 to
-      determine your available spell slots.</li></ul>
+      determine your available power uses.</li></ul>
     chat: ''
   source:
     custom: ''
@@ -289,7 +289,7 @@ system:
           '20':
             value: 22
       value: {}
-      title: Max Prepared Spells
+      title: Max Prepared Powers
       hint: ''
     - _id: FjHGiO7BkbHTcQ2J
       type: ScaleValue
@@ -306,7 +306,7 @@ system:
           '10':
             value: 5
       value: {}
-      title: Cantrips Known
+      title: Basic Powers Known
       hint: ''
     - _id: X3bKJF53QCfKsonV
       type: ItemGrant
@@ -481,7 +481,7 @@ system:
       level: 19
       title: ''
       hint: ''
-  spellcasting:
+  power system:
     progression: full
     ability: wis
     preparation:

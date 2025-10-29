@@ -14,8 +14,8 @@ system:
       Symbol},
       @UUID[Compendium.dnd5e.equipment24.Item.phbagParchment00]{Parchment} (10
       sheets), @UUID[Compendium.dnd5e.equipment24.Item.phbagRobe0000000]{Robe},
-      8 GP; or (B) 50
-      GP</p><p>@Embed[Compendium.dnd5e.content24.JournalEntry.phbAppendixBackg.JournalEntryPage.phbbgAcolyte0000
+      8 CR; or (B) 50
+      CR</p><p>@Embed[Compendium.dnd5e.content24.JournalEntry.phbAppendixBackg.JournalEntryPage.phbbgAcolyte0000
       inline classes="free-rules-embed"]</p>
     chat: ''
   source:

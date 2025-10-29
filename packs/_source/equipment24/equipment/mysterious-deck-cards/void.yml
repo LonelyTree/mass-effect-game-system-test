@@ -12,7 +12,7 @@ system:
     chat: ''
   price:
     value: 0
-    denomination: gp
+    denomination: CR
   activities:
     gKWsEeny8LfTH4yC:
       type: utility
@@ -35,7 +35,7 @@ system:
         chatFlavor: You draw no more cards
       duration:
         units: inst
-        concentration: false
+        maintained power: false
         override: false
       effects:
         - _id: ZCkhbQFg4H5ePlNm

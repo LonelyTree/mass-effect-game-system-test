@@ -2,10 +2,10 @@ name: Chill Touch
 system:
   description:
     value: >-
-      <p>Channeling the chill of the grave, make a melee spell attack against a
+      <p>Channeling the chill of the grave, make a close combat power attack against a
       target within reach. On a hit, the target takes 1d10 Necrotic damage, and
       it can't regain Hit Points until the end of your next
-      turn.</p><p><strong>Cantrip Upgrade.</strong> The damage increases by 1d10
+      turn.</p><p><strong>Basic Power Upgrade.</strong> The damage increases by 1d10
       when you reach levels 5 (2d10), 11 (3d10), and 17 (4d10).</p>
     chat: ''
   source:
@@ -68,7 +68,7 @@ system:
         chatFlavor: ''
       duration:
         units: inst
-        concentration: false
+        maintained power: false
         override: false
       effects:
         - _id: zwks0mAqBHGZC1Pk

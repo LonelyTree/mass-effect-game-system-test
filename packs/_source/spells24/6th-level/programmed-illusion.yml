@@ -62,7 +62,7 @@ system:
     - somatic
     - material
   materials:
-    value: jade dust worth 25+ GP
+    value: jade dust worth 25+ CR
     consumed: false
     cost: 0
     supply: 0
@@ -86,7 +86,7 @@ system:
         chatFlavor: ''
       duration:
         units: inst
-        concentration: false
+        maintained power: false
         override: false
       range:
         override: false

@@ -10,7 +10,7 @@ system:
     chat: ''
   price:
     value: 0
-    denomination: gp
+    denomination: CR
   activities:
     fFYGafmMBO89V1OU:
       type: utility
@@ -34,7 +34,7 @@ system:
         chatFlavor: ''
       duration:
         units: spec
-        concentration: false
+        maintained power: false
         override: false
         special: length of that combat
       effects:
@@ -89,7 +89,7 @@ system:
         chatFlavor: ''
       duration:
         units: year
-        concentration: false
+        maintained power: false
         override: false
         value: '1'
       effects:

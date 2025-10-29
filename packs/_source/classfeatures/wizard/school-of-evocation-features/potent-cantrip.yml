@@ -1,15 +1,15 @@
 _id: evEWCpE5MYgr5RRW
-name: Potent Cantrip
+name: Potent Basic Power
 ownership:
   default: 0
 type: feat
 system:
   description:
     value: >-
-      <p>Starting at 6th level, your damaging cantrips affect even creatures
+      <p>Starting at 6th level, your damaging basic powers affect even creatures
       that avoid the brunt of the effect. When a creature succeeds on a saving
-      throw against your cantrip, the creature takes half the cantrip's damage
-      (if any) but suffers no additional effect from the cantrip.</p>
+      throw against your basic power, the creature takes half the basic power's damage
+      (if any) but suffers no additional effect from the basic power.</p>
     chat: ''
   source:
     custom: ''
@@ -30,7 +30,7 @@ system:
   enchant: {}
   prerequisites:
     level: null
-  identifier: potent-cantrip
+  identifier: potent-basic power
 flags: {}
 img: icons/magic/earth/projectiles-fire-stone-salvo.webp
 effects: []

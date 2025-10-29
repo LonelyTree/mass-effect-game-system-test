@@ -2,15 +2,15 @@
     <legend>{{ localize "DND5E.Spellcasting" }}</legend>
 
     {{!-- Spellcasting Progression --}}
-    {{ formField fields.spellcasting.fields.progression value=source.spellcasting.progression localize=true
+    {{ formField fields.powerSystem.fields.progression value=source.powerSystem.progression localize=true
                  options=spellProgression }}
 
     {{!-- Spellcasting Ability --}}
-    {{ formField fields.spellcasting.fields.ability value=source.spellcasting.ability choices=CONFIG.abilities
+    {{ formField fields.powerSystem.fields.ability value=source.powerSystem.ability choices=CONFIG.abilities
                  labelAttr="label" blank="" localize=true }}
 
     {{!-- Preparation Formula --}}
-    {{ formField fields.spellcasting.fields.preparation.fields.formula value=source.spellcasting.preparation.formula
+    {{ formField fields.powerSystem.fields.preparation.fields.formula value=source.powerSystem.preparation.formula
                  localize=true placeholder="—" }}
 
 </fieldset>

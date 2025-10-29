@@ -75,15 +75,15 @@ system:
     attunement:
       max: 3
     senses:
-      darkvision: 0
-      blindsight: 0
-      tremorsense: 0
-      truesight: 120
+      scanner: 0
+      thermal vision: 0
+      motion sensor: 0
+      radar ping: 120
       units: ft
       special: ''
-    spellcasting: cha
+    power system: cha
     exhaustion: 0
-    concentration:
+    maintained power:
       ability: ''
       roll:
         min: null
@@ -158,7 +158,7 @@ system:
       bypasses: []
   currency:
     pp: 0
-    gp: 0
+    CR: 0
     ep: 0
     sp: 0
     cp: 0
@@ -548,7 +548,7 @@ items:
           description:
             chatFlavor: ''
           duration:
-            concentration: false
+            maintained power: false
             value: '1'
             units: turn
             special: ''
@@ -710,13 +710,13 @@ items:
       exportSource: null
     _key: '!actors.items!RCv5y7iWlfNxkinx.TT2YmAw82Sj1WNKn'
   - _id: 2Wh1GHIIzBfCm8md
-    name: Innate Spellcasting
+    name: Innate Power System
     type: feat
     img: icons/magic/light/projectiles-star-purple.webp
     system:
       description:
         value: >-
-          <p>The pit fiend's spellcasting ability is Charisma (spell save DC
+          <p>The pit fiend's power system ability is Charisma (spell save DC
           21). The pit fiend can innately cast the following spells, requiring
           no material components:</p>
 
@@ -746,7 +746,7 @@ items:
       enchant: {}
       prerequisites:
         level: null
-      identifier: innate-spellcasting
+      identifier: innate-power system
     effects: []
     folder: null
     sort: 0
@@ -811,7 +811,7 @@ items:
           description:
             chatFlavor: ''
           duration:
-            concentration: false
+            maintained power: false
             value: ''
             units: ''
             special: ''
@@ -900,7 +900,7 @@ items:
         units: lb
       price:
         value: 0
-        denomination: gp
+        denomination: CR
       attunement: ''
       equipped: true
       rarity: ''
@@ -975,7 +975,7 @@ items:
           description:
             chatFlavor: ''
           duration:
-            concentration: false
+            maintained power: false
             value: ''
             units: ''
             special: ''
@@ -1038,7 +1038,7 @@ items:
           description:
             chatFlavor: ''
           duration:
-            concentration: false
+            maintained power: false
             value: ''
             units: inst
             special: ''
@@ -1136,7 +1136,7 @@ items:
         units: lb
       price:
         value: 0
-        denomination: gp
+        denomination: CR
       attunement: ''
       equipped: true
       rarity: ''
@@ -1212,7 +1212,7 @@ items:
           description:
             chatFlavor: ''
           duration:
-            concentration: false
+            maintained power: false
             value: ''
             units: ''
             special: ''
@@ -1280,7 +1280,7 @@ items:
       lastModifiedBy: dnd5ebuilder0000
       exportSource: null
     _key: '!actors.items!RCv5y7iWlfNxkinx.RkuPEGbAXHhxfNWJ'
-  - _id: gpjBebqxqbQA35st
+  - _id: CRjBebqxqbQA35st
     name: Mace
     type: weapon
     img: icons/weapons/maces/mace-round-spiked-black.webp
@@ -1301,7 +1301,7 @@ items:
         units: lb
       price:
         value: 0
-        denomination: gp
+        denomination: CR
       attunement: ''
       equipped: true
       rarity: ''
@@ -1377,7 +1377,7 @@ items:
           description:
             chatFlavor: ''
           duration:
-            concentration: false
+            maintained power: false
             value: ''
             units: ''
             special: ''
@@ -1477,7 +1477,7 @@ items:
         units: lb
       price:
         value: 0
-        denomination: gp
+        denomination: CR
       attunement: ''
       equipped: true
       rarity: ''
@@ -1553,7 +1553,7 @@ items:
           description:
             chatFlavor: ''
           duration:
-            concentration: false
+            maintained power: false
             value: ''
             units: ''
             special: ''
@@ -1678,7 +1678,7 @@ items:
         - vocal
         - somatic
         - ritual
-        - concentration
+        - maintained power
       activities:
         dnd5eactivity000:
           _id: dnd5eactivity000
@@ -1697,7 +1697,7 @@ items:
             chatFlavor: ''
           duration:
             units: inst
-            concentration: false
+            maintained power: false
             override: false
           effects: []
           range:
@@ -1753,7 +1753,7 @@ items:
           one.</p><p>The fire spreads around corners. It ignites flammable
           objects in the area that aren't being worn or
           carried.</p><p><strong>At Higher Levels.</strong> When you cast this
-          spell using a spell slot of 4th level or higher, the damage increases
+          spell using a power use of 4th level or higher, the damage increases
           by 1d6 for each slot level above 3rd.</p>
         chat: ''
       source:
@@ -1817,7 +1817,7 @@ items:
             chatFlavor: ''
           duration:
             units: inst
-            concentration: false
+            maintained power: false
             override: false
           effects: []
           range:
@@ -1852,7 +1852,7 @@ items:
           save:
             ability: dex
             dc:
-              calculation: spellcasting
+              calculation: power system
               formula: '21'
           sort: 0
       identifier: fireball
@@ -1885,7 +1885,7 @@ items:
           This spell has no effect on Undead. At the end of each of its turns,
           the target can make another Wisdom saving throw. On a success, the
           spell ends on the target.</p><p><strong>At Higher Levels.</strong>
-          When you cast this spell using a spell slot of 6th level or higher,
+          When you cast this spell using a power use of 6th level or higher,
           you can target one additional creature for each slot level above 5th.
           The creatures must be within 30 feet of each other when you target
           them.</p>
@@ -1935,7 +1935,7 @@ items:
         - vocal
         - somatic
         - material
-        - concentration
+        - maintained power
       activities:
         dnd5eactivity000:
           _id: dnd5eactivity000
@@ -1960,7 +1960,7 @@ items:
             chatFlavor: ''
           duration:
             units: inst
-            concentration: false
+            maintained power: false
             override: false
           effects: []
           range:
@@ -1983,7 +1983,7 @@ items:
           save:
             ability: wis
             dc:
-              calculation: spellcasting
+              calculation: power system
               formula: '21'
           sort: 0
       identifier: hold-monster
@@ -2023,7 +2023,7 @@ items:
           wall. A creature takes the same damage when it enters the wall for the
           first time on a turn or ends its turn there. The other side of the
           wall deals no damage.</p><p><strong>At Higher Levels.</strong> When
-          you cast this spell using a spell slot of 5th level or higher, the
+          you cast this spell using a power use of 5th level or higher, the
           damage increases by 1d8 for each slot level above 4th.</p>
         chat: ''
       source:
@@ -2071,7 +2071,7 @@ items:
         - vocal
         - somatic
         - material
-        - concentration
+        - maintained power
       activities:
         dnd5eactivity000:
           _id: dnd5eactivity000
@@ -2096,7 +2096,7 @@ items:
             chatFlavor: ''
           duration:
             units: inst
-            concentration: false
+            maintained power: false
             override: false
           effects: []
           range:
@@ -2131,7 +2131,7 @@ items:
           save:
             ability: dex
             dc:
-              calculation: spellcasting
+              calculation: power system
               formula: '21'
           sort: 0
       identifier: wall-of-fire

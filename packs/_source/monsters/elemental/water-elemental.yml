@@ -75,15 +75,15 @@ system:
     attunement:
       max: 3
     senses:
-      darkvision: 60
-      blindsight: 0
-      tremorsense: 0
-      truesight: 0
+      scanner: 60
+      thermal vision: 0
+      motion sensor: 0
+      radar ping: 0
       units: ft
       special: ''
-    spellcasting: ''
+    power system: ''
     exhaustion: 0
-    concentration:
+    maintained power:
       ability: ''
       roll:
         min: null
@@ -159,7 +159,7 @@ system:
       bypasses: []
   currency:
     pp: 0
-    gp: 0
+    CR: 0
     ep: 0
     sp: 0
     cp: 0
@@ -603,7 +603,7 @@ items:
     system:
       description:
         value: >-
-          <p>The elemental makes two [[/item .7xDGPsWicxgP6feT]]{slam}
+          <p>The elemental makes two [[/item .7xDCRsWicxgP6feT]]{slam}
           attacks.</p>
         chat: ''
       source:
@@ -640,7 +640,7 @@ items:
           description:
             chatFlavor: ''
           duration:
-            concentration: false
+            maintained power: false
             value: ''
             units: ''
             special: ''
@@ -697,7 +697,7 @@ items:
       lastModifiedBy: dnd5ebuilder0000
       exportSource: null
     _key: '!actors.items!namJz755U1EhvEJa.9saHudPLoj6va2em'
-  - _id: 7xDGPsWicxgP6feT
+  - _id: 7xDCRsWicxgP6feT
     name: Slam
     type: weapon
     img: icons/magic/water/wave-water-blue.webp
@@ -718,7 +718,7 @@ items:
         units: lb
       price:
         value: 0
-        denomination: gp
+        denomination: CR
       attunement: ''
       equipped: true
       rarity: ''
@@ -793,7 +793,7 @@ items:
           description:
             chatFlavor: ''
           duration:
-            concentration: false
+            maintained power: false
             value: ''
             units: ''
             special: ''
@@ -859,7 +859,7 @@ items:
       modifiedTime: 1745107553358
       lastModifiedBy: dnd5ebuilder0000
       exportSource: null
-    _key: '!actors.items!namJz755U1EhvEJa.7xDGPsWicxgP6feT'
+    _key: '!actors.items!namJz755U1EhvEJa.7xDCRsWicxgP6feT'
   - _id: 5XUFTldfE6mtRUfd
     name: Whelm
     type: feat
@@ -929,7 +929,7 @@ items:
           description:
             chatFlavor: ''
           duration:
-            concentration: false
+            maintained power: false
             value: ''
             units: ''
             special: ''
@@ -998,7 +998,7 @@ items:
             chatFlavor: ''
           duration:
             units: inst
-            concentration: false
+            maintained power: false
             override: false
           effects: []
           range:

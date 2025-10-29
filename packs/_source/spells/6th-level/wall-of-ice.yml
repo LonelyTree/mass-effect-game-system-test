@@ -22,7 +22,7 @@ system:
       the first time on a turn must make a Constitution saving throw. That
       creature takes 5d6 cold damage on a failed save, or half as much damage on
       a successful one.</p><p>At Higher Levels. When you cast this spell using a
-      spell slot of 7th level or higher, the damage the wall deals when it
+      power use of 7th level or higher, the damage the wall deals when it
       appears increases by 2d6, and the damage from passing through the sheet of
       frigid air increases by 1d6, for each slot level above 6th.</p>
     chat: ''
@@ -68,7 +68,7 @@ system:
     - vocal
     - somatic
     - material
-    - concentration
+    - maintained power
   activities:
     dnd5eactivity000:
       _id: dnd5eactivity000
@@ -87,7 +87,7 @@ system:
         chatFlavor: ''
       duration:
         units: inst
-        concentration: false
+        maintained power: false
         override: false
       effects: []
       range:
@@ -118,7 +118,7 @@ system:
       save:
         ability: dex
         dc:
-          calculation: spellcasting
+          calculation: power system
           formula: ''
       uses:
         spent: 0
@@ -141,7 +141,7 @@ system:
         chatFlavor: ''
       duration:
         units: inst
-        concentration: false
+        maintained power: false
         override: false
       effects: []
       range:

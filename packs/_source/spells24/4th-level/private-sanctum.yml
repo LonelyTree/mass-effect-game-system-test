@@ -11,7 +11,7 @@ system:
       what sort of security the spell provides, choosing any of the following
       properties:</p><ul><li>Sound can't pass through the barrier at the edge of
       the warded area.</li><li>The barrier of the warded area appears dark and
-      foggy, preventing vision (including &amp;Reference[Darkvision]) through
+      foggy, preventing vision (including &amp;Reference[Scanner]) through
       it.</li><li>Sensors created by Divination spells can't appear inside the
       protected area or pass through the barrier at its
       perimeter.</li><li>Creatures in the area can't be targeted by Divination
@@ -19,8 +19,8 @@ system:
       area.</li><li>Planar travel is blocked within the warded
       area.</li></ul><p>Casting this spell on the same spot every day for 365
       days makes the spell last until dispelled.</p><p><strong>Using a
-      Higher-Level Spell Slot.</strong> You can increase the size of the Cube by
-      100 feet for each spell slot level above 4.</p></div>
+      Higher-Level Power Use.</strong> You can increase the size of the Cube by
+      100 feet for each power use level above 4.</p></div>
     chat: ''
   source:
     custom: ''
@@ -87,7 +87,7 @@ system:
       description: {}
       duration:
         units: inst
-        concentration: false
+        maintained power: false
         override: false
       effects: []
       range:

@@ -12,7 +12,7 @@ system:
       save DC of your Sorcerer spells increases by 1.</li><li>You have Advantage
       on the attack rolls of Sorcerer spells you cast.</li></ul><p>You can use
       this feature twice, and you regain all expended uses of it when you finish
-      a Long Rest.</p><section id="secret-nB2j1T08cVjrcuAj"
+      a Full Rest.</p><section id="secret-nB2j1T08cVjrcuAj"
       class="secret"><p><strong>Foundry Note</strong></p><p>This feature
       includes an Active Effect which will increase your spell save DC. The
       Advantage on attack rolls is not automated.</p></section>
@@ -59,7 +59,7 @@ system:
         chatFlavor: ''
       duration:
         units: inst
-        concentration: false
+        maintained power: false
         override: false
       effects:
         - _id: WtiHwWONdmCOeSDR

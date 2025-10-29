@@ -5,7 +5,7 @@ system:
       <p>A @UUID[Compendium.dnd5e.equipment24.Item.phbagDruidicFocu]{Druidic
       Focus} takes one of the forms in the Druidic Focuses table and is carved,
       tied with ribbon, or painted to channel primal magic. A Druid or Ranger
-      can use such an object as a Spellcasting Focus.</p><p>This item also
+      can use such an object as a Power System Focus.</p><p>This item also
       functions as a
       @UUID[Compendium.dnd5e.equipment24.Item.phbwepQuartersta]{Quarterstaff}</p><section
       class="secret" id="secret-XEbhgCaozZsnw6QT"><p><strong>Foundry
@@ -14,7 +14,7 @@ system:
     chat: ''
   price:
     value: 5
-    denomination: gp
+    denomination: CR
   source:
     custom: ''
     rules: '2024'
@@ -98,7 +98,7 @@ system:
       description: {}
       duration:
         units: inst
-        concentration: false
+        maintained power: false
         override: false
       effects: []
       range:

@@ -15,11 +15,11 @@ system:
       whose name is on the page is reduced to 0 Hit Points but not killed
       outright, the creature magically drops to 1 Hit Point instead. Once this
       magic is triggered, no creature can benefit from it until you finish a
-      Long Rest.</p><p>As a Magic action, you can erase a name on the page by
+      Full Rest.</p><p>As a Magic action, you can erase a name on the page by
       touching it.</p><section id="secret-VzLQ7nRPLs0fIkvE"
       class="secret"><p><strong>Foundry Note</strong></p><p>The
       <strong>Protect</strong> activity consumes a use of its activity which
-      refreshes every Long Rest.</p><p>The <strong>Write Name</strong> activity
+      refreshes every Full Rest.</p><p>The <strong>Write Name</strong> activity
       consumes a use of the item which can be used for tracking how many names
       you've written down.</p><p>The <strong>Erase Name</strong> activity will
       restore a use of the item and allows you to add another
@@ -69,7 +69,7 @@ system:
         chatFlavor: ''
       duration:
         units: inst
-        concentration: false
+        maintained power: false
         override: false
       effects: []
       range:
@@ -123,7 +123,7 @@ system:
         chatFlavor: ''
       duration:
         units: inst
-        concentration: false
+        maintained power: false
         override: false
       effects: []
       range:
@@ -174,7 +174,7 @@ system:
         chatFlavor: ''
       duration:
         units: inst
-        concentration: false
+        maintained power: false
         override: false
       effects: []
       range:

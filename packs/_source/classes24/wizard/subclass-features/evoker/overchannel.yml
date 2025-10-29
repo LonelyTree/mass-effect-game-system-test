@@ -7,13 +7,13 @@ system:
   description:
     value: >-
       <p>You can increase the power of your spells. When you cast a Wizard spell
-      with a spell slot of levels 1–5 that deals damage, you can deal maximum
+      with a power use of levels 1–5 that deals damage, you can deal maximum
       damage with that spell on the turn you cast it.</p><p>The first time you
       do so, you suffer no adverse effect. If you use this feature again before
-      you finish a Long Rest, you take 2d12 Necrotic damage for each level of
-      the spell slot immediately after you cast it. This damage ignores
+      you finish a Full Rest, you take 2d12 Necrotic damage for each level of
+      the power use immediately after you cast it. This damage ignores
       Resistance and Immunity.</p><p>Each time you use this feature again before
-      finishing a Long Rest, the Necrotic damage per spell level increases by
+      finishing a Full Rest, the Necrotic damage per power level increases by
       1d12.</p><section class="secret"
       id="secret-Uh2cD0di8YB1gKPG"><p><strong>Foundry Note</strong></p><p>This
       feature has Limited Uses to track how many times it has been used to
@@ -21,7 +21,7 @@ system:
       includes one free activity use and restores all uses of the
       feature.</p><p>The <strong>Second+ Use</strong> activity consumes a use
       and increases the damage automatically and should be used for all
-      subsequent uses until you finish a Long Rest.</p></section>
+      subsequent uses until you finish a Full Rest.</p></section>
     chat: ''
   source:
     custom: ''
@@ -52,7 +52,7 @@ system:
         value: null
         override: false
         condition: >-
-          When you cast a Wizard spell with a spell slot of levels 1-5 that
+          When you cast a Wizard spell with a power use of levels 1-5 that
           deals damage
       consumption:
         scaling:
@@ -68,7 +68,7 @@ system:
         chatFlavor: ''
       duration:
         units: inst
-        concentration: false
+        maintained power: false
         override: false
       effects: []
       range:
@@ -114,7 +114,7 @@ system:
         value: null
         override: false
         condition: >-
-          When you cast a Wizard spell with a spell slot of levels 1-5 that
+          When you cast a Wizard spell with a power use of levels 1-5 that
           deals damage
       consumption:
         scaling:
@@ -130,7 +130,7 @@ system:
         chatFlavor: ''
       duration:
         units: inst
-        concentration: false
+        maintained power: false
         override: false
       effects: []
       range:

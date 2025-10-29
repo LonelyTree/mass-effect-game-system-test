@@ -5,7 +5,7 @@ img: null
 system:
   currency:
     pp: 0
-    gp: 0
+    CR: 0
     ep: 0
     sp: 0
     cp: 0
@@ -363,15 +363,15 @@ system:
     attunement:
       max: 3
     senses:
-      darkvision: null
-      blindsight: null
-      tremorsense: null
-      truesight: 120
+      scanner: null
+      thermal vision: null
+      motion sensor: null
+      radar ping: 120
       units: null
       special: ''
-    spellcasting: str
+    power system: str
     exhaustion: 0
-    concentration:
+    maintained power:
       ability: ''
       roll:
         min: null
@@ -683,7 +683,7 @@ items:
           Points, if it is 5+ feet away from the [[lookup @name lowercase]] for
           1 hour or more, or if the [[lookup @name lowercase]] dies. If the rope
           is damaged or destroyed, the [[lookup @name lowercase]] can fully
-          restore it when finishing a Short or Long Rest.</p>
+          restore it when finishing a Short or Full Rest.</p>
         chat: ''
       identifier: magic-rope
       source:
@@ -746,7 +746,7 @@ items:
             chatFlavor: ''
           duration:
             units: inst
-            concentration: false
+            maintained power: false
             override: false
           effects: []
           range:
@@ -847,7 +847,7 @@ items:
             chatFlavor: ''
           duration:
             units: inst
-            concentration: false
+            maintained power: false
             override: false
           effects: []
           range:
@@ -949,7 +949,7 @@ items:
             chatFlavor: ''
           duration:
             units: inst
-            concentration: false
+            maintained power: false
             override: false
           effects: []
           range:
@@ -1016,7 +1016,7 @@ items:
         units: lb
       price:
         value: 0
-        denomination: gp
+        denomination: CR
       rarity: ''
       attunement: ''
       attuned: false
@@ -1107,7 +1107,7 @@ items:
             chatFlavor: ''
           duration:
             units: inst
-            concentration: false
+            maintained power: false
             override: false
           effects:
             - _id: bju3aUme0f8XYR3z

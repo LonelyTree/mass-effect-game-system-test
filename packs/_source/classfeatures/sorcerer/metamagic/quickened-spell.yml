@@ -6,8 +6,8 @@ type: feat
 system:
   description:
     value: >-
-      <p>When you cast a spell that has a casting time of 1 action, you can
-      spend 2 sorcery points to change the casting time to 1 bonus action for
+      <p>When you cast a spell that has a activation time of 1 action, you can
+      spend 2 sorcery points to change the activation time to 1 bonus action for
       this casting.</p>
     chat: ''
   source:
@@ -49,7 +49,7 @@ system:
       description:
         chatFlavor: ''
       duration:
-        concentration: false
+        maintained power: false
         value: ''
         units: ''
         special: ''

@@ -11,7 +11,7 @@ system:
       target doesn't return if the spell lasts for 1 minute. The target is
       instead transported to a random location on a plane (DM's choice)
       associated with its creature type.</p><p><strong>Using a Higher-Level
-      Spell Slot.</strong> You can target one additional creature for each spell
+      Power Use.</strong> You can target one additional creature for each spell
       slot level above 4.</p>
     chat: ''
   source:
@@ -47,7 +47,7 @@ system:
     - vocal
     - somatic
     - material
-    - concentration
+    - maintained power
   materials:
     value: a pentacle
     consumed: false
@@ -93,7 +93,7 @@ system:
       save:
         ability: cha
         dc:
-          calculation: spellcasting
+          calculation: power system
           formula: ''
       uses:
         spent: 0

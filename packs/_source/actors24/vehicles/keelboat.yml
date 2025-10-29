@@ -5,7 +5,7 @@ img: icons/environment/settlement/ship.webp
 system:
   currency:
     pp: 0
-    gp: 0
+    CR: 0
     ep: 0
     sp: 0
     cp: 0
@@ -97,7 +97,7 @@ system:
         1</p><p><strong>Passengers:</strong> —</p><p><strong>Cargo
         (Tons):</strong> 1/2</p><p><strong>AC:</strong>
         15</p><p><strong>HP:</strong> 100</p><p><strong>Damage
-        Threshold:</strong> 10</p><p><strong>Cost:</strong> 3,000 GP</p>
+        Threshold:</strong> 10</p><p><strong>Cost:</strong> 3,000 CR</p>
       public: ''
   source:
     revision: 1

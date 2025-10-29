@@ -17,7 +17,7 @@ system:
     chat: ''
   price:
     value: 5
-    denomination: gp
+    denomination: CR
   source:
     custom: ''
     rules: '2024'
@@ -74,7 +74,7 @@ system:
         chatFlavor: ''
       duration:
         units: inst
-        concentration: false
+        maintained power: false
         override: false
       effects:
         - _id: 9jl46RZ5GOjs9QlJ
@@ -139,7 +139,7 @@ system:
         chatFlavor: ''
       duration:
         units: inst
-        concentration: false
+        maintained power: false
         override: false
       effects: []
       range:

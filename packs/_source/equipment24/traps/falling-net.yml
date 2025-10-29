@@ -22,10 +22,10 @@ system:
         chatFlavor: ''
       duration:
         units: inst
-        concentration: false
+        maintained power: false
         override: false
       effects:
-        - _id: bXEGPRY5cCI6s34S
+        - _id: bXECRRY5cCI6s34S
           onSave: false
       range:
         override: false
@@ -76,10 +76,10 @@ system:
         chatFlavor: ''
       duration:
         units: inst
-        concentration: false
+        maintained power: false
         override: false
       effects:
-        - _id: bXEGPRY5cCI6s34S
+        - _id: bXECRRY5cCI6s34S
           onSave: false
       range:
         override: false
@@ -130,10 +130,10 @@ system:
         chatFlavor: ''
       duration:
         units: inst
-        concentration: false
+        maintained power: false
         override: false
       effects:
-        - _id: bXEGPRY5cCI6s34S
+        - _id: bXECRRY5cCI6s34S
           onSave: false
       range:
         override: false
@@ -184,10 +184,10 @@ system:
         chatFlavor: ''
       duration:
         units: inst
-        concentration: false
+        maintained power: false
         override: false
       effects:
-        - _id: bXEGPRY5cCI6s34S
+        - _id: bXECRRY5cCI6s34S
           onSave: false
       range:
         override: false
@@ -239,7 +239,7 @@ system:
         chatFlavor: ''
       duration:
         units: inst
-        concentration: false
+        maintained power: false
         override: false
       effects: []
       range:
@@ -286,7 +286,7 @@ system:
         chatFlavor: ''
       duration:
         units: inst
-        concentration: false
+        maintained power: false
         override: false
       effects: []
       range:
@@ -334,7 +334,7 @@ system:
         chatFlavor: ''
       duration:
         units: inst
-        concentration: false
+        maintained power: false
         override: false
       effects: []
       range:
@@ -382,7 +382,7 @@ system:
         chatFlavor: ''
       duration:
         units: inst
-        concentration: false
+        maintained power: false
         override: false
       effects: []
       range:
@@ -431,7 +431,7 @@ system:
         chatFlavor: ''
       duration:
         units: inst
-        concentration: false
+        maintained power: false
         override: false
       effects: []
       range:
@@ -513,7 +513,7 @@ system:
     units: lb
   price:
     value: 0
-    denomination: gp
+    denomination: CR
   rarity: ''
   attunement: ''
   attuned: false
@@ -540,7 +540,7 @@ effects:
     img: icons/tools/fishing/net-simple-tan.webp
     origin: Item.dmgFallingNet000
     transfer: false
-    _id: bXEGPRY5cCI6s34S
+    _id: bXECRRY5cCI6s34S
     type: base
     system: {}
     changes: []
@@ -569,7 +569,7 @@ effects:
       modifiedTime: null
       lastModifiedBy: null
       exportSource: null
-    _key: '!items.effects!dmgFallingNet000.bXEGPRY5cCI6s34S'
+    _key: '!items.effects!dmgFallingNet000.bXECRRY5cCI6s34S'
 folder: 8wnVMAA0qwPzQVxS
 flags:
   dnd5e:

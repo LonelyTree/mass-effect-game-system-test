@@ -23,7 +23,7 @@ system:
     units: lb
   price:
     value: 400
-    denomination: gp
+    denomination: CR
   attunement: required
   equipped: false
   rarity: uncommon
@@ -84,7 +84,7 @@ system:
       description: {}
       duration:
         units: inst
-        concentration: false
+        maintained power: false
         override: false
       range:
         override: false

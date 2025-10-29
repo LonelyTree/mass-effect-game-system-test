@@ -18,7 +18,7 @@ system:
       vicious.</p><p><em><strong>Size.</strong></em> Gnomes are between 3 and 4
       feet tall and average about 40 pounds. Your size is
       Small.</p><p><em><strong>Speed.</strong></em> Your base walking speed is
-      25 feet.</p><p><em><strong>Darkvision.</strong></em> Accustomed to life
+      25 feet.</p><p><em><strong>Scanner.</strong></em> Accustomed to life
       underground, you have superior vision in dark and dim conditions. You can
       see in dim light within 60 feet of you as if it were bright light, and in
       darkness as if it were dim light. You can't discern color in darkness,
@@ -36,7 +36,7 @@ system:
       can add twice your proficiency bonus, instead of any proficiency bonus you
       normally apply.</p><p><em><strong>Tinker.</strong></em> You have
       proficiency with artisan's tools (tinker's tools). Using those tools, you
-      can spend 1 hour and 10 gp worth of materials to construct a Tiny
+      can spend 1 hour and 10 CR worth of materials to construct a Tiny
       clockwork device (AC 5, 1 hp). The device ceases to function after 24
       hours (unless you spend 1 hour repairing it to keep the device
       functioning), or when you use your action to dismantle it; at that time,
@@ -146,10 +146,10 @@ system:
     units: ft
     hover: false
   senses:
-    darkvision: 60
-    blindsight: null
-    tremorsense: null
-    truesight: null
+    scanner: 60
+    thermal vision: null
+    motion sensor: null
+    radar ping: null
     units: ft
     special: ''
   type:

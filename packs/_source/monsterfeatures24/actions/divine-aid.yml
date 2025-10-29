@@ -26,7 +26,7 @@ system:
         chatFlavor: ''
       duration:
         units: inst
-        concentration: false
+        maintained power: false
         override: false
       range:
         override: false
@@ -49,7 +49,7 @@ system:
           override: false
         level: 1
         properties: []
-        spellbook: true
+        power list: true
         uuid: Compendium.dnd5e.spells24.Item.phbsplBless00000
         ability: ''
       name: ''
@@ -75,7 +75,7 @@ system:
         chatFlavor: ''
       duration:
         units: inst
-        concentration: false
+        maintained power: false
         override: false
       range:
         override: false
@@ -98,7 +98,7 @@ system:
           override: false
         level: 3
         properties: []
-        spellbook: true
+        power list: true
         uuid: Compendium.dnd5e.spells24.Item.phbsplDispelMagi
         ability: ''
       name: ''
@@ -112,7 +112,7 @@ system:
           override: false
         level: 1
         properties: []
-        spellbook: true
+        power list: true
         ability: ''
       _id: xlmEmICWCOXh1DRs
       sort: 0
@@ -134,7 +134,7 @@ system:
         chatFlavor: ''
       duration:
         units: inst
-        concentration: false
+        maintained power: false
         override: false
       range:
         override: false
@@ -161,7 +161,7 @@ system:
           override: false
         level: 2
         properties: []
-        spellbook: true
+        power list: true
         ability: ''
       _id: mV8EoRveUz19SU1p
       sort: 0
@@ -183,7 +183,7 @@ system:
         chatFlavor: ''
       duration:
         units: inst
-        concentration: false
+        maintained power: false
         override: false
       range:
         override: false
@@ -215,8 +215,8 @@ system:
       <em>@UUID[Compendium.dnd5e.spells24.Item.phbsplHealingWor]{Healing
       Word}</em>, or
       <em>@UUID[Compendium.dnd5e.spells24.Item.phbsplLesserRest]{Lesser
-      Restoration}</em>, using the same spellcasting ability as
-      Spellcasting.</p>
+      Restoration}</em>, using the same power system ability as
+      Power System.</p>
     chat: ''
   identifier: divine-aid
   source:

@@ -5,7 +5,7 @@ img: null
 system:
   currency:
     pp: 0
-    gp: 0
+    CR: 0
     ep: 0
     sp: 0
     cp: 0
@@ -363,15 +363,15 @@ system:
     attunement:
       max: 3
     senses:
-      darkvision: 120
-      blindsight: null
-      tremorsense: null
-      truesight: 30
+      scanner: 120
+      thermal vision: null
+      motion sensor: null
+      radar ping: 30
       units: null
       special: ''
-    spellcasting: wis
+    power system: wis
     exhaustion: 0
-    concentration:
+    maintained power:
       ability: ''
       roll:
         min: null
@@ -628,7 +628,7 @@ items:
             chatFlavor: ''
           duration:
             units: inst
-            concentration: false
+            maintained power: false
             override: false
           effects: []
           range:
@@ -728,7 +728,7 @@ items:
             chatFlavor: ''
           duration:
             units: inst
-            concentration: false
+            maintained power: false
             override: false
           effects: []
           range:
@@ -797,7 +797,7 @@ items:
         units: lb
       price:
         value: 0
-        denomination: gp
+        denomination: CR
       rarity: ''
       attunement: ''
       attuned: false
@@ -888,7 +888,7 @@ items:
             chatFlavor: ''
           duration:
             units: inst
-            concentration: false
+            maintained power: false
             override: false
           effects:
             - _id: R2yhnEJ7lKT4VSvK
@@ -950,7 +950,7 @@ items:
         units: lb
       price:
         value: 0
-        denomination: gp
+        denomination: CR
       rarity: ''
       attunement: ''
       attuned: false
@@ -1084,7 +1084,7 @@ items:
             chatFlavor: ''
           duration:
             units: inst
-            concentration: false
+            maintained power: false
             override: false
           effects: []
           range:
@@ -1187,8 +1187,8 @@ items:
       default: 0
     sort: 4
     _key: '!actors.items!mmStormGiant0000.mmLightningStorm'
-  - _id: mmSpellcasting00
-    name: Spellcasting
+  - _id: mmPower System00
+    name: Power System
     type: feat
     system:
       type:
@@ -1212,7 +1212,7 @@ items:
             chatFlavor: ''
           duration:
             units: inst
-            concentration: false
+            maintained power: false
             override: false
           range:
             override: false
@@ -1236,7 +1236,7 @@ items:
             level: 1
             properties:
               - material
-            spellbook: true
+            power list: true
             uuid: Compendium.dnd5e.spells24.Item.phbsplDetectMagi
             ability: ''
           name: ''
@@ -1251,7 +1251,7 @@ items:
             level: null
             properties:
               - material
-            spellbook: true
+            power list: true
             ability: ''
           _id: 8OxWWy4xx5jb9MMq
           sort: 0
@@ -1268,7 +1268,7 @@ items:
             chatFlavor: ''
           duration:
             units: inst
-            concentration: false
+            maintained power: false
             override: false
           range:
             override: false
@@ -1296,7 +1296,7 @@ items:
             level: 8
             properties:
               - material
-            spellbook: true
+            power list: true
             ability: ''
           _id: ru627ohqJBU8D3QG
           sort: 0
@@ -1316,7 +1316,7 @@ items:
             chatFlavor: ''
           duration:
             units: inst
-            concentration: false
+            maintained power: false
             override: false
           range:
             override: false
@@ -1343,7 +1343,7 @@ items:
         value: >-
           <p class="feature">The [[lookup @name lowercase]] casts one of the
           following spells, requiring no Material components and using Wisdom as
-          the spellcasting ability (spell save DC [[lookup
+          the power system ability (spell save DC [[lookup
           @attributes.spell.dc]]):</p><p class="feature-trait"><strong>At
           Will:</strong>
           <em>@UUID[Compendium.dnd5e.spells24.Item.phbsplDetectMagi]{Detect
@@ -1353,7 +1353,7 @@ items:
           <em>@UUID[Compendium.dnd5e.spells24.Item.phbsplControlWea]{Control
           Weather}</em></p>
         chat: ''
-      identifier: spellcasting
+      identifier: power system
       source:
         revision: 1
         rules: '2024'
@@ -1377,7 +1377,7 @@ items:
           activity: []
           effect: []
     _stats:
-      compendiumSource: Compendium.dnd-monster-manual.features.Item.mmSpellcasting00
+      compendiumSource: Compendium.dnd-monster-manual.features.Item.mmPower System00
       duplicateSource: null
       coreVersion: '13.344'
       systemId: dnd5e
@@ -1389,7 +1389,7 @@ items:
     ownership:
       default: 0
     sort: 5
-    _key: '!actors.items!mmStormGiant0000.mmSpellcasting00'
+    _key: '!actors.items!mmStormGiant0000.mmPower System00'
   - name: Detect Magic
     system:
       description:
@@ -1440,7 +1440,7 @@ items:
       properties:
         - vocal
         - somatic
-        - concentration
+        - maintained power
         - ritual
       materials:
         value: ''
@@ -1469,7 +1469,7 @@ items:
           duration:
             units: inst
             override: false
-            concentration: false
+            maintained power: false
           effects:
             - _id: BHw91lQmVgdx39WZ
           range:
@@ -1537,7 +1537,7 @@ items:
         name: Spell Changes
         img: systems/dnd5e/icons/svg/activity/cast.svg
         origin: >-
-          Compendium.dnd5e.actors24.Actor.mmStormGiant0000.Item.mmSpellcasting00.Activity.3MkhXZwZstyLUC3q
+          Compendium.dnd5e.actors24.Actor.mmStormGiant0000.Item.mmPower System00.Activity.3MkhXZwZstyLUC3q
         changes:
           - key: system.properties
             mode: 2
@@ -1580,7 +1580,7 @@ items:
         riders:
           activity: []
           effect: []
-        cachedFor: .Item.mmSpellcasting00.Activity.3MkhXZwZstyLUC3q
+        cachedFor: .Item.mmPower System00.Activity.3MkhXZwZstyLUC3q
     _stats:
       compendiumSource: Compendium.dnd5e.spells24.Item.phbsplDetectMagi
       duplicateSource: null
@@ -1664,7 +1664,7 @@ items:
             chatFlavor: ''
           duration:
             units: inst
-            concentration: false
+            maintained power: false
             override: false
           range:
             override: false
@@ -1721,7 +1721,7 @@ items:
         name: Spell Changes
         img: systems/dnd5e/icons/svg/activity/cast.svg
         origin: >-
-          Compendium.dnd5e.actors24.Actor.mmStormGiant0000.Item.mmSpellcasting00.Activity.8OxWWy4xx5jb9MMq
+          Compendium.dnd5e.actors24.Actor.mmStormGiant0000.Item.mmPower System00.Activity.8OxWWy4xx5jb9MMq
         changes:
           - key: system.properties
             mode: 2
@@ -1761,7 +1761,7 @@ items:
       default: 0
     flags:
       dnd5e:
-        cachedFor: .Item.mmSpellcasting00.Activity.8OxWWy4xx5jb9MMq
+        cachedFor: .Item.mmPower System00.Activity.8OxWWy4xx5jb9MMq
     _stats:
       compendiumSource: Compendium.dnd5e.spells24.Item.phbsplLight00000
       duplicateSource: null
@@ -1833,7 +1833,7 @@ items:
         - vocal
         - somatic
         - material
-        - concentration
+        - maintained power
       materials:
         value: burning incense
         consumed: false
@@ -1859,7 +1859,7 @@ items:
             chatFlavor: ''
           duration:
             units: inst
-            concentration: false
+            maintained power: false
             override: false
           effects: []
           range:
@@ -1899,7 +1899,7 @@ items:
             chatFlavor: ''
           duration:
             units: hour
-            concentration: false
+            maintained power: false
             override: true
             value: '8'
           effects: []
@@ -1935,7 +1935,7 @@ items:
         name: Spell Changes
         img: systems/dnd5e/icons/svg/activity/cast.svg
         origin: >-
-          Compendium.dnd5e.actors24.Actor.mmStormGiant0000.Item.mmSpellcasting00.Activity.ru627ohqJBU8D3QG
+          Compendium.dnd5e.actors24.Actor.mmStormGiant0000.Item.mmPower System00.Activity.ru627ohqJBU8D3QG
         changes:
           - key: system.properties
             mode: 2
@@ -1975,7 +1975,7 @@ items:
       default: 0
     flags:
       dnd5e:
-        cachedFor: .Item.mmSpellcasting00.Activity.ru627ohqJBU8D3QG
+        cachedFor: .Item.mmPower System00.Activity.ru627ohqJBU8D3QG
     _stats:
       compendiumSource: Compendium.dnd5e.spells24.Item.phbsplControlWea
       duplicateSource: null

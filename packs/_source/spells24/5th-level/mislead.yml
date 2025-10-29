@@ -43,7 +43,7 @@ system:
   school: ill
   properties:
     - somatic
-    - concentration
+    - maintained power
   materials:
     value: ''
     consumed: false

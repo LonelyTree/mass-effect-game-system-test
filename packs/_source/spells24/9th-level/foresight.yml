@@ -67,7 +67,7 @@ system:
       description: {}
       duration:
         units: inst
-        concentration: false
+        maintained power: false
         override: false
       effects:
         - _id: P3m4C2ZVEsMzgb5q

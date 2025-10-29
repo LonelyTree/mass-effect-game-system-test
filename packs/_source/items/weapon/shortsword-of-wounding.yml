@@ -8,7 +8,7 @@ system:
       <p><em>(Requires attunement)</em></p>
 
       <p>Hit points lost to this weapon's damage can be regained only through a
-      short or long rest, rather than by regeneration, magic, or any other
+      short or full rest, rather than by regeneration, magic, or any other
       means.</p>
 
       <p>Once per turn, when you hit a creature with an attack using this magic
@@ -32,7 +32,7 @@ system:
     units: lb
   price:
     value: 4000
-    denomination: gp
+    denomination: CR
   attunement: required
   equipped: false
   rarity: rare
@@ -111,7 +111,7 @@ system:
       description:
         chatFlavor: ''
       duration:
-        concentration: false
+        maintained power: false
         value: ''
         units: ''
         special: ''
@@ -173,7 +173,7 @@ system:
       description:
         chatFlavor: ''
       duration:
-        concentration: false
+        maintained power: false
         value: ''
         units: inst
         special: ''
@@ -235,7 +235,7 @@ system:
         chatFlavor: ''
       duration:
         units: inst
-        concentration: false
+        maintained power: false
         override: false
       effects: []
       range:

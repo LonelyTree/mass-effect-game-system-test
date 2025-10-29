@@ -24,7 +24,7 @@ system:
         chatFlavor: 1 gallon of water
       duration:
         units: round
-        concentration: false
+        maintained power: false
         override: false
         value: '1'
       effects: []
@@ -74,7 +74,7 @@ system:
         chatFlavor: 5 gallon of water
       duration:
         units: round
-        concentration: false
+        maintained power: false
         override: false
         value: '1'
       effects: []
@@ -126,7 +126,7 @@ system:
         chatFlavor: 30 gallons; save vs &Reference[prone]
       duration:
         units: inst
-        concentration: false
+        maintained power: false
         override: false
       effects: []
       range:
@@ -214,7 +214,7 @@ system:
     units: lb
   price:
     value: 400
-    denomination: gp
+    denomination: CR
   rarity: uncommon
   attunement: ''
   attuned: false

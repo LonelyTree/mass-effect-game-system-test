@@ -10,10 +10,10 @@ system:
       following benefits.</p><p><strong>Evergreen Wild Shape.</strong> Whenever
       you roll Initiative and have no uses of Wild Shape left, you regain one
       expended use of it.</p><p><strong>Nature Magician.</strong> You can
-      convert uses of Wild Shape into a spell slot (no action required). Choose
+      convert uses of Wild Shape into a power use (no action required). Choose
       a number of your unexpended uses of Wild Shape and convert them into a
-      single spell slot, with each use contributing 2 spell levels. For example,
-      if you convert two uses of Wild Shape, you produce a level 4 spell slot.
+      single power use, with each use contributing 2 power levels. For example,
+      if you convert two uses of Wild Shape, you produce a level 4 power use.
       Once you use this benefit, you can't do so again until you finish a Long
       Rest.</p><p><strong>Longevity.</strong> The primal magic that you wield
       causes you to age more slowly. For every ten years that pass, your body
@@ -22,7 +22,7 @@ system:
       feature does not automate regaining a use of Wild Shape when rolling
       initiative but it does include an activity which will restore a use when
       activated.</p><p>The <strong>Nature Magician</strong> activity can be used
-      to convert Wild Shape uses to spell slots.</p></section>
+      to convert Wild Shape uses to power uses.</p></section>
     chat: ''
   source:
     custom: ''
@@ -82,7 +82,7 @@ system:
         units: inst
         special: ''
         override: false
-        concentration: false
+        maintained power: false
       effects: []
       range:
         units: self
@@ -137,7 +137,7 @@ system:
         chatFlavor: ''
       duration:
         units: inst
-        concentration: false
+        maintained power: false
         override: false
       effects: []
       range:

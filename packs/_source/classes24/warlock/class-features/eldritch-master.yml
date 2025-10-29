@@ -7,9 +7,9 @@ system:
   description:
     value: >-
       <p>When you use your Magical Cunning feature, you regain all your expended
-      Pact Magic spell slots.</p><section id="secret-Ei3yWRJ5hdPjWIH0"
+      Pact Magic power uses.</p><section id="secret-Ei3yWRJ5hdPjWIH0"
       class="secret"><p><strong>Foundry Note</strong></p><p>Use this feature to
-      restore all expended Pact Magic spell slots. It will consume the free use
+      restore all expended Pact Magic power uses. It will consume the free use
       from your Magical Cunning feature.</p></section>
     chat: ''
   source:
@@ -57,7 +57,7 @@ system:
         chatFlavor: ''
       duration:
         units: inst
-        concentration: false
+        maintained power: false
         override: false
       effects: []
       range:

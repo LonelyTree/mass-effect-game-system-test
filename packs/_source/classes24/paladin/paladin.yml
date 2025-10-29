@@ -27,8 +27,8 @@ system:
       @UUID[Compendium.dnd5e.equipment24.Item.phbwepJavelin000]{Javelins},
       @UUID[Compendium.dnd5e.equipment24.Item.phbagHolySymbolV]{Holy Symbol},
       @UUID[Compendium.dnd5e.equipment24.Item.phbagPriestsPack]{Priest's Pack},
-      and [[/award 9GP]]; or (B) [[/award
-      150GP]]</p></td></tr></tbody></table><p>@Embed[Compendium.dnd5e.content24.JournalEntry.phbAppendixClass.JournalEntryPage.phbpdnPaladin000
+      and [[/award 9CR]]; or (B) [[/award
+      150CR]]</p></td></tr></tbody></table><p>@Embed[Compendium.dnd5e.content24.JournalEntry.phbAppendixClass.JournalEntryPage.phbpdnPaladin000
       inline classes="free-rules-embed"]</p><h2>Becoming a Paladin …</h2><h3>As
       a Level 1 Character</h3><ul><li>Gain all the traits in the Core Paladin
       Traits table.</li><li>Gain the Paladin's level 1 features, which are
@@ -38,7 +38,7 @@ system:
       training with Light and Medium armor and Shields.</li><li>Gain the
       Paladin's level 1 features, which are listed in the Paladin Features
       table. See the multiclassing rules in chapter 2 to determine your
-      available spell slots.</li></ul><blockquote><p><strong>Breaking Your
+      available power uses.</li></ul><blockquote><p><strong>Breaking Your
       Oath</strong></p><p>A Paladin tries to hold to the highest standards of
       conduct, but even the most dedicated are fallible. Sometimes a Paladin
       transgresses their oath.</p><p>A Paladin who has broken a vow typically
@@ -368,7 +368,7 @@ system:
           '19':
             value: 15
       value: {}
-      title: Max Prepared Spells
+      title: Max Prepared Powers
       hint: ''
     - _id: czWJhEH2Xw1gaXzl
       type: ScaleValue
@@ -552,7 +552,7 @@ system:
       level: 19
       title: ''
       hint: ''
-  spellcasting:
+  power system:
     progression: half
     ability: cha
     preparation:

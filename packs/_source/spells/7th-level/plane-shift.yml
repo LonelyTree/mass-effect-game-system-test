@@ -19,7 +19,7 @@ system:
       small to hold all the creatures you transported, they appear in the
       closest unoccupied spaces next to the circle.</p><p>You can use this spell
       to banish an unwilling creature to another plane. Choose a creature within
-      your reach and make a melee spell attack against it. On a hit, the
+      your reach and make a close combat power attack against it. On a hit, the
       creature must make a Charisma saving throw. If the creature fails this
       save, it is transported to a random location on the plane of existence you
       specify. A creature so transported must find its own way back to your
@@ -56,7 +56,7 @@ system:
   school: con
   materials:
     value: >-
-      A forked, metal rod worth at least 250 gp, attuned to a particular plane
+      A forked, metal rod worth at least 250 CR, attuned to a particular plane
       of existence
     consumed: false
     cost: 250
@@ -86,7 +86,7 @@ system:
         chatFlavor: ''
       duration:
         units: inst
-        concentration: false
+        maintained power: false
         override: false
       effects: []
       range:
@@ -134,7 +134,7 @@ system:
         chatFlavor: ''
       duration:
         units: inst
-        concentration: false
+        maintained power: false
         override: false
       effects: []
       range:
@@ -153,7 +153,7 @@ system:
       save:
         ability: cha
         dc:
-          calculation: spellcasting
+          calculation: power system
           formula: ''
       uses:
         spent: 0

@@ -73,7 +73,7 @@ system:
       description:
         chatFlavor: ''
       duration:
-        concentration: false
+        maintained power: false
         value: '6'
         units: hour
         special: ''

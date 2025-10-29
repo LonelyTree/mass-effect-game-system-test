@@ -23,7 +23,7 @@ system:
         chatFlavor: ''
       duration:
         units: inst
-        concentration: false
+        maintained power: false
         override: false
       effects:
         - _id: cN85nWiTzfGzWR7D
@@ -70,7 +70,7 @@ system:
           - vocal
           - somatic
           - material
-        spellbook: true
+        power list: true
       _id: vTkZY9QUnH16jHrV
       sort: 200000
       activation:
@@ -89,7 +89,7 @@ system:
         chatFlavor: ''
       duration:
         units: inst
-        concentration: false
+        maintained power: false
         override: false
       range:
         override: false
@@ -120,7 +120,7 @@ system:
           - vocal
           - somatic
           - material
-        spellbook: true
+        power list: true
       _id: pBLKd2Ukm41DD9Tw
       sort: 300000
       activation:
@@ -140,7 +140,7 @@ system:
         chatFlavor: ''
       duration:
         units: inst
-        concentration: false
+        maintained power: false
         override: false
       range:
         override: false
@@ -171,7 +171,7 @@ system:
           - vocal
           - somatic
           - material
-        spellbook: true
+        power list: true
       _id: f78Oiitz2BMcKx6i
       sort: 500000
       activation:
@@ -191,7 +191,7 @@ system:
         chatFlavor: ''
       duration:
         units: inst
-        concentration: false
+        maintained power: false
         override: false
       range:
         override: false
@@ -222,7 +222,7 @@ system:
           - vocal
           - somatic
           - material
-        spellbook: true
+        power list: true
       _id: J9591oTJtg4nJxEA
       sort: 400000
       activation:
@@ -241,7 +241,7 @@ system:
         chatFlavor: ''
       duration:
         units: inst
-        concentration: false
+        maintained power: false
         override: false
       range:
         override: false
@@ -272,7 +272,7 @@ system:
           - vocal
           - somatic
           - material
-        spellbook: true
+        power list: true
       _id: OsiNV2wXjfJPtpUx
       sort: 450000
       activation:
@@ -292,7 +292,7 @@ system:
         chatFlavor: ''
       duration:
         units: inst
-        concentration: false
+        maintained power: false
         override: false
       range:
         override: false
@@ -337,7 +337,7 @@ system:
       corresponding to the ring's linked Elemental
       Plane:</p><p><strong>Water.</strong> You know Aquan, you gain a Swim Speed
       of 60 feet, and you can breathe
-      underwater.</p><p><em><strong>Spellcasting.</strong></em> The ring has 5
+      underwater.</p><p><em><strong>Power System.</strong></em> The ring has 5
       charges and regains 1d4 + 1 expended charges daily at dawn. While wearing
       the ring, you can cast a spell from it. Choose the spell from the list of
       available spells based on the Elemental Plane the ring is linked to, as
@@ -370,7 +370,7 @@ system:
     units: lb
   price:
     value: 200000
-    denomination: gp
+    denomination: CR
   rarity: legendary
   attunement: required
   attuned: false

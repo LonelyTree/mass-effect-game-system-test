@@ -5,7 +5,7 @@ img: ''
 system:
   currency:
     pp: 0
-    gp: 0
+    CR: 0
     ep: 0
     sp: 0
     cp: 0
@@ -303,15 +303,15 @@ system:
     attunement:
       max: 3
     senses:
-      darkvision: null
-      blindsight: null
-      tremorsense: null
-      truesight: null
+      scanner: null
+      thermal vision: null
+      motion sensor: null
+      radar ping: null
       units: null
       special: ''
-    spellcasting: int
+    power system: int
     exhaustion: 0
-    concentration:
+    maintained power:
       ability: ''
       roll:
         min: null
@@ -529,7 +529,7 @@ items:
             units: inst
             special: ''
             override: false
-            concentration: false
+            maintained power: false
           effects: []
           range:
             value: '5'
@@ -620,7 +620,7 @@ items:
           <p>The hand attempts to push a Huge or smaller creature within 5 feet
           of it. The target must succeed on a Strength saving throw, or the hand
           pushes the target up to 5 feet plus a number of feet equal to five
-          times your spellcasting ability modifier. The hand moves with the
+          times your power system ability modifier. The hand moves with the
           target, remaining within 5 feet of it.</p>
         chat: ''
       source:
@@ -664,7 +664,7 @@ items:
             units: inst
             special: ''
             override: false
-            concentration: false
+            maintained power: false
           effects: []
           range:
             value: '5'
@@ -694,7 +694,7 @@ items:
             ability:
               - str
             dc:
-              calculation: spellcasting
+              calculation: power system
               formula: ''
           uses:
             spent: 0
@@ -742,7 +742,7 @@ items:
           the target has the &amp;Reference[Grappled] condition, with an escape
           DC equal to your spell save DC. While the hand grapples the target,
           you can take a Bonus Action to cause the hand to crush it, dealing
-          Bludgeoning damage to the target equal to 4d6 plus your spellcasting
+          Bludgeoning damage to the target equal to 4d6 plus your power system
           ability modifier.</p><h3>Grapple Escape Tests</h3><p>[[/check
           ability=str skill=ath dc=8+@prof+@flags.dnd5e.summon.mod]]{Strength
           (Athletics)} [[/check ability=dex skill=acr
@@ -789,7 +789,7 @@ items:
             units: inst
             special: ''
             override: false
-            concentration: false
+            maintained power: false
           effects: []
           range:
             value: '5'
@@ -828,7 +828,7 @@ items:
             ability:
               - dex
             dc:
-              calculation: spellcasting
+              calculation: power system
               formula: ''
           uses:
             spent: 0
@@ -857,7 +857,7 @@ items:
             chatFlavor: ''
           duration:
             units: inst
-            concentration: false
+            maintained power: false
             override: false
           effects: []
           range:
@@ -978,7 +978,7 @@ items:
             units: spec
             special: ''
             override: false
-            concentration: false
+            maintained power: false
           effects:
             - _id: wDcd4bpCErQfW0To
             - _id: 7kq0juDjYR7wlwee

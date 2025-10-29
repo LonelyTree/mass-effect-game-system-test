@@ -15,7 +15,7 @@ system:
       creature takes 2d6 cold damage on a failed save, and half as much damage
       on a successful one. The damage increases to 3d6 at 6th level, 4d6 at 11th
       level, and 5d6 at 16th level.</p><p>After you use your breath weapon, you
-      can't use it again until you complete a short or long rest.</p>
+      can't use it again until you complete a short or full rest.</p>
     chat: ''
   source:
     custom: ''
@@ -55,7 +55,7 @@ system:
       description:
         chatFlavor: ''
       duration:
-        concentration: false
+        maintained power: false
         value: ''
         units: inst
         special: ''

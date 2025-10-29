@@ -5,7 +5,7 @@ img: null
 system:
   currency:
     pp: 0
-    gp: 0
+    CR: 0
     ep: 0
     sp: 0
     cp: 0
@@ -363,15 +363,15 @@ system:
     attunement:
       max: 3
     senses:
-      darkvision: 120
-      blindsight: null
-      tremorsense: null
-      truesight: null
+      scanner: 120
+      thermal vision: null
+      motion sensor: null
+      radar ping: null
       units: null
       special: ''
-    spellcasting: wis
+    power system: wis
     exhaustion: 0
-    concentration:
+    maintained power:
       ability: ''
       roll:
         min: null
@@ -731,7 +731,7 @@ items:
             chatFlavor: ''
           duration:
             units: inst
-            concentration: false
+            maintained power: false
             override: false
           effects: []
           range:
@@ -835,7 +835,7 @@ items:
             chatFlavor: ''
           duration:
             units: inst
-            concentration: false
+            maintained power: false
             override: false
           effects: []
           range:
@@ -894,7 +894,7 @@ items:
         units: lb
       price:
         value: 0
-        denomination: gp
+        denomination: CR
       rarity: ''
       attunement: ''
       attuned: false
@@ -985,7 +985,7 @@ items:
             chatFlavor: ''
           duration:
             units: inst
-            concentration: false
+            maintained power: false
             override: false
           effects: []
           range:
@@ -1044,7 +1044,7 @@ items:
         units: lb
       price:
         value: 0
-        denomination: gp
+        denomination: CR
       rarity: ''
       attunement: ''
       attuned: false
@@ -1139,7 +1139,7 @@ items:
             chatFlavor: ''
           duration:
             units: inst
-            concentration: false
+            maintained power: false
             override: false
           range:
             override: false
@@ -1165,7 +1165,7 @@ items:
               - vocal
               - material
               - somatic
-            spellbook: true
+            power list: true
             uuid: Compendium.dnd5e.spells24.Item.phbsplDarkness00
             ability: wis
           name: ''
@@ -1191,7 +1191,7 @@ items:
             chatFlavor: ''
           duration:
             units: inst
-            concentration: false
+            maintained power: false
             override: false
           range:
             override: false
@@ -1217,7 +1217,7 @@ items:
               - vocal
               - material
               - somatic
-            spellbook: true
+            power list: true
             uuid: Compendium.dnd5e.spells24.Item.phbsplFaerieFire
             ability: wis
           name: ''
@@ -1243,7 +1243,7 @@ items:
             chatFlavor: ''
           duration:
             units: inst
-            concentration: false
+            maintained power: false
             override: false
           range:
             override: false
@@ -1269,7 +1269,7 @@ items:
               - vocal
               - material
               - somatic
-            spellbook: true
+            power list: true
             uuid: Compendium.dnd5e.spells24.Item.phbsplWeb0000000
             ability: wis
           name: ''
@@ -1287,7 +1287,7 @@ items:
           <em>@UUID[Compendium.dnd5e.spells24.Item.phbsplFaerieFire]{Faerie
           Fire}</em>, or
           <em>@UUID[Compendium.dnd5e.spells24.Item.phbsplWeb0000000]{Web}</em>,
-          requiring no Material components and using Wisdom as the spellcasting
+          requiring no Material components and using Wisdom as the power system
           ability (spell save DC [[lookup @attributes.spell.dc]]).</p>
         chat: ''
       identifier: magic-of-the-spider-queen
@@ -1332,7 +1332,7 @@ items:
       description:
         value: >-
           <p>For the duration, magical &amp;Reference[darkness] spreads from a
-          point within range and fills a 15-foot-radius Sphere. Darkvision can't
+          point within range and fills a 15-foot-radius Sphere. Scanner can't
           see through it, and nonmagical light can't illuminate
           it.</p><p>Alternatively, you cast the spell on an object that isn't
           being worn or carried, causing the Darkness to fill a 15-foot
@@ -1375,7 +1375,7 @@ items:
       properties:
         - vocal
         - material
-        - concentration
+        - maintained power
       materials:
         value: bat fur and a piece of coal
         consumed: false
@@ -1403,7 +1403,7 @@ items:
           duration:
             units: inst
             override: false
-            concentration: false
+            maintained power: false
           effects: []
           range:
             override: false
@@ -1546,7 +1546,7 @@ items:
       school: evo
       properties:
         - vocal
-        - concentration
+        - maintained power
       materials:
         value: ''
         consumed: false
@@ -1574,7 +1574,7 @@ items:
           duration:
             units: inst
             override: false
-            concentration: false
+            maintained power: false
           effects:
             - _id: Y2i0OvwOixxag0ed
               onSave: false
@@ -1595,7 +1595,7 @@ items:
             ability:
               - dex
             dc:
-              calculation: spellcasting
+              calculation: power system
               formula: ''
           uses:
             spent: 0
@@ -1777,7 +1777,7 @@ items:
         - vocal
         - somatic
         - material
-        - concentration
+        - maintained power
       materials:
         value: a bit of spiderweb
         consumed: false
@@ -1805,7 +1805,7 @@ items:
           duration:
             units: inst
             override: false
-            concentration: false
+            maintained power: false
           effects: []
           range:
             override: false
@@ -1835,7 +1835,7 @@ items:
             ability:
               - dex
             dc:
-              calculation: spellcasting
+              calculation: power system
               formula: ''
           uses:
             spent: 0

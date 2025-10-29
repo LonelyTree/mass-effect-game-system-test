@@ -1,5 +1,5 @@
 _id: phbClcPotentSpel
-name: 'Blessed Strikes: Potent Spellcasting'
+name: 'Blessed Strikes: Potent Power System'
 type: feat
 img: icons/magic/life/cross-yellow-green.webp
 system:
@@ -11,7 +11,7 @@ system:
         type: ''
         value: null
         override: false
-        condition: Deal damage with any Cleric cantrip
+        condition: Deal damage with any Cleric basic power
       consumption:
         scaling:
           allowed: false
@@ -21,7 +21,7 @@ system:
         chatFlavor: ''
       duration:
         units: inst
-        concentration: false
+        maintained power: false
         override: false
       effects: []
       range:
@@ -79,11 +79,11 @@ system:
   description:
     value: >-
       <p>Add your Wisdom modifier to the damage you deal with any Cleric
-      cantrip.</p><section class="secret"
+      basic power.</p><section class="secret"
       id="secret-bDHa7ClHZ3YPWKvs"><p><strong>Foundry Note</strong></p><p>This
-      bonus damage is not automatically included in your cantrips.</p><p>You can
+      bonus damage is not automatically included in your basic powers.</p><p>You can
       add [[lookup @abilities.wis.mod]] to the Situational Bonus field of your
-      cantrip's damage rolls or you can permanently add it to your cantrips by
+      basic power's damage rolls or you can permanently add it to your basic powers by
       adding "@abilities.wis.mod" (minus the quotes) in the Bonus
       field.</p><p>Alternatively, the <strong>Damage</strong> activity on this
       feature includes your Wisdom modifier and allows you to choose the damage
@@ -103,7 +103,7 @@ system:
     repeatable: false
   properties: []
   requirements: Cleric
-  identifier: blessed-strikes-potent-spellcasting
+  identifier: blessed-strikes-potent-power system
 effects: []
 folder: 3wY92TRgyyyDkpmF
 flags:

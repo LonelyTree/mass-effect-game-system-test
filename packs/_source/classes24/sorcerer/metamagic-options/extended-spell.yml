@@ -8,8 +8,8 @@ system:
       <blockquote><p>Cost: 1 Sorcery Point</p></blockquote><p>When you cast a
       spell that has a duration of 1 minute or longer, you can spend 1 Sorcery
       Point to double its duration to a maximum duration of 24 hours.</p><p>If
-      the affected spell requires Concentration, you have Advantage on any
-      saving throw you make to maintain that Concentration.</p>
+      the affected spell requires Maintained Power, you have Advantage on any
+      saving throw you make to maintain that Maintained Power.</p>
     chat: ''
   source:
     custom: ''
@@ -52,7 +52,7 @@ system:
         chatFlavor: ''
       duration:
         units: inst
-        concentration: false
+        maintained power: false
         override: false
       effects: []
       range:

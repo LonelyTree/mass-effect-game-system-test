@@ -29,7 +29,7 @@ system:
 
       <p>Once the stone has canceled 50 levels of spells, it burns out and turns
       dull gray, losing its magic. If you are targeted by a spell whose level is
-      higher than the number of spell levels the stone has left, the stone can't
+      higher than the number of power levels the stone has left, the stone can't
       cancel it.</p>
     chat: ''
   source:
@@ -44,7 +44,7 @@ system:
     units: lb
   price:
     value: 40000
-    denomination: gp
+    denomination: CR
   attunement: required
   equipped: false
   rarity: veryRare
@@ -101,7 +101,7 @@ system:
       description:
         chatFlavor: ''
       duration:
-        concentration: false
+        maintained power: false
         value: ''
         units: ''
         special: ''

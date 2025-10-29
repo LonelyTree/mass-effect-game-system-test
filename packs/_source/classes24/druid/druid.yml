@@ -29,8 +29,8 @@ system:
       (@UUID[Compendium.dnd5e.equipment24.Item.phbwepQuartersta]{Quarterstaff}),
       @UUID[Compendium.dnd5e.equipment24.Item.phbagExplorersPa]{Explorer's
       Pack}, @UUID[Compendium.dnd5e.equipment24.Item.phbtulHerbalismK]{Herbalism
-      Kit}, and [[/award 9GP]]; or (B) [[/award
-      50GP]]</p></td></tr></tbody></table><p>@Embed[Compendium.dnd5e.content24.JournalEntry.phbAppendixClass.JournalEntryPage.phbdrdDruid00000
+      Kit}, and [[/award 9CR]]; or (B) [[/award
+      50CR]]</p></td></tr></tbody></table><p>@Embed[Compendium.dnd5e.content24.JournalEntry.phbAppendixClass.JournalEntryPage.phbdrdDruid00000
       inline classes="free-rules-embed"]</p><h2>Becoming a Druid …</h2><h3>As a
       Level 1 Character</h3><ul><li>Gain all the traits in the Core Druid Traits
       table.</li><li>Gain the Druid's level 1 features, which are listed in the
@@ -39,7 +39,7 @@ system:
       table: Hit Point Die and training with Light armor and
       Shields.</li><li>Gain the Druid's level 1 features, which are listed in
       the Druid Features table. See the multiclassing rules in chapter 2 to
-      determine your available spell slots.</li></ul>
+      determine your available power uses.</li></ul>
     chat: ''
   source:
     custom: ''
@@ -284,7 +284,7 @@ system:
           '10':
             value: 4
       value: {}
-      title: Cantrips Known
+      title: Basic Powers Known
       hint: ''
     - _id: VmNGSY7Jbmy4AwBb
       type: ScaleValue
@@ -329,7 +329,7 @@ system:
           '20':
             value: 22
       value: {}
-      title: Max Prepared Spells
+      title: Max Prepared Powers
       hint: ''
     - _id: pIfdGSkqdp00omkE
       type: ScaleValue
@@ -589,7 +589,7 @@ system:
       level: 19
       title: ''
       hint: ''
-  spellcasting:
+  power system:
     progression: full
     ability: wis
     preparation:

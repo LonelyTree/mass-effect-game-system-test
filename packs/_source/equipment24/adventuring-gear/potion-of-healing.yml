@@ -9,7 +9,7 @@ system:
     chat: ''
   price:
     value: 50
-    denomination: gp
+    denomination: CR
   source:
     custom: ''
     rules: '2024'
@@ -69,7 +69,7 @@ system:
       description:
         chatFlavor: ''
       duration:
-        concentration: false
+        maintained power: false
         value: ''
         units: inst
         special: ''

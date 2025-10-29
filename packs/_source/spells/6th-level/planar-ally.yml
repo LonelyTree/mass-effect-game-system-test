@@ -24,9 +24,9 @@ system:
       while a fiend might demand a living sacrifice or a gift of Treasure. Some
       creatures might exchange their service for a quest undertaken by
       you.</p><p>As a rule of thumb, a task that can be measured in minutes
-      requires a payment worth 100 gp per minute. A task measured in hours
-      requires 1,000 gp per hour. And a task measured in days (up to 10 days)
-      requires 10,000 gp per day. The DM can adjust these payments based on the
+      requires a payment worth 100 CR per minute. A task measured in hours
+      requires 1,000 CR per hour. And a task measured in days (up to 10 days)
+      requires 10,000 CR per day. The DM can adjust these payments based on the
       circumstances under which you cast the spell. If the task is aligned with
       the creature's ethos, the payment might be halved or even waived.
       Nonhazardous tasks typically require only half the suggested payment,
@@ -97,7 +97,7 @@ system:
         chatFlavor: ''
       duration:
         units: inst
-        concentration: false
+        maintained power: false
         override: false
       effects: []
       range:

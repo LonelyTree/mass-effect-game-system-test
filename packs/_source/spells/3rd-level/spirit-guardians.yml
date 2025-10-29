@@ -17,7 +17,7 @@ system:
       damage (if you are good or neutral) or 3d8 necrotic damage (if you are
       evil). On a successful save, the creature takes half as much
       damage.</p><p><strong>At Higher Levels.</strong> When you cast this spell
-      using a spell slot of 4th level or higher, the damage increases by 1d8 for
+      using a power use of 4th level or higher, the damage increases by 1d8 for
       each slot level above 3rd.</p>
     chat: ''
   source:
@@ -61,7 +61,7 @@ system:
     - vocal
     - somatic
     - material
-    - concentration
+    - maintained power
   activities:
     dnd5eactivity000:
       _id: dnd5eactivity000
@@ -80,7 +80,7 @@ system:
         chatFlavor: ''
       duration:
         units: inst
-        concentration: false
+        maintained power: false
         override: false
       effects: []
       range:
@@ -111,7 +111,7 @@ system:
       save:
         ability: wis
         dc:
-          calculation: spellcasting
+          calculation: power system
           formula: ''
       uses:
         spent: 0

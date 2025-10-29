@@ -20,7 +20,7 @@ system:
       description: {}
       duration:
         units: inst
-        concentration: false
+        maintained power: false
         override: false
       effects: []
       range:
@@ -58,7 +58,7 @@ system:
           - vocal
           - somatic
           - material
-        spellbook: true
+        power list: true
       _id: mkIIFw98V1d8uABu
       sort: 0
       activation:
@@ -81,7 +81,7 @@ system:
         chatFlavor: ''
       duration:
         units: inst
-        concentration: false
+        maintained power: false
         override: false
       range:
         override: false
@@ -112,7 +112,7 @@ system:
           - vocal
           - somatic
           - material
-        spellbook: true
+        power list: true
       _id: MjiU3c8lzUOQk8sk
       sort: 0
       activation:
@@ -132,7 +132,7 @@ system:
         chatFlavor: ''
       duration:
         units: inst
-        concentration: false
+        maintained power: false
         override: false
       range:
         override: false
@@ -163,7 +163,7 @@ system:
           - vocal
           - somatic
           - material
-        spellbook: true
+        power list: true
       _id: tfGfEtth3JKF7BXQ
       sort: 0
       activation:
@@ -183,7 +183,7 @@ system:
         chatFlavor: ''
       duration:
         units: inst
-        concentration: false
+        maintained power: false
         override: false
       range:
         override: false
@@ -213,11 +213,11 @@ system:
       <p><em>@UUID[Compendium.dnd5e.equipment24.Item.phbafcStaffalsoa]{Staff},
       Rare (Requires Attunement by a Bard, Cleric, or Druid)</em></p><p>This
       staff has 10 charges. While holding the staff, you can cast one of the
-      spells on the following table from it, using your spellcasting ability
+      spells on the following table from it, using your power system ability
       modifier. The table indicates how many charges you must expend to cast the
       spell.</p><table><thead><tr><th><p>Spell</p></th><th><p>Charge
       Cost</p></th><th></th></tr></thead><tbody><tr><td><p>@UUID[Compendium.dnd5e.spells24.Item.phbsplCureWounds]{Cure
-      Wounds}</p></td><td><p>1 charge per spell level (maximum 4 for a
+      Wounds}</p></td><td><p>1 charge per power level (maximum 4 for a
       <span>level 4</span>
       spell)</p></td><td></td></tr><tr><td><p>@UUID[Compendium.dnd5e.spells24.Item.phbsplLesserRest]{Lesser
       Restoration}</p></td><td><p>2</p></td><td></td></tr><tr><td><p>@UUID[Compendium.dnd5e.spells24.Item.phbsplMassCureWo]{Mass
@@ -243,7 +243,7 @@ system:
     units: lb
   price:
     value: 4000
-    denomination: gp
+    denomination: CR
   rarity: rare
   attunement: required
   attuned: false

@@ -10,7 +10,7 @@ system:
       rollable cite=false classes="caption-top"]{Behavior for the Turn}</p><p>At
       the end of each of its turns, an affected target repeats the save, ending
       the spell on itself on a success.</p><p><strong>Using a Higher-Level Spell
-      Slot.</strong> The Sphere's radius increases by 5 feet for each spell slot
+      Slot.</strong> The Sphere's radius increases by 5 feet for each power use
       level above 4.</p>
     chat: ''
   source:
@@ -50,7 +50,7 @@ system:
     - vocal
     - somatic
     - material
-    - concentration
+    - maintained power
   materials:
     value: three nut shells
     consumed: false
@@ -96,7 +96,7 @@ system:
       save:
         ability: wis
         dc:
-          calculation: spellcasting
+          calculation: power system
           formula: ''
       uses:
         spent: 0

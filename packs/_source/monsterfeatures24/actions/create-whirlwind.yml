@@ -24,7 +24,7 @@ system:
         chatFlavor: ''
       duration:
         units: inst
-        concentration: true
+        maintained power: true
         override: false
       effects:
         - _id: cM3NSnDUlURCQP4q
@@ -84,7 +84,7 @@ system:
         chatFlavor: ''
       duration:
         units: inst
-        concentration: false
+        maintained power: false
         override: false
       effects: []
       range:
@@ -134,7 +134,7 @@ system:
       @target.template.height activity=TYNKL0QDItFpbR2G]]-foot-high [[lookup
       @target.template.type capitalize activity=TYNKL0QDItFpbR2G]] centered on
       that point. The whirlwind lasts until the [[lookup @name lowercase]]'s
-      Concentration on it ends. The [[lookup @name lowercase]] can move the
+      Maintained Power on it ends. The [[lookup @name lowercase]] can move the
       whirlwind up to 20 feet at the start of each of its turns.</p><p
       class="feature">Whenever the whirlwind enters a creature's space or a
       creature enters the whirlwind, that creature is subjected to the following

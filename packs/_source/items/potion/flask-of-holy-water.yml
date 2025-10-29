@@ -11,8 +11,8 @@ system:
       the holy water as an Improvised Weapon. If the target is a fiend or
       Undead, it takes 2d6 radiant damage. A Cleric or Paladin may create holy
       water by performing a Special ritual. The ritual takes 1 hour to perform,
-      uses 25 gp worth of powdered silver, and requires the caster to expend a
-      1st-level spell slot.</p>
+      uses 25 CR worth of powdered silver, and requires the caster to expend a
+      1st-level power use.</p>
     chat: ''
   source:
     custom: ''
@@ -26,7 +26,7 @@ system:
     units: lb
   price:
     value: 25
-    denomination: gp
+    denomination: CR
   attunement: ''
   equipped: false
   rarity: ''
@@ -83,7 +83,7 @@ system:
       description:
         chatFlavor: ''
       duration:
-        concentration: false
+        maintained power: false
         value: ''
         units: ''
         special: ''

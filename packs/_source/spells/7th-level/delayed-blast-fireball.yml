@@ -8,7 +8,7 @@ system:
     value: >-
       <p>A beam of yellow light flashes from your pointing finger, then
       condenses to linger at a chosen point within range as a glowing bead for
-      the duration. When the spell ends, either because your concentration is
+      the duration. When the spell ends, either because your maintained power is
       broken or because you decide to end it, the bead blossoms with a low roar
       into an explosion of flame that spreads around corners. Each creature in a
       20-foot-radius sphere centered on that point must make a Dexterity saving
@@ -23,7 +23,7 @@ system:
       solid object, the spell ends, and the bead explodes.</p><p>The fire
       damages objects in the area and ignites flammable objects that aren't
       being worn or carried.</p><p><strong>At Higher Levels.</strong> When you
-      cast this spell using a spell slot of 8th level or higher, the base damage
+      cast this spell using a power use of 8th level or higher, the base damage
       increases by 1d6 for each slot level above 7th.</p>
     chat: ''
   source:
@@ -68,7 +68,7 @@ system:
     - vocal
     - somatic
     - material
-    - concentration
+    - maintained power
   activities:
     dnd5eactivity000:
       _id: dnd5eactivity000
@@ -87,7 +87,7 @@ system:
         chatFlavor: ''
       duration:
         units: inst
-        concentration: false
+        maintained power: false
         override: false
       effects: []
       range:
@@ -118,7 +118,7 @@ system:
       save:
         ability: dex
         dc:
-          calculation: spellcasting
+          calculation: power system
           formula: ''
       uses:
         spent: 0
@@ -141,7 +141,7 @@ system:
         chatFlavor: ''
       duration:
         units: inst
-        concentration: false
+        maintained power: false
         override: false
       effects: []
       range:

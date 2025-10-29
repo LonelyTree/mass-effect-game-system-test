@@ -5,7 +5,7 @@ img: null
 system:
   currency:
     pp: 0
-    gp: 0
+    CR: 0
     ep: 0
     sp: 0
     cp: 0
@@ -363,15 +363,15 @@ system:
     attunement:
       max: 3
     senses:
-      darkvision: 120
-      blindsight: 60
-      tremorsense: null
-      truesight: null
+      scanner: 120
+      thermal vision: 60
+      motion sensor: null
+      radar ping: null
       units: null
       special: ''
-    spellcasting: cha
+    power system: cha
     exhaustion: 0
-    concentration:
+    maintained power:
       ability: ''
       roll:
         min: null
@@ -576,7 +576,7 @@ items:
             chatFlavor: ''
           duration:
             units: inst
-            concentration: false
+            maintained power: false
             override: false
           effects: []
           range:
@@ -680,7 +680,7 @@ items:
           description: {}
           duration:
             units: inst
-            concentration: false
+            maintained power: false
             override: false
           effects: []
           range:
@@ -707,7 +707,7 @@ items:
         value: >-
           <p>The [[lookup @name lowercase]] makes three [[/item Rend]] attacks.
           It can replace one attack with a use of (A) [[/item Sleep Breath]] or
-          (B) [[/item Spellcasting]] to cast
+          (B) [[/item Power System]] to cast
           <em>@UUID[Compendium.dnd5e.spells24.Item.phbsplScorchingR]{Scorching
           Ray}</em> (level 3 version).</p>
         chat: ''
@@ -774,7 +774,7 @@ items:
             chatFlavor: ''
           duration:
             units: inst
-            concentration: false
+            maintained power: false
             override: false
           effects: []
           range:
@@ -841,7 +841,7 @@ items:
         units: lb
       price:
         value: 0
-        denomination: gp
+        denomination: CR
       rarity: ''
       attunement: ''
       attuned: false
@@ -935,7 +935,7 @@ items:
             chatFlavor: ''
           duration:
             units: inst
-            concentration: false
+            maintained power: false
             override: false
           effects: []
           range:
@@ -1062,7 +1062,7 @@ items:
             chatFlavor: ''
           duration:
             units: turn
-            concentration: false
+            maintained power: false
             override: false
             value: '1'
           effects:
@@ -1117,7 +1117,7 @@ items:
             chatFlavor: ''
           duration:
             units: minute
-            concentration: false
+            maintained power: false
             override: false
             value: '1'
           effects:
@@ -1306,8 +1306,8 @@ items:
       default: 0
     sort: 4
     _key: '!actors.items!mmAncientBrassDr.mmSleepBreath000'
-  - _id: mmSpellcasting00
-    name: Spellcasting
+  - _id: mmPower System00
+    name: Power System
     type: feat
     system:
       type:
@@ -1325,7 +1325,7 @@ items:
             level: 1
             properties:
               - material
-            spellbook: true
+            power list: true
             ability: ''
           _id: dWNNmOpy8iZ8BpPl
           sort: 0
@@ -1342,7 +1342,7 @@ items:
             chatFlavor: ''
           duration:
             units: inst
-            concentration: false
+            maintained power: false
             override: false
           range:
             override: false
@@ -1370,7 +1370,7 @@ items:
             level: null
             properties:
               - material
-            spellbook: true
+            power list: true
             ability: ''
           _id: YA80NJWcxJnmLQvI
           sort: 0
@@ -1387,7 +1387,7 @@ items:
             chatFlavor: ''
           duration:
             units: inst
-            concentration: false
+            maintained power: false
             override: false
           range:
             override: false
@@ -1404,7 +1404,7 @@ items:
             recovery: []
             max: ''
           name: ''
-        abksKUnEFFWu4XGP:
+        abksKUnEFFWu4XCR:
           type: cast
           spell:
             uuid: Compendium.dnd5e.spells24.Item.phbsplScorchingR
@@ -1415,9 +1415,9 @@ items:
             level: 3
             properties:
               - material
-            spellbook: true
+            power list: true
             ability: ''
-          _id: abksKUnEFFWu4XGP
+          _id: abksKUnEFFWu4XCR
           sort: 0
           activation:
             type: action
@@ -1432,7 +1432,7 @@ items:
             chatFlavor: ''
           duration:
             units: inst
-            concentration: false
+            maintained power: false
             override: false
           range:
             override: false
@@ -1460,8 +1460,8 @@ items:
             level: 9
             properties:
               - material
-              - concentration
-            spellbook: true
+              - maintained power
+            power list: true
             ability: ''
           _id: S6VO2eQPDXPJMmCM
           sort: 0
@@ -1478,7 +1478,7 @@ items:
             chatFlavor: ''
           duration:
             units: inst
-            concentration: false
+            maintained power: false
             override: false
           range:
             override: false
@@ -1506,7 +1506,7 @@ items:
             level: 1
             properties:
               - material
-            spellbook: true
+            power list: true
             ability: ''
           _id: FBdrDqzOVzXdUkG1
           sort: 0
@@ -1523,7 +1523,7 @@ items:
             chatFlavor: ''
           duration:
             units: inst
-            concentration: false
+            maintained power: false
             override: false
           range:
             override: false
@@ -1551,7 +1551,7 @@ items:
             level: 8
             properties:
               - material
-            spellbook: true
+            power list: true
             ability: ''
           _id: bdpjxCXIP7v2qeto
           sort: 0
@@ -1571,7 +1571,7 @@ items:
             chatFlavor: ''
           duration:
             units: inst
-            concentration: false
+            maintained power: false
             override: false
           range:
             override: false
@@ -1601,7 +1601,7 @@ items:
             level: 2
             properties:
               - material
-            spellbook: true
+            power list: true
             ability: ''
           _id: Hz9xgZxKUauZggoM
           sort: 0
@@ -1621,7 +1621,7 @@ items:
             chatFlavor: ''
           duration:
             units: inst
-            concentration: false
+            maintained power: false
             override: false
           range:
             override: false
@@ -1648,7 +1648,7 @@ items:
         value: >-
           <p class="feature">The [[lookup @name lowercase]] casts one of the
           following spells, requiring no Material components and using Charisma
-          as the spellcasting ability (spell save DC [[lookup
+          as the power system ability (spell save DC [[lookup
           @attributes.spell.dc]]):</p><p class="feature-trait"><strong>At
           Will:</strong>
           <em>@UUID[Compendium.dnd5e.spells24.Item.phbsplDetectMagi]{Detect
@@ -1659,7 +1659,7 @@ items:
           Ray}</em> (level 3 version),
           <em>@UUID[Compendium.dnd5e.spells24.Item.phbsplShapechang]{Shapechange}</em>
           (Beast or Humanoid form only, no Temporary Hit Points gained from the
-          spell, and no Concentration or Temporary Hit Points required to
+          spell, and no Maintained Power or Temporary Hit Points required to
           maintain the spell),
           <em>@UUID[Compendium.dnd5e.spells24.Item.phbsplSpeakwithA]{Speak with
           Animals}</em></p><p class="feature-trait"><strong>1/Day Each:</strong>
@@ -1668,7 +1668,7 @@ items:
           <em>@UUID[Compendium.dnd5e.spells24.Item.phbsplDetectThou]{Detect
           Thoughts}</em></p>
         chat: ''
-      identifier: spellcasting
+      identifier: power system
       source:
         revision: 1
         rules: '2024'
@@ -1692,7 +1692,7 @@ items:
           activity: []
           effect: []
     _stats:
-      compendiumSource: Compendium.dnd-monster-manual.features.Item.mmSpellcasting00
+      compendiumSource: Compendium.dnd-monster-manual.features.Item.mmPower System00
       duplicateSource: null
       coreVersion: '13.344'
       systemId: dnd5e
@@ -1704,7 +1704,7 @@ items:
     ownership:
       default: 0
     sort: 5
-    _key: '!actors.items!mmAncientBrassDr.mmSpellcasting00'
+    _key: '!actors.items!mmAncientBrassDr.mmPower System00'
   - name: Detect Magic
     system:
       description:
@@ -1755,7 +1755,7 @@ items:
       properties:
         - vocal
         - somatic
-        - concentration
+        - maintained power
         - ritual
       materials:
         value: ''
@@ -1784,7 +1784,7 @@ items:
           duration:
             units: inst
             override: false
-            concentration: false
+            maintained power: false
           effects:
             - _id: BHw91lQmVgdx39WZ
           range:
@@ -1846,13 +1846,13 @@ items:
           lastModifiedBy: null
           exportSource: null
         _key: >-
-          !actors.items.effects!mmAncientBrassDr.pGP49eWCVXNRQplJ.BHw91lQmVgdx39WZ
+          !actors.items.effects!mmAncientBrassDr.pCR49eWCVXNRQplJ.BHw91lQmVgdx39WZ
       - _id: dnd5espellchange
         type: enchantment
         name: Spell Changes
         img: systems/dnd5e/icons/svg/activity/cast.svg
         origin: >-
-          Compendium.dnd5e.actors24.Actor.mmAncientBrassDr.Item.mmSpellcasting00.Activity.dWNNmOpy8iZ8BpPl
+          Compendium.dnd5e.actors24.Actor.mmAncientBrassDr.Item.mmPower System00.Activity.dWNNmOpy8iZ8BpPl
         changes:
           - key: system.properties
             mode: 2
@@ -1885,7 +1885,7 @@ items:
           lastModifiedBy: null
           exportSource: null
         _key: >-
-          !actors.items.effects!mmAncientBrassDr.pGP49eWCVXNRQplJ.dnd5espellchange
+          !actors.items.effects!mmAncientBrassDr.pCR49eWCVXNRQplJ.dnd5espellchange
     folder: pBaAAtXBCq9FVEnL
     sort: 4100000
     ownership:
@@ -1895,7 +1895,7 @@ items:
         riders:
           activity: []
           effect: []
-        cachedFor: .Item.mmSpellcasting00.Activity.dWNNmOpy8iZ8BpPl
+        cachedFor: .Item.mmPower System00.Activity.dWNNmOpy8iZ8BpPl
     _stats:
       compendiumSource: Compendium.dnd5e.spells24.Item.phbsplDetectMagi
       duplicateSource: null
@@ -1906,8 +1906,8 @@ items:
       modifiedTime: 1745712712225
       lastModifiedBy: dnd5ebuilder0000
       exportSource: null
-    _id: pGP49eWCVXNRQplJ
-    _key: '!actors.items!mmAncientBrassDr.pGP49eWCVXNRQplJ'
+    _id: pCR49eWCVXNRQplJ
+    _key: '!actors.items!mmAncientBrassDr.pCR49eWCVXNRQplJ'
   - name: Minor Illusion
     system:
       description:
@@ -1993,7 +1993,7 @@ items:
             chatFlavor: ''
           duration:
             units: inst
-            concentration: false
+            maintained power: false
             override: false
           range:
             override: false
@@ -2057,7 +2057,7 @@ items:
         name: Spell Changes
         img: systems/dnd5e/icons/svg/activity/cast.svg
         origin: >-
-          Compendium.dnd5e.actors24.Actor.mmAncientBrassDr.Item.mmSpellcasting00.Activity.YA80NJWcxJnmLQvI
+          Compendium.dnd5e.actors24.Actor.mmAncientBrassDr.Item.mmPower System00.Activity.YA80NJWcxJnmLQvI
         changes:
           - key: system.properties
             mode: 2
@@ -2097,7 +2097,7 @@ items:
       default: 0
     flags:
       dnd5e:
-        cachedFor: .Item.mmSpellcasting00.Activity.YA80NJWcxJnmLQvI
+        cachedFor: .Item.mmPower System00.Activity.YA80NJWcxJnmLQvI
     _stats:
       compendiumSource: Compendium.dnd5e.spells24.Item.phbsplMinorIllus
       duplicateSource: null
@@ -2115,10 +2115,10 @@ items:
       description:
         value: >-
           <p>You hurl three fiery rays. You can hurl them at one target within
-          range or at several. Make a ranged spell attack for each ray. On a
+          range or at several. Make a ranged power attack for each ray. On a
           hit, the target takes 2d6 Fire damage.</p><p><strong>Using a
-          Higher-Level Spell Slot.</strong> You create one additional ray for
-          each spell slot level above 2.</p><p>[[@item.level + 1]]{Total
+          Higher-Level Power Use.</strong> You create one additional ray for
+          each power use level above 2.</p><p>[[@item.level + 1]]{Total
           Rays}</p>
         chat: ''
       source:
@@ -2179,7 +2179,7 @@ items:
           duration:
             units: inst
             override: false
-            concentration: false
+            maintained power: false
           effects: []
           range:
             override: false
@@ -2230,7 +2230,7 @@ items:
         name: Spell Changes
         img: systems/dnd5e/icons/svg/activity/cast.svg
         origin: >-
-          Compendium.dnd5e.actors24.Actor.mmAncientBrassDr.Item.mmSpellcasting00.Activity.abksKUnEFFWu4XGP
+          Compendium.dnd5e.actors24.Actor.mmAncientBrassDr.Item.mmPower System00.Activity.abksKUnEFFWu4XCR
         changes:
           - key: system.properties
             mode: 2
@@ -2270,7 +2270,7 @@ items:
       default: 0
     flags:
       dnd5e:
-        cachedFor: .Item.mmSpellcasting00.Activity.abksKUnEFFWu4XGP
+        cachedFor: .Item.mmPower System00.Activity.abksKUnEFFWu4XCR
     _stats:
       compendiumSource: Compendium.dnd5e.spells24.Item.phbsplScorchingR
       duplicateSource: null
@@ -2289,8 +2289,8 @@ items:
         value: >-
           <p>You shape-shift into another creature for the duration or until you
           take a Magic action to shape-shift into a different eligible form. The
-          new form must be of a creature that has a Challenge Rating no higher
-          than your level or Challenge Rating. You must have seen the sort of
+          new form must be of a creature that has a Threat Level no higher
+          than your level or Threat Level. You must have seen the sort of
           creature before, and it can't be a Construct or an Undead.</p><p>When
           you shape-shift, you gain a number of Temporary Hit Points equal to
           the Hit Points of the form. The spell ends early if you have no
@@ -2298,7 +2298,7 @@ items:
           the stat block of the chosen form, but you retain your creature type;
           alignment; personality; Intelligence, Wisdom, and Charisma scores; Hit
           Points; Hit Point Dice; proficiencies; and ability to communicate. If
-          you have the Spellcasting feature, you retain it too.</p><p>Upon
+          you have the Power System feature, you retain it too.</p><p>Upon
           shape-shifting, you determine whether your equipment drops to the
           ground or changes in size and shape to fit the new form while you're
           in it.</p>
@@ -2339,9 +2339,9 @@ items:
         - vocal
         - somatic
         - material
-        - concentration
+        - maintained power
       materials:
-        value: a jade circlet worth 1,500+ GP
+        value: a jade circlet worth 1,500+ CR
         consumed: false
         cost: 0
         supply: 0
@@ -2365,7 +2365,7 @@ items:
             chatFlavor: ''
           duration:
             units: inst
-            concentration: false
+            maintained power: false
             override: false
           effects: []
           range:
@@ -2398,7 +2398,7 @@ items:
         name: Spell Changes
         img: systems/dnd5e/icons/svg/activity/cast.svg
         origin: >-
-          Compendium.dnd5e.actors24.Actor.mmAncientBrassDr.Item.mmSpellcasting00.Activity.S6VO2eQPDXPJMmCM
+          Compendium.dnd5e.actors24.Actor.mmAncientBrassDr.Item.mmPower System00.Activity.S6VO2eQPDXPJMmCM
         changes:
           - key: system.properties
             mode: 2
@@ -2406,7 +2406,7 @@ items:
             priority: null
           - key: system.properties
             mode: 2
-            value: '-concentration'
+            value: '-maintained power'
             priority: null
         system: {}
         disabled: false
@@ -2442,7 +2442,7 @@ items:
       default: 0
     flags:
       dnd5e:
-        cachedFor: .Item.mmSpellcasting00.Activity.S6VO2eQPDXPJMmCM
+        cachedFor: .Item.mmPower System00.Activity.S6VO2eQPDXPJMmCM
     _stats:
       compendiumSource: Compendium.dnd5e.spells24.Item.phbsplShapechang
       duplicateSource: null
@@ -2528,7 +2528,7 @@ items:
           duration:
             units: inst
             override: false
-            concentration: false
+            maintained power: false
           effects:
             - _id: lHx55SIuimKR3ALR
           range:
@@ -2597,7 +2597,7 @@ items:
         name: Spell Changes
         img: systems/dnd5e/icons/svg/activity/cast.svg
         origin: >-
-          Compendium.dnd5e.actors24.Actor.mmAncientBrassDr.Item.mmSpellcasting00.Activity.FBdrDqzOVzXdUkG1
+          Compendium.dnd5e.actors24.Actor.mmAncientBrassDr.Item.mmPower System00.Activity.FBdrDqzOVzXdUkG1
         changes:
           - key: system.properties
             mode: 2
@@ -2637,7 +2637,7 @@ items:
       default: 0
     flags:
       dnd5e:
-        cachedFor: .Item.mmSpellcasting00.Activity.FBdrDqzOVzXdUkG1
+        cachedFor: .Item.mmPower System00.Activity.FBdrDqzOVzXdUkG1
     _stats:
       compendiumSource: Compendium.dnd5e.spells24.Item.phbsplSpeakwithA
       duplicateSource: null
@@ -2709,7 +2709,7 @@ items:
         - vocal
         - somatic
         - material
-        - concentration
+        - maintained power
       materials:
         value: burning incense
         consumed: false
@@ -2735,7 +2735,7 @@ items:
             chatFlavor: ''
           duration:
             units: inst
-            concentration: false
+            maintained power: false
             override: false
           effects: []
           range:
@@ -2775,7 +2775,7 @@ items:
             chatFlavor: ''
           duration:
             units: hour
-            concentration: false
+            maintained power: false
             override: true
             value: '8'
           effects: []
@@ -2811,7 +2811,7 @@ items:
         name: Spell Changes
         img: systems/dnd5e/icons/svg/activity/cast.svg
         origin: >-
-          Compendium.dnd5e.actors24.Actor.mmAncientBrassDr.Item.mmSpellcasting00.Activity.bdpjxCXIP7v2qeto
+          Compendium.dnd5e.actors24.Actor.mmAncientBrassDr.Item.mmPower System00.Activity.bdpjxCXIP7v2qeto
         changes:
           - key: system.properties
             mode: 2
@@ -2851,7 +2851,7 @@ items:
       default: 0
     flags:
       dnd5e:
-        cachedFor: .Item.mmSpellcasting00.Activity.bdpjxCXIP7v2qeto
+        cachedFor: .Item.mmPower System00.Activity.bdpjxCXIP7v2qeto
     _stats:
       compendiumSource: Compendium.dnd5e.spells24.Item.phbsplControlWea
       duplicateSource: null
@@ -2929,7 +2929,7 @@ items:
         - vocal
         - somatic
         - material
-        - concentration
+        - maintained power
       materials:
         value: 1 Copper Piece
         consumed: false
@@ -2957,7 +2957,7 @@ items:
           duration:
             units: inst
             override: false
-            concentration: false
+            maintained power: false
           effects: []
           range:
             override: true
@@ -2983,7 +2983,7 @@ items:
             ability:
               - wis
             dc:
-              calculation: spellcasting
+              calculation: power system
               formula: ''
           uses:
             spent: 0
@@ -3009,7 +3009,7 @@ items:
             chatFlavor: ''
           duration:
             units: inst
-            concentration: false
+            maintained power: false
             override: false
           effects: []
           range:
@@ -3041,7 +3041,7 @@ items:
         name: Spell Changes
         img: systems/dnd5e/icons/svg/activity/cast.svg
         origin: >-
-          Compendium.dnd5e.actors24.Actor.mmAncientBrassDr.Item.mmSpellcasting00.Activity.Hz9xgZxKUauZggoM
+          Compendium.dnd5e.actors24.Actor.mmAncientBrassDr.Item.mmPower System00.Activity.Hz9xgZxKUauZggoM
         changes:
           - key: system.properties
             mode: 2
@@ -3084,7 +3084,7 @@ items:
         riders:
           activity: []
           effect: []
-        cachedFor: .Item.mmSpellcasting00.Activity.Hz9xgZxKUauZggoM
+        cachedFor: .Item.mmPower System00.Activity.Hz9xgZxKUauZggoM
     _stats:
       compendiumSource: Compendium.dnd5e.spells24.Item.phbsplDetectThou
       duplicateSource: null
@@ -3123,7 +3123,7 @@ items:
             chatFlavor: ''
           duration:
             units: inst
-            concentration: false
+            maintained power: false
             override: false
           range:
             override: false
@@ -3146,7 +3146,7 @@ items:
               override: false
             level: 3
             properties: []
-            spellbook: false
+            power list: false
             uuid: Compendium.dnd5e.spells24.Item.phbsplScorchingR
             ability: ''
           name: ''
@@ -3156,7 +3156,7 @@ items:
         max: ''
       description:
         value: >-
-          <p>The [[lookup @name lowercase]] uses Spellcasting to cast
+          <p>The [[lookup @name lowercase]] uses Power System to cast
           <em>[[/item Scorching Ray]]</em> (level 3 version).</p>
         chat: ''
       identifier: blazing-light
@@ -3201,10 +3201,10 @@ items:
       description:
         value: >-
           <p>You hurl three fiery rays. You can hurl them at one target within
-          range or at several. Make a ranged spell attack for each ray. On a
+          range or at several. Make a ranged power attack for each ray. On a
           hit, the target takes 2d6 Fire damage.</p><p><strong>Using a
-          Higher-Level Spell Slot.</strong> You create one additional ray for
-          each spell slot level above 2.</p><p>[[@item.level + 1]]{Total
+          Higher-Level Power Use.</strong> You create one additional ray for
+          each power use level above 2.</p><p>[[@item.level + 1]]{Total
           Rays}</p>
         chat: ''
       source:
@@ -3265,7 +3265,7 @@ items:
           duration:
             units: inst
             override: false
-            concentration: false
+            maintained power: false
           effects: []
           range:
             override: false
@@ -3398,7 +3398,7 @@ items:
             chatFlavor: ''
           duration:
             units: inst
-            concentration: false
+            maintained power: false
             override: false
           effects: []
           range:
@@ -3500,7 +3500,7 @@ items:
             chatFlavor: ''
           duration:
             units: turn
-            concentration: false
+            maintained power: false
             override: false
             value: '1'
           effects:

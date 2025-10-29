@@ -17,7 +17,7 @@ system:
       and if it succeeds, it isn't affected by this
       spell.</p><p><strong>Creature into Creature</strong>. If you turn a
       creature into another kind of creature, the new form can be any kind you
-      choose whose challenge rating is equal to or less than the target's (or
+      choose whose threat level is equal to or less than the target's (or
       its level, if the target doesn't have a Challenge rating). The target's
       game statistics, including mental Ability Scores, are replaced by the
       statistics of the new form. It retains its Alignment and
@@ -88,7 +88,7 @@ system:
     - vocal
     - somatic
     - material
-    - concentration
+    - maintained power
   activities:
     dnd5eactivity000:
       _id: dnd5eactivity000
@@ -107,7 +107,7 @@ system:
         chatFlavor: ''
       duration:
         units: inst
-        concentration: false
+        maintained power: false
         override: false
       effects: []
       range:
@@ -126,7 +126,7 @@ system:
       save:
         ability: wis
         dc:
-          calculation: spellcasting
+          calculation: power system
           formula: ''
       uses:
         spent: 0

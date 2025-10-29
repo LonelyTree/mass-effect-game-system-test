@@ -22,7 +22,7 @@ system:
         chatFlavor: ''
       duration:
         units: inst
-        concentration: false
+        maintained power: false
         override: false
       range:
         override: false
@@ -69,7 +69,7 @@ system:
         chatFlavor: ''
       duration:
         units: inst
-        concentration: false
+        maintained power: false
         override: false
       range:
         override: false
@@ -92,7 +92,7 @@ system:
           override: true
         level: '2'
         properties:
-          - concentration
+          - maintained power
         uuid: Compendium.dnd5e.spells24.Item.phbsplSuggestion
       name: ''
       img: ''
@@ -132,7 +132,7 @@ system:
     units: lb
   price:
     value: 200000
-    denomination: gp
+    denomination: CR
   rarity: legendary
   attunement: required
   attuned: false

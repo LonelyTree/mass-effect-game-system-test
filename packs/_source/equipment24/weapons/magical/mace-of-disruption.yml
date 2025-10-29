@@ -22,7 +22,7 @@ system:
         chatFlavor: 'Bonus Damage: 2d6 Radiant vs Fiend/Undead'
       duration:
         units: inst
-        concentration: false
+        maintained power: false
         override: false
       effects: []
       range:
@@ -87,7 +87,7 @@ system:
         chatFlavor: ''
       duration:
         units: inst
-        concentration: false
+        maintained power: false
         override: false
       effects:
         - _id: Z49QSPjltZ1NT28K
@@ -155,7 +155,7 @@ system:
     units: lb
   price:
     value: 4000
-    denomination: gp
+    denomination: CR
   rarity: rare
   attunement: required
   attuned: false

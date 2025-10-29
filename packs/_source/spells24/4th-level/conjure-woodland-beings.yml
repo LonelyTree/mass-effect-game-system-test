@@ -10,8 +10,8 @@ system:
       much damage on a successful one. A creature makes this save only once per
       turn.</p><p>In addition, you can take the &amp;Reference[Disengage] action
       as a Bonus Action for the spell's duration.</p><p><strong>Using a
-      Higher-Level Spell Slot.</strong> The damage increases by 1d8 for each
-      spell slot level above 4.</p>
+      Higher-Level Power Use.</strong> The damage increases by 1d8 for each
+      power use level above 4.</p>
     chat: ''
   source:
     custom: ''
@@ -49,7 +49,7 @@ system:
   properties:
     - vocal
     - somatic
-    - concentration
+    - maintained power
   materials:
     value: ''
     consumed: false
@@ -105,7 +105,7 @@ system:
       save:
         ability: wis
         dc:
-          calculation: spellcasting
+          calculation: power system
           formula: ''
       uses:
         spent: 0
@@ -134,7 +134,7 @@ system:
         chatFlavor: ''
       duration:
         units: inst
-        concentration: false
+        maintained power: false
         override: true
       effects: []
       range:
@@ -179,7 +179,7 @@ system:
       duration:
         units: inst
         override: true
-        concentration: false
+        maintained power: false
       effects: []
       range:
         override: true
@@ -216,7 +216,7 @@ system:
       save:
         ability: wis
         dc:
-          calculation: spellcasting
+          calculation: power system
           formula: ''
       uses:
         spent: 0

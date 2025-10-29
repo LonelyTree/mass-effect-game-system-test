@@ -14,7 +14,7 @@ system:
     chat: ''
   price:
     value: 0
-    denomination: gp
+    denomination: CR
   activities:
     RK8InNXk0jFrYMYT:
       type: enchant
@@ -34,7 +34,7 @@ system:
         chatFlavor: ''
       duration:
         units: inst
-        concentration: false
+        maintained power: false
         override: false
       effects:
         - _id: 08fHYdssxOSTW2nC

@@ -17,7 +17,7 @@ system:
           - vocal
           - somatic
           - material
-        spellbook: false
+        power list: false
       _id: Z62czXwABB7SN1lP
       sort: 0
       activation:
@@ -38,7 +38,7 @@ system:
         chatFlavor: ''
       duration:
         units: inst
-        concentration: false
+        maintained power: false
         override: false
       range:
         override: false
@@ -69,7 +69,7 @@ system:
           - vocal
           - somatic
           - material
-        spellbook: false
+        power list: false
       _id: 4h4Aazi3L1MmByOt
       sort: 0
       activation:
@@ -90,7 +90,7 @@ system:
         chatFlavor: ''
       duration:
         units: inst
-        concentration: false
+        maintained power: false
         override: false
       range:
         override: false
@@ -121,7 +121,7 @@ system:
           - vocal
           - somatic
           - material
-        spellbook: false
+        power list: false
       _id: 76MvwJBXwm1GbzfW
       sort: 0
       activation:
@@ -142,7 +142,7 @@ system:
         chatFlavor: ''
       duration:
         units: inst
-        concentration: false
+        maintained power: false
         override: false
       range:
         override: false
@@ -173,7 +173,7 @@ system:
           - vocal
           - somatic
           - material
-        spellbook: false
+        power list: false
       _id: F6QdFpERu7c4x6cd
       sort: 0
       activation:
@@ -194,7 +194,7 @@ system:
         chatFlavor: ''
       duration:
         units: inst
-        concentration: false
+        maintained power: false
         override: false
       range:
         override: false
@@ -225,7 +225,7 @@ system:
           - vocal
           - somatic
           - material
-        spellbook: false
+        power list: false
       _id: uDrKgJTXIcF0EM33
       sort: 0
       activation:
@@ -246,7 +246,7 @@ system:
         chatFlavor: ''
       duration:
         units: inst
-        concentration: false
+        maintained power: false
         override: false
       range:
         override: false
@@ -277,7 +277,7 @@ system:
           - vocal
           - somatic
           - material
-        spellbook: false
+        power list: false
       _id: yMZ4RIhJV1jvkKaf
       sort: 0
       activation:
@@ -298,7 +298,7 @@ system:
         chatFlavor: ''
       duration:
         units: inst
-        concentration: false
+        maintained power: false
         override: false
       range:
         override: false
@@ -338,7 +338,7 @@ system:
         chatFlavor: ''
       duration:
         units: minute
-        concentration: false
+        maintained power: false
         override: false
         value: '1'
       effects: []
@@ -394,7 +394,7 @@ system:
         chatFlavor: ''
       duration:
         units: minute
-        concentration: false
+        maintained power: false
         override: false
         value: '10'
       effects: []
@@ -443,7 +443,7 @@ system:
           - vocal
           - somatic
           - material
-        spellbook: false
+        power list: false
       _id: EhdR11nT5sMOi9h5
       sort: 0
       activation:
@@ -464,7 +464,7 @@ system:
         chatFlavor: ''
       duration:
         units: inst
-        concentration: false
+        maintained power: false
         override: false
       range:
         override: false
@@ -495,7 +495,7 @@ system:
           - vocal
           - somatic
           - material
-        spellbook: false
+        power list: false
       _id: cKz4qaK2elWiFRCS
       sort: 0
       activation:
@@ -516,7 +516,7 @@ system:
         chatFlavor: ''
       duration:
         units: inst
-        concentration: false
+        maintained power: false
         override: false
       range:
         override: false
@@ -555,7 +555,7 @@ system:
         chatFlavor: ''
       duration:
         units: minute
-        concentration: false
+        maintained power: false
         override: false
         value: '1'
       effects: []
@@ -613,7 +613,7 @@ system:
         chatFlavor: ''
       duration:
         units: inst
-        concentration: false
+        maintained power: false
         override: false
       effects:
         - _id: jSv9Ref3gLDObysC
@@ -664,7 +664,7 @@ system:
           - vocal
           - somatic
           - material
-        spellbook: false
+        power list: false
       _id: hohchQU2VPFVUIWG
       sort: 0
       activation:
@@ -685,7 +685,7 @@ system:
         chatFlavor: ''
       duration:
         units: inst
-        concentration: false
+        maintained power: false
         override: false
       range:
         override: false
@@ -725,7 +725,7 @@ system:
         chatFlavor: ''
       duration:
         units: inst
-        concentration: false
+        maintained power: false
         override: false
       effects: []
       range:
@@ -780,7 +780,7 @@ system:
           - vocal
           - somatic
           - material
-        spellbook: false
+        power list: false
       _id: Wxry2v7kMU16VG7T
       sort: 0
       activation:
@@ -801,7 +801,7 @@ system:
         chatFlavor: ''
       duration:
         units: inst
-        concentration: false
+        maintained power: false
         override: false
       range:
         override: false
@@ -865,7 +865,7 @@ system:
     units: lb
   price:
     value: 4000
-    denomination: gp
+    denomination: CR
   rarity: rare
   attunement: required
   attuned: false

@@ -6,8 +6,8 @@ system:
       creature in a 10-foot-radius, 40-foot-high Cylinder centered on a point
       within range makes a Dexterity saving throw, taking 5d6 Fire damage and
       5d6 Radiant damage on a failed save or half as much damage on a successful
-      one.</p><p><strong>Using a Higher-Level Spell Slot.</strong> The Fire
-      damage and the Radiant damage increase by 1d6 for each spell slot level
+      one.</p><p><strong>Using a Higher-Level Power Use.</strong> The Fire
+      damage and the Radiant damage increase by 1d6 for each power use level
       above 5.</p>
     chat: ''
   source:
@@ -114,7 +114,7 @@ system:
       save:
         ability: dex
         dc:
-          calculation: spellcasting
+          calculation: power system
           formula: ''
       uses:
         spent: 0

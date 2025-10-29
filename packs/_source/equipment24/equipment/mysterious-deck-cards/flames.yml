@@ -8,7 +8,7 @@ system:
     chat: ''
   price:
     value: 0
-    denomination: gp
+    denomination: CR
   activities:
     XcM358fbA5QM0s84:
       type: utility
@@ -32,7 +32,7 @@ system:
         chatFlavor: ''
       duration:
         units: spec
-        concentration: false
+        maintained power: false
         override: false
         special: Until either you or the devil dies
       effects:

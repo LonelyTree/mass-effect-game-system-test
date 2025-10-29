@@ -8,7 +8,7 @@ system:
       throw, taking 8d6 Fire damage on a failed save or half as much damage on a
       successful one.</p><p>Flammable objects in the area that aren't being worn
       or carried start burning.</p><p><strong>Using a Higher-Level Spell
-      Slot.</strong> The damage increases by 1d6 for each spell slot level above
+      Slot.</strong> The damage increases by 1d6 for each power use level above
       3.</p>
     chat: ''
   source:
@@ -104,7 +104,7 @@ system:
       save:
         ability: dex
         dc:
-          calculation: spellcasting
+          calculation: power system
           formula: ''
       uses:
         spent: 0

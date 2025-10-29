@@ -75,15 +75,15 @@ system:
     attunement:
       max: 3
     senses:
-      darkvision: 0
-      blindsight: 0
-      tremorsense: 0
-      truesight: 0
+      scanner: 0
+      thermal vision: 0
+      motion sensor: 0
+      radar ping: 0
       units: ft
       special: ''
-    spellcasting: wis
+    power system: wis
     exhaustion: 0
-    concentration:
+    maintained power:
       ability: ''
       roll:
         min: null
@@ -144,7 +144,7 @@ system:
       bypasses: []
   currency:
     pp: 0
-    gp: 0
+    CR: 0
     ep: 0
     sp: 0
     cp: 0
@@ -483,16 +483,16 @@ prototypeToken:
   movementAction: null
 items:
   - _id: J12x6xIwx1aCEm1e
-    name: Spellcasting
+    name: Power System
     type: feat
     img: icons/magic/light/projectiles-star-purple.webp
     system:
       description:
         value: >-
           <p>The [[lookup @name lowercase]] is a 5th-level spellcaster. Its
-          spellcasting ability is Wisdom (spell save DC 13, +5 to hit with spell
+          power system ability is Wisdom (spell save DC 13, +5 to hit with spell
           attacks). The priest has the following cleric spells
-          prepared:</p><p>Cantrip (at will): [[/item .Bnn9Nzajixvow9xi]]{light},
+          prepared:</p><p>Basic Power (at will): [[/item .Bnn9Nzajixvow9xi]]{light},
           [[/item .n9pJzTDsAwQxJVRl]]{sacred flame}, [[/item
           .MUO1uYN7JR1hm4dR]]{thaumaturgy}</p><p>1st level (4 slots): [[/item
           .uUWb1wZgtMou0TVP]]{cure wounds}, [[/item .7buEm5KhI5lP8m1z]]{guiding
@@ -523,7 +523,7 @@ items:
       enchant: {}
       prerequisites:
         level: null
-      identifier: spellcasting
+      identifier: power system
     effects: []
     folder: null
     sort: 0
@@ -548,14 +548,14 @@ items:
     system:
       description:
         value: >-
-          <p>As a bonus action, the priest can expend a spell slot to cause its
-          melee weapon attacks to magically deal an extra [[/damage]] damage to
+          <p>As a bonus action, the priest can expend a power use to cause its
+          close combat attacks to magically deal an extra [[/damage]] damage to
           a target on a hit.</p><p>This benefit lasts until the end of the turn.
-          If the priest expends a spell slot of 2nd level or higher, the extra
+          If the priest expends a power use of 2nd level or higher, the extra
           damage increases by 1d6 for each level above 1st.</p>
         chat: >-
-          <p>As a bonus action, the priest can expend a spell slot to cause its
-          melee weapon attacks to magically deal an extra <em>radiant
+          <p>As a bonus action, the priest can expend a power use to cause its
+          close combat attacks to magically deal an extra <em>radiant
           damage</em> to a target on a hit.</p>
       source:
         custom: ''
@@ -598,7 +598,7 @@ items:
           description:
             chatFlavor: ''
           duration:
-            concentration: false
+            maintained power: false
             value: '1'
             units: turn
             special: ''
@@ -695,7 +695,7 @@ items:
         units: lb
       price:
         value: 5
-        denomination: gp
+        denomination: CR
       attunement: ''
       equipped: true
       rarity: ''
@@ -769,7 +769,7 @@ items:
           description:
             chatFlavor: ''
           duration:
-            concentration: false
+            maintained power: false
             value: ''
             units: ''
             special: ''
@@ -910,7 +910,7 @@ items:
             chatFlavor: ''
           duration:
             units: inst
-            concentration: false
+            maintained power: false
             override: false
           effects: []
           range:
@@ -945,7 +945,7 @@ items:
           save:
             ability: dex
             dc:
-              calculation: spellcasting
+              calculation: power system
               formula: '13'
           sort: 0
       identifier: sacred-flame
@@ -1056,7 +1056,7 @@ items:
             chatFlavor: ''
           duration:
             units: inst
-            concentration: false
+            maintained power: false
             override: false
           effects: []
           range:
@@ -1105,12 +1105,12 @@ items:
       description:
         value: >-
           <p>A flash of light streaks toward a creature of your choice within
-          range. Make a ranged spell attack against the target. On a hit, the
+          range. Make a ranged power attack against the target. On a hit, the
           target takes 4d6 radiant damage, and the next attack roll made against
           this target before the end of your next turn has advantage, thanks to
           the mystical dim light glittering on the target until
           then.</p><p><strong>At Higher Levels.</strong> When you cast this
-          spell using a spell slot of 2nd level or higher, the damage increases
+          spell using a power use of 2nd level or higher, the damage increases
           by 1d6 for each slot level above 1st.</p>
         chat: ''
       source:
@@ -1173,7 +1173,7 @@ items:
             chatFlavor: ''
           duration:
             units: inst
-            concentration: false
+            maintained power: false
             override: false
           effects: []
           range:
@@ -1312,7 +1312,7 @@ items:
             chatFlavor: ''
           duration:
             units: inst
-            concentration: false
+            maintained power: false
             override: false
           effects: []
           range:
@@ -1335,7 +1335,7 @@ items:
           save:
             ability: wis
             dc:
-              calculation: spellcasting
+              calculation: power system
               formula: '13'
           sort: 0
       identifier: sanctuary
@@ -1426,7 +1426,7 @@ items:
             chatFlavor: ''
           duration:
             units: inst
-            concentration: false
+            maintained power: false
             override: false
           effects: []
           range:
@@ -1475,16 +1475,16 @@ items:
         value: >-
           <p>You create a floating, spectral weapon within range that lasts for
           the duration or until you cast this spell again. When you cast the
-          spell, you can make a melee spell attack against a creature within 5
+          spell, you can make a close combat power attack against a creature within 5
           feet of the weapon. On a hit, the target takes force damage equal to
-          1d8 + your spellcasting ability modifier.</p><p>As a bonus action on
+          1d8 + your power system ability modifier.</p><p>As a bonus action on
           your turn, you can move the weapon up to 20 feet and repeat the attack
           against a creature within 5 feet of it.</p><p>The weapon can take
           whatever form you choose. Clerics of deities who are associated with a
           particular weapon (as St. Cuthbert is known for his mace and Thor for
           his hammer) make this spell's effect resemble that
           weapon.</p><p><strong>At Higher Levels.</strong> When you cast this
-          spell using a spell slot of 3rd level or higher, the damage increases
+          spell using a power use of 3rd level or higher, the damage increases
           by 1d8 for every two slot levels above the 2nd.</p>
         chat: ''
       source:
@@ -1547,7 +1547,7 @@ items:
             chatFlavor: ''
           duration:
             units: inst
-            concentration: false
+            maintained power: false
             override: false
           effects: []
           range:
@@ -1620,12 +1620,12 @@ items:
           <p>Choose one creature, object, or magical effect within range. Any
           spell of 3rd level or lower on the target ends. For each spell of 4th
           level or higher on the target, make an ability check using your
-          spellcasting ability. The DC equals 10 + the spell's level. On a
+          power system ability. The DC equals 10 + the spell's level. On a
           successful check, the spell ends.</p><p><strong>Higher
-          Levels.</strong> When you cast this spell using a spell slot of 4th
+          Levels.</strong> When you cast this spell using a power use of 4th
           level or higher, you automatically end the effects of a spell on the
           target if the spell's level is equal to or less than the level of the
-          spell slot you used.</p>
+          power use you used.</p>
         chat: ''
       source:
         custom: ''
@@ -1687,7 +1687,7 @@ items:
             chatFlavor: ''
           duration:
             units: inst
-            concentration: false
+            maintained power: false
             override: false
           effects: []
           range:
@@ -1746,7 +1746,7 @@ items:
           creature takes 3d8 radiant damage (if you are good or neutral) or 3d8
           necrotic damage (if you are evil). On a successful save, the creature
           takes half as much damage.</p><p><strong>At Higher Levels.</strong>
-          When you cast this spell using a spell slot of 4th level or higher,
+          When you cast this spell using a power use of 4th level or higher,
           the damage increases by 1d8 for each slot level above 3rd.</p>
         chat: ''
       source:
@@ -1791,7 +1791,7 @@ items:
         - vocal
         - somatic
         - material
-        - concentration
+        - maintained power
       activities:
         dnd5eactivity000:
           _id: dnd5eactivity000
@@ -1810,7 +1810,7 @@ items:
             chatFlavor: ''
           duration:
             units: inst
-            concentration: false
+            maintained power: false
             override: false
           effects: []
           range:
@@ -1845,7 +1845,7 @@ items:
           save:
             ability: wis
             dc:
-              calculation: spellcasting
+              calculation: power system
               formula: '13'
           sort: 0
       identifier: spirit-guardians
@@ -1941,7 +1941,7 @@ items:
             chatFlavor: ''
           duration:
             units: inst
-            concentration: false
+            maintained power: false
             override: false
           effects: []
           range:
@@ -1964,7 +1964,7 @@ items:
           save:
             ability: dex
             dc:
-              calculation: spellcasting
+              calculation: power system
               formula: '13'
           sort: 0
       identifier: light
@@ -1993,9 +1993,9 @@ items:
       description:
         value: >-
           <p>A creature you touch regains a number of hit points equal to 1d8 +
-          your spellcasting ability modifier. This spell has no effect on undead
+          your power system ability modifier. This spell has no effect on undead
           or constructs.</p><p><strong>At Higher Levels.</strong> When you cast
-          this spell using a spell slot of 2nd level or higher, the healing
+          this spell using a power use of 2nd level or higher, the healing
           increases by 1d8 for each slot level above 1st.</p>
         chat: ''
       source:
@@ -2057,7 +2057,7 @@ items:
             chatFlavor: ''
           duration:
             units: inst
-            concentration: false
+            maintained power: false
             override: false
           effects: []
           range:
@@ -2130,7 +2130,7 @@ items:
         units: lb
       price:
         value: 50
-        denomination: gp
+        denomination: CR
       attunement: ''
       rarity: ''
       identified: true

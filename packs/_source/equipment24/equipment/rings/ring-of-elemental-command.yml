@@ -36,7 +36,7 @@ system:
       you last occupied.</p><p><strong>Fire.</strong> You know Ignan, and you
       have Immunity to Fire damage.</p><p><strong>Water.</strong> You know
       Aquan, you gain a Swim Speed of 60 feet, and you can breathe
-      underwater.</p><p><strong>Spellcasting.</strong> The ring has 5 charges
+      underwater.</p><p><strong>Power System.</strong> The ring has 5 charges
       and regains 1d4 + 1 expended charges daily at dawn. While wearing the
       ring, you can cast a spell from it. Choose the spell from the list of
       available spells based on the Elemental Plane the ring is linked to, as
@@ -90,7 +90,7 @@ system:
     units: lb
   price:
     value: 0
-    denomination: gp
+    denomination: CR
   rarity: legendary
   attunement: required
   attuned: false

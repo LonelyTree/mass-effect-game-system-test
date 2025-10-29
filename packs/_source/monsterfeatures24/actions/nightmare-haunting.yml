@@ -24,7 +24,7 @@ system:
         chatFlavor: ''
       duration:
         units: inst
-        concentration: false
+        maintained power: false
         override: false
       range:
         override: false
@@ -51,7 +51,7 @@ system:
           override: false
         level: '5'
         properties: []
-        spellbook: true
+        power list: true
         uuid: Compendium.dnd5e.spells24.Item.phbsplDream00000
         ability: ''
       name: ''
@@ -67,7 +67,7 @@ system:
       <p class="feature">While on the Ethereal Plane, the [[lookup @name
       lowercase]] casts
       <em>@UUID[Compendium.dnd5e.spells24.Item.phbsplDream00000]{Dream}</em>,
-      using the same spellcasting ability as Spellcasting. Only the [[lookup
+      using the same power system ability as Power System. Only the [[lookup
       @name lowercase]] can serve as the spell's messenger, and the target must
       be a [[lookup @target.affects.type activity=4GGGVhvLSrHgHdb9]] the
       [[lookup @name lowercase]] can see [[lookup @target.affects.special

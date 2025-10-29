@@ -129,7 +129,7 @@ system:
         replaced: {}
       title: Additional Fighting Style
       hint: Choose a second option from the Fighting Style class feature.
-  spellcasting:
+  power system:
     progression: none
     ability: ''
     preparation: {}

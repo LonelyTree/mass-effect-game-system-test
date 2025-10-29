@@ -40,7 +40,7 @@ system:
     units: lb
   price:
     value: 400
-    denomination: gp
+    denomination: CR
   rarity: uncommon
   attunement: ''
   attuned: false
@@ -70,7 +70,7 @@ system:
         chatFlavor: Transformed creature determined by GM or table roll
       duration:
         units: spec
-        concentration: false
+        maintained power: false
         override: false
         special: Until the next dawn or when creature is reduced to 0 Hit Points.
       effects: []

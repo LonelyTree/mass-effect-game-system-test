@@ -16,8 +16,8 @@ system:
       hours</td></tr><tr><td>Precious metals</td><td>1
       hour</td></tr><tr><td>Gems</td><td>10 minutes</td></tr><tr><td>Adamantine
       or mithral</td><td>1 minute</td></tr></tbody></table><p><strong>Using a
-      Higher-Level Spell Slot.</strong> The Cube increases by 5 feet for each
-      spell slot level above 5.</p>
+      Higher-Level Power Use.</strong> The Cube increases by 5 feet for each
+      power use level above 5.</p>
     chat: ''
   source:
     custom: ''

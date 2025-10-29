@@ -75,15 +75,15 @@ system:
     attunement:
       max: 3
     senses:
-      darkvision: 0
-      blindsight: 0
-      tremorsense: 0
-      truesight: 120
+      scanner: 0
+      thermal vision: 0
+      motion sensor: 0
+      radar ping: 120
       units: ft
       special: ''
-    spellcasting: cha
+    power system: cha
     exhaustion: 0
-    concentration:
+    maintained power:
       ability: ''
       roll:
         min: null
@@ -160,7 +160,7 @@ system:
       bypasses: []
   currency:
     pp: 0
-    gp: 0
+    CR: 0
     ep: 0
     sp: 0
     cp: 0
@@ -649,7 +649,7 @@ items:
           description:
             chatFlavor: ''
           duration:
-            concentration: false
+            maintained power: false
             value: ''
             units: ''
             special: ''
@@ -759,7 +759,7 @@ items:
           description:
             chatFlavor: ''
           duration:
-            concentration: false
+            maintained power: false
             value: ''
             units: ''
             special: ''
@@ -825,7 +825,7 @@ items:
       exportSource: null
     _key: '!actors.items!lOYt73eaJojBDxAV.BqJjoHBgnTDTcLbB'
   - _id: hWnnOw9zwmvWvFT7
-    name: Innate Spellcasting
+    name: Innate Power System
     type: feat
     img: icons/magic/light/projectiles-star-purple.webp
     system:
@@ -865,7 +865,7 @@ items:
       enchant: {}
       prerequisites:
         level: null
-      identifier: innate-spellcasting
+      identifier: innate-power system
     effects: []
     folder: null
     sort: 0
@@ -975,7 +975,7 @@ items:
           description:
             chatFlavor: ''
           duration:
-            concentration: false
+            maintained power: false
             value: ''
             units: ''
             special: ''
@@ -1053,7 +1053,7 @@ items:
         units: lb
       price:
         value: 50
-        denomination: gp
+        denomination: CR
       attunement: ''
       equipped: true
       rarity: ''
@@ -1130,7 +1130,7 @@ items:
           description:
             chatFlavor: ''
           duration:
-            concentration: false
+            maintained power: false
             value: ''
             units: ''
             special: ''
@@ -1236,7 +1236,7 @@ items:
         units: lb
       price:
         value: 350
-        denomination: gp
+        denomination: CR
       attunement: ''
       equipped: true
       rarity: ''
@@ -1314,7 +1314,7 @@ items:
           description:
             chatFlavor: ''
           duration:
-            concentration: false
+            maintained power: false
             value: ''
             units: ''
             special: ''
@@ -1389,7 +1389,7 @@ items:
           description:
             chatFlavor: ''
           duration:
-            concentration: false
+            maintained power: false
             value: ''
             units: ''
             special: ''
@@ -1547,7 +1547,7 @@ items:
           description:
             chatFlavor: ''
           duration:
-            concentration: false
+            maintained power: false
             value: ''
             units: inst
             special: ''
@@ -1661,7 +1661,7 @@ items:
           description:
             chatFlavor: ''
           duration:
-            concentration: false
+            maintained power: false
             value: ''
             units: ''
             special: ''
@@ -1798,7 +1798,7 @@ items:
           description:
             chatFlavor: ''
           duration:
-            concentration: false
+            maintained power: false
             value: ''
             units: inst
             special: ''
@@ -1965,7 +1965,7 @@ items:
       properties:
         - vocal
         - somatic
-        - concentration
+        - maintained power
       activities:
         dnd5eactivity000:
           _id: dnd5eactivity000
@@ -1984,7 +1984,7 @@ items:
             chatFlavor: ''
           duration:
             units: inst
-            concentration: false
+            maintained power: false
             override: false
           effects: []
           range:
@@ -2036,7 +2036,7 @@ items:
           Anything the target is wearing or carrying is invisible as long as it
           is on the target's person. The spell ends for a target that attacks or
           casts a spell.</p><p><strong>At Higher Levels.</strong> When you cast
-          this spell using a spell slot of 3rd level or higher, you can target
+          this spell using a power use of 3rd level or higher, you can target
           one additional creature for each slot level above 2nd.</p>
         chat: ''
       source:
@@ -2081,7 +2081,7 @@ items:
         - vocal
         - somatic
         - material
-        - concentration
+        - maintained power
       activities:
         dnd5eactivity000:
           _id: dnd5eactivity000
@@ -2100,7 +2100,7 @@ items:
             chatFlavor: ''
           duration:
             units: inst
-            concentration: false
+            maintained power: false
             override: false
           effects: []
           range:
@@ -2203,7 +2203,7 @@ items:
       properties:
         - vocal
         - somatic
-        - concentration
+        - maintained power
       activities:
         dnd5eactivity000:
           _id: dnd5eactivity000
@@ -2228,7 +2228,7 @@ items:
             chatFlavor: ''
           duration:
             units: inst
-            concentration: false
+            maintained power: false
             override: false
           effects: []
           range:
@@ -2263,7 +2263,7 @@ items:
           save:
             ability: dex
             dc:
-              calculation: spellcasting
+              calculation: power system
               formula: '25'
           sort: 0
       identifier: blade-barrier
@@ -2351,7 +2351,7 @@ items:
         - vocal
         - somatic
         - material
-        - concentration
+        - maintained power
       activities:
         dnd5eactivity000:
           _id: dnd5eactivity000
@@ -2376,7 +2376,7 @@ items:
             chatFlavor: ''
           duration:
             units: inst
-            concentration: false
+            maintained power: false
             override: false
           effects: []
           range:
@@ -2431,7 +2431,7 @@ items:
             chatFlavor: ''
           duration:
             units: inst
-            concentration: false
+            maintained power: false
             override: false
           effects: []
           range:
@@ -2454,7 +2454,7 @@ items:
           save:
             ability: cha
             dc:
-              calculation: spellcasting
+              calculation: power system
               formula: '25'
           sort: 0
       identifier: dispel-evil-and-good
@@ -2492,10 +2492,10 @@ items:
           return to life.</p><p>This spell closes all mortal wounds and restores
           any missing body parts.</p><p>Coming back from the dead is an ordeal.
           The target takes a −4 penalty to all attack rolls, saving throws, and
-          ability checks. Every time the target finishes a long rest, the
+          ability checks. Every time the target finishes a full rest, the
           penalty is reduced by 1 until it disappears.</p><p>Casting this spell
           to restore life to a creature that has been dead for one year or
-          longer taxes you greatly. Until you finish a long rest, you can't cast
+          longer taxes you greatly. Until you finish a full rest, you can't cast
           spells again, and you have disadvantage on all attack rolls, ability
           checks, and saving throws.</p>
         chat: ''
@@ -2532,7 +2532,7 @@ items:
       level: 7
       school: nec
       materials:
-        value: A diamond worth at least 1,000 gp, which the spell consumes
+        value: A diamond worth at least 1,000 CR, which the spell consumes
         consumed: true
         cost: 1000
         supply: 0
@@ -2567,7 +2567,7 @@ items:
             chatFlavor: ''
           duration:
             units: inst
-            concentration: false
+            maintained power: false
             override: false
           effects: []
           range:
@@ -2624,7 +2624,7 @@ items:
           one-word answer could be misleading or contrary to the deity's
           interests, the DM might offer a short phrase as an answer
           instead.</p><p>If you cast the spell two or more times before
-          finishing your next long rest, there is a cumulative 25 percent chance
+          finishing your next full rest, there is a cumulative 25 percent chance
           for each casting after the first that you get no answer. The DM makes
           this roll in secret.</p>
         chat: ''
@@ -2696,7 +2696,7 @@ items:
             chatFlavor: ''
           duration:
             units: inst
-            concentration: false
+            maintained power: false
             override: false
           effects: []
           range:
@@ -2849,7 +2849,7 @@ items:
         - vocal
         - somatic
         - material
-        - concentration
+        - maintained power
       activities:
         dnd5eactivity000:
           _id: dnd5eactivity000
@@ -2874,7 +2874,7 @@ items:
             chatFlavor: ''
           duration:
             units: inst
-            concentration: false
+            maintained power: false
             override: false
           effects: []
           range:

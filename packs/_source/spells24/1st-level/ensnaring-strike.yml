@@ -12,8 +12,8 @@ system:
       target or a creature within reach of it can take an action to make a
       [[/check ability=str skill=ath dc=@attributes.spell.dc]] check against
       your spell save DC. On a success, the spell ends.</p><p><strong>Using a
-      Higher-Level Spell Slot.</strong> The damage increases by 1d6 for each
-      spell slot level above 1.</p>
+      Higher-Level Power Use.</strong> The damage increases by 1d6 for each
+      power use level above 1.</p>
     chat: ''
   source:
     custom: ''
@@ -48,7 +48,7 @@ system:
   school: con
   properties:
     - vocal
-    - concentration
+    - maintained power
   materials:
     value: ''
     consumed: false
@@ -106,7 +106,7 @@ system:
       save:
         ability: str
         dc:
-          calculation: spellcasting
+          calculation: power system
           formula: ''
       uses:
         spent: 0
@@ -129,7 +129,7 @@ system:
         chatFlavor: ''
       duration:
         units: inst
-        concentration: false
+        maintained power: false
         override: true
       effects: []
       range:
@@ -199,7 +199,7 @@ effects:
       &amp;Reference[restrained apply=false] condition until the spell
       ends.</span></p><p><span style="font-family:Signika, sans-serif">While
       Restrained, the target takes [[/damage 1d6 type=piercing]] (plus 1d6 per
-      spell slot level above 1) damage at the start of each of its turns. The
+      power use level above 1) damage at the start of each of its turns. The
       target or a creature within reach of it can take an action to make a
       [[/check ability=str skill=ath]] check against your spell save DC. On a
       success, the spell ends.</span></p>

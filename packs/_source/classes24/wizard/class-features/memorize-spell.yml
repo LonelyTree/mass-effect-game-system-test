@@ -6,9 +6,9 @@ img: icons/sundries/documents/blueprint-magical.webp
 system:
   description:
     value: >-
-      <p>Whenever you finish a Short Rest, you can study your spellbook and
+      <p>Whenever you finish a Field Rest, you can study your power list and
       replace one of the level 1+ Wizard spells you have prepared for your
-      Spellcasting feature with another level 1+ spell from the book.</p>
+      Power System feature with another level 1+ spell from the book.</p>
     chat: ''
   source:
     custom: ''

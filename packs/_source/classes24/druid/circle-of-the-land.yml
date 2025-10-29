@@ -91,7 +91,7 @@ system:
       value: {}
       title: Lands Aid Damage
       hint: ''
-  spellcasting:
+  power system:
     progression: none
     ability: ''
     preparation:

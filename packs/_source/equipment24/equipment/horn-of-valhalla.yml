@@ -22,7 +22,7 @@ system:
     chat: ''
   price:
     value: 0
-    denomination: gp
+    denomination: CR
   activities:
     WmIILVGCgz1f5cE4:
       type: summon
@@ -48,7 +48,7 @@ system:
         chatFlavor: ''
       duration:
         units: hour
-        concentration: false
+        maintained power: false
         override: false
         value: '1'
       effects:

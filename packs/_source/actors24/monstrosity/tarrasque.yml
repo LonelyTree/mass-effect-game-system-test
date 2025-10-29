@@ -5,7 +5,7 @@ img: null
 system:
   currency:
     pp: 0
-    gp: 0
+    CR: 0
     ep: 0
     sp: 0
     cp: 0
@@ -363,15 +363,15 @@ system:
     attunement:
       max: 3
     senses:
-      darkvision: null
-      blindsight: 120
-      tremorsense: null
-      truesight: null
+      scanner: null
+      thermal vision: 120
+      motion sensor: null
+      radar ping: null
       units: null
       special: ''
-    spellcasting: str
+    power system: str
     exhaustion: 0
-    concentration:
+    maintained power:
       ability: ''
       roll:
         min: null
@@ -585,7 +585,7 @@ items:
             chatFlavor: ''
           duration:
             units: inst
-            concentration: false
+            maintained power: false
             override: false
           effects: []
           range:
@@ -741,7 +741,7 @@ items:
             chatFlavor: ''
           duration:
             units: inst
-            concentration: false
+            maintained power: false
             override: false
           effects: []
           range:
@@ -848,7 +848,7 @@ items:
             chatFlavor: ''
           duration:
             units: inst
-            concentration: false
+            maintained power: false
             override: false
           effects: []
           range:
@@ -949,7 +949,7 @@ items:
             chatFlavor: ''
           duration:
             units: inst
-            concentration: false
+            maintained power: false
             override: false
           effects:
             - _id: wMLRjKVfS2fpTjiH
@@ -1002,7 +1002,7 @@ items:
             chatFlavor: ''
           duration:
             units: inst
-            concentration: false
+            maintained power: false
             override: false
           effects: []
           range:
@@ -1087,7 +1087,7 @@ items:
         units: lb
       price:
         value: 0
-        denomination: gp
+        denomination: CR
       rarity: ''
       attunement: ''
       attuned: false
@@ -1191,7 +1191,7 @@ items:
           description: {}
           duration:
             units: inst
-            concentration: false
+            maintained power: false
             override: false
           effects: []
           range:
@@ -1239,7 +1239,7 @@ items:
         units: lb
       price:
         value: 0
-        denomination: gp
+        denomination: CR
       rarity: ''
       attunement: ''
       attuned: false
@@ -1326,7 +1326,7 @@ items:
             chatFlavor: ''
           duration:
             units: inst
-            concentration: false
+            maintained power: false
             override: false
           effects:
             - _id: rpn1911j8EHqAHMP
@@ -1387,7 +1387,7 @@ items:
         units: lb
       price:
         value: 0
-        denomination: gp
+        denomination: CR
       rarity: ''
       attunement: ''
       attuned: false
@@ -1519,7 +1519,7 @@ items:
             chatFlavor: ''
           duration:
             units: inst
-            concentration: false
+            maintained power: false
             override: false
           effects:
             - _id: DDrzXcjt2wWiTS9J
@@ -1698,7 +1698,7 @@ items:
             chatFlavor: ''
           duration:
             units: inst
-            concentration: false
+            maintained power: false
             override: false
           effects:
             - _id: VOHv1LyO3hHolZXo
@@ -1752,7 +1752,7 @@ items:
             chatFlavor: ''
           duration:
             units: inst
-            concentration: false
+            maintained power: false
             override: false
           effects: []
           range:
@@ -1808,7 +1808,7 @@ items:
             chatFlavor: ''
           duration:
             units: inst
-            concentration: false
+            maintained power: false
             override: false
           effects:
             - _id: aS5FyMP72vn3OKf1
@@ -2033,7 +2033,7 @@ items:
             chatFlavor: ''
           duration:
             units: inst
-            concentration: false
+            maintained power: false
             override: false
           effects: []
           range:
@@ -2134,7 +2134,7 @@ items:
             chatFlavor: ''
           duration:
             units: inst
-            concentration: false
+            maintained power: false
             override: false
           effects:
             - _id: ERWPInrx4mXsqrwL
@@ -2179,7 +2179,7 @@ items:
           @target.template.size activity=g4W0ovZxBeUrZKb8]]-[[lookup
           @target.template.units activity=g4W0ovZxBeUrZKb8]]. Emanation
           originating from itself. Creatures in that area lose
-          &amp;Reference[Concentration] and, if Medium or smaller, have the
+          &amp;Reference[Maintained Power] and, if Medium or smaller, have the
           &amp;Reference[Prone apply=false] condition. The [[lookup @name
           lowercase]] can't take this action again until the start of its next
           turn.</p>
@@ -2219,7 +2219,7 @@ items:
           startRound: null
           startTurn: null
         description: >-
-          <p>Creatures in that area lose &amp;Reference[Concentration] and, if
+          <p>Creatures in that area lose &amp;Reference[Maintained Power] and, if
           Medium or smaller, have the &amp;Reference[Prone apply=false]
           condition.</p>
         tint: '#ffffff'

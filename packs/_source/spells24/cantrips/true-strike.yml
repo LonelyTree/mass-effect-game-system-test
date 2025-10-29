@@ -3,10 +3,10 @@ system:
   description:
     value: >-
       <p>Guided by a flash of magical insight, you make one attack with the
-      weapon used in the spell's casting. The attack uses your spellcasting
+      weapon used in the spell's casting. The attack uses your power system
       ability for the attack and damage rolls instead of using Strength or
       Dexterity. If the attack deals damage, it can be Radiant damage or the
-      weapon's normal damage type (your choice).</p><p><strong>Cantrip
+      weapon's normal damage type (your choice).</p><p><strong>Basic Power
       Upgrade.</strong> Whether you deal Radiant damage or the weapon's normal
       damage type, the attack deals extra Radiant damage when you reach levels 5
       (1d6), 11 (2d6), and 17 (3d6).</p>
@@ -70,7 +70,7 @@ system:
         chatFlavor: ''
       duration:
         units: inst
-        concentration: false
+        maintained power: false
         override: false
       effects:
         - _id: SouQfUgwb9LlUraq
@@ -118,7 +118,7 @@ system:
         - Zsx8UvC9DmdrA1E1
     CiLsaHBi9F6eIXUS:
       type: attack
-      name: Spellcasting Attack
+      name: Power System Attack
       _id: CiLsaHBi9F6eIXUS
       sort: 0
       activation:
@@ -134,7 +134,7 @@ system:
         chatFlavor: ''
       duration:
         units: inst
-        concentration: false
+        maintained power: false
         override: false
       effects: []
       range:
@@ -158,7 +158,7 @@ system:
         type:
           value: melee
           classification: weapon
-        ability: spellcasting
+        ability: power system
         bonus: ''
       damage:
         critical:
@@ -169,7 +169,7 @@ system:
       appliedEffects: []
     cGNXKjpoRima6wjQ:
       type: attack
-      name: Spellcasting Attack
+      name: Power System Attack
       sort: 0
       activation:
         type: action
@@ -185,7 +185,7 @@ system:
         chatFlavor: ''
       duration:
         units: inst
-        concentration: false
+        maintained power: false
         override: false
       effects: []
       range:
@@ -212,7 +212,7 @@ system:
         type:
           value: ranged
           classification: weapon
-        ability: spellcasting
+        ability: power system
         bonus: ''
       damage:
         critical:
@@ -248,7 +248,7 @@ effects:
         priority: null
       - key: activities[attack].attack.ability
         mode: 5
-        value: spellcasting
+        value: power system
         priority: null
     duration:
       startTime: null

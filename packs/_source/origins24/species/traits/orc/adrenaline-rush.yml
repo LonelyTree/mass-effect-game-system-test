@@ -5,7 +5,7 @@ system:
       <p>You can take the Dash action as a Bonus Action. When you do so, you
       gain a number of Temporary Hit Points equal to your Proficiency Bonus. You
       can use this trait a number of times equal to your Proficiency Bonus, and
-      you regain all expended uses when you finish a Short or Long Rest.</p>
+      you regain all expended uses when you finish a Short or Full Rest.</p>
     chat: ''
   source:
     custom: ''
@@ -51,7 +51,7 @@ system:
         chatFlavor: ''
       duration:
         units: inst
-        concentration: false
+        maintained power: false
         override: false
       effects: []
       range:

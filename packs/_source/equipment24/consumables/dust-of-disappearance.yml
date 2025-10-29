@@ -27,7 +27,7 @@ system:
         chatFlavor: ''
       duration:
         units: spec
-        concentration: false
+        maintained power: false
         override: false
         special: up to 2d4 minutes
         value: ''
@@ -96,7 +96,7 @@ system:
     units: lb
   price:
     value: 200
-    denomination: gp
+    denomination: CR
   rarity: uncommon
   attunement: ''
   attuned: false

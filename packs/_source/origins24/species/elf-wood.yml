@@ -12,27 +12,27 @@ system:
       Traits</h3><p><strong>Creature Type:</strong> Humanoid</p><p><strong>Size:
       </strong>Medium (about 5–6 feet tall)</p><p><strong>Speed:</strong> 30
       feet</p><p>As an Elf, you have these special
-      traits.</p><p><strong>Darkvision. </strong>You have Darkvision with a
+      traits.</p><p><strong>Scanner. </strong>You have Scanner with a
       range of 60 feet.</p><p><strong>Elven Lineage. </strong>You are part of a
       lineage that grants you supernatural abilities.</p><p>When you reach
       character levels 3 and 5, you learn a higher-level spell, as shown on the
       table. You always have that spell prepared. You can cast it once without a
-      spell slot, and you regain the ability to cast it in that way when you
-      finish a Long Rest. You can also cast the spell using any spell slots you
+      power use, and you regain the ability to cast it in that way when you
+      finish a Full Rest. You can also cast the spell using any power uses you
       have of the appropriate level. Intelligence, Wisdom, or Charisma is your
-      spellcasting ability for the spells you cast with this trait (choose the
+      power system ability for the spells you cast with this trait (choose the
       ability when you select the lineage).</p><table><caption>Wood Elf Lineage
       Features</caption><thead><tr><td>Level 1</td><td>Level 3</td><td>Level
       5</td></tr></thead><tbody><tr><td>Your Speed increases to 35 feet. You
       also know the
       @UUID[Compendium.dnd5e.spells24.Item.phbsplDruidcraft]{Druidcraft}
-      cantrip.</td><td>@UUID[Compendium.dnd5e.spells24.Item.phbsplLongstride]{Longstrider}</td><td>@UUID[Compendium.dnd5e.spells24.Item.phbsplPasswithou]{Pass
+      basic power.</td><td>@UUID[Compendium.dnd5e.spells24.Item.phbsplLongstride]{Longstrider}</td><td>@UUID[Compendium.dnd5e.spells24.Item.phbsplPasswithou]{Pass
       without Trace}</td></tr></tbody></table><p><strong>Fey Ancestry.</strong>
       You have Advantage on saving throws you make to avoid or end the Charmed
       condition.</p><p><strong>Keen Senses.</strong> You have proficiency in the
       Insight, Perception, or Survival skill.</p><p><strong>Trance.</strong> You
       don't need to sleep, and magic can't put you to sleep. You can finish a
-      Long Rest in 4 hours if you spend those hours in a trancelike meditation,
+      Full Rest in 4 hours if you spend those hours in a trancelike meditation,
       during which you retain consciousness.</p>
     chat: ''
   source:
@@ -107,7 +107,7 @@ system:
       level: 3
       title: Wood Elf Traits
       hint: >-
-        Intelligence, Wisdom, or Charisma can be chosen for your spellcasting
+        Intelligence, Wisdom, or Charisma can be chosen for your power system
         ability.
     - _id: zFsEPXauTgmYxqiJ
       type: ItemGrant
@@ -127,7 +127,7 @@ system:
       level: 5
       title: Wood Elf Traits
       hint: >-
-        Intelligence, Wisdom, or Charisma can be chosen for your spellcasting
+        Intelligence, Wisdom, or Charisma can be chosen for your power system
         ability.
     - _id: RwuXccrKfMuuWLKr
       type: Trait
@@ -155,10 +155,10 @@ system:
     units: null
     hover: false
   senses:
-    darkvision: 60
-    blindsight: null
-    tremorsense: null
-    truesight: null
+    scanner: 60
+    thermal vision: null
+    motion sensor: null
+    radar ping: null
     units: null
     special: ''
   type:

@@ -5,7 +5,7 @@ system:
       <p>You touch a creature and choose Strength, Dexterity, Intelligence,
       Wisdom, or Charisma. For the duration, the target has Advantage on ability
       checks using the chosen ability.</p><p><strong>Using a Higher-Level Spell
-      Slot.</strong> You can target one additional creature for each spell slot
+      Slot.</strong> You can target one additional creature for each power use
       level above 2. You can choose a different ability for each target.</p>
     chat: ''
   source:
@@ -43,7 +43,7 @@ system:
     - vocal
     - somatic
     - material
-    - concentration
+    - maintained power
   materials:
     value: fur or a feather
     consumed: false

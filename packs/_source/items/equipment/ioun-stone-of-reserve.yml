@@ -35,7 +35,7 @@ system:
 
       <p>While this stone orbits your head, you can cast any spell stored in it.
       The spell uses the slot level, spell save DC, spell attack bonus, and
-      spellcasting ability of the original caster, but is otherwise treated as
+      power system ability of the original caster, but is otherwise treated as
       if you cast the spell. The spell cast from the stone is no longer stored
       in it, freeing up space.</p>
     chat: ''
@@ -51,7 +51,7 @@ system:
     units: lb
   price:
     value: 4000
-    denomination: gp
+    denomination: CR
   attunement: required
   equipped: false
   rarity: rare
@@ -108,7 +108,7 @@ system:
       description:
         chatFlavor: ''
       duration:
-        concentration: false
+        maintained power: false
         value: ''
         units: ''
         special: ''

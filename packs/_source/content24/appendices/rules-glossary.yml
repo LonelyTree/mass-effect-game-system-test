@@ -177,7 +177,7 @@ pages:
     category: null
     _key: '!journal.pages!phbAppendixCRule.UY4RGoKw9rOeazur'
   - sort: 2900000
-    name: Blindsight
+    name: Thermal Vision
     type: rule
     _id: tdtmXZbUIOZGSnKT
     system:
@@ -212,7 +212,7 @@ pages:
     category: null
     _key: '!journal.pages!phbAppendixCRule.tdtmXZbUIOZGSnKT'
   - sort: 7200000
-    name: Darkvision
+    name: Scanner
     type: rule
     _id: 7vQ1hLQ5fS6SSUqF
     system:
@@ -246,7 +246,7 @@ pages:
     category: null
     _key: '!journal.pages!phbAppendixCRule.7vQ1hLQ5fS6SSUqF'
   - sort: 14800000
-    name: Tremorsense
+    name: Motion Sensor
     type: rule
     _id: r64UrNusMhwJVnxb
     system:
@@ -280,7 +280,7 @@ pages:
     category: null
     _key: '!journal.pages!phbAppendixCRule.r64UrNusMhwJVnxb'
   - sort: 14900000
-    name: Truesight
+    name: Radar Ping
     type: rule
     _id: be7g0q1xBAwb8drv
     system:
@@ -293,7 +293,7 @@ pages:
     text:
       format: 1
       content: >-
-        <p>If you have Truesight, your vision is enhanced within a specified
+        <p>If you have Radar Ping, your vision is enhanced within a specified
         range. Within that range, your vision pierces through the
         following:</p><p><strong>Darkness.</strong> You can see in normal and
         magical
@@ -724,9 +724,9 @@ pages:
         time of an action or use a feature or magic item that requires a Magic
         action to be activated.</p><p>If you cast a spell that has a casting
         time of 1 minute or longer, you must take the Magic action on each turn
-        of that casting, and you must maintain &amp;Reference[Concentration]
-        while you do so. If your Concentration is broken, the spell fails, but
-        you don’t expend a spell slot.</p>
+        of that casting, and you must maintain &amp;Reference[Maintained Power]
+        while you do so. If your Maintained Power is broken, the spell fails, but
+        you don’t expend a power use.</p>
       markdown: ''
     video:
       controls: true
@@ -773,9 +773,9 @@ pages:
         trigger.</p><p>When you Ready a spell, you cast it as normal (expending
         any resources used to cast it) but hold its energy, which you release
         with your Reaction when the trigger occurs. To be readied, a spell must
-        have a casting time of an action, and holding on to the spell’s magic
-        requires @UUID[.0a2umg2mJMAzM9Q3]{Concentration}, which you can maintain
-        up to the start of your next turn. If your Concentration is broken, the
+        have a activation time of an action, and holding on to the spell’s magic
+        requires @UUID[.0a2umg2mJMAzM9Q3]{Maintained Power}, which you can maintain
+        up to the start of your next turn. If your Maintained Power is broken, the
         spell dissipates without taking effect.</p>
     video:
       controls: true
@@ -926,7 +926,7 @@ pages:
     category: null
     _key: '!journal.pages!phbAppendixCRule.UDlogfdiT2uYEZz4'
   - sort: 4300000
-    name: Concentration
+    name: Maintained Power
     type: rule
     _id: 0a2umg2mJMAzM9Q3
     system:
@@ -1176,7 +1176,7 @@ pages:
         level.</p><p><em><strong>Speed Reduced.</strong></em> Your
         &amp;Reference[Speed] is reduced by a number of feet equal to 5 times
         your Exhaustion level.</p><p><em><strong>Removing Exhaustion
-        Levels.</strong></em> Finishing a &amp;Reference[Long Rest] removes 1 of
+        Levels.</strong></em> Finishing a &amp;Reference[Full Rest] removes 1 of
         your Exhaustion levels. When your Exhaustion level reaches 0, the
         condition ends.</p>
     video:
@@ -1294,8 +1294,8 @@ pages:
         effects.</p><p><em><strong>Inactive.</strong></em> You can’t take any
         @UUID[.SsIXfzS2ZttwAaKj]{action}, @UUID[.EjR3KL7KLTwjWBS0]{Bonus
         Action}, or @UUID[.OhSIWaQ61dOp7S8M]{Reaction}.</p><p><em><strong>No
-        Concentration.</strong></em> Your
-        @UUID[.0a2umg2mJMAzM9Q3]{Concentration} is
+        Maintained Power.</strong></em> Your
+        @UUID[.0a2umg2mJMAzM9Q3]{Maintained Power} is
         broken.</p><p><em><strong>Speechless.</strong></em> You can’t
         speak.</p><p><em><strong>Surprised.</strong></em> If you’re
         Incapacitated when you roll Initiative, you have
@@ -3892,7 +3892,7 @@ pages:
         <p>Hit Point Dice, or Hit Dice for short, help determine a player
         character’s Hit Point maximum, as explained in chapter 2. Most monsters
         also have Hit Dice. A creature can spend Hit Dice during a
-        @UUID[.wVuNbEADtC16ejAi]{Short Rest} to regain Hit Points.</p>
+        @UUID[.wVuNbEADtC16ejAi]{Field Rest} to regain Hit Points.</p>
     video:
       controls: true
       volume: 0.5
@@ -3912,7 +3912,7 @@ pages:
     category: null
     _key: '!journal.pages!phbAppendixCRule.9SzoRkB9GUlofZEB'
   - sort: 12900000
-    name: Short Rest
+    name: Field Rest
     type: rule
     _id: wVuNbEADtC16ejAi
     system:
@@ -3925,9 +3925,9 @@ pages:
     text:
       format: 1
       content: >-
-        <p>A Short Rest is a 1-hour period of downtime, during which a creature
+        <p>A Field Rest is a 1-hour period of downtime, during which a creature
         does nothing more strenuous than reading, talking, eating, or standing
-        watch. To start a Short Rest, you must have at least 1 Hit
+        watch. To start a Field Rest, you must have at least 1 Hit
         Point.</p><p><em><strong>Benefits of the Rest.</strong></em> When you
         finish the rest, you gain the following benefits:</p><p><strong>Spend
         Hit Point Dice.</strong> You can spend one or more of your Hit Point
@@ -3935,14 +3935,14 @@ pages:
         roll the die and add your Constitution modifier to it. You regain Hit
         Points equal to the total (minimum of 1 Hit Point). You can decide to
         spend an additional Hit Point Die after each roll.</p><p><strong>Special
-        Feature.</strong> Some features are recharged by a Short Rest. If you
+        Feature.</strong> Some features are recharged by a Field Rest. If you
         have such a feature, it recharges in the way specified in its
         description.</p><p><em><strong>Interrupting the Rest.</strong></em> A
-        Short Rest is stopped by the following interruptions:</p><ul><li
+        Field Rest is stopped by the following interruptions:</p><ul><li
         class="Core-Styles_Core-Bulleted">Rolling Initiative</li><li
         class="Core-Styles_Core-Bulleted">Casting a spell other than a
-        cantrip</li><li class="Core-Styles_Core-Bulleted">Taking any
-        damage</li></ul><p>An interrupted Short Rest confers no benefits.</p>
+        basic power</li><li class="Core-Styles_Core-Bulleted">Taking any
+        damage</li></ul><p>An interrupted Field Rest confers no benefits.</p>
       markdown: ''
     video:
       controls: true
@@ -3963,7 +3963,7 @@ pages:
     category: null
     _key: '!journal.pages!phbAppendixCRule.wVuNbEADtC16ejAi'
   - sort: 10800000
-    name: Long Rest
+    name: Full Rest
     type: rule
     _id: NGmwolHLA5ppbIZY
     system:
@@ -3976,14 +3976,14 @@ pages:
     text:
       format: 1
       content: >-
-        <p>A Long Rest is a period of extended downtime—at least 8
-        hours—available to any creature. During a Long Rest, you sleep for at
+        <p>A Full Rest is a period of extended downtime—at least 8
+        hours—available to any creature. During a Full Rest, you sleep for at
         least 6 hours and perform no more than 2 hours of light activity, such
         as reading, talking, eating, or standing watch.</p><p>During sleep, you
         have the &amp;Reference[Unconscious] condition. After you finish a Long
         Rest, you must wait at least 16 hours before starting another
         one.</p><p><em><strong>Benefits of the Rest.</strong></em> To start a
-        Long Rest, you must have at least 1 Hit Point. When you finish the rest,
+        Full Rest, you must have at least 1 Hit Point. When you finish the rest,
         you gain the following benefits:</p><p><strong>Regain All HP.</strong>
         You regain all lost Hit Points and all spent Hit Point Dice. If your Hit
         Point maximum was reduced, it returns to normal.</p><p><strong>Ability
@@ -3991,16 +3991,16 @@ pages:
         they return to normal.</p><p><strong>Exhaustion Reduced.</strong> If you
         have the &amp;Reference[Exhaustion] condition, its level decreases by
         1.</p><p><strong>Special Feature.</strong> Some features are recharged
-        by a Long Rest. If you have such a feature, it recharges in the way
+        by a Full Rest. If you have such a feature, it recharges in the way
         specified in its description.</p><p><em><strong>Interrupting the
-        Rest.</strong></em> A Long Rest is stopped by the following
+        Rest.</strong></em> A Full Rest is stopped by the following
         interruptions:</p><ul><li class="Core-Styles_Core-Bulleted">Rolling
         Initiative</li><li class="Core-Styles_Core-Bulleted">Casting a spell
-        other than a cantrip</li><li class="Core-Styles_Core-Bulleted">Taking
+        other than a basic power</li><li class="Core-Styles_Core-Bulleted">Taking
         any damage</li><li class="Core-Styles_Core-Bulleted">1 hour of walking
         or other physical exertion</li></ul><p>If you rested at least 1 hour
         before the interruption, you gain the benefits of a
-        @UUID[.wVuNbEADtC16ejAi]{Short Rest}.</p><p>You can resume a Long Rest
+        @UUID[.wVuNbEADtC16ejAi]{Field Rest}.</p><p>You can resume a Full Rest
         immediately after an interruption. If you do so, the rest requires 1
         additional hour per interruption to finish.</p>
       markdown: ''
@@ -4198,7 +4198,7 @@ pages:
         <p>When you would reduce a creature to 0 Hit Points with a melee attack,
         you can instead reduce the creature to 1 Hit Point. The creature then
         has the @UUID[.fZCRaKEJd4KoQCqH]{Unconscious} condition and starts a
-        @UUID[.wVuNbEADtC16ejAi]{Short Rest}.</p><p>The creature remains
+        @UUID[.wVuNbEADtC16ejAi]{Field Rest}.</p><p>The creature remains
         Unconscious until it regains any Hit Points or until someone uses an
         action to administer first aid to it, which requires a successful
         [[/check dc=10 med]] check.</p>
@@ -4492,7 +4492,7 @@ pages:
       format: 1
       content: >-
         <p>If a rule says you can use something a certain number of times per
-        day, that means you must finish a @UUID[.NGmwolHLA5ppbIZY]{Long Rest} to
+        day, that means you must finish a @UUID[.NGmwolHLA5ppbIZY]{Full Rest} to
         use it again after you run out of uses.</p>
     video:
       controls: true
@@ -4677,7 +4677,7 @@ pages:
       content: >-
         <p>If you have a spell prepared that has the Ritual tag, you can cast
         that spell as a Ritual. The Ritual version of a spell takes 10 minutes
-        longer to cast than normal. It also doesn’t expend a spell slot, which
+        longer to cast than normal. It also doesn’t expend a power use, which
         means the ritual version of a spell can’t be cast at a higher level.
         <em>See also</em>
         @UUID[Compendium.dnd5e.content24.JournalEntry.phbSpells0000000]{chapter
@@ -4814,7 +4814,7 @@ pages:
   - sort: 12800000
     name: Shape-Shifting
     type: rule
-    _id: SGPAyMHJnd0MZC31
+    _id: SCRAyMHJnd0MZC31
     system:
       tooltip: ''
       type: rule
@@ -4849,7 +4849,7 @@ pages:
       lastModifiedBy: dnd5ebuilder0000
       exportSource: null
     category: null
-    _key: '!journal.pages!phbAppendixCRule.SGPAyMHJnd0MZC31'
+    _key: '!journal.pages!phbAppendixCRule.SCRAyMHJnd0MZC31'
   - sort: 13000000
     name: Simultaneous Effects
     type: rule
@@ -5035,7 +5035,7 @@ pages:
     category: null
     _key: '!journal.pages!phbAppendixCRule.gxjZq9Df96FZIl6y'
   - sort: 13600000
-    name: Spellcasting Focus
+    name: Power System Focus
     type: rule
     _id: AKYkasQ56Pnatfmz
     system:
@@ -5048,10 +5048,10 @@ pages:
     text:
       format: 1
       content: >-
-        <p>A Spellcasting Focus is an object that certain creatures can use in
+        <p>A Power System Focus is an object that certain creatures can use in
         place of a spell’s Material components if those materials aren’t
         consumed by the spell and don’t have a cost specified. Some classes
-        allow its members to use certain types of Spellcasting Focuses. <em>See
+        allow its members to use certain types of Power System Focuses. <em>See
         also</em>
         @UUID[Compendium.dnd5e.content24.JournalEntry.phbSpells0000000.JournalEntryPage.iBFe4NyaCUinDoz3]{Casting
         Spells}.</p>
@@ -5154,15 +5154,15 @@ pages:
         @UUID[.vuK6Tth0DFgU74A6]{Immunity}.</p><p><em><strong>Gear.</strong></em>
         If the monster has any equipment that can be given away or retrieved,
         it’s listed in this entry.</p><p><em><strong>Senses. </strong></em>This
-        entry lists the monster’s special senses, such as Darkvision, and its
+        entry lists the monster’s special senses, such as Scanner, and its
         Passive Perception. <em>See also</em> @UUID[.Brc9AnUXBeg0MTX6]{Passive
         Perception}.</p><p><em><strong>Languages.</strong></em> This entry lists
         any languages the monster knows.</p><p><em><strong>CR.</strong></em>
-        Challenge Rating summarizes the threat a monster poses and is detailed
+        Threat Level summarizes the threat a monster poses and is detailed
         in the <em>Monster Manual</em>. The Experience Points characters receive
         for defeating a monster and its Proficiency Bonus follow. Some creatures
         that are created by magic have no CR. <em>See also</em>
-        @UUID[.BMoxmXB8pX6bOBus]{Challenge Rating} and
+        @UUID[.BMoxmXB8pX6bOBus]{Threat Level} and
         @UUID[.DksBBFbqPY2FCReT]{Experience Points}.</p><p><em><strong>Traits.
         </strong></em>The monster’s traits, if any, are features that are active
         at all times or in certain
@@ -5557,7 +5557,7 @@ pages:
         index.</p><p><strong>Abbreviations.</strong> The abbreviations listed
         below appear in this glossary and elsewhere in the
         rules.</p><table><thead><tr><th>Abbreviation</th><th>Meaning</th></tr></thead><tbody><tr><td><strong>AC</strong></td><td>Armor
-        Class</td></tr><tr><td><strong>C</strong></td><td>Concentration</td></tr><tr><td><strong>CE</strong></td><td>Chaotic
+        Class</td></tr><tr><td><strong>C</strong></td><td>Maintained Power</td></tr><tr><td><strong>CE</strong></td><td>Chaotic
         Evil</td></tr><tr><td><strong>CG</strong></td><td>Chaotic
         Good</td></tr><tr><td><strong>Cha.</strong></td><td>Charisma</td></tr><tr><td><strong>CN</strong></td><td>Chaotic
         Neutral</td></tr><tr><td><strong>Con.</strong></td><td>Constitution</td></tr><tr><td><strong>CP</strong></td><td>Copper
@@ -5565,7 +5565,7 @@ pages:
         Rating</td></tr><tr><td><strong>DC</strong></td><td>Difficulty
         Class</td></tr><tr><td><strong>Dex.</strong></td><td>Dexterity</td></tr><tr><td><strong>DM</strong></td><td>Dungeon
         Master</td></tr><tr><td><strong>EP</strong></td><td>Electrum
-        Piece(s)</td></tr><tr><td><strong>GP</strong></td><td>Gold
+        Piece(s)</td></tr><tr><td><strong>CR</strong></td><td>Gold
         Piece(s)</td></tr><tr><td><strong>HP</strong></td><td>Hit
         Point(s)</td></tr><tr><td><strong>Int.</strong></td><td>Intelligence</td></tr><tr><td><strong>LE</strong></td><td>Lawful
         Evil</td></tr><tr><td><strong>LG</strong></td><td>Lawful
@@ -5735,7 +5735,7 @@ pages:
     category: null
     _key: '!journal.pages!phbAppendixCRule.sy6xon5AxuIZV1ca'
   - sort: 3700000
-    name: Cantrip
+    name: Basic Power
     type: rule
     _id: 3RRDH9XNKf1LHgWl
     system:
@@ -6060,7 +6060,7 @@ pages:
     category: null
     _key: '!journal.pages!phbAppendixCRule.jxgi4EtQj7G0LkD9'
   - sort: 3900000
-    name: Challenge Rating
+    name: Threat Level
     type: rule
     _id: BMoxmXB8pX6bOBus
     system:
@@ -6073,7 +6073,7 @@ pages:
     text:
       format: 1
       content: >-
-        <p>Challenge Rating (CR) summarizes the threat a monster poses to a
+        <p>Threat Level (CR) summarizes the threat a monster poses to a
         group of four player characters. Compare a monster’s CR to the
         characters’ level. If the CR is higher, the monster is likely a danger.
         If the CR is lower, the monster likely poses little threat. But

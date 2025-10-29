@@ -12,7 +12,7 @@ system:
       creatures and structures in contact with the ground in that
       area.</p><p>The ground in the area becomes difficult terrain. Each
       creature on the ground that is concentrating must make a Constitution
-      saving throw. On a failed save, the creature's Concentration is
+      saving throw. On a failed save, the creature's Maintained Power is
       broken.</p><p>When you cast this spell and at the end of each turn you
       spend concentrating on it, each creature on the ground in the area must
       make a Dexterity saving throw. On a failed save, the creature is knocked
@@ -80,7 +80,7 @@ system:
     - vocal
     - somatic
     - material
-    - concentration
+    - maintained power
   activities:
     dnd5eactivity000:
       _id: dnd5eactivity000
@@ -99,7 +99,7 @@ system:
         chatFlavor: ''
       duration:
         units: inst
-        concentration: false
+        maintained power: false
         override: false
       effects: []
       range:
@@ -118,7 +118,7 @@ system:
       save:
         ability: dex
         dc:
-          calculation: spellcasting
+          calculation: power system
           formula: ''
       uses:
         spent: 0

@@ -45,7 +45,7 @@ system:
       description:
         chatFlavor: The aboleth focuses its gaze!
       duration:
-        concentration: false
+        maintained power: false
         value: ''
         units: ''
         special: ''
@@ -102,7 +102,7 @@ system:
       description:
         chatFlavor: The aboleth focuses its gaze!
       duration:
-        concentration: false
+        maintained power: false
         value: ''
         units: ''
         special: ''

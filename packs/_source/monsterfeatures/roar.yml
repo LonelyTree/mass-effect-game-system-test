@@ -9,7 +9,7 @@ system:
       <section class="secret">
 
       <p>the [[lookup @name lowercase]] emits a magical roar. Each time it roars
-      before finishing a long rest, the roar is louder and the effect is
+      before finishing a full rest, the roar is louder and the effect is
       different, as detailed below. Each creature within 500 feet of the
       [[lookup @name lowercase]] and able to hear the roar must make a saving
       throw.</p><p>**First Roar.** Each creature that fails a <strong>DC 18
@@ -28,7 +28,7 @@ system:
       </section>
 
       <p>the [[lookup @name lowercase]] emits a magical roar. Each time it roars
-      before finishing a long rest, the roar is louder and the effect is
+      before finishing a full rest, the roar is louder and the effect is
       different. Each creature within 500 feet of the [[lookup @name lowercase]]
       and able to hear the roar must make a saving throw.</p>
     chat: ''
@@ -72,7 +72,7 @@ system:
       description:
         chatFlavor: ''
       duration:
-        concentration: false
+        maintained power: false
         value: ''
         units: ''
         special: ''

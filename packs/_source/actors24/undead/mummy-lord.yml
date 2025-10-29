@@ -5,7 +5,7 @@ img: null
 system:
   currency:
     pp: 0
-    gp: 0
+    CR: 0
     ep: 0
     sp: 0
     cp: 0
@@ -363,15 +363,15 @@ system:
     attunement:
       max: 3
     senses:
-      darkvision: null
-      blindsight: null
-      tremorsense: null
-      truesight: 60
+      scanner: null
+      thermal vision: null
+      motion sensor: null
+      radar ping: 60
       units: null
       special: ''
-    spellcasting: str
+    power system: str
     exhaustion: 0
-    concentration:
+    maintained power:
       ability: ''
       roll:
         min: null
@@ -588,7 +588,7 @@ items:
             chatFlavor: ''
           duration:
             units: inst
-            concentration: false
+            maintained power: false
             override: false
           effects: []
           range:
@@ -802,7 +802,7 @@ items:
             chatFlavor: ''
           duration:
             units: inst
-            concentration: false
+            maintained power: false
             override: false
           effects:
             - _id: B1S4dZd1Lz0jokIo
@@ -865,7 +865,7 @@ items:
             chatFlavor: ''
           duration:
             units: inst
-            concentration: false
+            maintained power: false
             override: false
           effects: []
           range:
@@ -900,7 +900,7 @@ items:
           <p class="feature">[[/attack extended]]. [[/damage average extended]].
           If the target is a creature, it is cursed. While cursed, the target
           can't regain Hit Points, its Hit Point maximum doesn't return to
-          normal when finishing a Long Rest, and its Hit Point maximum decreases
+          normal when finishing a Full Rest, and its Hit Point maximum decreases
           by [[/r 3d6#HP Max Decrease]]{10 (3d6)} every 24 hours that elapse. A
           creature dies and turns to dust if reduced to 0 Hit Points by this
           attack.</p>
@@ -921,7 +921,7 @@ items:
         units: lb
       price:
         value: 0
-        denomination: gp
+        denomination: CR
       rarity: ''
       attunement: ''
       attuned: false
@@ -986,7 +986,7 @@ items:
         description: >-
           <p>If the target is a creature, it is cursed. While cursed, the target
           can’t regain Hit Points, its Hit Point maximum doesn’t return to
-          normal when finishing a Long Rest, and its Hit Point maximum decreases
+          normal when finishing a Full Rest, and its Hit Point maximum decreases
           by [[/r 3d6#HP Max Decrease]]{10 (3d6)} every 24 hours that elapse. A
           creature dies and turns to dust if reduced to 0 Hit Points by this
           attack.</p>
@@ -1053,7 +1053,7 @@ items:
           description: {}
           duration:
             units: inst
-            concentration: false
+            maintained power: false
             override: false
           effects: []
           range:
@@ -1119,8 +1119,8 @@ items:
       default: 0
     sort: -100000
     _key: '!actors.items!mmMummyLord00000.mmMultiattack000'
-  - _id: mmSpellcasting00
-    name: Spellcasting
+  - _id: mmPower System00
+    name: Power System
     type: feat
     system:
       type:
@@ -1144,7 +1144,7 @@ items:
             chatFlavor: ''
           duration:
             units: inst
-            concentration: false
+            maintained power: false
             override: false
           range:
             override: false
@@ -1168,7 +1168,7 @@ items:
             level: 3
             properties:
               - material
-            spellbook: true
+            power list: true
             uuid: Compendium.dnd5e.spells24.Item.phbsplDispelMagi
             ability: ''
           name: ''
@@ -1183,7 +1183,7 @@ items:
             level: null
             properties:
               - material
-            spellbook: true
+            power list: true
             ability: ''
           _id: 2L5xIB4F7pzLxodZ
           sort: 0
@@ -1200,7 +1200,7 @@ items:
             chatFlavor: ''
           duration:
             units: inst
-            concentration: false
+            maintained power: false
             override: false
           range:
             override: false
@@ -1228,7 +1228,7 @@ items:
             level: 3
             properties:
               - material
-            spellbook: true
+            power list: true
             ability: ''
           _id: r1CShKUHpGLk6S15
           sort: 0
@@ -1248,7 +1248,7 @@ items:
             chatFlavor: ''
           duration:
             units: inst
-            concentration: false
+            maintained power: false
             override: false
           range:
             override: false
@@ -1278,7 +1278,7 @@ items:
             level: 6
             properties:
               - material
-            spellbook: true
+            power list: true
             ability: ''
           _id: UuaXl5nquzkuZass
           sort: 0
@@ -1298,7 +1298,7 @@ items:
             chatFlavor: ''
           duration:
             units: inst
-            concentration: false
+            maintained power: false
             override: false
           range:
             override: false
@@ -1328,7 +1328,7 @@ items:
             level: 7
             properties:
               - material
-            spellbook: true
+            power list: true
             ability: ''
           _id: h8Z0JRmWxCy0fyYu
           sort: 0
@@ -1348,7 +1348,7 @@ items:
             chatFlavor: ''
           duration:
             units: inst
-            concentration: false
+            maintained power: false
             override: false
           range:
             override: false
@@ -1375,7 +1375,7 @@ items:
         value: >-
           <p class="feature">The [[lookup @name lowercase]] casts one of the
           following spells, requiring no Material components and using Wisdom as
-          the spellcasting ability (spell save DC [[lookup
+          the power system ability (spell save DC [[lookup
           @attributes.spell.dc]], +9 to hit with spell attacks):</p><p
           class="feature-trait"><strong>At Will:</strong>
           <em>@UUID[Compendium.dnd5e.spells24.Item.phbsplDispelMagi]{Dispel
@@ -1388,7 +1388,7 @@ items:
           <em>@UUID[Compendium.dnd5e.spells24.Item.phbsplInsectPlag]{Insect
           Plague}</em> (level 7 version)</p>
         chat: ''
-      identifier: spellcasting
+      identifier: power system
       source:
         revision: 1
         rules: '2024'
@@ -1412,7 +1412,7 @@ items:
           activity: []
           effect: []
     _stats:
-      compendiumSource: Compendium.dnd-monster-manual.features.Item.mmSpellcasting00
+      compendiumSource: Compendium.dnd-monster-manual.features.Item.mmPower System00
       duplicateSource: null
       coreVersion: '13.344'
       systemId: dnd5e
@@ -1424,11 +1424,11 @@ items:
     ownership:
       default: 0
     sort: 6
-    _key: '!actors.items!mmMummyLord00000.mmSpellcasting00'
+    _key: '!actors.items!mmMummyLord00000.mmPower System00'
   - name: Dispel Magic
     system:
       description:
-        value: "<p>Choose one creature, object, or magical effect within range. Any ongoing spell of level 3 or lower on the target ends. For each ongoing spell of level\_4 or higher on the target, make an ability check using your spellcasting ability (DC 10 plus that spell's level). On a successful check, the spell ends.</p><p><strong>Using a Higher-Level Spell Slot.</strong> You automatically end a spell on the target if the spell's level is equal to or less than the level of the spell slot you use.</p>"
+        value: "<p>Choose one creature, object, or magical effect within range. Any ongoing spell of level 3 or lower on the target ends. For each ongoing spell of level\_4 or higher on the target, make an ability check using your power system ability (DC 10 plus that spell's level). On a successful check, the spell ends.</p><p><strong>Using a Higher-Level Power Use.</strong> You automatically end a spell on the target if the spell's level is equal to or less than the level of the power use you use.</p>"
         chat: ''
       source:
         custom: ''
@@ -1490,7 +1490,7 @@ items:
           duration:
             units: inst
             override: false
-            concentration: false
+            maintained power: false
           effects: []
           range:
             override: false
@@ -1520,7 +1520,7 @@ items:
         name: Spell Changes
         img: systems/dnd5e/icons/svg/activity/cast.svg
         origin: >-
-          Compendium.dnd5e.actors24.Actor.mmMummyLord00000.Item.mmSpellcasting00.Activity.3MkhXZwZstyLUC3q
+          Compendium.dnd5e.actors24.Actor.mmMummyLord00000.Item.mmPower System00.Activity.3MkhXZwZstyLUC3q
         changes:
           - key: system.properties
             mode: 2
@@ -1560,7 +1560,7 @@ items:
       default: 0
     flags:
       dnd5e:
-        cachedFor: .Item.mmSpellcasting00.Activity.3MkhXZwZstyLUC3q
+        cachedFor: .Item.mmPower System00.Activity.3MkhXZwZstyLUC3q
     _stats:
       compendiumSource: Compendium.dnd5e.spells24.Item.phbsplDispelMagi
       duplicateSource: null
@@ -1653,7 +1653,7 @@ items:
             chatFlavor: ''
           duration:
             units: inst
-            concentration: false
+            maintained power: false
             override: false
           effects: []
           range:
@@ -1685,7 +1685,7 @@ items:
         name: Spell Changes
         img: systems/dnd5e/icons/svg/activity/cast.svg
         origin: >-
-          Compendium.dnd5e.actors24.Actor.mmMummyLord00000.Item.mmSpellcasting00.Activity.2L5xIB4F7pzLxodZ
+          Compendium.dnd5e.actors24.Actor.mmMummyLord00000.Item.mmPower System00.Activity.2L5xIB4F7pzLxodZ
         changes:
           - key: system.properties
             mode: 2
@@ -1728,7 +1728,7 @@ items:
         riders:
           activity: []
           effect: []
-        cachedFor: .Item.mmSpellcasting00.Activity.2L5xIB4F7pzLxodZ
+        cachedFor: .Item.mmPower System00.Activity.2L5xIB4F7pzLxodZ
     _stats:
       compendiumSource: Compendium.dnd5e.spells24.Item.phbsplThaumaturg
       duplicateSource: null
@@ -1767,7 +1767,7 @@ items:
           four creatures you have animated with this spell rather than animating
           a new creature.</p><p><strong>Using a Higher-Level Spell
           Slot.</strong> You animate or reassert control over two additional
-          Undead creatures for each spell slot level above 3. Each of the
+          Undead creatures for each power use level above 3. Each of the
           creatures must come from a different corpse or pile of bones.</p>
         chat: ''
       source:
@@ -1834,7 +1834,7 @@ items:
           duration:
             units: inst
             override: false
-            concentration: false
+            maintained power: false
           range:
             override: false
           target:
@@ -1893,7 +1893,7 @@ items:
         name: Spell Changes
         img: systems/dnd5e/icons/svg/activity/cast.svg
         origin: >-
-          Compendium.dnd5e.actors24.Actor.mmMummyLord00000.Item.mmSpellcasting00.Activity.r1CShKUHpGLk6S15
+          Compendium.dnd5e.actors24.Actor.mmMummyLord00000.Item.mmPower System00.Activity.r1CShKUHpGLk6S15
         changes:
           - key: system.properties
             mode: 2
@@ -1933,7 +1933,7 @@ items:
       default: 0
     flags:
       dnd5e:
-        cachedFor: .Item.mmSpellcasting00.Activity.r1CShKUHpGLk6S15
+        cachedFor: .Item.mmPower System00.Activity.r1CShKUHpGLk6S15
     _stats:
       compendiumSource: Compendium.dnd5e.spells24.Item.phbsplAnimateDea
       duplicateSource: null
@@ -2018,7 +2018,7 @@ items:
             chatFlavor: ''
           duration:
             units: inst
-            concentration: false
+            maintained power: false
             override: false
           effects: []
           range:
@@ -2054,7 +2054,7 @@ items:
             ability:
               - con
             dc:
-              calculation: spellcasting
+              calculation: power system
               formula: ''
           name: ''
       identifier: harm
@@ -2066,7 +2066,7 @@ items:
         name: Spell Changes
         img: systems/dnd5e/icons/svg/activity/cast.svg
         origin: >-
-          Compendium.dnd5e.actors24.Actor.mmMummyLord00000.Item.mmSpellcasting00.Activity.UuaXl5nquzkuZass
+          Compendium.dnd5e.actors24.Actor.mmMummyLord00000.Item.mmPower System00.Activity.UuaXl5nquzkuZass
         changes:
           - key: system.properties
             mode: 2
@@ -2109,7 +2109,7 @@ items:
         riders:
           activity: []
           effect: []
-        cachedFor: .Item.mmSpellcasting00.Activity.UuaXl5nquzkuZass
+        cachedFor: .Item.mmPower System00.Activity.UuaXl5nquzkuZass
     _stats:
       compendiumSource: Compendium.dnd5e.spells24.Item.phbsplHarm000000
       duplicateSource: null
@@ -2135,7 +2135,7 @@ items:
           creature also makes this save when it enters the spell's area for the
           first time on a turn or ends its turn there. A creature makes this
           save only once per turn.</p><p><strong>Using a Higher-Level Spell
-          Slot.</strong>The damage increases by 1d10 for each spell slot level
+          Slot.</strong>The damage increases by 1d10 for each power use level
           above 5.</p>
         chat: ''
       source:
@@ -2172,7 +2172,7 @@ items:
         - vocal
         - somatic
         - material
-        - concentration
+        - maintained power
       materials:
         value: a locust
         consumed: false
@@ -2200,7 +2200,7 @@ items:
           duration:
             units: inst
             override: false
-            concentration: false
+            maintained power: false
           effects: []
           range:
             override: false
@@ -2231,7 +2231,7 @@ items:
             ability:
               - con
             dc:
-              calculation: spellcasting
+              calculation: power system
               formula: ''
           uses:
             spent: 0
@@ -2246,7 +2246,7 @@ items:
         name: Spell Changes
         img: systems/dnd5e/icons/svg/activity/cast.svg
         origin: >-
-          Compendium.dnd5e.actors24.Actor.mmMummyLord00000.Item.mmSpellcasting00.Activity.h8Z0JRmWxCy0fyYu
+          Compendium.dnd5e.actors24.Actor.mmMummyLord00000.Item.mmPower System00.Activity.h8Z0JRmWxCy0fyYu
         changes:
           - key: system.properties
             mode: 2
@@ -2286,7 +2286,7 @@ items:
       default: 0
     flags:
       dnd5e:
-        cachedFor: .Item.mmSpellcasting00.Activity.h8Z0JRmWxCy0fyYu
+        cachedFor: .Item.mmPower System00.Activity.h8Z0JRmWxCy0fyYu
     _stats:
       compendiumSource: Compendium.dnd5e.spells24.Item.phbsplInsectPlag
       duplicateSource: null
@@ -2325,7 +2325,7 @@ items:
             chatFlavor: ''
           duration:
             units: inst
-            concentration: false
+            maintained power: false
             override: false
           effects: []
           range:
@@ -2382,7 +2382,7 @@ items:
         units: lb
       price:
         value: 0
-        denomination: gp
+        denomination: CR
       rarity: ''
       attunement: ''
       armor:
@@ -2473,7 +2473,7 @@ items:
             chatFlavor: ''
           duration:
             units: inst
-            concentration: false
+            maintained power: false
             override: false
           effects: []
           range:
@@ -2573,7 +2573,7 @@ items:
             chatFlavor: ''
           duration:
             units: inst
-            concentration: false
+            maintained power: false
             override: false
           effects:
             - _id: Xy0tzgObrMRF2lHm
@@ -2787,7 +2787,7 @@ items:
             chatFlavor: ''
           duration:
             units: inst
-            concentration: false
+            maintained power: false
             override: false
           range:
             override: false
@@ -2810,7 +2810,7 @@ items:
               override: false
             level: 2
             properties: []
-            spellbook: true
+            power list: true
             uuid: Compendium.dnd5e.spells24.Item.phbsplCommand000
             ability: ''
           name: Command
@@ -2822,8 +2822,8 @@ items:
         value: >-
           <p class="feature">The [[lookup @name lowercase]] casts
           <em>@UUID[Compendium.dnd5e.spells24.Item.phbsplCommand000]{Command}</em>
-          (level 2 version), using the same spellcasting ability as
-          Spellcasting. The [[lookup @name lowercase]] can't take this action
+          (level 2 version), using the same power system ability as
+          Power System. The [[lookup @name lowercase]] can't take this action
           again until the start of its next turn.</p>
         chat: ''
       identifier: dread-command
@@ -2879,8 +2879,8 @@ items:
           means.</p><p><strong>Grovel.</strong> The target has the Prone
           condition and then ends its turn.</p><p><strong>Halt.</strong> On its
           turn, the target doesn't move and takes no action or Bonus
-          Action.</p><p><strong>Using a Higher-Level Spell Slot.</strong> You
-          can affect one additional creature for each spell slot level above
+          Action.</p><p><strong>Using a Higher-Level Power Use.</strong> You
+          can affect one additional creature for each power use level above
           1.</p>
         chat: ''
       source:
@@ -2945,7 +2945,7 @@ items:
           duration:
             units: inst
             override: false
-            concentration: false
+            maintained power: false
           effects: []
           range:
             override: false
@@ -2964,7 +2964,7 @@ items:
             ability:
               - wis
             dc:
-              calculation: spellcasting
+              calculation: power system
               formula: ''
           uses:
             spent: 0
@@ -3058,7 +3058,7 @@ items:
             chatFlavor: ''
           duration:
             units: inst
-            concentration: false
+            maintained power: false
             override: false
           effects: []
           range:
@@ -3158,7 +3158,7 @@ items:
             chatFlavor: ''
           duration:
             units: inst
-            concentration: false
+            maintained power: false
             override: false
           effects:
             - _id: hRSvOovTSlu4Dw8c

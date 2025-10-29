@@ -5,7 +5,7 @@ img: null
 system:
   currency:
     pp: 0
-    gp: 0
+    CR: 0
     ep: 0
     sp: 0
     cp: 0
@@ -363,15 +363,15 @@ system:
     attunement:
       max: 3
     senses:
-      darkvision: null
-      blindsight: null
-      tremorsense: null
-      truesight: null
+      scanner: null
+      thermal vision: null
+      motion sensor: null
+      radar ping: null
       units: null
       special: ''
-    spellcasting: wis
+    power system: wis
     exhaustion: 0
-    concentration:
+    maintained power:
       ability: ''
       roll:
         min: null
@@ -563,7 +563,7 @@ items:
         chat: ''
       price:
         value: 5
-        denomination: gp
+        denomination: CR
       source:
         custom: ''
         rules: '2024'
@@ -647,7 +647,7 @@ items:
           description:
             chatFlavor: ''
           duration:
-            concentration: false
+            maintained power: false
             value: ''
             units: inst
             special: ''
@@ -758,7 +758,7 @@ items:
             chatFlavor: ''
           duration:
             units: inst
-            concentration: false
+            maintained power: false
             override: false
           effects: []
           range:
@@ -827,7 +827,7 @@ items:
         units: lb
       price:
         value: 0
-        denomination: gp
+        denomination: CR
       rarity: ''
       attunement: ''
       attuned: false
@@ -893,8 +893,8 @@ items:
       default: 0
     sort: 0
     _key: '!actors.items!mmPriestAcolyte0.mmRadiantFlame00'
-  - _id: mmSpellcasting00
-    name: Spellcasting
+  - _id: mmPower System00
+    name: Power System
     type: feat
     system:
       type:
@@ -918,7 +918,7 @@ items:
             chatFlavor: ''
           duration:
             units: inst
-            concentration: false
+            maintained power: false
             override: false
           range:
             override: false
@@ -941,7 +941,7 @@ items:
               override: false
             level: null
             properties: []
-            spellbook: true
+            power list: true
             uuid: Compendium.dnd5e.spells24.Item.phbsplLight00000
             ability: ''
           name: ''
@@ -955,7 +955,7 @@ items:
               override: false
             level: null
             properties: []
-            spellbook: true
+            power list: true
             ability: ''
           _id: o8YMf9MB4UV7Oze6
           sort: 0
@@ -972,7 +972,7 @@ items:
             chatFlavor: ''
           duration:
             units: inst
-            concentration: false
+            maintained power: false
             override: false
           range:
             override: false
@@ -996,12 +996,12 @@ items:
       description:
         value: >-
           <p class="feature">The [[lookup @name lowercase]] casts one of the
-          following spells, using Wisdom as the spellcasting ability:</p><p
+          following spells, using Wisdom as the power system ability:</p><p
           class="feature-trait"><strong>At Will:</strong>
           <em>@UUID[Compendium.dnd5e.spells24.Item.phbsplLight00000]{Light}</em>,
           <em>@UUID[Compendium.dnd5e.spells24.Item.phbsplThaumaturg]{Thaumaturgy}</em></p>
         chat: ''
-      identifier: spellcasting
+      identifier: power system
       source:
         revision: 1
         rules: '2024'
@@ -1025,7 +1025,7 @@ items:
           activity: []
           effect: []
     _stats:
-      compendiumSource: Compendium.dnd-monster-manual.features.Item.mmSpellcasting00
+      compendiumSource: Compendium.dnd-monster-manual.features.Item.mmPower System00
       duplicateSource: null
       coreVersion: '13.344'
       systemId: dnd5e
@@ -1037,7 +1037,7 @@ items:
     ownership:
       default: 0
     sort: 1
-    _key: '!actors.items!mmPriestAcolyte0.mmSpellcasting00'
+    _key: '!actors.items!mmPriestAcolyte0.mmPower System00'
   - _id: mmDivineAid00000
     name: Divine Aid
     type: feat
@@ -1066,7 +1066,7 @@ items:
             chatFlavor: ''
           duration:
             units: inst
-            concentration: false
+            maintained power: false
             override: false
           range:
             override: false
@@ -1089,7 +1089,7 @@ items:
               override: false
             level: 1
             properties: []
-            spellbook: true
+            power list: true
             uuid: Compendium.dnd5e.spells24.Item.phbsplBless00000
             ability: ''
           name: ''
@@ -1103,7 +1103,7 @@ items:
               override: false
             level: 1
             properties: []
-            spellbook: true
+            power list: true
             ability: ''
           _id: xlmEmICWCOXh1DRs
           sort: 0
@@ -1125,7 +1125,7 @@ items:
             chatFlavor: ''
           duration:
             units: inst
-            concentration: false
+            maintained power: false
             override: false
           range:
             override: false
@@ -1152,7 +1152,7 @@ items:
               override: false
             level: 1
             properties: []
-            spellbook: true
+            power list: true
             ability: ''
           _id: CNGV8z0AGMkv8u8E
           sort: 0
@@ -1173,7 +1173,7 @@ items:
             chatFlavor: ''
           duration:
             units: inst
-            concentration: false
+            maintained power: false
             override: false
           range:
             override: false
@@ -1205,8 +1205,8 @@ items:
           <em>@UUID[Compendium.dnd5e.spells24.Item.phbsplHealingWor]{Healing
           Word}</em>, or
           <em>@UUID[Compendium.dnd5e.spells24.Item.phbsplLesserRest]{Lesser
-          Restoration}</em>, using the same spellcasting ability as
-          Spellcasting.</p>
+          Restoration}</em>, using the same power system ability as
+          Power System.</p>
         chat: ''
       identifier: divine-aid
       source:
@@ -1254,8 +1254,8 @@ items:
           <p>You bless up to three creatures within range. Whenever a target
           makes an attack roll or a saving throw before the spell ends, the
           target adds 1d4 to the attack roll or save.</p><p><strong>Using a
-          Higher-Level Spell Slot.</strong> You can target one additional
-          creature for each spell slot level above 1.</p>
+          Higher-Level Power Use.</strong> You can target one additional
+          creature for each power use level above 1.</p>
         chat: ''
       source:
         custom: ''
@@ -1291,9 +1291,9 @@ items:
         - vocal
         - somatic
         - material
-        - concentration
+        - maintained power
       materials:
-        value: a Holy Symbol worth 5+ GP
+        value: a Holy Symbol worth 5+ CR
         consumed: false
         cost: 0
         supply: 0
@@ -1319,7 +1319,7 @@ items:
           duration:
             units: inst
             override: false
-            concentration: false
+            maintained power: false
           effects:
             - _id: 1dzvDffEh8wZ0oQy
           range:
@@ -1465,9 +1465,9 @@ items:
       description:
         value: >-
           <p>A creature of your choice that you can see within range regains Hit
-          Points equal to 2d4 plus your spellcasting ability
-          modifier.</p><p><strong>Using a Higher-Level Spell Slot.</strong> The
-          healing increases by 2d4 for each spell slot level above 1.</p>
+          Points equal to 2d4 plus your power system ability
+          modifier.</p><p><strong>Using a Higher-Level Power Use.</strong> The
+          healing increases by 2d4 for each power use level above 1.</p>
         chat: ''
       source:
         custom: ''
@@ -1528,7 +1528,7 @@ items:
           duration:
             units: inst
             override: false
-            concentration: false
+            maintained power: false
           effects: []
           range:
             override: false
@@ -1695,7 +1695,7 @@ items:
             chatFlavor: ''
           duration:
             units: inst
-            concentration: false
+            maintained power: false
             override: false
           effects:
             - _id: OuM8iKhckcDKavOx
@@ -1738,7 +1738,7 @@ items:
             chatFlavor: ''
           duration:
             units: inst
-            concentration: false
+            maintained power: false
             override: true
           effects: []
           range:
@@ -1764,7 +1764,7 @@ items:
             ability:
               - wis
             dc:
-              calculation: spellcasting
+              calculation: power system
               formula: ''
       identifier: sanctuary
     effects:
@@ -1935,7 +1935,7 @@ items:
             chatFlavor: ''
           duration:
             units: inst
-            concentration: false
+            maintained power: false
             override: false
           range:
             override: false
@@ -1992,7 +1992,7 @@ items:
         name: Spell Changes
         img: systems/dnd5e/icons/svg/activity/cast.svg
         origin: >-
-          Compendium.dnd5e.actors24.Actor.mmPriestAcolyte0.Item.mmSpellcasting00.Activity.3MkhXZwZstyLUC3q
+          Compendium.dnd5e.actors24.Actor.mmPriestAcolyte0.Item.mmPower System00.Activity.3MkhXZwZstyLUC3q
         changes: []
         system: {}
         disabled: false
@@ -2028,7 +2028,7 @@ items:
       default: 0
     flags:
       dnd5e:
-        cachedFor: .Item.mmSpellcasting00.Activity.3MkhXZwZstyLUC3q
+        cachedFor: .Item.mmPower System00.Activity.3MkhXZwZstyLUC3q
     _stats:
       compendiumSource: Compendium.dnd5e.spells24.Item.phbsplLight00000
       duplicateSource: null
@@ -2121,7 +2121,7 @@ items:
             chatFlavor: ''
           duration:
             units: inst
-            concentration: false
+            maintained power: false
             override: false
           effects: []
           range:
@@ -2153,7 +2153,7 @@ items:
         name: Spell Changes
         img: systems/dnd5e/icons/svg/activity/cast.svg
         origin: >-
-          Compendium.dnd5e.actors24.Actor.mmPriestAcolyte0.Item.mmSpellcasting00.Activity.o8YMf9MB4UV7Oze6
+          Compendium.dnd5e.actors24.Actor.mmPriestAcolyte0.Item.mmPower System00.Activity.o8YMf9MB4UV7Oze6
         changes: []
         system: {}
         disabled: false
@@ -2192,7 +2192,7 @@ items:
         riders:
           activity: []
           effect: []
-        cachedFor: .Item.mmSpellcasting00.Activity.o8YMf9MB4UV7Oze6
+        cachedFor: .Item.mmPower System00.Activity.o8YMf9MB4UV7Oze6
     _stats:
       compendiumSource: Compendium.dnd5e.spells24.Item.phbsplThaumaturg
       duplicateSource: null

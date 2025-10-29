@@ -31,7 +31,7 @@ system:
     units: lb
   price:
     value: 400
-    denomination: gp
+    denomination: CR
   attunement: ''
   equipped: false
   rarity: uncommon
@@ -43,7 +43,7 @@ system:
     cp: 0
     sp: 0
     ep: 0
-    gp: 0
+    CR: 0
     pp: 0
   unidentified:
     description: ''

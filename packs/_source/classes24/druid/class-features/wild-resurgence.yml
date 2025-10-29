@@ -7,15 +7,15 @@ system:
   description:
     value: >-
       <p>Once on each of your turns, if you have no uses of Wild Shape left, you
-      can give yourself one use by expending a spell slot (no action
+      can give yourself one use by expending a power use (no action
       required).</p><p>In addition, you can expend one use of Wild Shape (no
-      action required) to give yourself a level 1 spell slot, but you can't do
-      so again until you finish a Long Rest.</p><section class="secret"
+      action required) to give yourself a level 1 power use, but you can't do
+      so again until you finish a Full Rest.</p><section class="secret"
       id="secret-b0eq9t1Lkei4tN53"><p><strong>Foundry Note</strong></p><p>The
-      <strong>Regain Wild Shape</strong> activity consumes a spell slot and
+      <strong>Regain Wild Shape</strong> activity consumes a power use and
       grants you another use of Wild Shape.</p><p>The <strong>Regain Spell
       Slot</strong> activity will consume a use of Wild Shape and grant you a
-      level 1 spell slot.</p></section>
+      level 1 power use.</p></section>
     chat: ''
   source:
     custom: ''
@@ -71,7 +71,7 @@ system:
         units: inst
         special: ''
         override: false
-        concentration: false
+        maintained power: false
       effects: []
       range:
         units: self
@@ -103,7 +103,7 @@ system:
         recovery: []
         max: ''
       sort: 0
-      name: Regain Spell Slot
+      name: Regain Power Use
       img: systems/dnd5e/icons/svg/trait.svg
     7nAgPNN2dth7SR0D:
       type: utility
@@ -136,7 +136,7 @@ system:
         units: inst
         special: ''
         override: false
-        concentration: false
+        maintained power: false
       effects: []
       range:
         units: self

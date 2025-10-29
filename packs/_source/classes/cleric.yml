@@ -16,7 +16,7 @@ system:
       Wisdom, Charisma<br /><strong>Skills:</strong> Choose two from History,
       Insight, Medicine, Persuasion, and Religion</p><h1>Cleric
       Advancement</h1><table><thead><tr><td>Level</td><td>Proficiency
-      Bonus</td><td>Features</td></tr></thead><tbody><tr><td>1st</td><td>+2</td><td>@UUID[Compendium.dnd5e.classfeatures.Item.v4gKwLhAq9vuqza7]{Spellcasting}
+      Bonus</td><td>Features</td></tr></thead><tbody><tr><td>1st</td><td>+2</td><td>@UUID[Compendium.dnd5e.classfeatures.Item.v4gKwLhAq9vuqza7]{Power System}
       , @UUID[Compendium.dnd5e.classfeatures.Item.x637K2Icp2ZFM1TB]{Divine
       Domain}</td></tr><tr><td>2nd</td><td>+2</td><td>@UUID[Compendium.dnd5e.classfeatures.Item.YpiLQEKGalROn7iJ]{Channel
       Divinity (1/rest)}, Divine Domain
@@ -43,7 +43,7 @@ system:
       Undead (CR 3)}</td></tr><tr><td>15th</td><td>+5</td><td>8th Level Spell
       Slot</td></tr><tr><td>16th</td><td>+5</td><td>@UUID[Compendium.dnd5e.classfeatures.Item.s0Cc2zcX0JzIgam5]{Ability
       Score Improvement}</td></tr><tr><td>17th</td><td>+6</td><td>9th Level
-      Spell Slot,
+      Power Use,
       @UUID[Compendium.dnd5e.classfeatures.Item.NMy4piwXIpLjYbRE]{Destroy Undead
       (CR 4)}, Divine Domain
       feature</td></tr><tr><td>18th</td><td>+6</td><td>@UUID[Compendium.dnd5e.classfeatures.Item.YpiLQEKGalROn7iJ]{Channel
@@ -238,7 +238,7 @@ system:
       _id: bRWP2zsP33jeZcUY
     - type: ScaleValue
       configuration:
-        identifier: cantrips-known
+        identifier: basic powers-known
         type: number
         distance:
           units: ''
@@ -250,7 +250,7 @@ system:
           '10':
             value: 5
       value: {}
-      title: Cantrips Known
+      title: Basic Powers Known
       _id: b6vbDSfWTwxqyTke
     - type: AbilityScoreImprovement
       configuration:
@@ -343,7 +343,7 @@ system:
       value: {}
       level: 1
       title: Divine Domain
-  spellcasting:
+  power system:
     progression: full
     ability: wis
     preparation:

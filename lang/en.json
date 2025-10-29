@@ -249,7 +249,7 @@
   "SkillNat": "Systems"
 },
 "DND5E.AbbreviationCR": "CR",
-"DND5E.AbbreviationConc": "Conc.",
+"DND5E.AbbreviationConc": "Maint.",
 "DND5E.AbbreviationDC": "DC",
 "DND5E.AbbreviationKg": "kg",
 "DND5E.AbbreviationLR": "LR",
@@ -324,10 +324,10 @@
 "DND5E.ActionAbil": "Ability Check",
 "DND5E.ActionEnch": "Enchant",
 "DND5E.ActionHeal": "Heal",
-"DND5E.ActionMSAK": "Melee Spell Attack",
-"DND5E.ActionMWAK": "Melee Weapon Attack",
+"DND5E.ActionMSAK": "Melee Power Attack",
+"DND5E.ActionMWAK": "Close Combat Attack",
 "DND5E.ActionOther": "Other",
-"DND5E.ActionRSAK": "Ranged Spell Attack",
+"DND5E.ActionRSAK": "Ranged Power Attack",
 "DND5E.ActionRWAK": "Ranged Weapon Attack",
 "DND5E.ActionSave": "Saving Throw",
 "DND5E.ActionSumm": "Summon",
@@ -359,7 +359,7 @@
   },
   "Category": {
     "Combat": "Combat",
-    "Monster": "Monster",
+    "Monster": "Enemy",
     "Rest": "Rest",
     "Standard": "Standard",
     "Time": "Time",
@@ -402,7 +402,7 @@
       "Label": "Legendary Action"
     },
     "LongRest": {
-      "Label": "End of a Long Rest"
+      "Label": "End of a Full Rest"
     },
     "Minute": {
       "Header": "Minutes",
@@ -417,7 +417,7 @@
       "Label": "Reaction"
     },
     "ShortRest": {
-      "Label": "End of a Short Rest"
+      "Label": "End of a Field Rest"
     },
     "TurnEnd": {
       "Label": "End of Turn"
@@ -654,9 +654,9 @@
       "InvalidType": "Only {type} items can be selected for this choice.",
       "MaxSelected": "No additional items can be selected, uncheck items before selecting more.",
       "NoOriginal": "Previously selected choice no longer available for replacement.",
-      "SpellLevelAvailable": "Only {level} or lower spells can be chosen for this advancement.",
-      "SpellLevelSpecific": "Only {level} spells can be chosen for this advancement.",
-      "SpellList": "Only spells available on the {lists} spell list can be chosen for this advancement."
+      "SpellLevelAvailable": "Only {level} or lower powers can be chosen for this advancement.",
+      "SpellLevelSpecific": "Only {level} powers can be chosen for this advancement.",
+      "SpellList": "Only powers available on the {lists} power list can be chosen for this advancement."
     }
   },
   "ItemGrant": {
@@ -745,7 +745,7 @@
           }
         },
         "Hint": "Use this for representing creature challenge ratings for features like Wild Shape",
-        "Label": "Challenge Rating"
+        "Label": "Threat Level"
       },
       "Dice": {
         "FIELDS": {
@@ -801,7 +801,7 @@
           "label": "Ability"
         },
         "method": {
-          "label": "Spellcasting Method"
+          "label": "Power System Method"
         },
         "prepared": {
           "label": "Preparation"
@@ -815,12 +815,12 @@
           },
           "requireSlot": {
             "label": "Require Slot",
-            "hint": "Require a spell slot to be spent when using the limited uses. If not checked then the uses will be additional free uses that don't consume a slot."
+            "hint": "Require a power use to be spent when using the limited uses. If not checked then the uses will be additional free uses that don't consume a power use."
           }
         }
       }
     },
-    "FreeCasting": "Free Casting"
+    "FreeCasting": "Free Power Use"
   },
   "Subclass": {
     "Action": {
@@ -928,16 +928,16 @@
 "DND5E.Advantage": "Advantage",
 "DND5E.AdvantageMode": "Advantage Mode",
 "DND5E.Age": "Age",
-"DND5E.Alignment": "Alignment",
-"DND5E.AlignmentCE": "Chaotic Evil",
-"DND5E.AlignmentCG": "Chaotic Good",
-"DND5E.AlignmentCN": "Chaotic Neutral",
-"DND5E.AlignmentLE": "Lawful Evil",
-"DND5E.AlignmentLG": "Lawful Good",
-"DND5E.AlignmentLN": "Lawful Neutral",
-"DND5E.AlignmentNE": "Neutral Evil",
-"DND5E.AlignmentNG": "Neutral Good",
-"DND5E.AlignmentTN": "True Neutral",
+"DND5E.Alignment": "Reputation",
+"DND5E.AlignmentCE": "Renegade",
+"DND5E.AlignmentCG": "Paragon",
+"DND5E.AlignmentCN": "Neutral",
+"DND5E.AlignmentLE": "Renegade",
+"DND5E.AlignmentLG": "Paragon",
+"DND5E.AlignmentLN": "Neutral",
+"DND5E.AlignmentNE": "Renegade",
+"DND5E.AlignmentNG": "Paragon",
+"DND5E.AlignmentTN": "Neutral",
 "DND5E.Amount": "Amount",
 "DND5E.Appearance": "Appearance",
 "DND5E.Apply": "Apply",
@@ -1231,58 +1231,58 @@
 },
 
 "DND5E.CAST": {
-  "Title": "Cast",
+  "Title": "Use Power",
   "FIELDS": {
     "spell": {
-      "label": "Casting Details",
+      "label": "Power Details",
       "ability": {
-        "label": "Casting Ability",
-        "hint": "Ability to override the creature's normal spellcasting ability."
+        "label": "Power Ability",
+        "hint": "Ability to override the creature's normal power system ability."
       },
       "challenge": {
         "attack": {
           "label": "Attack Bonus",
-          "hint": "Flat to hit bonus in place of the spell's normal attack bonus."
+          "hint": "Flat to hit bonus in place of the power's normal attack bonus."
         },
         "save": {
           "label": "Save DC",
-          "hint": "Flat DC to use in place of the spell's normal save DC."
+          "hint": "Flat DC to use in place of the power's normal save DC."
         },
         "override": {
           "label": "Override Values",
-          "hint": "Override the spell's normal attack bonus & DC when casting."
+          "hint": "Override the power's normal attack bonus & DC when using."
         }
       },
       "level": {
-        "label": "Casting Level",
-        "hint": "Base level to cast the spell, if different than the spell's level."
+        "label": "Power Level",
+        "hint": "Base level to use the power, if different than the power's level."
       },
       "properties": {
         "label": "Ignored Properties",
-        "hint": "Spell components & tags to ignore while casting."
+        "hint": "Power components & tags to ignore while using."
       },
       "spellbook": {
-        "label": "Display in Spellbook",
-        "hint": "Display spell in the Spells tab of the character sheet."
+        "label": "Display in Power List",
+        "hint": "Display power in the Powers tab of the character sheet."
       },
       "uuid": {
-        "label": "Spell to Cast"
+        "label": "Power to Use"
       }
     }
   },
   "SECTIONS": {
-    "Spell": "Spell",
-    "Spellbook": "Additional Spells"
+    "Spell": "Power",
+    "Spellbook": "Additional Powers"
   },
   "Action": {
-    "RemoveSpell": "Remove Spell"
+    "RemoveSpell": "Remove Power"
   },
   "Enchantment": {
-    "Name": "Spell Changes"
+    "Name": "Power Changes"
   }
 },
 
-"DND5E.Casting": "Casting",
+"DND5E.Casting": "Power Use",
 "DND5E.Conditions": "Conditions",
 
 "DND5E.CONTAINER": {
@@ -1329,7 +1329,7 @@
   }
 },
 "DND5E.Challenge": "Challenge",
-"DND5E.ChallengeRating": "Challenge Rating",
+"DND5E.ChallengeRating": "Threat Level",
 "DND5E.Charged": "Charged",
 "DND5E.Charges": "Charges",
 "DND5E.ChatContextDamage": "Apply As Damage",
@@ -1462,8 +1462,8 @@
   "Filters": {
     "Label": "Filters",
     "Grouped": "{type} ({group})",
-    "HasDarkvision": "Has Darkvision",
-    "HasSpellcasting": "Has Spellcasting",
+    "HasDarkvision": "Has Scanner",
+    "HasSpellcasting": "Has Power System",
     "SearchResults": "Search results"
   },
   "Selection": {
@@ -1553,27 +1553,27 @@
 "DND5E.ConRestrained": "Restrained",
 "DND5E.ConStunned": "Stunned",
 "DND5E.ConUnconscious": "Unconscious",
-"DND5E.Concentration": "Concentration",
-"DND5E.ConcentrationAbbr": "C",
-"DND5E.ConcentrationBreak": "Break Concentration",
-"DND5E.ConcentrationBreakWarning": "Breaking concentration on an effect that is active on other creatures requires an active GM to be present.",
-"DND5E.ConcentrationBonus": "Concentration Bonus",
-"DND5E.ConcentrationDuration": "Concentration, up to {duration}",
-"DND5E.ConcentratingOn": "You are maintaining concentration on the effects of the '{name}' {type}.",
-"DND5E.ConcentratingEndChoice": "You are concentrating on effects from more than one source. Pick which effect to end.",
-"DND5E.ConcentratingMissingItem": "The effect that is concentrated on and to be replaced does not exist.",
-"DND5E.ConcentratingLimited": "You are not able to begin concentrating on an additional effect.",
-"DND5E.ConcentrationLimit": "Concentration Limit",
-"DND5E.ConcentratingEnd": "End Concentration",
-"DND5E.ConcentratingItemless": "Concentration With No Source",
-"DND5E.ConcentratingWarnLimit": "You cannot maintain concentration on more effects!",
-"DND5E.ConcentratingWarnLimitOptional": "You may end concentration on one of your maintained effects to use this item.",
-"DND5E.ConcentratingWarnLimitZero": "You are not able to maintain concentration on any effects!",
-"DND5E.ConcentrationConfigurationHint": "Configure concentration modifiers and bonuses which apply to this creature.",
+"DND5E.Concentration": "Maintained Power",
+"DND5E.ConcentrationAbbr": "M",
+"DND5E.ConcentrationBreak": "End Maintained Power",
+"DND5E.ConcentrationBreakWarning": "Ending a maintained power that is active on other creatures requires an active GM to be present.",
+"DND5E.ConcentrationBonus": "Maintained Power Bonus",
+"DND5E.ConcentrationDuration": "Maintained, up to {duration}",
+"DND5E.ConcentratingOn": "You are maintaining the effects of the '{name}' {type}.",
+"DND5E.ConcentratingEndChoice": "You are maintaining effects from more than one source. Pick which effect to end.",
+"DND5E.ConcentratingMissingItem": "The effect that is maintained and to be replaced does not exist.",
+"DND5E.ConcentratingLimited": "You are not able to begin maintaining an additional effect.",
+"DND5E.ConcentrationLimit": "Maintained Power Limit",
+"DND5E.ConcentratingEnd": "End Maintained Power",
+"DND5E.ConcentratingItemless": "Maintained Power With No Source",
+"DND5E.ConcentratingWarnLimit": "You cannot maintain more than one power effect!",
+"DND5E.ConcentratingWarnLimitOptional": "You may end a maintained power effect to use this item.",
+"DND5E.ConcentratingWarnLimitZero": "You are not able to maintain any power effects!",
+"DND5E.ConcentrationConfigurationHint": "Configure maintained power modifiers and bonuses which apply to this creature.",
 "DND5E.ConsumeTitle": "Resource Consumption",
 "DND5E.ConsumeAmount": "Consumption Amount",
 "DND5E.ConsumeHint": {
-  "Attribute": "Attribute to consume (e.g. currency.gp)",
+  "Attribute": "Attribute to consume (e.g. currency.cr)",
   "Item": "UUID of target in compendium"
 },
 "DND5E.ConsumeTarget": "Consumption Target",
@@ -1679,7 +1679,7 @@
         }
       },
       "spellSlot": {
-        "label": "Consume Spell Slot",
+        "label": "Consume Power Use",
         "hint": "Should using this activity consume a slot for this spell?"
       },
       "targets": {
@@ -1778,16 +1778,16 @@
       "Warning": "of {name}"
     },
     "SpellSlot": {
-      "one": "{level} slot",
-      "other": "{level} slots"
+      "one": "{level} use",
+      "other": "{level} uses"
     },
     "SpellSlots": {
-      "Label": "Spell Slots",
-      "PromptDecrease": "Consume Spell Slot?",
-      "PromptIncrease": "Restore Spell Slot?",
+      "Label": "Power Uses",
+      "PromptDecrease": "Consume Power Use?",
+      "PromptIncrease": "Restore Power Use?",
       "PromptHintDecrease": "Spend <strong>{cost}</strong> {slot} ({available} remaining).",
       "PromptHintIncrease": "Recover <strong>{cost}</strong> {slot}.",
-      "Warning": "{level} slots"
+      "Warning": "{level} uses"
     },
     "Use": {
       "one": "use",
@@ -1798,7 +1798,7 @@
     "MissingAttribute": "Attribute {attribute} configured to be consumed by {activity} activity on {item} could not be found.",
     "MissingHitDice": "Actor does not have a class with a {denomination} hit die.",
     "MissingItem": "Item configured to be consumed by {activity} activity on {item} could not be found.",
-    "MissingSpellSlot": "No {level} slots available.",
+    "MissingSpellSlot": "No {level} power uses available.",
     "None": "No {type} available to spend, {cost} required.",
     "NotEnough": "Not enough {type} available to spend, {cost} required and only {available} available.",
     "WillDestroy": "Consuming {item} will spend its final use and it will be destroyed."
@@ -1859,12 +1859,12 @@
 "DND5E.Currency": "Currency",
 "DND5E.CurrencyAbbrCP": "cp",
 "DND5E.CurrencyAbbrEP": "ep",
-"DND5E.CurrencyAbbrGP": "gp",
+"DND5E.CurrencyAbbrGP": "CR",
 "DND5E.CurrencyAbbrPP": "pp",
 "DND5E.CurrencyAbbrSP": "sp",
 "DND5E.CurrencyCP": "Copper",
 "DND5E.CurrencyEP": "Electrum",
-"DND5E.CurrencyGP": "Gold",
+"DND5E.CurrencyGP": "Credits",
 "DND5E.CurrencyPP": "Platinum",
 "DND5E.CurrencySP": "Silver",
 "DND5E.CurrencyManager": {
@@ -1962,10 +1962,10 @@
   },
   "Scaling": {
     "Half": "Every Other Level",
-    "HalfCantrip": "Half Cantrip Scaling",
+    "HalfCantrip": "Half Basic Power Scaling",
     "None": "No Scaling",
     "Whole": "Every Level",
-    "WholeCantrip": "Cantrip Scaling"
+    "WholeCantrip": "Basic Power Scaling"
   }
 },
 
@@ -2238,9 +2238,9 @@
   "Label": "Enchantment",
   "Period": {
     "AtWill": "At Will",
-    "LongRest": "Long Rest",
+    "LongRest": "Full Rest",
     "Never": "Never",
-    "ShortRest": "Short Rest"
+    "ShortRest": "Field Rest"
   },
   "Warning": {
     "NotOnActor": "Enchantments can only be added to items, not directly to actors.",
@@ -2630,7 +2630,7 @@
     "General": "General Feat",
     "Origin": "Origin Feat"
   },
-  "Monster": "Monster Feature",
+  "Monster": "Enemy Feature",
   "Species": "Species Feature",
   "SpeciesLegacy": "Race Feature",
   "SupernaturalGift": {
@@ -2644,10 +2644,10 @@
   }
 },
 "DND5E.Focus": {
-  "Label": "Spellcasting Focus",
-  "Arcane": "Arcane Focus",
-  "Druidic": "Druidic Focus",
-  "Holy": "Holy Focus"
+  "Label": "Power System Focus",
+  "Arcane": "Omni-Tool",
+  "Druidic": "Biotic Amp",
+  "Holy": "Power Amp"
 },
 "DND5E.Loot.Art": "Art Object",
 "DND5E.Loot.Gear": "Adventuring Gear",
@@ -3375,8 +3375,8 @@
 "DND5E.ReactionAbbr": "R",
 "DND5E.ReactionPl": "Reactions",
 "DND5E.Recharge": "Recharge",
-"DND5E.RechargeLong": "Recharge after a Long Rest",
-"DND5E.RechargeShort": "Recharge after a Short or Long Rest",
+"DND5E.RechargeLong": "Recharge after a Full Rest",
+"DND5E.RechargeShort": "Recharge after a Field or Full Rest",
 "DND5E.Recovery": "Recovery",
 "DND5E.RecoveryFormula": "Recovery Formula",
 
@@ -3509,19 +3509,19 @@
   "Long": {
     "Abbreviation": "LR",
     "Hint": {
-      "Group": "On a long rest group members will recover hit points, hit dice, class resources, limited use item charges, and spell slots.",
-      "GroupLegacy": "On a long rest group members will recover hit points, half of their maximum hit dice, class resources, limited use item charges, and spell slots.",
-      "Normal": "On a long rest you will recover hit points, hit dice, class resources, limited use item charges, and spell slots.",
-      "NormalLegacy": "On a long rest you will recover hit points, half your maximum hit dice, class resources, limited use item charges, and spell slots."
+      "Group": "On a full rest group members will recover hit points, hit dice, class resources, limited use item charges, and power uses.",
+      "GroupLegacy": "On a full rest group members will recover hit points, half of their maximum hit dice, class resources, limited use item charges, and power uses.",
+      "Normal": "On a full rest you will recover hit points, hit dice, class resources, limited use item charges, and power uses.",
+      "NormalLegacy": "On a full rest you will recover hit points, half your maximum hit dice, class resources, limited use item charges, and power uses."
     },
-    "Label": "Long Rest",
-    "LabelShort": "L. Rest",
-    "Recovery": "Recovers after Long Rest",
+    "Label": "Full Rest",
+    "LabelShort": "F. Rest",
+    "Recovery": "Recovers after Full Rest",
     "Result": {
-      "Full": "{name} takes a long rest and recovers {health} and {dice}.",
-      "HitDice": "{name} takes a long rest and recovers {dice}.",
-      "HitPoints": "{name} takes a long rest and recovers {health}.",
-      "Short": "{name} takes a long rest."
+      "Full": "{name} takes a full rest and recovers {health} and {dice}.",
+      "HitDice": "{name} takes a full rest and recovers {dice}.",
+      "HitPoints": "{name} takes a full rest and recovers {health}.",
+      "Short": "{name} takes a full rest."
     }
   },
   "NewDay": {
@@ -3545,15 +3545,15 @@
   "Short": {
     "Abbreviation": "SR",
     "Hint": {
-      "Group": "On a short rest group members can spend Hit Dice and will recover item uses.",
-      "Normal": "On a short rest you may spend remaining Hit Dice and recover item uses."
+      "Group": "On a field rest group members can spend Hit Dice and will recover item uses.",
+      "Normal": "On a field rest you may spend remaining Hit Dice and recover item uses."
     },
-    "Label": "Short Rest",
-    "LabelShort": "S. Rest",
-    "Recovery": "Recovers after Short Rest",
+    "Label": "Field Rest",
+    "LabelShort": "F. Rest",
+    "Recovery": "Recovers after Field Rest",
     "Result": {
-      "Full": "{name} takes a short rest spending {dice} to recover {health}.",
-      "Short": "{name} takes a short rest."
+      "Full": "{name} takes a field rest spending {dice} to recover {health}.",
+      "Short": "{name} takes a field rest."
     }
   },
   "Warning": {
@@ -3561,7 +3561,7 @@
   }
 },
 
-"DND5E.Ritual": "Ritual",
+"DND5E.Ritual": "Tech Protocol",
 "DND5E.RitualAbbr": "R",
 
 "DND5E.ROLL": {
@@ -3660,47 +3660,47 @@
 "DND5E.SaveBonus": "Saving Throw Bonus",
 "DND5E.SaveGlobalBonusHint": "This bonus applies to all saving throws made by this actor.",
 "DND5E.Scroll": {
-  "CreateFrom": "Create Scroll from {spell}",
-  "CreateScroll": "Create Scroll",
-  "Details": "Scroll Details",
+  "CreateFrom": "Create Module from {spell}",
+  "CreateScroll": "Create Power Module",
+  "Details": "Power Module Details",
   "Explanation": {
     "Label": "Explanation",
-    "Hint": "Amount of the rules on using spell scrolls to include in the created scroll.",
+    "Hint": "Amount of the rules on using power modules to include in the created module.",
     "Complete": "Complete",
     "Reference": "Reference"
   },
-  "RequiresConcentration": "Requires Concentration",
+  "RequiresConcentration": "Requires Maintenance",
   "SaveDC": "Save DC",
-  "Values": "Spell Values"
+  "Values": "Power Values"
 },
 "DND5E.Senses": "Senses",
 "DND5E.SensesConfig": "Configure Senses",
 "DND5E.SensesConfigHint": "Configure any special sensory perception abilities that this actor possesses.",
-"DND5E.SenseDarkvision": "Darkvision",
-"DND5E.SenseBlindsight": "Blindsight",
-"DND5E.SenseTremorsense": "Tremorsense",
-"DND5E.SenseTruesight": "Truesight",
+"DND5E.SenseDarkvision": "Scanner",
+"DND5E.SenseBlindsight": "Thermal Vision",
+"DND5E.SenseTremorsense": "Motion Sensor",
+"DND5E.SenseTruesight": "Radar Ping",
 "DND5E.SenseUnits": "Units",
 "DND5E.SenseSpecial": "Special Senses",
 "DND5E.Shape": "Shape",
 
 "DND5E.SheetClass": {
-  "Character": "Default 5e Character Sheet",
-  "ClassSummary": "Default 5e Class Summary Sheet",
-  "Container": "Default 5e Container Sheet",
-  "DifficultTerrain": "Default 5e Difficult Terrain Sheet",
-  "Encounter": "Default 5e Encounter Sheet",
-  "Group": "Default 5e Group Sheet",
-  "Item": "Default 5e Item Sheet",
-  "JournalEntry": "Default 5e Journal Entry Sheet",
-  "JournalEntryLegacy": "Legacy 5e Journal Entry Sheet",
-  "MapLocation": "Default 5e Map Location Sheet",
-  "NPC": "Default 5e NPC Sheet",
-  "RotateArea": "Default 5e Rotate Area Sheet",
-  "Rule": "Default 5e Rule Sheet",
-  "SpellList": "Default 5e Spell List Sheet",
-  "Token": "Default 5e Token Sheet",
-  "Vehicle": "Default 5e Vehicle Sheet"
+  "Character": "Default ME Character Sheet",
+  "ClassSummary": "Default ME Class Summary Sheet",
+  "Container": "Default ME Container Sheet",
+  "DifficultTerrain": "Default ME Difficult Terrain Sheet",
+  "Encounter": "Default ME Encounter Sheet",
+  "Group": "Default ME Group Sheet",
+  "Item": "Default ME Item Sheet",
+  "JournalEntry": "Default ME Journal Entry Sheet",
+  "JournalEntryLegacy": "Legacy ME Journal Entry Sheet",
+  "MapLocation": "Default ME Map Location Sheet",
+  "NPC": "Default ME NPC Sheet",
+  "RotateArea": "Default ME Rotate Area Sheet",
+  "Rule": "Default ME Rule Sheet",
+  "SpellList": "Default ME Power List Sheet",
+  "Token": "Default ME Token Sheet",
+  "Vehicle": "Default ME Vehicle Sheet"
 },
 
 "DND5E.SheetModeEdit": "Edit",
@@ -3760,10 +3760,10 @@
 "DND5E.SkillDec": "Deception",
 "DND5E.SkillHis": "History",
 "DND5E.SkillIns": "Insight",
-"DND5E.SkillInv": "Investigation",
+"DND5E.SkillInv": "Tech",
 "DND5E.SkillItm": "Intimidation",
-"DND5E.SkillMed": "Medicine",
-"DND5E.SkillNat": "Nature",
+"DND5E.SkillMed": "First Aid",
+"DND5E.SkillNat": "Systems",
 "DND5E.SkillPer": "Persuasion",
 "DND5E.SkillPrc": "Perception",
 "DND5E.SkillPrf": "Performance",
@@ -3838,18 +3838,18 @@
 },
 "DND5E.Speed": "Speed",
 "DND5E.SpeedSpecial": "Special Movement",
-"DND5E.SpellAbility": "Spellcasting Ability",
-"DND5E.SpellAbilitySet": "Set as Primary Spellcasting Ability",
-"DND5E.SpellAdd": "Add Spell",
-"DND5E.SpellCantrip": "Cantrip",
-"DND5E.SpellCastConsume": "Consume Spell Slot?",
-"DND5E.SpellCastNoSlots": "You have no available {level} spell slots with which to cast {name}",
-"DND5E.SpellCastNoSlotsLeft": "You have no available spell slots with which to cast {name}!",
-"DND5E.SpellCastTime": "Casting Time",
-"DND5E.SpellCastUpcast": "Cast at Level",
-"DND5E.SpellcasterLevel": "Spellcaster Level",
-"DND5E.SpellCastingHeader": "Spell Casting",
-"DND5E.Spellcasting": "Spellcasting",
+"DND5E.SpellAbility": "Power System Ability",
+"DND5E.SpellAbilitySet": "Set as Primary Power System Ability",
+"DND5E.SpellAdd": "Add Power",
+"DND5E.SpellCantrip": "Basic Power",
+"DND5E.SpellCastConsume": "Consume Power Use?",
+"DND5E.SpellCastNoSlots": "You have no available {level} power uses with which to use {name}",
+"DND5E.SpellCastNoSlotsLeft": "You have no available power uses with which to use {name}!",
+"DND5E.SpellCastTime": "Activation Time",
+"DND5E.SpellCastUpcast": "Use at Level",
+"DND5E.SpellcasterLevel": "Power User Level",
+"DND5E.SpellCastingHeader": "Power System",
+"DND5E.Spellcasting": "Power System",
 
 "DND5E.SPELLCASTING": {
   "METHODS": {
@@ -3857,131 +3857,131 @@
       "label": "At-Will"
     },
     "Innate": {
-      "label": "Innate Spellcasting"
+      "label": "Innate Powers"
     },
     "Ritual": {
-      "label": "Ritual Only"
+      "label": "Tech Protocol"
     },
     "Spell": {
-      "label": "Spellcasting",
+      "label": "Power System",
       "Full": {
-        "label": "Full Caster"
+        "label": "Full Power Progression"
       },
       "Half": {
-        "label": "Half Caster"
+        "label": "Half Power Progression"
       },
       "Third": {
-        "label": "Third Caster"
+        "label": "Third Power Progression"
       },
       "Artificer": {
-        "label": "Artificer"
+        "label": "Hybrid"
       }
     },
     "Pact": {
-      "abbr": "Pact",
-      "label": "Pact Magic",
+      "abbr": "Combat",
+      "label": "Combat Powers",
       "Full": {
-        "label": "Pact Magic"
+        "label": "Combat Powers"
       }
     }
   },
   "SLOTS": {
-    "spell0": "Cantrips",
-    "spell1": "1st Level",
-    "spell2": "2nd Level",
-    "spell3": "3rd Level",
-    "spell4": "4th Level",
-    "spell5": "5th Level",
-    "spell6": "6th Level",
-    "spell7": "7th Level",
-    "spell8": "8th Level",
-    "spell9": "9th Level"
+    "spell0": "Basic Powers",
+    "spell1": "Level 1",
+    "spell2": "Level 2",
+    "spell3": "Level 3",
+    "spell4": "Level 4",
+    "spell5": "Level 5",
+    "spell6": "Level 6",
+    "spell7": "Level 7",
+    "spell8": "Level 8",
+    "spell9": "Level 9"
   },
   "STATES": {
     "Unprepared": "Not Prepared",
     "Prepared": "Prepared",
     "AlwaysPrepared": "Always Prepared"
   },
-  "Unlabeled": "Unlabeled Spellcasting"
+  "Unlabeled": "Unlabeled Power System"
 },
 
-"DND5E.SpellcastingClass": "{class} Spellcasting",
-"DND5E.SpellComponent": "Spell Component",
-"DND5E.SpellComponents": "Spell Components",
-"DND5E.SpellCreate": "Create Spell",
-"DND5E.SpellDC": "Spell DC",
-"DND5E.SpellDetails": "Spell Details",
-"DND5E.SpellEffects": "Spell Effects",
+"DND5E.SpellcastingClass": "{class} Power System",
+"DND5E.SpellComponent": "Power Component",
+"DND5E.SpellComponents": "Power Components",
+"DND5E.SpellCreate": "Create Power",
+"DND5E.SpellDC": "Power DC",
+"DND5E.SpellDetails": "Power Details",
+"DND5E.SpellEffects": "Power Effects",
 "DND5E.SpellHeader": {
   "Formula": "Formula",
   "Range": "Range",
   "Roll": "Roll",
-  "School": "School",
+  "School": "Type",
   "Target": "Target",
   "Time": "Time"
 },
-"DND5E.SpellLevel": "Spell Level",
-"DND5E.SpellLevels": "Spell Levels",
-"DND5E.SpellLevel0": "Cantrip",
-"DND5E.SpellLevel1": "1st Level",
-"DND5E.SpellLevel2": "2nd Level",
-"DND5E.SpellLevel3": "3rd Level",
-"DND5E.SpellLevel4": "4th Level",
-"DND5E.SpellLevel5": "5th Level",
-"DND5E.SpellLevel6": "6th Level",
-"DND5E.SpellLevel7": "7th Level",
-"DND5E.SpellLevel8": "8th Level",
-"DND5E.SpellLevel9": "9th Level",
-"DND5E.SpellLevelSpell": "{level} ({n} Slots)",
-"DND5E.SpellLevelPact": "Pact Slot [Level {level}] ({n} Slots)",
-"DND5E.SpellMaterials": "Spellcasting Materials",
+"DND5E.SpellLevel": "Power Level",
+"DND5E.SpellLevels": "Power Levels",
+"DND5E.SpellLevel0": "Basic",
+"DND5E.SpellLevel1": "Level 1",
+"DND5E.SpellLevel2": "Level 2",
+"DND5E.SpellLevel3": "Level 3",
+"DND5E.SpellLevel4": "Level 4",
+"DND5E.SpellLevel5": "Level 5",
+"DND5E.SpellLevel6": "Level 6",
+"DND5E.SpellLevel7": "Level 7",
+"DND5E.SpellLevel8": "Level 8",
+"DND5E.SpellLevel9": "Level 9",
+"DND5E.SpellLevelSpell": "{level} ({n} Uses)",
+"DND5E.SpellLevelPact": "Combat Power [Level {level}] ({n} Uses)",
+"DND5E.SpellMaterials": "Power Requirements",
 "DND5E.SpellMaterialsConsumed": "Consume Materials",
 "DND5E.SpellMaterialsCost": "Material Cost",
 "DND5E.SpellMaterialsDescription": "Material Description",
 "DND5E.SpellMaterialsSupply": "Material Supply",
-"DND5E.SpellName": "Spell Name",
+"DND5E.SpellName": "Power Name",
 "DND5E.SpellNone": "None",
 "DND5E.SpellPrepAtWill": "At-Will",
-"DND5E.SpellPrepInnate": "Innate Spellcasting",
-"DND5E.SpellPrepRitual": "Ritual Only",
+"DND5E.SpellPrepInnate": "Innate Powers",
+"DND5E.SpellPrepRitual": "Tech Protocol",
 "DND5E.SpellPrepPrepared": "Prepared",
 "DND5E.SpellPrepAlways": "Always Prepared",
 "DND5E.SpellPreparation": {
-  "Label": "Spell Preparation",
+  "Label": "Power Preparation",
   "Formula": "Preparation Formula",
-  "Method": "Spellcasting Method"
+  "Method": "Power System Method"
 },
 "DND5E.SpellSourceClass": "Source Class",
 "DND5E.SpellPrepared": "Prepared",
-"DND5E.SpellProgArt": "Artificer",
-"DND5E.SpellProgAvailable": "Available slots",
-"DND5E.SpellProgFull": "Full Caster",
-"DND5E.SpellProgHalf": "Half Caster",
-"DND5E.SpellProgLeveled": "Leveled Magic",
-"DND5E.SpellProgOverride": "Override slots",
-"DND5E.SpellProgPact": "Pact Magic",
-"DND5E.SpellProgThird": "Third Caster",
-"DND5E.SpellProgression": "Spell Progression",
-"DND5E.SpellsSearch": "Search spells",
-"DND5E.SpellSchool": "Spell School",
-"DND5E.SpellScroll": "Spell Scroll",
-"DND5E.SpellSlotExpended": "Expended Spell Slot",
-"DND5E.SpellSlotN.one": "{n}st spell slot",
-"DND5E.SpellSlotN.two": "{n}nd spell slot",
-"DND5E.SpellSlotN.few": "{n}rd spell slot",
-"DND5E.SpellSlotN.other": "{n}th spell slot",
-"DND5E.SpellSlotTemporary": "Temporary Spell Slot",
-"DND5E.SpellSlotsN.one": "{n}st Level Slots",
-"DND5E.SpellSlotsN.two": "{n}nd Level Slots",
-"DND5E.SpellSlotsN.few": "{n}rd Level Slots",
-"DND5E.SpellSlotsN.other": "{n}th Level Slots",
-"DND5E.SpellSlotsPact": "Pact Slots",
-"DND5E.SpellSlotsConfig": "Configure Spell Slots",
-"DND5E.SpellTag": "Spell Tag",
-"DND5E.SpellTarget": "Spell Target",
+"DND5E.SpellProgArt": "Hybrid",
+"DND5E.SpellProgAvailable": "Available uses",
+"DND5E.SpellProgFull": "Full Power Progression",
+"DND5E.SpellProgHalf": "Half Power Progression",
+"DND5E.SpellProgLeveled": "Leveled Powers",
+"DND5E.SpellProgOverride": "Override uses",
+"DND5E.SpellProgPact": "Combat Powers",
+"DND5E.SpellProgThird": "Third Power Progression",
+"DND5E.SpellProgression": "Power Progression",
+"DND5E.SpellsSearch": "Search powers",
+"DND5E.SpellSchool": "Power Type",
+"DND5E.SpellScroll": "Power Module",
+"DND5E.SpellSlotExpended": "Expended Power Use",
+"DND5E.SpellSlotN.one": "{n}st power use",
+"DND5E.SpellSlotN.two": "{n}nd power use",
+"DND5E.SpellSlotN.few": "{n}rd power use",
+"DND5E.SpellSlotN.other": "{n}th power use",
+"DND5E.SpellSlotTemporary": "Temporary Power Use",
+"DND5E.SpellSlotsN.one": "{n}st Level Uses",
+"DND5E.SpellSlotsN.two": "{n}nd Level Uses",
+"DND5E.SpellSlotsN.few": "{n}rd Level Uses",
+"DND5E.SpellSlotsN.other": "{n}th Level Uses",
+"DND5E.SpellSlotsPact": "Combat Power Uses",
+"DND5E.SpellSlotsConfig": "Configure Power Uses",
+"DND5E.SpellTag": "Power Tag",
+"DND5E.SpellTarget": "Power Target",
 "DND5E.SpellUnprepared": "Unprepared",
-"DND5E.SpellUsage": "Spell Usage",
-"DND5E.Spellbook": "Spellbook",
+"DND5E.SpellUsage": "Power Usage",
+"DND5E.Spellbook": "Power List",
 "DND5E.Spent": "Spent",
 "DND5E.StartingEquipment": {
   "Title": "Starting Equipment",
@@ -3992,7 +3992,7 @@
   },
   "Choice": {
     "Armor": "Choose Armor",
-    "Focus": "Choose Spellcasting Focus",
+    "Focus": "Choose Power System Focus",
     "Tool": "Choose Tool",
     "Weapon": "Choose Weapon"
   },
@@ -4995,11 +4995,11 @@
         "Label": "Initiative"
       },
       "LongRest": {
-        "Label": "Long Rest",
+        "Label": "Full Rest",
         "Abbreviation": "LR"
       },
       "ShortRest": {
-        "Label": "Short Rest",
+        "Label": "Field Rest",
         "Abbreviation": "SR"
       },
       "Turn": {
@@ -5166,14 +5166,14 @@
 
 "DND5E.WeaponCategory": "{category} Weapon",
 "DND5E.WeaponImprov": "Improvised",
-"DND5E.WeaponMartialM": "Martial Melee",
-"DND5E.WeaponMartialProficiency": "Martial",
-"DND5E.WeaponMartialR": "Martial Ranged",
+"DND5E.WeaponMartialM": "Melee Weapon",
+"DND5E.WeaponMartialProficiency": "Heavy Weapons",
+"DND5E.WeaponMartialR": "Assault Rifle",
 "DND5E.WeaponNatural": "Natural",
-"DND5E.WeaponSiege": "Siege Weapon",
-"DND5E.WeaponSimpleM": "Simple Melee",
-"DND5E.WeaponSimpleProficiency": "Simple",
-"DND5E.WeaponSimpleR": "Simple Ranged",
+"DND5E.WeaponSiege": "Heavy Weapon",
+"DND5E.WeaponSimpleM": "Melee Weapon",
+"DND5E.WeaponSimpleProficiency": "Small Arms",
+"DND5E.WeaponSimpleR": "Pistol",
 "DND5E.Weight": "Weight",
 "DND5E.WhisperedTo": "Whispered to",
 "DND5E.Wiki": "Wiki",
@@ -5307,10 +5307,10 @@
     "ItemHint": "Drop a class here",
     "NoValidClass": "No valid class selected, press the edit button to add a class.",
     "OptionalFeaturesCaption": "Optional Class Features",
-    "OptionalFeaturesDescription": "The following section contains options {class} features. These features are not granted automatically, and you can choose one, some, or all of them at your DM's discretion.",
-    "SpellSlotLevel": "Slot Level",
-    "SpellSlots": "Spell Slots",
-    "SpellSlotsPerSpellLevel": "—Spell Slots per Spell Level—",
+    "OptionalFeaturesDescription": "The following section contains options {class} features. These features are not granted automatically, and you can choose one, some, or all of them at your Game Master's discretion.",
+    "SpellSlotLevel": "Power Level",
+    "SpellSlots": "Power Uses",
+    "SpellSlotsPerSpellLevel": "—Power Uses per Power Level—",
     "Style": {
       "Inferred": "Inferred from Source",
       "Legacy": "Legacy",
@@ -5326,26 +5326,26 @@
   },
   "EditDescription": "Edit",
   "TableTOC": "Table: {caption}",
-  "SpellList": {
-    "DropHint": "Drop spells or folders of spells here to add to the list",
+  "PowerList": {
+    "DropHint": "Drop powers or folders of powers here to add to the list",
     "Grouping": {
       "Label": "Grouping Mode",
-      "Hint": "Controls how the spells will be grouped by default in the spell list.",
+      "Hint": "Controls how the powers will be grouped by default in the power list.",
       "Alphabetical": "By First Letter",
       "Level": "By Level",
       "None": "No Grouping",
-      "School": "By School"
+      "School": "By Type"
     },
-    "IdentifierHint": "Identifier should match that defined on the associated document, if applicable. For example, when creating a spell list for the Wizard class, the identifier should be 'wizard'.",
+    "IdentifierHint": "Identifier should match that defined on the associated document, if applicable. For example, when creating a power list for a class, the identifier should match the class identifier.",
     "Type": {
-      "Label": "Spell List Type",
+      "Label": "Power List Type",
       "Other": "Uncategorized"
     },
     "UnlinkedSpells": {
-      "Label": "Unlinked Spells",
-      "Add": "Add Unlinked Spell",
-      "Configuration": "Spell Configuration",
-      "Edit": "Edit Unlinked Spell"
+      "Label": "Unlinked Powers",
+      "Add": "Add Unlinked Power",
+      "Configuration": "Power Configuration",
+      "Edit": "Edit Unlinked Power"
     }
   },
   "Subclass": {

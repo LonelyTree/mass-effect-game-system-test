@@ -1,4 +1,4 @@
-_id: ZYEqOSY9BLZs2GPx
+_id: ZYEqOSY9BLZs2CRx
 name: Bracers of Archery
 type: equipment
 img: icons/equipment/wrist/bracer-banded-leather.webp
@@ -23,7 +23,7 @@ system:
     units: lb
   price:
     value: 400
-    denomination: gp
+    denomination: CR
   attunement: required
   equipped: false
   rarity: uncommon
@@ -60,7 +60,7 @@ system:
   attuned: false
   identifier: bracers-of-archery
 effects:
-  - origin: Compendium.dnd5e.items.ZYEqOSY9BLZs2GPx
+  - origin: Compendium.dnd5e.items.ZYEqOSY9BLZs2CRx
     duration:
       startTime: null
       seconds: null
@@ -100,7 +100,7 @@ effects:
     type: base
     system: {}
     sort: 0
-    _key: '!items.effects!ZYEqOSY9BLZs2GPx.ChaLjlYldFzDgHHv'
+    _key: '!items.effects!ZYEqOSY9BLZs2CRx.ChaLjlYldFzDgHHv'
 folder: aJgMxnZED9XdoN2W
 sort: 0
 ownership:
@@ -115,4 +115,4 @@ _stats:
   modifiedTime: 1750697344647
   lastModifiedBy: dnd5ebuilder0000
   exportSource: null
-_key: '!items!ZYEqOSY9BLZs2GPx'
+_key: '!items!ZYEqOSY9BLZs2CRx'

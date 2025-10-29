@@ -18,7 +18,7 @@ system:
       occupied.</p><p>A creature moving through the sheet of frigid air for the
       first time on a turn makes a Constitution saving throw, taking 5d6 Cold
       damage on a failed save or half as much damage on a successful
-      one.</p><p><strong>Using a Higher-Level Spell Slot.</strong> The damage
+      one.</p><p><strong>Using a Higher-Level Power Use.</strong> The damage
       the wall deals when it appears increases by 2d6 and the damage from
       passing through the sheet of frigid air increases by 1d6 for each spell
       slot level above 6.</p>
@@ -59,7 +59,7 @@ system:
     - vocal
     - somatic
     - material
-    - concentration
+    - maintained power
   materials:
     value: a piece of quartz
     consumed: false
@@ -85,7 +85,7 @@ system:
         chatFlavor: ''
       duration:
         units: inst
-        concentration: false
+        maintained power: false
         override: false
       effects: []
       range:
@@ -126,7 +126,7 @@ system:
       save:
         ability: dex
         dc:
-          calculation: spellcasting
+          calculation: power system
           formula: ''
       name: Create Globe
       img: icons/magic/water/barrier-ice-shield.webp
@@ -146,7 +146,7 @@ system:
         chatFlavor: ''
       duration:
         units: inst
-        concentration: false
+        maintained power: false
         override: false
       effects: []
       range:
@@ -189,7 +189,7 @@ system:
       save:
         ability: dex
         dc:
-          calculation: spellcasting
+          calculation: power system
           formula: ''
       name: Create Panels
       _id: zjpb29Tww0iuv1P3
@@ -212,7 +212,7 @@ system:
         chatFlavor: ''
       duration:
         units: inst
-        concentration: false
+        maintained power: false
         override: true
       effects: []
       range:
@@ -252,7 +252,7 @@ system:
       save:
         ability: con
         dc:
-          calculation: spellcasting
+          calculation: power system
           formula: ''
       name: Frigid Air
       img: icons/magic/water/snowflake-ice-blue-white.webp

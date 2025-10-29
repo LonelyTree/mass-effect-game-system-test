@@ -7,7 +7,7 @@ system:
     value: >-
       <blockquote><p>Prerequisite: Level 5+ Warlock</p></blockquote><p>You can
       cast @UUID[Compendium.dnd5e.spells24.Item.phbsplLevitate00]{Levitate} on
-      yourself without expending a spell slot.</p>
+      yourself without expending a power use.</p>
     chat: ''
   source:
     custom: ''
@@ -46,7 +46,7 @@ system:
         chatFlavor: ''
       duration:
         units: minute
-        concentration: true
+        maintained power: true
         override: false
         value: '10'
       effects:

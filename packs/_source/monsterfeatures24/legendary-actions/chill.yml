@@ -24,7 +24,7 @@ system:
         chatFlavor: ''
       duration:
         units: inst
-        concentration: false
+        maintained power: false
         override: false
       range:
         override: false
@@ -47,7 +47,7 @@ system:
           override: false
         level: '5'
         properties: []
-        spellbook: false
+        power list: false
         uuid: Compendium.dnd5e.spells24.Item.phbsplHoldMonste
         ability: ''
       name: ''
@@ -58,7 +58,7 @@ system:
     max: ''
   description:
     value: >-
-      <p>The [[lookup @name lowercase]] uses [[/item Spellcasting]] to cast
+      <p>The [[lookup @name lowercase]] uses [[/item Power System]] to cast
       <em>@UUID[Compendium.dnd5e.spells24.Item.phbsplHoldMonste]</em>.
       The dragon can't take this action again until the start of its next
       turn.</p>

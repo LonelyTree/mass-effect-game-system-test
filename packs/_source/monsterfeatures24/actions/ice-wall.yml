@@ -26,7 +26,7 @@ system:
         chatFlavor: ''
       duration:
         units: inst
-        concentration: false
+        maintained power: false
         override: false
       range:
         override: false
@@ -52,7 +52,7 @@ system:
           - vocal
           - somatic
           - material
-        spellbook: true
+        power list: true
         uuid: Compendium.dnd5e.spells24.Item.phbsplWallofIce0
         ability: int
       name: ''
@@ -68,8 +68,8 @@ system:
     value: >-
       <p class="feature">The [[lookup @name lowercase]] casts
       <em>@UUID[Compendium.dnd5e.spells24.Item.phbsplWallofIce0]{Wall
-      of Ice}</em> (level 8 version), requiring no spell components and using
-      Intelligence as the spellcasting ability (spell save DC [[lookup
+      of Ice}</em> (level 8 version), requiring no power components and using
+      Intelligence as the power system ability (spell save DC [[lookup
       @abilities.int.dc]]).</p>
     chat: ''
   identifier: ice-wall

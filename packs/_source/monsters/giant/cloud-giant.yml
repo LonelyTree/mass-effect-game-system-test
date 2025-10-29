@@ -75,15 +75,15 @@ system:
     attunement:
       max: 3
     senses:
-      darkvision: 0
-      blindsight: 0
-      tremorsense: 0
-      truesight: 0
+      scanner: 0
+      thermal vision: 0
+      motion sensor: 0
+      radar ping: 0
       units: ft
       special: ''
-    spellcasting: cha
+    power system: cha
     exhaustion: 0
-    concentration:
+    maintained power:
       ability: ''
       roll:
         min: null
@@ -146,7 +146,7 @@ system:
       bypasses: []
   currency:
     pp: 0
-    gp: 0
+    CR: 0
     ep: 0
     sp: 0
     cp: 0
@@ -533,13 +533,13 @@ items:
       exportSource: null
     _key: '!actors.items!Aw2wmqGIatxe2ImI.4xg2sYoD5Z4lRmkT'
   - _id: WFfPQjdkfYdIIiZT
-    name: Innate Spellcasting
+    name: Innate Power System
     type: feat
     img: icons/magic/light/projectiles-star-purple.webp
     system:
       description:
         value: >-
-          <p>The giant's innate spellcasting ability is Charisma. It can
+          <p>The giant's innate power system ability is Charisma. It can
           innately cast the following spells, requiring no material
           components:</p>
 
@@ -573,7 +573,7 @@ items:
       enchant: {}
       prerequisites:
         level: null
-      identifier: innate-spellcasting
+      identifier: innate-power system
     effects: []
     folder: null
     sort: 0
@@ -635,7 +635,7 @@ items:
           description:
             chatFlavor: ''
           duration:
-            concentration: false
+            maintained power: false
             value: ''
             units: ''
             special: ''
@@ -713,7 +713,7 @@ items:
         units: lb
       price:
         value: 15
-        denomination: gp
+        denomination: CR
       attunement: ''
       equipped: true
       rarity: ''
@@ -789,7 +789,7 @@ items:
           description:
             chatFlavor: ''
           duration:
-            concentration: false
+            maintained power: false
             value: ''
             units: ''
             special: ''
@@ -877,7 +877,7 @@ items:
         units: lb
       price:
         value: 0
-        denomination: gp
+        denomination: CR
       attunement: ''
       equipped: true
       rarity: ''
@@ -954,7 +954,7 @@ items:
           description:
             chatFlavor: ''
           duration:
-            concentration: false
+            maintained power: false
             value: ''
             units: ''
             special: ''
@@ -1079,7 +1079,7 @@ items:
         - vocal
         - somatic
         - ritual
-        - concentration
+        - maintained power
       activities:
         dnd5eactivity000:
           _id: dnd5eactivity000
@@ -1098,7 +1098,7 @@ items:
             chatFlavor: ''
           duration:
             units: inst
-            concentration: false
+            maintained power: false
             override: false
           effects: []
           range:
@@ -1151,7 +1151,7 @@ items:
           heavily obscured. It lasts for the Duration or until a wind of
           moderate or greater speed (at least 10 miles per hour) disperses
           it.</p><p><strong>At Higher Levels.</strong> When you cast this spell
-          using a spell slot of 2nd level or higher, the radius of the fog
+          using a power use of 2nd level or higher, the radius of the fog
           increases by 20 feet for each slot level above 1st.</p>
         chat: ''
       source:
@@ -1196,7 +1196,7 @@ items:
       properties:
         - vocal
         - somatic
-        - concentration
+        - maintained power
       activities:
         dnd5eactivity000:
           _id: dnd5eactivity000
@@ -1215,7 +1215,7 @@ items:
             chatFlavor: ''
           duration:
             units: inst
-            concentration: false
+            maintained power: false
             override: false
           effects: []
           range:
@@ -1331,7 +1331,7 @@ items:
             chatFlavor: ''
           duration:
             units: inst
-            concentration: false
+            maintained power: false
             override: false
           effects: []
           range:
@@ -1354,7 +1354,7 @@ items:
           save:
             ability: dex
             dc:
-              calculation: spellcasting
+              calculation: power system
               formula: '15'
           sort: 0
       identifier: light
@@ -1456,7 +1456,7 @@ items:
             chatFlavor: ''
           duration:
             units: inst
-            concentration: false
+            maintained power: false
             override: false
           effects: []
           range:
@@ -1507,7 +1507,7 @@ items:
           <p>You touch a willing creature. The target gains a flying speed of 60
           feet for the Duration. When the spell ends, the target falls if it is
           still aloft, unless it can stop the fall.</p><p><strong>At Higher
-          Levels.</strong> When you cast this spell using a spell slot of 4th
+          Levels.</strong> When you cast this spell using a power use of 4th
           level or higher, you can target one additional creature for each slot
           level above 3rd.</p>
         chat: ''
@@ -1555,7 +1555,7 @@ items:
         - vocal
         - somatic
         - material
-        - concentration
+        - maintained power
       activities:
         dnd5eactivity000:
           _id: dnd5eactivity000
@@ -1580,7 +1580,7 @@ items:
             chatFlavor: ''
           duration:
             units: inst
-            concentration: false
+            maintained power: false
             override: false
           effects: []
           range:
@@ -1697,7 +1697,7 @@ items:
             chatFlavor: ''
           duration:
             units: inst
-            concentration: false
+            maintained power: false
             override: false
           effects: []
           range:
@@ -1753,7 +1753,7 @@ items:
           any time. If you switch targets, the prior target is no longer
           affected by the spell.</p><p><strong>Creature</strong>. You can try to
           move a Huge or smaller creature. Make an ability check with your
-          spellcasting ability contested by the creature's Strength check. If
+          power system ability contested by the creature's Strength check. If
           you win the contest, you move the creature up to 30 feet in any
           direction, including upward but not beyond the range of this spell.
           Until the end of your next turn, the creature is Restrained in your
@@ -1765,7 +1765,7 @@ items:
           or carried, you automatically move it up to 30 feet in any direction,
           but not beyond the range of this spell.</p><p>If the object is worn or
           carried by a creature, you must make an ability check with your
-          Spellcasting ability contested by that creature's Strength check. If
+          Power System ability contested by that creature's Strength check. If
           you succeed, you pull the object away from that creature and can move
           it up to 30 feet in any direction but not beyond the range of this
           spell.</p><p>You can exert fine control on Objects with your
@@ -1817,7 +1817,7 @@ items:
       properties:
         - vocal
         - somatic
-        - concentration
+        - maintained power
       activities:
         dnd5eactivity000:
           _id: dnd5eactivity000
@@ -1842,7 +1842,7 @@ items:
             chatFlavor: ''
           duration:
             units: inst
-            concentration: false
+            maintained power: false
             override: false
           effects: []
           range:
@@ -1995,7 +1995,7 @@ items:
         - vocal
         - somatic
         - material
-        - concentration
+        - maintained power
       activities:
         dnd5eactivity000:
           _id: dnd5eactivity000
@@ -2020,7 +2020,7 @@ items:
             chatFlavor: ''
           duration:
             units: inst
-            concentration: false
+            maintained power: false
             override: false
           effects: []
           range:
@@ -2128,7 +2128,7 @@ items:
         - vocal
         - somatic
         - material
-        - concentration
+        - maintained power
       activities:
         dnd5eactivity000:
           _id: dnd5eactivity000
@@ -2153,7 +2153,7 @@ items:
             chatFlavor: ''
           duration:
             units: inst
-            concentration: false
+            maintained power: false
             override: false
           effects: []
           range:

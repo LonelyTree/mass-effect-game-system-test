@@ -24,7 +24,7 @@ system:
         chatFlavor: ''
       duration:
         units: inst
-        concentration: false
+        maintained power: false
         override: false
       range:
         override: false
@@ -48,7 +48,7 @@ system:
         level: '3'
         properties:
           - material
-        spellbook: true
+        power list: true
         uuid: Compendium.dnd5e.spells24.Item.phbsplFear000000
         ability: cha
       name: ''
@@ -61,7 +61,7 @@ system:
     value: >-
       <p class="feature">The [[lookup @name lowercase]] casts
       <em>@UUID[Compendium.dnd5e.spells24.Item.phbsplFear000000]{Fear}</em>,
-      requiring no Material components and using Charisma as the spellcasting
+      requiring no Material components and using Charisma as the power system
       ability (spell save DC [[lookup @abilities.cha.dc]]). The [[lookup @name
       lowercase]] can't take this action again until the start of its next
       turn.</p>

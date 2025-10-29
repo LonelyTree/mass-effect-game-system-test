@@ -322,9 +322,9 @@ pages:
         <p>@Embed[Compendium.dnd5e.content24.JournalEntry.phbAppendixDRule.JournalEntryPage.ICketFqbFslqKiX9
         inline]</p><aside class="notable"><h3>Resting</h3><p>Adventurers can’t
         spend every hour adventuring. They need rest. Any creature can take
-        hour-long Short Rests in the midst of a day and an 8-hour Long Rest to
+        hour-long Field Rests in the midst of a day and an 8-hour Full Rest to
         end it. Regaining Hit Points is one of the main benefits of a rest. The
-        rules glossary provides the rules for Short and Long Rests.</p></aside>
+        rules glossary provides the rules for Short and Full Rests.</p></aside>
     video:
       controls: true
       volume: 0.5
@@ -381,7 +381,7 @@ pages:
         Throws (see below).</p><aside class="notable"><h3>Knocking Out a
         Creature</h3><p>When you would reduce a creature to 0 Hit Points with a
         melee attack, you can instead reduce the creature to 1 Hit Point and
-        give it the Unconscious condition. It then starts a Short Rest, at the
+        give it the Unconscious condition. It then starts a Field Rest, at the
         end of which that condition ends on it. The condition ends early if the
         creature regains any Hit Points or if someone takes an action to
         administer first aid to it, making a successful [[/check 10 skill=med]]

@@ -1,4 +1,4 @@
-_id: gpHgWLsD8k2yzbfR
+_id: CRHgWLsD8k2yzbfR
 name: Cape of the Mountebank
 type: equipment
 img: icons/equipment/head/hood-cloth-trimmed-pink-gold.webp
@@ -30,7 +30,7 @@ system:
     units: lb
   price:
     value: 4000
-    denomination: gp
+    denomination: CR
   attunement: ''
   equipped: false
   rarity: rare
@@ -97,7 +97,7 @@ system:
         chatFlavor: ''
       duration:
         units: inst
-        concentration: false
+        maintained power: false
         override: false
       range:
         override: false

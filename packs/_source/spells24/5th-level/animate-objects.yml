@@ -5,7 +5,7 @@ system:
       <p>Objects animate at your command. Choose a number of nonmagical objects
       within range that aren't being worn or carried, aren't fixed to a surface,
       and aren't Gargantuan. The maximum number of objects is equal to your
-      spellcasting ability modifier; for this number, a Medium or smaller target
+      power system ability modifier; for this number, a Medium or smaller target
       counts as one object, a Large target counts as two, and a Huge target
       counts as three.</p><p>Each target animates, sprouts legs, and becomes a
       Construct that uses the <strong>Animated Object</strong> stat block; this
@@ -20,8 +20,8 @@ system:
       &amp;Reference[Dodge] action and moves only to avoid harm. When the
       creature drops to 0 Hit Points, it reverts to its object form, and any
       remaining damage carries over to that form.</p><p><strong>Using a
-      Higher-Level Spell Slot.</strong> The creature's Slam damage increases by
-      1d4 (Medium or smaller), 1d6 (Large), or 1d12 (Huge) for each spell slot
+      Higher-Level Power Use.</strong> The creature's Slam damage increases by
+      1d4 (Medium or smaller), 1d6 (Large), or 1d12 (Huge) for each power use
       level above 5.</p><h3>Animated Object
       Sizes</h3><p>@UUID[Compendium.dnd5e.actors24.Actor.phbtaoAnimatedOb]{Tiny},
       @UUID[Compendium.dnd5e.actors24.Actor.phbsaoAnimatedOb]{Small},
@@ -64,7 +64,7 @@ system:
   properties:
     - vocal
     - somatic
-    - concentration
+    - maintained power
   materials:
     value: ''
     consumed: false

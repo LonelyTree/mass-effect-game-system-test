@@ -75,15 +75,15 @@ system:
     attunement:
       max: 3
     senses:
-      darkvision: 60
-      blindsight: 0
-      tremorsense: 0
-      truesight: 0
+      scanner: 60
+      thermal vision: 0
+      motion sensor: 0
+      radar ping: 0
       units: ft
       special: ''
-    spellcasting: cha
+    power system: cha
     exhaustion: 0
-    concentration:
+    maintained power:
       ability: ''
       roll:
         min: null
@@ -146,7 +146,7 @@ system:
       bypasses: []
   currency:
     pp: 0
-    gp: 0
+    CR: 0
     ep: 0
     sp: 0
     cp: 0
@@ -508,7 +508,7 @@ items:
         units: lb
       price:
         value: 75
-        denomination: gp
+        denomination: CR
       attunement: ''
       equipped: true
       rarity: ''
@@ -584,7 +584,7 @@ items:
         units: lb
       price:
         value: 20
-        denomination: gp
+        denomination: CR
       attunement: ''
       equipped: true
       rarity: ''
@@ -662,7 +662,7 @@ items:
           description:
             chatFlavor: ''
           duration:
-            concentration: false
+            maintained power: false
             value: ''
             units: ''
             special: ''
@@ -727,7 +727,7 @@ items:
           description:
             chatFlavor: ''
           duration:
-            concentration: false
+            maintained power: false
             value: ''
             units: inst
             special: ''
@@ -832,7 +832,7 @@ items:
         units: lb
       price:
         value: 0
-        denomination: gp
+        denomination: CR
       attunement: ''
       equipped: true
       rarity: ''
@@ -907,7 +907,7 @@ items:
           description:
             chatFlavor: ''
           duration:
-            concentration: false
+            maintained power: false
             value: ''
             units: ''
             special: ''
@@ -975,13 +975,13 @@ items:
       exportSource: null
     _key: '!actors.items!L1w8yBkInMscfJ3F.q7J7PERrJb2vxtlt'
   - _id: HiGvFK1bT8zkJA3r
-    name: Innate Spellcasting
+    name: Innate Power System
     type: feat
     img: icons/magic/light/projectiles-star-purple.webp
     system:
       description:
         value: >-
-          <p>The oni's innate spellcasting ability is Charisma (spell save DC
+          <p>The oni's innate power system ability is Charisma (spell save DC
           13). The oni can innately cast the following spells, requiring no
           material components:</p>
 
@@ -1012,7 +1012,7 @@ items:
       enchant: {}
       prerequisites:
         level: null
-      identifier: innate-spellcasting
+      identifier: innate-power system
     effects: []
     folder: null
     sort: 0
@@ -1075,7 +1075,7 @@ items:
           description:
             chatFlavor: ''
           duration:
-            concentration: false
+            maintained power: false
             value: ''
             units: ''
             special: ''
@@ -1178,7 +1178,7 @@ items:
           description:
             chatFlavor: ''
           duration:
-            concentration: false
+            maintained power: false
             value: ''
             units: ''
             special: ''
@@ -1344,7 +1344,7 @@ items:
           description:
             chatFlavor: ''
           duration:
-            concentration: false
+            maintained power: false
             value: ''
             units: ''
             special: ''
@@ -1411,7 +1411,7 @@ items:
         value: >-
           <p>Magical darkness spreads from a point you choose within range to
           fill a 15-foot-radius sphere for the duration. The darkness spreads
-          around corners. A creature with darkvision can't see through this
+          around corners. A creature with scanner can't see through this
           darkness, and nonmagical light can't illuminate it.</p><p>If the point
           you choose is on an object you are holding or one that isn't being
           worn or carried, the darkness emanates from the object and moves with
@@ -1462,7 +1462,7 @@ items:
       properties:
         - vocal
         - material
-        - concentration
+        - maintained power
       activities:
         dnd5eactivity000:
           _id: dnd5eactivity000
@@ -1481,7 +1481,7 @@ items:
             chatFlavor: ''
           duration:
             units: inst
-            concentration: false
+            maintained power: false
             override: false
           effects: []
           range:
@@ -1533,7 +1533,7 @@ items:
           Anything the target is wearing or carrying is invisible as long as it
           is on the target's person. The spell ends for a target that attacks or
           casts a spell.</p><p><strong>At Higher Levels.</strong> When you cast
-          this spell using a spell slot of 3rd level or higher, you can target
+          this spell using a power use of 3rd level or higher, you can target
           one additional creature for each slot level above 2nd.</p>
         chat: ''
       source:
@@ -1578,7 +1578,7 @@ items:
         - vocal
         - somatic
         - material
-        - concentration
+        - maintained power
       activities:
         dnd5eactivity000:
           _id: dnd5eactivity000
@@ -1597,7 +1597,7 @@ items:
             chatFlavor: ''
           duration:
             units: inst
-            concentration: false
+            maintained power: false
             override: false
           effects: []
           range:
@@ -1652,7 +1652,7 @@ items:
           anything harmful to it. The charmed creature regards you as a friendly
           acquaintance. When the spell ends, the creature knows it was charmed
           by you.</p>
-                  <p><strong>At Higher Levels.</strong> When you cast this spell using a spell slot of 2nd level or higher, you can target one additional creature for each slot level above 1st. The creatures must be within 30 feet of each other when you target them.</p>
+                  <p><strong>At Higher Levels.</strong> When you cast this spell using a power use of 2nd level or higher, you can target one additional creature for each slot level above 1st. The creatures must be within 30 feet of each other when you target them.</p>
         chat: ''
       source:
         custom: ''
@@ -1722,7 +1722,7 @@ items:
             chatFlavor: ''
           duration:
             units: inst
-            concentration: false
+            maintained power: false
             override: false
           effects: []
           range:
@@ -1745,7 +1745,7 @@ items:
           save:
             ability: wis
             dc:
-              calculation: spellcasting
+              calculation: power system
               formula: '13'
           sort: 0
       identifier: charm-person
@@ -1772,7 +1772,7 @@ items:
     type: spell
     system:
       description:
-        value: "<p>A blast of cold air erupts from your hands. Each creature in a 60-foot cone must make a Constitution saving throw. A creature takes 8d8 cold damage on a failed save, or half as much damage on a successful one.</p><p>A creature killed by this spell becomes a frozen statue until it thaws.</p><p><strong>Higher Levels.\_</strong>When you cast this spell using a spell slot of 6th level or higher, the damage increases by 1d8 for each slot level above 5th.</p>"
+        value: "<p>A blast of cold air erupts from your hands. Each creature in a 60-foot cone must make a Constitution saving throw. A creature takes 8d8 cold damage on a failed save, or half as much damage on a successful one.</p><p>A creature killed by this spell becomes a frozen statue until it thaws.</p><p><strong>Higher Levels.\_</strong>When you cast this spell using a power use of 6th level or higher, the damage increases by 1d8 for each slot level above 5th.</p>"
         chat: ''
       source:
         custom: ''
@@ -1842,7 +1842,7 @@ items:
             chatFlavor: ''
           duration:
             units: inst
-            concentration: false
+            maintained power: false
             override: false
           effects: []
           range:
@@ -1877,7 +1877,7 @@ items:
           save:
             ability: con
             dc:
-              calculation: spellcasting
+              calculation: power system
               formula: '13'
           sort: 0
       identifier: cone-of-cold
@@ -1965,7 +1965,7 @@ items:
         - vocal
         - somatic
         - material
-        - concentration
+        - maintained power
       activities:
         dnd5eactivity000:
           _id: dnd5eactivity000
@@ -1990,7 +1990,7 @@ items:
             chatFlavor: ''
           duration:
             units: inst
-            concentration: false
+            maintained power: false
             override: false
           effects: []
           range:
@@ -2050,7 +2050,7 @@ items:
           to or less than the remaining total for that creature to be
           affected.</p><p>Undead and creatures immune to being charmed aren't
           affected by this spell.</p><p><strong>At Higher Levels.</strong> When
-          you cast this spell using a spell slot of 2nd level or higher, roll an
+          you cast this spell using a power use of 2nd level or higher, roll an
           additional 2d8 for each slot level above 1st.</p>
         chat: ''
       source:
@@ -2122,7 +2122,7 @@ items:
             chatFlavor: ''
           duration:
             units: inst
-            concentration: false
+            maintained power: false
             override: false
           effects: []
           range:

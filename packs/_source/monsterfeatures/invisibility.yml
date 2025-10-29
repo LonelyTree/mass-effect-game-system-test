@@ -9,7 +9,7 @@ system:
       <section class="secret">
 
       <p>the [[lookup @name lowercase]] magically turns invisible until it
-      attacks, casts a spell, or uses its Enlarge, or until its concentration is
+      attacks, casts a spell, or uses its Enlarge, or until its maintained power is
       broken, up to 1 hour (as if concentrating on a spell).</p>
 
       </section>
@@ -57,7 +57,7 @@ system:
       description:
         chatFlavor: ''
       duration:
-        concentration: false
+        maintained power: false
         value: '1'
         units: hour
         special: ''

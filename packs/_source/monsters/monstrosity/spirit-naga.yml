@@ -75,15 +75,15 @@ system:
     attunement:
       max: 3
     senses:
-      darkvision: 60
-      blindsight: 0
-      tremorsense: 0
-      truesight: 0
+      scanner: 60
+      thermal vision: 0
+      motion sensor: 0
+      radar ping: 0
       units: ft
       special: ''
-    spellcasting: int
+    power system: int
     exhaustion: 0
-    concentration:
+    maintained power:
       ability: ''
       roll:
         min: null
@@ -149,7 +149,7 @@ system:
       bypasses: []
   currency:
     pp: 0
-    gp: 0
+    CR: 0
     ep: 0
     sp: 0
     cp: 0
@@ -514,7 +514,7 @@ items:
         units: lb
       price:
         value: 0
-        denomination: gp
+        denomination: CR
       attunement: ''
       equipped: true
       rarity: ''
@@ -589,7 +589,7 @@ items:
           description:
             chatFlavor: ''
           duration:
-            concentration: false
+            maintained power: false
             value: ''
             units: ''
             special: ''
@@ -664,7 +664,7 @@ items:
           description:
             chatFlavor: ''
           duration:
-            concentration: false
+            maintained power: false
             value: ''
             units: ''
             special: ''
@@ -789,16 +789,16 @@ items:
       exportSource: null
     _key: '!actors.items!BAT6ld8qJZetpycL.WqOflwn1ubAMkGdQ'
   - _id: Fla0ZsaY2HvXWqbR
-    name: Spellcasting
+    name: Power System
     type: feat
     img: icons/magic/light/projectiles-star-purple.webp
     system:
       description:
         value: >-
-          <p>The naga is a 10th-level spellcaster. Its spellcasting ability is
+          <p>The naga is a 10th-level spellcaster. Its power system ability is
           Intelligence (spell save DC 14, +6 to hit with spell attacks), and it
           needs only verbal components to cast its spells. It has the following
-          wizard spells prepared:</p><p><strong>• Cantrips (at will)</strong>:
+          wizard spells prepared:</p><p><strong>• Basic Powers (at will)</strong>:
           [[/item .Utk1OQRwYkMkFRD3]]{mage hand}, [[/item
           .oIzA2MEHwxhtQneU]]{minor illusion}, [[/item .ctW81uiX56xZR2c5]]{ray
           of frost}</p><p><strong>• 1st level (4 slots)</strong>: [[/item
@@ -812,7 +812,7 @@ items:
           .A4RsPuSvB9wFtz1j]]{dimension door}</p><p><strong>• 5th level (2
           slots)</strong>: [[/item .91Sw6vOIaO7U8DvM]]{dominate person}</p>
         chat: >-
-          <p>The naga is a spellcaster. Its spellcasting ability is Intelligence
+          <p>The naga is a spellcaster. Its power system ability is Intelligence
           and it needs only verbal components to cast its spells.</p>
       source:
         custom: ''
@@ -834,7 +834,7 @@ items:
       enchant: {}
       prerequisites:
         level: null
-      identifier: spellcasting
+      identifier: power system
     effects: []
     folder: null
     sort: 0
@@ -930,7 +930,7 @@ items:
             chatFlavor: ''
           duration:
             units: inst
-            concentration: false
+            maintained power: false
             override: false
           effects: []
           range:
@@ -1056,7 +1056,7 @@ items:
             chatFlavor: ''
           duration:
             units: inst
-            concentration: false
+            maintained power: false
             override: false
           effects: []
           range:
@@ -1105,7 +1105,7 @@ items:
       description:
         value: >-
           <p>A frigid beam of blue-white light streaks toward a creature within
-          range. Make a ranged spell attack against the target. On a hit, it
+          range. Make a ranged power attack against the target. On a hit, it
           takes 1d8 cold damage, and its speed is reduced by 10 feet until the
           start of your next turn.</p><p>The spell's damage increases by 1d8
           when you reach 5th level (2d8), 11th level (3d8), and 17th level
@@ -1171,7 +1171,7 @@ items:
             chatFlavor: ''
           duration:
             units: inst
-            concentration: false
+            maintained power: false
             override: false
           effects: []
           range:
@@ -1247,7 +1247,7 @@ items:
           anything harmful to it. The charmed creature regards you as a friendly
           acquaintance. When the spell ends, the creature knows it was charmed
           by you.</p>
-                  <p><strong>At Higher Levels.</strong> When you cast this spell using a spell slot of 2nd level or higher, you can target one additional creature for each slot level above 1st. The creatures must be within 30 feet of each other when you target them.</p>
+                  <p><strong>At Higher Levels.</strong> When you cast this spell using a power use of 2nd level or higher, you can target one additional creature for each slot level above 1st. The creatures must be within 30 feet of each other when you target them.</p>
         chat: ''
       source:
         custom: ''
@@ -1309,7 +1309,7 @@ items:
             chatFlavor: ''
           duration:
             units: inst
-            concentration: false
+            maintained power: false
             override: false
           effects: []
           range:
@@ -1332,7 +1332,7 @@ items:
           save:
             ability: wis
             dc:
-              calculation: spellcasting
+              calculation: power system
               formula: '14'
           sort: 0
       identifier: charm-person
@@ -1410,7 +1410,7 @@ items:
         - vocal
         - somatic
         - ritual
-        - concentration
+        - maintained power
       activities:
         dnd5eactivity000:
           _id: dnd5eactivity000
@@ -1429,7 +1429,7 @@ items:
             chatFlavor: ''
           duration:
             units: inst
-            concentration: false
+            maintained power: false
             override: false
           effects: []
           range:
@@ -1489,7 +1489,7 @@ items:
           to or less than the remaining total for that creature to be
           affected.</p><p>Undead and creatures immune to being charmed aren't
           affected by this spell.</p><p><strong>At Higher Levels.</strong> When
-          you cast this spell using a spell slot of 2nd level or higher, roll an
+          you cast this spell using a power use of 2nd level or higher, roll an
           additional 2d8 for each slot level above 1st.</p>
         chat: ''
       source:
@@ -1553,7 +1553,7 @@ items:
             chatFlavor: ''
           duration:
             units: inst
-            concentration: false
+            maintained power: false
             override: false
           effects: []
           range:
@@ -1687,7 +1687,7 @@ items:
         - vocal
         - somatic
         - material
-        - concentration
+        - maintained power
       activities:
         dnd5eactivity000:
           _id: dnd5eactivity000
@@ -1706,7 +1706,7 @@ items:
             chatFlavor: ''
           duration:
             units: inst
-            concentration: false
+            maintained power: false
             override: false
           effects: []
           range:
@@ -1729,7 +1729,7 @@ items:
           save:
             ability: wis
             dc:
-              calculation: spellcasting
+              calculation: power system
               formula: '14'
           sort: 0
       identifier: detect-thoughts
@@ -1756,7 +1756,7 @@ items:
     type: spell
     system:
       description:
-        value: "<p>Choose a humanoid that you can see within range. The target must succeed on a Wisdom saving throw or be paralyzed for the duration. At the end of each of its turns, the target can make another Wisdom saving throw. On a success, the spell ends on the target.</p><p><strong>Higher Levels.\_</strong>When you cast this spell using a spell slot of 3rd level or higher, you can target one additional humanoid for each slot level above 2nd. The humanoids must be within 30 feet of each other when you target them.</p>"
+        value: "<p>Choose a humanoid that you can see within range. The target must succeed on a Wisdom saving throw or be paralyzed for the duration. At the end of each of its turns, the target can make another Wisdom saving throw. On a success, the spell ends on the target.</p><p><strong>Higher Levels.\_</strong>When you cast this spell using a power use of 3rd level or higher, you can target one additional humanoid for each slot level above 2nd. The humanoids must be within 30 feet of each other when you target them.</p>"
         chat: ''
       source:
         custom: ''
@@ -1801,7 +1801,7 @@ items:
         - vocal
         - somatic
         - material
-        - concentration
+        - maintained power
       activities:
         dnd5eactivity000:
           _id: dnd5eactivity000
@@ -1820,7 +1820,7 @@ items:
             chatFlavor: ''
           duration:
             units: inst
-            concentration: false
+            maintained power: false
             override: false
           effects: []
           range:
@@ -1843,7 +1843,7 @@ items:
           save:
             ability: wis
             dc:
-              calculation: spellcasting
+              calculation: power system
               formula: '14'
           sort: 0
       identifier: hold-person
@@ -1877,7 +1877,7 @@ items:
           lightning damage on a failed save, or half as much damage on a
           successful one.</p><p>The lightning ignites flammable objects in the
           area that aren't being worn or carried.</p><p><strong>At Higher
-          Levels.</strong> When you cast this spell using a spell slot of 4th
+          Levels.</strong> When you cast this spell using a power use of 4th
           level or higher, the damage increases by 1d6 for each slot level above
           3rd.</p>
         chat: ''
@@ -1941,7 +1941,7 @@ items:
             chatFlavor: ''
           duration:
             units: inst
-            concentration: false
+            maintained power: false
             override: false
           effects: []
           range:
@@ -1976,7 +1976,7 @@ items:
           save:
             ability: dex
             dc:
-              calculation: spellcasting
+              calculation: power system
               formula: '14'
           sort: 0
       identifier: lightning-bolt
@@ -2070,7 +2070,7 @@ items:
             chatFlavor: ''
           duration:
             units: inst
-            concentration: false
+            maintained power: false
             override: false
           effects: []
           range:
@@ -2128,7 +2128,7 @@ items:
           maximum damage to it.</p><p>If you target a nonmagical plant that
           isn't a creature, such as a tree or shrub, it doesn't make a saving
           throw, it simply withers and dies.</p><p><strong>At Higher
-          Levels.</strong> When you cast this spell using a spell slot of 5th
+          Levels.</strong> When you cast this spell using a power use of 5th
           level or higher, the damage increases by 1d8 for each slot level above
           4th.</p>
         chat: ''
@@ -2192,7 +2192,7 @@ items:
             chatFlavor: ''
           duration:
             units: inst
-            concentration: false
+            maintained power: false
             override: false
           effects: []
           range:
@@ -2227,7 +2227,7 @@ items:
           save:
             ability: con
             dc:
-              calculation: spellcasting
+              calculation: power system
               formula: '14'
           sort: 0
       identifier: blight
@@ -2326,7 +2326,7 @@ items:
             chatFlavor: ''
           duration:
             units: inst
-            concentration: false
+            maintained power: false
             override: false
           effects: []
           range:
@@ -2406,10 +2406,10 @@ items:
           damage, it makes a new Wisdom saving throw against the spell. If the
           saving throw succeeds, the spell ends.</p><p><strong>At Higher
           Levels.</strong> When you cast this spell using a 6th-level spell
-          slot, the duration is concentration, up to 10 minutes. When you use a
-          7th-level spell slot, the duration is concentration, up to 1 hour.
-          When you use a spell slot of 8th level or higher, the duration is
-          concentration, up to 8 hours.</p>
+          slot, the duration is maintained power, up to 10 minutes. When you use a
+          7th-level power use, the duration is maintained power, up to 1 hour.
+          When you use a power use of 8th level or higher, the duration is
+          maintained power, up to 8 hours.</p>
         chat: ''
       source:
         custom: ''
@@ -2453,7 +2453,7 @@ items:
       properties:
         - vocal
         - somatic
-        - concentration
+        - maintained power
       activities:
         dnd5eactivity000:
           _id: dnd5eactivity000
@@ -2472,7 +2472,7 @@ items:
             chatFlavor: ''
           duration:
             units: inst
-            concentration: false
+            maintained power: false
             override: false
           effects: []
           range:
@@ -2495,7 +2495,7 @@ items:
           save:
             ability: wis
             dc:
-              calculation: spellcasting
+              calculation: power system
               formula: '14'
           sort: 0
       identifier: dominate-person

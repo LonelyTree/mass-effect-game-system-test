@@ -69,7 +69,7 @@ system:
         chatFlavor: ''
       duration:
         units: inst
-        concentration: false
+        maintained power: false
         override: false
       effects:
         - _id: cCQh7iXKnT8PKmc1
@@ -110,7 +110,7 @@ system:
       save:
         ability: dex
         dc:
-          calculation: spellcasting
+          calculation: power system
           formula: ''
       name: Cast
       img: ''
@@ -133,7 +133,7 @@ system:
         chatFlavor: ''
       duration:
         units: inst
-        concentration: false
+        maintained power: false
         override: false
       effects: []
       range:
@@ -163,7 +163,7 @@ system:
       save:
         ability: con
         dc:
-          calculation: spellcasting
+          calculation: power system
           formula: ''
       name: Indigo Save (Con)
       img: systems/dnd5e/icons/svg/abilities/constitution.svg
@@ -183,7 +183,7 @@ system:
         chatFlavor: ''
       duration:
         units: inst
-        concentration: false
+        maintained power: false
         override: false
       effects: []
       range:
@@ -213,7 +213,7 @@ system:
       save:
         ability: wis
         dc:
-          calculation: spellcasting
+          calculation: power system
           formula: ''
       name: Violet Save (Wis)
       img: systems/dnd5e/icons/svg/abilities/wisdom.svg

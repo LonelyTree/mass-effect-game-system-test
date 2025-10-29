@@ -13,7 +13,7 @@ system:
       cured of any disease.</p><section class="secret foundry-note"
       id="secret-hzyPBoWppRXYnf9A"><p><strong>Foundry Note</strong></p><p>The 5
       charges reflect the maximum number of doses possible. Similarly, the guide
-      price of 600 gp is calculated at 120 gp per dose. Adjust both as
+      price of 600 CR is calculated at 120 CR per dose. Adjust both as
       required.</p></section>
     chat: ''
   source:
@@ -28,7 +28,7 @@ system:
     units: lb
   price:
     value: 200
-    denomination: gp
+    denomination: CR
   attunement: ''
   equipped: false
   rarity: uncommon
@@ -86,7 +86,7 @@ system:
       description:
         chatFlavor: ''
       duration:
-        concentration: false
+        maintained power: false
         value: ''
         units: inst
         special: ''

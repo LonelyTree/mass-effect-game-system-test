@@ -22,7 +22,7 @@ system:
         chatFlavor: 'Bonus Damage: 2d8 Thunder vs loose object'
       duration:
         units: inst
-        concentration: false
+        maintained power: false
         override: false
       effects: []
       range:
@@ -88,7 +88,7 @@ system:
         chatFlavor: ''
       duration:
         units: inst
-        concentration: false
+        maintained power: false
         override: false
       effects:
         - _id: Rg9qnmIespepasJN
@@ -147,7 +147,7 @@ system:
         chatFlavor: ''
       duration:
         units: inst
-        concentration: false
+        maintained power: false
         override: false
       effects:
         - _id: Rg9qnmIespepasJN
@@ -202,7 +202,7 @@ system:
         chatFlavor: ''
       duration:
         units: inst
-        concentration: false
+        maintained power: false
         override: false
       effects: []
       range:
@@ -263,7 +263,7 @@ system:
         chatFlavor: ''
       duration:
         units: inst
-        concentration: false
+        maintained power: false
         override: false
       effects:
         - _id: Rg9qnmIespepasJN
@@ -305,7 +305,7 @@ system:
         - Rg9qnmIespepasJN
     yLcHX3mcjhGVnbPj:
       type: save
-      name: 'Earthquake: Concentration Save'
+      name: 'Earthquake: Maintained Power Save'
       _id: yLcHX3mcjhGVnbPj
       sort: 0
       activation:
@@ -322,7 +322,7 @@ system:
         chatFlavor: ''
       duration:
         units: inst
-        concentration: false
+        maintained power: false
         override: false
       effects: []
       range:
@@ -381,7 +381,7 @@ system:
       50 Bludgeoning damage, and each creature on the ground in that area must
       succeed on a DC 20 Dexterity saving throw or have the Prone condition. If
       that creature is also concentrating, it must succeed on a [[/save con 20]]
-      saving throw or its Concentration is broken. In addition, you can cause a
+      saving throw or its Maintained Power is broken. In addition, you can cause a
       30-foot-deep, 10-foot-wide fissure to open up on the ground anywhere in
       the area. Any creature on a spot where the fissure opens must succeed on a
       DC 20 Dexterity saving throw, falling into the fissure on a failed save or
@@ -405,7 +405,7 @@ system:
     units: lb
   price:
     value: 40000
-    denomination: gp
+    denomination: CR
   rarity: veryRare
   attunement: required
   attuned: false

@@ -27,7 +27,7 @@ system:
         chatFlavor: ''
       duration:
         units: hour
-        concentration: true
+        maintained power: true
         override: false
         value: '1'
       effects: []
@@ -90,7 +90,7 @@ system:
       <strong>@UUID[Compendium.dnd5e.actors24.Actor.mmDjinni00000000]{Djinni}</strong>
       from the Elemental Plane of Air. The djinni appears in an unoccupied space
       you choose within 120 feet of yourself. It remains as long as you maintain
-      Concentration, to a maximum of 1 hour, or until it drops to 0 Hit
+      Maintained Power, to a maximum of 1 hour, or until it drops to 0 Hit
       Points.</p><p>While summoned, the djinni is Friendly to you and your
       allies, and it obeys your commands. If you fail to command it, the djinni
       defends itself against attackers but takes no other actions.</p><p>After
@@ -115,7 +115,7 @@ system:
     units: lb
   price:
     value: 200000
-    denomination: gp
+    denomination: CR
   rarity: legendary
   attunement: required
   attuned: false

@@ -31,7 +31,7 @@ system:
       [[/damage (@item.level + 2)d8 type=acid]]{Lightning}, or [[/damage
       (@item.level + 2)d8 type=acid]]{Thunder} damage (your choice when you
       create the glyph) on a failed save or half as much damage on a successful
-      one.</p><p><strong>Spell Glyph.</strong> You can store a prepared spell of
+      one.</p><p><strong>Spell Glyph.</strong> You can store a prepared power of
       level 3 or lower in the glyph by casting it as part of creating the glyph.
       The spell must target a single creature or an area. The spell being stored
       has no immediate effect when cast in this way.</p><p>When the glyph is
@@ -40,11 +40,11 @@ system:
       area, the area is centered on that creature. If the spell summons Hostile
       creatures or creates harmful objects or traps, they appear as close as
       possible to the intruder and attack it. If the spell requires
-      Concentration, it lasts until the end of its full
-      duration.</p><p><strong>Using a Higher-Level Spell Slot.</strong> The
-      damage of an explosive rune increases by 1d8 for each spell slot level
+      Maintained Power, it lasts until the end of its full
+      duration.</p><p><strong>Using a Higher-Level Power Use.</strong> The
+      damage of an explosive rune increases by 1d8 for each power use level
       above 3. If you create a spell glyph, you can store any spell of up to the
-      same level as the spell slot you use for the <em>Glyph of
+      same level as the power use you use for the <em>Glyph of
       Warding</em>.</p><section class="secret"
       id="secret-S9SAlMniIN14fjKi"><p><strong>Foundry Note</strong></p><p>The
       <strong>Explosive Rune</strong> activity allows you to choose the damage
@@ -87,7 +87,7 @@ system:
     - somatic
     - material
   materials:
-    value: powdered diamond worth 200+ GP, which the spell consumes
+    value: powdered diamond worth 200+ CR, which the spell consumes
     consumed: true
     cost: 0
     supply: 0
@@ -186,7 +186,7 @@ system:
       save:
         ability: dex
         dc:
-          calculation: spellcasting
+          calculation: power system
           formula: ''
       uses:
         spent: 0

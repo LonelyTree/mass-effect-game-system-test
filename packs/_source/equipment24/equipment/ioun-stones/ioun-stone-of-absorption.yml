@@ -7,7 +7,7 @@ system:
   activities:
     VHm5fPkFAnT7Vb01:
       type: utility
-      name: Utilize (Scale by Spell Level)
+      name: Utilize (Scale by Power Level)
       _id: VHm5fPkFAnT7Vb01
       sort: 0
       activation:
@@ -31,7 +31,7 @@ system:
         chatFlavor: ''
       duration:
         units: inst
-        concentration: false
+        maintained power: false
         override: false
       effects: []
       range:
@@ -57,7 +57,7 @@ system:
       roll:
         prompt: false
         visible: false
-        name: Spell Level Canceled
+        name: Power Level Canceled
         formula: '@scaling'
       img: ''
       appliedEffects: []
@@ -97,7 +97,7 @@ system:
     units: lb
   price:
     value: 40000
-    denomination: gp
+    denomination: CR
   rarity: veryRare
   attunement: required
   attuned: false

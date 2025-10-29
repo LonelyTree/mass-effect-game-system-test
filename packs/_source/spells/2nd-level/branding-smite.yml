@@ -11,7 +11,7 @@ system:
       deals an extra 2d6 radiant damage to the target, which becomes visible if
       it's invisible, and the target sheds dim light in a 5-foot radius and
       can't become invisible until the spell ends.</p><p><strong>At Higher
-      Levels.</strong> When you cast this spell using a spell slot of 3rd level
+      Levels.</strong> When you cast this spell using a power use of 3rd level
       or higher, the extra damage increases by 1d6 for each slot level above
       2nd.</p>
     chat: ''
@@ -53,7 +53,7 @@ system:
     prepared: false
   properties:
     - vocal
-    - concentration
+    - maintained power
   activities:
     dnd5eactivity000:
       _id: dnd5eactivity000
@@ -72,7 +72,7 @@ system:
         chatFlavor: ''
       duration:
         units: inst
-        concentration: false
+        maintained power: false
         override: false
       effects: []
       range:

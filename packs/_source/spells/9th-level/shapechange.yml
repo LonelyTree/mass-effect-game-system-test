@@ -10,7 +10,7 @@ system:
       form can be of any creature with a Challenge rating equal to your level or
       lower. The creature can't be a construct or an Undead, and you must have
       seen the sort of creature at least once. You transform into an average
-      example of that creature, one without any class levels or the Spellcasting
+      example of that creature, one without any class levels or the Power System
       trait.</p><p>Your game statistics are replaced by the statistics of the
       chosen creature, though you retain your Alignment and Intelligence,
       Wisdom, and Charisma scores. You also retain all of your skill and saving
@@ -26,7 +26,7 @@ system:
       knocked Unconscious.</p><p>You retain the benefit of any features from
       your class, race, or other source and can use them, provided that your new
       form is physically capable of doing so. You can't use any Special Senses
-      you have (for example, darkvision) unless your new form also has that
+      you have (for example, scanner) unless your new form also has that
       sense. You can only speak if the creature can normally speak.</p><p>When
       you transform, you choose whether your Equipment falls to the ground,
       merges into the new form, or is worn by it. Worn equipment functions as
@@ -70,7 +70,7 @@ system:
   school: trs
   materials:
     value: >-
-      A jade circlet worth at least 1,500 gp, which you must place on your head
+      A jade circlet worth at least 1,500 CR, which you must place on your head
       before you cast the spell
     consumed: false
     cost: 1500
@@ -82,7 +82,7 @@ system:
     - vocal
     - somatic
     - material
-    - concentration
+    - maintained power
   activities:
     dnd5eactivity000:
       _id: dnd5eactivity000
@@ -101,7 +101,7 @@ system:
         chatFlavor: ''
       duration:
         units: inst
-        concentration: false
+        maintained power: false
         override: false
       effects: []
       range:

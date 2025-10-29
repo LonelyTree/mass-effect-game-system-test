@@ -7,7 +7,7 @@ system:
   description:
     value: >-
       <p>You gain one of the following feature options of your choice. Whenever
-      you finish a Short or Long Rest, you can replace the chosen option with
+      you finish a Short or Full Rest, you can replace the chosen option with
       the other one.</p><p><strong>Escape the Horde.</strong> Opportunity
       Attacks have Disadvantage against you.</p><p><strong>Multiattack
       Defense.</strong> When a creature hits you with an attack roll, that
@@ -55,7 +55,7 @@ system:
         chatFlavor: ''
       duration:
         units: inst
-        concentration: false
+        maintained power: false
         override: false
       effects:
         - _id: oviiTMxQRTnne9oc

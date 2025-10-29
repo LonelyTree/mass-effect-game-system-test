@@ -7,7 +7,7 @@ system:
       Wondrous Power}</em></p><p>This onyx statuette of a dog can become a
       <strong>@UUID[Compendium.dnd5e.actors24.Actor.mmMastiff0000000]{Mastiff}</strong>
       for up to 6 hours. The mastiff has an Intelligence of 8 and can speak
-      Common. It also has Blindsight with a range of 60 feet. Once it has been
+      Common. It also has Thermal Vision with a range of 60 feet. Once it has been
       used, it can't be used again until 7 days have passed.</p><section
       class="secret" id="secret-61PsF1VxjiD2gq06"><p><strong>Foundry
       Note</strong></p><p>This item's limited uses represent the 7 days required
@@ -15,7 +15,7 @@ system:
     chat: ''
   price:
     value: 4000
-    denomination: gp
+    denomination: CR
   activities:
     kwirfY43jrRg2LTe:
       type: summon
@@ -39,7 +39,7 @@ system:
         chatFlavor: ''
       duration:
         units: hour
-        concentration: false
+        maintained power: false
         override: false
         value: '6'
       effects:
@@ -156,7 +156,7 @@ effects:
         mode: 2
         value: common
         priority: null
-      - key: system.attributes.senses.blindsight
+      - key: system.attributes.senses.thermal vision
         mode: 4
         value: '60'
         priority: null
@@ -171,7 +171,7 @@ effects:
       startTurn: null
     description: >-
       <p>The mastiff has an Intelligence of 8 and can speak Common. It also has
-      &amp;Reference[Blindsight] with a range of 60 feet.</p>
+      &amp;Reference[Thermal Vision] with a range of 60 feet.</p>
     origin: null
     tint: '#ffffff'
     transfer: true

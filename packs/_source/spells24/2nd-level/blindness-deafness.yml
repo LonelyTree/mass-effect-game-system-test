@@ -7,8 +7,8 @@ system:
       apply=false] or &amp;Reference[Deafened apply=false] condition (your
       choice) for the duration. At the end of each of its turns, the target
       repeats the save, ending the spell on itself on a
-      success.</p><p><strong>Using a Higher-Level Spell Slot.</strong> You can
-      target one additional creature for each spell slot level above 2.</p>
+      success.</p><p><strong>Using a Higher-Level Power Use.</strong> You can
+      target one additional creature for each power use level above 2.</p>
     chat: ''
   source:
     custom: ''
@@ -91,7 +91,7 @@ system:
       save:
         ability: con
         dc:
-          calculation: spellcasting
+          calculation: power system
           formula: ''
       uses:
         spent: 0

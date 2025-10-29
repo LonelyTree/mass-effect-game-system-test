@@ -12,7 +12,7 @@ system:
       save, a creature has the Frightened condition for 1 minute. At the end of
       each of the &amp;Reference[Frightened] creature's turns, the creature
       repeats the save, ending the effect on itself on a success.</p><p>Once you
-      use this feature, you can't use it again until you finish a Long Rest
+      use this feature, you can't use it again until you finish a Full Rest
       unless you expend a use of your Rage (no action required) to restore your
       use of it.</p><section class="secret"
       id="secret-vRQdGrtACAbxH4Tm"><p><strong>Foundry Note</strong></p><p>The
@@ -63,7 +63,7 @@ system:
       duration:
         units: inst
         override: false
-        concentration: false
+        maintained power: false
       effects:
         - _id: 3LofAPFLZJMQJirN
           onSave: false
@@ -126,7 +126,7 @@ system:
       duration:
         units: inst
         override: false
-        concentration: false
+        maintained power: false
       effects: []
       range:
         override: false

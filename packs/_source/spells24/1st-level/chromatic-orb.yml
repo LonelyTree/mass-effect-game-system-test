@@ -4,14 +4,14 @@ system:
     value: >-
       <p>You hurl an orb of energy at a target within range. Choose Acid, Cold,
       Fire, Lightning, Poison, or Thunder for the type of orb you create, and
-      then make a ranged spell attack against the target. On a hit, the target
+      then make a ranged power attack against the target. On a hit, the target
       takes 3d8 damage of the chosen type.</p><p>If you roll the same number on
       two or more of the d8s, the orb leaps to a different target of your choice
       within 30 feet of the target. Make an attack roll against the new target,
       and make a new damage roll. The orb can't leap again unless you cast the
-      spell with a level 2+ spell slot. [[@item.level]]{Number of
-      leaps}</p><p><strong>Using a Higher-Level Spell Slot.</strong> The damage
-      increases by 1d8 for each spell slot level above 1. The orb can leap a
+      spell with a level 2+ power use. [[@item.level]]{Number of
+      leaps}</p><p><strong>Using a Higher-Level Power Use.</strong> The damage
+      increases by 1d8 for each power use level above 1. The orb can leap a
       maximum number of times equal to the level of the slot expended, and a
       creature can be targeted only once by each casting of this spell.</p>
     chat: ''
@@ -51,7 +51,7 @@ system:
     - somatic
     - material
   materials:
-    value: a diamond worth 50+ GP
+    value: a diamond worth 50+ CR
     consumed: false
     cost: 0
     supply: 0

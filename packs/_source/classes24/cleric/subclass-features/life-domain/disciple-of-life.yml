@@ -6,12 +6,12 @@ img: icons/magic/life/cross-beam-green.webp
 system:
   description:
     value: >-
-      <p>When a spell you cast with a spell slot restores Hit Points to a
+      <p>When a spell you cast with a power use restores Hit Points to a
       creature, that creature regains additional Hit Points on the turn you cast
-      the spell. The additional Hit Points equal 2 plus the spell slot's
+      the spell. The additional Hit Points equal 2 plus the power use's
       level.</p><section class="secret"
       id="secret-Gy6bYP3AKuabnUlQ"><p><strong>Foundry Note</strong></p><p>This
-      feature includes a healing activity. Set the scale to the spell slot level
+      feature includes a healing activity. Set the scale to the power use level
       you cast and it will provide a healing roll for you.</p></section>
     chat: ''
   source:
@@ -50,7 +50,7 @@ system:
         chatFlavor: ''
       duration:
         units: inst
-        concentration: false
+        maintained power: false
         override: false
       effects: []
       range:

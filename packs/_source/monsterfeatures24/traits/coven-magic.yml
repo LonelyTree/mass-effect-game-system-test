@@ -25,7 +25,7 @@ system:
         chatFlavor: ''
       duration:
         units: inst
-        concentration: false
+        maintained power: false
         override: false
       range:
         override: false
@@ -51,7 +51,7 @@ system:
         level: '2'
         properties:
           - material
-        spellbook: true
+        power list: true
         uuid: Compendium.dnd5e.spells24.Item.phbsplAugury0000
         ability: int
       name: ''
@@ -75,7 +75,7 @@ system:
         chatFlavor: ''
       duration:
         units: inst
-        concentration: false
+        maintained power: false
         override: false
       range:
         override: false
@@ -101,7 +101,7 @@ system:
         level: '1'
         properties:
           - material
-        spellbook: true
+        power list: true
         uuid: Compendium.dnd5e.spells24.Item.phbsplFindFamili
         ability: int
       name: ''
@@ -125,7 +125,7 @@ system:
         chatFlavor: ''
       duration:
         units: inst
-        concentration: false
+        maintained power: false
         override: false
       range:
         override: false
@@ -151,7 +151,7 @@ system:
         level: '1'
         properties:
           - material
-        spellbook: true
+        power list: true
         uuid: Compendium.dnd5e.spells24.Item.phbsplIdentify00
         ability: int
       name: ''
@@ -175,7 +175,7 @@ system:
         chatFlavor: ''
       duration:
         units: inst
-        concentration: false
+        maintained power: false
         override: false
       range:
         override: false
@@ -201,7 +201,7 @@ system:
         level: '2'
         properties:
           - material
-        spellbook: true
+        power list: true
         uuid: Compendium.dnd5e.spells24.Item.phbsplLocateObje
         ability: int
       name: ''
@@ -225,7 +225,7 @@ system:
         chatFlavor: ''
       duration:
         units: inst
-        concentration: false
+        maintained power: false
         override: false
       range:
         override: false
@@ -251,7 +251,7 @@ system:
         level: '5'
         properties:
           - material
-        spellbook: true
+        power list: true
         uuid: Compendium.dnd5e.spells24.Item.phbsplScrying000
         ability: int
       name: ''
@@ -275,7 +275,7 @@ system:
         chatFlavor: ''
       duration:
         units: inst
-        concentration: false
+        maintained power: false
         override: false
       range:
         override: false
@@ -301,7 +301,7 @@ system:
         level: '1'
         properties:
           - material
-        spellbook: true
+        power list: true
         uuid: Compendium.dnd5e.spells24.Item.phbsplUnseenServ
         ability: int
       name: ''
@@ -314,8 +314,8 @@ system:
     value: >-
       <p class="feature">While within 30 feet of at least two hag allies, the
       [[lookup @name lowercase]] can cast one of the following spells, requiring
-      no Material components, using the spell's normal casting time, and using
-      Intelligence as the spellcasting ability (spell save DC [[lookup
+      no Material components, using the spell's normal activation time, and using
+      Intelligence as the power system ability (spell save DC [[lookup
       @abilities.int.dc]]):
       <em>@UUID[Compendium.dnd5e.spells24.Item.phbsplAugury0000]{Augury}</em>,
       <em>@UUID[Compendium.dnd5e.spells24.Item.phbsplFindFamili]{Find
@@ -326,7 +326,7 @@ system:
       <em>@UUID[Compendium.dnd5e.spells24.Item.phbsplScrying000]{Scrying}</em>,
       or
       <em>@UUID[Compendium.dnd5e.spells24.Item.phbsplUnseenServ]{Unseen
-      Servant}</em>. The [[lookup @name lowercase]] must finish a Long Rest
+      Servant}</em>. The [[lookup @name lowercase]] must finish a Full Rest
       before using this trait to cast that spell again.</p>
     chat: ''
   identifier: coven-magic

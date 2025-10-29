@@ -37,9 +37,9 @@ system:
       side).</td><td>Side window shutters close (two per
       side).</td></tr><tr><td>4</td><td>Two claws extend from the front sides of
       the apparatus.</td><td>The claws retract.</td></tr><tr><td>5</td><td>Each
-      extended claw makes the following melee weapon attack: +8 to hit, reach 5
+      extended claw makes the following close combat attack: +8 to hit, reach 5
       ft., one target. Hit: 7 (2d6) bludgeoning damage.</td><td>Each extended
-      claw makes the following melee weapon attack: +8 to hit, reach 5 ft., one
+      claw makes the following close combat attack: +8 to hit, reach 5 ft., one
       target. Hit: The target is Grappled (escape DC
       15).</td></tr><tr><td>6</td><td>The apparatus walks or swims
       forward.</td><td>The apparatus walks or swims
@@ -64,7 +64,7 @@ system:
     units: lb
   price:
     value: 200000
-    denomination: gp
+    denomination: CR
   attunement: ''
   equipped: false
   rarity: legendary
@@ -111,7 +111,7 @@ system:
       description:
         chatFlavor: ''
       duration:
-        concentration: false
+        maintained power: false
         value: '10'
         units: hour
         special: ''

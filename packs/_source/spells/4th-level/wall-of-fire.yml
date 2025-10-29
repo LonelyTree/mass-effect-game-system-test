@@ -17,7 +17,7 @@ system:
       within 10 feet of that side or inside the wall. A creature takes the same
       damage when it enters the wall for the first time on a turn or ends its
       turn there. The other side of the wall deals no damage.</p><p><strong>At
-      Higher Levels.</strong> When you cast this spell using a spell slot of 5th
+      Higher Levels.</strong> When you cast this spell using a power use of 5th
       level or higher, the damage increases by 1d8 for each slot level above
       4th.</p>
     chat: ''
@@ -63,7 +63,7 @@ system:
     - vocal
     - somatic
     - material
-    - concentration
+    - maintained power
   activities:
     dnd5eactivity000:
       _id: dnd5eactivity000
@@ -82,7 +82,7 @@ system:
         chatFlavor: ''
       duration:
         units: inst
-        concentration: false
+        maintained power: false
         override: false
       effects: []
       range:
@@ -113,7 +113,7 @@ system:
       save:
         ability: dex
         dc:
-          calculation: spellcasting
+          calculation: power system
           formula: ''
       uses:
         spent: 0

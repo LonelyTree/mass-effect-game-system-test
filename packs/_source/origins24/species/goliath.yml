@@ -11,7 +11,7 @@ system:
       descended from Giants. Choose one of the following benefits—a supernatural
       boon from your ancestry; you can use the chosen benefit a number of times
       equal to your Proficiency Bonus, and you regain all expended uses when you
-      finish a Long Rest:</p><p><strong>Cloud's Jaunt (Cloud Giant). </strong>As
+      finish a Full Rest:</p><p><strong>Cloud's Jaunt (Cloud Giant). </strong>As
       a Bonus Action, you magically teleport up to 30 feet to an unoccupied
       space you can see.</p><p><strong>Fire's Burn (Fire Giant).</strong> When
       you hit a target with an attack roll and deal damage to it, you can also
@@ -32,7 +32,7 @@ system:
       enough space. This transformation lasts for 10 minutes or until you end it
       (no action required). For that duration, you have Advantage on Strength
       checks, and your Speed increases by 10 feet. Once you use this trait, you
-      can't use it again until you finish a Long Rest.</p><p><strong>Powerful
+      can't use it again until you finish a Full Rest.</p><p><strong>Powerful
       Build.</strong> You have Advantage on any ability check you make to end
       the Grappled condition. You also count as one size larger when determining
       your carrying capacity.</p>
@@ -94,7 +94,7 @@ system:
         You are descended from Giants. Choose one of the following benefits—a
         supernatural boon from your ancestry; you can use the chosen benefit a
         number of times equal to your Proficiency Bonus, and you regain all
-        expended uses when you finish a Long Rest.
+        expended uses when you finish a Full Rest.
     - _id: 9cKoMls1KVDsdD4A
       type: ItemGrant
       configuration:
@@ -116,10 +116,10 @@ system:
     units: null
     hover: false
   senses:
-    darkvision: null
-    blindsight: null
-    tremorsense: null
-    truesight: null
+    scanner: null
+    thermal vision: null
+    motion sensor: null
+    radar ping: null
     units: null
     special: ''
   type:

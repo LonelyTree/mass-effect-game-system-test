@@ -24,7 +24,7 @@ system:
       existence. If you are on a different plane of existence, it returns to the
       place where you bound it and remains there until the spell
       ends.</p><p><strong>At Higher Levels.</strong> When you cast this spell
-      using a spell slot of a higher level, the Duration increases to 10 days
+      using a power use of a higher level, the Duration increases to 10 days
       with a 6th-level slot, to 30 days with a 7th-level slot, to 180 days with
       an 8th-level slot, and to a year and a day with a 9th-level spell
       slot.</p>
@@ -89,7 +89,7 @@ system:
         chatFlavor: ''
       duration:
         units: inst
-        concentration: false
+        maintained power: false
         override: false
       effects: []
       range:
@@ -108,7 +108,7 @@ system:
       save:
         ability: cha
         dc:
-          calculation: spellcasting
+          calculation: power system
           formula: ''
       uses:
         spent: 0

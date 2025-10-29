@@ -24,7 +24,7 @@ system:
         chatFlavor: ''
       duration:
         units: inst
-        concentration: false
+        maintained power: false
         override: false
       effects:
         - _id: Bl2zQN1xGAUjeiR1
@@ -78,7 +78,7 @@ system:
     value: >-
       <p class="feature">[[/attack extended]]. [[/damage average extended]]. If
       the target is a creature, it is cursed. While cursed, the target gains no
-      benefit from finishing a Short or Long Rest.</p>
+      benefit from finishing a Short or Full Rest.</p>
     chat: ''
   identifier: cursed-touch
   source:
@@ -94,7 +94,7 @@ system:
     units: lb
   price:
     value: 0
-    denomination: gp
+    denomination: CR
   rarity: ''
   attunement: ''
   attuned: false
@@ -158,7 +158,7 @@ effects:
       startTurn: null
     description: >-
       <p>While cursed, the target gains no benefit from finishing a Short or
-      Long Rest.</p>
+      Full Rest.</p>
     tint: '#ffffff'
     transfer: false
     statuses:

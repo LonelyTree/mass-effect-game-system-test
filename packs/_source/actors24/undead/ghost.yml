@@ -5,7 +5,7 @@ img: null
 system:
   currency:
     pp: 0
-    gp: 0
+    CR: 0
     ep: 0
     sp: 0
     cp: 0
@@ -363,15 +363,15 @@ system:
     attunement:
       max: 3
     senses:
-      darkvision: 60
-      blindsight: null
-      tremorsense: null
-      truesight: null
+      scanner: 60
+      thermal vision: null
+      motion sensor: null
+      radar ping: null
       units: null
       special: ''
-    spellcasting: str
+    power system: str
     exhaustion: 0
-    concentration:
+    maintained power:
       ability: ''
       roll:
         min: null
@@ -702,7 +702,7 @@ items:
           description: {}
           duration:
             units: inst
-            concentration: false
+            maintained power: false
             override: false
           effects: []
           range:
@@ -793,7 +793,7 @@ items:
             chatFlavor: ''
           duration:
             units: inst
-            concentration: false
+            maintained power: false
             override: false
           effects: []
           range:
@@ -852,7 +852,7 @@ items:
         units: lb
       price:
         value: 0
-        denomination: gp
+        denomination: CR
       rarity: ''
       attunement: ''
       armor:
@@ -942,7 +942,7 @@ items:
             chatFlavor: ''
           duration:
             units: inst
-            concentration: false
+            maintained power: false
             override: false
           range:
             override: false
@@ -968,7 +968,7 @@ items:
               - vocal
               - somatic
               - material
-            spellbook: true
+            power list: true
             uuid: Compendium.dnd5e.spells24.Item.phbsplEtherealne
             ability: cha
           name: Etherealness
@@ -980,8 +980,8 @@ items:
         value: >-
           <p class="feature">The [[lookup @name lowercase]] casts the
           <em>@UUID[Compendium.dnd5e.spells24.Item.phbsplEtherealne]{Etherealness}</em>
-          spell, requiring no spell components and using Charisma as the
-          spellcasting ability. The [[lookup @name lowercase]] is visible on the
+          spell, requiring no power components and using Charisma as the
+          power system ability. The [[lookup @name lowercase]] is visible on the
           Material Plane while on the Border Ethereal and vice versa, but it
           can't affect or be affected by anything on the other plane.</p>
         chat: ''
@@ -1042,8 +1042,8 @@ items:
           number of feet you are moved.</p><p>This spell ends instantly if you
           cast it while you are on the Ethereal Plane or a plane that doesn't
           border it, such as one of the Outer Planes.</p><p><strong>Using a
-          Higher-Level Spell Slot.</strong>You can target up to three willing
-          creatures (including yourself) for each spell slot level above 7. The
+          Higher-Level Power Use.</strong>You can target up to three willing
+          creatures (including yourself) for each power use level above 7. The
           creatures must be within 10 feet of you when you cast the spell.</p>
         chat: ''
       source:
@@ -1106,7 +1106,7 @@ items:
             chatFlavor: ''
           duration:
             units: inst
-            concentration: false
+            maintained power: false
             override: false
           effects:
             - _id: louTI4Z9bNUYBa8K
@@ -1267,7 +1267,7 @@ items:
             chatFlavor: ''
           duration:
             units: inst
-            concentration: false
+            maintained power: false
             override: false
           effects:
             - _id: lx2ebHyyyaaWf8s1
@@ -1428,7 +1428,7 @@ items:
             chatFlavor: ''
           duration:
             units: inst
-            concentration: false
+            maintained power: false
             override: false
           effects:
             - _id: EeZIaR3X4cI5glMX

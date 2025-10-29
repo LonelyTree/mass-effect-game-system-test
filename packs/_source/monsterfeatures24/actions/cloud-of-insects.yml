@@ -24,7 +24,7 @@ system:
         chatFlavor: ''
       duration:
         units: inst
-        concentration: false
+        maintained power: false
         override: false
       effects:
         - _id: owuEyJBslYKvxqeX
@@ -81,7 +81,7 @@ system:
       can see within [[lookup @range.value activity=0OkFhjOM80ipoNKy]]
       feet.</p><p><em>Failure:</em> [[/damage average]] damage, and the target
       has Disadvantage on saving throws to maintain
-      &amp;Reference[Concentration] until the end of its next
+      &amp;Reference[Maintained Power] until the end of its next
       turn.</p><p><em>Failure or Success:</em> The [[lookup @name lowercase]]
       can't take this action again until the start of its next turn.</p>
     chat: ''
@@ -115,7 +115,7 @@ effects:
       startRound: null
       startTurn: null
     description: >-
-      <p>The target has Disadvantage on saving throws to maintain Concentration
+      <p>The target has Disadvantage on saving throws to maintain Maintained Power
       until the end of its next turn</p>
     tint: '#ffffff'
     statuses: []

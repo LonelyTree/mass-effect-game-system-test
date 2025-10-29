@@ -123,8 +123,8 @@ system:
       title: Additional Magical Secrets
       hint: >-
         Learn two spells of your choice from any class. A spell you choose must
-        be of a level you can cast, as shown on the Bard table, or a cantrip.
-  spellcasting:
+        be of a level you can cast, as shown on the Bard table, or a basic power.
+  power system:
     progression: none
     ability: ''
     preparation: {}

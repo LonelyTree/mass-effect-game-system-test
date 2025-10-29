@@ -8,7 +8,7 @@ system:
       <p>A book might contain poetry, historical accounts, information
       pertaining to a particular field of lore, diagrams and notes on gnomish
       contraptions, or just about anything else that can be represented using
-      text or pictures. A book of spells is a spellbook.</p>
+      text or pictures. A book of spells is a power list.</p>
     chat: ''
   source:
     custom: ''
@@ -22,7 +22,7 @@ system:
     units: lb
   price:
     value: 25
-    denomination: gp
+    denomination: CR
   rarity: ''
   identified: true
   type:

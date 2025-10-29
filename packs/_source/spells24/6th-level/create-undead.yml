@@ -21,14 +21,14 @@ system:
       creature before the current 24-hour period ends. This use of the spell
       reasserts your control over up to three creatures you have animated with
       this spell rather than animating new ones.</p><p><strong>Using a
-      Higher-Level Spell Slot.</strong>If you use a level 7 spell slot, you can
+      Higher-Level Power Use.</strong>If you use a level 7 power use, you can
       animate or reassert control over four <strong>Ghouls</strong>. If you use
-      a level 8 spell slot, you can animate or reassert control over five
+      a level 8 power use, you can animate or reassert control over five
       <strong>Ghouls</strong> or two
       <strong>@UUID[Compendium.dnd5e.monsters.Actor.IyIybE5t2adMEVUM]{Ghasts}</strong>
       or
       <strong>@UUID[Compendium.dnd5e.monsters.Actor.rbyp54px2D0ql4QK]{Wights}</strong>.
-      If you use a level 9 spell slot, you can animate or reassert control over
+      If you use a level 9 power use, you can animate or reassert control over
       six <strong>Ghouls</strong>, three <strong>Ghasts</strong> or
       <strong>Wights</strong>, or two
       <strong>@UUID[Compendium.dnd5e.monsters.Actor.t8WYD7ak07X7xpx8]{Mummies}</strong>.
@@ -71,7 +71,7 @@ system:
     - somatic
     - material
   materials:
-    value: one 150+ GP black onyx stone for each corpse
+    value: one 150+ CR black onyx stone for each corpse
     consumed: false
     cost: 0
     supply: 0
@@ -95,7 +95,7 @@ system:
         chatFlavor: ''
       duration:
         units: inst
-        concentration: false
+        maintained power: false
         override: false
       range:
         override: false
@@ -184,7 +184,7 @@ system:
         chatFlavor: ''
       duration:
         units: hour
-        concentration: false
+        maintained power: false
         override: true
         value: '24'
       effects: []
@@ -232,7 +232,7 @@ system:
         chatFlavor: ''
       duration:
         units: inst
-        concentration: false
+        maintained power: false
         override: false
       effects: []
       range:

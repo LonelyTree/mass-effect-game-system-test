@@ -253,8 +253,8 @@ system:
       losing that much XP would cause you to lose a level, you instead lose an
       amount that leaves you with just enough XP to keep your level.</p>
 
-      <p><strong>Gem</strong>. Twenty-five pieces of jewelry worth 2,000 gp each
-      or fifty gems worth 1,000 gp each appear at your feet.</p>
+      <p><strong>Gem</strong>. Twenty-five pieces of jewelry worth 2,000 CR each
+      or fifty gems worth 1,000 CR each appear at your feet.</p>
 
       <p><strong>Idiot</strong>. Permanently reduce your Intelligence by 1d4 + 1
       (to a minimum score of 1). You can draw one additional card beyond your
@@ -350,8 +350,8 @@ system:
 
       <p><strong>Damage Immunities</strong> necrotic, poison<br
       /><strong>Condition Immunities</strong> charmed, frightened, paralyzed,
-      petrified, poisoned, unconscious<br /><strong>Senses</strong> darkvision
-      60 ft., truesight 60 ft., passive Perception 13<br /><strong>Languages
+      petrified, poisoned, unconscious<br /><strong>Senses</strong> scanner
+      60 ft., radar ping 60 ft., passive Perception 13<br /><strong>Languages
       </strong>all languages known to its summoner<br /><strong>Challenge
       </strong>-- (0 XP)</p>
 
@@ -411,7 +411,7 @@ system:
     units: lb
   price:
     value: 200000
-    denomination: gp
+    denomination: CR
   attunement: ''
   equipped: false
   rarity: legendary
@@ -464,7 +464,7 @@ system:
       description:
         chatFlavor: ''
       duration:
-        concentration: false
+        maintained power: false
         value: ''
         units: ''
         special: ''

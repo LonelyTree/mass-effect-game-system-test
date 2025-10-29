@@ -2,7 +2,7 @@ name: Plant Growth
 system:
   description:
     value: >-
-      <p><strong>Casting Time:</strong> Action (Overgrowth) or 8 hours
+      <p><strong>Activation Time:</strong> Action (Overgrowth) or 8 hours
       (Enrichment)</p><p>This spell channels vitality into plants. The casting
       time you use determines whether the spell has the Overgrowth or the
       Enrichment effect below.</p><p><strong>Overgrowth.</strong> Choose a point
@@ -125,7 +125,7 @@ system:
         chatFlavor: ''
       duration:
         units: inst
-        concentration: false
+        maintained power: false
         override: false
       effects: []
       range:

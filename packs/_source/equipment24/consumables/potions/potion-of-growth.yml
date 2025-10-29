@@ -18,8 +18,8 @@ system:
           - vocal
           - somatic
           - material
-          - concentration
-        spellbook: true
+          - maintained power
+        power list: true
       _id: o9I0OYuD6EkLaGCR
       sort: 0
       activation:
@@ -40,7 +40,7 @@ system:
         chatFlavor: ''
       duration:
         units: inst
-        concentration: false
+        maintained power: false
         override: false
       range:
         override: false
@@ -68,7 +68,7 @@ system:
       <p><em>Potion, Uncommon</em></p><p>When you drink this potion, you gain
       the "enlarge" effect of the
       @UUID[Compendium.dnd5e.spells24.Item.phbsplEnlargeRed]{Enlarge/Reduce}
-      spell for 10 minutes (no Concentration required).</p><p>The red in the
+      spell for 10 minutes (no Maintained Power required).</p><p>The red in the
       potion's liquid continuously expands from a tiny bead to color the clear
       liquid around it and then contracts. Shaking the bottle fails to interrupt
       this process.</p>
@@ -89,7 +89,7 @@ system:
     units: lb
   price:
     value: 200
-    denomination: gp
+    denomination: CR
   rarity: uncommon
   attunement: ''
   attuned: false

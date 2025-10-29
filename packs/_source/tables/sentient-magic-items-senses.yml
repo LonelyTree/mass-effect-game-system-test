@@ -87,7 +87,7 @@ results:
       compendiumSource: null
       duplicateSource: null
       exportSource: null
-    description: Hearing and darkvision out to 120 feet.
+    description: Hearing and scanner out to 120 feet.
     name: ''
     _key: '!tables.results!gfR9uCe42xBCCktd.5vXfLp6f7vaFBd2o'
 formula: 1d4

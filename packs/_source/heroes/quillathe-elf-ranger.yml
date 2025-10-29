@@ -76,13 +76,13 @@ system:
     attunement:
       max: 3
     senses:
-      darkvision: null
-      blindsight: null
-      tremorsense: null
-      truesight: null
+      scanner: null
+      thermal vision: null
+      motion sensor: null
+      radar ping: null
       units: null
       special: ''
-    spellcasting: wis
+    power system: wis
     death:
       success: 0
       failure: 0
@@ -93,7 +93,7 @@ system:
         mode: 0
     exhaustion: 0
     inspiration: false
-    concentration:
+    maintained power:
       ability: ''
       roll:
         min: null
@@ -174,7 +174,7 @@ system:
       bypasses: []
   currency:
     pp: 0
-    gp: 5
+    CR: 5
     ep: 0
     sp: 0
     cp: 0
@@ -513,7 +513,7 @@ prototypeToken:
     enabled: true
     range: 60
     brightness: 0
-    visionMode: darkvision
+    visionMode: scanner
     color: null
     attenuation: 0
     saturation: 0
@@ -600,7 +600,7 @@ items:
           not.</p><p><em><strong>Size.</strong></em> Elves range from under 5 to
           over 6 feet tall and have slender builds. Your size is
           Medium.</p><p><em><strong>Speed.</strong></em> Your base walking speed
-          is 30 feet.</p><p><em><strong>Darkvision.</strong></em> Accustomed to
+          is 30 feet.</p><p><em><strong>Scanner.</strong></em> Accustomed to
           twilit forests and the night sky, you have superior vision in dark and
           dim conditions. You can see in dim light within 60 feet of you as if
           it were bright light, and in darkness as if it were dim light. You
@@ -630,9 +630,9 @@ items:
           Intelligence score increases by 1.</p><p><em><strong>Elf Weapon
           Training.</strong></em> You have proficiency with the longsword,
           shortsword, shortbow, and
-          longbow.</p><p><em><strong>Cantrip.</strong></em> You know one cantrip
-          of your choice from the wizard spell list. Intelligence is your
-          spellcasting ability for it.</p><p><em><strong>Extra
+          longbow.</p><p><em><strong>Basic Power.</strong></em> You know one basic power
+          of your choice from the wizard power list. Intelligence is your
+          power system ability for it.</p><p><em><strong>Extra
           Language.</strong></em> You can speak, read, and write one extra
           language of your choice.</p>
         chat: ''
@@ -694,10 +694,10 @@ items:
               '0':
                 joQ1bnoyaPbRm4dT: Compendium.dnd5e.spells.Item.udsLtG0BugXHR2JQ
             replaced: {}
-          title: Cantrip
+          title: Basic Power
           hint: >-
-            You know one cantrip of your choice from the wizard spell list.
-            Intelligence is your spellcasting ability for it.
+            You know one basic power of your choice from the wizard power list.
+            Intelligence is your power system ability for it.
         - _id: Z9hvZFkWUNvowbQX
           type: AbilityScoreImprovement
           configuration:
@@ -782,10 +782,10 @@ items:
               - weapon:mar:longsword
               - weapon:mar:shortsword
       senses:
-        darkvision: 60
-        blindsight: null
-        tremorsense: null
-        truesight: null
+        scanner: 60
+        thermal vision: null
+        motion sensor: null
+        radar ping: null
         units: ft
         special: ''
       movement:
@@ -953,12 +953,12 @@ items:
           @UUID[Compendium.dnd5e.classfeatures.Item.8fbZt2Qh7ZttwIan]{Natural
           Explorer}</td></tr><tr><td>2nd</td><td>+2</td><td>@UUID[Compendium.dnd5e.classfeatures.Item.nJA3ISVmyj3uPRVM]{Fighting
           Style},
-          @UUID[Compendium.dnd5e.classfeatures.Item.u6xV3Ki3TXRrD7zg]{Spellcasting}</td></tr><tr><td>3rd</td><td>+2</td><td>@UUID[Compendium.dnd5e.classfeatures.Item.1dJHU48yNqn3lcfx]{Ranger
+          @UUID[Compendium.dnd5e.classfeatures.Item.u6xV3Ki3TXRrD7zg]{Power System}</td></tr><tr><td>3rd</td><td>+2</td><td>@UUID[Compendium.dnd5e.classfeatures.Item.1dJHU48yNqn3lcfx]{Ranger
           Archetype},
           @UUID[Compendium.dnd5e.classfeatures.Item.kaHcUGiwi8AtfZIm]{Primeval
           Awareness}</td></tr><tr><td>4th</td><td>+2</td><td>@UUID[Compendium.dnd5e.classfeatures.Item.s0Cc2zcX0JzIgam5]{Ability
           Score Improvement}</td></tr><tr><td>5th</td><td>+3</td><td>2nd Level
-          Spell Slot,
+          Power Use,
           @UUID[Compendium.dnd5e.classfeatures.Item.XogoBnFWmCAHXppo]{Extra
           Attack}</td></tr><tr><td>6th</td><td>+3</td><td>@UUID[Compendium.dnd5e.classfeatures.Item.4Vpj9vCOB37GtXk6]{Favored
           Enemy +1},
@@ -1420,7 +1420,7 @@ items:
           value: {}
           level: 3
           title: Ranger Archetype
-      spellcasting:
+      power system:
         progression: half
         ability: wis
         preparation: {}
@@ -1798,7 +1798,7 @@ items:
           description:
             chatFlavor: ''
           duration:
-            concentration: false
+            maintained power: false
             value: ''
             units: ''
             special: ''
@@ -1933,7 +1933,7 @@ items:
           description:
             chatFlavor: ''
           duration:
-            concentration: false
+            maintained power: false
             value: '1'
             units: hour
             special: ''
@@ -2107,7 +2107,7 @@ items:
         units: lb
       price:
         value: 50
-        denomination: gp
+        denomination: CR
       attunement: ''
       equipped: true
       rarity: ''
@@ -2186,7 +2186,7 @@ items:
           description:
             chatFlavor: ''
           duration:
-            concentration: false
+            maintained power: false
             value: ''
             units: ''
             special: ''
@@ -2274,7 +2274,7 @@ items:
         units: lb
       price:
         value: 1
-        denomination: gp
+        denomination: CR
       attunement: ''
       equipped: false
       rarity: ''
@@ -2286,7 +2286,7 @@ items:
         cp: 0
         sp: 0
         ep: 0
-        gp: 0
+        CR: 0
         pp: 0
       unidentified:
         description: ''
@@ -2386,7 +2386,7 @@ items:
           description:
             chatFlavor: ''
           duration:
-            concentration: false
+            maintained power: false
             value: ''
             units: ''
             special: ''
@@ -2461,7 +2461,7 @@ items:
         units: lb
       price:
         value: 1
-        denomination: gp
+        denomination: CR
       rarity: ''
       identified: true
       type:
@@ -2513,7 +2513,7 @@ items:
         units: lb
       price:
         value: 2
-        denomination: gp
+        denomination: CR
       attunement: ''
       equipped: false
       rarity: ''
@@ -2525,7 +2525,7 @@ items:
         cp: 0
         sp: 0
         ep: 0
-        gp: 0
+        CR: 0
         pp: 0
       unidentified:
         description: ''
@@ -2573,7 +2573,7 @@ items:
         units: lb
       price:
         value: 1
-        denomination: gp
+        denomination: CR
       attunement: ''
       equipped: false
       rarity: ''
@@ -2623,7 +2623,7 @@ items:
           description:
             chatFlavor: ''
           duration:
-            concentration: false
+            maintained power: false
             value: ''
             units: inst
             special: ''
@@ -2760,7 +2760,7 @@ items:
         units: lb
       price:
         value: 10
-        denomination: gp
+        denomination: CR
       attunement: ''
       equipped: true
       rarity: ''
@@ -2836,7 +2836,7 @@ items:
         units: lb
       price:
         value: 10
-        denomination: gp
+        denomination: CR
       attunement: ''
       equipped: true
       rarity: ''
@@ -2914,7 +2914,7 @@ items:
           description:
             chatFlavor: ''
           duration:
-            concentration: false
+            maintained power: false
             value: ''
             units: ''
             special: ''
@@ -3076,7 +3076,7 @@ items:
             chatFlavor: ''
           duration:
             units: inst
-            concentration: false
+            maintained power: false
             override: false
           effects: []
           range:

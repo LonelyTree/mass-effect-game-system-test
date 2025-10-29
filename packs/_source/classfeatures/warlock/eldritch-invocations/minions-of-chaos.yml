@@ -8,8 +8,8 @@ system:
     value: >-
       <p>You can cast
       @UUID[Compendium.dnd5e.spells.Item.1LkZvINag7KqBmDR]{Conjure Elemental}
-      once using a warlock spell slot. You can't do so again until you finish a
-      long rest.</p>
+      once using a warlock power use. You can't do so again until you finish a
+      full rest.</p>
     chat: ''
   source:
     custom: ''
@@ -54,7 +54,7 @@ system:
       description:
         chatFlavor: ''
       duration:
-        concentration: false
+        maintained power: false
         value: '1'
         units: hour
         special: ''

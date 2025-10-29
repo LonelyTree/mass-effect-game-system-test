@@ -27,7 +27,7 @@ system:
       Musical Instrument of your choice,
       @UUID[Compendium.dnd5e.equipment24.Item.phbagEntertainer]{Entertainer's
       Pack}, and [[/award 19gp]]; or (B) [[/award
-      90GP]]</p></td></tr></tbody></table><p>@Embed[Compendium.dnd5e.content24.JournalEntry.phbAppendixClass.JournalEntryPage.phbbrdBard000000
+      90CR]]</p></td></tr></tbody></table><p>@Embed[Compendium.dnd5e.content24.JournalEntry.phbAppendixClass.JournalEntryPage.phbbrdBard000000
       inline classes="free-rules-embed"]</p><h2>Becoming a Bard …</h2><h3>As a
       Level 1 Character</h3><ul><li>Gain all the traits in the Core Bard Traits
       table.</li><li>Gain the Bard's level 1 features, which are listed in the
@@ -37,7 +37,7 @@ system:
       with one Musical Instrument of your choice, and training with Light
       armor.</li><li>Gain the Bard's level 1 features, which are listed in the
       Bard Features table. See the multiclassing rules in chapter 2 to determine
-      your available spell slots.</li></ul>
+      your available power uses.</li></ul>
     chat: ''
   source:
     custom: ''
@@ -278,7 +278,7 @@ system:
           '20':
             value: 22
       value: {}
-      title: Max Prepared Spells
+      title: Max Prepared Powers
       hint: ''
     - _id: jhPf4YuOvE1POUaX
       type: ScaleValue
@@ -295,7 +295,7 @@ system:
           '10':
             value: 4
       value: {}
-      title: Cantrips Known
+      title: Basic Powers Known
       hint: ''
     - _id: afzqphkin9YZOIBf
       type: ScaleValue
@@ -511,7 +511,7 @@ system:
       level: 19
       title: ''
       hint: ''
-  spellcasting:
+  power system:
     progression: full
     ability: cha
     preparation:

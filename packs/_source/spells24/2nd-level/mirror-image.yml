@@ -12,8 +12,8 @@ system:
       duplicate is destroyed. The duplicates otherwise ignore all other damage
       and effects. The spell ends when all three duplicates are
       destroyed.</p><p>A creature is unaffected by this spell if it has the
-      &amp;Reference[blinded apply=false] condition, &amp;Reference[blindsight],
-      or &amp;Reference[truesight].</p>
+      &amp;Reference[blinded apply=false] condition, &amp;Reference[thermal vision],
+      or &amp;Reference[radar ping].</p>
     chat: ''
   source:
     custom: ''

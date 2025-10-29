@@ -24,10 +24,10 @@ system:
       @UUID[Compendium.dnd5e.equipment24.Item.phbagArcaneFocus]{Arcane Focus}
       (@UUID[Compendium.dnd5e.equipment24.Item.phbwepQuartersta]{Quarterstaff}),
       @UUID[Compendium.dnd5e.equipment24.Item.phbagRobe0000000]{Robe},
-      @UUID[Compendium.dnd5e.items.Item.LBajgahniRJbAgDr]{Spellbook},
+      @UUID[Compendium.dnd5e.items.Item.LBajgahniRJbAgDr]{Power List},
       @UUID[Compendium.dnd5e.equipment24.Item.phbagScholarsPac]{Scholar's Pack},
-      and [[/award 5GP]]; or (B) [[/award
-      55GP]]</p></td></tr></tbody></table><p>@Embed[Compendium.dnd5e.content24.JournalEntry.phbAppendixClass.JournalEntryPage.phbwzdWizard0000
+      and [[/award 5CR]]; or (B) [[/award
+      55CR]]</p></td></tr></tbody></table><p>@Embed[Compendium.dnd5e.content24.JournalEntry.phbAppendixClass.JournalEntryPage.phbwzdWizard0000
       inline classes="free-rules-embed"]</p><h2>Becoming a Wizard …</h2><h3>As a
       Level 1 Character</h3><ul><li>Gain all the traits in the Core Wizard
       Traits table.</li><li>Gain the Wizard's level 1 features, which are listed
@@ -37,26 +37,26 @@ system:
       @UUID[Compendium.dnd5e.content24.JournalEntry.phbWizard0000000.JournalEntryPage.g7cMRWzsgAsEF7zC#class-features]{Wizard
       Features table}. See the
       @UUID[Compendium.dnd5e.content24.JournalEntry.phbCreatingAChar.JournalEntryPage.vcs4jfEKRxPCsgXm]{multiclassing
-      rules} to determine your available spell slots.</li></ul><aside
+      rules} to determine your available power uses.</li></ul><aside
       class="notable"><p><strong>Expanding and Replacing a
-      Spellbook</strong></p><p>The spells you add to your spellbook as you gain
+      Power List</strong></p><p>The spells you add to your power list as you gain
       levels reflect your ongoing magical research, but you might find other
       spells during your adventures that you can add to the book. You could
-      discover a Wizard spell on a Spell Scroll, for example, and then copy it
-      into your spellbook.</p><p><strong>Copying a Spell into the Book.</strong>
-      When you find a level 1+ Wizard spell, you can copy it into your spellbook
+      discover a Wizard spell on a Power Module, for example, and then copy it
+      into your power list.</p><p><strong>Copying a Spell into the Book.</strong>
+      When you find a level 1+ Wizard spell, you can copy it into your power list
       if it's of a level you can prepare and if you have time to copy it. For
-      each level of the spell, the transcription takes 2 hours and costs 50 GP.
+      each level of the spell, the transcription takes 2 hours and costs 50 CR.
       Afterward you can prepare the spell like the other spells in your
-      spellbook.</p><p><strong>Copying the Book.</strong> You can copy a spell
-      from your spellbook into another book. This is like copying a new spell
-      into your spellbook but faster, since you already know how to cast the
-      spell. You need spend only 1 hour and 10 GP for each level of the copied
-      spell.</p><p>If you lose your spellbook, you can use the same procedure to
-      transcribe the Wizard spells that you have prepared into a new spellbook.
+      power list.</p><p><strong>Copying the Book.</strong> You can copy a spell
+      from your power list into another book. This is like copying a new spell
+      into your power list but faster, since you already know how to cast the
+      spell. You need spend only 1 hour and 10 CR for each level of the copied
+      spell.</p><p>If you lose your power list, you can use the same procedure to
+      transcribe the Wizard spells that you have prepared into a new power list.
       Filling out the remainder of the new book requires you to find new spells
       to do so. For this reason, many wizards keep a backup
-      spellbook.</p></aside>
+      power list.</p></aside>
     chat: ''
   source:
     custom: ''
@@ -288,7 +288,7 @@ system:
           '20':
             value: 25
       value: {}
-      title: Max Prepared Spells
+      title: Max Prepared Powers
       hint: ''
     - _id: ZTnATJgznTj4W6ZG
       type: ScaleValue
@@ -305,7 +305,7 @@ system:
           '10':
             value: 5
       value: {}
-      title: Cantrips Known
+      title: Basic Powers Known
       hint: ''
     - _id: S1H3INPWaAiRkB6G
       type: Trait
@@ -410,7 +410,7 @@ system:
       level: 19
       title: ''
       hint: ''
-  spellcasting:
+  power system:
     progression: full
     ability: int
     preparation:

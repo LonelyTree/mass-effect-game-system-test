@@ -8,8 +8,8 @@ system:
       cast the spell. The target has Disadvantage on ability checks made with
       the chosen ability.</p><p>If the target drops to 0 Hit Points before this
       spell ends, you can take a Bonus Action on a later turn to curse a new
-      creature.</p><p><strong>Using a Higher-Level Spell Slot.</strong> Your
-      Concentration can last longer with a spell slot of level 2 (up to 4
+      creature.</p><p><strong>Using a Higher-Level Power Use.</strong> Your
+      Maintained Power can last longer with a power use of level 2 (up to 4
       hours), 3–4 (up to 8 hours), or 5+ (24 hours).</p>
     chat: ''
   source:
@@ -48,7 +48,7 @@ system:
     - vocal
     - somatic
     - material
-    - concentration
+    - maintained power
   materials:
     value: the petrified eye of a newt
     consumed: false

@@ -27,7 +27,7 @@ system:
         chatFlavor: ''
       duration:
         units: inst
-        concentration: false
+        maintained power: false
         override: false
       range:
         override: false
@@ -53,7 +53,7 @@ system:
           - vocal
           - somatic
           - material
-        spellbook: true
+        power list: true
         uuid: Compendium.dnd5e.spells24.Item.phbsplMirrorImag
         ability: wis
       name: ''
@@ -68,8 +68,8 @@ system:
     value: >-
       <p class="feature">The [[lookup @name lowercase]] casts the
       <em>@UUID[Compendium.dnd5e.spells24.Item.phbsplMirrorImag]{Mirror
-      Image}</em> spell, requiring no spell components and using Wisdom as the
-      spellcasting ability. The spell ends early if the [[lookup @name
+      Image}</em> spell, requiring no power components and using Wisdom as the
+      power system ability. The spell ends early if the [[lookup @name
       lowercase]] starts or ends its turn in Bright Light.</p>
     chat: ''
   identifier: phantasms

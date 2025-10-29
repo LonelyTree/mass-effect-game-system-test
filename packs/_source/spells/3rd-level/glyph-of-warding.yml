@@ -42,9 +42,9 @@ system:
       area, the area is centered on that creature. If the spell summons hostile
       creatures or creates harmful objects or traps, they appear as close as
       possible to the intruder and attack it. If the spell requires
-      concentration, it lasts until the end of its full
+      maintained power, it lasts until the end of its full
       duration.</p><p><strong>At Higher Levels.</strong> When you cast this
-      spell using a spell slot of 4th level or higher, the damage of an
+      spell using a power use of 4th level or higher, the damage of an
       explosive runes glyph increases by 1d8 for each slot level above 3rd. If
       you create a spell glyph, you can store any spell of up to the same level
       as the slot you use for the glyph of warding.</p>
@@ -108,7 +108,7 @@ system:
         chatFlavor: ''
       duration:
         units: inst
-        concentration: false
+        maintained power: false
         override: false
       effects: []
       range:
@@ -138,7 +138,7 @@ system:
       save:
         ability: dex
         dc:
-          calculation: spellcasting
+          calculation: power system
           formula: ''
       uses:
         spent: 0

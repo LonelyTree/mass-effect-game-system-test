@@ -24,7 +24,7 @@ system:
         chatFlavor: ''
       duration:
         units: inst
-        concentration: false
+        maintained power: false
         override: false
       effects: []
       range:
@@ -67,7 +67,7 @@ system:
     value: >-
       <p>When you are reduced to 0 Hit Points but not killed outright, you can
       drop to 1 Hit Point instead. Once you use this trait, you can't do so
-      again until you finish a Long Rest.</p>
+      again until you finish a Full Rest.</p>
     chat: ''
   source:
     revision: 1

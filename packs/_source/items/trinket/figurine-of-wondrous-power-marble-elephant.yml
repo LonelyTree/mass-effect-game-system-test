@@ -1,4 +1,4 @@
-_id: GP2bvHlxVi30OEmo
+_id: CR2bvHlxVi30OEmo
 name: Figurine of Wondrous Power (Marble Elephant)
 type: consumable
 img: icons/commodities/bones/horn-simple-grey.webp
@@ -18,7 +18,7 @@ system:
     units: lb
   price:
     value: 4000
-    denomination: gp
+    denomination: CR
   attunement: ''
   equipped: false
   rarity: rare
@@ -71,7 +71,7 @@ system:
       description:
         chatFlavor: ''
       duration:
-        concentration: false
+        maintained power: false
         value: '24'
         units: hour
         special: ''
@@ -124,4 +124,4 @@ _stats:
   modifiedTime: 1750697344647
   lastModifiedBy: dnd5ebuilder0000
   exportSource: null
-_key: '!items!GP2bvHlxVi30OEmo'
+_key: '!items!CR2bvHlxVi30OEmo'

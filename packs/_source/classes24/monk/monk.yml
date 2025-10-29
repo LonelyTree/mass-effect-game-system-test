@@ -25,8 +25,8 @@ system:
       Artisan's Tools or Musical Instrument chosen for the tool proficiency
       above,
       @UUID[Compendium.dnd5e.equipment24.Item.phbagExplorersPa]{Explorer's
-      Pack}, and [[/award 11GP]]; or (B) [[/award
-      50GP]]</p></td></tr></tbody></table><p>@Embed[Compendium.dnd5e.content24.JournalEntry.phbAppendixClass.JournalEntryPage.phbmnkMonk000000
+      Pack}, and [[/award 11CR]]; or (B) [[/award
+      50CR]]</p></td></tr></tbody></table><p>@Embed[Compendium.dnd5e.content24.JournalEntry.phbAppendixClass.JournalEntryPage.phbmnkMonk000000
       inline classes="free-rules-embed"]</p><h2>Becoming a Monk …</h2><h3>As a
       Level 1 Character</h3><ul><li>Gain all the traits in the Core Monk Traits
       table.</li><li>Gain the Monk's level 1 features, which are listed in the
@@ -564,7 +564,7 @@ system:
       level: 19
       title: ''
       hint: ''
-  spellcasting:
+  power system:
     progression: none
     ability: ''
     preparation:

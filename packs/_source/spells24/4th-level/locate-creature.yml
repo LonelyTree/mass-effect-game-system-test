@@ -49,7 +49,7 @@ system:
     - vocal
     - somatic
     - material
-    - concentration
+    - maintained power
   materials:
     value: fur from a bloodhound
     consumed: false

@@ -89,7 +89,7 @@ system:
       custom: Telepathy 1 mile (works only with you)
   currency:
     pp: 0
-    gp: 0
+    CR: 0
     ep: 0
     sp: 0
     cp: 0
@@ -344,15 +344,15 @@ system:
     attunement:
       max: 3
     senses:
-      darkvision: null
-      blindsight: null
-      tremorsense: null
-      truesight: null
+      scanner: null
+      thermal vision: null
+      motion sensor: null
+      radar ping: null
       units: null
       special: ''
-    spellcasting: int
+    power system: int
     exhaustion: 0
-    concentration:
+    maintained power:
       ability: ''
       roll:
         min: null
@@ -583,7 +583,7 @@ items:
             units: inst
             special: ''
             override: false
-            concentration: false
+            maintained power: false
           effects: []
           range:
             value: '5'
@@ -726,7 +726,7 @@ items:
             units: ''
             special: ''
             override: false
-            concentration: false
+            maintained power: false
           effects:
             - _id: mvCvu3ezA2FV5IeR
               onSave: false
@@ -758,7 +758,7 @@ items:
             ability:
               - wis
             dc:
-              calculation: spellcasting
+              calculation: power system
               formula: ''
           uses:
             spent: 0
@@ -881,7 +881,7 @@ items:
             units: inst
             special: ''
             override: false
-            concentration: false
+            maintained power: false
           effects: []
           range:
             value: '60'
@@ -1001,7 +1001,7 @@ items:
             units: ''
             special: ''
             override: false
-            concentration: false
+            maintained power: false
           effects: []
           range:
             value: '5'

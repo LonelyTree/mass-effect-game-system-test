@@ -76,13 +76,13 @@ system:
     attunement:
       max: 3
     senses:
-      darkvision: null
-      blindsight: null
-      tremorsense: null
-      truesight: null
+      scanner: null
+      thermal vision: null
+      motion sensor: null
+      radar ping: null
       units: null
       special: ''
-    spellcasting: wis
+    power system: wis
     death:
       success: 0
       failure: 0
@@ -93,7 +93,7 @@ system:
         mode: 0
     exhaustion: 0
     inspiration: false
-    concentration:
+    maintained power:
       ability: ''
       roll:
         min: null
@@ -178,7 +178,7 @@ system:
       bypasses: []
   currency:
     pp: 0
-    gp: 5
+    CR: 5
     ep: 0
     sp: 0
     cp: 0
@@ -572,7 +572,7 @@ items:
         units: lb
       price:
         value: 1
-        denomination: gp
+        denomination: CR
       rarity: ''
       identified: true
       type:
@@ -610,7 +610,7 @@ items:
           Religion</li><li><strong>Tool Proficiencies:</strong> Herbalism
           kit</li><li><strong>Languages:</strong> One of your
           choice</li><li><strong>Equipment:</strong> A scroll case, a blanket,
-          common clothes, an herbalism kit, and 5 gp</li></ul>
+          common clothes, an herbalism kit, and 5 CR</li></ul>
         chat: ''
       source:
         custom: ''
@@ -738,10 +738,10 @@ items:
         units: ft
         hover: false
       senses:
-        darkvision: 0
-        blindsight: 0
-        tremorsense: 0
-        truesight: 0
+        scanner: 0
+        thermal vision: 0
+        motion sensor: 0
+        radar ping: 0
         units: ft
         special: ''
       type:
@@ -787,7 +787,7 @@ items:
           Perception, Religion, and Survival</p><h1>Druid
           Advancement</h1><table><thead><tr><td>Level</td><td>Proficiency
           Bonus</td><td>Features</td></tr></thead><tbody><tr><td>1st</td><td>+2</td><td>@UUID[Compendium.dnd5e.classfeatures.Item.LzJ5ayHt0OlSVGxi]{Druidic},
-          @UUID[Compendium.dnd5e.classfeatures.Item.i6tPm3FNK13Ftc9v]{Spellcasting}</td></tr><tr><td>2nd</td><td>+2</td><td>@UUID[Compendium.dnd5e.classfeatures.Item.swK0r5TOIxredxWS]{Wild
+          @UUID[Compendium.dnd5e.classfeatures.Item.i6tPm3FNK13Ftc9v]{Power System}</td></tr><tr><td>2nd</td><td>+2</td><td>@UUID[Compendium.dnd5e.classfeatures.Item.swK0r5TOIxredxWS]{Wild
           Shape (Max CR ¼)},
           @UUID[Compendium.dnd5e.classfeatures.Item.u6Du2P9s81SWuGbi]{Druid
           Circle}</td></tr><tr><td>3rd</td><td>+2</td><td>2nd Level Spell
@@ -795,17 +795,17 @@ items:
           Shape (Max CR ½)},
           @UUID[Compendium.dnd5e.classfeatures.Item.s0Cc2zcX0JzIgam5]{Ability
           Score Improvement}</td></tr><tr><td>5th</td><td>+3</td><td>3rd Level
-          Spell Slot</td></tr><tr><td>6th</td><td>+3</td><td>Druid Circle
+          Power Use</td></tr><tr><td>6th</td><td>+3</td><td>Druid Circle
           feature</td></tr><tr><td>7th</td><td>+3</td><td>4th Level Spell
           Slot</td></tr><tr><td>8th</td><td>+3</td><td>@UUID[Compendium.dnd5e.classfeatures.Item.swK0r5TOIxredxWS]{Wild
           Shape (Max CR 1)},
           @UUID[Compendium.dnd5e.classfeatures.Item.s0Cc2zcX0JzIgam5]{Ability
           Score Improvement}</td></tr><tr><td>9th</td><td>+4</td><td>5th Level
-          Spell Slot</td></tr><tr><td>10th</td><td>+4</td><td>Druid Circle
+          Power Use</td></tr><tr><td>10th</td><td>+4</td><td>Druid Circle
           feature</td></tr><tr><td>11th</td><td>+4</td><td>6th Level Spell
           Slot</td></tr><tr><td>12th</td><td>+4</td><td>@UUID[Compendium.dnd5e.classfeatures.Item.s0Cc2zcX0JzIgam5]{Ability
           Score Improvement}</td></tr><tr><td>13th</td><td>+5</td><td>7th Level
-          Spell Slot</td></tr><tr><td>14th</td><td>+5</td><td>Druid Circle
+          Power Use</td></tr><tr><td>14th</td><td>+5</td><td>Druid Circle
           feature</td></tr><tr><td>15th</td><td>+5</td><td>8th Level Spell
           Slot</td></tr><tr><td>16th</td><td>+5</td><td>@UUID[Compendium.dnd5e.classfeatures.Item.s0Cc2zcX0JzIgam5]{Ability
           Score Improvement}</td></tr><tr><td>17th</td><td>+6</td><td>9th Level
@@ -819,7 +819,7 @@ items:
           class="sidebar-block"><h4>Sacred Plants and Wood</h4><p>A druid holds
           certain plants to be sacred, particularly alder, ash, birch, elder,
           hazel, holly, juniper, mistletoe, oak, rowan, willow, and yew. Druids
-          often use such plants as part of a spellcasting focus, incorporating
+          often use such plants as part of a power system focus, incorporating
           lengths of oak or yew or sprigs of mistletoe.</p><p>Similarly, a druid
           uses such woods to make other objects, such as weapons and shields.
           Yew is associated with death and rebirth, so weapon handles for
@@ -1060,7 +1060,7 @@ items:
           _id: eX43MTPVUV9VB0dK
         - type: ScaleValue
           configuration:
-            identifier: cantrips-known
+            identifier: basic powers-known
             type: number
             distance:
               units: ''
@@ -1072,7 +1072,7 @@ items:
               '10':
                 value: 4
           value: {}
-          title: Cantrips Known
+          title: Basic Powers Known
           _id: Gfzu57bEFMsekg7v
         - type: AbilityScoreImprovement
           configuration:
@@ -1193,7 +1193,7 @@ items:
           value: {}
           level: 2
           title: Druid Circle
-      spellcasting:
+      power system:
         progression: full
         ability: wis
         preparation:
@@ -1339,13 +1339,13 @@ items:
       exportSource: null
     _key: '!actors.items!ZGDys30OS76uYaIO.vlHZEirUBkXrOs1W'
   - _id: CICEvmF4z3OxHSU4
-    name: Spellcasting
+    name: Power System
     ownership:
       default: 0
     type: feat
     system:
       description:
-        value: "<p>Drawing on the divine essence of nature itself, you can cast spells to shape that essence to your will.</p>\n<h5>Cantrips</h5>\n<p>At 1st level, you know two cantrips of your choice from the druid spell list. You learn additional druid cantrips of your choice at higher levels, as shown in the Cantrips Known column of the Druid table.</p>\n<h5>Preparing and Casting Spells</h5>\n<p>The Druid table shows how many spell slots you have to cast your spells of 1st level and higher. To cast one of these druid spells, you must expend a slot of the spell's level or higher. You regain all expended spell slots when you finish a long rest.</p>\n<p>You prepare the list of druid spells that are available for you to cast, choosing from the druid spell list. When you do so, choose a number of druid spells equal to your Wisdom modifier + your druid level (minimum of one spell). The spells must be of a level for which you have spell slots.</p>\n<p>For example, if you are a 3rd-level druid, you have four 1st-level and two 2nd-level spell slots. With a Wisdom of 16, your list of prepared spells can include six spells of 1st or 2nd level, in any combination. If you prepare the 1st-level spell cure wounds, you can cast it using a 1st-level or 2nd-level slot. Casting the spell doesn't remove it from your list of prepared spells.</p>\n<p>You can also change your list of prepared spells when you finish a long rest. Preparing a new list of druid spells requires time spent in prayer and meditation: at least 1 minute per spell level for each spell on your list.</p>\n<h5>Spellcasting Ability</h5>\n<p>Wisdom is your spellcasting ability for your druid spells, since your magic draws upon your devotion and attunement to nature. You use your Wisdom whenever a spell refers to your spellcasting ability. In addition, you use your Wisdom modifier when setting the saving throw DC for a druid spell you cast and when making an attack roll with one.</p>\n<p><strong>Spell save DC</strong>\_= 8 + your proficiency bonus + your Wisdom modifier</p>\n<p><strong>Spell attack modifier</strong>\_= your proficiency bonus + your Wisdom modifier</p>\n<h5>Ritual Casting</h5>\n<p>You can cast a druid spell as a ritual if that spell has the ritual tag and you have the spell prepared.</p>\n<h5>Spellcasting Focus</h5>\n<p>You can use a druidic focus (see @UUID[Compendium.dnd5e.rules.JournalEntry.BYFd9hiJGo9L5aOM.JournalEntryPage.AjavRU4yPfI9hfaI]{Adventuring Gear}) as a spellcasting focus for your druid spells.</p>"
+        value: "<p>Drawing on the divine essence of nature itself, you can cast spells to shape that essence to your will.</p>\n<h5>Basic Powers</h5>\n<p>At 1st level, you know two basic powers of your choice from the druid power list. You learn additional druid basic powers of your choice at higher levels, as shown in the Basic Powers Known column of the Druid table.</p>\n<h5>Preparing and Casting Spells</h5>\n<p>The Druid table shows how many power uses you have to cast your spells of 1st level and higher. To cast one of these druid spells, you must expend a slot of the spell's level or higher. You regain all expended power uses when you finish a full rest.</p>\n<p>You prepare the list of druid spells that are available for you to cast, choosing from the druid power list. When you do so, choose a number of druid spells equal to your Wisdom modifier + your druid level (minimum of one spell). The spells must be of a level for which you have power uses.</p>\n<p>For example, if you are a 3rd-level druid, you have four 1st-level and two 2nd-level power uses. With a Wisdom of 16, your list of prepared powers can include six spells of 1st or 2nd level, in any combination. If you prepare the 1st-level spell cure wounds, you can cast it using a 1st-level or 2nd-level slot. Casting the spell doesn't remove it from your list of prepared powers.</p>\n<p>You can also change your list of prepared powers when you finish a full rest. Preparing a new list of druid spells requires time spent in prayer and meditation: at least 1 minute per power level for each spell on your list.</p>\n<h5>Power System Ability</h5>\n<p>Wisdom is your power system ability for your druid spells, since your magic draws upon your devotion and attunement to nature. You use your Wisdom whenever a spell refers to your power system ability. In addition, you use your Wisdom modifier when setting the saving throw DC for a druid spell you cast and when making an attack roll with one.</p>\n<p><strong>Spell save DC</strong>\_= 8 + your proficiency bonus + your Wisdom modifier</p>\n<p><strong>Spell attack modifier</strong>\_= your proficiency bonus + your Wisdom modifier</p>\n<h5>Tech Protocol</h5>\n<p>You can cast a druid spell as a ritual if that spell has the ritual tag and you have the spell prepared.</p>\n<h5>Power System Focus</h5>\n<p>You can use a druidic focus (see @UUID[Compendium.dnd5e.rules.JournalEntry.BYFd9hiJGo9L5aOM.JournalEntryPage.AjavRU4yPfI9hfaI]{Adventuring Gear}) as a power system focus for your druid spells.</p>"
         chat: ''
       source:
         custom: ''
@@ -1367,7 +1367,7 @@ items:
       enchant: {}
       prerequisites:
         level: null
-      identifier: spellcasting
+      identifier: power system
     flags:
       dnd5e:
         sourceId: Compendium.dnd5e.classfeatures.Item.i6tPm3FNK13Ftc9v
@@ -1517,7 +1517,7 @@ items:
           description:
             chatFlavor: ''
           duration:
-            concentration: false
+            maintained power: false
             value: ''
             units: ''
             special: ''
@@ -1652,7 +1652,7 @@ items:
           description:
             chatFlavor: ''
           duration:
-            concentration: false
+            maintained power: false
             value: '1'
             units: hour
             special: ''
@@ -1799,7 +1799,7 @@ items:
         units: lb
       price:
         value: 1
-        denomination: gp
+        denomination: CR
       attunement: ''
       equipped: false
       rarity: ''
@@ -1811,7 +1811,7 @@ items:
         cp: 0
         sp: 0
         ep: 0
-        gp: 0
+        CR: 0
         pp: 0
       container: Qy2aRjl4iQ8EmaT5
       unidentified:
@@ -1907,7 +1907,7 @@ items:
           description:
             chatFlavor: ''
           duration:
-            concentration: false
+            maintained power: false
             value: ''
             units: ''
             special: ''
@@ -2036,7 +2036,7 @@ items:
           description:
             chatFlavor: ''
           duration:
-            concentration: false
+            maintained power: false
             value: ''
             units: ''
             special: ''
@@ -2111,7 +2111,7 @@ items:
         units: lb
       price:
         value: 1
-        denomination: gp
+        denomination: CR
       rarity: ''
       identified: true
       type:
@@ -2163,7 +2163,7 @@ items:
         units: lb
       price:
         value: 2
-        denomination: gp
+        denomination: CR
       attunement: ''
       equipped: false
       rarity: ''
@@ -2175,7 +2175,7 @@ items:
         cp: 0
         sp: 0
         ep: 0
-        gp: 0
+        CR: 0
         pp: 0
       unidentified:
         description: ''
@@ -2223,7 +2223,7 @@ items:
         units: lb
       price:
         value: 1
-        denomination: gp
+        denomination: CR
       attunement: ''
       equipped: false
       rarity: ''
@@ -2273,7 +2273,7 @@ items:
           description:
             chatFlavor: ''
           duration:
-            concentration: false
+            maintained power: false
             value: ''
             units: inst
             special: ''
@@ -2410,7 +2410,7 @@ items:
         units: lb
       price:
         value: 10
-        denomination: gp
+        denomination: CR
       attunement: ''
       equipped: true
       rarity: ''
@@ -2562,7 +2562,7 @@ items:
           description:
             chatFlavor: ''
           duration:
-            concentration: false
+            maintained power: false
             value: ''
             units: ''
             special: ''
@@ -2654,7 +2654,7 @@ items:
         units: lb
       price:
         value: 5
-        denomination: gp
+        denomination: CR
       attunement: ''
       equipped: false
       rarity: ''
@@ -2692,7 +2692,7 @@ items:
           description:
             chatFlavor: ''
           duration:
-            concentration: false
+            maintained power: false
             value: ''
             units: ''
             special: ''
@@ -2846,7 +2846,7 @@ items:
           description:
             chatFlavor: ''
           duration:
-            concentration: false
+            maintained power: false
             value: ''
             units: ''
             special: ''
@@ -2969,7 +2969,7 @@ items:
         - vocal
         - somatic
         - material
-        - concentration
+        - maintained power
       activities:
         dnd5eactivity000:
           _id: dnd5eactivity000
@@ -2988,7 +2988,7 @@ items:
             chatFlavor: ''
           duration:
             units: inst
-            concentration: false
+            maintained power: false
             override: false
           effects: []
           range:
@@ -3099,7 +3099,7 @@ items:
             chatFlavor: ''
           duration:
             units: inst
-            concentration: false
+            maintained power: false
             override: false
           effects: []
           range:
@@ -3152,7 +3152,7 @@ items:
           heavily obscured. It lasts for the Duration or until a wind of
           moderate or greater speed (at least 10 miles per hour) disperses
           it.</p><p><strong>At Higher Levels.</strong> When you cast this spell
-          using a spell slot of 2nd level or higher, the radius of the fog
+          using a power use of 2nd level or higher, the radius of the fog
           increases by 20 feet for each slot level above 1st.</p>
         chat: ''
       source:
@@ -3197,7 +3197,7 @@ items:
       properties:
         - vocal
         - somatic
-        - concentration
+        - maintained power
       activities:
         dnd5eactivity000:
           _id: dnd5eactivity000
@@ -3216,7 +3216,7 @@ items:
             chatFlavor: ''
           duration:
             units: inst
-            concentration: false
+            maintained power: false
             override: false
           effects: []
           range:
@@ -3329,7 +3329,7 @@ items:
             chatFlavor: ''
           duration:
             units: inst
-            concentration: false
+            maintained power: false
             override: false
           effects: []
           range:
@@ -3442,7 +3442,7 @@ items:
             chatFlavor: ''
           duration:
             units: inst
-            concentration: false
+            maintained power: false
             override: false
           effects: []
           range:
@@ -3579,7 +3579,7 @@ items:
             chatFlavor: ''
           duration:
             units: inst
-            concentration: false
+            maintained power: false
             override: false
           effects: []
           range:
@@ -3628,7 +3628,7 @@ items:
       description:
         value: >-
           <p>The wood of a club or quarterstaff you are holding is imbued with
-          nature's power. For the duration, you can use your spellcasting
+          nature's power. For the duration, you can use your power system
           ability instead of Strength for the attack and damage rolls of melee
           attacks using that weapon, and the weapon's damage die becomes a d8.
           The weapon also becomes magical, if it isn't already. The spell ends
@@ -3697,7 +3697,7 @@ items:
             chatFlavor: ''
           duration:
             units: inst
-            concentration: false
+            maintained power: false
             override: false
           effects:
             - _id: QPsqj6jfS0iXSrTs
@@ -3751,7 +3751,7 @@ items:
             units: ''
             special: ''
             override: false
-            concentration: false
+            maintained power: false
           effects: []
           range:
             units: ''
@@ -3774,7 +3774,7 @@ items:
             prompt: true
             override: false
           attack:
-            ability: spellcasting
+            ability: power system
             bonus: ''
             critical:
               threshold: null
@@ -3793,7 +3793,7 @@ items:
             max: ''
           sort: 0
           _id: ONVab5lmTqJwwMBC
-          name: Spellcasting Attack
+          name: Power System Attack
       identifier: shillelagh
       sourceClass: druid
     flags:
@@ -3884,7 +3884,7 @@ items:
           automatically pushed 10 feet away from you by the spell's effect, and
           the spell emits a thunderous boom audible out to 300
           feet.</p><p><strong>At Higher Levels.</strong> When you cast this
-          spell using a spell slot of 2nd level or higher, the damage increases
+          spell using a power use of 2nd level or higher, the damage increases
           by 1d8 for each slot level above 1st.</p>
         chat: ''
       source:
@@ -3946,7 +3946,7 @@ items:
             chatFlavor: ''
           duration:
             units: inst
-            concentration: false
+            maintained power: false
             override: false
           effects: []
           range:
@@ -3978,7 +3978,7 @@ items:
             ability:
               - con
             dc:
-              calculation: spellcasting
+              calculation: power system
               formula: ''
           uses:
             spent: 0
@@ -4073,7 +4073,7 @@ items:
             chatFlavor: ''
           duration:
             units: inst
-            concentration: false
+            maintained power: false
             override: false
           effects: []
           range:
@@ -4120,7 +4120,7 @@ items:
     type: spell
     system:
       description:
-        value: "<p>You either create or destroy water.</p><p><strong>Create Water.</strong> You create up to 10 gallons of clean water within range in an open container. Alternatively, the water falls as rain in a 30-foot cube within range.</p><p><strong>Destroy Water.</strong> You destroy up to 10 gallons of water in an open container within range. Alternatively, you destroy fog in a 30-foot cube within range.</p><p><strong>Higher Levels.\_</strong>When you cast this spell using a spell slot of 2nd level or higher, you create or destroy 10 additional gallons of water, or the size of the cube increases by 5 feet, for each slot level above 1st.</p>"
+        value: "<p>You either create or destroy water.</p><p><strong>Create Water.</strong> You create up to 10 gallons of clean water within range in an open container. Alternatively, the water falls as rain in a 30-foot cube within range.</p><p><strong>Destroy Water.</strong> You destroy up to 10 gallons of water in an open container within range. Alternatively, you destroy fog in a 30-foot cube within range.</p><p><strong>Higher Levels.\_</strong>When you cast this spell using a power use of 2nd level or higher, you create or destroy 10 additional gallons of water, or the size of the cube increases by 5 feet, for each slot level above 1st.</p>"
         chat: ''
       source:
         custom: ''
@@ -4185,7 +4185,7 @@ items:
             chatFlavor: ''
           duration:
             units: inst
-            concentration: false
+            maintained power: false
             override: false
           effects: []
           range:
@@ -4300,7 +4300,7 @@ items:
             chatFlavor: ''
           duration:
             units: inst
-            concentration: false
+            maintained power: false
             override: false
           effects: []
           range:
@@ -4355,7 +4355,7 @@ items:
           your companions do anything harmful to it. The charmed creature
           regards you as a friendly acquaintance. When the spell ends, the
           creature knows it was charmed by you.</p><p><strong>At Higher
-          Levels.</strong> When you cast this spell using a spell slot of 2nd
+          Levels.</strong> When you cast this spell using a power use of 2nd
           level or higher, you can target one additional creature for each slot
           level above 1st. The creatures must be within 30 feet of each other
           when you target them.</p>
@@ -4420,7 +4420,7 @@ items:
             chatFlavor: ''
           duration:
             units: inst
-            concentration: false
+            maintained power: false
             override: false
           effects:
             - _id: 1QhUB3231btaCO0b
@@ -4442,7 +4442,7 @@ items:
             ability:
               - wis
             dc:
-              calculation: spellcasting
+              calculation: power system
               formula: ''
           uses:
             spent: 0
@@ -4563,7 +4563,7 @@ items:
       properties:
         - vocal
         - somatic
-        - concentration
+        - maintained power
       activities:
         dnd5eactivity000:
           _id: dnd5eactivity000
@@ -4582,7 +4582,7 @@ items:
             chatFlavor: ''
           duration:
             units: inst
-            concentration: false
+            maintained power: false
             override: false
           effects:
             - _id: fO14IutGR3Hrepun
@@ -4604,7 +4604,7 @@ items:
             ability:
               - str
             dc:
-              calculation: spellcasting
+              calculation: power system
               formula: ''
           uses:
             spent: 0
@@ -4726,7 +4726,7 @@ items:
         - vocal
         - somatic
         - ritual
-        - concentration
+        - maintained power
       activities:
         dnd5eactivity000:
           _id: dnd5eactivity000
@@ -4745,7 +4745,7 @@ items:
             chatFlavor: ''
           duration:
             units: inst
-            concentration: false
+            maintained power: false
             override: false
           effects: []
           range:
@@ -4799,7 +4799,7 @@ items:
           Otherwise, the beast must succeed on a Wisdom saving throw or be
           charmed by you for the spell's duration. If you or one of your
           companions harms the target, the spell ends.</p><p><strong>At Higher
-          Levels.</strong> When you cast this spell using a spell slot of 2nd
+          Levels.</strong> When you cast this spell using a power use of 2nd
           level or higher, you can affect one additional beast for each slot
           level above 1st.</p>
         chat: ''
@@ -4864,7 +4864,7 @@ items:
             chatFlavor: ''
           duration:
             units: inst
-            concentration: false
+            maintained power: false
             override: false
           effects: []
           range:
@@ -4884,7 +4884,7 @@ items:
             ability:
               - wis
             dc:
-              calculation: spellcasting
+              calculation: power system
               formula: ''
           uses:
             spent: 0
@@ -4966,7 +4966,7 @@ items:
         prepared: true
       properties:
         - vocal
-        - concentration
+        - maintained power
       activities:
         dnd5eactivity000:
           _id: dnd5eactivity000
@@ -4985,7 +4985,7 @@ items:
             chatFlavor: ''
           duration:
             units: inst
-            concentration: false
+            maintained power: false
             override: false
           effects: []
           range:
@@ -5005,7 +5005,7 @@ items:
             ability:
               - dex
             dc:
-              calculation: spellcasting
+              calculation: power system
               formula: ''
           uses:
             spent: 0
@@ -5038,9 +5038,9 @@ items:
       description:
         value: >-
           <p>A creature of your choice that you can see within range regains hit
-          points equal to 1d4 + your spellcasting ability modifier. This spell
+          points equal to 1d4 + your power system ability modifier. This spell
           has no effect on undead or constructs.</p><p><strong>Higher
-          Levels.</strong> When you cast this spell using a spell slot of 2nd
+          Levels.</strong> When you cast this spell using a power use of 2nd
           level or higher, the healing increases by 1d4 for each slot level
           above 1st.</p>
         chat: ''
@@ -5103,7 +5103,7 @@ items:
             chatFlavor: ''
           duration:
             units: inst
-            concentration: false
+            maintained power: false
             override: false
           effects: []
           range:
@@ -5160,9 +5160,9 @@ items:
       description:
         value: >-
           <p>A creature you touch regains a number of hit points equal to 1d8 +
-          your spellcasting ability modifier. This spell has no effect on undead
+          your power system ability modifier. This spell has no effect on undead
           or constructs.</p><p><strong>At Higher Levels.</strong> When you cast
-          this spell using a spell slot of 2nd level or higher, the healing
+          this spell using a power use of 2nd level or higher, the healing
           increases by 1d8 for each slot level above 1st.</p>
         chat: ''
       source:
@@ -5224,7 +5224,7 @@ items:
             chatFlavor: ''
           duration:
             units: inst
-            concentration: false
+            maintained power: false
             override: false
           effects: []
           range:

@@ -24,7 +24,7 @@ system:
         chatFlavor: ''
       duration:
         units: inst
-        concentration: false
+        maintained power: false
         override: false
       range:
         override: false
@@ -48,7 +48,7 @@ system:
         level: '3'
         properties:
           - material
-        spellbook: false
+        power list: false
         uuid: Compendium.dnd5e.spells24.Item.phbsplScorchingR
         ability: ''
       name: ''
@@ -60,7 +60,7 @@ system:
   description:
     value: >-
       <p class="feature">The [[lookup @name lowercase]] uses [[/item
-      Spellcasting]] to cast
+      Power System]] to cast
       <em>@UUID[Compendium.dnd5e.spells24.Item.phbsplScorchingR]{Scorching
       Ray}</em>. The [[lookup @name lowercase]] can't take this action again
       until the start of its next turn.</p>

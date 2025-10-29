@@ -23,7 +23,7 @@ system:
         chatFlavor: ''
       duration:
         units: inst
-        concentration: false
+        maintained power: false
         override: false
       effects:
         - _id: cN85nWiTzfGzWR7D
@@ -70,7 +70,7 @@ system:
           - vocal
           - somatic
           - material
-        spellbook: true
+        power list: true
       _id: XBLdYOx6G8zS67Gb
       sort: 0
       activation:
@@ -90,7 +90,7 @@ system:
         chatFlavor: ''
       duration:
         units: inst
-        concentration: false
+        maintained power: false
         override: false
       range:
         override: false
@@ -121,7 +121,7 @@ system:
           - vocal
           - somatic
           - material
-        spellbook: true
+        power list: true
       _id: WEBJIJBHSUTJruRZ
       sort: 0
       activation:
@@ -137,7 +137,7 @@ system:
         chatFlavor: ''
       duration:
         units: inst
-        concentration: false
+        maintained power: false
         override: false
       range:
         override: false
@@ -168,7 +168,7 @@ system:
           - vocal
           - somatic
           - material
-        spellbook: true
+        power list: true
       _id: KN5CZz5BdRVGC2IN
       sort: 0
       activation:
@@ -188,7 +188,7 @@ system:
         chatFlavor: ''
       duration:
         units: inst
-        concentration: false
+        maintained power: false
         override: false
       range:
         override: false
@@ -219,7 +219,7 @@ system:
           - vocal
           - somatic
           - material
-        spellbook: true
+        power list: true
       _id: 4sy1GTbqChCOkOdZ
       sort: 0
       activation:
@@ -239,7 +239,7 @@ system:
         chatFlavor: ''
       duration:
         units: inst
-        concentration: false
+        maintained power: false
         override: false
       range:
         override: false
@@ -284,7 +284,7 @@ system:
       corresponding to the ring's linked Elemental
       Plane:</p><p><strong>Air.</strong> You know Auran, you have Resistance to
       Lightning damage, and you have a Fly Speed equal to your Speed and can
-      hover.</p><p><em><strong>Spellcasting.</strong></em> The ring has 5
+      hover.</p><p><em><strong>Power System.</strong></em> The ring has 5
       charges and regains 1d4 + 1 expended charges daily at dawn. While wearing
       the ring, you can cast a spell from it. Choose the spell from the list of
       available spells based on the Elemental Plane the ring is linked to, as
@@ -316,7 +316,7 @@ system:
     units: lb
   price:
     value: 200000
-    denomination: gp
+    denomination: CR
   rarity: legendary
   attunement: required
   attuned: false

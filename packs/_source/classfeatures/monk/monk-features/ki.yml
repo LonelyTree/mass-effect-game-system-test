@@ -1,4 +1,4 @@
-_id: 10b6z2W1txNkrGP7
+_id: 10b6z2W1txNkrCR7
 name: Ki
 ownership:
   default: 0
@@ -19,7 +19,7 @@ system:
       @UUID[Compendium.dnd5e.classfeatures.Item.yrSFIGTaQOH2PFRI]{Step of the
       Wind}. You learn more ki features as you gain levels in this
       class.</p><p>When you spend a ki point, it is unavailable until you finish
-      a short or long rest, at the end of which you draw all of your expended ki
+      a short or full rest, at the end of which you draw all of your expended ki
       back into yourself. You must spend at least 30 minutes of the rest
       meditating to regain your ki points.</p><p>Some of your ki features
       require your target to make a saving throw to resist the feature's
@@ -70,7 +70,7 @@ system:
       description:
         chatFlavor: ''
       duration:
-        concentration: false
+        maintained power: false
         value: ''
         units: ''
         special: ''
@@ -123,4 +123,4 @@ _stats:
   modifiedTime: 1725992286853
   lastModifiedBy: dnd5ebuilder0000
   exportSource: null
-_key: '!items!10b6z2W1txNkrGP7'
+_key: '!items!10b6z2W1txNkrCR7'

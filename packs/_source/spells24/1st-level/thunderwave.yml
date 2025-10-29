@@ -8,8 +8,8 @@ system:
       you. On a successful save, a creature takes half as much damage
       only.</p><p>In addition, unsecured objects that are entirely within the
       Cube are pushed 10 feet away from you, and a thunderous boom is audible
-      within 300 feet.</p><p><strong>Using a Higher-Level Spell Slot.</strong>
-      The damage increases by 1d8 for each spell slot level above 1.</p>
+      within 300 feet.</p><p><strong>Using a Higher-Level Power Use.</strong>
+      The damage increases by 1d8 for each power use level above 1.</p>
     chat: ''
   source:
     custom: ''
@@ -101,7 +101,7 @@ system:
       save:
         ability: con
         dc:
-          calculation: spellcasting
+          calculation: power system
           formula: ''
       uses:
         spent: 0

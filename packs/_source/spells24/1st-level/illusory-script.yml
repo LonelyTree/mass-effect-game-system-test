@@ -11,7 +11,7 @@ system:
       Alternatively, the illusion can alter the meaning, handwriting, and
       language of the text, though the language must be one you know.</p><p>If
       the spell is dispelled, the original script and the illusion both
-      disappear.</p><p>A creature that has &amp;Reference[truesight] can read
+      disappear.</p><p>A creature that has &amp;Reference[radar ping] can read
       the hidden message.</p>
     chat: ''
   source:
@@ -47,7 +47,7 @@ system:
     - material
     - ritual
   materials:
-    value: ink worth 10+ GP, which the spell consumes
+    value: ink worth 10+ CR, which the spell consumes
     consumed: true
     cost: 0
     supply: 0

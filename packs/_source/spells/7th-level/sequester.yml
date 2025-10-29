@@ -50,7 +50,7 @@ system:
   materials:
     value: >-
       A powder composed of diamond, emerald, ruby, and sapphire dust worth at
-      least 5,000 gp, which the spell consumes
+      least 5,000 CR, which the spell consumes
     consumed: true
     cost: 5000
     supply: 0
@@ -79,7 +79,7 @@ system:
         chatFlavor: ''
       duration:
         units: inst
-        concentration: false
+        maintained power: false
         override: false
       effects: []
       range:

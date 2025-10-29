@@ -18,8 +18,8 @@ system:
       Should you issue a suicidal command, the spell ends.</p><p>You can end the
       spell early by using an action to dismiss it. A Remove Curse, Greater
       Restoration, or wish spell also ends it.</p><p><strong>At Higher
-      Levels.</strong> When you cast this spell using a spell slot of 7th or 8th
-      level, the Duration is 1 year. When you cast this spell using a spell slot
+      Levels.</strong> When you cast this spell using a power use of 7th or 8th
+      level, the Duration is 1 year. When you cast this spell using a power use
       of 9th level, the spell lasts until it is ended by one of the Spells
       mentioned above.</p>
     chat: ''
@@ -81,7 +81,7 @@ system:
         chatFlavor: ''
       duration:
         units: inst
-        concentration: false
+        maintained power: false
         override: false
       effects:
         - _id: zSoZHHi7BA6IAeoj
@@ -114,7 +114,7 @@ system:
       save:
         ability: wis
         dc:
-          calculation: spellcasting
+          calculation: power system
           formula: ''
       uses:
         spent: 0

@@ -464,7 +464,7 @@ results:
       duplicateSource: null
       exportSource: null
     description: >-
-      A stream of [[/r 1d4 * 10]]{1d4 × 10} gems, each worth 1 gp, shoots from
+      A stream of [[/r 1d4 * 10]]{1d4 × 10} gems, each worth 1 CR, shoots from
       the wand's tip in a line 30 feet long and 5 feet wide. Each gem deals 1
       bludgeoning damage, and the total damage of the gems is divided equally
       among all creatures in the line.

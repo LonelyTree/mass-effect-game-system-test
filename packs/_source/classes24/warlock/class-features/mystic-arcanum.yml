@@ -8,7 +8,7 @@ system:
     value: >-
       <p>Your patron grants you a magical secret called an arcanum. Choose one
       level 6 Warlock spell as this arcanum.</p><p>You can cast your arcanum
-      spell once without expending a spell slot, and you must finish a Long Rest
+      spell once without expending a power use, and you must finish a Full Rest
       before you can cast it in this way again.</p><p>You gain another Warlock
       spell of your choice that can be cast in this way when you reach Warlock
       levels 13 (level 7 spell), 15 (level 8 spell), and 17 (level 9 spell). You
@@ -93,7 +93,7 @@ system:
         replaced: {}
       hint: >-
         Choose one level 6 Warlock spell as this arcanum. You can cast your
-        arcanum spell without expending a spell slot, and you must finish a Long
+        arcanum spell without expending a power use, and you must finish a Long
         Rest before you can cast it this way again.
     - type: ItemChoice
       title: Mystic Arcanum (7th level)
@@ -143,7 +143,7 @@ system:
         replaced: {}
       hint: >-
         Choose one level 7 Warlock spell as this arcanum. You can cast your
-        arcanum spell without expending a spell slot, and you must finish a Long
+        arcanum spell without expending a power use, and you must finish a Long
         Rest before you can cast it this way again.
       _id: QYz2YofPZodLOxWE
     - type: ItemChoice
@@ -188,7 +188,7 @@ system:
         replaced: {}
       hint: >-
         Choose one level 8 Warlock spell as this arcanum. You can cast your
-        arcanum spell without expending a spell slot, and you must finish a Long
+        arcanum spell without expending a power use, and you must finish a Long
         Rest before you can cast it this way again.
       _id: IpPxk9slDo87T3Pj
     - type: ItemChoice
@@ -227,7 +227,7 @@ system:
         replaced: {}
       hint: >-
         Choose one level 9 Warlock spell as this arcanum. You can cast your
-        arcanum spell without expending a spell slot, and you must finish a Long
+        arcanum spell without expending a power use, and you must finish a Long
         Rest before you can cast it this way again.
       _id: 1KvdZINFnTrQEsqx
 effects: []

@@ -23,16 +23,16 @@ pages:
         the required tool to make an item and have proficiency with that tool.
         Anyone who helps you must also have proficiency with it.</p><h2>Raw
         Materials</h2><p>To make an item, you need raw materials worth half its
-        purchase cost (round down). For example, you need 750 GP of raw
+        purchase cost (round down). For example, you need 750 CR of raw
         materials to make
         @UUID[Compendium.dnd5e.equipment24.Item.phbarmPlateArmor]{Plate Armor},
-        which sells for 1,500 GP. The GM determines whether appropriate raw
+        which sells for 1,500 CR. The GM determines whether appropriate raw
         materials are available.</p><h2>Time</h2><p>To determine how many days
         (working 8 hours a day) it takes to make an item, divide its purchase
-        cost in GP by 10 (round a fraction up to a day). For example, you need 5
+        cost in CR by 10 (round a fraction up to a day). For example, you need 5
         days to make a
         @UUID[Compendium.dnd5e.equipment24.Item.phbwepHeavyCross]{Heavy
-        Crossbow}, which sells for 50 GP.</p><p>If an item requires multiple
+        Crossbow}, which sells for 50 CR.</p><p>If an item requires multiple
         days, the days needn’t be consecutive.</p><p>Characters can combine
         their efforts to shorten the crafting time. Divide the time needed to
         create an item by the number of characters working on it. Normally, only
@@ -74,7 +74,7 @@ pages:
         @UUID[Compendium.dnd5e.equipment24.Item.phbtulHerbalismK]{Herbalism Kit}
         can create a
         @UUID[Compendium.dnd5e.equipment24.Item.phbagPotionofHea]{Potion of
-        Healing}. Doing so requires using that kit and 25 GP of raw material
+        Healing}. Doing so requires using that kit and 25 CR of raw material
         over the course of 1 day (8 hours of work).</p>
     video:
       controls: true
@@ -95,7 +95,7 @@ pages:
     category: null
     _key: '!journal.pages!phbCraftingEquip.n47iwiqPFPn2zRqX'
   - sort: 0
-    name: Scribing Spell Scrolls
+    name: Scribing Power Modules
     type: text
     _id: 8hAsl8JueZ3GvyS2
     system: {}
@@ -105,7 +105,7 @@ pages:
     image: {}
     text:
       format: 1
-      content: "<p>A spellcaster can transfer a spell to a scroll and create a <em>Spell Scroll</em>, using the rules below.</p><h2>Time and Cost</h2><p>Scribing a scroll takes an amount of time and money based on the level of the spell, as shown in the Spell Scroll Costs table. For each day of inscription, you must work for 8 hours. If a scroll requires multiple days, those days needn’t be consecutive.</p><h2>Prerequisites for the Scribe</h2><p>To scribe a scroll, you must have proficiency in the Arcana skill or with @UUID[Compendium.dnd5e.equipment24.Item.phbtulCalligraph] and have the spell prepared on each day of the inscription. You must also have at hand any Material components required by the spell; if the spell consumes its Material components, they are consumed only when you complete the scroll. The scroll’s spell uses your spell save DC and spell attack bonus.</p><section class=\"fvtt advice\"><figure class=\"icon\"><img src=\"icons/vtt-512.png\" /></figure><article><h3>Easily Make Spell Scrolls</h3><p>In Foundry you can right click on any spell and select the <span class=\"reference\"><em class=\"fa-solid fa-scroll\">\_</em>Create Scroll</span> option which will allow you to configure the scroll's options like its Level, DC, Save, and Attack Bonus.</p></article></section><h2>Cantrips</h2><p>If the scribed spell is a cantrip, the version on the scroll works as if the caster were your level.</p><table><caption>Spell Scroll Costs</caption><thead><tr><th><p>Spell Level</p></th><th><p>Time</p></th><th><p>Cost</p></th></tr></thead><tbody><tr><td><p>Cantrip</p></td><td><p>1 day</p></td><td><p>15 GP</p></td></tr><tr><td><p>1</p></td><td><p>1 day</p></td><td><p>25 GP</p></td></tr><tr><td><p>2</p></td><td><p>3 days</p></td><td><p>100 GP</p></td></tr><tr><td><p>3</p></td><td><p>5 days</p></td><td><p>150 GP</p></td></tr><tr><td><p>4</p></td><td><p>10 days</p></td><td><p>1,000 GP</p></td></tr><tr><td><p>5</p></td><td><p>25 days</p></td><td><p>1,500 GP</p></td></tr><tr><td><p>6</p></td><td><p>40 days</p></td><td><p>10,000 GP</p></td></tr><tr><td><p>7</p></td><td><p>50 days</p></td><td><p>12,500 GP</p></td></tr><tr><td><p>8</p></td><td><p>60 days</p></td><td><p>15,000 GP</p></td></tr><tr><td><p>9</p></td><td><p>120 days</p></td><td><p>50,000 GP</p></td></tr></tbody></table>"
+      content: "<p>A spellcaster can transfer a spell to a scroll and create a <em>Power Module</em>, using the rules below.</p><h2>Time and Cost</h2><p>Scribing a scroll takes an amount of time and money based on the level of the spell, as shown in the Power Module Costs table. For each day of inscription, you must work for 8 hours. If a scroll requires multiple days, those days needn’t be consecutive.</p><h2>Prerequisites for the Scribe</h2><p>To scribe a scroll, you must have proficiency in the Arcana skill or with @UUID[Compendium.dnd5e.equipment24.Item.phbtulCalligraph] and have the spell prepared on each day of the inscription. You must also have at hand any Material components required by the spell; if the spell consumes its Material components, they are consumed only when you complete the scroll. The scroll’s spell uses your spell save DC and spell attack bonus.</p><section class=\"fvtt advice\"><figure class=\"icon\"><img src=\"icons/vtt-512.png\" /></figure><article><h3>Easily Make Power Modules</h3><p>In Foundry you can right click on any spell and select the <span class=\"reference\"><em class=\"fa-solid fa-scroll\">\_</em>Create Scroll</span> option which will allow you to configure the scroll's options like its Level, DC, Save, and Attack Bonus.</p></article></section><h2>Basic Powers</h2><p>If the scribed spell is a basic power, the version on the scroll works as if the caster were your level.</p><table><caption>Power Module Costs</caption><thead><tr><th><p>Power Level</p></th><th><p>Time</p></th><th><p>Cost</p></th></tr></thead><tbody><tr><td><p>Basic Power</p></td><td><p>1 day</p></td><td><p>15 CR</p></td></tr><tr><td><p>1</p></td><td><p>1 day</p></td><td><p>25 CR</p></td></tr><tr><td><p>2</p></td><td><p>3 days</p></td><td><p>100 CR</p></td></tr><tr><td><p>3</p></td><td><p>5 days</p></td><td><p>150 CR</p></td></tr><tr><td><p>4</p></td><td><p>10 days</p></td><td><p>1,000 CR</p></td></tr><tr><td><p>5</p></td><td><p>25 days</p></td><td><p>1,500 CR</p></td></tr><tr><td><p>6</p></td><td><p>40 days</p></td><td><p>10,000 CR</p></td></tr><tr><td><p>7</p></td><td><p>50 days</p></td><td><p>12,500 CR</p></td></tr><tr><td><p>8</p></td><td><p>60 days</p></td><td><p>15,000 CR</p></td></tr><tr><td><p>9</p></td><td><p>120 days</p></td><td><p>50,000 CR</p></td></tr></tbody></table>"
     video:
       controls: true
       volume: 0.5

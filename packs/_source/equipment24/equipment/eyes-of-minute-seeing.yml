@@ -13,7 +13,7 @@ system:
     value: >-
       <div><p><em>Wondrous Item, Uncommon</em></p></div><p>These crystal lenses
       fit over the eyes. While wearing them, your vision improves significantly
-      out to a range of 1 foot, granting you Darkvision within that range and
+      out to a range of 1 foot, granting you Scanner within that range and
       Advantage on Intelligence (Investigation) checks made to examine something
       within that range.</p>
     chat: ''
@@ -33,7 +33,7 @@ system:
     units: lb
   price:
     value: 400
-    denomination: gp
+    denomination: CR
   rarity: uncommon
   attunement: ''
   attuned: false

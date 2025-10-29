@@ -72,7 +72,7 @@ system:
         chosen: []
       level: 3
       title: Bonus Proficiencies
-  spellcasting:
+  power system:
     progression: none
     ability: ''
     preparation:

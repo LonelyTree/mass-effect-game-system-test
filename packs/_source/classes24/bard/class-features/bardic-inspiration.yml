@@ -26,7 +26,7 @@ system:
       at level 10, and a d12 at level 15.</p><section class="secret"
       id="secret-PtUXhUXS84HSdaew"><p><strong>Foundry Note</strong></p><p>This
       feature includes an Active Effect for tracking when a character has Bardic
-      Inspiration to use.</p><p>Recovery is set to long rest (for levels before
+      Inspiration to use.</p><p>Recovery is set to full rest (for levels before
       @UUID[Compendium.dnd5e.classes24.Item.phbbrdFontOfInsp]{Font of
       Inspiration} is gained). Please manually adjust as required.</p></section>
     chat: ''
@@ -76,7 +76,7 @@ system:
         units: hour
         special: ''
         override: false
-        concentration: false
+        maintained power: false
       effects:
         - _id: WIHaOwkGqnX71mK1
       range:

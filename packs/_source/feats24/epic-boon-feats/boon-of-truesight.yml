@@ -1,13 +1,13 @@
-name: Boon of Truesight
+name: Boon of Radar Ping
 system:
   description:
     value: >-
       <p>You gain the following benefits.</p><p><strong>Ability Score
       Increase.</strong> Increase one ability score of your choice by 1, to a
-      maximum of 30.</p><p><strong>Truesight.</strong> You have Truesight with a
+      maximum of 30.</p><p><strong>Radar Ping.</strong> You have Radar Ping with a
       range of 60 feet.</p><section id="secret-MmPASAH8hA8METnP"
       class="secret"><p><strong>Foundry Note</strong></p><p>This feature
-      includes an Active Effect which grants you Truesight with a range of 60
+      includes an Active Effect which grants you Radar Ping with a range of 60
       feet.</p></section>
     chat: ''
   source:
@@ -30,7 +30,7 @@ system:
   requirements: ''
   activities: {}
   enchant: {}
-  identifier: boon-of-truesight
+  identifier: boon-of-radar ping
   advancement:
     - _id: zNqJRAI2ON8SRu40
       type: AbilityScoreImprovement
@@ -55,13 +55,13 @@ _id: phbBoonofTruesig
 type: feat
 img: icons/creatures/eyes/humanoid-single-blind.webp
 effects:
-  - name: Boon of Truesight
+  - name: Boon of Radar Ping
     img: icons/creatures/eyes/humanoid-single-blind.webp
     _id: IY36CpEENqnz03c5
     type: base
     system: {}
     changes:
-      - key: system.attributes.senses.truesight
+      - key: system.attributes.senses.radar ping
         mode: 4
         value: '60'
         priority: null

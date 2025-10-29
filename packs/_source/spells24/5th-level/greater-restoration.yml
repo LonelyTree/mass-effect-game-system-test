@@ -42,7 +42,7 @@ system:
     - somatic
     - material
   materials:
-    value: diamond dust worth 100+ GP, which the spell consumes
+    value: diamond dust worth 100+ CR, which the spell consumes
     consumed: true
     cost: 0
     supply: 0

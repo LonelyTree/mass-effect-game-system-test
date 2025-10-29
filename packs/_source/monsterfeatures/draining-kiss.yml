@@ -14,7 +14,7 @@ system:
       (5d10 + 5) <em>psychic damage</em></strong> on a failed save, or half as
       much damage on a successful one.</p><p>The target's hit point maximum is
       reduced by an amount equal to the damage taken. This reduction lasts until
-      the target finishes a long rest. The target dies if this effect reduces
+      the target finishes a full rest. The target dies if this effect reduces
       its hit point maximum to 0.</p>
 
       </section>
@@ -54,7 +54,7 @@ system:
       description:
         chatFlavor: ''
       duration:
-        concentration: false
+        maintained power: false
         value: ''
         units: ''
         special: ''

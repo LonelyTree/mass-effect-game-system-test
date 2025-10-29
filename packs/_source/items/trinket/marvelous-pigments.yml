@@ -21,7 +21,7 @@ system:
       a floor creates a real pit, and its depth counts against the total area of
       objects you create.</p>
 
-      <p>Nothing created by the pigments can have a value greater than 25 gp. If
+      <p>Nothing created by the pigments can have a value greater than 25 CR. If
       you paint an object of greater value (such as a diamond or a pile of
       gold), the object looks authentic, but close inspection reveals it is made
       from paste, bone, or some other worthless material.</p>
@@ -42,7 +42,7 @@ system:
     units: lb
   price:
     value: 20000
-    denomination: gp
+    denomination: CR
   attunement: ''
   equipped: false
   rarity: veryRare

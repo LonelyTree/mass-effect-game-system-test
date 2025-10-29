@@ -24,7 +24,7 @@ system:
         chatFlavor: ''
       duration:
         units: perm
-        concentration: false
+        maintained power: false
         override: false
       effects: []
       range:
@@ -92,7 +92,7 @@ system:
         chatFlavor: ''
       duration:
         units: perm
-        concentration: false
+        maintained power: false
         override: false
       effects: []
       range:
@@ -145,7 +145,7 @@ system:
       _id: zPbWQcgfqE9VPEbV
       img: ''
       appliedEffects: []
-    ghKGPgnv6VO9GJxZ:
+    ghKCRgnv6VO9GJxZ:
       type: summon
       name: Activate (5 by 7 ft.)
       sort: 0
@@ -163,7 +163,7 @@ system:
         chatFlavor: ''
       duration:
         units: perm
-        concentration: false
+        maintained power: false
         override: false
       effects: []
       range:
@@ -213,7 +213,7 @@ system:
         prompt: true
         identifier: ''
         mode: ''
-      _id: ghKGPgnv6VO9GJxZ
+      _id: ghKCRgnv6VO9GJxZ
       img: ''
       appliedEffects: []
     nDpqXW746xRCaSlM:
@@ -234,7 +234,7 @@ system:
         chatFlavor: ''
       duration:
         units: perm
-        concentration: false
+        maintained power: false
         override: false
       effects: []
       range:
@@ -323,7 +323,7 @@ system:
     units: lb
   price:
     value: 40000
-    denomination: gp
+    denomination: CR
   rarity: veryRare
   attunement: ''
   attuned: false

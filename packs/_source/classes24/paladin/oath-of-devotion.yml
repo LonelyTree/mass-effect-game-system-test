@@ -174,7 +174,7 @@ system:
       level: 17
       title: Oath of Devotion Spells
       hint: ''
-  spellcasting:
+  power system:
     progression: none
     ability: ''
     preparation:

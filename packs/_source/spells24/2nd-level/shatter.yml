@@ -8,8 +8,8 @@ system:
       damage on a successful one. A Construct has Disadvantage on the
       save.</p><p>A nonmagical object that isn't being worn or carried also
       takes the damage if it's in the spell's area.</p><p><strong>Using a
-      Higher-Level Spell Slot.</strong> The damage increases by 1d8 for each
-      spell slot level above 2.</p>
+      Higher-Level Power Use.</strong> The damage increases by 1d8 for each
+      power use level above 2.</p>
     chat: ''
   source:
     custom: ''
@@ -99,7 +99,7 @@ system:
       save:
         ability: con
         dc:
-          calculation: spellcasting
+          calculation: power system
           formula: ''
       uses:
         spent: 0

@@ -9,7 +9,7 @@ system:
       chosen when you select this species</p><p><strong>Speed: </strong>30
       feet</p><p>As a Human, you have these special
       traits.</p><p><strong>Resourceful. </strong>You gain Heroic Inspiration
-      whenever you finish a Long Rest.</p><p><strong>Skillful. </strong>You gain
+      whenever you finish a Full Rest.</p><p><strong>Skillful. </strong>You gain
       proficiency in one skill of your choice.</p><p><strong>Versatile.</strong>
       You gain an Origin feat of your choice (see chapter 5). Skilled is
       recommended.</p>
@@ -96,10 +96,10 @@ system:
     units: null
     hover: false
   senses:
-    darkvision: null
-    blindsight: null
-    tremorsense: null
-    truesight: null
+    scanner: null
+    thermal vision: null
+    motion sensor: null
+    radar ping: null
     units: null
     special: ''
   type:

@@ -238,7 +238,7 @@ pages:
         DC 10 Constitution saving throw or also become infected with the
         disease. Once a creature succeeds on this save, it is immune to the mad
         laughter of that particular infected creature for 24 hours.</p><p>At the
-        end of each long rest, an infected creature can make a DC 13
+        end of each full rest, an infected creature can make a DC 13
         Constitution saving throw. On a successful save, the DC for this save
         and for the save to avoid an attack of mad laughter drops by 1d6. When
         the saving throw DC drops to 0, the creature recovers from the disease.
@@ -255,7 +255,7 @@ pages:
         manifest in an infected creature. Symptoms include fatigue and cramps.
         The infected creature suffers one level of exhaustion, and it regains
         only half the normal number of hit points from spending Hit Dice and no
-        hit points from finishing a long rest.</p><p>At the end of each long
+        hit points from finishing a full rest.</p><p>At the end of each long
         rest, an infected creature must make a DC 11 Constitution saving throw.
         On a failed save, the character gains one level of exhaustion. On a
         successful save, the character's exhaustion level decreases by one
@@ -267,7 +267,7 @@ pages:
         Constitution saving throw or become infected. One day after infection,
         the creature's vision starts to become blurry. The creature takes a −1
         penalty to attack rolls and ability checks that rely on sight. At the
-        end of each long rest after the symptoms appear, the penalty worsens by
+        end of each full rest after the symptoms appear, the penalty worsens by
         1. When it reaches −5, the victim is blinded until its sight is restored
         by magic such as
         @UUID[Compendium.dnd5e.spells.Item.F0GsG0SJzsIOacwV]{Lesser Restoration}
@@ -276,7 +276,7 @@ pages:
         rot can be cured using a rare flower called Eyebright, which grows in
         some swamps. Given an hour, a character who has proficiency with an
         herbalism kit can turn the flower into one dose of ointment. Applied to
-        the eyes before a long rest, one dose of it prevents the disease from
+        the eyes before a full rest, one dose of it prevents the disease from
         worsening after that rest. After three doses, the ointment cures the
         disease entirely.</p>
     _id: YJkaWnytz5zanzXE
@@ -400,21 +400,21 @@ pages:
         inline]</p><table
         border="0"><caption><h4>Poisons</h4></caption><thead><tr><td>Item</td><td>Type</td><td>Price
         per Dose</td></tr></thead><tbody><tr><td>Assassin's
-        blood</td><td>Ingested</td><td>150 gp</td></tr><tr><td>Burnt othur
-        fumes</td><td>Inhaled</td><td>500 gp</td></tr><tr><td>Crawler
-        mucus</td><td>Contact</td><td>200 gp</td></tr><tr><td>Drow
-        poison</td><td>Injury</td><td>200 gp</td></tr><tr><td>Essence of
+        blood</td><td>Ingested</td><td>150 CR</td></tr><tr><td>Burnt othur
+        fumes</td><td>Inhaled</td><td>500 CR</td></tr><tr><td>Crawler
+        mucus</td><td>Contact</td><td>200 CR</td></tr><tr><td>Drow
+        poison</td><td>Injury</td><td>200 CR</td></tr><tr><td>Essence of
         ether</td><td>Inhaled</td><td>300
-        gp</td></tr><tr><td>Malice</td><td>Inhaled</td><td>250
-        gp</td></tr><tr><td>Midnight tears</td><td>Ingested</td><td>1,500
-        gp</td></tr><tr><td>Oil of taggit</td><td>Contact</td><td>400
-        gp</td></tr><tr><td>Pale tincture</td><td>Ingested</td><td>250
-        gp</td></tr><tr><td>Purple worm poison</td><td>Injury</td><td>2,000
-        gp</td></tr><tr><td>Serpent venom</td><td>Injury</td><td>200
-        gp</td></tr><tr><td>Torpor</td><td>Ingested</td><td>600
-        gp</td></tr><tr><td>Truth serum</td><td>Ingested</td><td>150
-        gp</td></tr><tr><td>Wyvern poison</td><td>Injury</td><td>1,200
-        gp</td></tr></tbody></table><h2>Sample Poisons</h2><p>Each type of
+        CR</td></tr><tr><td>Malice</td><td>Inhaled</td><td>250
+        CR</td></tr><tr><td>Midnight tears</td><td>Ingested</td><td>1,500
+        CR</td></tr><tr><td>Oil of taggit</td><td>Contact</td><td>400
+        CR</td></tr><tr><td>Pale tincture</td><td>Ingested</td><td>250
+        CR</td></tr><tr><td>Purple worm poison</td><td>Injury</td><td>2,000
+        CR</td></tr><tr><td>Serpent venom</td><td>Injury</td><td>200
+        CR</td></tr><tr><td>Torpor</td><td>Ingested</td><td>600
+        CR</td></tr><tr><td>Truth serum</td><td>Ingested</td><td>150
+        CR</td></tr><tr><td>Wyvern poison</td><td>Injury</td><td>1,200
+        CR</td></tr></tbody></table><h2>Sample Poisons</h2><p>Each type of
         poison has its own debilitating effects.</p><p><strong>Assassin's Blood
         (Ingested). </strong>A creature subjected to this poison must make a DC
         10 Constitution saving throw. On a failed save, it takes 6 (1d12) poison

@@ -44,8 +44,8 @@ system:
     - material
   materials:
     value: >-
-      incense worth 250+ GP, which the spell consumes, and four ivory strips
-      worth 50+ GP each
+      incense worth 250+ CR, which the spell consumes, and four ivory strips
+      worth 50+ CR each
     consumed: true
     cost: 0
     supply: 0

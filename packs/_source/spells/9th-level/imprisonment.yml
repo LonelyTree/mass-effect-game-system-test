@@ -84,7 +84,7 @@ system:
     value: >-
       A vellum depiction or a carved statuette in the likeness of the target,
       and a special component that varies according to the version of the spell
-      you choose, worth at least 500 gp per Hit Die of the target
+      you choose, worth at least 500 CR per Hit Die of the target
     consumed: false
     cost: 0
     supply: 0
@@ -113,7 +113,7 @@ system:
         chatFlavor: ''
       duration:
         units: inst
-        concentration: false
+        maintained power: false
         override: false
       effects: []
       range:
@@ -132,7 +132,7 @@ system:
       save:
         ability: wis
         dc:
-          calculation: spellcasting
+          calculation: power system
           formula: ''
       uses:
         spent: 0

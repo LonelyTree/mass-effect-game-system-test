@@ -24,7 +24,7 @@ system:
         chatFlavor: ''
       duration:
         units: inst
-        concentration: false
+        maintained power: false
         override: false
       effects: []
       range:
@@ -78,7 +78,7 @@ system:
         chatFlavor: ''
       duration:
         units: inst
-        concentration: false
+        maintained power: false
         override: false
       effects:
         - _id: 05Lok63szRXdAafx
@@ -136,7 +136,7 @@ system:
         chatFlavor: ''
       duration:
         units: inst
-        concentration: false
+        maintained power: false
         override: false
       effects:
         - _id: 05Lok63szRXdAafx
@@ -198,7 +198,7 @@ system:
       5 charges and cause the gem to flare with intense light in a 30-foot Cone.
       Each creature in the Cone makes a saving throw as if struck by the beam
       created with the second command word.</p><p>When all of the gem's charges
-      are expended, the gem becomes a nonmagical jewel worth 50 GP.</p>
+      are expended, the gem becomes a nonmagical jewel worth 50 CR.</p>
     chat: ''
   identifier: gem-of-brightness
   source:
@@ -216,7 +216,7 @@ system:
     units: lb
   price:
     value: 200
-    denomination: gp
+    denomination: CR
   rarity: uncommon
   attunement: ''
   attuned: false

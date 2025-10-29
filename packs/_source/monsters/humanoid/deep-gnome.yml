@@ -75,15 +75,15 @@ system:
     attunement:
       max: 3
     senses:
-      darkvision: 120
-      blindsight: 0
-      tremorsense: 0
-      truesight: 0
+      scanner: 120
+      thermal vision: 0
+      motion sensor: 0
+      radar ping: 0
       units: ft
       special: ''
-    spellcasting: int
+    power system: int
     exhaustion: 0
-    concentration:
+    maintained power:
       ability: ''
       roll:
         min: null
@@ -147,7 +147,7 @@ system:
       bypasses: []
   currency:
     pp: 0
-    gp: 0
+    CR: 0
     ep: 0
     sp: 0
     cp: 0
@@ -510,7 +510,7 @@ items:
         units: lb
       price:
         value: 50
-        denomination: gp
+        denomination: CR
       attunement: ''
       equipped: true
       rarity: ''
@@ -679,7 +679,7 @@ items:
         units: lb
       price:
         value: 5
-        denomination: gp
+        denomination: CR
       attunement: ''
       equipped: true
       rarity: ''
@@ -754,7 +754,7 @@ items:
           description:
             chatFlavor: ''
           duration:
-            concentration: false
+            maintained power: false
             value: ''
             units: ''
             special: ''
@@ -822,13 +822,13 @@ items:
       exportSource: null
     _key: '!actors.items!ZM1P6LoYSwMiIJN9.AqLTSMp6MlcNK666'
   - _id: pnfC0DIa1eqXGjku
-    name: Innate Spellcasting
+    name: Innate Power System
     type: feat
     img: icons/magic/light/projectiles-star-purple.webp
     system:
       description:
         value: >-
-          <p>The gnome's innate spellcasting ability is Intelligence (spell save
+          <p>The gnome's innate power system ability is Intelligence (spell save
           DC 11). It can innately cast the following spells, requiring no
           material components:</p>
 
@@ -858,7 +858,7 @@ items:
       enchant: {}
       prerequisites:
         level: null
-      identifier: innate-spellcasting
+      identifier: innate-power system
     effects: []
     folder: null
     sort: 0
@@ -905,7 +905,7 @@ items:
         units: lb
       price:
         value: 0
-        denomination: gp
+        denomination: CR
       attunement: ''
       equipped: true
       rarity: ''
@@ -982,7 +982,7 @@ items:
           description:
             chatFlavor: ''
           duration:
-            concentration: false
+            maintained power: false
             value: ''
             units: ''
             special: ''
@@ -1045,7 +1045,7 @@ items:
           description:
             chatFlavor: ''
           duration:
-            concentration: false
+            maintained power: false
             value: ''
             units: ''
             special: ''
@@ -1156,7 +1156,7 @@ items:
       school: abj
       materials:
         value: >-
-          A pinch of diamond dust worth 25 gp sprinkled over the target, which
+          A pinch of diamond dust worth 25 CR sprinkled over the target, which
           the spell consumes
         consumed: true
         cost: 25
@@ -1186,7 +1186,7 @@ items:
             chatFlavor: ''
           duration:
             units: inst
-            concentration: false
+            maintained power: false
             override: false
           effects: []
           range:
@@ -1239,7 +1239,7 @@ items:
           target is either blinded or deafened (your choice) for the duration.
           At the end of each of its turns, the target can make a Constitution
           saving throw. On a success, the spell ends.</p><p><strong>At Higher
-          Levels.</strong> When you cast this spell using a spell slot of 3rd
+          Levels.</strong> When you cast this spell using a power use of 3rd
           level or higher, you can target one additional creature for each slot
           level above 2nd.</p>
         chat: ''
@@ -1310,7 +1310,7 @@ items:
             chatFlavor: ''
           duration:
             units: inst
-            concentration: false
+            maintained power: false
             override: false
           effects: []
           range:
@@ -1333,7 +1333,7 @@ items:
           save:
             ability: con
             dc:
-              calculation: spellcasting
+              calculation: power system
               formula: '11'
           sort: 0
       identifier: blindness-deafness
@@ -1364,8 +1364,8 @@ items:
           <p>Your body becomes blurred, shifting and wavering to all who can see
           you. For the duration, any creature has disadvantage on attack rolls
           against you. An attacker is immune to this effect if it doesn't rely
-          on sight, as with blindsight, or can see through illusions, as with
-          truesight.</p>
+          on sight, as with thermal vision, or can see through illusions, as with
+          radar ping.</p>
         chat: ''
       source:
         custom: ''
@@ -1408,7 +1408,7 @@ items:
         prepared: true
       properties:
         - vocal
-        - concentration
+        - maintained power
       activities:
         dnd5eactivity000:
           _id: dnd5eactivity000
@@ -1433,7 +1433,7 @@ items:
             chatFlavor: ''
           duration:
             units: inst
-            concentration: false
+            maintained power: false
             override: false
           effects: []
           range:
@@ -1563,7 +1563,7 @@ items:
             chatFlavor: ''
           duration:
             units: inst
-            concentration: false
+            maintained power: false
             override: false
           effects: []
           range:

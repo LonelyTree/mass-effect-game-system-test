@@ -419,7 +419,7 @@ results:
       exportSource: null
     description: >-
       Nothing happens at the chosen point of origin. Instead, a stream of [[/r
-      1d4*10 #Gems]] gems, each worth 1 GP, shoots from the wand’s tip in a Line
+      1d4*10 #Gems]] gems, each worth 1 CR, shoots from the wand’s tip in a Line
       30 feet long and 5 feet wide toward the chosen point of origin. Each gem
       deals [[/damage 1 type=bludgeoning]] damage, and the total damage of the
       gems is divided equally among all creatures in the Line.

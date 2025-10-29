@@ -5,15 +5,15 @@ img: icons/magic/nature/leaf-hand-green.webp
 system:
   description:
     value: >-
-      <p>You know one extra cantrip from the
-      @UUID[Compendium.dnd5e.content24.JournalEntry.phbSpells0000000.JournalEntryPage.LhvuDQEyrCdg5EfU#cantrip]{Druid
-      spell list}. In addition, your mystical connection to nature gives you a
+      <p>You know one extra basic power from the
+      @UUID[Compendium.dnd5e.content24.JournalEntry.phbSpells0000000.JournalEntryPage.LhvuDQEyrCdg5EfU#basic power]{Druid
+      power list}. In addition, your mystical connection to nature gives you a
       bonus to your Intelligence (Arcana or Nature) checks. The bonus equals
       your Wisdom modifier (minimum bonus of +1, currently [[lookup
       @abilities.wis.mod]]).</p><section class="secret"
       id="secret-adiIB9wCX5zZdZ9F"><p><strong>Foundry Note</strong></p><p>This
       feature includes an Active Effect which automates the increase to your
-      known cantrips and the bonus to your Arcane and Nature
+      known basic powers and the bonus to your Arcane and Nature
       checks.</p></section>
     chat: ''
   source:
@@ -55,7 +55,7 @@ effects:
     type: base
     system: {}
     changes:
-      - key: system.scale.druid.cantrips-known
+      - key: system.scale.druid.basic powers-known
         mode: 2
         value: '1'
         priority: null

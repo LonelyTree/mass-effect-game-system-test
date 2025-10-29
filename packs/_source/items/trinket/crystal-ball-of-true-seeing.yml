@@ -11,7 +11,7 @@ system:
       can cast the @UUID[Compendium.dnd5e.spells.Item.fVbCxFRaORalHB20]{Scrying}
       spell (save DC 17) with it.</p>
 
-      <p>While Scrying with the Crystal Ball, you have Truesight with a radius
+      <p>While Scrying with the Crystal Ball, you have Radar Ping with a radius
       of 120 feet centered on the spell's sensor.</p>
     chat: ''
   source:
@@ -26,7 +26,7 @@ system:
     units: lb
   price:
     value: 200000
-    denomination: gp
+    denomination: CR
   attunement: required
   equipped: false
   rarity: legendary
@@ -84,7 +84,7 @@ system:
         chatFlavor: ''
       duration:
         units: inst
-        concentration: false
+        maintained power: false
         override: false
       range:
         override: false

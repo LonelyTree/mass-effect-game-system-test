@@ -2,7 +2,7 @@ name: True Seeing
 system:
   description:
     value: >-
-      <p>For the duration, the willing creature you touch has Truesight with a
+      <p>For the duration, the willing creature you touch has Radar Ping with a
       range of 120 feet.</p>
     chat: ''
   source:
@@ -41,7 +41,7 @@ system:
     - somatic
     - material
   materials:
-    value: mushroom powder worth 25+ GP, which the spell consumes
+    value: mushroom powder worth 25+ CR, which the spell consumes
     consumed: true
     cost: 0
     supply: 0
@@ -65,7 +65,7 @@ system:
         chatFlavor: ''
       duration:
         units: inst
-        concentration: false
+        maintained power: false
         override: false
       effects:
         - _id: nW7Dh0S9wT7QHWCj
@@ -89,7 +89,7 @@ system:
         visible: false
         name: ''
         formula: ''
-      name: Grant Truesight
+      name: Grant Radar Ping
       img: systems/dnd5e/icons/svg/trait-damage-immunities.svg
       appliedEffects:
         - nW7Dh0S9wT7QHWCj
@@ -98,7 +98,7 @@ _id: phbsplTrueSeeing
 type: spell
 img: icons/magic/perception/eye-slit-orange.webp
 effects:
-  - name: Truesight
+  - name: Radar Ping
     img: icons/magic/perception/eye-slit-orange.webp
     origin: Compendium.dnd5e.spells24.Item.phbsplTrueSeeing
     transfer: false
@@ -106,7 +106,7 @@ effects:
     type: base
     system: {}
     changes:
-      - key: system.attributes.senses.truesight
+      - key: system.attributes.senses.radar ping
         mode: 4
         value: '120'
         priority: null

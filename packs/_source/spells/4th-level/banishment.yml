@@ -19,7 +19,7 @@ system:
       the target reappears in the space it left or in the nearest unoccupied
       space if that space is occupied. Otherwise, the target doesn't
       return.</p><p><strong>At Higher Levels.</strong> When you cast this spell
-      using a spell slot of 5th level or higher, you can target one additional
+      using a power use of 5th level or higher, you can target one additional
       creature for each slot level above 4th.</p>
     chat: ''
   source:
@@ -64,7 +64,7 @@ system:
     - vocal
     - somatic
     - material
-    - concentration
+    - maintained power
   activities:
     dnd5eactivity000:
       _id: dnd5eactivity000
@@ -83,7 +83,7 @@ system:
         chatFlavor: ''
       duration:
         units: inst
-        concentration: false
+        maintained power: false
         override: false
       effects:
         - _id: bckYDthT7sAOQBNO
@@ -104,7 +104,7 @@ system:
       save:
         ability: cha
         dc:
-          calculation: spellcasting
+          calculation: power system
           formula: ''
       uses:
         spent: 0

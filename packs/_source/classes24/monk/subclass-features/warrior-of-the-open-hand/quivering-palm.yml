@@ -61,7 +61,7 @@ system:
         chatFlavor: ''
       duration:
         units: day
-        concentration: false
+        maintained power: false
         override: false
         value: '@classes.monk.levels'
       effects: []
@@ -127,7 +127,7 @@ system:
         chatFlavor: ''
       duration:
         units: day
-        concentration: false
+        maintained power: false
         override: false
         value: '@classes.monk.levels'
       effects:

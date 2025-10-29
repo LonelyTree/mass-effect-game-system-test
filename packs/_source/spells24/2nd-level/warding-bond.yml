@@ -45,7 +45,7 @@ system:
     - material
   materials:
     value: >-
-      a pair of platinum rings worth 50+ GP each, which you and the target must
+      a pair of platinum rings worth 50+ CR each, which you and the target must
       wear for the duration
     consumed: false
     cost: 0

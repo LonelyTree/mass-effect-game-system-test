@@ -46,7 +46,7 @@ system:
     - vocal
     - somatic
     - material
-    - concentration
+    - maintained power
   materials:
     value: a forked twig
     consumed: false

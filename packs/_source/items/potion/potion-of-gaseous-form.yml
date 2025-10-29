@@ -10,7 +10,7 @@ system:
 
       <p>When you drink this potion, you gain the effect of the
       @UUID[Compendium.dnd5e.spells.Item.2IWiZAJtOGDoKjiz]{Gaseous Form} spell
-      for 1 hour (no concentration required) or until you end the effect as a
+      for 1 hour (no maintained power required) or until you end the effect as a
       bonus action. </p>
 
       <p> </p>
@@ -27,7 +27,7 @@ system:
     units: lb
   price:
     value: 2000
-    denomination: gp
+    denomination: CR
   attunement: ''
   equipped: false
   rarity: rare
@@ -80,7 +80,7 @@ system:
       description:
         chatFlavor: ''
       duration:
-        concentration: false
+        maintained power: false
         value: '1'
         units: hour
         special: ''

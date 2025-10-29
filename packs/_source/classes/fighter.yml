@@ -423,7 +423,7 @@ system:
       value: {}
       level: 3
       title: Martial Archetype
-  spellcasting:
+  power system:
     progression: none
     ability: ''
     preparation: {}

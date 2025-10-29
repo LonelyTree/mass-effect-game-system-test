@@ -22,7 +22,7 @@ system:
         chatFlavor: Advantage on Attack
       duration:
         units: inst
-        concentration: false
+        maintained power: false
         override: false
       effects: []
       range:
@@ -88,7 +88,7 @@ system:
         chatFlavor: ''
       duration:
         units: inst
-        concentration: false
+        maintained power: false
         override: false
       effects:
         - _id: L4ylYIFxr0vdht6M
@@ -147,7 +147,7 @@ system:
         chatFlavor: ''
       duration:
         units: inst
-        concentration: false
+        maintained power: false
         override: false
       effects:
         - _id: EWoLqkPJeK9dwYhn
@@ -217,7 +217,7 @@ system:
     units: lb
   price:
     value: 40000
-    denomination: gp
+    denomination: CR
   rarity: veryRare
   attunement: required
   attuned: false
@@ -303,7 +303,7 @@ effects:
         priority: null
       - key: system.price.denomination
         mode: 5
-        value: gp
+        value: CR
         priority: null
     duration:
       startTime: null

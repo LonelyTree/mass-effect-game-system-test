@@ -18,11 +18,11 @@ system:
       Religion</p><h1>Sorcerer
       Advancement</h1><table><thead><tr><td>Level</td><td>Proficiency
       Bonus</td><td>Sorcery
-      Points</td><td>Features</td></tr></thead><tbody><tr><td>1st</td><td>+2</td><td>̶</td><td>@UUID[Compendium.dnd5e.classfeatures.Item.oygRF3ZjTv2T7z0Y]{Spellcasting},
+      Points</td><td>Features</td></tr></thead><tbody><tr><td>1st</td><td>+2</td><td>̶</td><td>@UUID[Compendium.dnd5e.classfeatures.Item.oygRF3ZjTv2T7z0Y]{Power System},
       @UUID[Compendium.dnd5e.classfeatures.Item.cmRCL9T9UgRYOj1c]{Sorcerous
       Origins}</td></tr><tr><td>2nd</td><td>+2</td><td>2</td><td>@UUID[Compendium.dnd5e.classfeatures.Item.LBKChJY5n02Afhnq]{Font
       of Magic}</td></tr><tr><td>3rd</td><td>+2</td><td>3</td><td>2nd Level
-      Spell Slot,
+      Power Use,
       @UUID[Compendium.dnd5e.classfeatures.Item.9Uh7uTDNZ04oTJsL]{Metamagic}</td></tr><tr><td>4th</td><td>+2</td><td>4</td><td>@UUID[Compendium.dnd5e.classfeatures.Item.s0Cc2zcX0JzIgam5]{Ability
       Score Improvement}</td></tr><tr><td>5th</td><td>+3</td><td>5</td><td>3rd
       Level Spell
@@ -42,7 +42,7 @@ system:
       Spell
       Slot</td></tr><tr><td>16th</td><td>+5</td><td>16</td><td>@UUID[Compendium.dnd5e.classfeatures.Item.s0Cc2zcX0JzIgam5]{Ability
       Score Improvement}</td></tr><tr><td>17th</td><td>+6</td><td>17</td><td>9th
-      Level Spell Slot,
+      Level Power Use,
       @UUID[Compendium.dnd5e.classfeatures.Item.9Uh7uTDNZ04oTJsL]{Metamagic
       improvement}</td></tr><tr><td>18th</td><td>+6</td><td>18</td><td>Sorcerous
       Origin
@@ -229,7 +229,7 @@ system:
       _id: JvnMksZAolGhHMVS
     - type: ScaleValue
       configuration:
-        identifier: cantrips-known
+        identifier: basic powers-known
         type: number
         distance:
           units: ''
@@ -241,7 +241,7 @@ system:
           '10':
             value: 6
       value: {}
-      title: Cantrips Known
+      title: Basic Powers Known
       _id: rSUZv6eYOPRtikhv
     - type: ScaleValue
       configuration:
@@ -372,7 +372,7 @@ system:
       value: {}
       level: 1
       title: Sorcerous Origin
-  spellcasting:
+  power system:
     progression: full
     ability: cha
     preparation: {}

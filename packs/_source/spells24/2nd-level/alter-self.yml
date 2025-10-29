@@ -24,7 +24,7 @@ system:
       fangs (Piercing), horns (Piercing), or hooves (Bludgeoning). When you use
       your Unarmed Strike to deal damage with that new growth, it deals 1d6
       damage of the type in parentheses instead of dealing the normal damage for
-      your Unarmed Strike, and you use your spellcasting ability modifier for
+      your Unarmed Strike, and you use your power system ability modifier for
       the attack and damage rolls rather than using Strength.</p>
     chat: ''
   source:
@@ -61,7 +61,7 @@ system:
   properties:
     - vocal
     - somatic
-    - concentration
+    - maintained power
   materials:
     value: ''
     consumed: false
@@ -130,7 +130,7 @@ system:
         chatFlavor: ''
       duration:
         units: inst
-        concentration: false
+        maintained power: false
         override: false
       effects:
         - _id: 1jrUeJtfZMGhJOZa
@@ -174,7 +174,7 @@ system:
         chatFlavor: ''
       duration:
         units: inst
-        concentration: false
+        maintained power: false
         override: false
       effects:
         - _id: baEBDez6IgWNpkSX
@@ -219,7 +219,7 @@ system:
         chatFlavor: ''
       duration:
         units: inst
-        concentration: false
+        maintained power: false
         override: true
       effects: []
       range:
@@ -247,7 +247,7 @@ system:
         type:
           value: melee
           classification: unarmed
-        ability: spellcasting
+        ability: power system
         bonus: ''
       damage:
         critical:
@@ -282,7 +282,7 @@ system:
         chatFlavor: ''
       duration:
         units: inst
-        concentration: false
+        maintained power: false
         override: true
       effects: []
       range:
@@ -310,7 +310,7 @@ system:
         type:
           value: melee
           classification: unarmed
-        ability: spellcasting
+        ability: power system
         bonus: ''
       damage:
         critical:
@@ -346,7 +346,7 @@ system:
         chatFlavor: ''
       duration:
         units: inst
-        concentration: false
+        maintained power: false
         override: true
       effects: []
       range:
@@ -374,7 +374,7 @@ system:
         type:
           value: melee
           classification: unarmed
-        ability: spellcasting
+        ability: power system
         bonus: ''
       damage:
         critical:
@@ -491,7 +491,7 @@ effects:
     description: >-
       <p>When you use your Unarmed Strike to deal damage with that new growth,
       it deals 1d6 damage of the type in parentheses instead of dealing the
-      normal damage for your Unarmed Strike, and you use your spellcasting
+      normal damage for your Unarmed Strike, and you use your power system
       ability modifier for the attack and damage rolls rather than using
       Strength.</p>
     tint: '#ffffff'

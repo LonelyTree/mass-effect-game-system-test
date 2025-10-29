@@ -5,8 +5,8 @@ system:
       <p>You touch a willing creature. For the duration, the target gains a Fly
       Speed of 60 feet and can hover. When the spell ends, the target falls if
       it is still aloft unless it can stop the fall.</p><p><strong>Using a
-      Higher-Level Spell Slot.</strong> You can target one additional creature
-      for each spell slot level above 3.</p>
+      Higher-Level Power Use.</strong> You can target one additional creature
+      for each power use level above 3.</p>
     chat: ''
   source:
     custom: ''
@@ -43,7 +43,7 @@ system:
     - vocal
     - somatic
     - material
-    - concentration
+    - maintained power
   materials:
     value: a feather
     consumed: false

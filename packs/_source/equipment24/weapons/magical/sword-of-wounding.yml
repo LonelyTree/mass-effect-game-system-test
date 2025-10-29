@@ -23,7 +23,7 @@ system:
         chatFlavor: ''
       duration:
         units: inst
-        concentration: false
+        maintained power: false
         override: false
       effects:
         - _id: tuFnPbghL64ioL04
@@ -81,7 +81,7 @@ system:
         chatFlavor: ''
       duration:
         units: hour
-        concentration: false
+        maintained power: false
         override: false
         value: '1'
       effects:
@@ -153,7 +153,7 @@ system:
     units: lb
   price:
     value: 4000
-    denomination: gp
+    denomination: CR
   rarity: rare
   attunement: required
   attuned: false
@@ -239,7 +239,7 @@ effects:
         priority: null
       - key: system.price.denomination
         mode: 5
-        value: gp
+        value: CR
         priority: null
     duration:
       startTime: null

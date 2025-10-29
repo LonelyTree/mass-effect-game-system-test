@@ -6,7 +6,7 @@ system:
       choose within range. Each creature in that area makes a Constitution
       saving throw, taking 8d8 Necrotic damage on a failed save or half as much
       damage on a successful one.</p><p><strong>Using a Higher-Level Spell
-      Slot.</strong> The damage increases by 2d8 for each spell slot level above
+      Slot.</strong> The damage increases by 2d8 for each power use level above
       6.</p>
     chat: ''
   source:
@@ -48,7 +48,7 @@ system:
     - somatic
     - material
   materials:
-    value: the powder of a crushed black pearl worth 500+ GP
+    value: the powder of a crushed black pearl worth 500+ CR
     consumed: false
     cost: 0
     supply: 0
@@ -71,7 +71,7 @@ system:
         chatFlavor: ''
       duration:
         units: inst
-        concentration: false
+        maintained power: false
         override: false
       effects: []
       range:
@@ -107,7 +107,7 @@ system:
       save:
         ability: con
         dc:
-          calculation: spellcasting
+          calculation: power system
           formula: ''
       name: ''
       img: ''

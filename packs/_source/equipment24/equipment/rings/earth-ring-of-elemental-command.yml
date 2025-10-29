@@ -23,7 +23,7 @@ system:
         chatFlavor: ''
       duration:
         units: inst
-        concentration: false
+        maintained power: false
         override: false
       effects:
         - _id: cN85nWiTzfGzWR7D
@@ -70,7 +70,7 @@ system:
           - vocal
           - somatic
           - material
-        spellbook: true
+        power list: true
       _id: Pc0Jdadmkxle0zw6
       sort: 0
       activation:
@@ -90,7 +90,7 @@ system:
         chatFlavor: ''
       duration:
         units: inst
-        concentration: false
+        maintained power: false
         override: false
       range:
         override: false
@@ -121,7 +121,7 @@ system:
           - vocal
           - somatic
           - material
-        spellbook: true
+        power list: true
       _id: J0Pz4gT7m1OsezMb
       sort: 0
       activation:
@@ -141,7 +141,7 @@ system:
         chatFlavor: ''
       duration:
         units: inst
-        concentration: false
+        maintained power: false
         override: false
       range:
         override: false
@@ -172,7 +172,7 @@ system:
           - vocal
           - somatic
           - material
-        spellbook: true
+        power list: true
       _id: oP83rCUMiYvwFzJ5
       sort: 0
       activation:
@@ -192,7 +192,7 @@ system:
         chatFlavor: ''
       duration:
         units: inst
-        concentration: false
+        maintained power: false
         override: false
       range:
         override: false
@@ -223,7 +223,7 @@ system:
           - vocal
           - somatic
           - material
-        spellbook: true
+        power list: true
       _id: xpuvWA5Jy39MYwCg
       sort: 0
       activation:
@@ -243,7 +243,7 @@ system:
         chatFlavor: ''
       duration:
         units: inst
-        concentration: false
+        maintained power: false
         override: false
       range:
         override: false
@@ -292,7 +292,7 @@ system:
       earth or rock as if those areas were Difficult Terrain without disturbing
       the matter through which you pass. If you end your turn in solid earth or
       rock, you are shunted out to the nearest unoccupied space you last
-      occupied.</p><p><em><strong>Spellcasting.</strong></em> The ring has 5
+      occupied.</p><p><em><strong>Power System.</strong></em> The ring has 5
       charges and regains 1d4 + 1 expended charges daily at dawn. While wearing
       the ring, you can cast a spell from it. Choose the spell from the list of
       available spells based on the Elemental Plane the ring is linked to, as
@@ -323,7 +323,7 @@ system:
     units: lb
   price:
     value: 0
-    denomination: gp
+    denomination: CR
   rarity: legendary
   attunement: required
   attuned: false

@@ -22,7 +22,7 @@ system:
         chatFlavor: ' The space you left is &Reference[LightlyObscured] by smoke until the end of your next turn.'
       duration:
         units: round
-        concentration: false
+        maintained power: false
         override: true
         value: '1'
       range:
@@ -89,7 +89,7 @@ system:
     units: lb
   price:
     value: 4000
-    denomination: gp
+    denomination: CR
   rarity: rare
   attunement: ''
   attuned: false

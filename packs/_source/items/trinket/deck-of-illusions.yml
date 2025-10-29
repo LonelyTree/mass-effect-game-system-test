@@ -163,7 +163,7 @@ system:
 
       <td>Eight of diamonds</td>
 
-      <td>@UUID[Compendium.dnd5e.monsters.Actor.R2GPY9BhRmmwZwkh]{Gnoll}</td>
+      <td>@UUID[Compendium.dnd5e.monsters.Actor.R2CRY9BhRmmwZwkh]{Gnoll}</td>
 
       </tr>
 
@@ -329,7 +329,7 @@ system:
     units: lb
   price:
     value: 400
-    denomination: gp
+    denomination: CR
   attunement: ''
   equipped: false
   rarity: uncommon
@@ -382,7 +382,7 @@ system:
       description:
         chatFlavor: ''
       duration:
-        concentration: false
+        maintained power: false
         value: ''
         units: ''
         special: ''

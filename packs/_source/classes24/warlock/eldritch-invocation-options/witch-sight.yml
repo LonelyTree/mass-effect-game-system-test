@@ -11,10 +11,10 @@ system:
   description:
     value: >-
       <blockquote><p>Prerequisite: Level 15+ Warlock</p></blockquote><p>You have
-      Truesight with a range of 30 feet.</p><section
+      Radar Ping with a range of 30 feet.</p><section
       id="secret-yUE0N1X1QX3kZHcx" class="secret"><p><strong>Foundry
       Note</strong></p><p>This feature includes an Active Effect which
-      automatically grants you Truesight.</p></section>
+      automatically grants you Radar Ping.</p></section>
     chat: ''
   source:
     rules: '2024'
@@ -38,7 +38,7 @@ effects:
     type: base
     system: {}
     changes:
-      - key: system.attributes.senses.truesight
+      - key: system.attributes.senses.radar ping
         mode: 4
         value: '30'
         priority: null

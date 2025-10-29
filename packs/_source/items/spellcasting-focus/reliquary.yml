@@ -11,8 +11,8 @@ system:
       the ability to call forth their power and in doing so spread the faith
       once more.</p>
 
-      <p><strong>Spellcasting Focus</strong>. A cleric or paladin can use a holy
-      symbol as a spellcasting focus. To use the symbol in this way, the caster
+      <p><strong>Power System Focus</strong>. A cleric or paladin can use a holy
+      symbol as a power system focus. To use the symbol in this way, the caster
       must hold it in hand, wear it visibly, or bear it on a shield.</p>
     chat: ''
   source:
@@ -27,7 +27,7 @@ system:
     units: lb
   price:
     value: 5
-    denomination: gp
+    denomination: CR
   attunement: ''
   equipped: false
   rarity: ''

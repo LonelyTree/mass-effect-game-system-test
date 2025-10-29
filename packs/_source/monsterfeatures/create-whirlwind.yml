@@ -11,7 +11,7 @@ system:
       <p>A 5-foot-radius, 30-foot-tall cylinder of swirling air magically forms
       on a point the [[lookup @name lowercase]] can see within 120 feet of it.
       The whirlwind lasts as long as the [[lookup @name lowercase]] maintains
-      concentration (as if concentrating on a spell).</p><p>Any creature but the
+      maintained power (as if concentrating on a spell).</p><p>Any creature but the
       [[lookup @name lowercase]] that enters the whirlwind must succeed on a 
       <strong>DC 18 Strength</strong> saving throw or be restrained by it. the
       [[lookup @name lowercase]] can move the whirlwind up to 60 feet as an
@@ -67,7 +67,7 @@ system:
       description:
         chatFlavor: ''
       duration:
-        concentration: false
+        maintained power: false
         value: ''
         units: ''
         special: ''

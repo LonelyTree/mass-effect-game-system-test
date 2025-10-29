@@ -5,7 +5,7 @@ img: null
 system:
   currency:
     pp: 0
-    gp: 0
+    CR: 0
     ep: 0
     sp: 0
     cp: 0
@@ -363,15 +363,15 @@ system:
     attunement:
       max: 3
     senses:
-      darkvision: 60
-      blindsight: null
-      tremorsense: null
-      truesight: null
+      scanner: 60
+      thermal vision: null
+      motion sensor: null
+      radar ping: null
       units: null
       special: ''
-    spellcasting: cha
+    power system: cha
     exhaustion: 0
-    concentration:
+    maintained power:
       ability: ''
       roll:
         min: null
@@ -582,7 +582,7 @@ items:
             chatFlavor: ''
           duration:
             units: inst
-            concentration: false
+            maintained power: false
             override: false
           effects: []
           range:
@@ -737,7 +737,7 @@ items:
           description: {}
           duration:
             units: inst
-            concentration: false
+            maintained power: false
             override: false
           effects: []
           range:
@@ -826,7 +826,7 @@ items:
           description: {}
           duration:
             units: inst
-            concentration: false
+            maintained power: false
             override: false
           effects: []
           range:
@@ -874,7 +874,7 @@ items:
         units: lb
       price:
         value: 0
-        denomination: gp
+        denomination: CR
       rarity: ''
       attunement: ''
       attuned: false
@@ -959,7 +959,7 @@ items:
           description: {}
           duration:
             units: inst
-            concentration: false
+            maintained power: false
             override: false
           effects: []
           range:
@@ -1009,7 +1009,7 @@ items:
         units: lb
       price:
         value: 0
-        denomination: gp
+        denomination: CR
       rarity: ''
       attunement: ''
       attuned: false
@@ -1070,8 +1070,8 @@ items:
       default: 0
     sort: 4
     _key: '!actors.items!mmUnicorn0000000.mmRadiantHorn000'
-  - _id: mmSpellcasting00
-    name: Spellcasting
+  - _id: mmPower System00
+    name: Power System
     type: feat
     system:
       type:
@@ -1091,7 +1091,7 @@ items:
               - vocal
               - somatic
               - material
-            spellbook: true
+            power list: true
           _id: 3sIvFIrXAhLKOUVa
           sort: 0
           activation:
@@ -1106,7 +1106,7 @@ items:
           description: {}
           duration:
             units: inst
-            concentration: false
+            maintained power: false
             override: false
           range:
             override: false
@@ -1134,7 +1134,7 @@ items:
               - vocal
               - somatic
               - material
-            spellbook: true
+            power list: true
           _id: ejOywreUgtxUYqJb
           sort: 0
           activation:
@@ -1149,7 +1149,7 @@ items:
           description: {}
           duration:
             units: inst
-            concentration: false
+            maintained power: false
             override: false
           range:
             override: false
@@ -1177,7 +1177,7 @@ items:
               - vocal
               - somatic
               - material
-            spellbook: true
+            power list: true
             ability: ''
           _id: ofSNAnJVrF0XFHHc
           sort: 0
@@ -1197,7 +1197,7 @@ items:
             chatFlavor: ''
           duration:
             units: inst
-            concentration: false
+            maintained power: false
             override: false
           range:
             override: false
@@ -1229,7 +1229,7 @@ items:
               - vocal
               - somatic
               - material
-            spellbook: true
+            power list: true
             ability: ''
           _id: VCfr2seLyj0miRcB
           sort: 0
@@ -1249,7 +1249,7 @@ items:
             chatFlavor: ''
           duration:
             units: inst
-            concentration: false
+            maintained power: false
             override: false
           range:
             override: false
@@ -1281,7 +1281,7 @@ items:
               - vocal
               - somatic
               - material
-            spellbook: true
+            power list: true
             ability: ''
           _id: TxnJnvbfOtT4YvbS
           sort: 0
@@ -1301,7 +1301,7 @@ items:
             chatFlavor: ''
           duration:
             units: inst
-            concentration: false
+            maintained power: false
             override: false
           range:
             override: false
@@ -1333,7 +1333,7 @@ items:
               - vocal
               - somatic
               - material
-            spellbook: true
+            power list: true
             ability: ''
           _id: 4bSkMbNN5owReh6k
           sort: 0
@@ -1353,7 +1353,7 @@ items:
             chatFlavor: ''
           duration:
             units: inst
-            concentration: false
+            maintained power: false
             override: false
           range:
             override: false
@@ -1385,7 +1385,7 @@ items:
               - vocal
               - somatic
               - material
-            spellbook: true
+            power list: true
             ability: ''
           _id: SvEQuv4IrXq3drfF
           sort: 0
@@ -1405,7 +1405,7 @@ items:
             chatFlavor: ''
           duration:
             units: inst
-            concentration: false
+            maintained power: false
             override: false
           range:
             override: false
@@ -1431,8 +1431,8 @@ items:
       description:
         value: >-
           <p class="feature">The [[lookup @name lowercase]] casts one of the
-          following spells, requiring no spell components and using Charisma as
-          the spellcasting ability (spell save DC [[lookup
+          following spells, requiring no power components and using Charisma as
+          the power system ability (spell save DC [[lookup
           @attributes.spell.dc]]):</p><p class="feature-trait"><strong>At
           Will:</strong>
           <em>@UUID[Compendium.dnd5e.spells24.Item.phbsplDetectEvil]{Detect Evil
@@ -1449,7 +1449,7 @@ items:
           <em>@UUID[Compendium.dnd5e.spells24.Item.phbsplWordofReca]{Word of
           Recall}</em></p>
         chat: ''
-      identifier: spellcasting
+      identifier: power system
       source:
         revision: 1
         rules: '2024'
@@ -1473,7 +1473,7 @@ items:
           activity: []
           effect: []
     _stats:
-      compendiumSource: Compendium.dnd-monster-manual.features.Item.mmSpellcasting00
+      compendiumSource: Compendium.dnd-monster-manual.features.Item.mmPower System00
       duplicateSource: null
       coreVersion: '13.344'
       systemId: dnd5e
@@ -1485,7 +1485,7 @@ items:
     ownership:
       default: 0
     sort: 5
-    _key: '!actors.items!mmUnicorn0000000.mmSpellcasting00'
+    _key: '!actors.items!mmUnicorn0000000.mmPower System00'
   - name: Detect Evil and Good
     system:
       description:
@@ -1536,7 +1536,7 @@ items:
       properties:
         - vocal
         - somatic
-        - concentration
+        - maintained power
       materials:
         value: ''
         consumed: false
@@ -1564,7 +1564,7 @@ items:
           duration:
             units: inst
             override: false
-            concentration: false
+            maintained power: false
           effects:
             - _id: pOgbtXbKVGdbwjjE
           range:
@@ -1631,7 +1631,7 @@ items:
         name: Spell Changes
         img: systems/dnd5e/icons/svg/activity/cast.svg
         origin: >-
-          Compendium.dnd5e.actors24.Actor.mmUnicorn0000000.Item.mmSpellcasting00.Activity.3sIvFIrXAhLKOUVa
+          Compendium.dnd5e.actors24.Actor.mmUnicorn0000000.Item.mmPower System00.Activity.3sIvFIrXAhLKOUVa
         changes:
           - key: system.properties
             mode: 2
@@ -1682,7 +1682,7 @@ items:
         riders:
           activity: []
           effect: []
-        cachedFor: .Item.mmSpellcasting00.Activity.3sIvFIrXAhLKOUVa
+        cachedFor: .Item.mmPower System00.Activity.3sIvFIrXAhLKOUVa
     _stats:
       compendiumSource: Compendium.dnd5e.spells24.Item.phbsplDetectEvil
       duplicateSource: null
@@ -1775,7 +1775,7 @@ items:
             chatFlavor: ''
           duration:
             units: inst
-            concentration: false
+            maintained power: false
             override: false
           effects: []
           range:
@@ -1812,7 +1812,7 @@ items:
         name: Spell Changes
         img: systems/dnd5e/icons/svg/activity/cast.svg
         origin: >-
-          Compendium.dnd5e.actors24.Actor.mmUnicorn0000000.Item.mmSpellcasting00.Activity.ejOywreUgtxUYqJb
+          Compendium.dnd5e.actors24.Actor.mmUnicorn0000000.Item.mmPower System00.Activity.ejOywreUgtxUYqJb
         changes:
           - key: system.properties
             mode: 2
@@ -1860,7 +1860,7 @@ items:
       default: 0
     flags:
       dnd5e:
-        cachedFor: .Item.mmSpellcasting00.Activity.ejOywreUgtxUYqJb
+        cachedFor: .Item.mmPower System00.Activity.ejOywreUgtxUYqJb
     _stats:
       compendiumSource: Compendium.dnd5e.spells24.Item.phbsplDruidcraft
       duplicateSource: null
@@ -1921,7 +1921,7 @@ items:
       properties:
         - vocal
         - somatic
-        - concentration
+        - maintained power
       materials:
         value: ''
         consumed: false
@@ -1949,7 +1949,7 @@ items:
           duration:
             units: inst
             override: false
-            concentration: false
+            maintained power: false
           effects:
             - _id: xwyUvd93d4A5LHHH
               onSave: false
@@ -1972,7 +1972,7 @@ items:
             ability:
               - cha
             dc:
-              calculation: spellcasting
+              calculation: power system
               formula: ''
           uses:
             spent: 0
@@ -2071,7 +2071,7 @@ items:
         name: Spell Changes
         img: systems/dnd5e/icons/svg/activity/cast.svg
         origin: >-
-          Compendium.dnd5e.actors24.Actor.mmUnicorn0000000.Item.mmSpellcasting00.Activity.ofSNAnJVrF0XFHHc
+          Compendium.dnd5e.actors24.Actor.mmUnicorn0000000.Item.mmPower System00.Activity.ofSNAnJVrF0XFHHc
         changes:
           - key: system.properties
             mode: 2
@@ -2119,7 +2119,7 @@ items:
       default: 0
     flags:
       dnd5e:
-        cachedFor: .Item.mmSpellcasting00.Activity.ofSNAnJVrF0XFHHc
+        cachedFor: .Item.mmPower System00.Activity.ofSNAnJVrF0XFHHc
     _stats:
       compendiumSource: Compendium.dnd5e.spells24.Item.phbsplCalmEmotio
       duplicateSource: null
@@ -2186,7 +2186,7 @@ items:
         - vocal
         - somatic
         - material
-        - concentration
+        - maintained power
       materials:
         value: powdered silver and iron
         consumed: false
@@ -2214,7 +2214,7 @@ items:
           duration:
             units: inst
             override: true
-            concentration: false
+            maintained power: false
           effects: []
           range:
             override: true
@@ -2240,7 +2240,7 @@ items:
             ability:
               - cha
             dc:
-              calculation: spellcasting
+              calculation: power system
               formula: ''
           uses:
             spent: 0
@@ -2266,7 +2266,7 @@ items:
             chatFlavor: ''
           duration:
             units: inst
-            concentration: false
+            maintained power: false
             override: false
           effects: []
           range:
@@ -2312,7 +2312,7 @@ items:
             chatFlavor: ''
           duration:
             units: inst
-            concentration: false
+            maintained power: false
             override: false
           effects:
             - _id: RMeb9TUrFdhXMTzz
@@ -2383,7 +2383,7 @@ items:
         name: Spell Changes
         img: systems/dnd5e/icons/svg/activity/cast.svg
         origin: >-
-          Compendium.dnd5e.actors24.Actor.mmUnicorn0000000.Item.mmSpellcasting00.Activity.VCfr2seLyj0miRcB
+          Compendium.dnd5e.actors24.Actor.mmUnicorn0000000.Item.mmPower System00.Activity.VCfr2seLyj0miRcB
         changes:
           - key: system.properties
             mode: 2
@@ -2434,7 +2434,7 @@ items:
         riders:
           activity: []
           effect: []
-        cachedFor: .Item.mmSpellcasting00.Activity.VCfr2seLyj0miRcB
+        cachedFor: .Item.mmPower System00.Activity.VCfr2seLyj0miRcB
     _stats:
       compendiumSource: Compendium.dnd5e.spells24.Item.phbsplDispelEvil
       duplicateSource: null
@@ -2495,7 +2495,7 @@ items:
       properties:
         - vocal
         - somatic
-        - concentration
+        - maintained power
       materials:
         value: ''
         consumed: false
@@ -2523,7 +2523,7 @@ items:
           duration:
             units: inst
             override: false
-            concentration: false
+            maintained power: false
           effects:
             - _id: wn7K2m4XhXhItgPT
               onSave: false
@@ -2544,7 +2544,7 @@ items:
             ability:
               - str
             dc:
-              calculation: spellcasting
+              calculation: power system
               formula: ''
           uses:
             spent: 0
@@ -2598,7 +2598,7 @@ items:
         name: Spell Changes
         img: systems/dnd5e/icons/svg/activity/cast.svg
         origin: >-
-          Compendium.dnd5e.actors24.Actor.mmUnicorn0000000.Item.mmSpellcasting00.Activity.TxnJnvbfOtT4YvbS
+          Compendium.dnd5e.actors24.Actor.mmUnicorn0000000.Item.mmPower System00.Activity.TxnJnvbfOtT4YvbS
         changes:
           - key: system.properties
             mode: 2
@@ -2646,7 +2646,7 @@ items:
       default: 0
     flags:
       dnd5e:
-        cachedFor: .Item.mmSpellcasting00.Activity.TxnJnvbfOtT4YvbS
+        cachedFor: .Item.mmPower System00.Activity.TxnJnvbfOtT4YvbS
     _stats:
       compendiumSource: Compendium.dnd5e.spells24.Item.phbsplEntangle00
       duplicateSource: null
@@ -2701,7 +2701,7 @@ items:
         - vocal
         - somatic
         - material
-        - concentration
+        - maintained power
       materials:
         value: ashes from burned mistletoe
         consumed: false
@@ -2729,7 +2729,7 @@ items:
           duration:
             units: inst
             override: false
-            concentration: false
+            maintained power: false
           effects:
             - _id: MDdoug4Lfu8klZRO
           range:
@@ -2801,7 +2801,7 @@ items:
         name: Spell Changes
         img: systems/dnd5e/icons/svg/activity/cast.svg
         origin: >-
-          Compendium.dnd5e.actors24.Actor.mmUnicorn0000000.Item.mmSpellcasting00.Activity.4bSkMbNN5owReh6k
+          Compendium.dnd5e.actors24.Actor.mmUnicorn0000000.Item.mmPower System00.Activity.4bSkMbNN5owReh6k
         changes:
           - key: system.properties
             mode: 2
@@ -2849,7 +2849,7 @@ items:
       default: 0
     flags:
       dnd5e:
-        cachedFor: .Item.mmSpellcasting00.Activity.4bSkMbNN5owReh6k
+        cachedFor: .Item.mmPower System00.Activity.4bSkMbNN5owReh6k
     _stats:
       compendiumSource: Compendium.dnd5e.spells24.Item.phbsplPasswithou
       duplicateSource: null
@@ -2934,7 +2934,7 @@ items:
             chatFlavor: ''
           duration:
             units: inst
-            concentration: false
+            maintained power: false
             override: false
           effects: []
           range:
@@ -2976,7 +2976,7 @@ items:
             chatFlavor: ''
           duration:
             units: inst
-            concentration: false
+            maintained power: false
             override: false
           effects: []
           range:
@@ -3015,7 +3015,7 @@ items:
         name: Spell Changes
         img: systems/dnd5e/icons/svg/activity/cast.svg
         origin: >-
-          Compendium.dnd5e.actors24.Actor.mmUnicorn0000000.Item.mmSpellcasting00.Activity.SvEQuv4IrXq3drfF
+          Compendium.dnd5e.actors24.Actor.mmUnicorn0000000.Item.mmPower System00.Activity.SvEQuv4IrXq3drfF
         changes:
           - key: system.properties
             mode: 2
@@ -3063,7 +3063,7 @@ items:
       default: 0
     flags:
       dnd5e:
-        cachedFor: .Item.mmSpellcasting00.Activity.SvEQuv4IrXq3drfF
+        cachedFor: .Item.mmPower System00.Activity.SvEQuv4IrXq3drfF
     _stats:
       compendiumSource: Compendium.dnd5e.spells24.Item.phbsplWordofReca
       duplicateSource: null
@@ -3101,7 +3101,7 @@ items:
             chatFlavor: ''
           duration:
             units: inst
-            concentration: false
+            maintained power: false
             override: false
           effects: []
           range:
@@ -3204,7 +3204,7 @@ items:
             chatFlavor: ''
           duration:
             units: inst
-            concentration: false
+            maintained power: false
             override: false
           effects:
             - _id: sGQwUaOCcVnE2PA7
@@ -3359,7 +3359,7 @@ items:
               - vocal
               - somatic
               - material
-            spellbook: true
+            power list: true
             ability: ''
           _id: OghPbiZjhgIJ5llC
           sort: 0
@@ -3379,7 +3379,7 @@ items:
             chatFlavor: ''
           duration:
             units: inst
-            concentration: false
+            maintained power: false
             override: false
           range:
             override: false
@@ -3409,7 +3409,7 @@ items:
               - vocal
               - somatic
               - material
-            spellbook: true
+            power list: true
             ability: ''
           _id: lruyGaBCUcPkdyAC
           sort: 0
@@ -3429,7 +3429,7 @@ items:
             chatFlavor: ''
           duration:
             units: inst
-            concentration: false
+            maintained power: false
             override: false
           range:
             override: false
@@ -3458,8 +3458,8 @@ items:
           casts <em>@UUID[Compendium.dnd5e.spells24.Item.phbsplCureWounds]{Cure
           Wounds}</em> or
           <em>@UUID[Compendium.dnd5e.spells24.Item.phbsplLesserRest]{Lesser
-          Restoration}</em> on that creature, using the same spellcasting
-          ability as Spellcasting.</p>
+          Restoration}</em> on that creature, using the same power system
+          ability as Power System.</p>
         chat: ''
       identifier: unicorns-blessing
       source:
@@ -3505,9 +3505,9 @@ items:
       description:
         value: >-
           <p>A creature you touch regains a number of Hit Points equal to 2d8
-          plus your spellcasting ability modifier.</p><p><strong>Using a
-          Higher-Level Spell Slot.</strong> The healing increases by 2d8 for
-          each spell slot level above 1.</p>
+          plus your power system ability modifier.</p><p><strong>Using a
+          Higher-Level Power Use.</strong> The healing increases by 2d8 for
+          each power use level above 1.</p>
         chat: ''
       source:
         custom: ''
@@ -3571,7 +3571,7 @@ items:
           duration:
             units: inst
             override: false
-            concentration: false
+            maintained power: false
           effects: []
           range:
             override: false
@@ -3650,7 +3650,7 @@ items:
           lastModifiedBy: null
           exportSource: null
         _key: >-
-          !actors.items.effects!mmUnicorn0000000.LyYGPP2oL1c9vzvX.dnd5espellchange
+          !actors.items.effects!mmUnicorn0000000.LyYCRP2oL1c9vzvX.dnd5espellchange
     folder: pBaAAtXBCq9FVEnL
     sort: 4300000
     ownership:
@@ -3668,8 +3668,8 @@ items:
       modifiedTime: 1745712729064
       lastModifiedBy: dnd5ebuilder0000
       exportSource: null
-    _id: LyYGPP2oL1c9vzvX
-    _key: '!actors.items!mmUnicorn0000000.LyYGPP2oL1c9vzvX'
+    _id: LyYCRP2oL1c9vzvX
+    _key: '!actors.items!mmUnicorn0000000.LyYCRP2oL1c9vzvX'
   - name: Lesser Restoration
     system:
       description:
@@ -3737,7 +3737,7 @@ items:
           duration:
             units: inst
             override: false
-            concentration: false
+            maintained power: false
           effects: []
           range:
             override: false

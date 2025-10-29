@@ -31,12 +31,12 @@ system:
       choose an alternative curse effect, but it should be no more powerful than
       those described above. The DM has final say on such a curse's
       effect.</p><p><strong>At Higher Levels.</strong> If you cast this spell
-      using a spell slot of 4th level or higher, the duration is concentration,
-      up to 10 minutes. If you use a spell slot of 5th level or higher, the
-      duration is 8 hours. If you use a spell slot of 7th level or higher, the
-      duration is 24 hours. If you use a 9th level spell slot, the spell lasts
-      until it is dispelled. Using a spell slot of 5th level or higher grants a
-      duration that doesn't require concentration.</p>
+      using a power use of 4th level or higher, the duration is maintained power,
+      up to 10 minutes. If you use a power use of 5th level or higher, the
+      duration is 8 hours. If you use a power use of 7th level or higher, the
+      duration is 24 hours. If you use a 9th level power use, the spell lasts
+      until it is dispelled. Using a power use of 5th level or higher grants a
+      duration that doesn't require maintained power.</p>
     chat: ''
   source:
     custom: ''
@@ -78,7 +78,7 @@ system:
   properties:
     - vocal
     - somatic
-    - concentration
+    - maintained power
   activities:
     dnd5eactivity000:
       _id: dnd5eactivity000
@@ -97,7 +97,7 @@ system:
         chatFlavor: ''
       duration:
         units: inst
-        concentration: false
+        maintained power: false
         override: false
       effects: []
       range:
@@ -116,7 +116,7 @@ system:
       save:
         ability: wis
         dc:
-          calculation: spellcasting
+          calculation: power system
           formula: ''
       uses:
         spent: 0

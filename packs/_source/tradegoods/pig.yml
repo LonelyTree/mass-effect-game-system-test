@@ -28,7 +28,7 @@ system:
     units: lb
   price:
     value: 3
-    denomination: gp
+    denomination: CR
   rarity: ''
   identified: true
   unidentified:

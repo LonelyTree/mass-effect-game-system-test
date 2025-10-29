@@ -5,7 +5,7 @@ img: null
 system:
   currency:
     pp: 0
-    gp: 0
+    CR: 0
     ep: 0
     sp: 0
     cp: 0
@@ -363,15 +363,15 @@ system:
     attunement:
       max: 3
     senses:
-      darkvision: 60
-      blindsight: null
-      tremorsense: null
-      truesight: null
+      scanner: 60
+      thermal vision: null
+      motion sensor: null
+      radar ping: null
       units: null
       special: ''
-    spellcasting: cha
+    power system: cha
     exhaustion: 0
-    concentration:
+    maintained power:
       ability: ''
       roll:
         min: null
@@ -677,7 +677,7 @@ items:
             chatFlavor: ''
           duration:
             units: inst
-            concentration: false
+            maintained power: false
             override: false
           effects: []
           range:
@@ -712,8 +712,8 @@ items:
         value: >-
           <p>The [[lookup @name lowercase]] makes one [[/item
           .mmVineLash000000]] or [[/item .mmThornBurst0000]] attack, and it can
-          use Spellcasting to cast [[/item
-          .mmSpellcasting00.Activity.bAmZSyK4cn33HwwI]].</p>
+          use Power System to cast [[/item
+          .mmPower System00.Activity.bAmZSyK4cn33HwwI]].</p>
         chat: ''
       identifier: multiattack
       source:
@@ -778,7 +778,7 @@ items:
             chatFlavor: ''
           duration:
             units: inst
-            concentration: false
+            maintained power: false
             override: false
           effects: []
           range:
@@ -835,7 +835,7 @@ items:
         units: lb
       price:
         value: 0
-        denomination: gp
+        denomination: CR
       rarity: ''
       attunement: ''
       attuned: false
@@ -926,7 +926,7 @@ items:
             chatFlavor: ''
           duration:
             units: inst
-            concentration: false
+            maintained power: false
             override: false
           effects: []
           range:
@@ -985,7 +985,7 @@ items:
         units: lb
       price:
         value: 0
-        denomination: gp
+        denomination: CR
       rarity: ''
       attunement: ''
       attuned: false
@@ -1050,8 +1050,8 @@ items:
       default: 0
     sort: 4
     _key: '!actors.items!mmDryad000000000.mmThornBurst0000'
-  - _id: mmSpellcasting00
-    name: Spellcasting
+  - _id: mmPower System00
+    name: Power System
     type: feat
     system:
       type:
@@ -1069,7 +1069,7 @@ items:
             level: 1
             properties:
               - material
-            spellbook: true
+            power list: true
             ability: ''
           _id: 5yv4J9JeR6CdKUpq
           sort: 0
@@ -1086,7 +1086,7 @@ items:
             chatFlavor: ''
           duration:
             units: inst
-            concentration: false
+            maintained power: false
             override: false
           range:
             override: false
@@ -1114,7 +1114,7 @@ items:
             level: 4
             properties:
               - material
-            spellbook: true
+            power list: true
             ability: ''
           _id: bAmZSyK4cn33HwwI
           sort: 0
@@ -1131,7 +1131,7 @@ items:
             chatFlavor: ''
           duration:
             units: inst
-            concentration: false
+            maintained power: false
             override: false
           range:
             override: false
@@ -1159,7 +1159,7 @@ items:
             level: null
             properties:
               - material
-            spellbook: true
+            power list: true
             ability: ''
           _id: RbAsYvVVKgs8aVUO
           sort: 0
@@ -1176,7 +1176,7 @@ items:
             chatFlavor: ''
           duration:
             units: inst
-            concentration: false
+            maintained power: false
             override: false
           range:
             override: false
@@ -1204,7 +1204,7 @@ items:
             level: 1
             properties:
               - material
-            spellbook: true
+            power list: true
             ability: ''
           _id: yK3kLf0ui10MyjZU
           sort: 0
@@ -1224,7 +1224,7 @@ items:
             chatFlavor: ''
           duration:
             units: inst
-            concentration: false
+            maintained power: false
             override: false
           range:
             override: false
@@ -1254,7 +1254,7 @@ items:
             level: 2
             properties:
               - material
-            spellbook: true
+            power list: true
             ability: ''
           _id: Q6nZJBtSYFcUyo3R
           sort: 0
@@ -1274,7 +1274,7 @@ items:
             chatFlavor: ''
           duration:
             units: inst
-            concentration: false
+            maintained power: false
             override: false
           range:
             override: false
@@ -1301,7 +1301,7 @@ items:
         value: >-
           <p class="feature">The [[lookup @name lowercase]] casts one of the
           following spells, requiring no Material components and using Charisma
-          as the spellcasting ability (spell save DC [[lookup
+          as the power system ability (spell save DC [[lookup
           @attributes.spell.dc]]):</p><p class="feature-trait"><strong>At
           Will:</strong>
           <em>@UUID[Compendium.dnd5e.spells24.Item.phbsplAnimalFrie]{Animal
@@ -1315,7 +1315,7 @@ items:
           <em>@UUID[Compendium.dnd5e.spells24.Item.phbsplPasswithou]{Pass
           without Trace}</em></p>
         chat: ''
-      identifier: spellcasting
+      identifier: power system
       source:
         revision: 1
         rules: '2024'
@@ -1339,7 +1339,7 @@ items:
           activity: []
           effect: []
     _stats:
-      compendiumSource: Compendium.dnd-monster-manual.features.Item.mmSpellcasting00
+      compendiumSource: Compendium.dnd-monster-manual.features.Item.mmPower System00
       duplicateSource: null
       coreVersion: '13.344'
       systemId: dnd5e
@@ -1351,7 +1351,7 @@ items:
     ownership:
       default: 0
     sort: 5
-    _key: '!actors.items!mmDryad000000000.mmSpellcasting00'
+    _key: '!actors.items!mmDryad000000000.mmPower System00'
   - _id: mmTreeStride0000
     name: Tree Stride
     type: feat
@@ -1375,7 +1375,7 @@ items:
             chatFlavor: ''
           duration:
             units: inst
-            concentration: false
+            maintained power: false
             override: false
           effects: []
           range:
@@ -1470,8 +1470,8 @@ items:
           succeed on a Wisdom saving throw or have the &amp;Reference[charmed
           apply=false] condition for the duration. If you or one of your allies
           deals damage to the target, the spells ends.</p><p><strong>Using a
-          Higher-Level Spell Slot.</strong> You can target one additional Beast
-          for each spell slot level above 1.</p>
+          Higher-Level Power Use.</strong> You can target one additional Beast
+          for each power use level above 1.</p>
         chat: ''
       source:
         custom: ''
@@ -1537,7 +1537,7 @@ items:
           duration:
             units: inst
             override: false
-            concentration: false
+            maintained power: false
           effects:
             - _id: 55NWwccKvMKQPL4h
               onSave: false
@@ -1558,7 +1558,7 @@ items:
             ability:
               - wis
             dc:
-              calculation: spellcasting
+              calculation: power system
               formula: ''
           uses:
             spent: 0
@@ -1612,7 +1612,7 @@ items:
         name: Spell Changes
         img: systems/dnd5e/icons/svg/activity/cast.svg
         origin: >-
-          Compendium.dnd5e.actors24.Actor.mmDryad000000000.Item.mmSpellcasting00.Activity.5yv4J9JeR6CdKUpq
+          Compendium.dnd5e.actors24.Actor.mmDryad000000000.Item.mmPower System00.Activity.5yv4J9JeR6CdKUpq
         changes:
           - key: system.properties
             mode: 2
@@ -1652,7 +1652,7 @@ items:
       default: 0
     flags:
       dnd5e:
-        cachedFor: .Item.mmSpellcasting00.Activity.5yv4J9JeR6CdKUpq
+        cachedFor: .Item.mmPower System00.Activity.5yv4J9JeR6CdKUpq
     _stats:
       compendiumSource: Compendium.dnd5e.spells24.Item.phbsplAnimalFrie
       duplicateSource: null
@@ -1675,8 +1675,8 @@ items:
           condition until the spell ends or until you or your allies damage it.
           The Charmed creature is Friendly to you. When the spell ends, the
           target knows it was Charmed by you.</p><p><strong>Using a Higher-Level
-          Spell Slot.</strong>You can target one additional creature for each
-          spell slot level above 4.</p>
+          Power Use.</strong>You can target one additional creature for each
+          power use level above 4.</p>
         chat: ''
       source:
         custom: ''
@@ -1738,7 +1738,7 @@ items:
           duration:
             units: inst
             override: false
-            concentration: false
+            maintained power: false
           effects:
             - _id: CB1jIPB4yINOpjQX
               onSave: false
@@ -1759,7 +1759,7 @@ items:
             ability:
               - wis
             dc:
-              calculation: spellcasting
+              calculation: power system
               formula: ''
           uses:
             spent: 0
@@ -1813,7 +1813,7 @@ items:
         name: Spell Changes
         img: systems/dnd5e/icons/svg/activity/cast.svg
         origin: >-
-          Compendium.dnd5e.actors24.Actor.mmDryad000000000.Item.mmSpellcasting00.Activity.bAmZSyK4cn33HwwI
+          Compendium.dnd5e.actors24.Actor.mmDryad000000000.Item.mmPower System00.Activity.bAmZSyK4cn33HwwI
         changes:
           - key: system.properties
             mode: 2
@@ -1853,7 +1853,7 @@ items:
       default: 0
     flags:
       dnd5e:
-        cachedFor: .Item.mmSpellcasting00.Activity.bAmZSyK4cn33HwwI
+        cachedFor: .Item.mmPower System00.Activity.bAmZSyK4cn33HwwI
     _stats:
       compendiumSource: Compendium.dnd5e.spells24.Item.phbsplCharmMonst
       duplicateSource: null
@@ -1946,7 +1946,7 @@ items:
             chatFlavor: ''
           duration:
             units: inst
-            concentration: false
+            maintained power: false
             override: false
           effects: []
           range:
@@ -1983,7 +1983,7 @@ items:
         name: Spell Changes
         img: systems/dnd5e/icons/svg/activity/cast.svg
         origin: >-
-          Compendium.dnd5e.actors24.Actor.mmDryad000000000.Item.mmSpellcasting00.Activity.RbAsYvVVKgs8aVUO
+          Compendium.dnd5e.actors24.Actor.mmDryad000000000.Item.mmPower System00.Activity.RbAsYvVVKgs8aVUO
         changes:
           - key: system.properties
             mode: 2
@@ -2023,7 +2023,7 @@ items:
       default: 0
     flags:
       dnd5e:
-        cachedFor: .Item.mmSpellcasting00.Activity.RbAsYvVVKgs8aVUO
+        cachedFor: .Item.mmPower System00.Activity.RbAsYvVVKgs8aVUO
     _stats:
       compendiumSource: Compendium.dnd5e.spells24.Item.phbsplDruidcraft
       duplicateSource: null
@@ -2084,7 +2084,7 @@ items:
       properties:
         - vocal
         - somatic
-        - concentration
+        - maintained power
       materials:
         value: ''
         consumed: false
@@ -2112,7 +2112,7 @@ items:
           duration:
             units: inst
             override: false
-            concentration: false
+            maintained power: false
           effects:
             - _id: wn7K2m4XhXhItgPT
               onSave: false
@@ -2133,7 +2133,7 @@ items:
             ability:
               - str
             dc:
-              calculation: spellcasting
+              calculation: power system
               formula: ''
           uses:
             spent: 0
@@ -2187,7 +2187,7 @@ items:
         name: Spell Changes
         img: systems/dnd5e/icons/svg/activity/cast.svg
         origin: >-
-          Compendium.dnd5e.actors24.Actor.mmDryad000000000.Item.mmSpellcasting00.Activity.yK3kLf0ui10MyjZU
+          Compendium.dnd5e.actors24.Actor.mmDryad000000000.Item.mmPower System00.Activity.yK3kLf0ui10MyjZU
         changes:
           - key: system.properties
             mode: 2
@@ -2227,7 +2227,7 @@ items:
       default: 0
     flags:
       dnd5e:
-        cachedFor: .Item.mmSpellcasting00.Activity.yK3kLf0ui10MyjZU
+        cachedFor: .Item.mmPower System00.Activity.yK3kLf0ui10MyjZU
     _stats:
       compendiumSource: Compendium.dnd5e.spells24.Item.phbsplEntangle00
       duplicateSource: null
@@ -2282,7 +2282,7 @@ items:
         - vocal
         - somatic
         - material
-        - concentration
+        - maintained power
       materials:
         value: ashes from burned mistletoe
         consumed: false
@@ -2310,7 +2310,7 @@ items:
           duration:
             units: inst
             override: false
-            concentration: false
+            maintained power: false
           effects:
             - _id: MDdoug4Lfu8klZRO
           range:
@@ -2382,7 +2382,7 @@ items:
         name: Spell Changes
         img: systems/dnd5e/icons/svg/activity/cast.svg
         origin: >-
-          Compendium.dnd5e.actors24.Actor.mmDryad000000000.Item.mmSpellcasting00.Activity.Q6nZJBtSYFcUyo3R
+          Compendium.dnd5e.actors24.Actor.mmDryad000000000.Item.mmPower System00.Activity.Q6nZJBtSYFcUyo3R
         changes:
           - key: system.properties
             mode: 2
@@ -2422,7 +2422,7 @@ items:
       default: 0
     flags:
       dnd5e:
-        cachedFor: .Item.mmSpellcasting00.Activity.Q6nZJBtSYFcUyo3R
+        cachedFor: .Item.mmPower System00.Activity.Q6nZJBtSYFcUyo3R
     _stats:
       compendiumSource: Compendium.dnd5e.spells24.Item.phbsplPasswithou
       duplicateSource: null

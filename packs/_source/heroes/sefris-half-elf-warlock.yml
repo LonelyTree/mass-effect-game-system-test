@@ -77,13 +77,13 @@ system:
     attunement:
       max: 3
     senses:
-      darkvision: null
-      blindsight: null
-      tremorsense: null
-      truesight: null
+      scanner: null
+      thermal vision: null
+      motion sensor: null
+      radar ping: null
       units: null
       special: ''
-    spellcasting: cha
+    power system: cha
     death:
       success: 0
       failure: 0
@@ -94,7 +94,7 @@ system:
         mode: 0
     exhaustion: 0
     inspiration: false
-    concentration:
+    maintained power:
       ability: ''
       roll:
         min: null
@@ -168,7 +168,7 @@ system:
       bypasses: []
   currency:
     pp: 0
-    gp: 15
+    CR: 15
     ep: 0
     sp: 0
     cp: 0
@@ -528,7 +528,7 @@ prototypeToken:
     enabled: true
     range: 60
     brightness: 0
-    visionMode: darkvision
+    visionMode: scanner
     color: null
     attenuation: 0
     saturation: 0
@@ -563,7 +563,7 @@ items:
           Stealth</li><li><strong>Tool Proficiencies:</strong> One type of
           gaming set, thieves' tools</li><li><strong>Equipment:</strong> A
           crowbar, hooded common clothes, thieves' tools, and a belt pouch
-          containing 15 gp</li></ul>
+          containing 15 CR</li></ul>
         chat: ''
       source:
         custom: ''
@@ -616,7 +616,7 @@ items:
           unpredictable.</p><p><em><strong>Size.</strong></em> Half-­elves are
           about the same size as humans, ranging from 5 to 6 feet tall. Your
           size is Medium.</p><p><em><strong>Speed.</strong></em> Your base
-          walking speed is 30 feet.</p><p><em><strong>Darkvision.</strong></em>
+          walking speed is 30 feet.</p><p><em><strong>Scanner.</strong></em>
           Thanks to your elf blood, you have superior vision in dark and dim
           conditions. You can see in dim light within 60 feet of you as if it
           were bright light, and in darkness as if it were dim light. You can't
@@ -724,10 +724,10 @@ items:
               - languages:standard:elvish
               - languages:exotic:deep
       senses:
-        darkvision: 60
-        blindsight: null
-        tremorsense: null
-        truesight: null
+        scanner: 60
+        thermal vision: null
+        motion sensor: null
+        radar ping: null
         units: ft
         special: ''
       type:
@@ -1202,7 +1202,7 @@ items:
           title: Mystic Arcanum (6th level)
           _id: XtoK5DVOTjQ7PJ3H
           hint: >-
-            Choose one 6th-level spell from the warlock spell list as this
+            Choose one 6th-level spell from the warlock power list as this
             arcanum.
         - type: ItemChoice
           configuration:
@@ -1230,7 +1230,7 @@ items:
           title: Mystic Arcanum (7th level)
           _id: 6TfqypKVuWsAprw7
           hint: >-
-            Choose one 7th-level spell from the warlock spell list as this
+            Choose one 7th-level spell from the warlock power list as this
             arcanum.
         - type: ItemChoice
           configuration:
@@ -1258,7 +1258,7 @@ items:
           title: Mystic Arcanum (8th level)
           _id: qFhNGSirvpbXMSwo
           hint: >-
-            Choose one 8th-level spell from the warlock spell list as this
+            Choose one 8th-level spell from the warlock power list as this
             arcanum.
         - type: ItemChoice
           configuration:
@@ -1286,11 +1286,11 @@ items:
           title: Mystic Arcanum (9th level)
           _id: zTE0N2sPRw039qCl
           hint: >-
-            Choose one 9th-level spell from the warlock spell list as this
+            Choose one 9th-level spell from the warlock power list as this
             arcanum.
         - type: ScaleValue
           configuration:
-            identifier: cantrips-known
+            identifier: basic powers-known
             type: number
             distance:
               units: ''
@@ -1302,7 +1302,7 @@ items:
               '10':
                 value: 4
           value: {}
-          title: Cantrips Known
+          title: Basic Powers Known
           _id: IXXGQe1feA5cBsOH
         - type: ScaleValue
           configuration:
@@ -1433,7 +1433,7 @@ items:
           value: {}
           level: 1
           title: Otherworldly Patron
-      spellcasting:
+      power system:
         progression: pact
         ability: cha
         preparation: {}
@@ -1522,7 +1522,7 @@ items:
         - type: weapon
           count: null
           key: sim
-          _id: U9v5V8RRZyxGGP0S
+          _id: U9v5V8RRZyxGCR0S
           group: KpUKt82Z6u8PNDMB
           sort: 1400000
           requiresProficiency: false
@@ -1620,19 +1620,19 @@ items:
           <p>Your arcane research and the magic bestowed on you by your patron
           have given you facility with spells.</p>
 
-          <h5>Cantrips</h5>
+          <h5>Basic Powers</h5>
 
-          <p>You know two cantrips of your choice from the warlock spell list.
-          You learn additional warlock cantrips of your choice at higher levels,
-          as shown in the Cantrips Known column of the Warlock table.</p>
+          <p>You know two basic powers of your choice from the warlock power list.
+          You learn additional warlock basic powers of your choice at higher levels,
+          as shown in the Basic Powers Known column of the Warlock table.</p>
 
-          <h5>Spell Slots</h5>
+          <h5>Power Uses</h5>
 
-          <p>The Warlock table shows how many spell slots you have. The table
-          also shows what the level of those slots is; all of your spell slots
+          <p>The Warlock table shows how many power uses you have. The table
+          also shows what the level of those slots is; all of your power uses
           are the same level. To cast one of your warlock spells of 1st level or
-          higher, you must expend a spell slot. You regain all expended spell
-          slots when you finish a short or long rest.</p>
+          higher, you must expend a power use. You regain all expended spell
+          slots when you finish a short or full rest.</p>
 
           <p>For example, when you are 5th level, you have two 3rd-level spell
           slots. To cast the 1st-level spell thunderwave, you must spend one of
@@ -1641,7 +1641,7 @@ items:
           <h5>Spells Known of 1st Level and Higher</h5>
 
           <p>At 1st level, you know two 1st-level spells of your choice from the
-          warlock spell list.</p>
+          warlock power list.</p>
 
           <p>The Spells Known column of the Warlock table shows when you learn
           more warlock spells of your choice of 1st level and higher. A spell
@@ -1652,13 +1652,13 @@ items:
 
           <p>Additionally, when you gain a level in this class, you can choose
           one of the warlock spells you know and replace it with another spell
-          from the warlock spell list, which also must be of a level for which
-          you have spell slots.</p>
+          from the warlock power list, which also must be of a level for which
+          you have power uses.</p>
 
-          <h5>Spellcasting Ability</h5>
+          <h5>Power System Ability</h5>
 
-          <p>Charisma is your spellcasting ability for your warlock spells, so
-          you use your Charisma whenever a spell refers to your spellcasting
+          <p>Charisma is your power system ability for your warlock spells, so
+          you use your Charisma whenever a spell refers to your power system
           ability. In addition, you use your Charisma modifier when setting the
           saving throw DC for a warlock spell you cast and when making an attack
           roll with one.</p>
@@ -1669,9 +1669,9 @@ items:
           <p><strong>Spell attack modifier </strong>= your proficiency bonus +
           your Charisma modifier</p>
 
-          <h5>Spellcasting Focus</h5>
+          <h5>Power System Focus</h5>
 
-          <p>You can use an arcane focus as a spellcasting focus for your
+          <p>You can use an arcane focus as a power system focus for your
           warlock spells.</p>
         chat: ''
       source:
@@ -1733,7 +1733,7 @@ items:
           ultroloths and other lords of the yugoloths.</p><h4>Expanded Spell
           List</h4><p>The Fiend lets you choose from an expanded list of spells
           when you learn a warlock spell. The following spells are added to the
-          warlock spell list for you.</p><table><caption>Fiend Expanded
+          warlock power list for you.</p><table><caption>Fiend Expanded
           Spells</caption><thead><tr><td>Spell
           Level</td><td>Spells</td></tr></thead><tbody><tr><td>1st</td><td>@UUID[Compendium.dnd5e.spells.Item.5SuJewoa1CRWaj1F]{Burning
           Hands},
@@ -1830,7 +1830,7 @@ items:
           value: {}
           level: 14
           title: Features
-      spellcasting:
+      power system:
         progression: none
         ability: ''
         preparation: {}
@@ -1898,7 +1898,7 @@ items:
           description:
             chatFlavor: ''
           duration:
-            concentration: false
+            maintained power: false
             value: ''
             units: ''
             special: ''
@@ -1965,7 +1965,7 @@ items:
       exportSource: null
     _key: '!actors.items!Jw8DeuPjt1qpusdB.7VjDwCQSWcmnzmts'
   - _id: IubeTOfNLUmhBHG0
-    name: Expanded Spell List
+    name: Expanded Power List
     ownership:
       default: 0
     type: feat
@@ -1974,7 +1974,7 @@ items:
         value: >-
           <p>The Fiend lets you choose from an expanded list of spells when you
           learn a warlock spell. The following spells are added to the warlock
-          spell list for you.</p><table><caption>Fiend Expanded
+          power list for you.</p><table><caption>Fiend Expanded
           Spells</caption><thead><tr><td><strong>Spell
           Level</strong></td><td><strong>Spells</strong></td></tr></thead><tbody><tr><td>1st</td><td>@UUID[Compendium.dnd5e.spells.Item.5SuJewoa1CRWaj1F]{Burning
           Hands},
@@ -2051,7 +2051,7 @@ items:
         units: lb
       price:
         value: 2
-        denomination: gp
+        denomination: CR
       attunement: ''
       equipped: true
       rarity: ''
@@ -2130,7 +2130,7 @@ items:
           description:
             chatFlavor: ''
           duration:
-            concentration: false
+            maintained power: false
             value: ''
             units: ''
             special: ''
@@ -2326,7 +2326,7 @@ items:
           description:
             chatFlavor: ''
           duration:
-            concentration: false
+            maintained power: false
             value: ''
             units: ''
             special: ''
@@ -2461,7 +2461,7 @@ items:
           description:
             chatFlavor: ''
           duration:
-            concentration: false
+            maintained power: false
             value: '1'
             units: hour
             special: ''
@@ -2557,7 +2557,7 @@ items:
         units: lb
       price:
         value: 1
-        denomination: gp
+        denomination: CR
       attunement: ''
       equipped: false
       rarity: ''
@@ -2569,7 +2569,7 @@ items:
         cp: 0
         sp: 0
         ep: 0
-        gp: 0
+        CR: 0
         pp: 0
       unidentified:
         description: ''
@@ -2665,7 +2665,7 @@ items:
           description:
             chatFlavor: ''
           duration:
-            concentration: false
+            maintained power: false
             value: ''
             units: ''
             special: ''
@@ -2794,7 +2794,7 @@ items:
           description:
             chatFlavor: ''
           duration:
-            concentration: false
+            maintained power: false
             value: ''
             units: ''
             special: ''
@@ -2857,7 +2857,7 @@ items:
         value: >-
           <p>A cloth or leather pouch can hold up to 20 sling bullets or 50
           blowgun needles, among other things. A compartmentalized pouch for
-          holding spell components is called a component pouch. A pouch can hold
+          holding power components is called a component pouch. A pouch can hold
           up to ⅕ cubic foot or 6 pounds of gear.</p>
         chat: ''
       source:
@@ -2885,7 +2885,7 @@ items:
         cp: 0
         sp: 0
         ep: 0
-        gp: 0
+        CR: 0
         pp: 0
       unidentified:
         description: ''
@@ -2933,7 +2933,7 @@ items:
         units: lb
       price:
         value: 2
-        denomination: gp
+        denomination: CR
       rarity: ''
       identified: true
       container: XY8b594Dn7plACLL
@@ -2982,7 +2982,7 @@ items:
         units: lb
       price:
         value: 1
-        denomination: gp
+        denomination: CR
       rarity: ''
       identified: true
       type:
@@ -3034,7 +3034,7 @@ items:
         units: lb
       price:
         value: 2
-        denomination: gp
+        denomination: CR
       attunement: ''
       equipped: false
       rarity: ''
@@ -3046,7 +3046,7 @@ items:
         cp: 0
         sp: 0
         ep: 0
-        gp: 0
+        CR: 0
         pp: 0
       unidentified:
         description: ''
@@ -3094,7 +3094,7 @@ items:
         units: lb
       price:
         value: 1
-        denomination: gp
+        denomination: CR
       attunement: ''
       equipped: false
       rarity: ''
@@ -3144,7 +3144,7 @@ items:
           description:
             chatFlavor: ''
           duration:
-            concentration: false
+            maintained power: false
             value: ''
             units: inst
             special: ''
@@ -3356,7 +3356,7 @@ items:
         units: lb
       price:
         value: 10
-        denomination: gp
+        denomination: CR
       attunement: ''
       equipped: true
       rarity: ''
@@ -3432,7 +3432,7 @@ items:
         units: lb
       price:
         value: 25
-        denomination: gp
+        denomination: CR
       attunement: ''
       equipped: true
       rarity: ''
@@ -3511,7 +3511,7 @@ items:
           description:
             chatFlavor: ''
           duration:
-            concentration: false
+            maintained power: false
             value: ''
             units: ''
             special: ''
@@ -3603,7 +3603,7 @@ items:
         units: lb
       price:
         value: 25
-        denomination: gp
+        denomination: CR
       attunement: ''
       equipped: false
       rarity: ''
@@ -3613,7 +3613,7 @@ items:
       container: null
       currency:
         pp: 0
-        gp: 0
+        CR: 0
         ep: 0
         sp: 0
         cp: 0
@@ -3666,7 +3666,7 @@ items:
         units: lb
       price:
         value: 25
-        denomination: gp
+        denomination: CR
       attunement: ''
       equipped: false
       rarity: ''
@@ -3704,7 +3704,7 @@ items:
           description:
             chatFlavor: ''
           duration:
-            concentration: false
+            maintained power: false
             value: ''
             units: ''
             special: ''
@@ -3772,7 +3772,7 @@ items:
           damage on a successful one.</p><p>The fire ignites any flammable
           objects in the area that aren't being worn or
           carried.</p><p><strong>At Higher Levels.</strong> When you cast this
-          spell using a spell slot of 2nd level or higher, the damage increases
+          spell using a power use of 2nd level or higher, the damage increases
           by 1d6 for each slot level above 1st.</p>
         chat: ''
       source:
@@ -3834,7 +3834,7 @@ items:
             chatFlavor: ''
           duration:
             units: inst
-            concentration: false
+            maintained power: false
             override: false
           effects: []
           range:
@@ -3866,7 +3866,7 @@ items:
             ability:
               - dex
             dc:
-              calculation: spellcasting
+              calculation: power system
               formula: ''
           uses:
             spent: 0
@@ -3899,7 +3899,7 @@ items:
       description:
         value: >-
           <p>A beam of crackling energy streaks toward a creature within range.
-          Make a ranged spell attack against the target. On a hit, the target
+          Make a ranged power attack against the target. On a hit, the target
           takes 1d10 force damage.</p><p>The spell creates more than one beam
           when you reach higher levels: two beams at 5th level, three beams at
           11th level, and four beams at 17th level. You can direct the beams at
@@ -3966,7 +3966,7 @@ items:
             chatFlavor: ''
           duration:
             units: inst
-            concentration: false
+            maintained power: false
             override: false
           effects: []
           range:
@@ -4034,7 +4034,7 @@ items:
     type: spell
     system:
       description:
-        value: "<p>You speak a one-word command to a creature you can see within range. The target must succeed on a Wisdom saving throw or follow the command on its next turn. The spell has no effect if the target is undead, if it doesn't understand your language, or if your command is directly harmful to it.</p><p>Some typical commands and their effects follow. You might issue a command other than one described here. If you do so, the DM determines how the target behaves. If the target can't follow your command, the spell ends.</p><p><strong>Approach.</strong> The target moves toward you by the shortest and most direct route, ending its turn if it moves within 5 feet of you.</p><p><strong>Drop.</strong> The target drops whatever it is holding and then ends its turn.</p><p><strong>Flee.</strong> The target spends its turn moving away from you by the fastest available means.</p><p><strong>Grovel.</strong> The target falls prone and then ends its turn.</p><p><strong>Halt.</strong> The target doesn't move and takes no actions. A flying creature stays aloft, provided that it is able to do so. If it must move to stay aloft, it flies the minimum distance needed to remain in the air.</p><p><strong>Higher Levels.\_</strong>When you cast this spell using a spell slot of 2nd level or higher, you can affect one additional creature for each slot level above 1st. The creatures must be within 30 feet of each other when you target them.</p>"
+        value: "<p>You speak a one-word command to a creature you can see within range. The target must succeed on a Wisdom saving throw or follow the command on its next turn. The spell has no effect if the target is undead, if it doesn't understand your language, or if your command is directly harmful to it.</p><p>Some typical commands and their effects follow. You might issue a command other than one described here. If you do so, the DM determines how the target behaves. If the target can't follow your command, the spell ends.</p><p><strong>Approach.</strong> The target moves toward you by the shortest and most direct route, ending its turn if it moves within 5 feet of you.</p><p><strong>Drop.</strong> The target drops whatever it is holding and then ends its turn.</p><p><strong>Flee.</strong> The target spends its turn moving away from you by the fastest available means.</p><p><strong>Grovel.</strong> The target falls prone and then ends its turn.</p><p><strong>Halt.</strong> The target doesn't move and takes no actions. A flying creature stays aloft, provided that it is able to do so. If it must move to stay aloft, it flies the minimum distance needed to remain in the air.</p><p><strong>Higher Levels.\_</strong>When you cast this spell using a power use of 2nd level or higher, you can affect one additional creature for each slot level above 1st. The creatures must be within 30 feet of each other when you target them.</p>"
         chat: ''
       source:
         custom: ''
@@ -4095,7 +4095,7 @@ items:
             chatFlavor: ''
           duration:
             units: inst
-            concentration: false
+            maintained power: false
             override: false
           effects: []
           range:
@@ -4115,7 +4115,7 @@ items:
             ability:
               - wis
             dc:
-              calculation: spellcasting
+              calculation: power system
               formula: ''
           uses:
             spent: 0
@@ -4148,7 +4148,7 @@ items:
       description:
         value: >-
           <p>You create a ghostly, skeletal hand in the space of a creature
-          within range. Make a ranged spell attack against the creature to
+          within range. Make a ranged power attack against the creature to
           assail it with the chill of the grave. On a hit, the target takes 1d8
           Necrotic damage, and it can't regain hit points until the start of
           your next turn. Until then, the hand clings to the target.</p><p>If
@@ -4217,7 +4217,7 @@ items:
             chatFlavor: ''
           duration:
             units: inst
-            concentration: false
+            maintained power: false
             override: false
           effects: []
           range:

@@ -1,4 +1,4 @@
-_id: R2GPY9BhRmmwZwkh
+_id: R2CRY9BhRmmwZwkh
 name: Gnoll
 type: npc
 img: null
@@ -75,15 +75,15 @@ system:
     attunement:
       max: 3
     senses:
-      darkvision: 60
-      blindsight: 0
-      tremorsense: 0
-      truesight: 0
+      scanner: 60
+      thermal vision: 0
+      motion sensor: 0
+      radar ping: 0
       units: ft
       special: ''
-    spellcasting: ''
+    power system: ''
     exhaustion: 0
-    concentration:
+    maintained power:
       ability: ''
       roll:
         min: null
@@ -145,7 +145,7 @@ system:
       bypasses: []
   currency:
     pp: 0
-    gp: 0
+    CR: 0
     ep: 0
     sp: 0
     cp: 0
@@ -507,7 +507,7 @@ items:
         units: lb
       price:
         value: 10
-        denomination: gp
+        denomination: CR
       attunement: ''
       equipped: true
       rarity: ''
@@ -558,7 +558,7 @@ items:
       modifiedTime: null
       lastModifiedBy: null
       exportSource: null
-    _key: '!actors.items!R2GPY9BhRmmwZwkh.WlaPkHNlq3vBfxnk'
+    _key: '!actors.items!R2CRY9BhRmmwZwkh.WlaPkHNlq3vBfxnk'
   - _id: sSs3hSzkKBMNBgTs
     name: Shield
     type: equipment
@@ -583,7 +583,7 @@ items:
         units: lb
       price:
         value: 10
-        denomination: gp
+        denomination: CR
       attunement: ''
       equipped: true
       rarity: ''
@@ -634,7 +634,7 @@ items:
       modifiedTime: null
       lastModifiedBy: null
       exportSource: null
-    _key: '!actors.items!R2GPY9BhRmmwZwkh.sSs3hSzkKBMNBgTs'
+    _key: '!actors.items!R2CRY9BhRmmwZwkh.sSs3hSzkKBMNBgTs'
   - _id: iBhjlawEB5iwUmoS
     name: Rampage
     type: feat
@@ -683,7 +683,7 @@ items:
       modifiedTime: 1749403415294
       lastModifiedBy: dnd5ebuilder0000
       exportSource: null
-    _key: '!actors.items!R2GPY9BhRmmwZwkh.iBhjlawEB5iwUmoS'
+    _key: '!actors.items!R2CRY9BhRmmwZwkh.iBhjlawEB5iwUmoS'
   - _id: fVB2xcZ4wVwiqEYf
     name: Bite
     type: weapon
@@ -705,7 +705,7 @@ items:
         units: lb
       price:
         value: 0
-        denomination: gp
+        denomination: CR
       attunement: ''
       equipped: true
       rarity: ''
@@ -780,7 +780,7 @@ items:
           description:
             chatFlavor: ''
           duration:
-            concentration: false
+            maintained power: false
             value: ''
             units: ''
             special: ''
@@ -846,7 +846,7 @@ items:
       modifiedTime: 1745107551735
       lastModifiedBy: dnd5ebuilder0000
       exportSource: null
-    _key: '!actors.items!R2GPY9BhRmmwZwkh.fVB2xcZ4wVwiqEYf'
+    _key: '!actors.items!R2CRY9BhRmmwZwkh.fVB2xcZ4wVwiqEYf'
   - _id: lsZzJMqxUIjbczLM
     name: Spear
     type: weapon
@@ -871,7 +871,7 @@ items:
         units: lb
       price:
         value: 0
-        denomination: gp
+        denomination: CR
       attunement: ''
       equipped: true
       rarity: ''
@@ -948,7 +948,7 @@ items:
           description:
             chatFlavor: ''
           duration:
-            concentration: false
+            maintained power: false
             value: ''
             units: ''
             special: ''
@@ -1015,7 +1015,7 @@ items:
       modifiedTime: 1745173655713
       lastModifiedBy: dnd5ebuilder0000
       exportSource: null
-    _key: '!actors.items!R2GPY9BhRmmwZwkh.lsZzJMqxUIjbczLM'
+    _key: '!actors.items!R2CRY9BhRmmwZwkh.lsZzJMqxUIjbczLM'
   - _id: 2Squ8wLvm5nSzA8w
     name: Longbow
     type: weapon
@@ -1037,7 +1037,7 @@ items:
         units: lb
       price:
         value: 0
-        denomination: gp
+        denomination: CR
       attunement: ''
       equipped: true
       rarity: ''
@@ -1115,7 +1115,7 @@ items:
           description:
             chatFlavor: ''
           duration:
-            concentration: false
+            maintained power: false
             value: ''
             units: ''
             special: ''
@@ -1181,7 +1181,7 @@ items:
       modifiedTime: 1745173385407
       lastModifiedBy: dnd5ebuilder0000
       exportSource: null
-    _key: '!actors.items!R2GPY9BhRmmwZwkh.2Squ8wLvm5nSzA8w'
+    _key: '!actors.items!R2CRY9BhRmmwZwkh.2Squ8wLvm5nSzA8w'
 effects: []
 folder: pEyqIq8DYb21xia3
 sort: 0
@@ -1197,4 +1197,4 @@ _stats:
   modifiedTime: 1726171444620
   lastModifiedBy: dnd5ebuilder0000
   exportSource: null
-_key: '!actors!R2GPY9BhRmmwZwkh'
+_key: '!actors!R2CRY9BhRmmwZwkh'

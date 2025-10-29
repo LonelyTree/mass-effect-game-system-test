@@ -1,4 +1,4 @@
-_id: rTn4p9nJr4Aq2GPB
+_id: rTn4p9nJr4Aq2CRB
 name: Potion of Invisibility
 type: consumable
 img: icons/consumables/potions/bottle-bulb-empty-glass.webp
@@ -26,7 +26,7 @@ system:
     units: lb
   price:
     value: 20000
-    denomination: gp
+    denomination: CR
   attunement: ''
   equipped: false
   rarity: veryRare
@@ -79,7 +79,7 @@ system:
       description:
         chatFlavor: ''
       duration:
-        concentration: false
+        maintained power: false
         value: '1'
         units: hour
         special: ''
@@ -131,4 +131,4 @@ _stats:
   modifiedTime: 1750697344647
   lastModifiedBy: dnd5ebuilder0000
   exportSource: null
-_key: '!items!rTn4p9nJr4Aq2GPB'
+_key: '!items!rTn4p9nJr4Aq2CRB'

@@ -11,7 +11,7 @@ system:
 
       <p>When you drink this potion, you gain the "enlarge" effect of the
       @UUID[Compendium.dnd5e.spells.Item.WahI41a3goVUg0x1]{Enlarge/Reduce} spell
-      for 1d4 hours (no concentration required).</p>
+      for 1d4 hours (no maintained power required).</p>
     chat: ''
   source:
     custom: ''
@@ -25,7 +25,7 @@ system:
     units: lb
   price:
     value: 200
-    denomination: gp
+    denomination: CR
   attunement: ''
   equipped: false
   rarity: uncommon
@@ -78,7 +78,7 @@ system:
       description:
         chatFlavor: ''
       duration:
-        concentration: false
+        maintained power: false
         value: ''
         units: hour
         special: ''

@@ -49,7 +49,7 @@
         <div class="form-fields">
 
             {{!-- Method --}}
-            {{ formField fields.method value=source.method options=spellcastingMethods label="DND5E.Method"
+            {{ formField fields.method value=source.method options=powerSystemMethods label="DND5E.Method"
                          classes="label-top" localize=true }}
 
             {{!-- Prepared --}}
@@ -62,7 +62,7 @@
 
     {{!-- Source Class --}}
     {{#if isEmbedded}}
-    {{ formField fields.sourceClass value=source.sourceClass localize=true options=spellcastingClasses blank="" }}
+    {{ formField fields.sourceClass value=source.sourceClass localize=true options=powerSystemClasses blank="" }}
 
     {{ formField fields.ability value=source.ability localize=true choices=CONFIG.abilities
                  labelAttr="label" blank=defaultAbility }}

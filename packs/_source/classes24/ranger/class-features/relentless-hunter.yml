@@ -5,7 +5,7 @@ folder: h5OUzaJcZzsNsOGc
 img: icons/skills/wounds/injury-pain-body-orange.webp
 system:
   description:
-    value: <p>Taking damage can't break your Concentration on Hunter's Mark.</p>
+    value: <p>Taking damage can't break your Maintained Power on Hunter's Mark.</p>
     chat: ''
   source:
     custom: ''

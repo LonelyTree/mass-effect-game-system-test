@@ -325,7 +325,7 @@ pages:
         <p>When you gain a new level in a class, you get its features for that
         level. You don’t, however, receive the class’s starting equipment, and a
         few features have additional rules when you’re multiclassing: Channel
-        Divinity, Extra Attack, Unarmored Defense, and Spellcasting.</p>
+        Divinity, Extra Attack, Unarmored Defense, and Power System.</p>
 
         <h3>Channel Divinity</h3>
 
@@ -362,12 +362,12 @@ pages:
         @UUID[Compendium.dnd5e.classfeatures.Item.UAvV7N7T4zJhxdfI]{Monk})
         feature, you can’t gain it again from another class.</p>
 
-        <h3>Spellcasting</h3>
+        <h3>Power System</h3>
 
-        <p>Your capacity for spellcasting depends partly on your combined levels
-        in all your spellcasting classes and partly on your individual levels in
-        those classes. Once you have the Spellcasting feature from more than one
-        class, use the rules below. If you multiclass but have the Spellcasting
+        <p>Your capacity for power system depends partly on your combined levels
+        in all your power system classes and partly on your individual levels in
+        those classes. Once you have the Power System feature from more than one
+        class, use the rules below. If you multiclass but have the Power System
         feature from only one class, you follow the rules as described in that
         class.</p>
 
@@ -375,26 +375,26 @@ pages:
         you know and can prepare for each class individually, as if you were a
         single-classed member of that class. If you are a ranger 4/wizard 3, for
         example, you know three 1st-level ranger spells based on your levels in
-        the ranger class. As 3rd-level wizard, you know three wizard cantrips,
-        and your spellbook contains ten wizard spells, two of which (the two you
+        the ranger class. As 3rd-level wizard, you know three wizard basic powers,
+        and your power list contains ten wizard spells, two of which (the two you
         gained when you reached 3rd level as a wizard) can be 2nd-level spells.
         If your Intelligence is 16, you can prepare six wizard spells from your
-        spellbook.</p>
+        power list.</p>
 
         <p>Each spell you know and prepare is associated with one of your
-        classes, and you use the spellcasting ability of that class when you
-        cast the spell. Similarly, a spellcasting focus, such as a holy symbol,
+        classes, and you use the power system ability of that class when you
+        cast the spell. Similarly, a power system focus, such as a holy symbol,
         can be used only for the spells from the class associated with that
         focus.</p>
 
-        <p><strong>Spell Slots. </strong>You determine your available spell
+        <p><strong>Power Uses. </strong>You determine your available spell
         slots by adding together all your levels in the bard, cleric, druid,
         sorcerer, and wizard classes, and half your levels (rounded down) in the
-        paladin and ranger classes. Use this total to determine your spell slots
+        paladin and ranger classes. Use this total to determine your power uses
         by consulting the Multiclass Spellcaster table.</p>
 
-        <p>If you have more than one spellcasting class, this table might give
-        you spell slots of a level that is higher than the spells you know or
+        <p>If you have more than one power system class, this table might give
+        you power uses of a level that is higher than the spells you know or
         can prepare. You can use those slots, but only to cast your lower-level
         spells. If a lower-level spell that you cast, like burning hands, has an
         enhanced effect when cast using a higher-level slot, you can use the
@@ -402,22 +402,22 @@ pages:
         level.</p>
 
         <p>For example, if you are the aforementioned ranger 4/wizard 3, you
-        count as a 5th-level character when determining your spell slots: you
+        count as a 5th-level character when determining your power uses: you
         have four 1st-level slots, three 2nd-level slots, and two 3rd-level
         slots. However, you don’t know any 3rd-level spells, nor do you know any
-        2nd-level ranger spells. You can use the spell slots of those levels to
+        2nd-level ranger spells. You can use the power uses of those levels to
         cast the spells you do know—and potentially enhance their effects.</p>
 
-        <p><strong>Pact Magic.</strong> If you have both the Spellcasting class
+        <p><strong>Pact Magic.</strong> If you have both the Power System class
         feature and the Pact Magic class feature from the warlock class, you can
-        use the spell slots you gain from the Pact Magic feature to cast spells
-        you know or have prepared from classes with the Spellcasting class
-        feature, and you can use the spell slots you gain from the Spellcasting
+        use the power uses you gain from the Pact Magic feature to cast spells
+        you know or have prepared from classes with the Power System class
+        feature, and you can use the power uses you gain from the Power System
         class feature to cast warlock spells you know.</p>
 
         <table border="0"><caption>
 
-        <h4>Multiclass Spellcaster: Spell Slots per Spell Level</h4>
+        <h4>Multiclass Spellcaster: Power Uses per Power Level</h4>
 
         </caption>
 

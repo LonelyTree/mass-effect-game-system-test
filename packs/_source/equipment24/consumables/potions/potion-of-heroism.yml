@@ -28,7 +28,7 @@ system:
         chatFlavor: ''
       duration:
         units: inst
-        concentration: false
+        maintained power: false
         override: false
       effects: []
       range:
@@ -73,7 +73,7 @@ system:
       Temporary Hit Points that last for 1 hour. For the same duration, you are
       under the effect of the
       @UUID[Compendium.dnd5e.spells24.Item.phbsplBless00000]{Bless} spell (no
-      Concentration required).</p><p>This potion's blue liquid bubbles and
+      Maintained Power required).</p><p>This potion's blue liquid bubbles and
       steams as if boiling.</p>
     chat: ''
   identifier: potion-of-heroism
@@ -92,7 +92,7 @@ system:
     units: lb
   price:
     value: 2000
-    denomination: gp
+    denomination: CR
   rarity: rare
   attunement: ''
   attuned: false

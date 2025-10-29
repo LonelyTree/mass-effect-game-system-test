@@ -17,8 +17,8 @@ system:
       @UUID[Compendium.dnd5e.equipment24.Item.phbagHealersKit0]{Healer's Kit},
       @UUID[Compendium.dnd5e.equipment24.Item.phbagQuiver00000]{Quiver},
       @UUID[Compendium.dnd5e.items.Item.SsAmWV6YBqeOFihT]{Traveler's Clothes},
-      14 GP; or (B) 50
-      GP</p><p>@Embed[Compendium.dnd5e.content24.JournalEntry.phbAppendixBackg.JournalEntryPage.phbbgSoldier0000
+      14 CR; or (B) 50
+      CR</p><p>@Embed[Compendium.dnd5e.content24.JournalEntry.phbAppendixBackg.JournalEntryPage.phbbgSoldier0000
       inline classes="free-rules-embed"]</p>
     chat: ''
   source:

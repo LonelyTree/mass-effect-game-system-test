@@ -12,7 +12,7 @@ system:
       If it fails its saves three times, it is turned to stone and has the
       &amp;Reference[Petrified] condition for the duration. The successes and
       failures needn't be consecutive; keep track of both until the target
-      collects three of a kind.</p><p>If you maintain your Concentration on this
+      collects three of a kind.</p><p>If you maintain your Maintained Power on this
       spell for the entire possible duration, the target is Petrified until the
       condition is ended by
       <em>@UUID[Compendium.dnd5e.spells24.Item.phbsplGreaterRes]{Greater
@@ -54,7 +54,7 @@ system:
     - vocal
     - somatic
     - material
-    - concentration
+    - maintained power
   materials:
     value: a cockatrice feather
     consumed: false
@@ -80,7 +80,7 @@ system:
         chatFlavor: ''
       duration:
         units: inst
-        concentration: false
+        maintained power: false
         override: false
       effects:
         - _id: Xt8AUh0PfYhGYBvY
@@ -108,7 +108,7 @@ system:
       save:
         ability: con
         dc:
-          calculation: spellcasting
+          calculation: power system
           formula: ''
       name: ''
       img: ''

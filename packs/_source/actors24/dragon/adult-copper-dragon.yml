@@ -5,7 +5,7 @@ img: null
 system:
   currency:
     pp: 0
-    gp: 0
+    CR: 0
     ep: 0
     sp: 0
     cp: 0
@@ -363,15 +363,15 @@ system:
     attunement:
       max: 3
     senses:
-      darkvision: 120
-      blindsight: 60
-      tremorsense: null
-      truesight: null
+      scanner: 120
+      thermal vision: 60
+      motion sensor: null
+      radar ping: null
       units: null
       special: ''
-    spellcasting: cha
+    power system: cha
     exhaustion: 0
-    concentration:
+    maintained power:
       ability: ''
       roll:
         min: null
@@ -579,7 +579,7 @@ items:
             chatFlavor: ''
           duration:
             units: inst
-            concentration: false
+            maintained power: false
             override: false
           effects: []
           range:
@@ -683,7 +683,7 @@ items:
           description: {}
           duration:
             units: inst
-            concentration: false
+            maintained power: false
             override: false
           effects: []
           range:
@@ -710,7 +710,7 @@ items:
         value: >-
           <p>The [[lookup @name lowercase]] makes three [[/item Rend]] attacks.
           It can replace one attack with a use of (A) [[/item Slowing Breath]]
-          or (B) [[/item Spellcasting]] to cast
+          or (B) [[/item Power System]] to cast
           <em>@UUID[Compendium.dnd5e.spells24.Item.phbsplMindSpike0]{Mind
           Spike}</em> (level 4 version).</p>
         chat: ''
@@ -777,7 +777,7 @@ items:
             chatFlavor: ''
           duration:
             units: inst
-            concentration: false
+            maintained power: false
             override: false
           effects: []
           range:
@@ -844,7 +844,7 @@ items:
         units: lb
       price:
         value: 0
-        denomination: gp
+        denomination: CR
       rarity: ''
       attunement: ''
       attuned: false
@@ -938,7 +938,7 @@ items:
             chatFlavor: ''
           duration:
             units: inst
-            concentration: false
+            maintained power: false
             override: false
           effects: []
           range:
@@ -1040,8 +1040,8 @@ items:
       default: 0
     sort: 300000
     _key: '!actors.items!mmAdultCopperDra.mmAcidBreath0000'
-  - _id: mmSpellcasting00
-    name: Spellcasting
+  - _id: mmPower System00
+    name: Power System
     type: feat
     system:
       type:
@@ -1059,7 +1059,7 @@ items:
             level: 1
             properties:
               - material
-            spellbook: true
+            power list: true
             ability: ''
           _id: pFqrNChLLaLcVLTh
           sort: 0
@@ -1076,7 +1076,7 @@ items:
             chatFlavor: ''
           duration:
             units: inst
-            concentration: false
+            maintained power: false
             override: false
           range:
             override: false
@@ -1104,7 +1104,7 @@ items:
             level: 4
             properties:
               - material
-            spellbook: true
+            power list: true
             ability: ''
           _id: AbpsvPf1bYAOnJWQ
           sort: 0
@@ -1121,7 +1121,7 @@ items:
             chatFlavor: ''
           duration:
             units: inst
-            concentration: false
+            maintained power: false
             override: false
           range:
             override: false
@@ -1149,7 +1149,7 @@ items:
             level: null
             properties:
               - material
-            spellbook: true
+            power list: true
             ability: ''
           _id: WdAwufRFzWkTzm5X
           sort: 0
@@ -1166,7 +1166,7 @@ items:
             chatFlavor: ''
           duration:
             units: inst
-            concentration: false
+            maintained power: false
             override: false
           range:
             override: false
@@ -1194,8 +1194,8 @@ items:
             level: 9
             properties:
               - material
-              - concentration
-            spellbook: true
+              - maintained power
+            power list: true
             ability: ''
           _id: aQqbBA2qkQtZzh2d
           sort: 0
@@ -1212,7 +1212,7 @@ items:
             chatFlavor: ''
           duration:
             units: inst
-            concentration: false
+            maintained power: false
             override: false
           range:
             override: false
@@ -1240,7 +1240,7 @@ items:
             level: 5
             properties:
               - material
-            spellbook: true
+            power list: true
             ability: ''
           _id: MnK0EgBYeiFAV0fT
           sort: 0
@@ -1260,7 +1260,7 @@ items:
             chatFlavor: ''
           duration:
             units: inst
-            concentration: false
+            maintained power: false
             override: false
           range:
             override: false
@@ -1290,7 +1290,7 @@ items:
             level: 3
             properties:
               - material
-            spellbook: true
+            power list: true
             ability: ''
           _id: qfxui7AXdORSuf30
           sort: 0
@@ -1310,7 +1310,7 @@ items:
             chatFlavor: ''
           duration:
             units: inst
-            concentration: false
+            maintained power: false
             override: false
           range:
             override: false
@@ -1337,7 +1337,7 @@ items:
         value: >-
           <p class="feature">The [[lookup @name lowercase]] casts one of the
           following spells, requiring no Material components and using Charisma
-          as the spellcasting ability (spell save DC [[lookup
+          as the power system ability (spell save DC [[lookup
           @attributes.spell.dc]]):</p><p class="feature-trait"><strong>At
           Will:</strong>
           <em>@UUID[Compendium.dnd5e.spells24.Item.phbsplDetectMagi]{Detect
@@ -1348,7 +1348,7 @@ items:
           Illusion}</em>,
           <em>@UUID[Compendium.dnd5e.spells24.Item.phbsplShapechang]{Shapechange}</em>
           (Beast or Humanoid form only, no Temporary Hit Points gained from the
-          spell, and no Concentration or Temporary Hit Points required to
+          spell, and no Maintained Power or Temporary Hit Points required to
           maintain the spell)</p><p class="feature-trait"><strong>1/Day
           Each:</strong>
           <em>@UUID[Compendium.dnd5e.spells24.Item.phbsplGreaterRes]{Greater
@@ -1356,7 +1356,7 @@ items:
           <em>@UUID[Compendium.dnd5e.spells24.Item.phbsplMajorImage]{Major
           Image}</em></p>
         chat: ''
-      identifier: spellcasting
+      identifier: power system
       source:
         revision: 1
         rules: '2024'
@@ -1380,7 +1380,7 @@ items:
           activity: []
           effect: []
     _stats:
-      compendiumSource: Compendium.dnd-monster-manual.features.Item.mmSpellcasting00
+      compendiumSource: Compendium.dnd-monster-manual.features.Item.mmPower System00
       duplicateSource: null
       coreVersion: '13.344'
       systemId: dnd5e
@@ -1392,7 +1392,7 @@ items:
     ownership:
       default: 0
     sort: 500000
-    _key: '!actors.items!mmAdultCopperDra.mmSpellcasting00'
+    _key: '!actors.items!mmAdultCopperDra.mmPower System00'
   - name: Detect Magic
     system:
       description:
@@ -1443,7 +1443,7 @@ items:
       properties:
         - vocal
         - somatic
-        - concentration
+        - maintained power
         - ritual
       materials:
         value: ''
@@ -1472,7 +1472,7 @@ items:
           duration:
             units: inst
             override: false
-            concentration: false
+            maintained power: false
           effects:
             - _id: BHw91lQmVgdx39WZ
           range:
@@ -1540,7 +1540,7 @@ items:
         name: Spell Changes
         img: systems/dnd5e/icons/svg/activity/cast.svg
         origin: >-
-          Compendium.dnd5e.actors24.Actor.mmAdultCopperDra.Item.mmSpellcasting00.Activity.pFqrNChLLaLcVLTh
+          Compendium.dnd5e.actors24.Actor.mmAdultCopperDra.Item.mmPower System00.Activity.pFqrNChLLaLcVLTh
         changes:
           - key: system.properties
             mode: 2
@@ -1583,7 +1583,7 @@ items:
         riders:
           activity: []
           effect: []
-        cachedFor: .Item.mmSpellcasting00.Activity.pFqrNChLLaLcVLTh
+        cachedFor: .Item.mmPower System00.Activity.pFqrNChLLaLcVLTh
     _stats:
       compendiumSource: Compendium.dnd5e.spells24.Item.phbsplDetectMagi
       duplicateSource: null
@@ -1609,7 +1609,7 @@ items:
           can't become hidden from you, and if it has the
           &amp;Reference[invisible apply=false] condition, it gains no benefit
           from that condition against you.</p><p><strong>Using a Higher-Level
-          Spell Slot. </strong>The damage increases by 1d8 for each spell slot
+          Power Use. </strong>The damage increases by 1d8 for each power use
           level above 2.</p>
         chat: ''
       source:
@@ -1644,7 +1644,7 @@ items:
       school: div
       properties:
         - somatic
-        - concentration
+        - maintained power
       materials:
         value: ''
         consumed: false
@@ -1672,7 +1672,7 @@ items:
           duration:
             units: inst
             override: false
-            concentration: false
+            maintained power: false
           effects:
             - _id: AbNgTsT2gRxwmBpg
               onSave: false
@@ -1705,7 +1705,7 @@ items:
             ability:
               - wis
             dc:
-              calculation: spellcasting
+              calculation: power system
               formula: ''
           uses:
             spent: 0
@@ -1759,7 +1759,7 @@ items:
         name: Spell Changes
         img: systems/dnd5e/icons/svg/activity/cast.svg
         origin: >-
-          Compendium.dnd5e.actors24.Actor.mmAdultCopperDra.Item.mmSpellcasting00.Activity.AbpsvPf1bYAOnJWQ
+          Compendium.dnd5e.actors24.Actor.mmAdultCopperDra.Item.mmPower System00.Activity.AbpsvPf1bYAOnJWQ
         changes:
           - key: system.properties
             mode: 2
@@ -1799,7 +1799,7 @@ items:
       default: 0
     flags:
       dnd5e:
-        cachedFor: .Item.mmSpellcasting00.Activity.AbpsvPf1bYAOnJWQ
+        cachedFor: .Item.mmPower System00.Activity.AbpsvPf1bYAOnJWQ
     _stats:
       compendiumSource: Compendium.dnd5e.spells24.Item.phbsplMindSpike0
       duplicateSource: null
@@ -1897,7 +1897,7 @@ items:
             chatFlavor: ''
           duration:
             units: inst
-            concentration: false
+            maintained power: false
             override: false
           range:
             override: false
@@ -1961,7 +1961,7 @@ items:
         name: Spell Changes
         img: systems/dnd5e/icons/svg/activity/cast.svg
         origin: >-
-          Compendium.dnd5e.actors24.Actor.mmAdultCopperDra.Item.mmSpellcasting00.Activity.WdAwufRFzWkTzm5X
+          Compendium.dnd5e.actors24.Actor.mmAdultCopperDra.Item.mmPower System00.Activity.WdAwufRFzWkTzm5X
         changes:
           - key: system.properties
             mode: 2
@@ -2001,7 +2001,7 @@ items:
       default: 0
     flags:
       dnd5e:
-        cachedFor: .Item.mmSpellcasting00.Activity.WdAwufRFzWkTzm5X
+        cachedFor: .Item.mmPower System00.Activity.WdAwufRFzWkTzm5X
     _stats:
       compendiumSource: Compendium.dnd5e.spells24.Item.phbsplMinorIllus
       duplicateSource: null
@@ -2020,8 +2020,8 @@ items:
         value: >-
           <p>You shape-shift into another creature for the duration or until you
           take a Magic action to shape-shift into a different eligible form. The
-          new form must be of a creature that has a Challenge Rating no higher
-          than your level or Challenge Rating. You must have seen the sort of
+          new form must be of a creature that has a Threat Level no higher
+          than your level or Threat Level. You must have seen the sort of
           creature before, and it can't be a Construct or an Undead.</p><p>When
           you shape-shift, you gain a number of Temporary Hit Points equal to
           the Hit Points of the form. The spell ends early if you have no
@@ -2029,7 +2029,7 @@ items:
           the stat block of the chosen form, but you retain your creature type;
           alignment; personality; Intelligence, Wisdom, and Charisma scores; Hit
           Points; Hit Point Dice; proficiencies; and ability to communicate. If
-          you have the Spellcasting feature, you retain it too.</p><p>Upon
+          you have the Power System feature, you retain it too.</p><p>Upon
           shape-shifting, you determine whether your equipment drops to the
           ground or changes in size and shape to fit the new form while you're
           in it.</p>
@@ -2070,9 +2070,9 @@ items:
         - vocal
         - somatic
         - material
-        - concentration
+        - maintained power
       materials:
-        value: a jade circlet worth 1,500+ GP
+        value: a jade circlet worth 1,500+ CR
         consumed: false
         cost: 0
         supply: 0
@@ -2096,7 +2096,7 @@ items:
             chatFlavor: ''
           duration:
             units: inst
-            concentration: false
+            maintained power: false
             override: false
           effects: []
           range:
@@ -2129,7 +2129,7 @@ items:
         name: Spell Changes
         img: systems/dnd5e/icons/svg/activity/cast.svg
         origin: >-
-          Compendium.dnd5e.actors24.Actor.mmAdultCopperDra.Item.mmSpellcasting00.Activity.aQqbBA2qkQtZzh2d
+          Compendium.dnd5e.actors24.Actor.mmAdultCopperDra.Item.mmPower System00.Activity.aQqbBA2qkQtZzh2d
         changes:
           - key: system.properties
             mode: 2
@@ -2137,7 +2137,7 @@ items:
             priority: null
           - key: system.properties
             mode: 2
-            value: '-concentration'
+            value: '-maintained power'
             priority: null
         system: {}
         disabled: false
@@ -2173,7 +2173,7 @@ items:
       default: 0
     flags:
       dnd5e:
-        cachedFor: .Item.mmSpellcasting00.Activity.aQqbBA2qkQtZzh2d
+        cachedFor: .Item.mmPower System00.Activity.aQqbBA2qkQtZzh2d
     _stats:
       compendiumSource: Compendium.dnd5e.spells24.Item.phbsplShapechang
       duplicateSource: null
@@ -2232,7 +2232,7 @@ items:
         - somatic
         - material
       materials:
-        value: diamond dust worth 100+ GP, which the spell consumes
+        value: diamond dust worth 100+ CR, which the spell consumes
         consumed: true
         cost: 0
         supply: 0
@@ -2258,7 +2258,7 @@ items:
           duration:
             units: inst
             override: false
-            concentration: false
+            maintained power: false
           effects: []
           range:
             override: false
@@ -2288,7 +2288,7 @@ items:
         name: Spell Changes
         img: systems/dnd5e/icons/svg/activity/cast.svg
         origin: >-
-          Compendium.dnd5e.actors24.Actor.mmAdultCopperDra.Item.mmSpellcasting00.Activity.MnK0EgBYeiFAV0fT
+          Compendium.dnd5e.actors24.Actor.mmAdultCopperDra.Item.mmPower System00.Activity.MnK0EgBYeiFAV0fT
         changes:
           - key: system.properties
             mode: 2
@@ -2328,7 +2328,7 @@ items:
       default: 0
     flags:
       dnd5e:
-        cachedFor: .Item.mmSpellcasting00.Activity.MnK0EgBYeiFAV0fT
+        cachedFor: .Item.mmPower System00.Activity.MnK0EgBYeiFAV0fT
     _stats:
       compendiumSource: Compendium.dnd5e.spells24.Item.phbsplGreaterRes
       duplicateSource: null
@@ -2365,8 +2365,8 @@ items:
           your spell save DC. If a creature discerns the illusion for what it
           is, the creature can see through the image, and its other sensory
           qualities become faint to the creature.</p><p><strong>Using a
-          Higher-Level Spell Slot.</strong> The spell lasts until dispelled,
-          without requiring Concentration, if cast with a level 4+ spell
+          Higher-Level Power Use.</strong> The spell lasts until dispelled,
+          without requiring Maintained Power, if cast with a level 4+ spell
           slot.</p>
         chat: ''
       source:
@@ -2403,7 +2403,7 @@ items:
         - vocal
         - somatic
         - material
-        - concentration
+        - maintained power
       materials:
         value: a bit of fleece
         consumed: false
@@ -2431,7 +2431,7 @@ items:
           duration:
             units: inst
             override: false
-            concentration: false
+            maintained power: false
           range:
             override: false
           target:
@@ -2504,7 +2504,7 @@ items:
         name: Spell Changes
         img: systems/dnd5e/icons/svg/activity/cast.svg
         origin: >-
-          Compendium.dnd5e.actors24.Actor.mmAdultCopperDra.Item.mmSpellcasting00.Activity.qfxui7AXdORSuf30
+          Compendium.dnd5e.actors24.Actor.mmAdultCopperDra.Item.mmPower System00.Activity.qfxui7AXdORSuf30
         changes:
           - key: system.properties
             mode: 2
@@ -2544,7 +2544,7 @@ items:
       default: 0
     flags:
       dnd5e:
-        cachedFor: .Item.mmSpellcasting00.Activity.qfxui7AXdORSuf30
+        cachedFor: .Item.mmPower System00.Activity.qfxui7AXdORSuf30
     _stats:
       compendiumSource: Compendium.dnd5e.spells24.Item.phbsplMajorImage
       duplicateSource: null
@@ -2583,7 +2583,7 @@ items:
             chatFlavor: ''
           duration:
             units: inst
-            concentration: false
+            maintained power: false
             override: false
           effects: []
           range:
@@ -2765,7 +2765,7 @@ items:
             chatFlavor: ''
           duration:
             units: inst
-            concentration: false
+            maintained power: false
             override: false
           range:
             override: false
@@ -2791,7 +2791,7 @@ items:
               - vocal
               - somatic
               - material
-            spellbook: false
+            power list: false
             uuid: Compendium.dnd5e.spells24.Item.phbsplMindSpike0
             ability: ''
           name: ''
@@ -2801,7 +2801,7 @@ items:
         max: ''
       description:
         value: >-
-          <p class="feature">The [[lookup @name lowercase]] uses Spellcasting to
+          <p class="feature">The [[lookup @name lowercase]] uses Power System to
           cast <em>@UUID[Compendium.dnd5e.spells24.Item.phbsplMindSpike0]{Mind
           Spike}</em> (level 4 version). The [[lookup @name lowercase]] can't
           take this action again until the start of its next turn.</p>
@@ -2856,7 +2856,7 @@ items:
           can't become hidden from you, and if it has the
           &amp;Reference[invisible apply=false] condition, it gains no benefit
           from that condition against you.</p><p><strong>Using a Higher-Level
-          Spell Slot. </strong>The damage increases by 1d8 for each spell slot
+          Power Use. </strong>The damage increases by 1d8 for each power use
           level above 2.</p>
         chat: ''
       source:
@@ -2891,7 +2891,7 @@ items:
       school: div
       properties:
         - somatic
-        - concentration
+        - maintained power
       materials:
         value: ''
         consumed: false
@@ -2919,7 +2919,7 @@ items:
           duration:
             units: inst
             override: false
-            concentration: false
+            maintained power: false
           effects:
             - _id: AbNgTsT2gRxwmBpg
               onSave: false
@@ -2952,7 +2952,7 @@ items:
             ability:
               - wis
             dc:
-              calculation: spellcasting
+              calculation: power system
               formula: ''
           uses:
             spent: 0
@@ -3000,7 +3000,7 @@ items:
           lastModifiedBy: null
           exportSource: null
         _key: >-
-          !actors.items.effects!mmAdultCopperDra.BJrBa0MNK8aLqGPX.AbNgTsT2gRxwmBpg
+          !actors.items.effects!mmAdultCopperDra.BJrBa0MNK8aLqCRX.AbNgTsT2gRxwmBpg
       - _id: dnd5espellchange
         type: enchantment
         name: Spell Changes
@@ -3051,7 +3051,7 @@ items:
           lastModifiedBy: null
           exportSource: null
         _key: >-
-          !actors.items.effects!mmAdultCopperDra.BJrBa0MNK8aLqGPX.dnd5espellchange
+          !actors.items.effects!mmAdultCopperDra.BJrBa0MNK8aLqCRX.dnd5espellchange
     folder: 3SjcO2acsFnWegp4
     sort: 1800000
     ownership:
@@ -3069,8 +3069,8 @@ items:
       modifiedTime: 1745712711465
       lastModifiedBy: dnd5ebuilder0000
       exportSource: null
-    _id: BJrBa0MNK8aLqGPX
-    _key: '!actors.items!mmAdultCopperDra.BJrBa0MNK8aLqGPX'
+    _id: BJrBa0MNK8aLqCRX
+    _key: '!actors.items!mmAdultCopperDra.BJrBa0MNK8aLqCRX'
   - _id: mmPounce00000000
     name: Pounce
     type: feat
@@ -3100,7 +3100,7 @@ items:
             chatFlavor: ''
           duration:
             units: inst
-            concentration: false
+            maintained power: false
             override: false
           effects: []
           range:
@@ -3200,7 +3200,7 @@ items:
             chatFlavor: ''
           duration:
             units: inst
-            concentration: false
+            maintained power: false
             override: false
           effects:
             - _id: ztGUDHGfoUxlUY53

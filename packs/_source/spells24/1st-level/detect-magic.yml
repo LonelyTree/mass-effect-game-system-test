@@ -46,7 +46,7 @@ system:
   properties:
     - vocal
     - somatic
-    - concentration
+    - maintained power
     - ritual
   materials:
     value: ''

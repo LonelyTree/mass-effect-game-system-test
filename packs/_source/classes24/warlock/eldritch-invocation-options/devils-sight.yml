@@ -9,7 +9,7 @@ system:
       see normally in Dim Light and Darkness—both magical and nonmagical—within
       120 feet of yourself.</p><section class="secret"
       id="secret-RVsijULbRFU2b9ZU"><p><strong>Foundry Note</strong></p><p>This
-      feature includes an Active Effect that grants you darkvision to 120
+      feature includes an Active Effect that grants you scanner to 120
       feet.</p></section>
     chat: ''
   source:
@@ -40,7 +40,7 @@ effects:
     type: base
     system: {}
     changes:
-      - key: system.attributes.senses.darkvision
+      - key: system.attributes.senses.scanner
         mode: 4
         value: '120'
         priority: null

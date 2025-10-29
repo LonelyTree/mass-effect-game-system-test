@@ -25,7 +25,7 @@ system:
         chatFlavor: ''
       duration:
         units: inst
-        concentration: false
+        maintained power: false
         override: false
       effects: []
       range:
@@ -70,7 +70,7 @@ system:
           - vocal
           - somatic
           - material
-        spellbook: true
+        power list: true
       _id: FP4ljN4wxHN6eDyy
       sort: 0
       activation:
@@ -85,7 +85,7 @@ system:
       description: {}
       duration:
         units: inst
-        concentration: false
+        maintained power: false
         override: false
       range:
         override: false
@@ -113,7 +113,7 @@ system:
           - vocal
           - somatic
           - material
-        spellbook: true
+        power list: true
       _id: B7ruAG3G8KyYSNXL
       sort: 0
       activation:
@@ -128,7 +128,7 @@ system:
       description: {}
       duration:
         units: inst
-        concentration: false
+        maintained power: false
         override: false
       range:
         override: false
@@ -156,7 +156,7 @@ system:
           - vocal
           - somatic
           - material
-        spellbook: true
+        power list: true
       _id: 1Oov0JtLLqUAI5g2
       sort: 0
       activation:
@@ -171,7 +171,7 @@ system:
       description: {}
       duration:
         units: inst
-        concentration: false
+        maintained power: false
         override: false
       range:
         override: false
@@ -199,7 +199,7 @@ system:
           - vocal
           - somatic
           - material
-        spellbook: true
+        power list: true
       _id: iMR8V4vNeUNVrl7e
       sort: 0
       activation:
@@ -214,7 +214,7 @@ system:
       description: {}
       duration:
         units: inst
-        concentration: false
+        maintained power: false
         override: false
       range:
         override: false
@@ -242,7 +242,7 @@ system:
           - vocal
           - somatic
           - material
-        spellbook: true
+        power list: true
       _id: IPT9TqSywIaDcipD
       sort: 0
       activation:
@@ -257,7 +257,7 @@ system:
       description: {}
       duration:
         units: inst
-        concentration: false
+        maintained power: false
         override: false
       range:
         override: false
@@ -285,7 +285,7 @@ system:
           - vocal
           - somatic
           - material
-        spellbook: true
+        power list: true
       _id: QvbApkrkH2Nn5qnF
       sort: 0
       activation:
@@ -300,7 +300,7 @@ system:
       description: {}
       duration:
         units: inst
-        concentration: false
+        maintained power: false
         override: false
       range:
         override: false
@@ -328,7 +328,7 @@ system:
           - vocal
           - somatic
           - material
-        spellbook: true
+        power list: true
       _id: Gk6b31UEgbMYpKUk
       sort: 0
       activation:
@@ -343,7 +343,7 @@ system:
       description: {}
       duration:
         units: inst
-        concentration: false
+        maintained power: false
         override: false
       range:
         override: false
@@ -371,7 +371,7 @@ system:
           - vocal
           - somatic
           - material
-        spellbook: true
+        power list: true
       _id: mqMYCmjvPFOaDSKv
       sort: 0
       activation:
@@ -386,7 +386,7 @@ system:
       description: {}
       duration:
         units: inst
-        concentration: false
+        maintained power: false
         override: false
       range:
         override: false
@@ -409,19 +409,19 @@ system:
     value: >-
       <p><em>Wondrous Item, Very Rare (Requires Attunement by a
       Wizard)</em></p><p>This pointed hat has the following
-      properties.</p><p><em><strong>Spellcasting Focus.</strong></em> While
-      holding the hat, you can use it as a Spellcasting Focus for your Wizard
+      properties.</p><p><em><strong>Power System Focus.</strong></em> While
+      holding the hat, you can use it as a Power System Focus for your Wizard
       spells. Any spell you cast using the hat gains a special Somatic
       component: you must reach into the hat and "pull" the spell out of
       it.</p><p><em><strong>Unknown Spell.</strong></em> While holding the hat,
       you can try to cast a level 1+ spell you don't know. The spell must be on
-      the Wizard spell list, it must be of a level you can cast, and it can't
-      have Material components costing more than 1,000 GP. Once you decide on
-      the spell, you must expend a spell slot of the spell's level. Then, to
+      the Wizard power list, it must be of a level you can cast, and it can't
+      have Material components costing more than 1,000 CR. Once you decide on
+      the spell, you must expend a power use of the spell's level. Then, to
       determine whether you cast the spell, make an Intelligence (Arcana) check
       (DC 10 plus the spell's level). On a successful check, you cast the spell
-      using its normal casting time, and you can't use this property again until
-      you finish a Short or Long Rest. On a failed check, you fail to cast the
+      using its normal activation time, and you can't use this property again until
+      you finish a Short or Full Rest. On a failed check, you fail to cast the
       spell and a random effect occurs instead, determined by rolling on the
       following table.</p><p>Any spell you cast from the hat uses your spell
       save DC and spell attack bonus.</p><details><summary>Roll
@@ -444,7 +444,7 @@ system:
     units: lb
   price:
     value: 40000
-    denomination: gp
+    denomination: CR
   rarity: veryRare
   attunement: required
   attuned: false

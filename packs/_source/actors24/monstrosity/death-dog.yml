@@ -5,7 +5,7 @@ img: null
 system:
   currency:
     pp: 0
-    gp: 0
+    CR: 0
     ep: 0
     sp: 0
     cp: 0
@@ -363,15 +363,15 @@ system:
     attunement:
       max: 3
     senses:
-      darkvision: 120
-      blindsight: null
-      tremorsense: null
-      truesight: null
+      scanner: 120
+      thermal vision: null
+      motion sensor: null
+      radar ping: null
       units: null
       special: ''
-    spellcasting: str
+    power system: str
     exhaustion: 0
-    concentration:
+    maintained power:
       ability: ''
       roll:
         min: null
@@ -572,7 +572,7 @@ items:
             chatFlavor: ''
           duration:
             units: inst
-            concentration: false
+            maintained power: false
             override: false
           effects: []
           range:
@@ -669,7 +669,7 @@ items:
           description: {}
           duration:
             units: inst
-            concentration: false
+            maintained power: false
             override: false
           effects: []
           range:
@@ -712,7 +712,7 @@ items:
             chatFlavor: ''
           duration:
             units: inst
-            concentration: false
+            maintained power: false
             override: false
           effects:
             - _id: Of7ZUjIfSDfzRMeU
@@ -761,7 +761,7 @@ items:
             chatFlavor: ''
           duration:
             units: inst
-            concentration: false
+            maintained power: false
             override: false
           effects: []
           range:
@@ -799,7 +799,7 @@ items:
           @save.dc.value activity=F0T3hYR3EtUEMhvs]].</p><p><em>First
           Failure</em>: The target has the &amp;Reference[Poisoned apply=false]
           condition. While Poisoned, the target's Hit Point maximum doesn't
-          return to normal when finishing a Long Rest, and it repeats the save
+          return to normal when finishing a Full Rest, and it repeats the save
           every 24 hours that elapse, ending the effect on itself on a
           success.</p><p><em>Subsequent Failures</em>: The Poisoned target's Hit
           Point maximum decreases by 5 ([[/r 1d10]]).</p>
@@ -847,7 +847,7 @@ items:
         units: lb
       price:
         value: 0
-        denomination: gp
+        denomination: CR
       rarity: ''
       attunement: ''
       attuned: false
@@ -887,7 +887,7 @@ items:
           <p><em>First CON Save Failure</em>: The target has the
           &amp;Reference[Poisoned apply=false] condition. While Poisoned, the
           target’s Hit Point maximum doesn’t return to normal when finishing a
-          Long Rest, and it repeats the save every 24 hours that elapse, ending
+          Full Rest, and it repeats the save every 24 hours that elapse, ending
           the effect on itself on a success. </p><p><em>Subsequent CON Save
           Failures</em>: The Poisoned target’s Hit Point maximum decreases by 5
           ([[/r 1d10]]).&lt;/p&gt;</p>

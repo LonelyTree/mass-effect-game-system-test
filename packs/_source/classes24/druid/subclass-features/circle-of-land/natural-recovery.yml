@@ -7,20 +7,20 @@ system:
   description:
     value: >-
       <p>You can cast one of the level 1+ spells that you have prepared from
-      your Circle Spells feature without expending a spell slot, and you must
-      finish a Long Rest before you do so again.</p><p>In addition, when you
-      finish a Short Rest, you can choose expended spell slots to recover. The
-      spell slots can have a combined level that is equal to or less than half
+      your Circle Spells feature without expending a power use, and you must
+      finish a Full Rest before you do so again.</p><p>In addition, when you
+      finish a Field Rest, you can choose expended power uses to recover. The
+      power uses can have a combined level that is equal to or less than half
       your Druid level (round up, currently [[lookup @classes.druid.levels]]),
       and none of them can be level 6+. For example, if you're a level 6 Druid,
-      you can recover up to three levels' worth of spell slots. You can recover
-      a level 3 spell slot, a level 2 and a level 1 spell slot, or three level 1
-      spell slots. Once you recover spell slots with this feature, you can't do
-      so again until you finish a Long Rest.</p><section class="secret"
+      you can recover up to three levels' worth of power uses. You can recover
+      a level 3 power use, a level 2 and a level 1 power use, or three level 1
+      power uses. Once you recover power uses with this feature, you can't do
+      so again until you finish a Full Rest.</p><section class="secret"
       id="secret-xLFXthYlJ7wwFlSS"><p><strong>Foundry Note</strong></p><p>The
       <strong>Cast Spell</strong> activity can be used to track its single free
-      use.</p><p>The <strong>Recover Spell Slot</strong> activity does not
-      automate the restoration of spell slots but can be used for tracking its
+      use.</p><p>The <strong>Recover Power Use</strong> activity does not
+      automate the restoration of power uses but can be used for tracking its
       own single use.</p></section>
     chat: ''
   source:
@@ -68,7 +68,7 @@ system:
         units: inst
         special: ''
         override: false
-        concentration: false
+        maintained power: false
       effects: []
       range:
         units: self
@@ -105,13 +105,13 @@ system:
       name: Cast Spell
     u0UF6WePUutyp6e6:
       type: utility
-      name: Recover Spell Slots
+      name: Recover Power Uses
       _id: u0UF6WePUutyp6e6
       activation:
         type: ''
         value: null
         override: false
-        condition: When you finish a Short Rest
+        condition: When you finish a Field Rest
       consumption:
         targets:
           - type: activityUses
@@ -125,7 +125,7 @@ system:
         chatFlavor: ''
       duration:
         units: inst
-        concentration: false
+        maintained power: false
         override: false
       effects: []
       range:

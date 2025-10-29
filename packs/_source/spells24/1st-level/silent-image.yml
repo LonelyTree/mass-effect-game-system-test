@@ -55,7 +55,7 @@ system:
     - vocal
     - somatic
     - material
-    - concentration
+    - maintained power
   materials:
     value: a bit of fleece
     consumed: false

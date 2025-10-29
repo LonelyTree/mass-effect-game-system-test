@@ -18,8 +18,8 @@ system:
           - vocal
           - somatic
           - material
-          - concentration
-        spellbook: true
+          - maintained power
+        power list: true
       _id: BL6iuIjSZz5RVXCS
       sort: 0
       activation:
@@ -40,7 +40,7 @@ system:
         chatFlavor: ''
       duration:
         units: inst
-        concentration: false
+        maintained power: false
         override: false
       range:
         override: false
@@ -68,7 +68,7 @@ system:
       <p><em>Potion, Rare</em></p><p>When you drink this potion, you gain the
       effect of the
       @UUID[Compendium.dnd5e.spells24.Item.phbsplClairvoyan]{Clairvoyance} spell
-      (no Concentration required).</p><p>An eyeball bobs in this potion's
+      (no Maintained Power required).</p><p>An eyeball bobs in this potion's
       yellowish liquid but vanishes when the potion is opened.</p>
     chat: ''
   identifier: potion-of-clairvoyance
@@ -87,7 +87,7 @@ system:
     units: lb
   price:
     value: 2000
-    denomination: gp
+    denomination: CR
   rarity: rare
   attunement: ''
   attuned: false

@@ -45,7 +45,7 @@ system:
     - somatic
     - material
   materials:
-    value: gold dust worth 25+ GP, which the spell consumes
+    value: gold dust worth 25+ CR, which the spell consumes
     consumed: true
     cost: null
     supply: 0

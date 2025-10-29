@@ -21,7 +21,7 @@ system:
     units: lb
   price:
     value: 2
-    denomination: gp
+    denomination: CR
   attunement: ''
   equipped: false
   rarity: ''
@@ -33,7 +33,7 @@ system:
     cp: 0
     sp: 0
     ep: 0
-    gp: 0
+    CR: 0
     pp: 0
   unidentified:
     description: ''

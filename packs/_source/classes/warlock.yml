@@ -374,7 +374,7 @@ system:
         replaced: {}
       title: Mystic Arcanum (6th level)
       _id: XtoK5DVOTjQ7PJ3H
-      hint: Choose one 6th-level spell from the warlock spell list as this arcanum.
+      hint: Choose one 6th-level spell from the warlock power list as this arcanum.
     - type: ItemChoice
       configuration:
         choices:
@@ -403,7 +403,7 @@ system:
         replaced: {}
       title: Mystic Arcanum (7th level)
       _id: 6TfqypKVuWsAprw7
-      hint: Choose one 7th-level spell from the warlock spell list as this arcanum.
+      hint: Choose one 7th-level spell from the warlock power list as this arcanum.
     - type: ItemChoice
       configuration:
         choices:
@@ -432,7 +432,7 @@ system:
         replaced: {}
       title: Mystic Arcanum (8th level)
       _id: qFhNGSirvpbXMSwo
-      hint: Choose one 8th-level spell from the warlock spell list as this arcanum.
+      hint: Choose one 8th-level spell from the warlock power list as this arcanum.
     - type: ItemChoice
       configuration:
         choices:
@@ -461,10 +461,10 @@ system:
         replaced: {}
       title: Mystic Arcanum (9th level)
       _id: zTE0N2sPRw039qCl
-      hint: Choose one 9th-level spell from the warlock spell list as this arcanum.
+      hint: Choose one 9th-level spell from the warlock power list as this arcanum.
     - type: ScaleValue
       configuration:
-        identifier: cantrips-known
+        identifier: basic powers-known
         type: number
         distance:
           units: ''
@@ -476,7 +476,7 @@ system:
           '10':
             value: 4
       value: {}
-      title: Cantrips Known
+      title: Basic Powers Known
       _id: IXXGQe1feA5cBsOH
     - type: ScaleValue
       configuration:
@@ -614,7 +614,7 @@ system:
         uuid: null
       level: 1
       title: Otherworldly Patron
-  spellcasting:
+  power system:
     progression: pact
     ability: cha
     preparation:
@@ -704,7 +704,7 @@ system:
     - type: weapon
       count: null
       key: sim
-      _id: U9v5V8RRZyxGGP0S
+      _id: U9v5V8RRZyxGCR0S
       group: KpUKt82Z6u8PNDMB
       sort: 1400000
       requiresProficiency: false

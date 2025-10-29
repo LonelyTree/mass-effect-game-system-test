@@ -26,7 +26,7 @@ system:
         chatFlavor: ''
       duration:
         units: inst
-        concentration: false
+        maintained power: false
         override: false
       range:
         override: false
@@ -49,7 +49,7 @@ system:
           override: true
         level: '2'
         properties: []
-        spellbook: false
+        power list: false
         uuid: Compendium.dnd5e.spells24.Item.phbsplGustofWind
       img: ''
   uses:
@@ -89,7 +89,7 @@ system:
     units: lb
   price:
     value: 400
-    denomination: gp
+    denomination: CR
   rarity: uncommon
   attunement: ''
   attuned: false

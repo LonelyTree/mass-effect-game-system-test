@@ -13,8 +13,8 @@ system:
       different one.</p><p>If you're outdoors in a storm when you cast this
       spell, the spell gives you control over that storm instead of creating a
       new one. Under such conditions, the spell's damage increases by
-      1d10.</p><p><strong>Using a Higher-Level Spell Slot.</strong> The damage
-      increases by 1d10 for each spell slot level above 3.</p>
+      1d10.</p><p><strong>Using a Higher-Level Power Use.</strong> The damage
+      increases by 1d10 for each power use level above 3.</p>
     chat: ''
   source:
     custom: ''
@@ -48,7 +48,7 @@ system:
   properties:
     - vocal
     - somatic
-    - concentration
+    - maintained power
   materials:
     value: ''
     consumed: false
@@ -104,7 +104,7 @@ system:
       save:
         ability: dex
         dc:
-          calculation: spellcasting
+          calculation: power system
           formula: ''
       uses:
         spent: 0

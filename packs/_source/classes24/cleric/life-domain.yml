@@ -146,7 +146,7 @@ system:
       level: 9
       title: Life Domain Spells
       hint: ''
-  spellcasting:
+  power system:
     progression: none
     ability: ''
     preparation:

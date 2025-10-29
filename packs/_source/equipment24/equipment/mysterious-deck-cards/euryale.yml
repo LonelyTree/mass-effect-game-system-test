@@ -8,7 +8,7 @@ system:
     chat: ''
   price:
     value: 0
-    denomination: gp
+    denomination: CR
   activities:
     lrLn1wxOuly8zelE:
       type: utility
@@ -32,7 +32,7 @@ system:
         chatFlavor: Card's effect occurs immediately upon draw
       duration:
         units: inst
-        concentration: false
+        maintained power: false
         override: false
       effects:
         - _id: TdKyE2tB9wNdh86t

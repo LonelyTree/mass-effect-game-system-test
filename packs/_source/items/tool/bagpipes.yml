@@ -9,7 +9,7 @@ system:
 
       <p>If you have proficiency with a given musical instrument, you can add
       your proficiency bonus to any ability checks you make to play music with
-      the instrument. A bard can use a musical instrument as a spellcasting
+      the instrument. A bard can use a musical instrument as a power system
       focus. Each type of musical instrument requires a separate proficiency.
       </p>
     chat: ''
@@ -25,7 +25,7 @@ system:
     units: lb
   price:
     value: 30
-    denomination: gp
+    denomination: CR
   attunement: ''
   equipped: false
   rarity: ''
@@ -63,7 +63,7 @@ system:
       description:
         chatFlavor: ''
       duration:
-        concentration: false
+        maintained power: false
         value: ''
         units: ''
         special: ''

@@ -30,7 +30,7 @@ system:
       <p>When you cast this spell, you can elect to cause its magic to operate
       in the reverse direction, preventing a creature of the specified type from
       leaving the cylinder and protecting targets outside it.</p><p><strong>At
-      Higher Levels.</strong> When you cast this spell using a spell slot of 4th
+      Higher Levels.</strong> When you cast this spell using a power use of 4th
       level or higher, the Duration increases by 1 Hour for each slot level
       above 3rd.</p>
     chat: ''
@@ -96,7 +96,7 @@ system:
         chatFlavor: ''
       duration:
         units: inst
-        concentration: false
+        maintained power: false
         override: false
       effects: []
       range:
@@ -115,7 +115,7 @@ system:
       save:
         ability: cha
         dc:
-          calculation: spellcasting
+          calculation: power system
           formula: ''
       uses:
         spent: 0

@@ -5,7 +5,7 @@ img: null
 system:
   currency:
     pp: 0
-    gp: 0
+    CR: 0
     ep: 0
     sp: 0
     cp: 0
@@ -363,15 +363,15 @@ system:
     attunement:
       max: 3
     senses:
-      darkvision: null
-      blindsight: null
-      tremorsense: null
-      truesight: 120
+      scanner: null
+      thermal vision: null
+      motion sensor: null
+      radar ping: 120
       units: null
       special: ''
-    spellcasting: cha
+    power system: cha
     exhaustion: 0
-    concentration:
+    maintained power:
       ability: ''
       roll:
         min: null
@@ -638,7 +638,7 @@ items:
             chatFlavor: ''
           duration:
             units: inst
-            concentration: false
+            maintained power: false
             override: false
           effects:
             - _id: Sb7G5OyhGbjLUoWo
@@ -845,7 +845,7 @@ items:
             chatFlavor: ''
           duration:
             units: inst
-            concentration: false
+            maintained power: false
             override: false
           effects: []
           range:
@@ -946,7 +946,7 @@ items:
             chatFlavor: ''
           duration:
             units: inst
-            concentration: false
+            maintained power: false
             override: false
           effects: []
           range:
@@ -1051,7 +1051,7 @@ items:
             chatFlavor: ''
           duration:
             units: inst
-            concentration: false
+            maintained power: false
             override: false
           effects: []
           range:
@@ -1105,7 +1105,7 @@ items:
             chatFlavor: ''
           duration:
             units: inst
-            concentration: false
+            maintained power: false
             override: false
           effects:
             - _id: O1edMGJIx0MF1uze
@@ -1155,7 +1155,7 @@ items:
             chatFlavor: ''
           duration:
             units: inst
-            concentration: false
+            maintained power: false
             override: false
           effects: []
           range:
@@ -1250,7 +1250,7 @@ items:
         units: lb
       price:
         value: 0
-        denomination: gp
+        denomination: CR
       rarity: ''
       attunement: ''
       attuned: false
@@ -1345,7 +1345,7 @@ items:
           description: {}
           duration:
             units: inst
-            concentration: false
+            maintained power: false
             override: false
           effects: []
           range:
@@ -1395,7 +1395,7 @@ items:
         units: lb
       price:
         value: 0
-        denomination: gp
+        denomination: CR
       rarity: ''
       attunement: ''
       attuned: false
@@ -1482,7 +1482,7 @@ items:
             chatFlavor: ''
           duration:
             units: inst
-            concentration: false
+            maintained power: false
             override: false
           effects: []
           range:
@@ -1551,7 +1551,7 @@ items:
         units: lb
       price:
         value: 0
-        denomination: gp
+        denomination: CR
       rarity: ''
       attunement: ''
       attuned: false
@@ -1617,7 +1617,7 @@ items:
     sort: 7
     _key: '!actors.items!mmPitFiend000000.mmFieryMace00000'
   - _id: mmHellfireSpellc
-    name: Hellfire Spellcasting
+    name: Hellfire Power System
     type: feat
     system:
       type:
@@ -1645,7 +1645,7 @@ items:
             chatFlavor: ''
           duration:
             units: inst
-            concentration: false
+            maintained power: false
             override: false
           range:
             override: false
@@ -1669,7 +1669,7 @@ items:
             level: 5
             properties:
               - material
-            spellbook: true
+            power list: true
             uuid: Compendium.dnd5e.spells24.Item.phbsplFireball00
             ability: cha
           name: ''
@@ -1694,7 +1694,7 @@ items:
             chatFlavor: ''
           duration:
             units: inst
-            concentration: false
+            maintained power: false
             override: false
           range:
             override: false
@@ -1718,7 +1718,7 @@ items:
             level: 7
             properties:
               - material
-            spellbook: true
+            power list: true
             uuid: Compendium.dnd5e.spells24.Item.phbsplHoldMonste
             ability: cha
           name: ''
@@ -1743,7 +1743,7 @@ items:
             chatFlavor: ''
           duration:
             units: inst
-            concentration: false
+            maintained power: false
             override: false
           range:
             override: false
@@ -1767,7 +1767,7 @@ items:
             level: 4
             properties:
               - material
-            spellbook: true
+            power list: true
             uuid: Compendium.dnd5e.spells24.Item.phbsplWallofFire
             ability: cha
           name: ''
@@ -1783,14 +1783,14 @@ items:
           <p class="feature">The pit fiend casts
           <em>@UUID[Compendium.dnd5e.spells24.Item.phbsplFireball00]{Fireball}</em>
           (level 5 version) twice, requiring no Material components and using
-          Charisma as the spellcasting ability (spell save DC [[lookup
+          Charisma as the power system ability (spell save DC [[lookup
           @abilities.cha.dc]]).. It can replace one <em>Fireball</em> with
           <em>@UUID[Compendium.dnd5e.spells24.Item.phbsplHoldMonste]{Hold
           Monster}</em> (level 7 version) or
           <em>@UUID[Compendium.dnd5e.spells24.Item.phbsplWallofFire]{Wall of
           Fire}.</em></p>
         chat: ''
-      identifier: hellfire-spellcasting
+      identifier: hellfire-power system
       source:
         revision: 1
         rules: '2024'
@@ -1837,8 +1837,8 @@ items:
           Dexterity saving throw, taking 8d6 Fire damage on a failed save or
           half as much damage on a successful one.</p><p>Flammable objects in
           the area that aren't being worn or carried start
-          burning.</p><p><strong>Using a Higher-Level Spell Slot.</strong> The
-          damage increases by 1d6 for each spell slot level above 3.</p>
+          burning.</p><p><strong>Using a Higher-Level Power Use.</strong> The
+          damage increases by 1d6 for each power use level above 3.</p>
         chat: ''
       source:
         custom: ''
@@ -1906,7 +1906,7 @@ items:
           duration:
             units: inst
             override: false
-            concentration: false
+            maintained power: false
           effects: []
           range:
             override: false
@@ -1937,7 +1937,7 @@ items:
             ability:
               - dex
             dc:
-              calculation: spellcasting
+              calculation: power system
               formula: ''
           uses:
             spent: 0
@@ -2017,8 +2017,8 @@ items:
           succeed on a Wisdom saving throw or have the Paralyzed condition for
           the duration. At the end of each of its turns, the target repeats the
           save, ending the spell on itself on a success.</p><p><strong>Using a
-          Higher-Level Spell Slot.</strong> You can target one additional
-          creature for each spell slot level above 5.</p>
+          Higher-Level Power Use.</strong> You can target one additional
+          creature for each power use level above 5.</p>
         chat: ''
       source:
         custom: ''
@@ -2054,7 +2054,7 @@ items:
         - vocal
         - somatic
         - material
-        - concentration
+        - maintained power
       materials:
         value: a straight piece of iron
         consumed: false
@@ -2082,7 +2082,7 @@ items:
           duration:
             units: inst
             override: false
-            concentration: false
+            maintained power: false
           effects:
             - _id: vC7qgyy8cjgi3t0T
               onSave: false
@@ -2103,7 +2103,7 @@ items:
             ability:
               - wis
             dc:
-              calculation: spellcasting
+              calculation: power system
               formula: ''
           uses:
             spent: 0
@@ -2227,8 +2227,8 @@ items:
           turn within 10 feet of that side or inside the wall. A creature takes
           the same damage when it enters the wall for the first time on a turn
           or ends its turn there. The other side of the wall deals no
-          damage.</p><p><strong>Using a Higher-Level Spell Slot.</strong> The
-          damage increases by 1d8 for each spell slot level above 4.</p>
+          damage.</p><p><strong>Using a Higher-Level Power Use.</strong> The
+          damage increases by 1d8 for each power use level above 4.</p>
         chat: ''
       source:
         custom: ''
@@ -2270,7 +2270,7 @@ items:
         - vocal
         - somatic
         - material
-        - concentration
+        - maintained power
       materials:
         value: a piece of charcoal
         consumed: false
@@ -2298,7 +2298,7 @@ items:
           duration:
             units: inst
             override: false
-            concentration: false
+            maintained power: false
           effects: []
           range:
             override: false
@@ -2337,7 +2337,7 @@ items:
             ability:
               - dex
             dc:
-              calculation: spellcasting
+              calculation: power system
               formula: ''
           uses:
             spent: 0
@@ -2363,7 +2363,7 @@ items:
           duration:
             units: inst
             override: false
-            concentration: false
+            maintained power: false
           effects: []
           range:
             override: false
@@ -2402,7 +2402,7 @@ items:
             ability:
               - dex
             dc:
-              calculation: spellcasting
+              calculation: power system
               formula: ''
           uses:
             spent: 0
@@ -2429,7 +2429,7 @@ items:
             chatFlavor: ''
           duration:
             units: inst
-            concentration: false
+            maintained power: false
             override: false
           effects: []
           range:

@@ -23,7 +23,7 @@ system:
         chatFlavor: ''
       duration:
         units: hour
-        concentration: false
+        maintained power: false
         override: true
         value: '24'
       range:
@@ -50,7 +50,7 @@ system:
           - vocal
           - somatic
           - material
-        spellbook: true
+        power list: true
         uuid: Compendium.dnd5e.spells24.Item.phbsplDisguiseSe
         ability: con
       name: ''
@@ -63,7 +63,7 @@ system:
     value: >-
       <p class="feature">The [[lookup @name lowercase]] casts
       <em>@UUID[Compendium.dnd5e.spells24.Item.phbsplDisguiseSe]{Disguise
-      Self}</em>, using Constitution as the spellcasting ability (spell save DC
+      Self}</em>, using Constitution as the power system ability (spell save DC
       [[lookup @attributes.spell.dc]]). The spell's duration is [[lookup
       @duration.value activity=qY8e7Xm7QYQDXqsd]] [[lookup @duration.units
       activity=qY8e7Xm7QYQDXqsd]]s.</p>

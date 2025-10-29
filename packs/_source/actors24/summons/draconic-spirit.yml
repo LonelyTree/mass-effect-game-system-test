@@ -96,7 +96,7 @@ system:
       custom: understands the languages you know
   currency:
     pp: 0
-    gp: 0
+    CR: 0
     ep: 0
     sp: 0
     cp: 0
@@ -351,15 +351,15 @@ system:
     attunement:
       max: 3
     senses:
-      darkvision: 60
-      blindsight: 30
-      tremorsense: null
-      truesight: null
+      scanner: 60
+      thermal vision: 30
+      motion sensor: null
+      radar ping: null
       units: null
       special: ''
-    spellcasting: int
+    power system: int
     exhaustion: 0
-    concentration:
+    maintained power:
       ability: ''
       roll:
         min: null
@@ -458,7 +458,7 @@ prototypeToken:
     enabled: false
     range: 60
     angle: 360
-    visionMode: darkvision
+    visionMode: scanner
     color: null
     attenuation: 0.1
     brightness: 0
@@ -468,7 +468,7 @@ prototypeToken:
     - id: basicSight
       range: 60
       enabled: true
-    - id: blindsight
+    - id: thermal vision
       range: 30
       enabled: true
   occludable:
@@ -539,7 +539,7 @@ items:
           duration:
             units: inst
             override: false
-            concentration: false
+            maintained power: false
           effects:
             - _id: 7cJTSbk7inXzZrgc
           range:
@@ -589,7 +589,7 @@ items:
           duration:
             units: inst
             override: false
-            concentration: false
+            maintained power: false
           effects:
             - _id: RhMVHKsPIntvMb9t
           range:
@@ -640,7 +640,7 @@ items:
           duration:
             units: inst
             override: false
-            concentration: false
+            maintained power: false
           effects:
             - _id: 88nNini6vAbvuYpW
           range:
@@ -691,7 +691,7 @@ items:
           duration:
             units: inst
             override: false
-            concentration: false
+            maintained power: false
           effects:
             - _id: aM5KtLpDsfmHWiz2
           range:
@@ -742,7 +742,7 @@ items:
           duration:
             units: inst
             override: false
-            concentration: false
+            maintained power: false
           effects:
             - _id: C73Xnt0qigfb1tiy
           range:
@@ -1044,7 +1044,7 @@ items:
             units: inst
             special: ''
             override: false
-            concentration: false
+            maintained power: false
           effects: []
           range:
             units: self
@@ -1156,7 +1156,7 @@ items:
             units: inst
             special: ''
             override: false
-            concentration: false
+            maintained power: false
           effects: []
           range:
             value: '10'
@@ -1289,7 +1289,7 @@ items:
             units: inst
             special: ''
             override: false
-            concentration: false
+            maintained power: false
           effects: []
           range:
             units: self
@@ -1332,7 +1332,7 @@ items:
             ability:
               - dex
             dc:
-              calculation: spellcasting
+              calculation: power system
               formula: ''
           uses:
             spent: 0

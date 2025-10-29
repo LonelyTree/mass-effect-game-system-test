@@ -8,7 +8,7 @@ system:
     value: >-
       <p>Bolstering yourself with a necromantic facsimile of life, you gain 1d4
       + 4 Temporary Hit Points for the Duration.</p><p><strong>At Higher
-      Levels.</strong> When you cast this spell using a spell slot of 2nd level
+      Levels.</strong> When you cast this spell using a power use of 2nd level
       or higher, you gain 5 additional Temporary Hit Points for each slot level
       above 1st.</p>
     chat: ''
@@ -70,7 +70,7 @@ system:
         chatFlavor: ''
       duration:
         units: inst
-        concentration: false
+        maintained power: false
         override: false
       effects: []
       range:

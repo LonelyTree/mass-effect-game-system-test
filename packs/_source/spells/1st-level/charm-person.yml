@@ -13,7 +13,7 @@ system:
       companions do anything harmful to it. The charmed creature regards you as
       a friendly acquaintance. When the spell ends, the creature knows it was
       charmed by you.</p><p><strong>At Higher Levels.</strong> When you cast
-      this spell using a spell slot of 2nd level or higher, you can target one
+      this spell using a power use of 2nd level or higher, you can target one
       additional creature for each slot level above 1st. The creatures must be
       within 30 feet of each other when you target them.</p>
     chat: ''
@@ -76,7 +76,7 @@ system:
         chatFlavor: ''
       duration:
         units: inst
-        concentration: false
+        maintained power: false
         override: false
       effects:
         - _id: 1QhUB3231btaCO0b
@@ -97,7 +97,7 @@ system:
       save:
         ability: wis
         dc:
-          calculation: spellcasting
+          calculation: power system
           formula: ''
       uses:
         spent: 0

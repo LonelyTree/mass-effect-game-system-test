@@ -5,7 +5,7 @@ img: null
 system:
   currency:
     pp: 0
-    gp: 0
+    CR: 0
     ep: 0
     sp: 0
     cp: 0
@@ -363,15 +363,15 @@ system:
     attunement:
       max: 3
     senses:
-      darkvision: 120
-      blindsight: 60
-      tremorsense: null
-      truesight: null
+      scanner: 120
+      thermal vision: 60
+      motion sensor: null
+      radar ping: null
       units: null
       special: ''
-    spellcasting: cha
+    power system: cha
     exhaustion: 0
-    concentration:
+    maintained power:
       ability: ''
       roll:
         min: null
@@ -577,7 +577,7 @@ items:
             chatFlavor: ''
           duration:
             units: inst
-            concentration: false
+            maintained power: false
             override: false
           effects: []
           range:
@@ -730,7 +730,7 @@ items:
           description: {}
           duration:
             units: inst
-            concentration: false
+            maintained power: false
             override: false
           effects: []
           range:
@@ -756,7 +756,7 @@ items:
       description:
         value: >-
           <p>The [[lookup @name lowercase]] makes three [[/item Rend]] attacks.
-          It can replace one attack with a use of (A) [[/item Spellcasting]] to
+          It can replace one attack with a use of (A) [[/item Power System]] to
           cast <em>Guiding Bolt</em> (level 2 version) or (B) [[/item Weakening
           Breath]].</p>
         chat: ''
@@ -823,7 +823,7 @@ items:
             chatFlavor: ''
           duration:
             units: inst
-            concentration: false
+            maintained power: false
             override: false
           effects: []
           range:
@@ -890,7 +890,7 @@ items:
         units: lb
       price:
         value: 0
-        denomination: gp
+        denomination: CR
       rarity: ''
       attunement: ''
       attuned: false
@@ -984,7 +984,7 @@ items:
             chatFlavor: ''
           duration:
             units: inst
-            concentration: false
+            maintained power: false
             override: false
           effects: []
           range:
@@ -1085,8 +1085,8 @@ items:
       default: 0
     sort: 4
     _key: '!actors.items!mmAdultGoldDrago.mmFireBreath0000'
-  - _id: mmSpellcasting00
-    name: Spellcasting
+  - _id: mmPower System00
+    name: Power System
     type: feat
     system:
       type:
@@ -1104,7 +1104,7 @@ items:
             level: 1
             properties:
               - material
-            spellbook: true
+            power list: true
             ability: ''
           _id: va2Rz2JpO59nzURk
           sort: 0
@@ -1121,7 +1121,7 @@ items:
             chatFlavor: ''
           duration:
             units: inst
-            concentration: false
+            maintained power: false
             override: false
           range:
             override: false
@@ -1149,7 +1149,7 @@ items:
             level: 2
             properties:
               - material
-            spellbook: true
+            power list: true
             ability: ''
           _id: CxVMn80ZaWKN6l5h
           sort: 0
@@ -1166,7 +1166,7 @@ items:
             chatFlavor: ''
           duration:
             units: inst
-            concentration: false
+            maintained power: false
             override: false
           range:
             override: false
@@ -1194,8 +1194,8 @@ items:
             level: 9
             properties:
               - material
-              - concentration
-            spellbook: true
+              - maintained power
+            power list: true
             ability: ''
           _id: GUqZkQ1Vnf8WMckz
           sort: 0
@@ -1212,7 +1212,7 @@ items:
             chatFlavor: ''
           duration:
             units: inst
-            concentration: false
+            maintained power: false
             override: false
           range:
             override: false
@@ -1240,7 +1240,7 @@ items:
             level: 5
             properties:
               - material
-            spellbook: true
+            power list: true
             ability: ''
           _id: 4gQeZpIwkm0iYmiC
           sort: 0
@@ -1260,7 +1260,7 @@ items:
             chatFlavor: ''
           duration:
             units: inst
-            concentration: false
+            maintained power: false
             override: false
           range:
             override: false
@@ -1290,7 +1290,7 @@ items:
             level: 2
             properties:
               - material
-            spellbook: true
+            power list: true
             ability: ''
           _id: zpiAmuKkl0JxMpDB
           sort: 0
@@ -1310,7 +1310,7 @@ items:
             chatFlavor: ''
           duration:
             units: inst
-            concentration: false
+            maintained power: false
             override: false
           range:
             override: false
@@ -1337,7 +1337,7 @@ items:
         value: >-
           <p class="feature">The [[lookup @name lowercase]] casts one of the
           following spells, requiring no Material components and using Charisma
-          as the spellcasting ability (spell save DC [[lookup
+          as the power system ability (spell save DC [[lookup
           @attributes.spell.dc]]):</p><p class="feature-trait"><strong>At
           Will:</strong>
           <em>@UUID[Compendium.dnd5e.spells24.Item.phbsplDetectMagi]{Detect
@@ -1346,7 +1346,7 @@ items:
           Bolt}</em> (level 2 version),
           <em>@UUID[Compendium.dnd5e.spells24.Item.phbsplShapechang]{Shapechange}</em>
           (Beast or Humanoid form only, no Temporary Hit Points gained from the
-          spell, and no Concentration or Temporary Hit Points required to
+          spell, and no Maintained Power or Temporary Hit Points required to
           maintain the spell)</p><p class="feature-trait"><strong>1/Day
           Each:</strong>
           <em>@UUID[Compendium.dnd5e.spells24.Item.phbsplFlameStrik]{Flame
@@ -1354,7 +1354,7 @@ items:
           <em>@UUID[Compendium.dnd5e.spells24.Item.phbsplZoneofTrut]{Zone of
           Truth}</em></p>
         chat: ''
-      identifier: spellcasting
+      identifier: power system
       source:
         revision: 1
         rules: '2024'
@@ -1378,7 +1378,7 @@ items:
           activity: []
           effect: []
     _stats:
-      compendiumSource: Compendium.dnd-monster-manual.features.Item.mmSpellcasting00
+      compendiumSource: Compendium.dnd-monster-manual.features.Item.mmPower System00
       duplicateSource: null
       coreVersion: '13.344'
       systemId: dnd5e
@@ -1390,7 +1390,7 @@ items:
     ownership:
       default: 0
     sort: 5
-    _key: '!actors.items!mmAdultGoldDrago.mmSpellcasting00'
+    _key: '!actors.items!mmAdultGoldDrago.mmPower System00'
   - name: Detect Magic
     system:
       description:
@@ -1441,7 +1441,7 @@ items:
       properties:
         - vocal
         - somatic
-        - concentration
+        - maintained power
         - ritual
       materials:
         value: ''
@@ -1470,7 +1470,7 @@ items:
           duration:
             units: inst
             override: false
-            concentration: false
+            maintained power: false
           effects:
             - _id: BHw91lQmVgdx39WZ
           range:
@@ -1538,7 +1538,7 @@ items:
         name: Spell Changes
         img: systems/dnd5e/icons/svg/activity/cast.svg
         origin: >-
-          Compendium.dnd5e.actors24.Actor.mmAdultGoldDrago.Item.mmSpellcasting00.Activity.va2Rz2JpO59nzURk
+          Compendium.dnd5e.actors24.Actor.mmAdultGoldDrago.Item.mmPower System00.Activity.va2Rz2JpO59nzURk
         changes:
           - key: system.properties
             mode: 2
@@ -1581,7 +1581,7 @@ items:
         riders:
           activity: []
           effect: []
-        cachedFor: .Item.mmSpellcasting00.Activity.va2Rz2JpO59nzURk
+        cachedFor: .Item.mmPower System00.Activity.va2Rz2JpO59nzURk
     _stats:
       compendiumSource: Compendium.dnd5e.spells24.Item.phbsplDetectMagi
       duplicateSource: null
@@ -1599,10 +1599,10 @@ items:
       description:
         value: >-
           <p>You hurl a bolt of light toward a creature within range. Make a
-          ranged spell attack against the target. On a hit, it takes 4d6 Radiant
+          ranged power attack against the target. On a hit, it takes 4d6 Radiant
           damage, and the next attack roll made against it before the end of
           your next turn has Advantage.</p><p><strong>Using a Higher-Level Spell
-          Slot.</strong> The damage increases by 1d6 for each spell slot level
+          Slot.</strong> The damage increases by 1d6 for each power use level
           above 1.</p>
         chat: ''
       source:
@@ -1668,7 +1668,7 @@ items:
           duration:
             units: inst
             override: false
-            concentration: false
+            maintained power: false
           effects:
             - _id: rHzZCeXfdeTcYyk8
           range:
@@ -1758,7 +1758,7 @@ items:
         name: Spell Changes
         img: systems/dnd5e/icons/svg/activity/cast.svg
         origin: >-
-          Compendium.dnd5e.actors24.Actor.mmAdultGoldDrago.Item.mmSpellcasting00.Activity.CxVMn80ZaWKN6l5h
+          Compendium.dnd5e.actors24.Actor.mmAdultGoldDrago.Item.mmPower System00.Activity.CxVMn80ZaWKN6l5h
         changes:
           - key: system.properties
             mode: 2
@@ -1798,7 +1798,7 @@ items:
       default: 0
     flags:
       dnd5e:
-        cachedFor: .Item.mmSpellcasting00.Activity.CxVMn80ZaWKN6l5h
+        cachedFor: .Item.mmPower System00.Activity.CxVMn80ZaWKN6l5h
     _stats:
       compendiumSource: Compendium.dnd5e.spells24.Item.phbsplGuidingBol
       duplicateSource: null
@@ -1817,8 +1817,8 @@ items:
         value: >-
           <p>You shape-shift into another creature for the duration or until you
           take a Magic action to shape-shift into a different eligible form. The
-          new form must be of a creature that has a Challenge Rating no higher
-          than your level or Challenge Rating. You must have seen the sort of
+          new form must be of a creature that has a Threat Level no higher
+          than your level or Threat Level. You must have seen the sort of
           creature before, and it can't be a Construct or an Undead.</p><p>When
           you shape-shift, you gain a number of Temporary Hit Points equal to
           the Hit Points of the form. The spell ends early if you have no
@@ -1826,7 +1826,7 @@ items:
           the stat block of the chosen form, but you retain your creature type;
           alignment; personality; Intelligence, Wisdom, and Charisma scores; Hit
           Points; Hit Point Dice; proficiencies; and ability to communicate. If
-          you have the Spellcasting feature, you retain it too.</p><p>Upon
+          you have the Power System feature, you retain it too.</p><p>Upon
           shape-shifting, you determine whether your equipment drops to the
           ground or changes in size and shape to fit the new form while you're
           in it.</p>
@@ -1867,9 +1867,9 @@ items:
         - vocal
         - somatic
         - material
-        - concentration
+        - maintained power
       materials:
-        value: a jade circlet worth 1,500+ GP
+        value: a jade circlet worth 1,500+ CR
         consumed: false
         cost: 0
         supply: 0
@@ -1893,7 +1893,7 @@ items:
             chatFlavor: ''
           duration:
             units: inst
-            concentration: false
+            maintained power: false
             override: false
           effects: []
           range:
@@ -1926,7 +1926,7 @@ items:
         name: Spell Changes
         img: systems/dnd5e/icons/svg/activity/cast.svg
         origin: >-
-          Compendium.dnd5e.actors24.Actor.mmAdultGoldDrago.Item.mmSpellcasting00.Activity.GUqZkQ1Vnf8WMckz
+          Compendium.dnd5e.actors24.Actor.mmAdultGoldDrago.Item.mmPower System00.Activity.GUqZkQ1Vnf8WMckz
         changes:
           - key: system.properties
             mode: 2
@@ -1934,7 +1934,7 @@ items:
             priority: null
           - key: system.properties
             mode: 2
-            value: '-concentration'
+            value: '-maintained power'
             priority: null
         system: {}
         disabled: false
@@ -1970,7 +1970,7 @@ items:
       default: 0
     flags:
       dnd5e:
-        cachedFor: .Item.mmSpellcasting00.Activity.GUqZkQ1Vnf8WMckz
+        cachedFor: .Item.mmPower System00.Activity.GUqZkQ1Vnf8WMckz
     _stats:
       compendiumSource: Compendium.dnd5e.spells24.Item.phbsplShapechang
       duplicateSource: null
@@ -1993,7 +1993,7 @@ items:
           damage and 5d6 Radiant damage on a failed save or half as much damage
           on a successful one.</p><p><strong>Using a Higher-Level Spell
           Slot.</strong> The Fire damage and the Radiant damage increase by 1d6
-          for each spell slot level above 5.</p>
+          for each power use level above 5.</p>
         chat: ''
       source:
         custom: ''
@@ -2061,7 +2061,7 @@ items:
           duration:
             units: inst
             override: false
-            concentration: false
+            maintained power: false
           effects: []
           range:
             override: false
@@ -2103,7 +2103,7 @@ items:
             ability:
               - dex
             dc:
-              calculation: spellcasting
+              calculation: power system
               formula: ''
           uses:
             spent: 0
@@ -2120,7 +2120,7 @@ items:
         name: Spell Changes
         img: systems/dnd5e/icons/svg/activity/cast.svg
         origin: >-
-          Compendium.dnd5e.actors24.Actor.mmAdultGoldDrago.Item.mmSpellcasting00.Activity.4gQeZpIwkm0iYmiC
+          Compendium.dnd5e.actors24.Actor.mmAdultGoldDrago.Item.mmPower System00.Activity.4gQeZpIwkm0iYmiC
         changes:
           - key: system.properties
             mode: 2
@@ -2163,7 +2163,7 @@ items:
         riders:
           activity: []
           effect: []
-        cachedFor: .Item.mmSpellcasting00.Activity.4gQeZpIwkm0iYmiC
+        cachedFor: .Item.mmPower System00.Activity.4gQeZpIwkm0iYmiC
     _stats:
       compendiumSource: Compendium.dnd5e.spells24.Item.phbsplFlameStrik
       duplicateSource: null
@@ -2250,7 +2250,7 @@ items:
           duration:
             units: inst
             override: false
-            concentration: false
+            maintained power: false
           effects:
             - _id: BgkyT4A5qyArRveO
               onSave: false
@@ -2271,7 +2271,7 @@ items:
             ability:
               - cha
             dc:
-              calculation: spellcasting
+              calculation: power system
               formula: ''
           uses:
             spent: 0
@@ -2325,7 +2325,7 @@ items:
         name: Spell Changes
         img: systems/dnd5e/icons/svg/activity/cast.svg
         origin: >-
-          Compendium.dnd5e.actors24.Actor.mmAdultGoldDrago.Item.mmSpellcasting00.Activity.zpiAmuKkl0JxMpDB
+          Compendium.dnd5e.actors24.Actor.mmAdultGoldDrago.Item.mmPower System00.Activity.zpiAmuKkl0JxMpDB
         changes:
           - key: system.properties
             mode: 2
@@ -2365,7 +2365,7 @@ items:
       default: 0
     flags:
       dnd5e:
-        cachedFor: .Item.mmSpellcasting00.Activity.zpiAmuKkl0JxMpDB
+        cachedFor: .Item.mmPower System00.Activity.zpiAmuKkl0JxMpDB
     _stats:
       compendiumSource: Compendium.dnd5e.spells24.Item.phbsplZoneofTrut
       duplicateSource: null
@@ -2404,7 +2404,7 @@ items:
             chatFlavor: ''
           duration:
             units: minute
-            concentration: false
+            maintained power: false
             override: false
             value: '1'
           effects:
@@ -2572,7 +2572,7 @@ items:
             chatFlavor: ''
           duration:
             units: spec
-            concentration: false
+            maintained power: false
             override: false
             special: until the start of its next turn
           effects:
@@ -2741,7 +2741,7 @@ items:
             chatFlavor: ''
           duration:
             units: inst
-            concentration: false
+            maintained power: false
             override: false
           range:
             override: false
@@ -2767,7 +2767,7 @@ items:
               - vocal
               - somatic
               - material
-            spellbook: false
+            power list: false
             uuid: Compendium.dnd5e.spells24.Item.phbsplGuidingBol
             ability: ''
           name: ''
@@ -2778,7 +2778,7 @@ items:
       description:
         value: >-
           <p class="feature">The [[lookup @name lowercase]] uses [[/item
-          Spellcasting]] to cast
+          Power System]] to cast
           <em>@UUID[Compendium.dnd5e.spells24.Item.phbsplGuidingBol]{Guiding
           Bolt}</em> (level 2 version).</p>
         chat: ''
@@ -2824,10 +2824,10 @@ items:
       description:
         value: >-
           <p>You hurl a bolt of light toward a creature within range. Make a
-          ranged spell attack against the target. On a hit, it takes 4d6 Radiant
+          ranged power attack against the target. On a hit, it takes 4d6 Radiant
           damage, and the next attack roll made against it before the end of
           your next turn has Advantage.</p><p><strong>Using a Higher-Level Spell
-          Slot.</strong> The damage increases by 1d6 for each spell slot level
+          Slot.</strong> The damage increases by 1d6 for each power use level
           above 1.</p>
         chat: ''
       source:
@@ -2893,7 +2893,7 @@ items:
           duration:
             units: inst
             override: false
-            concentration: false
+            maintained power: false
           effects:
             - _id: rHzZCeXfdeTcYyk8
           range:
@@ -3077,7 +3077,7 @@ items:
             chatFlavor: ''
           duration:
             units: inst
-            concentration: false
+            maintained power: false
             override: false
           effects: []
           range:

@@ -3,7 +3,7 @@ system:
   description:
     value: >-
       <p>For the duration, magical &amp;Reference[darkness] spreads from a point
-      within range and fills a 15-foot-radius Sphere. Darkvision can't see
+      within range and fills a 15-foot-radius Sphere. Scanner can't see
       through it, and nonmagical light can't illuminate it.</p><p>Alternatively,
       you cast the spell on an object that isn't being worn or carried, causing
       the Darkness to fill a 15-foot Emanation originating from that object.
@@ -44,7 +44,7 @@ system:
   properties:
     - vocal
     - material
-    - concentration
+    - maintained power
   materials:
     value: bat fur and a piece of coal
     consumed: false

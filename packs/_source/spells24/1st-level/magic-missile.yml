@@ -6,8 +6,8 @@ system:
       creature of your choice that you can see within range. A dart deals 1d4 +
       1 Force damage to its target. The darts all strike simultaneously, and you
       can direct them to hit one creature or several.</p><p><strong>Using a
-      Higher-Level Spell Slot.</strong> The spell creates one more dart for each
-      spell slot level above 1.</p><p>[[2 + @item.level]]{Level [[lookup
+      Higher-Level Power Use.</strong> The spell creates one more dart for each
+      power use level above 1.</p><p>[[2 + @item.level]]{Level [[lookup
       @item.level]] darts}</p>
     chat: ''
   source:

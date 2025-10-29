@@ -1,5 +1,5 @@
 _id: lT8GsPOPgRzDC3QJ
-name: Bonus Cantrip
+name: Bonus Basic Power
 ownership:
   default: 0
 type: feat
@@ -7,7 +7,7 @@ system:
   description:
     value: >-
       <p>When you choose this circle at 2nd level, you learn one additional
-      druid cantrip of your choice.</p>
+      druid basic power of your choice.</p>
     chat: ''
   source:
     custom: ''
@@ -28,7 +28,7 @@ system:
   enchant: {}
   prerequisites:
     level: null
-  identifier: bonus-cantrip
+  identifier: bonus-basic power
 flags: {}
 img: icons/magic/nature/vines-thorned-glow-green.webp
 effects: []

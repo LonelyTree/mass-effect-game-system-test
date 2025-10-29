@@ -16,7 +16,7 @@ system:
     chat: ''
   price:
     value: 0
-    denomination: gp
+    denomination: CR
   activities:
     H9avlnuBT1KSCMEp:
       type: summon
@@ -40,7 +40,7 @@ system:
         chatFlavor: ''
       duration:
         units: inst
-        concentration: false
+        maintained power: false
         override: false
       effects: []
       range:
@@ -101,7 +101,7 @@ system:
           override: false
         level: '2'
         properties: []
-        spellbook: true
+        power list: true
       _id: bO4agG7byTwFTiFg
       sort: 0
       activation:
@@ -117,7 +117,7 @@ system:
         chatFlavor: Can target only the Silver Raven
       duration:
         units: inst
-        concentration: false
+        maintained power: false
         override: false
       range:
         override: false

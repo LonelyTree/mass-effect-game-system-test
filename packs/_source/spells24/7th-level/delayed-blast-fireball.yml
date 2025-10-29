@@ -16,8 +16,8 @@ system:
       creature's space or collides with a solid object, the spell ends, and the
       bead explodes.</p><p>When the bead explodes, flammable objects in the
       explosion that aren't being worn or carried start
-      burning.</p><p><strong>Using a Higher-Level Spell Slot.</strong> The base
-      damage increases by 1d6 for each spell slot level above 7.</p><section
+      burning.</p><p><strong>Using a Higher-Level Power Use.</strong> The base
+      damage increases by 1d6 for each power use level above 7.</p><section
       class="secret" id="secret-8FSRYhwywI2O3Qgb"><p><strong>Foundry
       Note</strong></p><p>The limited uses value of this spell tracks the number
       of rounds that have passed since the initial casting and starts at
@@ -68,7 +68,7 @@ system:
     - vocal
     - somatic
     - material
-    - concentration
+    - maintained power
   materials:
     value: a ball of bat guano and sulfur
     consumed: false
@@ -98,7 +98,7 @@ system:
         chatFlavor: ''
       duration:
         units: inst
-        concentration: false
+        maintained power: false
         override: false
       effects: []
       range:
@@ -146,7 +146,7 @@ system:
         chatFlavor: ''
       duration:
         units: inst
-        concentration: false
+        maintained power: false
         override: true
       effects: []
       range:
@@ -176,7 +176,7 @@ system:
       save:
         ability: dex
         dc:
-          calculation: spellcasting
+          calculation: power system
           formula: ''
       name: Touch Bead
       img: systems/dnd5e/icons/svg/trait-skills.svg
@@ -202,7 +202,7 @@ system:
         chatFlavor: ''
       duration:
         units: inst
-        concentration: false
+        maintained power: false
         override: true
       effects: []
       range:
@@ -250,7 +250,7 @@ system:
         chatFlavor: ''
       duration:
         units: inst
-        concentration: false
+        maintained power: false
         override: true
       effects: []
       range:
@@ -294,7 +294,7 @@ system:
       save:
         ability: dex
         dc:
-          calculation: spellcasting
+          calculation: power system
           formula: ''
       name: Trigger Explosion
       _id: M15GlfjeWy7Cdiqn

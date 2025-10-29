@@ -1,5 +1,5 @@
 _id: fdmzHw875EzpXM2a
-name: Spellcasting
+name: Power System
 ownership:
   default: 0
 type: feat
@@ -9,14 +9,14 @@ system:
       <section class="secret">
 
       <p>the [[lookup @name lowercase]] is a 1st-level spellcaster. Its
-      spellcasting ability is Wisdom (spell save DC 12, +4 to hit with spell
+      power system ability is Wisdom (spell save DC 12, +4 to hit with spell
       attacks). the [[lookup @name lowercase]] has following cleric spells
-      prepared:</p><p>Cantrips (at will): light, sacred flame,
+      prepared:</p><p>Basic Powers (at will): light, sacred flame,
       thaumaturgy</p><p>1st level (3 slots): bless, cure wounds, sanctuary</p>
 
       </section>
 
-      <p>the [[lookup @name lowercase]] is a spellcaster. Its spellcasting
+      <p>the [[lookup @name lowercase]] is a spellcaster. Its power system
       ability is Wisdom.</p>
     chat: ''
   source:
@@ -38,7 +38,7 @@ system:
   prerequisites:
     level: null
   properties: []
-  identifier: spellcasting
+  identifier: power system
 flags: {}
 img: icons/magic/light/projectiles-star-purple.webp
 effects: []

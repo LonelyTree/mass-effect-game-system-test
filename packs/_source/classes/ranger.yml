@@ -22,7 +22,7 @@ system:
       @UUID[Compendium.dnd5e.classfeatures.Item.8fbZt2Qh7ZttwIan]{Natural
       Explorer}</td></tr><tr><td>2nd</td><td>+2</td><td>@UUID[Compendium.dnd5e.classfeatures.Item.nJA3ISVmyj3uPRVM]{Fighting
       Style},
-      @UUID[Compendium.dnd5e.classfeatures.Item.u6xV3Ki3TXRrD7zg]{Spellcasting}</td></tr><tr><td>3rd</td><td>+2</td><td>@UUID[Compendium.dnd5e.classfeatures.Item.1dJHU48yNqn3lcfx]{Ranger
+      @UUID[Compendium.dnd5e.classfeatures.Item.u6xV3Ki3TXRrD7zg]{Power System}</td></tr><tr><td>3rd</td><td>+2</td><td>@UUID[Compendium.dnd5e.classfeatures.Item.1dJHU48yNqn3lcfx]{Ranger
       Archetype},
       @UUID[Compendium.dnd5e.classfeatures.Item.kaHcUGiwi8AtfZIm]{Primeval
       Awareness}</td></tr><tr><td>4th</td><td>+2</td><td>@UUID[Compendium.dnd5e.classfeatures.Item.s0Cc2zcX0JzIgam5]{Ability
@@ -463,7 +463,7 @@ system:
       value: {}
       level: 3
       title: Ranger Archetype
-  spellcasting:
+  power system:
     progression: half
     ability: wis
     preparation: {}

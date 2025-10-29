@@ -11,15 +11,15 @@ system:
   description:
     value: >-
       <p>You have dedicated yourself to the following sacred
-      role:</p><p><strong>Thaumaturge.</strong> You know one extra cantrip from
+      role:</p><p><strong>Thaumaturge.</strong> You know one extra basic power from
       the
       @UUID[Compendium.dnd5e.content24.JournalEntry.phbSpells0000000.JournalEntryPage.SkHptN2PTzFGDaEj]{Cleric
-      spell list}. In addition, your mystical connection to the divine gives you
+      power list}. In addition, your mystical connection to the divine gives you
       a bonus to your Intelligence (Arcana or Religion) checks. The bonus equals
       your Wisdom modifier (minimum of +1, currently [[lookup
       @abilities.wis.mod]]).</p><section id="secret-9NLpq7kfc33QLf8I"
       class="secret"><p><strong>Foundry Note</strong></p><p>This feature
-      includes an Active Effect which increases the number of cantrips you can
+      includes an Active Effect which increases the number of basic powers you can
       know and grants the bonus to your Intelligence (Arcana or Religion)
       checks.</p></section>
     chat: ''
@@ -45,7 +45,7 @@ effects:
     type: base
     system: {}
     changes:
-      - key: system.scale.cleric.cantrips-known.value
+      - key: system.scale.cleric.basic powers-known.value
         mode: 2
         value: '1'
         priority: null

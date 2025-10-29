@@ -5,7 +5,7 @@ img: ''
 system:
   currency:
     pp: 0
-    gp: 0
+    CR: 0
     ep: 0
     sp: 0
     cp: 0
@@ -303,15 +303,15 @@ system:
     attunement:
       max: 3
     senses:
-      darkvision: null
-      blindsight: null
-      tremorsense: null
-      truesight: null
+      scanner: null
+      thermal vision: null
+      motion sensor: null
+      radar ping: null
       units: null
       special: ''
-    spellcasting: int
+    power system: int
     exhaustion: 0
-    concentration:
+    maintained power:
       ability: ''
       roll:
         min: null
@@ -485,7 +485,7 @@ items:
           <p>On your later turns, you can take a Bonus Action to move the sword
           up to 30 feet to a spot you can see and repeat the attack against the
           same target or a different one. On a hit, the target takes Force
-          damage equal to 4d12 plus your spellcasting ability modifier.</p>
+          damage equal to 4d12 plus your power system ability modifier.</p>
         chat: ''
       activities:
         p8xJmrO4h7YKJW2P:
@@ -508,7 +508,7 @@ items:
             units: inst
             special: ''
             override: false
-            concentration: false
+            maintained power: false
           effects: []
           range:
             value: '5'

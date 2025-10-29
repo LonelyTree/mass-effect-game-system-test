@@ -25,8 +25,8 @@ system:
       performed.</p><p>If you or any of your companions damage a creature
       affected by this spell, the spell ends for that creature.</p><p><strong>At
       Higher Levels.</strong> When you cast this spell using a 7th-level spell
-      slot, the duration is 10 days. When you use an 8th-level spell slot, the
-      duration is 30 days. When you use a 9th-level spell slot, the duration is
+      slot, the duration is 10 days. When you use an 8th-level power use, the
+      duration is 30 days. When you use a 9th-level power use, the duration is
       a year and a day.</p>
     chat: ''
   source:
@@ -88,7 +88,7 @@ system:
         chatFlavor: ''
       duration:
         units: inst
-        concentration: false
+        maintained power: false
         override: false
       effects: []
       range:
@@ -107,7 +107,7 @@ system:
       save:
         ability: wis
         dc:
-          calculation: spellcasting
+          calculation: power system
           formula: ''
       uses:
         spent: 0

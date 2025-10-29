@@ -85,7 +85,7 @@ system:
         chatFlavor: ''
       duration:
         units: inst
-        concentration: false
+        maintained power: false
         override: false
       effects:
         - _id: bW6xZzK4dmulRmUT
@@ -130,7 +130,7 @@ system:
         chatFlavor: ''
       duration:
         units: day
-        concentration: false
+        maintained power: false
         override: true
         value: '10'
       effects:
@@ -164,7 +164,7 @@ system:
       save:
         ability: wis
         dc:
-          calculation: spellcasting
+          calculation: power system
           formula: ''
       name: Antipathy Save
       img: icons/magic/control/modfiy-luck-fortune-red.webp
@@ -186,7 +186,7 @@ system:
         chatFlavor: ''
       duration:
         units: day
-        concentration: false
+        maintained power: false
         override: true
         value: '10'
       effects:
@@ -219,7 +219,7 @@ system:
       save:
         ability: wis
         dc:
-          calculation: spellcasting
+          calculation: power system
           formula: ''
       name: Sympathy Save
       _id: J6kTEeQc2cCyfppj

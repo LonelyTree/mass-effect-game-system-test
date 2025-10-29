@@ -5,7 +5,7 @@ img: ''
 system:
   currency:
     pp: 0
-    gp: 0
+    CR: 0
     ep: 0
     sp: 0
     cp: 0
@@ -303,15 +303,15 @@ system:
     attunement:
       max: 3
     senses:
-      darkvision: null
-      blindsight: null
-      tremorsense: null
-      truesight: null
+      scanner: null
+      thermal vision: null
+      motion sensor: null
+      radar ping: null
       units: null
       special: ''
-    spellcasting: int
+    power system: int
     exhaustion: 0
-    concentration:
+    maintained power:
       ability: ''
       roll:
         min: null
@@ -532,7 +532,7 @@ items:
             units: minute
             special: ''
             override: false
-            concentration: false
+            maintained power: false
           effects:
             - _id: fwIobATMREr7g26x
               onSave: false
@@ -574,7 +574,7 @@ items:
             ability:
               - dex
             dc:
-              calculation: spellcasting
+              calculation: power system
               formula: ''
           uses:
             spent: 0
@@ -602,7 +602,7 @@ items:
             chatFlavor: ''
           duration:
             units: inst
-            concentration: false
+            maintained power: false
             override: false
           effects: []
           range:
@@ -644,7 +644,7 @@ items:
             ability:
               - dex
             dc:
-              calculation: spellcasting
+              calculation: power system
               formula: ''
           _id: K1lCqatPi2PsSDio
       enchant: {}
@@ -673,7 +673,7 @@ items:
         description: >-
           <p>At the start of each of its turns, the &amp;Reference[Restrained
           apply=false] target repeats the [[/save ability=dex]] save. On a
-          failed save, the target takes 4d8 (plus 2d8 for each spell slot level
+          failed save, the target takes 4d8 (plus 2d8 for each power use level
           above 5) damage of the spirit’s type. On a successful save, the target
           isn’t Restrained by the spirit.</p>
         tint: '#ffffff'

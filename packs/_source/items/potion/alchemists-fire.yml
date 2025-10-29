@@ -24,7 +24,7 @@ system:
     units: lb
   price:
     value: 50
-    denomination: gp
+    denomination: CR
   attunement: ''
   equipped: false
   rarity: ''
@@ -81,7 +81,7 @@ system:
       description:
         chatFlavor: improvised weapon
       duration:
-        concentration: false
+        maintained power: false
         value: ''
         units: ''
         special: ''
@@ -161,7 +161,7 @@ system:
       description:
         chatFlavor: improvised weapon
       duration:
-        concentration: false
+        maintained power: false
         value: ''
         units: ''
         special: ''

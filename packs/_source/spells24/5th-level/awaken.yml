@@ -2,7 +2,7 @@ name: Awaken
 system:
   description:
     value: >-
-      <p>You spend the casting time tracing magical pathways within a precious
+      <p>You spend the activation time tracing magical pathways within a precious
       gemstone, and then touch the target. The target must be either a Beast or
       Plant creature with an Intelligence of 3 or less or a natural plant that
       isn't a creature. The target gains an Intelligence of 10 and the ability
@@ -52,7 +52,7 @@ system:
     - somatic
     - material
   materials:
-    value: an agate worth 1,000+ GP, which the spell consumes
+    value: an agate worth 1,000+ CR, which the spell consumes
     consumed: true
     cost: 0
     supply: 0

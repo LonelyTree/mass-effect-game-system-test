@@ -8,7 +8,7 @@ system:
       Terrain.</p><p>When you cast this spell and at the end of each of your
       turns for the duration, each creature on the ground in the area makes a
       Dexterity saving throw. On a failed save, a creature has the
-      &amp;Reference[Prone] condition, and its Concentration is
+      &amp;Reference[Prone] condition, and its Maintained Power is
       broken.</p><p>You can also cause the effects
       below.</p><p><strong>Fissures.</strong> A total of [[/r 1d6]] fissures
       open in the spell's area at the end of the turn you cast it. You choose
@@ -67,7 +67,7 @@ system:
     - vocal
     - somatic
     - material
-    - concentration
+    - maintained power
   materials:
     value: a fractured rock
     consumed: false
@@ -93,7 +93,7 @@ system:
         chatFlavor: ''
       duration:
         units: inst
-        concentration: false
+        maintained power: false
         override: false
       effects: []
       range:
@@ -117,7 +117,7 @@ system:
       save:
         ability: dex
         dc:
-          calculation: spellcasting
+          calculation: power system
           formula: ''
       name: Cast
       img: icons/magic/sonic/explosion-shock-sound-wave.webp
@@ -139,7 +139,7 @@ system:
         chatFlavor: '[[1d6]] Fissure(s)<br>[[10 * 1d10]] Feet deep'
       duration:
         units: minute
-        concentration: false
+        maintained power: false
         override: true
         value: '1'
       effects: []
@@ -171,7 +171,7 @@ system:
       save:
         ability: dex
         dc:
-          calculation: spellcasting
+          calculation: power system
           formula: ''
       name: End of Turn Fissures
       img: icons/magic/earth/lava-stone-fire-eye.webp
@@ -193,7 +193,7 @@ system:
         chatFlavor: ''
       duration:
         units: inst
-        concentration: false
+        maintained power: false
         override: true
       effects:
         - _id: 6UanNy7OTib1zFSq
@@ -234,7 +234,7 @@ system:
       save:
         ability: dex
         dc:
-          calculation: spellcasting
+          calculation: power system
           formula: ''
       name: Collapsing Structure Save
       img: icons/environment/settlement/building-rubble.webp

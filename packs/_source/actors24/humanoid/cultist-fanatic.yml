@@ -5,7 +5,7 @@ img: null
 system:
   currency:
     pp: 0
-    gp: 0
+    CR: 0
     ep: 0
     sp: 0
     cp: 0
@@ -363,15 +363,15 @@ system:
     attunement:
       max: 3
     senses:
-      darkvision: null
-      blindsight: null
-      tremorsense: null
-      truesight: null
+      scanner: null
+      thermal vision: null
+      motion sensor: null
+      radar ping: null
       units: null
       special: ''
-    spellcasting: wis
+    power system: wis
     exhaustion: 0
-    concentration:
+    maintained power:
       ability: ''
       roll:
         min: null
@@ -583,7 +583,7 @@ items:
             chatFlavor: ''
           duration:
             units: inst
-            concentration: false
+            maintained power: false
             override: false
           effects: []
           range:
@@ -652,7 +652,7 @@ items:
         units: lb
       price:
         value: 0
-        denomination: gp
+        denomination: CR
       rarity: ''
       attunement: ''
       attuned: false
@@ -719,8 +719,8 @@ items:
       default: 0
     sort: 0
     _key: '!actors.items!mmCultistFanatic.mmPactBlade00000'
-  - _id: mmSpellcasting00
-    name: Spellcasting
+  - _id: mmPower System00
+    name: Power System
     type: feat
     system:
       type:
@@ -744,7 +744,7 @@ items:
             chatFlavor: ''
           duration:
             units: inst
-            concentration: false
+            maintained power: false
             override: false
           range:
             override: false
@@ -767,7 +767,7 @@ items:
               override: false
             level: null
             properties: []
-            spellbook: true
+            power list: true
             uuid: Compendium.dnd5e.spells24.Item.phbsplLight00000
             ability: ''
           name: ''
@@ -781,7 +781,7 @@ items:
               override: false
             level: null
             properties: []
-            spellbook: true
+            power list: true
             ability: ''
           _id: onvTWamS398c51Rq
           sort: 0
@@ -798,7 +798,7 @@ items:
             chatFlavor: ''
           duration:
             units: inst
-            concentration: false
+            maintained power: false
             override: false
           range:
             override: false
@@ -825,7 +825,7 @@ items:
               override: false
             level: 1
             properties: []
-            spellbook: true
+            power list: true
             ability: ''
           _id: NsBX7tBXlDfi2BWV
           sort: 0
@@ -845,7 +845,7 @@ items:
             chatFlavor: ''
           duration:
             units: inst
-            concentration: false
+            maintained power: false
             override: false
           range:
             override: false
@@ -874,7 +874,7 @@ items:
               override: false
             level: 2
             properties: []
-            spellbook: true
+            power list: true
             ability: ''
           _id: RmN0E36r5loY1n21
           sort: 0
@@ -894,7 +894,7 @@ items:
             chatFlavor: ''
           duration:
             units: inst
-            concentration: false
+            maintained power: false
             override: false
           range:
             override: false
@@ -920,7 +920,7 @@ items:
       description:
         value: >-
           <p class="feature">The [[lookup @name lowercase]] casts one of the
-          following spells, using Wisdom as the spellcasting ability (spell save
+          following spells, using Wisdom as the power system ability (spell save
           DC [[lookup @attributes.spell.dc]], +4 to hit with spell
           attacks):</p><p class="feature-trait"><strong>At Will:</strong>
           <em>@UUID[Compendium.dnd5e.spells24.Item.phbsplLight00000]{Light}</em>,
@@ -931,7 +931,7 @@ items:
           <em>@UUID[Compendium.dnd5e.spells24.Item.phbsplHoldPerson]{Hold
           Person}</em></p>
         chat: ''
-      identifier: spellcasting
+      identifier: power system
       source:
         revision: 1
         rules: '2024'
@@ -955,7 +955,7 @@ items:
           activity: []
           effect: []
     _stats:
-      compendiumSource: Compendium.dnd-monster-manual.features.Item.mmSpellcasting00
+      compendiumSource: Compendium.dnd-monster-manual.features.Item.mmPower System00
       duplicateSource: null
       coreVersion: '13.344'
       systemId: dnd5e
@@ -967,7 +967,7 @@ items:
     ownership:
       default: 0
     sort: 1
-    _key: '!actors.items!mmCultistFanatic.mmSpellcasting00'
+    _key: '!actors.items!mmCultistFanatic.mmPower System00'
   - _id: mmSpiritualWeapo
     name: Spiritual Weapon
     type: feat
@@ -984,7 +984,7 @@ items:
               override: false
             level: 2
             properties: []
-            spellbook: true
+            power list: true
             ability: ''
           _id: X8EhZV0KcZv64V4J
           sort: 0
@@ -1005,7 +1005,7 @@ items:
             chatFlavor: ''
           duration:
             units: inst
-            concentration: false
+            maintained power: false
             override: false
           range:
             override: false
@@ -1032,8 +1032,8 @@ items:
         value: >-
           <p class="feature">The [[lookup @name lowercase]] casts the
           <em>@UUID[Compendium.dnd5e.spells24.Item.phbsplSpiritualW]{Spiritual
-          Weapon}</em> spell, using the same spellcasting ability as
-          Spellcasting.</p>
+          Weapon}</em> spell, using the same power system ability as
+          Power System.</p>
         chat: ''
       identifier: spiritual-weapon
       source:
@@ -1082,7 +1082,7 @@ items:
           your choice and lasts for the duration. The force appears within range
           in a space of your choice, and you can immediately make one melee
           spell attack against one creature within 5 feet of the force. On a
-          hit, the target takes Force damage equal to 1d8 plus your spellcasting
+          hit, the target takes Force damage equal to 1d8 plus your power system
           ability modifier.</p><p>As a Bonus Action on your later turns, you can
           move the force up to 20 feet and repeat the attack against a creature
           within 5 feet of it.</p><p><strong>Using a Higher-Level Spell
@@ -1125,7 +1125,7 @@ items:
       properties:
         - vocal
         - somatic
-        - concentration
+        - maintained power
       materials:
         value: ''
         consumed: false
@@ -1153,7 +1153,7 @@ items:
           duration:
             units: inst
             override: false
-            concentration: false
+            maintained power: false
           range:
             override: false
           target:
@@ -1334,7 +1334,7 @@ items:
             chatFlavor: ''
           duration:
             units: inst
-            concentration: false
+            maintained power: false
             override: false
           range:
             override: false
@@ -1391,7 +1391,7 @@ items:
         name: Spell Changes
         img: systems/dnd5e/icons/svg/activity/cast.svg
         origin: >-
-          Compendium.dnd5e.actors24.Actor.mmCultistFanatic.Item.mmSpellcasting00.Activity.3MkhXZwZstyLUC3q
+          Compendium.dnd5e.actors24.Actor.mmCultistFanatic.Item.mmPower System00.Activity.3MkhXZwZstyLUC3q
         changes: []
         system: {}
         disabled: false
@@ -1427,7 +1427,7 @@ items:
       default: 0
     flags:
       dnd5e:
-        cachedFor: .Item.mmSpellcasting00.Activity.3MkhXZwZstyLUC3q
+        cachedFor: .Item.mmPower System00.Activity.3MkhXZwZstyLUC3q
     _stats:
       compendiumSource: Compendium.dnd5e.spells24.Item.phbsplLight00000
       duplicateSource: null
@@ -1520,7 +1520,7 @@ items:
             chatFlavor: ''
           duration:
             units: inst
-            concentration: false
+            maintained power: false
             override: false
           effects: []
           range:
@@ -1552,7 +1552,7 @@ items:
         name: Spell Changes
         img: systems/dnd5e/icons/svg/activity/cast.svg
         origin: >-
-          Compendium.dnd5e.actors24.Actor.mmCultistFanatic.Item.mmSpellcasting00.Activity.onvTWamS398c51Rq
+          Compendium.dnd5e.actors24.Actor.mmCultistFanatic.Item.mmPower System00.Activity.onvTWamS398c51Rq
         changes: []
         system: {}
         disabled: false
@@ -1591,7 +1591,7 @@ items:
         riders:
           activity: []
           effect: []
-        cachedFor: .Item.mmSpellcasting00.Activity.onvTWamS398c51Rq
+        cachedFor: .Item.mmPower System00.Activity.onvTWamS398c51Rq
     _stats:
       compendiumSource: Compendium.dnd5e.spells24.Item.phbsplThaumaturg
       duplicateSource: null
@@ -1620,8 +1620,8 @@ items:
           means.</p><p><strong>Grovel.</strong> The target has the Prone
           condition and then ends its turn.</p><p><strong>Halt.</strong> On its
           turn, the target doesn't move and takes no action or Bonus
-          Action.</p><p><strong>Using a Higher-Level Spell Slot.</strong> You
-          can affect one additional creature for each spell slot level above
+          Action.</p><p><strong>Using a Higher-Level Power Use.</strong> You
+          can affect one additional creature for each power use level above
           1.</p>
         chat: ''
       source:
@@ -1686,7 +1686,7 @@ items:
           duration:
             units: inst
             override: false
-            concentration: false
+            maintained power: false
           effects: []
           range:
             override: false
@@ -1705,7 +1705,7 @@ items:
             ability:
               - wis
             dc:
-              calculation: spellcasting
+              calculation: power system
               formula: ''
           uses:
             spent: 0
@@ -1720,7 +1720,7 @@ items:
         name: Spell Changes
         img: systems/dnd5e/icons/svg/activity/cast.svg
         origin: >-
-          Compendium.dnd5e.actors24.Actor.mmCultistFanatic.Item.mmSpellcasting00.Activity.NsBX7tBXlDfi2BWV
+          Compendium.dnd5e.actors24.Actor.mmCultistFanatic.Item.mmPower System00.Activity.NsBX7tBXlDfi2BWV
         changes: []
         system: {}
         disabled: false
@@ -1756,7 +1756,7 @@ items:
       default: 0
     flags:
       dnd5e:
-        cachedFor: .Item.mmSpellcasting00.Activity.NsBX7tBXlDfi2BWV
+        cachedFor: .Item.mmPower System00.Activity.NsBX7tBXlDfi2BWV
     _stats:
       compendiumSource: Compendium.dnd5e.spells24.Item.phbsplCommand000
       duplicateSource: null
@@ -1772,7 +1772,7 @@ items:
   - name: Hold Person
     system:
       description:
-        value: "<p>Choose a Humanoid that you can see within range. The target must succeed on a Wisdom saving throw or have the &amp;Reference[paralyzed apply=false] condition for the duration. At the end of each of its turns, the target repeats the save, ending the spell on itself on a success.</p><p><strong>Using a Higher-Level Spell Slot.</strong> You can target one additional Humanoid for each spell slot level above\_2.</p>"
+        value: "<p>Choose a Humanoid that you can see within range. The target must succeed on a Wisdom saving throw or have the &amp;Reference[paralyzed apply=false] condition for the duration. At the end of each of its turns, the target repeats the save, ending the spell on itself on a success.</p><p><strong>Using a Higher-Level Power Use.</strong> You can target one additional Humanoid for each power use level above\_2.</p>"
         chat: ''
       source:
         custom: ''
@@ -1808,7 +1808,7 @@ items:
         - vocal
         - somatic
         - material
-        - concentration
+        - maintained power
       materials:
         value: a straight piece of iron
         consumed: false
@@ -1836,7 +1836,7 @@ items:
           duration:
             units: inst
             override: false
-            concentration: false
+            maintained power: false
           effects:
             - _id: PklwZi3SKQ3JU2M2
               onSave: false
@@ -1857,7 +1857,7 @@ items:
             ability:
               - wis
             dc:
-              calculation: spellcasting
+              calculation: power system
               formula: ''
           uses:
             spent: 0
@@ -1909,7 +1909,7 @@ items:
         name: Spell Changes
         img: systems/dnd5e/icons/svg/activity/cast.svg
         origin: >-
-          Compendium.dnd5e.actors24.Actor.mmCultistFanatic.Item.mmSpellcasting00.Activity.RmN0E36r5loY1n21
+          Compendium.dnd5e.actors24.Actor.mmCultistFanatic.Item.mmPower System00.Activity.RmN0E36r5loY1n21
         changes: []
         system: {}
         disabled: false
@@ -1945,7 +1945,7 @@ items:
       default: 0
     flags:
       dnd5e:
-        cachedFor: .Item.mmSpellcasting00.Activity.RmN0E36r5loY1n21
+        cachedFor: .Item.mmPower System00.Activity.RmN0E36r5loY1n21
     _stats:
       compendiumSource: Compendium.dnd5e.spells24.Item.phbsplHoldPerson
       duplicateSource: null

@@ -15,7 +15,7 @@ system:
       you, it acts and moves as it likes, focusing on protecting
       itself.</p><p>You can command the target to take a Reaction but must take
       your own Reaction to do so.</p><p><strong>Using a Higher-Level Spell
-      Slot.</strong> Your Concentration can last longer with a level 9 spell
+      Slot.</strong> Your Maintained Power can last longer with a level 9 spell
       slot (up to 8 hours).</p>
     chat: ''
   source:
@@ -53,7 +53,7 @@ system:
   properties:
     - vocal
     - somatic
-    - concentration
+    - maintained power
   materials:
     value: ''
     consumed: false
@@ -79,7 +79,7 @@ system:
         chatFlavor: ''
       duration:
         units: inst
-        concentration: false
+        maintained power: false
         override: false
       effects:
         - _id: aAbTb2vkRQiBp9Oz
@@ -104,7 +104,7 @@ system:
       save:
         ability: wis
         dc:
-          calculation: spellcasting
+          calculation: power system
           formula: ''
       name: ''
       img: ''

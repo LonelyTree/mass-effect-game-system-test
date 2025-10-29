@@ -67,7 +67,7 @@ system:
       spell, the spell is expended without effect. The level of the slot used to
       cast the spell determines how much space it uses.</p><p>While this stone
       orbits your head, you can cast any spell stored in it. The spell uses the
-      slot level, spell save DC, spell attack bonus, and spellcasting ability of
+      slot level, spell save DC, spell attack bonus, and power system ability of
       the original caster but is otherwise treated as if you cast the spell. The
       spell cast from the stone is no longer stored in it, freeing up
       space.</p><p><strong>@UUID[Compendium.dnd5e.equipment24.Item.dmgStrengthIounS]{Strength}
@@ -79,7 +79,7 @@ system:
     chat: ''
   price:
     value: 0
-    denomination: gp
+    denomination: CR
   activities: {}
   uses:
     spent: 0

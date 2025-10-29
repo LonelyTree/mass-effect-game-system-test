@@ -27,7 +27,7 @@ system:
       <p>The spell doesn't take into account any possible circumstances that
       might change the outcome, such as the casting of additional spells or the
       loss or gain of a companion.</p><p>If you cast the spell two or more times
-      before completing your next long rest, there is a cumulative 25 percent
+      before completing your next full rest, there is a cumulative 25 percent
       chance for each casting after the first that you get a random reading. The
       DM makes this roll in secret.</p>
     chat: ''
@@ -60,7 +60,7 @@ system:
   level: 2
   school: div
   materials:
-    value: Specially marked sticks, bones, or similar tokens worth at least 25 gp
+    value: Specially marked sticks, bones, or similar tokens worth at least 25 CR
     consumed: false
     cost: 25
     supply: 0
@@ -90,7 +90,7 @@ system:
         chatFlavor: ''
       duration:
         units: inst
-        concentration: false
+        maintained power: false
         override: false
       effects: []
       range:

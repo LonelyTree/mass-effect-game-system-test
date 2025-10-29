@@ -12,10 +12,10 @@ system:
       Divinity effect options. Each time you use this class's Channel Divinity,
       you choose which effect from this class to create.</p><p>You can use this
       class's Channel Divinity twice. You regain one of its expended uses when
-      you finish a Short Rest, and you regain all expended uses when you finish
-      a Long Rest. You gain an additional use when you reach Paladin level
+      you finish a Field Rest, and you regain all expended uses when you finish
+      a Full Rest. You gain an additional use when you reach Paladin level
       11.</p><p>If a Channel Divinity effect requires a saving throw, the DC
-      equals the spell save DC from this class's Spellcasting
+      equals the spell save DC from this class's Power System
       feature.</p><p><strong>Divine Sense.</strong> As a Bonus Action, you can
       open your awareness to detect Celestials, Fiends, and Undead. For the next
       10 minutes or until you have the Incapacitated condition, you know the
@@ -77,7 +77,7 @@ system:
         chatFlavor: ''
       duration:
         units: inst
-        concentration: false
+        maintained power: false
         override: false
       effects:
         - _id: hr8wnlgs3uXphCnI

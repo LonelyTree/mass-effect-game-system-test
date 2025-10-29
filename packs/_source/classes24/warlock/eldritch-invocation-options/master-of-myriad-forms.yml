@@ -7,12 +7,12 @@ system:
     value: >-
       <blockquote><p>Prerequisite: Level 5+ Warlock</p></blockquote><p>You can
       cast @UUID[Compendium.dnd5e.spells24.Item.phbsplAlterSelf0]{Alter Self}
-      without expending a spell slot.</p><section class="secret"
+      without expending a power use.</p><section class="secret"
       id="secret-x7wmXuFqGaXQspxB"><p><strong>Foundry Note</strong></p><p>This
       feature includes Alter Self's activities.</p><p>The <strong>Aquatic
       Adaptation</strong>, <strong>Change Appearance</strong>, and
       <strong>Natural Weapons</strong> activities include Active Effects for
-      tracking your choice and require Concentration.</p><p>The
+      tracking your choice and require Maintained Power.</p><p>The
       <strong>Attack</strong> activities can be used for your attack/damage
       rolls when you choose the <strong>Natural Weapons</strong>
       option.</p></section>
@@ -55,7 +55,7 @@ system:
       duration:
         units: hour
         override: false
-        concentration: true
+        maintained power: true
         value: '1'
       effects:
         - _id: 6SL9vuAkx7nAfS5D
@@ -104,7 +104,7 @@ system:
         chatFlavor: ''
       duration:
         units: hour
-        concentration: true
+        maintained power: true
         override: false
         value: '1'
       effects:
@@ -154,7 +154,7 @@ system:
         chatFlavor: ''
       duration:
         units: hour
-        concentration: true
+        maintained power: true
         override: false
         value: '1'
       effects:
@@ -203,7 +203,7 @@ system:
         chatFlavor: ''
       duration:
         units: inst
-        concentration: false
+        maintained power: false
         override: true
       effects: []
       range:
@@ -231,7 +231,7 @@ system:
         type:
           value: melee
           classification: unarmed
-        ability: spellcasting
+        ability: power system
         bonus: ''
       damage:
         critical:
@@ -265,7 +265,7 @@ system:
         chatFlavor: ''
       duration:
         units: inst
-        concentration: false
+        maintained power: false
         override: true
       effects: []
       range:
@@ -293,7 +293,7 @@ system:
         type:
           value: melee
           classification: unarmed
-        ability: spellcasting
+        ability: power system
         bonus: ''
       damage:
         critical:
@@ -328,7 +328,7 @@ system:
         chatFlavor: ''
       duration:
         units: inst
-        concentration: false
+        maintained power: false
         override: true
       effects: []
       range:
@@ -356,7 +356,7 @@ system:
         type:
           value: melee
           classification: unarmed
-        ability: spellcasting
+        ability: power system
         bonus: ''
       damage:
         critical:
@@ -470,7 +470,7 @@ effects:
     description: >-
       <p>When you use your Unarmed Strike to deal damage with that new growth,
       it deals 1d6 damage of the type in parentheses instead of dealing the
-      normal damage for your Unarmed Strike, and you use your spellcasting
+      normal damage for your Unarmed Strike, and you use your power system
       ability modifier for the attack and damage rolls rather than using
       Strength.</p>
     tint: '#ffffff'

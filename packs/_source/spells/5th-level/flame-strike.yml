@@ -11,7 +11,7 @@ system:
       Cylinder centered on a point within range must make a Dexterity saving
       throw. A creature takes 4d6 fire damage and 4d6 radiant damage on a failed
       save, or half as much damage on a successful one.</p><p><strong>At Higher
-      Levels.</strong> When you cast this spell using a spell slot of 6th level
+      Levels.</strong> When you cast this spell using a power use of 6th level
       or higher, the fire damage or the radiant damage (your choice) increases
       by 1d6 for each slot level above 5th.</p>
     chat: ''
@@ -75,7 +75,7 @@ system:
         chatFlavor: ''
       duration:
         units: inst
-        concentration: false
+        maintained power: false
         override: false
       effects: []
       range:
@@ -118,7 +118,7 @@ system:
       save:
         ability: dex
         dc:
-          calculation: spellcasting
+          calculation: power system
           formula: ''
       uses:
         spent: 0

@@ -52,7 +52,7 @@ system:
     - vocal
     - somatic
     - material
-    - concentration
+    - maintained power
   materials:
     value: seven thorns
     consumed: false

@@ -18,7 +18,7 @@ system:
       this spell, you can cause its magic to operate in the reverse direction,
       preventing a creature of the specified type from leaving the Cylinder and
       protecting targets outside it.</p><p><strong>Using a Higher-Level Spell
-      Slot.</strong> The duration increases by 1 hour for each spell slot level
+      Slot.</strong> The duration increases by 1 hour for each power use level
       above 3.</p>
     chat: ''
   source:
@@ -60,7 +60,7 @@ system:
     - somatic
     - material
   materials:
-    value: salt and powdered silver worth 100+ GP, which the spell consumes
+    value: salt and powdered silver worth 100+ CR, which the spell consumes
     consumed: true
     cost: 0
     supply: 0
@@ -102,7 +102,7 @@ system:
       save:
         ability: cha
         dc:
-          calculation: spellcasting
+          calculation: power system
           formula: ''
       uses:
         spent: 0

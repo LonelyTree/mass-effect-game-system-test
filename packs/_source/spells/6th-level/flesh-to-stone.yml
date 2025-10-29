@@ -18,7 +18,7 @@ system:
       successes and failures don't need to be consecutive; keep track of both
       until the target collects three of a kind.</p><p>If the creature is
       physically broken while Petrified, it suffers from similar deformities if
-      it reverts to its original state.</p><p>If you maintain your Concentration
+      it reverts to its original state.</p><p>If you maintain your Maintained Power
       on this spell for the entire possible Duration, the creature is turned to
       stone until the effect is removed.</p>
     chat: ''
@@ -64,7 +64,7 @@ system:
     - vocal
     - somatic
     - material
-    - concentration
+    - maintained power
   activities:
     dnd5eactivity000:
       _id: dnd5eactivity000
@@ -83,7 +83,7 @@ system:
         chatFlavor: ''
       duration:
         units: inst
-        concentration: false
+        maintained power: false
         override: false
       effects:
         - _id: mVqFBzC5qYpFnZFV
@@ -104,7 +104,7 @@ system:
       save:
         ability: con
         dc:
-          calculation: spellcasting
+          calculation: power system
           formula: ''
       uses:
         spent: 0

@@ -7,7 +7,7 @@ system:
   description:
     value: >-
       <p>At 20th level, you regain 4 expended sorcery points whenever you finish
-      a short rest.</p>
+      a field rest.</p>
     chat: ''
   source:
     custom: ''
@@ -42,7 +42,7 @@ system:
       description:
         chatFlavor: ''
       duration:
-        concentration: false
+        maintained power: false
         value: ''
         units: ''
         special: ''

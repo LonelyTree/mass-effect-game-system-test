@@ -15,7 +15,7 @@ system:
     chat: ''
   price:
     value: 4000
-    denomination: gp
+    denomination: CR
   activities:
     rPlK5AnTnpxdcU5o:
       type: summon
@@ -39,7 +39,7 @@ system:
         chatFlavor: ''
       duration:
         units: hour
-        concentration: false
+        maintained power: false
         override: false
         value: '24'
       effects: []

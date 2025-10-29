@@ -5,7 +5,7 @@ img: null
 system:
   currency:
     pp: 0
-    gp: 0
+    CR: 0
     ep: 0
     sp: 0
     cp: 0
@@ -363,15 +363,15 @@ system:
     attunement:
       max: 3
     senses:
-      darkvision: 60
-      blindsight: null
-      tremorsense: null
-      truesight: null
+      scanner: 60
+      thermal vision: null
+      motion sensor: null
+      radar ping: null
       units: null
       special: ''
-    spellcasting: str
+    power system: str
     exhaustion: 0
-    concentration:
+    maintained power:
       ability: ''
       roll:
         min: null
@@ -575,7 +575,7 @@ items:
         chat: ''
       price:
         value: 50
-        denomination: gp
+        denomination: CR
       source:
         custom: ''
         rules: '2024'
@@ -660,7 +660,7 @@ items:
           description:
             chatFlavor: ''
           duration:
-            concentration: false
+            maintained power: false
             value: ''
             units: inst
             special: ''
@@ -752,7 +752,7 @@ items:
         chat: ''
       price:
         value: 50
-        denomination: gp
+        denomination: CR
       source:
         custom: ''
         rules: '2024'
@@ -838,7 +838,7 @@ items:
           description:
             chatFlavor: ''
           duration:
-            concentration: false
+            maintained power: false
             value: ''
             units: inst
             special: ''
@@ -931,7 +931,7 @@ items:
         chat: ''
       price:
         value: 750
-        denomination: gp
+        denomination: CR
       source:
         custom: ''
         rules: '2024'
@@ -1023,7 +1023,7 @@ items:
             chatFlavor: ''
           duration:
             units: perm
-            concentration: false
+            maintained power: false
             override: false
           effects: []
           range:
@@ -1133,7 +1133,7 @@ items:
             chatFlavor: ''
           duration:
             units: inst
-            concentration: false
+            maintained power: false
             override: false
           effects: []
           range:

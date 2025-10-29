@@ -27,7 +27,7 @@ system:
         chatFlavor: ''
       duration:
         units: inst
-        concentration: false
+        maintained power: false
         override: false
       range:
         override: false
@@ -50,7 +50,7 @@ system:
           override: false
         level: '3'
         properties: []
-        spellbook: true
+        power list: true
         uuid: Compendium.dnd5e.spells24.Item.phbsplCounterspe
         ability: ''
       name: ''
@@ -76,7 +76,7 @@ system:
         chatFlavor: ''
       duration:
         units: inst
-        concentration: false
+        maintained power: false
         override: false
       range:
         override: false
@@ -99,7 +99,7 @@ system:
           override: false
         level: '1'
         properties: []
-        spellbook: true
+        power list: true
         uuid: Compendium.dnd5e.spells24.Item.phbsplShield0000
         ability: ''
       name: ''
@@ -116,8 +116,8 @@ system:
       <em>@UUID[Compendium.dnd5e.spells24.Item.phbsplCounterspe]{Counterspell}</em>
       or
       <em>@UUID[Compendium.dnd5e.spells24.Item.phbsplShield0000]{Shield}</em>
-      in response to the spell's trigger, using the same spellcasting ability as
-      Spellcasting.</p>
+      in response to the spell's trigger, using the same power system ability as
+      Power System.</p>
     chat: ''
   identifier: protective-magic
   source:

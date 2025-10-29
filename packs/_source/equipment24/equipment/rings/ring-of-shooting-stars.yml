@@ -18,7 +18,7 @@ system:
           - vocal
           - somatic
           - material
-        spellbook: true
+        power list: true
       _id: 745v4uo4m3ghldT9
       sort: 0
       activation:
@@ -37,7 +37,7 @@ system:
         chatFlavor: ''
       duration:
         units: inst
-        concentration: false
+        maintained power: false
         override: false
       range:
         override: false
@@ -80,7 +80,7 @@ system:
         chatFlavor: ''
       duration:
         units: minute
-        concentration: true
+        maintained power: true
         override: false
         value: '1'
       effects: []
@@ -133,7 +133,7 @@ system:
         chatFlavor: ''
       duration:
         units: inst
-        concentration: false
+        maintained power: false
         override: false
       effects: []
       range:
@@ -192,7 +192,7 @@ system:
         chatFlavor: ''
       duration:
         units: inst
-        concentration: false
+        maintained power: false
         override: false
       effects: []
       range:
@@ -257,7 +257,7 @@ system:
       expend 2 charges as a Magic action to create up to four 3-foot-diameter
       spheres of lightning.</p><p>Each sphere appears in an unoccupied space you
       can see within 120 feet of yourself. The spheres last as long as you
-      maintain Concentration, up to 1 minute. Each sphere sheds Dim Light in a
+      maintain Maintained Power, up to 1 minute. Each sphere sheds Dim Light in a
       30-foot radius.</p><p>As a Bonus Action, you can move each sphere up to 30
       feet, but no farther than 120 feet away from yourself. The first time the
       sphere comes within 5 feet of a creature other than you that isn't behind
@@ -301,7 +301,7 @@ system:
     units: lb
   price:
     value: 40000
-    denomination: gp
+    denomination: CR
   rarity: veryRare
   attunement: required
   attuned: false

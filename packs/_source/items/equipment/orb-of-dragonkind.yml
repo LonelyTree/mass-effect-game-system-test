@@ -109,7 +109,7 @@ system:
     units: lb
   price:
     value: 500000
-    denomination: gp
+    denomination: CR
   attunement: required
   equipped: false
   rarity: artifact
@@ -168,7 +168,7 @@ system:
       description:
         chatFlavor: ''
       duration:
-        concentration: false
+        maintained power: false
         value: ''
         units: ''
         special: ''
@@ -226,7 +226,7 @@ system:
       description:
         chatFlavor: ''
       duration:
-        concentration: false
+        maintained power: false
         value: ''
         units: ''
         special: ''

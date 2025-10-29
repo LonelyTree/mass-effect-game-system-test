@@ -7,7 +7,7 @@ system:
   description:
     value: >-
       <p>Your blessed touch can heal wounds. You have a pool of healing power
-      that replenishes when you finish a Long Rest. With that pool, you can
+      that replenishes when you finish a Full Rest. With that pool, you can
       restore a total number of Hit Points equal to five times your Paladin
       level.</p><p>As a Bonus Action, you can touch a creature (which could be
       yourself) and draw power from the pool of healing to restore a number of
@@ -66,7 +66,7 @@ system:
         chatFlavor: ''
       duration:
         units: inst
-        concentration: false
+        maintained power: false
         override: false
       effects: []
       range:
@@ -125,7 +125,7 @@ system:
         chatFlavor: ''
       duration:
         units: inst
-        concentration: false
+        maintained power: false
         override: false
       effects: []
       range:

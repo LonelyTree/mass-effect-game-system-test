@@ -13,7 +13,7 @@ system:
       good or neutral) or 3d8 Necrotic damage (if you are evil). On a successful
       save, the creature takes half as much damage. A creature makes this save
       only once per turn.</p><p><strong>Using a Higher-Level Spell
-      Slot.</strong> The damage increases by 1d8 for each spell slot level above
+      Slot.</strong> The damage increases by 1d8 for each power use level above
       3.</p>
     chat: ''
   source:
@@ -53,7 +53,7 @@ system:
     - vocal
     - somatic
     - material
-    - concentration
+    - maintained power
   materials:
     value: a prayer scroll
     consumed: false
@@ -121,7 +121,7 @@ system:
       save:
         ability: wis
         dc:
-          calculation: spellcasting
+          calculation: power system
           formula: ''
       uses:
         spent: 0
@@ -149,7 +149,7 @@ system:
       description: {}
       duration:
         units: inst
-        concentration: false
+        maintained power: false
         override: false
       effects: []
       range:

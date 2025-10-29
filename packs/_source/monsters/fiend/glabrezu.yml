@@ -1,4 +1,4 @@
-_id: OGPHF4sCVOAi87TU
+_id: OCRHF4sCVOAi87TU
 name: Glabrezu
 type: npc
 img: null
@@ -75,15 +75,15 @@ system:
     attunement:
       max: 3
     senses:
-      darkvision: 0
-      blindsight: 0
-      tremorsense: 0
-      truesight: 120
+      scanner: 0
+      thermal vision: 0
+      motion sensor: 0
+      radar ping: 120
       units: ft
       special: ''
-    spellcasting: int
+    power system: int
     exhaustion: 0
-    concentration:
+    maintained power:
       ability: ''
       roll:
         min: null
@@ -158,7 +158,7 @@ system:
       bypasses: []
   currency:
     pp: 0
-    gp: 0
+    CR: 0
     ep: 0
     sp: 0
     cp: 0
@@ -497,13 +497,13 @@ prototypeToken:
   movementAction: null
 items:
   - _id: 9kqiKxbLXk7Ved3q
-    name: Innate Spellcasting
+    name: Innate Power System
     type: feat
     img: icons/magic/light/projectiles-star-purple.webp
     system:
       description:
         value: >-
-          <p>The glabrezu's spellcasting ability is Intelligence (spell save DC
+          <p>The glabrezu's power system ability is Intelligence (spell save DC
           16). The glabrezu can innately cast the following spells, requiring no
           material components:</p>
 
@@ -535,7 +535,7 @@ items:
       enchant: {}
       prerequisites:
         level: null
-      identifier: innate-spellcasting
+      identifier: innate-power system
     effects: []
     folder: null
     sort: 0
@@ -552,7 +552,7 @@ items:
       modifiedTime: 1745447015765
       lastModifiedBy: dnd5ebuilder0000
       exportSource: null
-    _key: '!actors.items!OGPHF4sCVOAi87TU.9kqiKxbLXk7Ved3q'
+    _key: '!actors.items!OCRHF4sCVOAi87TU.9kqiKxbLXk7Ved3q'
   - _id: 7a3DRiT1Ku9AnAQO
     name: Magic Resistance
     type: feat
@@ -600,7 +600,7 @@ items:
       modifiedTime: 1747956600586
       lastModifiedBy: dnd5ebuilder0000
       exportSource: null
-    _key: '!actors.items!OGPHF4sCVOAi87TU.7a3DRiT1Ku9AnAQO'
+    _key: '!actors.items!OCRHF4sCVOAi87TU.7a3DRiT1Ku9AnAQO'
   - _id: MCquBpEbQDXKRAju
     name: Multiattack
     type: feat
@@ -647,7 +647,7 @@ items:
           description:
             chatFlavor: ''
           duration:
-            concentration: false
+            maintained power: false
             value: ''
             units: ''
             special: ''
@@ -703,7 +703,7 @@ items:
       modifiedTime: 1745273656076
       lastModifiedBy: dnd5ebuilder0000
       exportSource: null
-    _key: '!actors.items!OGPHF4sCVOAi87TU.MCquBpEbQDXKRAju'
+    _key: '!actors.items!OCRHF4sCVOAi87TU.MCquBpEbQDXKRAju'
   - _id: pEUD99mri5iDNGH7
     name: Pincer
     type: weapon
@@ -731,7 +731,7 @@ items:
         units: lb
       price:
         value: 0
-        denomination: gp
+        denomination: CR
       attunement: ''
       equipped: true
       rarity: ''
@@ -807,7 +807,7 @@ items:
           description:
             chatFlavor: ''
           duration:
-            concentration: false
+            maintained power: false
             value: ''
             units: ''
             special: ''
@@ -873,7 +873,7 @@ items:
       modifiedTime: 1745107551551
       lastModifiedBy: dnd5ebuilder0000
       exportSource: null
-    _key: '!actors.items!OGPHF4sCVOAi87TU.pEUD99mri5iDNGH7'
+    _key: '!actors.items!OCRHF4sCVOAi87TU.pEUD99mri5iDNGH7'
   - _id: VGFZM2Zvp0NT5Yb9
     name: Fist
     type: weapon
@@ -895,7 +895,7 @@ items:
         units: lb
       price:
         value: 0
-        denomination: gp
+        denomination: CR
       attunement: ''
       equipped: true
       rarity: ''
@@ -970,7 +970,7 @@ items:
           description:
             chatFlavor: ''
           duration:
-            concentration: false
+            maintained power: false
             value: ''
             units: ''
             special: ''
@@ -1036,7 +1036,7 @@ items:
       modifiedTime: 1745107551551
       lastModifiedBy: dnd5ebuilder0000
       exportSource: null
-    _key: '!actors.items!OGPHF4sCVOAi87TU.VGFZM2Zvp0NT5Yb9'
+    _key: '!actors.items!OCRHF4sCVOAi87TU.VGFZM2Zvp0NT5Yb9'
   - _id: S7VbUetIfVT7B6Eq
     name: Darkness
     ownership:
@@ -1047,7 +1047,7 @@ items:
         value: >-
           <p>Magical darkness spreads from a point you choose within range to
           fill a 15-foot-radius sphere for the duration. The darkness spreads
-          around corners. A creature with darkvision can't see through this
+          around corners. A creature with scanner can't see through this
           darkness, and nonmagical light can't illuminate it.</p><p>If the point
           you choose is on an object you are holding or one that isn't being
           worn or carried, the darkness emanates from the object and moves with
@@ -1098,7 +1098,7 @@ items:
       properties:
         - vocal
         - material
-        - concentration
+        - maintained power
       activities:
         dnd5eactivity000:
           _id: dnd5eactivity000
@@ -1117,7 +1117,7 @@ items:
             chatFlavor: ''
           duration:
             units: inst
-            concentration: false
+            maintained power: false
             override: false
           effects: []
           range:
@@ -1156,7 +1156,7 @@ items:
       modifiedTime: null
       lastModifiedBy: null
       exportSource: null
-    _key: '!actors.items!OGPHF4sCVOAi87TU.S7VbUetIfVT7B6Eq'
+    _key: '!actors.items!OCRHF4sCVOAi87TU.S7VbUetIfVT7B6Eq'
   - _id: ghXTfe7sgCbgf1Q8
     name: Detect Magic
     ownership:
@@ -1215,7 +1215,7 @@ items:
         - vocal
         - somatic
         - ritual
-        - concentration
+        - maintained power
       activities:
         dnd5eactivity000:
           _id: dnd5eactivity000
@@ -1234,7 +1234,7 @@ items:
             chatFlavor: ''
           duration:
             units: inst
-            concentration: false
+            maintained power: false
             override: false
           effects: []
           range:
@@ -1273,7 +1273,7 @@ items:
       modifiedTime: null
       lastModifiedBy: null
       exportSource: null
-    _key: '!actors.items!OGPHF4sCVOAi87TU.ghXTfe7sgCbgf1Q8'
+    _key: '!actors.items!OCRHF4sCVOAi87TU.ghXTfe7sgCbgf1Q8'
   - _id: 15Fa6q1nH27XfbR8
     name: Dispel Magic
     ownership:
@@ -1285,12 +1285,12 @@ items:
           <p>Choose one creature, object, or magical effect within range. Any
           spell of 3rd level or lower on the target ends. For each spell of 4th
           level or higher on the target, make an ability check using your
-          spellcasting ability. The DC equals 10 + the spell's level. On a
+          power system ability. The DC equals 10 + the spell's level. On a
           successful check, the spell ends.</p><p><strong>Higher
-          Levels.</strong> When you cast this spell using a spell slot of 4th
+          Levels.</strong> When you cast this spell using a power use of 4th
           level or higher, you automatically end the effects of a spell on the
           target if the spell's level is equal to or less than the level of the
-          spell slot you used.</p>
+          power use you used.</p>
         chat: ''
       source:
         custom: ''
@@ -1352,7 +1352,7 @@ items:
             chatFlavor: ''
           duration:
             units: inst
-            concentration: false
+            maintained power: false
             override: false
           effects: []
           range:
@@ -1391,14 +1391,14 @@ items:
       modifiedTime: null
       lastModifiedBy: null
       exportSource: null
-    _key: '!actors.items!OGPHF4sCVOAi87TU.15Fa6q1nH27XfbR8'
+    _key: '!actors.items!OCRHF4sCVOAi87TU.15Fa6q1nH27XfbR8'
   - _id: 9hQXdMSmerkTsHDe
     name: Confusion
     type: spell
     img: icons/magic/air/wind-tornado-cyclone-purple-pink.webp
     system:
       description:
-        value: "<p>This spell assaults and twists creatures' minds, spawning delusions and provoking uncontrolled action. Each creature in a 10-foot-radius sphere centered on a point you choose within range must succeed on a Wisdom saving throw when you cast this spell or be affected by it.</p>\n<p>An affected target can't take reactions and must roll [[/r 1d10]] at the start of each of its turns to determine its behavior for that turn.</p>\n<table style=\"height:80px;width:98.835%\">\n<thead>\n<tr style=\"height:16px;text-align:center\">\n<td style=\"width:10.1923%;height:16px\">d10</td>\n<td style=\"width:88.8254%;height:16px\">Behaviour</td>\n</tr>\n</thead>\n<tbody>\n<tr style=\"height:16px\">\n<td style=\"width:10.1923%;height:16px;text-align:center\">1</td>\n<td style=\"width:88.8254%;height:16px\">The creature uses all its movement to move in a random direction. To determine the direction, roll [[/r 1d8]] and assign a direction to each die face. The creature doesn't take an action this turn.</td>\n</tr>\n<tr style=\"height:16px\">\n<td style=\"width:10.1923%;height:16px;text-align:center\">2-6</td>\n<td style=\"width:88.8254%;height:16px\">The creature doesn't move or take actions this turn.</td>\n</tr>\n<tr style=\"height:16px\">\n<td style=\"width:10.1923%;height:16px;text-align:center\">7-8</td>\n<td style=\"width:88.8254%;height:16px\">The creature uses its action to make a melee attack against a randomly determined creature within its reach. If there is no creature within its reach, the creature does nothing this turn.</td>\n</tr>\n<tr style=\"height:16px\">\n<td style=\"width:10.1923%;height:16px;text-align:center\">9-10</td>\n<td style=\"width:88.8254%;height:16px\">The creature can act and move normally.\_</td>\n</tr>\n</tbody>\n</table>\n<p><em><strong>At Higher Levels.</strong></em> When you cast this spell using a spell slot of 5th level or higher, the radius of the sphere increases by 5 feet for each slot level above 4th.</p>"
+        value: "<p>This spell assaults and twists creatures' minds, spawning delusions and provoking uncontrolled action. Each creature in a 10-foot-radius sphere centered on a point you choose within range must succeed on a Wisdom saving throw when you cast this spell or be affected by it.</p>\n<p>An affected target can't take reactions and must roll [[/r 1d10]] at the start of each of its turns to determine its behavior for that turn.</p>\n<table style=\"height:80px;width:98.835%\">\n<thead>\n<tr style=\"height:16px;text-align:center\">\n<td style=\"width:10.1923%;height:16px\">d10</td>\n<td style=\"width:88.8254%;height:16px\">Behaviour</td>\n</tr>\n</thead>\n<tbody>\n<tr style=\"height:16px\">\n<td style=\"width:10.1923%;height:16px;text-align:center\">1</td>\n<td style=\"width:88.8254%;height:16px\">The creature uses all its movement to move in a random direction. To determine the direction, roll [[/r 1d8]] and assign a direction to each die face. The creature doesn't take an action this turn.</td>\n</tr>\n<tr style=\"height:16px\">\n<td style=\"width:10.1923%;height:16px;text-align:center\">2-6</td>\n<td style=\"width:88.8254%;height:16px\">The creature doesn't move or take actions this turn.</td>\n</tr>\n<tr style=\"height:16px\">\n<td style=\"width:10.1923%;height:16px;text-align:center\">7-8</td>\n<td style=\"width:88.8254%;height:16px\">The creature uses its action to make a melee attack against a randomly determined creature within its reach. If there is no creature within its reach, the creature does nothing this turn.</td>\n</tr>\n<tr style=\"height:16px\">\n<td style=\"width:10.1923%;height:16px;text-align:center\">9-10</td>\n<td style=\"width:88.8254%;height:16px\">The creature can act and move normally.\_</td>\n</tr>\n</tbody>\n</table>\n<p><em><strong>At Higher Levels.</strong></em> When you cast this spell using a power use of 5th level or higher, the radius of the sphere increases by 5 feet for each slot level above 4th.</p>"
         chat: ''
       source:
         custom: ''
@@ -1445,7 +1445,7 @@ items:
         - vocal
         - somatic
         - material
-        - concentration
+        - maintained power
       activities:
         dnd5eactivity000:
           _id: dnd5eactivity000
@@ -1470,7 +1470,7 @@ items:
             chatFlavor: ''
           duration:
             units: inst
-            concentration: false
+            maintained power: false
             override: false
           effects: []
           range:
@@ -1493,7 +1493,7 @@ items:
           save:
             ability: wis
             dc:
-              calculation: spellcasting
+              calculation: power system
               formula: '16'
           sort: 0
         dnd5eactivity300:
@@ -1519,7 +1519,7 @@ items:
             chatFlavor: ''
           duration:
             units: inst
-            concentration: false
+            maintained power: false
             override: false
           effects: []
           range:
@@ -1559,7 +1559,7 @@ items:
       modifiedTime: null
       lastModifiedBy: null
       exportSource: null
-    _key: '!actors.items!OGPHF4sCVOAi87TU.9hQXdMSmerkTsHDe'
+    _key: '!actors.items!OCRHF4sCVOAi87TU.9hQXdMSmerkTsHDe'
   - _id: yfbK8gZqESlaoY5t
     name: Fly
     ownership:
@@ -1571,7 +1571,7 @@ items:
           <p>You touch a willing creature. The target gains a flying speed of 60
           feet for the Duration. When the spell ends, the target falls if it is
           still aloft, unless it can stop the fall.</p><p><strong>At Higher
-          Levels.</strong> When you cast this spell using a spell slot of 4th
+          Levels.</strong> When you cast this spell using a power use of 4th
           level or higher, you can target one additional creature for each slot
           level above 3rd.</p>
         chat: ''
@@ -1619,7 +1619,7 @@ items:
         - vocal
         - somatic
         - material
-        - concentration
+        - maintained power
       activities:
         dnd5eactivity000:
           _id: dnd5eactivity000
@@ -1644,7 +1644,7 @@ items:
             chatFlavor: ''
           duration:
             units: inst
-            concentration: false
+            maintained power: false
             override: false
           effects: []
           range:
@@ -1683,7 +1683,7 @@ items:
       modifiedTime: null
       lastModifiedBy: null
       exportSource: null
-    _key: '!actors.items!OGPHF4sCVOAi87TU.yfbK8gZqESlaoY5t'
+    _key: '!actors.items!OCRHF4sCVOAi87TU.yfbK8gZqESlaoY5t'
   - _id: 35j2QIMmIk6aEdxj
     name: Power Word Stun
     ownership:
@@ -1766,7 +1766,7 @@ items:
             chatFlavor: ''
           duration:
             units: inst
-            concentration: false
+            maintained power: false
             override: false
           effects: []
           range:
@@ -1789,7 +1789,7 @@ items:
           save:
             ability: con
             dc:
-              calculation: spellcasting
+              calculation: power system
               formula: '16'
           sort: 0
       identifier: power-word-stun
@@ -1808,7 +1808,7 @@ items:
       modifiedTime: null
       lastModifiedBy: null
       exportSource: null
-    _key: '!actors.items!OGPHF4sCVOAi87TU.35j2QIMmIk6aEdxj'
+    _key: '!actors.items!OCRHF4sCVOAi87TU.35j2QIMmIk6aEdxj'
 effects: []
 folder: P1YKVDd1IN7XXWWy
 sort: 0
@@ -1824,4 +1824,4 @@ _stats:
   modifiedTime: 1744916188683
   lastModifiedBy: dnd5ebuilder0000
   exportSource: null
-_key: '!actors!OGPHF4sCVOAi87TU'
+_key: '!actors!OCRHF4sCVOAi87TU'

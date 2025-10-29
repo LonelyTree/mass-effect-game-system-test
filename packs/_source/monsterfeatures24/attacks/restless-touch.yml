@@ -24,7 +24,7 @@ system:
         chatFlavor: ''
       duration:
         units: inst
-        concentration: false
+        maintained power: false
         override: false
       effects:
         - _id: BvP51cOd6lyrhEgq
@@ -71,7 +71,7 @@ system:
       <p class="feature">[[/attack extended]]. [[/damage average extended]], and
       the target is cursed for 24 hours or until the [[lookup @name lowercase]]
       dies. Until the curse ends, the target gains no benefit from finishing
-      Short Rests.</p>
+      Field Rests.</p>
     chat: ''
   identifier: restless-touch
   source:
@@ -87,7 +87,7 @@ system:
     units: lb
   price:
     value: 0
-    denomination: gp
+    denomination: CR
   rarity: ''
   attunement: ''
   attuned: false

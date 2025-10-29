@@ -8,9 +8,9 @@ system:
       A target can be a creature or an object and can be targeted by only one of
       the bolts.</p><p>Each target makes a Dexterity saving throw, taking 10d8
       Lightning damage on a failed save or half as much damage on a successful
-      one.</p><p><strong>Using a Higher-Level Spell Slot.</strong> One
+      one.</p><p><strong>Using a Higher-Level Power Use.</strong> One
       additional bolt leaps from the first target to another target for each
-      spell slot level above 6.</p>
+      power use level above 6.</p>
     chat: ''
   source:
     custom: ''
@@ -72,7 +72,7 @@ system:
         chatFlavor: ''
       duration:
         units: inst
-        concentration: false
+        maintained power: false
         override: false
       effects: []
       range:
@@ -106,7 +106,7 @@ system:
       save:
         ability: dex
         dc:
-          calculation: spellcasting
+          calculation: power system
           formula: ''
       name: ''
       img: ''

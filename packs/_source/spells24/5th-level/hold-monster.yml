@@ -6,8 +6,8 @@ system:
       succeed on a Wisdom saving throw or have the Paralyzed condition for the
       duration. At the end of each of its turns, the target repeats the save,
       ending the spell on itself on a success.</p><p><strong>Using a
-      Higher-Level Spell Slot.</strong> You can target one additional creature
-      for each spell slot level above 5.</p>
+      Higher-Level Power Use.</strong> You can target one additional creature
+      for each power use level above 5.</p>
     chat: ''
   source:
     custom: ''
@@ -42,7 +42,7 @@ system:
     - vocal
     - somatic
     - material
-    - concentration
+    - maintained power
   materials:
     value: a straight piece of iron
     consumed: false
@@ -88,7 +88,7 @@ system:
       save:
         ability: wis
         dc:
-          calculation: spellcasting
+          calculation: power system
           formula: ''
       uses:
         spent: 0

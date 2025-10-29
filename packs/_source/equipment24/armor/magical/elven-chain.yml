@@ -22,7 +22,7 @@ system:
       description: {}
       duration:
         units: inst
-        concentration: false
+        maintained power: false
         override: false
       effects:
         - _id: nrk34InFS4POIYtq
@@ -82,7 +82,7 @@ system:
     units: lb
   price:
     value: 4000
-    denomination: gp
+    denomination: CR
   rarity: rare
   attunement: ''
   attuned: false

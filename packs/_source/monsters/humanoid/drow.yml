@@ -75,15 +75,15 @@ system:
     attunement:
       max: 3
     senses:
-      darkvision: 120
-      blindsight: 0
-      tremorsense: 0
-      truesight: 0
+      scanner: 120
+      thermal vision: 0
+      motion sensor: 0
+      radar ping: 0
       units: ft
       special: ''
-    spellcasting: cha
+    power system: cha
     exhaustion: 0
-    concentration:
+    maintained power:
       ability: ''
       roll:
         min: null
@@ -146,7 +146,7 @@ system:
       bypasses: []
   currency:
     pp: 0
-    gp: 0
+    CR: 0
     ep: 0
     sp: 0
     cp: 0
@@ -533,13 +533,13 @@ items:
       exportSource: null
     _key: '!actors.items!1vaBSMUfOy6JPJ14.Jwx7Sfs5m3RDWckF'
   - _id: A4OySWt5j3QXyAPW
-    name: Innate Spellcasting
+    name: Innate Power System
     type: feat
     img: icons/magic/light/projectiles-star-purple.webp
     system:
       description:
         value: >-
-          <p>The drow's spellcasting ability is Charisma (spell save DC 11). It
+          <p>The drow's power system ability is Charisma (spell save DC 11). It
           can innately cast the following spells, requiring no material
           components:</p>
 
@@ -568,7 +568,7 @@ items:
       enchant: {}
       prerequisites:
         level: null
-      identifier: innate-spellcasting
+      identifier: innate-power system
     effects: []
     folder: null
     sort: 0
@@ -655,7 +655,7 @@ items:
         units: lb
       price:
         value: 0
-        denomination: gp
+        denomination: CR
       attunement: ''
       equipped: true
       rarity: ''
@@ -730,7 +730,7 @@ items:
           description:
             chatFlavor: ''
           duration:
-            concentration: false
+            maintained power: false
             value: ''
             units: ''
             special: ''
@@ -826,7 +826,7 @@ items:
         units: lb
       price:
         value: 0
-        denomination: gp
+        denomination: CR
       attunement: ''
       equipped: true
       rarity: ''
@@ -904,7 +904,7 @@ items:
           description:
             chatFlavor: ''
           duration:
-            concentration: false
+            maintained power: false
             value: ''
             units: ''
             special: ''
@@ -967,7 +967,7 @@ items:
           description:
             chatFlavor: ''
           duration:
-            concentration: false
+            maintained power: false
             value: ''
             units: ''
             special: ''
@@ -1059,7 +1059,7 @@ items:
         units: lb
       price:
         value: 50
-        denomination: gp
+        denomination: CR
       attunement: ''
       equipped: true
       rarity: ''
@@ -1121,7 +1121,7 @@ items:
         value: >-
           <p>Magical darkness spreads from a point you choose within range to
           fill a 15-foot-radius sphere for the duration. The darkness spreads
-          around corners. A creature with darkvision can't see through this
+          around corners. A creature with scanner can't see through this
           darkness, and nonmagical light can't illuminate it.</p><p>If the point
           you choose is on an object you are holding or one that isn't being
           worn or carried, the darkness emanates from the object and moves with
@@ -1174,7 +1174,7 @@ items:
       properties:
         - vocal
         - material
-        - concentration
+        - maintained power
       activities:
         dnd5eactivity000:
           _id: dnd5eactivity000
@@ -1199,7 +1199,7 @@ items:
             chatFlavor: ''
           duration:
             units: inst
-            concentration: false
+            maintained power: false
             override: false
           effects: []
           range:
@@ -1299,7 +1299,7 @@ items:
         prepared: true
       properties:
         - vocal
-        - concentration
+        - maintained power
       activities:
         dnd5eactivity000:
           _id: dnd5eactivity000
@@ -1324,7 +1324,7 @@ items:
             chatFlavor: ''
           duration:
             units: inst
-            concentration: false
+            maintained power: false
             override: false
           effects: []
           range:
@@ -1347,7 +1347,7 @@ items:
           save:
             ability: dex
             dc:
-              calculation: spellcasting
+              calculation: power system
               formula: '11'
           sort: 0
       identifier: faerie-fire
@@ -1426,7 +1426,7 @@ items:
         - vocal
         - somatic
         - material
-        - concentration
+        - maintained power
       activities:
         dnd5eactivity000:
           _id: dnd5eactivity000
@@ -1445,7 +1445,7 @@ items:
             chatFlavor: ''
           duration:
             units: inst
-            concentration: false
+            maintained power: false
             override: false
           effects: []
           range:

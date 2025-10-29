@@ -46,7 +46,7 @@ system:
   level: 2
   school: abj
   materials:
-    value: Gold dust worth at least 25 gp, which the spell consumes.
+    value: Gold dust worth at least 25 CR, which the spell consumes.
     consumed: true
     cost: 25
     supply: 0
@@ -75,7 +75,7 @@ system:
         chatFlavor: ''
       duration:
         units: inst
-        concentration: false
+        maintained power: false
         override: false
       effects: []
       range:

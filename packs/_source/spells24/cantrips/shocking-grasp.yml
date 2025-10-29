@@ -3,9 +3,9 @@ system:
   description:
     value: >-
       <p>Lightning springs from you to a creature that you try to touch. Make a
-      melee spell attack against the target. On a hit, the target takes 1d8
+      close combat power attack against the target. On a hit, the target takes 1d8
       Lightning damage, and it can't make Opportunity Attacks until the start of
-      its next turn.</p><p><strong>Cantrip Upgrade.</strong> The damage
+      its next turn.</p><p><strong>Basic Power Upgrade.</strong> The damage
       increases by 1d8 when you reach levels 5 (2d8), 11 (3d8), and 17
       (4d8).</p>
     chat: ''
@@ -69,7 +69,7 @@ system:
         chatFlavor: ''
       duration:
         units: inst
-        concentration: false
+        maintained power: false
         override: false
       effects:
         - _id: DQCAm67ck1GEKHtE

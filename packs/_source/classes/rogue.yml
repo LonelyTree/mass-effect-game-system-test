@@ -557,7 +557,7 @@ system:
       value: {}
       level: 3
       title: Roguish Archetype
-  spellcasting:
+  power system:
     progression: none
     ability: ''
     preparation: {}

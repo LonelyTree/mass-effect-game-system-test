@@ -9,7 +9,7 @@ system:
     chat: ''
   price:
     value: 0
-    denomination: gp
+    denomination: CR
   activities:
     BIBOhS8gtgWRsjoM:
       type: utility
@@ -33,7 +33,7 @@ system:
         chatFlavor: ''
       duration:
         units: spec
-        concentration: false
+        maintained power: false
         override: false
         special: a Wish spell or divine intervention can end the hostility
         value: ''

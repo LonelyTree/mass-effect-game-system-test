@@ -5,7 +5,7 @@ img: null
 system:
   currency:
     pp: 0
-    gp: 0
+    CR: 0
     ep: 0
     sp: 0
     cp: 0
@@ -363,15 +363,15 @@ system:
     attunement:
       max: 3
     senses:
-      darkvision: null
-      blindsight: null
-      tremorsense: null
-      truesight: 120
+      scanner: null
+      thermal vision: null
+      motion sensor: null
+      radar ping: 120
       units: null
       special: ''
-    spellcasting: str
+    power system: str
     exhaustion: 0
-    concentration:
+    maintained power:
       ability: ''
       roll:
         min: null
@@ -691,7 +691,7 @@ items:
             chatFlavor: ''
           duration:
             units: inst
-            concentration: false
+            maintained power: false
             override: false
           effects: []
           range:
@@ -790,7 +790,7 @@ items:
             chatFlavor: ''
           duration:
             units: inst
-            concentration: false
+            maintained power: false
             override: false
           effects: []
           range:
@@ -896,7 +896,7 @@ items:
             chatFlavor: ''
           duration:
             units: inst
-            concentration: false
+            maintained power: false
             override: false
           effects: []
           range:
@@ -963,7 +963,7 @@ items:
         units: lb
       price:
         value: 0
-        denomination: gp
+        denomination: CR
       rarity: ''
       attunement: ''
       attuned: false
@@ -1036,9 +1036,9 @@ items:
         value: monster
         subtype: ''
       activities:
-        GP5MnIyXCVZ4ZMTQ:
+        CR5MnIyXCVZ4ZMTQ:
           type: save
-          _id: GP5MnIyXCVZ4ZMTQ
+          _id: CR5MnIyXCVZ4ZMTQ
           sort: 0
           activation:
             type: bonus
@@ -1058,7 +1058,7 @@ items:
             chatFlavor: ''
           duration:
             units: minute
-            concentration: false
+            maintained power: false
             override: false
             value: '1'
           effects:
@@ -1116,15 +1116,15 @@ items:
       description:
         value: >-
           <p class="feature"><em>Wisdom Saving Throw:</em> DC [[lookup
-          @save.dc.value activity=GP5MnIyXCVZ4ZMTQ]], each [[lookup
-          @target.affects.type activity=GP5MnIyXCVZ4ZMTQ]] in a [[lookup
-          @target.template.size activity=GP5MnIyXCVZ4ZMTQ]]-<span
+          @save.dc.value activity=CR5MnIyXCVZ4ZMTQ]], each [[lookup
+          @target.affects.type activity=CR5MnIyXCVZ4ZMTQ]] in a [[lookup
+          @target.template.size activity=CR5MnIyXCVZ4ZMTQ]]-<span
           style="font-family:'Roboto Condensed', sans-serif">foot</span>
           Emanation originating from the [[lookup @name lowercase]].</p><p
           class="feature"><em>Failure:</em> [[/damage average]] damage, and the
           target has the &amp;Reference[Frightened apply=false] condition for
-          [[lookup @duration.value activity=GP5MnIyXCVZ4ZMTQ]] [[lookup
-          @duration.units activity=GP5MnIyXCVZ4ZMTQ]], until it takes damage, or
+          [[lookup @duration.value activity=CR5MnIyXCVZ4ZMTQ]] [[lookup
+          @duration.units activity=CR5MnIyXCVZ4ZMTQ]], until it takes damage, or
           until it ends its turn with the [[lookup @name lowercase]] out of line
           of sight.</p><p class="feature"><em>Success:</em> The target is immune
           to this [[lookup @name lowercase]]'s Horror Nimbus for 24 hours.</p>
@@ -1230,7 +1230,7 @@ items:
             chatFlavor: ''
           duration:
             units: inst
-            concentration: false
+            maintained power: false
             override: false
           effects: []
           range:

@@ -11,9 +11,9 @@ system:
       much, and it can't cast this spell.</p><p>The simulacrum is Friendly to
       you and creatures you designate. It obeys your commands and acts on your
       turn in combat. The simulacrum can't gain levels, and it can't take Short
-      or Long Rests.</p><p>If the simulacrum takes damage, the only way to
-      restore its Hit Points is to repair it as you take a Long Rest, during
-      which you expend components worth 100 GP per Hit Point restored. The
+      or Full Rests.</p><p>If the simulacrum takes damage, the only way to
+      restore its Hit Points is to repair it as you take a Full Rest, during
+      which you expend components worth 100 CR per Hit Point restored. The
       simulacrum must stay within 5 feet of you for the repair.</p><p>The
       simulacrum lasts until it drops to 0 Hit Points, at which point it reverts
       to snow and melts away. If you cast this spell again, any simulacrum you
@@ -55,7 +55,7 @@ system:
     - somatic
     - material
   materials:
-    value: powdered ruby worth 1,500+ GP, which the spell consumes
+    value: powdered ruby worth 1,500+ CR, which the spell consumes
     consumed: true
     cost: 0
     supply: 0
@@ -79,7 +79,7 @@ system:
       description: {}
       duration:
         units: inst
-        concentration: false
+        maintained power: false
         override: false
       effects: []
       range:

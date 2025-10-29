@@ -75,15 +75,15 @@ system:
     attunement:
       max: 3
     senses:
-      darkvision: 0
-      blindsight: 0
-      tremorsense: 0
-      truesight: 0
+      scanner: 0
+      thermal vision: 0
+      motion sensor: 0
+      radar ping: 0
       units: ft
       special: ''
-    spellcasting: wis
+    power system: wis
     exhaustion: 0
-    concentration:
+    maintained power:
       ability: ''
       roll:
         min: null
@@ -146,7 +146,7 @@ system:
       bypasses: []
   currency:
     pp: 0
-    gp: 0
+    CR: 0
     ep: 0
     sp: 0
     cp: 0
@@ -485,15 +485,15 @@ prototypeToken:
   movementAction: null
 items:
   - _id: 07sdy4qaaW4MaB8W
-    name: Spellcasting
+    name: Power System
     type: feat
     img: icons/magic/light/projectiles-star-purple.webp
     system:
       description:
         value: >-
-          <p>The druid is a 4th-level spellcaster. Its spellcasting ability is
+          <p>The druid is a 4th-level spellcaster. Its power system ability is
           Wisdom (spell save DC 12, +4 to hit with spell attacks).</p><p>It has
-          the following druid spells prepared:</p><p>Cantrips (at will): [[/item
+          the following druid spells prepared:</p><p>Basic Powers (at will): [[/item
           .SbSvZKkJASyk8jKo]]{druidcraft}, [[/item .eCPQuQkIabFKTl9u]]{produce
           flame}, [[/item .VzgFzcmocr1X1cp4]]{shillelagh}</p><p>1st level (4
           slots): [[/item .gMrWeG8fMDPRFiVe]]{entangle}, [[/item
@@ -501,7 +501,7 @@ items:
           with animals}, [[/item .WTbOQBsarsL1LuXJ]]{thunderwave}</p><p>2nd
           level (3 slots): [[/item .X8w9EzYLGc4vQ1H2]]{animal messenger},
           [[/item .JPwIEfgUPVebr5AH]]{barkskin}</p>
-        chat: <p>The druid is a spellcaster. Its spellcasting ability is Wisdom.</p>
+        chat: <p>The druid is a spellcaster. Its power system ability is Wisdom.</p>
       source:
         custom: ''
         book: ''
@@ -522,7 +522,7 @@ items:
       enchant: {}
       prerequisites:
         level: null
-      identifier: spellcasting
+      identifier: power system
     effects: []
     folder: null
     sort: 0
@@ -566,7 +566,7 @@ items:
         units: lb
       price:
         value: 2
-        denomination: gp
+        denomination: CR
       attunement: ''
       equipped: true
       rarity: ''
@@ -643,7 +643,7 @@ items:
           description:
             chatFlavor: ''
           duration:
-            concentration: false
+            maintained power: false
             value: ''
             units: inst
             special: ''
@@ -712,7 +712,7 @@ items:
             units: inst
             special: ''
             override: false
-            concentration: false
+            maintained power: false
           effects: []
           range:
             units: ''
@@ -735,7 +735,7 @@ items:
             prompt: true
             override: false
           attack:
-            ability: spellcasting
+            ability: power system
             bonus: ''
             critical:
               threshold: null
@@ -762,7 +762,7 @@ items:
             max: ''
           sort: -100000
           _id: J8RgDbtkXvXUJDuD
-          name: Spellcasting Attack
+          name: Power System Attack
           img: ''
           appliedEffects: []
       attuned: false
@@ -937,7 +937,7 @@ items:
             chatFlavor: ''
           duration:
             units: inst
-            concentration: false
+            maintained power: false
             override: false
           effects: []
           range:
@@ -1055,7 +1055,7 @@ items:
             chatFlavor: ''
           duration:
             units: inst
-            concentration: false
+            maintained power: false
             override: false
           effects: []
           range:
@@ -1173,7 +1173,7 @@ items:
       properties:
         - vocal
         - somatic
-        - concentration
+        - maintained power
       activities:
         dnd5eactivity000:
           _id: dnd5eactivity000
@@ -1192,7 +1192,7 @@ items:
             chatFlavor: ''
           duration:
             units: inst
-            concentration: false
+            maintained power: false
             override: false
           effects: []
           range:
@@ -1215,7 +1215,7 @@ items:
           save:
             ability: str
             dc:
-              calculation: spellcasting
+              calculation: power system
               formula: '12'
           sort: 0
       identifier: entangle
@@ -1308,7 +1308,7 @@ items:
             chatFlavor: ''
           duration:
             units: inst
-            concentration: false
+            maintained power: false
             override: false
           effects: []
           range:
@@ -1423,7 +1423,7 @@ items:
             chatFlavor: ''
           duration:
             units: inst
-            concentration: false
+            maintained power: false
             override: false
           effects: []
           range:
@@ -1480,7 +1480,7 @@ items:
           automatically pushed 10 feet away from you by the spell's effect, and
           the spell emits a thunderous boom audible out to 300
           feet.</p><p><strong>At Higher Levels.</strong> When you cast this
-          spell using a spell slot of 2nd level or higher, the damage increases
+          spell using a power use of 2nd level or higher, the damage increases
           by 1d8 for each slot level above 1st.</p>
         chat: ''
       source:
@@ -1542,7 +1542,7 @@ items:
             chatFlavor: ''
           duration:
             units: inst
-            concentration: false
+            maintained power: false
             override: false
           effects: []
           range:
@@ -1577,7 +1577,7 @@ items:
           save:
             ability: con
             dc:
-              calculation: spellcasting
+              calculation: power system
               formula: '12'
           sort: 0
       identifier: thunderwave
@@ -1620,7 +1620,7 @@ items:
           gave. If the messenger doesn't reach its destination before the spell
           ends, the message is lost, and the beast makes its way back to where
           you cast this spell.</p><p><strong>At Higher Levels.</strong> If you
-          cast this spell using a spell slot of 3rd level or higher, the
+          cast this spell using a power use of 3rd level or higher, the
           duration of the spell increases by 48 hours for each slot level above
           2nd.</p>
         chat: ''
@@ -1686,7 +1686,7 @@ items:
             chatFlavor: ''
           duration:
             units: inst
-            concentration: false
+            maintained power: false
             override: false
           effects: []
           range:
@@ -1779,7 +1779,7 @@ items:
         - vocal
         - somatic
         - material
-        - concentration
+        - maintained power
       activities:
         dnd5eactivity000:
           _id: dnd5eactivity000
@@ -1798,7 +1798,7 @@ items:
             chatFlavor: ''
           duration:
             units: inst
-            concentration: false
+            maintained power: false
             override: false
           effects: []
           range:
@@ -1890,7 +1890,7 @@ items:
       description:
         value: >-
           <p>The wood of a club or quarterstaff you are holding is imbued with
-          nature's power. For the duration, you can use your spellcasting
+          nature's power. For the duration, you can use your power system
           ability instead of Strength for the attack and damage rolls of melee
           attacks using that weapon, and the weapon's damage die becomes a d8.
           The weapon also becomes magical, if it isn't already. The spell ends
@@ -1959,7 +1959,7 @@ items:
             chatFlavor: ''
           duration:
             units: inst
-            concentration: false
+            maintained power: false
             override: false
           effects:
             - _id: QPsqj6jfS0iXSrTs
@@ -2013,7 +2013,7 @@ items:
             units: ''
             special: ''
             override: false
-            concentration: false
+            maintained power: false
           effects: []
           range:
             units: ''
@@ -2036,7 +2036,7 @@ items:
             prompt: true
             override: false
           attack:
-            ability: spellcasting
+            ability: power system
             bonus: ''
             critical:
               threshold: null
@@ -2055,7 +2055,7 @@ items:
             max: ''
           sort: 0
           _id: ONVab5lmTqJwwMBC
-          name: Spellcasting Attack
+          name: Power System Attack
       identifier: shillelagh
     sort: 0
     flags:

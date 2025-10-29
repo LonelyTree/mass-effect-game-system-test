@@ -24,7 +24,7 @@ system:
       effect as the normal casting of the spell. You can also set the globe down
       without shattering it. After 1 minute, if the globe hasn't already
       shattered, it explodes.</p><p><strong>At Higher Levels.</strong> When you
-      cast this spell using a spell slot of 7th level or higher, the damage
+      cast this spell using a power use of 7th level or higher, the damage
       increases by 1d6 for each slot level above 6th.</p>
     chat: ''
   source:
@@ -87,7 +87,7 @@ system:
         chatFlavor: ''
       duration:
         units: inst
-        concentration: false
+        maintained power: false
         override: false
       effects: []
       range:
@@ -118,7 +118,7 @@ system:
       save:
         ability: con
         dc:
-          calculation: spellcasting
+          calculation: power system
           formula: ''
       uses:
         spent: 0

@@ -37,7 +37,7 @@ system:
       consumption:
         targets:
           - type: itemUses
-            target: Compendium.dnd5e.classfeatures.Item.10b6z2W1txNkrGP7
+            target: Compendium.dnd5e.classfeatures.Item.10b6z2W1txNkrCR7
             value: '1'
             scaling:
               mode: ''
@@ -49,7 +49,7 @@ system:
       description:
         chatFlavor: ''
       duration:
-        concentration: false
+        maintained power: false
         value: ''
         units: ''
         special: ''

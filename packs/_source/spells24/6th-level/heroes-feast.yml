@@ -52,7 +52,7 @@ system:
     - somatic
     - material
   materials:
-    value: a gem-encrusted bowl worth 1,000+ GP, which the spell consumes
+    value: a gem-encrusted bowl worth 1,000+ CR, which the spell consumes
     consumed: true
     cost: 0
     supply: 0
@@ -82,7 +82,7 @@ system:
         chatFlavor: ''
       duration:
         units: hour
-        concentration: false
+        maintained power: false
         override: false
         value: '24'
       effects: []
@@ -131,7 +131,7 @@ system:
         chatFlavor: Hit Point maximum increased by healing amount
       duration:
         units: hour
-        concentration: false
+        maintained power: false
         override: true
         value: '24'
       effects:

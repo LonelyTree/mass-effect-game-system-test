@@ -4,7 +4,7 @@ system:
     value: >-
       <p>An @UUID[Compendium.dnd5e.equipment24.Item.phbagArcaneFocus]{Arcane
       Focus} is bejeweled or carved to channel arcane magic. A Sorcerer,
-      Warlock, or Wizard can use such an item as a Spellcasting
+      Warlock, or Wizard can use such an item as a Power System
       Focus.</p><p>This item also functions as a
       @UUID[Compendium.dnd5e.equipment24.Item.phbwepQuartersta]{Quarterstaff}</p><section
       class="secret" id="secret-wJ4SJVg9unbYSBJb"><p><strong>Foundry
@@ -13,7 +13,7 @@ system:
     chat: ''
   price:
     value: 5
-    denomination: gp
+    denomination: CR
   source:
     custom: ''
     rules: '2024'
@@ -97,7 +97,7 @@ system:
       description: {}
       duration:
         units: inst
-        concentration: false
+        maintained power: false
         override: false
       effects: []
       range:

@@ -26,8 +26,8 @@ system:
       @UUID[Compendium.dnd5e.equipment24.Item.phbagArcaneFocus]{Arcane Focus}
       (@UUID[Compendium.dnd5e.equipment24.Item.phbafcCrystal000]{crystal}),
       @UUID[Compendium.dnd5e.equipment24.Item.phbagDungeoneers]{Dungeoneer's
-      Pack}, and [[/award 28GP]]; or (B) [[/award
-      50GP]]</p></td></tr></tbody></table><p>@Embed[Compendium.dnd5e.content24.JournalEntry.phbAppendixClass.JournalEntryPage.phbscrSorcerer00
+      Pack}, and [[/award 28CR]]; or (B) [[/award
+      50CR]]</p></td></tr></tbody></table><p>@Embed[Compendium.dnd5e.content24.JournalEntry.phbAppendixClass.JournalEntryPage.phbscrSorcerer00
       inline classes="free-rules-embed"]</p><h2>Becoming a Sorcerer …</h2><h3>As
       a Level 1 Character</h3><ul><li>Gain all the traits in the Core Sorcerer
       Traits table.</li><li>Gain the Sorcerer's level 1 features, which are
@@ -38,7 +38,7 @@ system:
       Sorcerer's level 1 features, which are listed in the Sorcerer Features
       table. See the
       @UUID[Compendium.dnd5e.content24.JournalEntry.phbCreatingAChar.JournalEntryPage.vcs4jfEKRxPCsgXm]{multiclassing
-      rules} to determine your available spell slots.</li></ul>
+      rules} to determine your available power uses.</li></ul>
     chat: ''
   source:
     custom: ''
@@ -266,7 +266,7 @@ system:
           '20':
             value: 22
       value: {}
-      title: Max Prepared Spells
+      title: Max Prepared Powers
       hint: ''
     - _id: zMjMi0B3XrcQMqAS
       type: ScaleValue
@@ -283,7 +283,7 @@ system:
           '10':
             value: 6
       value: {}
-      title: Cantrips Known
+      title: Basic Powers Known
       hint: ''
     - _id: nIaa61I4SSnwAQvz
       type: ItemChoice
@@ -451,7 +451,7 @@ system:
       level: 19
       title: ''
       hint: ''
-  spellcasting:
+  power system:
     progression: full
     ability: cha
     preparation:

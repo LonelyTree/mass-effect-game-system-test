@@ -190,7 +190,7 @@ system:
         added: {}
         replaced: {}
       title: Superior Hunter's Defense
-  spellcasting:
+  power system:
     progression: none
     ability: ''
     preparation: {}

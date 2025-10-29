@@ -20,7 +20,7 @@ system:
       description: {}
       duration:
         units: inst
-        concentration: false
+        maintained power: false
         override: false
       effects: []
       range:
@@ -64,7 +64,7 @@ system:
         chatFlavor: Willing target teleported to within 10 feet of you
       duration:
         units: inst
-        concentration: false
+        maintained power: false
         override: false
       effects: []
       range:
@@ -113,7 +113,7 @@ system:
         chatFlavor: Creates a magical ladder 60 feet high
       duration:
         units: minute
-        concentration: false
+        maintained power: false
         override: false
         value: '1'
       effects: []
@@ -169,7 +169,7 @@ system:
         chatFlavor: ''
       duration:
         units: inst
-        concentration: false
+        maintained power: false
         override: false
       effects:
         - _id: jQnQ2ghbt7j3nWke
@@ -232,7 +232,7 @@ system:
           skill=ath dc=20]]
       duration:
         units: inst
-        concentration: false
+        maintained power: false
         override: false
       effects:
         - _id: Yw1oocFffwM4cePn
@@ -324,7 +324,7 @@ system:
     units: lb
   price:
     value: 40000
-    denomination: gp
+    denomination: CR
   rarity: veryRare
   attunement: required
   attuned: false
@@ -427,7 +427,7 @@ effects:
         priority: null
       - key: system.price.denomination
         mode: 5
-        value: gp
+        value: CR
         priority: null
     duration:
       startTime: null

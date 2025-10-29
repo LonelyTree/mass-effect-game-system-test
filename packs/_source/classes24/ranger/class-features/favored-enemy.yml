@@ -8,7 +8,7 @@ system:
     value: >-
       <p>You always have the
       @UUID[Compendium.dnd5e.spells24.Item.phbsplHuntersMar]{Hunter's Mark}
-      spell prepared. You can cast it twice without expending a spell slot, and
+      spell prepared. You can cast it twice without expending a power use, and
       you regain all expended uses of this ability when you finish a Long
       Rest.</p><p>The number of times you can cast the spell without a spell
       slot increases when you reach certain Ranger levels, as shown in the

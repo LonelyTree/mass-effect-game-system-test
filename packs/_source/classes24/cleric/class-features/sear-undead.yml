@@ -58,7 +58,7 @@ system:
         chatFlavor: ''
       duration:
         units: inst
-        concentration: false
+        maintained power: false
         override: false
         value: ''
       effects:
@@ -104,7 +104,7 @@ system:
         ability:
           - wis
         dc:
-          calculation: spellcasting
+          calculation: power system
           formula: ''
   enchant: {}
   identifier: sear-undead

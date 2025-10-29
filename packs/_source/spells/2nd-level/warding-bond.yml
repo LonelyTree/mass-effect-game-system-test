@@ -46,7 +46,7 @@ system:
   school: abj
   materials:
     value: >-
-      A pair of platinum rings worth at least 50 gp each, which you and the
+      A pair of platinum rings worth at least 50 CR each, which you and the
       target must wear for the duration
     consumed: false
     cost: 100
@@ -76,7 +76,7 @@ system:
         chatFlavor: ''
       duration:
         units: inst
-        concentration: false
+        maintained power: false
         override: false
       effects: []
       range:

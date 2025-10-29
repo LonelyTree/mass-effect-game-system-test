@@ -21,7 +21,7 @@ results:
       compendiumSource: null
       duplicateSource: null
       exportSource: null
-    description: Bag of 100 gp
+    description: Bag of 100 CR
     name: ''
     _key: '!tables.results!CTGxcd51szehUGBn.OSKn1nYTdGogvqPV'
   - type: text
@@ -43,7 +43,7 @@ results:
       compendiumSource: null
       duplicateSource: null
       exportSource: null
-    description: Silver coffer (1 foot long, 6 inches wide and deep) worth 500 gp
+    description: Silver coffer (1 foot long, 6 inches wide and deep) worth 500 CR
     name: ''
     _key: '!tables.results!CTGxcd51szehUGBn.hk5yFM7fP2LQmQjb'
   - type: text
@@ -90,7 +90,7 @@ results:
       compendiumSource: null
       duplicateSource: null
       exportSource: null
-    description: 10 gems worth 100 gp each
+    description: 10 gems worth 100 CR each
     name: ''
     _key: '!tables.results!CTGxcd51szehUGBn.Im1fQwlV87faWYDZ'
   - type: text

@@ -25,7 +25,7 @@ system:
         chatFlavor: ''
       duration:
         units: perm
-        concentration: false
+        maintained power: false
         override: false
       effects: []
       range:

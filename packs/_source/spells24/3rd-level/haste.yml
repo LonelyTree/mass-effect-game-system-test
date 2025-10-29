@@ -47,7 +47,7 @@ system:
     - vocal
     - somatic
     - material
-    - concentration
+    - maintained power
   materials:
     value: a shaving of licorice root
     consumed: false
@@ -119,7 +119,7 @@ system:
         chatFlavor: ''
       duration:
         units: round
-        concentration: false
+        maintained power: false
         override: true
         value: '1'
       effects:

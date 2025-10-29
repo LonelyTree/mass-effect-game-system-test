@@ -24,7 +24,7 @@ system:
         chatFlavor: ''
       duration:
         units: inst
-        concentration: true
+        maintained power: true
         override: false
       effects:
         - _id: oY6W5ijpozecYGkq
@@ -63,7 +63,7 @@ system:
     value: >-
       <p class="feature">The [[lookup @name lowercase]] and its light have the
       &amp;Reference[Invisible apply=false] condition until the [[lookup @name
-      lowercase]]'s &amp;Reference[Concentration] ends on this effect, which
+      lowercase]]'s &amp;Reference[Maintained Power] ends on this effect, which
       ends early immediately after the [[lookup @name lowercase]] makes an
       attack roll or uses Consume Life.</p>
     chat: ''
@@ -97,7 +97,7 @@ effects:
       startTurn: null
     description: >-
       <p>The attacking creature and its light have the &amp;Reference[Invisible
-      apply=false] condition until their Concentration ends on this effect,
+      apply=false] condition until their Maintained Power ends on this effect,
       which ends early immediately after the wisp makes an attack roll or uses
       the Consume Life bonus action.</p>
     tint: '#ffffff'

@@ -1,7 +1,7 @@
 name: Hunter's Mark
 system:
   description:
-    value: "<p>You magically mark one creature you can see within range as your quarry. Until the spell ends, you deal an extra 1d6 Force damage to the target whenever you hit it with an attack roll. You also have Advantage on any [[/check ability=wis skill=prc]] or [[/check ability=wis skill=sur]] check you make to find it.</p><p>If the target drops to 0 Hit Points before this spell ends, you can take a Bonus Action to move the mark to a new creature you can see within range.</p><p><strong>Using a Higher-Level Spell Slot.</strong>\_Your Concentration can last longer with a spell slot of level 3–4 (up to 8 hours) or 5+ (up to 24 hours).</p>"
+    value: "<p>You magically mark one creature you can see within range as your quarry. Until the spell ends, you deal an extra 1d6 Force damage to the target whenever you hit it with an attack roll. You also have Advantage on any [[/check ability=wis skill=prc]] or [[/check ability=wis skill=sur]] check you make to find it.</p><p>If the target drops to 0 Hit Points before this spell ends, you can take a Bonus Action to move the mark to a new creature you can see within range.</p><p><strong>Using a Higher-Level Power Use.</strong>\_Your Maintained Power can last longer with a power use of level 3–4 (up to 8 hours) or 5+ (up to 24 hours).</p>"
     chat: ''
   source:
     custom: ''
@@ -37,7 +37,7 @@ system:
   school: div
   properties:
     - vocal
-    - concentration
+    - maintained power
   materials:
     value: ''
     consumed: false
@@ -118,7 +118,7 @@ system:
         chatFlavor: ''
       duration:
         units: inst
-        concentration: false
+        maintained power: false
         override: false
       effects:
         - _id: hYD38IP9Meq2ArIS

@@ -7,7 +7,7 @@ system:
   description:
     value: >-
       <p>You create a ghostly, skeletal hand in the space of a creature within
-      range. Make a ranged spell attack against the creature to assail it with
+      range. Make a ranged power attack against the creature to assail it with
       the chill of the grave. On a hit, the target takes 1d8 Necrotic damage,
       and it can't regain hit points until the start of your next turn. Until
       then, the hand clings to the target.</p><p>If you hit an undead target, it
@@ -74,7 +74,7 @@ system:
         chatFlavor: ''
       duration:
         units: inst
-        concentration: false
+        maintained power: false
         override: false
       effects: []
       range:

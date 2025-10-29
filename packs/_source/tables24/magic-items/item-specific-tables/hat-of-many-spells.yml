@@ -192,7 +192,7 @@ results:
       @UUID[Compendium.dnd5e.equipment24.Item.phbagGrapplingHo]{Grappling Hook}
       tied to one end; on a 3, a bag of
       @UUID[Compendium.dnd5e.equipment24.Item.phbagCaltrops000]{Caltrops}; on a
-      4, a gem worth 50 GP.
+      4, a gem worth 50 CR.
     name: ''
     _key: '!tables.results!dmgHatOfManySpel.0L5mg4Y6U9VJlULX'
   - type: text

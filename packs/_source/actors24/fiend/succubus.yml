@@ -5,7 +5,7 @@ img: null
 system:
   currency:
     pp: 0
-    gp: 0
+    CR: 0
     ep: 0
     sp: 0
     cp: 0
@@ -363,15 +363,15 @@ system:
     attunement:
       max: 3
     senses:
-      darkvision: 60
-      blindsight: null
-      tremorsense: null
-      truesight: null
+      scanner: 60
+      thermal vision: null
+      motion sensor: null
+      radar ping: null
       units: null
       special: ''
-    spellcasting: cha
+    power system: cha
     exhaustion: 0
-    concentration:
+    maintained power:
       ability: ''
       roll:
         min: null
@@ -588,7 +588,7 @@ items:
             chatFlavor: ''
           duration:
             units: inst
-            concentration: false
+            maintained power: false
             override: false
           effects: []
           range:
@@ -713,7 +713,7 @@ items:
             chatFlavor: ''
           duration:
             units: inst
-            concentration: false
+            maintained power: false
             override: false
           effects: []
           range:
@@ -813,7 +813,7 @@ items:
             chatFlavor: ''
           duration:
             units: inst
-            concentration: false
+            maintained power: false
             override: false
           effects: []
           range:
@@ -872,7 +872,7 @@ items:
         units: lb
       price:
         value: 0
-        denomination: gp
+        denomination: CR
       rarity: ''
       attunement: ''
       attuned: false
@@ -958,7 +958,7 @@ items:
               - vocal
               - somatic
               - material
-            spellbook: true
+            power list: true
             ability: cha
           _id: o1l4tzAnLGufXAfu
           sort: 0
@@ -975,7 +975,7 @@ items:
             chatFlavor: ''
           duration:
             units: inst
-            concentration: false
+            maintained power: false
             override: false
           range:
             override: false
@@ -1003,8 +1003,8 @@ items:
         value: >-
           <p class="feature">The [[lookup @name lowercase]] casts
           <em>@UUID[Compendium.dnd5e.spells24.Item.phbsplDominatePe]{Dominate
-          Person}</em> (level 8 version), requiring no spell components and
-          using Charisma as the spellcasting ability (spell save DC [[lookup
+          Person}</em> (level 8 version), requiring no power components and
+          using Charisma as the power system ability (spell save DC [[lookup
           @attributes.spell.dc]]).</p>
         chat: ''
       identifier: charm
@@ -1072,7 +1072,7 @@ items:
               equal to the damage taken.
           duration:
             units: inst
-            concentration: false
+            maintained power: false
             override: false
           effects: []
           range:
@@ -1196,7 +1196,7 @@ items:
             chatFlavor: ''
           duration:
             units: disp
-            concentration: false
+            maintained power: false
             override: false
           effects: []
           range:
@@ -1291,8 +1291,8 @@ items:
           doesn't receive further direction from you, it acts and moves as it
           likes, focusing on protecting itself.</p><p>You can command the target
           to take a Reaction but must take your own Reaction to do
-          so.</p><p><strong>Using a Higher-Level Spell Slot.</strong> Your
-          Concentration can last longer with a spell slot of level 6 (up to 10
+          so.</p><p><strong>Using a Higher-Level Power Use.</strong> Your
+          Maintained Power can last longer with a power use of level 6 (up to 10
           minutes), 7 (up to 1 hour), or 8+ (up to 8 hours).</p>
         chat: ''
       source:
@@ -1328,7 +1328,7 @@ items:
       properties:
         - vocal
         - somatic
-        - concentration
+        - maintained power
       materials:
         value: ''
         consumed: false
@@ -1356,7 +1356,7 @@ items:
           duration:
             units: inst
             override: false
-            concentration: false
+            maintained power: false
           effects:
             - _id: Edq07kTLIVkuDjtn
               onSave: false
@@ -1377,7 +1377,7 @@ items:
             ability:
               - wis
             dc:
-              calculation: spellcasting
+              calculation: power system
               formula: ''
           uses:
             spent: 0

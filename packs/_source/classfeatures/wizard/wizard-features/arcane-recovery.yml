@@ -7,12 +7,12 @@ system:
   description:
     value: >-
       <p>You have learned to regain some of your magical energy by studying your
-      spellbook. Once per day when you finish a short rest, you can choose
-      expended spell slots to recover. The spell slots can have a combined level
+      power list. Once per day when you finish a field rest, you can choose
+      expended power uses to recover. The power uses can have a combined level
       that is equal to or less than half your wizard level (rounded up), and
       none of the slots can be 6th level or higher.</p><p>For example, if you're
-      a 4th-level wizard, you can recover up to two levels worth of spell slots.
-      You can recover either a 2nd-level spell slot or two 1st-level spell
+      a 4th-level wizard, you can recover up to two levels worth of power uses.
+      You can recover either a 2nd-level power use or two 1st-level spell
       slots.</p>
     chat: ''
   source:
@@ -56,9 +56,9 @@ system:
       description:
         chatFlavor: >-
           The wizard can recover [[ceil(@classes.wizard.levels/2)]] levels worth
-          of spell slots (of 5th-level or lower).
+          of power uses (of 5th-level or lower).
       duration:
-        concentration: false
+        maintained power: false
         value: ''
         units: ''
         special: ''

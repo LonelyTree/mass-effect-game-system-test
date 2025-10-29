@@ -123,7 +123,7 @@ pages:
         Senses</h2><p>Some creatures have special senses that help them perceive
         things in certain situations. The rules glossary defines the following
         special
-        senses:</p><ul><li><p>&amp;Reference[Blindsight]</p></li><li><p>&amp;Reference[Darkvision]</p></li><li><p>&amp;Reference[Tremorsense]</p></li><li><p>&amp;Reference[Truesight]</p></li></ul>
+        senses:</p><ul><li><p>&amp;Reference[Thermal Vision]</p></li><li><p>&amp;Reference[Scanner]</p></li><li><p>&amp;Reference[Motion Sensor]</p></li><li><p>&amp;Reference[Radar Ping]</p></li></ul>
     video:
       controls: true
       volume: 0.5

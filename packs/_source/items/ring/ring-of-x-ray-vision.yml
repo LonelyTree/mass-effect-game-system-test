@@ -15,7 +15,7 @@ system:
       metal, or up to 3 feet of wood or dirt. Thicker substances block the
       vision, as does a thin sheet of lead.</p>
 
-      <p>Whenever you use the ring again before taking a long rest, you must
+      <p>Whenever you use the ring again before taking a full rest, you must
       succeed on a DC 15 Constitution saving throw or gain one level of
       exhaustion.</p>
     chat: ''
@@ -31,7 +31,7 @@ system:
     units: lb
   price:
     value: 4000
-    denomination: gp
+    denomination: CR
   attunement: required
   equipped: false
   rarity: rare
@@ -82,7 +82,7 @@ system:
       description:
         chatFlavor: ''
       duration:
-        concentration: false
+        maintained power: false
         value: '1'
         units: minute
         special: ''

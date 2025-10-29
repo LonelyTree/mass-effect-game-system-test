@@ -27,7 +27,7 @@ system:
         chatFlavor: ''
       duration:
         units: inst
-        concentration: false
+        maintained power: false
         override: false
       effects: []
       range:
@@ -80,7 +80,7 @@ system:
         chatFlavor: ''
       duration:
         units: minute
-        concentration: false
+        maintained power: false
         override: false
         value: '@scaling'
       effects: []
@@ -148,7 +148,7 @@ system:
     units: lb
   price:
     value: 100000
-    denomination: gp
+    denomination: CR
   rarity: legendary
   attunement: ''
   attuned: false

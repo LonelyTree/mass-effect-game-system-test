@@ -7,18 +7,18 @@ system:
       Traits</h3><p><strong>Creature Type: </strong>Humanoid</p><p><strong>Size:
       </strong>Medium (about 4–5 feet tall)</p><p><strong>Speed:</strong> 30
       feet</p><p>As a Dwarf, you have these special
-      traits.</p><p><strong>Darkvision. </strong>You have Darkvision with a
+      traits.</p><p><strong>Scanner. </strong>You have Scanner with a
       range of 120 feet.</p><p><strong>Dwarven Resilience.</strong> You have
       Resistance to Poison damage. You also have Advantage on saving throws you
       make to avoid or end the Poisoned condition.</p><p><strong>Dwarven
       Toughness.</strong> Your Hit Point maximum increases by 1, and it
       increases by 1 again whenever you gain a
       level.</p><p><strong>Stonecunning.</strong> As a Bonus Action, you gain
-      Tremorsense with a range of 60 feet for 10 minutes. You must be on a stone
-      surface or touching a stone surface to use this Tremorsense. The stone can
+      Motion Sensor with a range of 60 feet for 10 minutes. You must be on a stone
+      surface or touching a stone surface to use this Motion Sensor. The stone can
       be natural or worked.You can use this Bonus Action a number of times equal
       to your Proficiency Bonus, and you regain all expended uses when you
-      finish a Long Rest.</p>
+      finish a Full Rest.</p>
     chat: ''
   source:
     custom: ''
@@ -74,10 +74,10 @@ system:
     units: null
     hover: false
   senses:
-    darkvision: 120
-    blindsight: null
-    tremorsense: null
-    truesight: null
+    scanner: 120
+    thermal vision: null
+    motion sensor: null
+    radar ping: null
     units: null
     special: ''
   type:

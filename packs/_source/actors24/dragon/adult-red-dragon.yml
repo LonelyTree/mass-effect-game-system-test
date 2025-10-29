@@ -5,7 +5,7 @@ img: null
 system:
   currency:
     pp: 0
-    gp: 0
+    CR: 0
     ep: 0
     sp: 0
     cp: 0
@@ -363,15 +363,15 @@ system:
     attunement:
       max: 3
     senses:
-      darkvision: 120
-      blindsight: 60
-      tremorsense: null
-      truesight: null
+      scanner: 120
+      thermal vision: 60
+      motion sensor: null
+      radar ping: null
       units: null
       special: ''
-    spellcasting: cha
+    power system: cha
     exhaustion: 0
-    concentration:
+    maintained power:
       ability: ''
       roll:
         min: null
@@ -580,7 +580,7 @@ items:
             chatFlavor: ''
           duration:
             units: inst
-            concentration: false
+            maintained power: false
             override: false
           effects: []
           range:
@@ -684,7 +684,7 @@ items:
           description: {}
           duration:
             units: inst
-            concentration: false
+            maintained power: false
             override: false
           effects: []
           range:
@@ -710,7 +710,7 @@ items:
       description:
         value: >-
           <p>The [[lookup @name lowercase]] makes three [[/item Rend]] attacks.
-          It can replace one attack with a use of [[/item Spellcasting]] to cast
+          It can replace one attack with a use of [[/item Power System]] to cast
           <em>@UUID[Compendium.dnd5e.spells24.Item.phbsplScorchingR]{Scorching
           Ray}</em>.</p>
         chat: ''
@@ -777,7 +777,7 @@ items:
             chatFlavor: ''
           duration:
             units: inst
-            concentration: false
+            maintained power: false
             override: false
           effects: []
           range:
@@ -844,7 +844,7 @@ items:
         units: lb
       price:
         value: 0
-        denomination: gp
+        denomination: CR
       rarity: ''
       attunement: ''
       attuned: false
@@ -938,7 +938,7 @@ items:
             chatFlavor: ''
           duration:
             units: inst
-            concentration: false
+            maintained power: false
             override: false
           effects: []
           range:
@@ -1064,7 +1064,7 @@ items:
             chatFlavor: ''
           duration:
             units: inst
-            concentration: false
+            maintained power: false
             override: false
           range:
             override: false
@@ -1090,7 +1090,7 @@ items:
               - vocal
               - somatic
               - material
-            spellbook: false
+            power list: false
             uuid: Compendium.dnd5e.spells24.Item.phbsplCommand000
             ability: ''
           name: ''
@@ -1101,12 +1101,12 @@ items:
       description:
         value: >-
           <p class="feature">The [[lookup @name lowercase]] uses [[/item
-          Spellcasting]] to cast
+          Power System]] to cast
           <em>@UUID[Compendium.dnd5e.spells24.Item.phbsplCommand000]{Command}</em>
           (level 2 version). The [[lookup @name lowercase]] can't take this
           action again until the start of its next turn.</p>
         chat: >-
-          <p class="feature">The [[lookup @name lowercase]] uses Spellcasting to
+          <p class="feature">The [[lookup @name lowercase]] uses Power System to
           cast <em>Command</em> (level 2 version). The [[lookup @name
           lowercase]] can’t take this action again until the start of its next
           turn.</p>
@@ -1163,8 +1163,8 @@ items:
           means.</p><p><strong>Grovel.</strong> The target has the Prone
           condition and then ends its turn.</p><p><strong>Halt.</strong> On its
           turn, the target doesn't move and takes no action or Bonus
-          Action.</p><p><strong>Using a Higher-Level Spell Slot.</strong> You
-          can affect one additional creature for each spell slot level above
+          Action.</p><p><strong>Using a Higher-Level Power Use.</strong> You
+          can affect one additional creature for each power use level above
           1.</p>
         chat: ''
       source:
@@ -1229,7 +1229,7 @@ items:
           duration:
             units: inst
             override: false
-            concentration: false
+            maintained power: false
           effects: []
           range:
             override: false
@@ -1248,7 +1248,7 @@ items:
             ability:
               - wis
             dc:
-              calculation: spellcasting
+              calculation: power system
               formula: ''
           uses:
             spent: 0
@@ -1328,8 +1328,8 @@ items:
       exportSource: null
     _id: XdmqM6EC8IQGORA7
     _key: '!actors.items!mmAdultRedDragon.XdmqM6EC8IQGORA7'
-  - _id: mmSpellcasting00
-    name: Spellcasting
+  - _id: mmPower System00
+    name: Power System
     type: feat
     system:
       type:
@@ -1347,7 +1347,7 @@ items:
             level: 2
             properties:
               - material
-            spellbook: true
+            power list: true
             ability: ''
           _id: wjUmU9dX4sy0f4SF
           sort: 0
@@ -1364,7 +1364,7 @@ items:
             chatFlavor: ''
           duration:
             units: inst
-            concentration: false
+            maintained power: false
             override: false
           range:
             override: false
@@ -1392,7 +1392,7 @@ items:
             level: 1
             properties:
               - material
-            spellbook: true
+            power list: true
             ability: ''
           _id: NHrfagsqSLT32oSk
           sort: 0
@@ -1409,7 +1409,7 @@ items:
             chatFlavor: ''
           duration:
             units: inst
-            concentration: false
+            maintained power: false
             override: false
           range:
             override: false
@@ -1437,7 +1437,7 @@ items:
             level: 2
             properties:
               - material
-            spellbook: true
+            power list: true
             ability: ''
           _id: Jaz0gSib4KNHVzjz
           sort: 0
@@ -1454,7 +1454,7 @@ items:
             chatFlavor: ''
           duration:
             units: inst
-            concentration: false
+            maintained power: false
             override: false
           range:
             override: false
@@ -1482,7 +1482,7 @@ items:
             level: 3
             properties:
               - material
-            spellbook: true
+            power list: true
             ability: ''
           _id: NYI0XAuSZOULfXoN
           sort: 0
@@ -1502,7 +1502,7 @@ items:
             chatFlavor: ''
           duration:
             units: inst
-            concentration: false
+            maintained power: false
             override: false
           range:
             override: false
@@ -1529,7 +1529,7 @@ items:
         value: >-
           <p class="feature">The [[lookup @name lowercase]] casts one of the
           following spells, requiring no Material components and using Charisma
-          as the spellcasting ability (spell save DC [[lookup
+          as the power system ability (spell save DC [[lookup
           @attributes.spell.dc]], +12 to hit with spell attacks):</p><p
           class="feature-trait"><strong>At Will:</strong>
           <em>@UUID[Compendium.dnd5e.spells24.Item.phbsplCommand000]{Command}</em>
@@ -1540,7 +1540,7 @@ items:
           Ray}</em></p><p class="feature-trait"><strong>1/Day:</strong>
           <em>@UUID[Compendium.dnd5e.spells24.Item.phbsplFireball00]{Fireball}</em></p>
         chat: ''
-      identifier: spellcasting
+      identifier: power system
       source:
         revision: 1
         rules: '2024'
@@ -1564,7 +1564,7 @@ items:
           activity: []
           effect: []
     _stats:
-      compendiumSource: Compendium.dnd-monster-manual.features.Item.mmSpellcasting00
+      compendiumSource: Compendium.dnd-monster-manual.features.Item.mmPower System00
       duplicateSource: null
       coreVersion: '13.344'
       systemId: dnd5e
@@ -1576,7 +1576,7 @@ items:
     ownership:
       default: 0
     sort: 5
-    _key: '!actors.items!mmAdultRedDragon.mmSpellcasting00'
+    _key: '!actors.items!mmAdultRedDragon.mmPower System00'
   - name: Command
     system:
       description:
@@ -1593,8 +1593,8 @@ items:
           means.</p><p><strong>Grovel.</strong> The target has the Prone
           condition and then ends its turn.</p><p><strong>Halt.</strong> On its
           turn, the target doesn't move and takes no action or Bonus
-          Action.</p><p><strong>Using a Higher-Level Spell Slot.</strong> You
-          can affect one additional creature for each spell slot level above
+          Action.</p><p><strong>Using a Higher-Level Power Use.</strong> You
+          can affect one additional creature for each power use level above
           1.</p>
         chat: ''
       source:
@@ -1659,7 +1659,7 @@ items:
           duration:
             units: inst
             override: false
-            concentration: false
+            maintained power: false
           effects: []
           range:
             override: false
@@ -1678,7 +1678,7 @@ items:
             ability:
               - wis
             dc:
-              calculation: spellcasting
+              calculation: power system
               formula: ''
           uses:
             spent: 0
@@ -1693,7 +1693,7 @@ items:
         name: Spell Changes
         img: systems/dnd5e/icons/svg/activity/cast.svg
         origin: >-
-          Compendium.dnd5e.actors24.Actor.mmAdultRedDragon.Item.mmSpellcasting00.Activity.wjUmU9dX4sy0f4SF
+          Compendium.dnd5e.actors24.Actor.mmAdultRedDragon.Item.mmPower System00.Activity.wjUmU9dX4sy0f4SF
         changes:
           - key: system.properties
             mode: 2
@@ -1733,7 +1733,7 @@ items:
       default: 0
     flags:
       dnd5e:
-        cachedFor: .Item.mmSpellcasting00.Activity.wjUmU9dX4sy0f4SF
+        cachedFor: .Item.mmPower System00.Activity.wjUmU9dX4sy0f4SF
     _stats:
       compendiumSource: Compendium.dnd5e.spells24.Item.phbsplCommand000
       duplicateSource: null
@@ -1796,7 +1796,7 @@ items:
       properties:
         - vocal
         - somatic
-        - concentration
+        - maintained power
         - ritual
       materials:
         value: ''
@@ -1825,7 +1825,7 @@ items:
           duration:
             units: inst
             override: false
-            concentration: false
+            maintained power: false
           effects:
             - _id: BHw91lQmVgdx39WZ
           range:
@@ -1893,7 +1893,7 @@ items:
         name: Spell Changes
         img: systems/dnd5e/icons/svg/activity/cast.svg
         origin: >-
-          Compendium.dnd5e.actors24.Actor.mmAdultRedDragon.Item.mmSpellcasting00.Activity.NHrfagsqSLT32oSk
+          Compendium.dnd5e.actors24.Actor.mmAdultRedDragon.Item.mmPower System00.Activity.NHrfagsqSLT32oSk
         changes:
           - key: system.properties
             mode: 2
@@ -1936,7 +1936,7 @@ items:
         riders:
           activity: []
           effect: []
-        cachedFor: .Item.mmSpellcasting00.Activity.NHrfagsqSLT32oSk
+        cachedFor: .Item.mmPower System00.Activity.NHrfagsqSLT32oSk
     _stats:
       compendiumSource: Compendium.dnd5e.spells24.Item.phbsplDetectMagi
       duplicateSource: null
@@ -1954,10 +1954,10 @@ items:
       description:
         value: >-
           <p>You hurl three fiery rays. You can hurl them at one target within
-          range or at several. Make a ranged spell attack for each ray. On a
+          range or at several. Make a ranged power attack for each ray. On a
           hit, the target takes 2d6 Fire damage.</p><p><strong>Using a
-          Higher-Level Spell Slot.</strong> You create one additional ray for
-          each spell slot level above 2.</p><p>[[@item.level + 1]]{Total
+          Higher-Level Power Use.</strong> You create one additional ray for
+          each power use level above 2.</p><p>[[@item.level + 1]]{Total
           Rays}</p>
         chat: ''
       source:
@@ -2018,7 +2018,7 @@ items:
           duration:
             units: inst
             override: false
-            concentration: false
+            maintained power: false
           effects: []
           range:
             override: false
@@ -2069,7 +2069,7 @@ items:
         name: Spell Changes
         img: systems/dnd5e/icons/svg/activity/cast.svg
         origin: >-
-          Compendium.dnd5e.actors24.Actor.mmAdultRedDragon.Item.mmSpellcasting00.Activity.Jaz0gSib4KNHVzjz
+          Compendium.dnd5e.actors24.Actor.mmAdultRedDragon.Item.mmPower System00.Activity.Jaz0gSib4KNHVzjz
         changes:
           - key: system.properties
             mode: 2
@@ -2109,7 +2109,7 @@ items:
       default: 0
     flags:
       dnd5e:
-        cachedFor: .Item.mmSpellcasting00.Activity.Jaz0gSib4KNHVzjz
+        cachedFor: .Item.mmPower System00.Activity.Jaz0gSib4KNHVzjz
     _stats:
       compendiumSource: Compendium.dnd5e.spells24.Item.phbsplScorchingR
       duplicateSource: null
@@ -2132,8 +2132,8 @@ items:
           Dexterity saving throw, taking 8d6 Fire damage on a failed save or
           half as much damage on a successful one.</p><p>Flammable objects in
           the area that aren't being worn or carried start
-          burning.</p><p><strong>Using a Higher-Level Spell Slot.</strong> The
-          damage increases by 1d6 for each spell slot level above 3.</p>
+          burning.</p><p><strong>Using a Higher-Level Power Use.</strong> The
+          damage increases by 1d6 for each power use level above 3.</p>
         chat: ''
       source:
         custom: ''
@@ -2201,7 +2201,7 @@ items:
           duration:
             units: inst
             override: false
-            concentration: false
+            maintained power: false
           effects: []
           range:
             override: false
@@ -2232,7 +2232,7 @@ items:
             ability:
               - dex
             dc:
-              calculation: spellcasting
+              calculation: power system
               formula: ''
           uses:
             spent: 0
@@ -2247,7 +2247,7 @@ items:
         name: Spell Changes
         img: systems/dnd5e/icons/svg/activity/cast.svg
         origin: >-
-          Compendium.dnd5e.actors24.Actor.mmAdultRedDragon.Item.mmSpellcasting00.Activity.NYI0XAuSZOULfXoN
+          Compendium.dnd5e.actors24.Actor.mmAdultRedDragon.Item.mmPower System00.Activity.NYI0XAuSZOULfXoN
         changes:
           - key: system.properties
             mode: 2
@@ -2287,7 +2287,7 @@ items:
       default: 0
     flags:
       dnd5e:
-        cachedFor: .Item.mmSpellcasting00.Activity.NYI0XAuSZOULfXoN
+        cachedFor: .Item.mmPower System00.Activity.NYI0XAuSZOULfXoN
     _stats:
       compendiumSource: Compendium.dnd5e.spells24.Item.phbsplFireball00
       duplicateSource: null
@@ -2326,7 +2326,7 @@ items:
             chatFlavor: ''
           duration:
             units: inst
-            concentration: false
+            maintained power: false
             override: false
           range:
             override: false
@@ -2352,7 +2352,7 @@ items:
               - vocal
               - somatic
               - material
-            spellbook: false
+            power list: false
             uuid: Compendium.dnd5e.spells24.Item.phbsplScorchingR
             ability: ''
           name: ''
@@ -2363,7 +2363,7 @@ items:
       description:
         value: >-
           <p class="feature">The [[lookup @name lowercase]] uses [[/item
-          Spellcasting]] to cast
+          Power System]] to cast
           <em>@UUID[Compendium.dnd5e.spells24.Item.phbsplScorchingR]{Scorching
           Ray}</em>. The [[lookup @name lowercase]] can't take this action again
           until the start of its next turn.</p>
@@ -2410,10 +2410,10 @@ items:
       description:
         value: >-
           <p>You hurl three fiery rays. You can hurl them at one target within
-          range or at several. Make a ranged spell attack for each ray. On a
+          range or at several. Make a ranged power attack for each ray. On a
           hit, the target takes 2d6 Fire damage.</p><p><strong>Using a
-          Higher-Level Spell Slot.</strong> You create one additional ray for
-          each spell slot level above 2.</p><p>[[@item.level + 1]]{Total
+          Higher-Level Power Use.</strong> You create one additional ray for
+          each power use level above 2.</p><p>[[@item.level + 1]]{Total
           Rays}</p>
         chat: ''
       source:
@@ -2474,7 +2474,7 @@ items:
           duration:
             units: inst
             override: false
-            concentration: false
+            maintained power: false
           effects: []
           range:
             override: false
@@ -2619,7 +2619,7 @@ items:
             chatFlavor: ''
           duration:
             units: inst
-            concentration: false
+            maintained power: false
             override: false
           effects: []
           range:

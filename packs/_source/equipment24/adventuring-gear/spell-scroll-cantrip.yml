@@ -1,20 +1,20 @@
-name: Spell Scroll, Cantrip
+name: Power Module, Basic Power
 system:
   description:
     value: >-
-      <p>A <em>Spell Scroll</em> (Cantrip) or
-      @UUID[Compendium.dnd5e.equipment24.Item.phbagSpellScroll]{Spell Scroll
-      (Level 1)} is a magic item that bears the words of a cantrip or level 1
+      <p>A <em>Power Module</em> (Basic Power) or
+      @UUID[Compendium.dnd5e.equipment24.Item.phbagSpellScroll]{Power Module
+      (Level 1)} is a magic item that bears the words of a basic power or level 1
       spell, respectively, determined by the scroll's creator. If the spell is
-      on your class's spell list, you can read the scroll and cast the spell
-      using its normal casting time and without providing any Material
+      on your class's power list, you can read the scroll and cast the spell
+      using its normal activation time and without providing any Material
       components.</p><p>If the spell requires a saving throw or an attack roll,
       the spell save DC is 13, and the attack bonus is +5. The scroll
       disintegrates when the casting is completed.</p>
     chat: ''
   price:
     value: 30
-    denomination: gp
+    denomination: CR
   source:
     custom: ''
     rules: '2024'
@@ -54,8 +54,8 @@ system:
   properties:
     - mgc
   activities: {}
-  identifier: spell-scroll-cantrip
-_id: phbagCantripScro
+  identifier: spell-scroll-basic power
+_id: phbagBasic PowerScro
 type: consumable
 folder: uDk4FBYfcP2JnX6t
 img: icons/sundries/scrolls/scroll-bound-orange-tan.webp
@@ -77,4 +77,4 @@ _stats:
   modifiedTime: 1745256811344
   lastModifiedBy: dnd5ebuilder0000
   exportSource: null
-_key: '!items!phbagCantripScro'
+_key: '!items!phbagBasic PowerScro'

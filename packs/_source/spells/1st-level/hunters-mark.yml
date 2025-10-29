@@ -13,9 +13,9 @@ system:
       the target drops to 0 hit points before this spell ends, you can use a
       bonus action on a subsequent turn of yours to mark a new
       creature.</p><p><strong>At Higher Levels.</strong> When you cast this
-      spell using a spell slot of 3rd or 4th level, you can maintain your
-      concentration on the spell for up to 8 hours. When you use a spell slot of
-      5th level or higher, you can maintain your concentration on the spell for
+      spell using a power use of 3rd or 4th level, you can maintain your
+      maintained power on the spell for up to 8 hours. When you use a power use of
+      5th level or higher, you can maintain your maintained power on the spell for
       up to 24 hours.</p>
     chat: ''
   source:
@@ -58,7 +58,7 @@ system:
     prepared: false
   properties:
     - vocal
-    - concentration
+    - maintained power
   activities:
     dnd5eactivity000:
       _id: dnd5eactivity000
@@ -77,7 +77,7 @@ system:
         chatFlavor: ''
       duration:
         units: inst
-        concentration: false
+        maintained power: false
         override: false
       effects:
         - _id: maRUYUv77W8IGST3

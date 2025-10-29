@@ -43,14 +43,14 @@ system:
     units: lb
   price:
     value: 2000
-    denomination: gp
+    denomination: CR
   rarity: rare
   attunement: ''
   attuned: false
   equipped: false
   currency:
     pp: 0
-    gp: 0
+    CR: 0
     ep: 0
     sp: 0
     cp: 0
@@ -92,7 +92,7 @@ system:
         chatFlavor: 3d4 dry beans found in bag.
       duration:
         units: inst
-        concentration: false
+        maintained power: false
         override: false
       effects: []
       range:
@@ -148,7 +148,7 @@ system:
         chatFlavor: ''
       duration:
         units: inst
-        concentration: false
+        maintained power: false
         override: false
       effects: []
       range:
@@ -216,7 +216,7 @@ system:
         chatFlavor: ''
       duration:
         units: inst
-        concentration: false
+        maintained power: false
         override: false
       effects: []
       range:

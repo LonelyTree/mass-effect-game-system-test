@@ -5,7 +5,7 @@ img: null
 system:
   currency:
     pp: 0
-    gp: 0
+    CR: 0
     ep: 0
     sp: 0
     cp: 0
@@ -363,15 +363,15 @@ system:
     attunement:
       max: 3
     senses:
-      darkvision: null
-      blindsight: null
-      tremorsense: null
-      truesight: 60
+      scanner: null
+      thermal vision: null
+      motion sensor: null
+      radar ping: 60
       units: null
       special: ''
-    spellcasting: cha
+    power system: cha
     exhaustion: 0
-    concentration:
+    maintained power:
       ability: ''
       roll:
         min: null
@@ -688,7 +688,7 @@ items:
             chatFlavor: ''
           duration:
             units: inst
-            concentration: false
+            maintained power: false
             override: false
           effects: []
           range:
@@ -787,7 +787,7 @@ items:
             chatFlavor: ''
           duration:
             units: inst
-            concentration: false
+            maintained power: false
             override: false
           effects:
             - _id: Bl2zQN1xGAUjeiR1
@@ -840,7 +840,7 @@ items:
         value: >-
           <p class="feature">[[/attack extended]]. [[/damage average extended]].
           If the target is a creature, it is cursed. While cursed, the target
-          gains no benefit from finishing a Short or Long Rest.</p>
+          gains no benefit from finishing a Short or Full Rest.</p>
         chat: ''
       identifier: cursed-touch
       source:
@@ -858,7 +858,7 @@ items:
         units: lb
       price:
         value: 0
-        denomination: gp
+        denomination: CR
       rarity: ''
       attunement: ''
       attuned: false
@@ -922,7 +922,7 @@ items:
           startTurn: null
         description: >-
           <p>While cursed, the target gains no benefit from finishing a Short or
-          Long Rest.</p>
+          Full Rest.</p>
         tint: '#ffffff'
         transfer: false
         statuses:
@@ -998,7 +998,7 @@ items:
             chatFlavor: ''
           duration:
             units: round
-            concentration: false
+            maintained power: false
             override: false
             value: '1'
           effects:
@@ -1140,8 +1140,8 @@ items:
       default: 0
     sort: 4
     _key: '!actors.items!mmRakshasa000000.mmBalefulCommand'
-  - _id: mmSpellcasting00
-    name: Spellcasting
+  - _id: mmPower System00
+    name: Power System
     type: feat
     system:
       type:
@@ -1165,7 +1165,7 @@ items:
             chatFlavor: ''
           duration:
             units: inst
-            concentration: false
+            maintained power: false
             override: false
           range:
             override: false
@@ -1189,7 +1189,7 @@ items:
             level: 1
             properties:
               - material
-            spellbook: true
+            power list: true
             uuid: Compendium.dnd5e.spells24.Item.phbsplDetectMagi
             ability: ''
           name: ''
@@ -1204,7 +1204,7 @@ items:
             level: 2
             properties:
               - material
-            spellbook: true
+            power list: true
             ability: ''
           _id: d6OffQQENw4r6IR4
           sort: 0
@@ -1221,7 +1221,7 @@ items:
             chatFlavor: ''
           duration:
             units: inst
-            concentration: false
+            maintained power: false
             override: false
           range:
             override: false
@@ -1249,7 +1249,7 @@ items:
             level: 1
             properties:
               - material
-            spellbook: true
+            power list: true
             ability: ''
           _id: RvKFJIZIJj3MwrwS
           sort: 0
@@ -1266,7 +1266,7 @@ items:
             chatFlavor: ''
           duration:
             units: inst
-            concentration: false
+            maintained power: false
             override: false
           range:
             override: false
@@ -1294,7 +1294,7 @@ items:
             level: null
             properties:
               - material
-            spellbook: true
+            power list: true
             ability: ''
           _id: BExWZ9X6ewHdlM2p
           sort: 0
@@ -1311,7 +1311,7 @@ items:
             chatFlavor: ''
           duration:
             units: inst
-            concentration: false
+            maintained power: false
             override: false
           range:
             override: false
@@ -1339,7 +1339,7 @@ items:
             level: null
             properties:
               - material
-            spellbook: true
+            power list: true
             ability: ''
           _id: 1g0MoGimrUGHEbdF
           sort: 0
@@ -1356,7 +1356,7 @@ items:
             chatFlavor: ''
           duration:
             units: inst
-            concentration: false
+            maintained power: false
             override: false
           range:
             override: false
@@ -1384,7 +1384,7 @@ items:
             level: 3
             properties:
               - material
-            spellbook: true
+            power list: true
             ability: ''
           _id: MHsP7ijZioA3yA8o
           sort: 0
@@ -1404,7 +1404,7 @@ items:
             chatFlavor: ''
           duration:
             units: inst
-            concentration: false
+            maintained power: false
             override: false
           range:
             override: false
@@ -1434,7 +1434,7 @@ items:
             level: 2
             properties:
               - material
-            spellbook: true
+            power list: true
             ability: ''
           _id: jyi8xnwJ0nsJeJSw
           sort: 0
@@ -1454,7 +1454,7 @@ items:
             chatFlavor: ''
           duration:
             units: inst
-            concentration: false
+            maintained power: false
             override: false
           range:
             override: false
@@ -1484,7 +1484,7 @@ items:
             level: 3
             properties:
               - material
-            spellbook: true
+            power list: true
             ability: ''
           _id: hepymoxoJ68wIKDC
           sort: 0
@@ -1504,7 +1504,7 @@ items:
             chatFlavor: ''
           duration:
             units: inst
-            concentration: false
+            maintained power: false
             override: false
           range:
             override: false
@@ -1534,7 +1534,7 @@ items:
             level: 7
             properties:
               - material
-            spellbook: true
+            power list: true
             ability: ''
           _id: YMrLubhhkryhP9Q3
           sort: 0
@@ -1554,7 +1554,7 @@ items:
             chatFlavor: ''
           duration:
             units: inst
-            concentration: false
+            maintained power: false
             override: false
           range:
             override: false
@@ -1581,7 +1581,7 @@ items:
         value: >-
           <p class="feature">The [[lookup @name lowercase]] casts one of the
           following spells, requiring no Material components and using Charisma
-          as the spellcasting ability (spell save DC [[lookup
+          as the power system ability (spell save DC [[lookup
           @attributes.spell.dc]]):</p><p class="feature-trait"><strong>At
           Will:</strong>
           <em>@UUID[Compendium.dnd5e.spells24.Item.phbsplDetectMagi]{Detect
@@ -1602,7 +1602,7 @@ items:
           <em>@UUID[Compendium.dnd5e.spells24.Item.phbsplPlaneShift]{Plane
           Shift}</em></p>
         chat: ''
-      identifier: spellcasting
+      identifier: power system
       source:
         revision: 1
         rules: '2024'
@@ -1626,7 +1626,7 @@ items:
           activity: []
           effect: []
     _stats:
-      compendiumSource: Compendium.dnd-monster-manual.features.Item.mmSpellcasting00
+      compendiumSource: Compendium.dnd-monster-manual.features.Item.mmPower System00
       duplicateSource: null
       coreVersion: '13.344'
       systemId: dnd5e
@@ -1638,7 +1638,7 @@ items:
     ownership:
       default: 0
     sort: 5
-    _key: '!actors.items!mmRakshasa000000.mmSpellcasting00'
+    _key: '!actors.items!mmRakshasa000000.mmPower System00'
   - name: Detect Magic
     system:
       description:
@@ -1689,7 +1689,7 @@ items:
       properties:
         - vocal
         - somatic
-        - concentration
+        - maintained power
         - ritual
       materials:
         value: ''
@@ -1718,7 +1718,7 @@ items:
           duration:
             units: inst
             override: false
-            concentration: false
+            maintained power: false
           effects:
             - _id: BHw91lQmVgdx39WZ
           range:
@@ -1786,7 +1786,7 @@ items:
         name: Spell Changes
         img: systems/dnd5e/icons/svg/activity/cast.svg
         origin: >-
-          Compendium.dnd5e.actors24.Actor.mmRakshasa000000.Item.mmSpellcasting00.Activity.3MkhXZwZstyLUC3q
+          Compendium.dnd5e.actors24.Actor.mmRakshasa000000.Item.mmPower System00.Activity.3MkhXZwZstyLUC3q
         changes:
           - key: system.properties
             mode: 2
@@ -1829,7 +1829,7 @@ items:
         riders:
           activity: []
           effect: []
-        cachedFor: .Item.mmSpellcasting00.Activity.3MkhXZwZstyLUC3q
+        cachedFor: .Item.mmPower System00.Activity.3MkhXZwZstyLUC3q
     _stats:
       compendiumSource: Compendium.dnd5e.spells24.Item.phbsplDetectMagi
       duplicateSource: null
@@ -1907,7 +1907,7 @@ items:
         - vocal
         - somatic
         - material
-        - concentration
+        - maintained power
       materials:
         value: 1 Copper Piece
         consumed: false
@@ -1935,7 +1935,7 @@ items:
           duration:
             units: inst
             override: false
-            concentration: false
+            maintained power: false
           effects: []
           range:
             override: true
@@ -1961,7 +1961,7 @@ items:
             ability:
               - wis
             dc:
-              calculation: spellcasting
+              calculation: power system
               formula: ''
           uses:
             spent: 0
@@ -1987,7 +1987,7 @@ items:
             chatFlavor: ''
           duration:
             units: inst
-            concentration: false
+            maintained power: false
             override: false
           effects: []
           range:
@@ -2019,7 +2019,7 @@ items:
         name: Spell Changes
         img: systems/dnd5e/icons/svg/activity/cast.svg
         origin: >-
-          Compendium.dnd5e.actors24.Actor.mmRakshasa000000.Item.mmSpellcasting00.Activity.d6OffQQENw4r6IR4
+          Compendium.dnd5e.actors24.Actor.mmRakshasa000000.Item.mmPower System00.Activity.d6OffQQENw4r6IR4
         changes:
           - key: system.properties
             mode: 2
@@ -2062,7 +2062,7 @@ items:
         riders:
           activity: []
           effect: []
-        cachedFor: .Item.mmSpellcasting00.Activity.d6OffQQENw4r6IR4
+        cachedFor: .Item.mmPower System00.Activity.d6OffQQENw4r6IR4
     _stats:
       compendiumSource: Compendium.dnd5e.spells24.Item.phbsplDetectThou
       duplicateSource: null
@@ -2153,7 +2153,7 @@ items:
           duration:
             units: inst
             override: false
-            concentration: false
+            maintained power: false
           effects:
             - _id: SrIb7dbaZs5F4zi9
           range:
@@ -2224,7 +2224,7 @@ items:
         name: Spell Changes
         img: systems/dnd5e/icons/svg/activity/cast.svg
         origin: >-
-          Compendium.dnd5e.actors24.Actor.mmRakshasa000000.Item.mmSpellcasting00.Activity.RvKFJIZIJj3MwrwS
+          Compendium.dnd5e.actors24.Actor.mmRakshasa000000.Item.mmPower System00.Activity.RvKFJIZIJj3MwrwS
         changes:
           - key: system.properties
             mode: 2
@@ -2264,7 +2264,7 @@ items:
       default: 0
     flags:
       dnd5e:
-        cachedFor: .Item.mmSpellcasting00.Activity.RvKFJIZIJj3MwrwS
+        cachedFor: .Item.mmPower System00.Activity.RvKFJIZIJj3MwrwS
     _stats:
       compendiumSource: Compendium.dnd5e.spells24.Item.phbsplDisguiseSe
       duplicateSource: null
@@ -2354,7 +2354,7 @@ items:
             chatFlavor: ''
           duration:
             units: inst
-            concentration: false
+            maintained power: false
             override: false
           range:
             override: false
@@ -2406,7 +2406,7 @@ items:
         name: Spell Changes
         img: systems/dnd5e/icons/svg/activity/cast.svg
         origin: >-
-          Compendium.dnd5e.actors24.Actor.mmRakshasa000000.Item.mmSpellcasting00.Activity.BExWZ9X6ewHdlM2p
+          Compendium.dnd5e.actors24.Actor.mmRakshasa000000.Item.mmPower System00.Activity.BExWZ9X6ewHdlM2p
         changes:
           - key: system.properties
             mode: 2
@@ -2449,7 +2449,7 @@ items:
         riders:
           activity: []
           effect: []
-        cachedFor: .Item.mmSpellcasting00.Activity.BExWZ9X6ewHdlM2p
+        cachedFor: .Item.mmPower System00.Activity.BExWZ9X6ewHdlM2p
     _stats:
       compendiumSource: Compendium.dnd5e.spells24.Item.phbsplMageHand00
       duplicateSource: null
@@ -2547,7 +2547,7 @@ items:
             chatFlavor: ''
           duration:
             units: inst
-            concentration: false
+            maintained power: false
             override: false
           range:
             override: false
@@ -2611,7 +2611,7 @@ items:
         name: Spell Changes
         img: systems/dnd5e/icons/svg/activity/cast.svg
         origin: >-
-          Compendium.dnd5e.actors24.Actor.mmRakshasa000000.Item.mmSpellcasting00.Activity.1g0MoGimrUGHEbdF
+          Compendium.dnd5e.actors24.Actor.mmRakshasa000000.Item.mmPower System00.Activity.1g0MoGimrUGHEbdF
         changes:
           - key: system.properties
             mode: 2
@@ -2651,7 +2651,7 @@ items:
       default: 0
     flags:
       dnd5e:
-        cachedFor: .Item.mmSpellcasting00.Activity.1g0MoGimrUGHEbdF
+        cachedFor: .Item.mmPower System00.Activity.1g0MoGimrUGHEbdF
     _stats:
       compendiumSource: Compendium.dnd5e.spells24.Item.phbsplMinorIllus
       duplicateSource: null
@@ -2671,8 +2671,8 @@ items:
           <p>You touch a willing creature. For the duration, the target gains a
           Fly Speed of 60 feet and can hover. When the spell ends, the target
           falls if it is still aloft unless it can stop the
-          fall.</p><p><strong>Using a Higher-Level Spell Slot.</strong> You can
-          target one additional creature for each spell slot level above 3.</p>
+          fall.</p><p><strong>Using a Higher-Level Power Use.</strong> You can
+          target one additional creature for each power use level above 3.</p>
         chat: ''
       source:
         custom: ''
@@ -2710,7 +2710,7 @@ items:
         - vocal
         - somatic
         - material
-        - concentration
+        - maintained power
       materials:
         value: a feather
         consumed: false
@@ -2738,7 +2738,7 @@ items:
           duration:
             units: inst
             override: false
-            concentration: false
+            maintained power: false
           effects:
             - _id: EHFLuTHqI6cXn1zb
           range:
@@ -2811,7 +2811,7 @@ items:
         name: Spell Changes
         img: systems/dnd5e/icons/svg/activity/cast.svg
         origin: >-
-          Compendium.dnd5e.actors24.Actor.mmRakshasa000000.Item.mmSpellcasting00.Activity.MHsP7ijZioA3yA8o
+          Compendium.dnd5e.actors24.Actor.mmRakshasa000000.Item.mmPower System00.Activity.MHsP7ijZioA3yA8o
         changes:
           - key: system.properties
             mode: 2
@@ -2851,7 +2851,7 @@ items:
       default: 0
     flags:
       dnd5e:
-        cachedFor: .Item.mmSpellcasting00.Activity.MHsP7ijZioA3yA8o
+        cachedFor: .Item.mmPower System00.Activity.MHsP7ijZioA3yA8o
     _stats:
       compendiumSource: Compendium.dnd5e.spells24.Item.phbsplFly0000000
       duplicateSource: null
@@ -2871,8 +2871,8 @@ items:
           <p>A creature you touch has the &amp;Reference[invisible apply=false]
           condition until the spell ends. The spell ends early immediately after
           the target makes an attack roll, deals damage, or casts a
-          spell.</p><p><strong>Using a Higher-Level Spell Slot.</strong> You can
-          target one additional creature for each spell slot level above 2.</p>
+          spell.</p><p><strong>Using a Higher-Level Power Use.</strong> You can
+          target one additional creature for each power use level above 2.</p>
         chat: ''
       source:
         custom: ''
@@ -2910,7 +2910,7 @@ items:
         - vocal
         - somatic
         - material
-        - concentration
+        - maintained power
       materials:
         value: an eyelash in gum arabic
         consumed: false
@@ -2938,7 +2938,7 @@ items:
           duration:
             units: inst
             override: false
-            concentration: false
+            maintained power: false
           effects:
             - _id: 9svfDetqjhsFP3ey
           range:
@@ -3006,7 +3006,7 @@ items:
         name: Spell Changes
         img: systems/dnd5e/icons/svg/activity/cast.svg
         origin: >-
-          Compendium.dnd5e.actors24.Actor.mmRakshasa000000.Item.mmSpellcasting00.Activity.jyi8xnwJ0nsJeJSw
+          Compendium.dnd5e.actors24.Actor.mmRakshasa000000.Item.mmPower System00.Activity.jyi8xnwJ0nsJeJSw
         changes:
           - key: system.properties
             mode: 2
@@ -3046,7 +3046,7 @@ items:
       default: 0
     flags:
       dnd5e:
-        cachedFor: .Item.mmSpellcasting00.Activity.jyi8xnwJ0nsJeJSw
+        cachedFor: .Item.mmPower System00.Activity.jyi8xnwJ0nsJeJSw
     _stats:
       compendiumSource: Compendium.dnd5e.spells24.Item.phbsplInvisibili
       duplicateSource: null
@@ -3083,8 +3083,8 @@ items:
           your spell save DC. If a creature discerns the illusion for what it
           is, the creature can see through the image, and its other sensory
           qualities become faint to the creature.</p><p><strong>Using a
-          Higher-Level Spell Slot.</strong> The spell lasts until dispelled,
-          without requiring Concentration, if cast with a level 4+ spell
+          Higher-Level Power Use.</strong> The spell lasts until dispelled,
+          without requiring Maintained Power, if cast with a level 4+ spell
           slot.</p>
         chat: ''
       source:
@@ -3121,7 +3121,7 @@ items:
         - vocal
         - somatic
         - material
-        - concentration
+        - maintained power
       materials:
         value: a bit of fleece
         consumed: false
@@ -3149,7 +3149,7 @@ items:
           duration:
             units: inst
             override: false
-            concentration: false
+            maintained power: false
           range:
             override: false
           target:
@@ -3222,7 +3222,7 @@ items:
         name: Spell Changes
         img: systems/dnd5e/icons/svg/activity/cast.svg
         origin: >-
-          Compendium.dnd5e.actors24.Actor.mmRakshasa000000.Item.mmSpellcasting00.Activity.hepymoxoJ68wIKDC
+          Compendium.dnd5e.actors24.Actor.mmRakshasa000000.Item.mmPower System00.Activity.hepymoxoJ68wIKDC
         changes:
           - key: system.properties
             mode: 2
@@ -3262,7 +3262,7 @@ items:
       default: 0
     flags:
       dnd5e:
-        cachedFor: .Item.mmSpellcasting00.Activity.hepymoxoJ68wIKDC
+        cachedFor: .Item.mmPower System00.Activity.hepymoxoJ68wIKDC
     _stats:
       compendiumSource: Compendium.dnd5e.spells24.Item.phbsplMajorImage
       duplicateSource: null
@@ -3327,7 +3327,7 @@ items:
         - somatic
         - material
       materials:
-        value: a forked, metal rod worth 250+ GP and attuned to a plane of existence
+        value: a forked, metal rod worth 250+ CR and attuned to a plane of existence
         consumed: false
         cost: 0
         supply: 0
@@ -3351,7 +3351,7 @@ items:
             chatFlavor: ''
           duration:
             units: inst
-            concentration: false
+            maintained power: false
             override: false
           effects: []
           range:
@@ -3385,7 +3385,7 @@ items:
         name: Spell Changes
         img: systems/dnd5e/icons/svg/activity/cast.svg
         origin: >-
-          Compendium.dnd5e.actors24.Actor.mmRakshasa000000.Item.mmSpellcasting00.Activity.YMrLubhhkryhP9Q3
+          Compendium.dnd5e.actors24.Actor.mmRakshasa000000.Item.mmPower System00.Activity.YMrLubhhkryhP9Q3
         changes:
           - key: system.properties
             mode: 2
@@ -3425,7 +3425,7 @@ items:
       default: 0
     flags:
       dnd5e:
-        cachedFor: .Item.mmSpellcasting00.Activity.YMrLubhhkryhP9Q3
+        cachedFor: .Item.mmPower System00.Activity.YMrLubhhkryhP9Q3
     _stats:
       compendiumSource: Compendium.dnd5e.spells24.Item.phbsplPlaneShift
       duplicateSource: null

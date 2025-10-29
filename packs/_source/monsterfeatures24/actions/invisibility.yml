@@ -23,7 +23,7 @@ system:
         chatFlavor: ''
       duration:
         units: inst
-        concentration: false
+        maintained power: false
         override: false
       range:
         override: false
@@ -49,7 +49,7 @@ system:
           - vocal
           - somatic
           - material
-        spellbook: true
+        power list: true
         uuid: Compendium.dnd5e.spells24.Item.phbsplInvisibili
         ability: cha
       name: ''
@@ -62,8 +62,8 @@ system:
     value: >-
       <p class="feature">The [[lookup @name lowercase]] casts
       <em>@UUID[Compendium.dnd5e.spells24.Item.phbsplInvisibili]{Invisibility}</em>
-      on itself, requiring no spell components and using Charisma as the
-      spellcasting ability.</p>
+      on itself, requiring no power components and using Charisma as the
+      power system ability.</p>
     chat: ''
   identifier: invisibility
   source:

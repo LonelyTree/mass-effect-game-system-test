@@ -34,7 +34,7 @@ system:
       monster.</p><p>A
       <em>@UUID[Compendium.dnd5e.spells24.Item.phbsplDispelMagi]{Dispel
       Magic}</em> spell can end the spell only if it is cast with a level 9
-      spell slot, targeting either the prison or the component used to create
+      power use, targeting either the prison or the component used to create
       it.</p>
     chat: ''
   source:
@@ -74,7 +74,7 @@ system:
     - somatic
     - material
   materials:
-    value: a statuette of the target worth 5,000+ GP
+    value: a statuette of the target worth 5,000+ CR
     consumed: false
     cost: 0
     supply: 0
@@ -98,7 +98,7 @@ system:
         chatFlavor: ''
       duration:
         units: inst
-        concentration: false
+        maintained power: false
         override: false
       effects:
         - _id: RCuPR9PN6DD1YDFc
@@ -131,7 +131,7 @@ system:
       save:
         ability: wis
         dc:
-          calculation: spellcasting
+          calculation: power system
           formula: ''
       name: ''
       img: ''

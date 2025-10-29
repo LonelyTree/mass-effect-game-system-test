@@ -5,7 +5,7 @@ img: null
 system:
   currency:
     pp: 0
-    gp: 0
+    CR: 0
     ep: 0
     sp: 0
     cp: 0
@@ -363,15 +363,15 @@ system:
     attunement:
       max: 3
     senses:
-      darkvision: 60
-      blindsight: null
-      tremorsense: null
-      truesight: null
+      scanner: 60
+      thermal vision: null
+      motion sensor: null
+      radar ping: null
       units: null
       special: ''
-    spellcasting: con
+    power system: con
     exhaustion: 0
-    concentration:
+    maintained power:
       ability: ''
       roll:
         min: null
@@ -627,7 +627,7 @@ items:
             chatFlavor: ''
           duration:
             units: inst
-            concentration: false
+            maintained power: false
             override: false
           range:
             override: false
@@ -653,7 +653,7 @@ items:
             level: 2
             properties:
               - material
-            spellbook: true
+            power list: true
             uuid: Compendium.dnd5e.spells24.Item.phbsplAugury0000
             ability: int
           name: ''
@@ -677,7 +677,7 @@ items:
             chatFlavor: ''
           duration:
             units: inst
-            concentration: false
+            maintained power: false
             override: false
           range:
             override: false
@@ -703,7 +703,7 @@ items:
             level: 1
             properties:
               - material
-            spellbook: true
+            power list: true
             uuid: Compendium.dnd5e.spells24.Item.phbsplFindFamili
             ability: int
           name: ''
@@ -727,7 +727,7 @@ items:
             chatFlavor: ''
           duration:
             units: inst
-            concentration: false
+            maintained power: false
             override: false
           range:
             override: false
@@ -753,7 +753,7 @@ items:
             level: 1
             properties:
               - material
-            spellbook: true
+            power list: true
             uuid: Compendium.dnd5e.spells24.Item.phbsplIdentify00
             ability: int
           name: ''
@@ -777,7 +777,7 @@ items:
             chatFlavor: ''
           duration:
             units: inst
-            concentration: false
+            maintained power: false
             override: false
           range:
             override: false
@@ -803,7 +803,7 @@ items:
             level: 2
             properties:
               - material
-            spellbook: true
+            power list: true
             uuid: Compendium.dnd5e.spells24.Item.phbsplLocateObje
             ability: int
           name: ''
@@ -827,7 +827,7 @@ items:
             chatFlavor: ''
           duration:
             units: inst
-            concentration: false
+            maintained power: false
             override: false
           range:
             override: false
@@ -853,7 +853,7 @@ items:
             level: 5
             properties:
               - material
-            spellbook: true
+            power list: true
             uuid: Compendium.dnd5e.spells24.Item.phbsplScrying000
             ability: int
           name: ''
@@ -877,7 +877,7 @@ items:
             chatFlavor: ''
           duration:
             units: inst
-            concentration: false
+            maintained power: false
             override: false
           range:
             override: false
@@ -903,7 +903,7 @@ items:
             level: 1
             properties:
               - material
-            spellbook: true
+            power list: true
             uuid: Compendium.dnd5e.spells24.Item.phbsplUnseenServ
             ability: int
           name: ''
@@ -916,7 +916,7 @@ items:
           <p class="feature">While within 30 feet of at least two hag allies,
           the [[lookup @name lowercase]] can cast one of the following spells,
           requiring no Material components, using the spell's normal casting
-          time, and using Intelligence as the spellcasting ability (spell save
+          time, and using Intelligence as the power system ability (spell save
           DC [[lookup @abilities.int.dc]]):
           <em>@UUID[Compendium.dnd5e.spells24.Item.phbsplAugury0000]{Augury}</em>,
           <em>@UUID[Compendium.dnd5e.spells24.Item.phbsplFindFamili]{Find
@@ -926,7 +926,7 @@ items:
           Object}</em>,
           <em>@UUID[Compendium.dnd5e.spells24.Item.phbsplScrying000]{Scrying}</em>,
           or <em>@UUID[Compendium.dnd5e.spells24.Item.phbsplUnseenServ]{Unseen
-          Servant}</em>. The [[lookup @name lowercase]] must finish a Long Rest
+          Servant}</em>. The [[lookup @name lowercase]] must finish a Full Rest
           before using this trait to cast that spell again.</p>
         chat: ''
       identifier: coven-magic
@@ -981,7 +981,7 @@ items:
           bad</td></tr></tbody></table><p>The spell doesn't account for
           circumstances, such as other spells, that might change the
           results.</p><p>If you cast the spell more than once before finishing a
-          Long Rest, there is a cumulative 25 percent chance for each casting
+          Full Rest, there is a cumulative 25 percent chance for each casting
           after the first that you get no answer.</p>
         chat: ''
       source:
@@ -1023,7 +1023,7 @@ items:
       materials:
         value: >-
           specially marked sticks, bones, cards, or other divinatory tokens
-          worth 25+ GP
+          worth 25+ CR
         consumed: false
         cost: 0
         supply: 0
@@ -1049,7 +1049,7 @@ items:
           duration:
             units: inst
             override: false
-            concentration: false
+            maintained power: false
           effects: []
           range:
             override: false
@@ -1145,7 +1145,7 @@ items:
           <strong>Frog</strong>, <strong>Hawk</strong>, <strong>Lizard</strong>,
           <strong>Octopus</strong>, <strong>Owl</strong>, <strong>Rat</strong>,
           <strong>Raven</strong>, <strong>Spider</strong>,
-          <strong>Weasel</strong>, or another Beast that has a Challenge Rating
+          <strong>Weasel</strong>, or another Beast that has a Threat Level
           of 0. Appearing in an unoccupied space within range, the familiar has
           the statistics of the chosen form (see appendix B), though it is a
           Celestial, Fey, or Fiend (your choice) instead of a Beast. Your
@@ -1213,7 +1213,7 @@ items:
         - material
         - ritual
       materials:
-        value: burning incense worth 10+ GP, which the spell consumes
+        value: burning incense worth 10+ CR, which the spell consumes
         consumed: true
         cost: 0
         supply: 0
@@ -1239,7 +1239,7 @@ items:
           duration:
             units: inst
             override: false
-            concentration: false
+            maintained power: false
           range:
             override: false
           target:
@@ -1400,7 +1400,7 @@ items:
         - material
         - ritual
       materials:
-        value: a pearl worth 100+ GP
+        value: a pearl worth 100+ CR
         consumed: false
         cost: 0
         supply: 0
@@ -1426,7 +1426,7 @@ items:
           duration:
             units: inst
             override: false
-            concentration: false
+            maintained power: false
           effects: []
           range:
             override: false
@@ -1562,7 +1562,7 @@ items:
         - vocal
         - somatic
         - material
-        - concentration
+        - maintained power
       materials:
         value: a forked twig
         consumed: false
@@ -1590,7 +1590,7 @@ items:
           duration:
             units: inst
             override: false
-            concentration: false
+            maintained power: false
           effects: []
           range:
             override: false
@@ -1747,10 +1747,10 @@ items:
         - vocal
         - somatic
         - material
-        - concentration
+        - maintained power
       materials:
         value: >-
-          a focus worth 1,000+ GP, such as a crystal ball, mirror, or
+          a focus worth 1,000+ CR, such as a crystal ball, mirror, or
           water-filled font
         consumed: false
         cost: 0
@@ -1776,7 +1776,7 @@ items:
           duration:
             units: inst
             override: false
-            concentration: false
+            maintained power: false
           effects: []
           range:
             override: false
@@ -1819,7 +1819,7 @@ items:
           duration:
             units: inst
             override: false
-            concentration: false
+            maintained power: false
           effects: []
           range:
             override: false
@@ -1863,7 +1863,7 @@ items:
           duration:
             units: inst
             override: false
-            concentration: false
+            maintained power: false
           effects: []
           range:
             override: false
@@ -1907,7 +1907,7 @@ items:
           duration:
             units: inst
             override: false
-            concentration: false
+            maintained power: false
           effects: []
           range:
             override: false
@@ -1951,7 +1951,7 @@ items:
           duration:
             units: inst
             override: false
-            concentration: false
+            maintained power: false
           effects: []
           range:
             override: false
@@ -1995,7 +1995,7 @@ items:
           duration:
             units: inst
             override: false
-            concentration: false
+            maintained power: false
           effects: []
           range:
             override: false
@@ -2039,7 +2039,7 @@ items:
           duration:
             units: inst
             override: false
-            concentration: false
+            maintained power: false
           effects: []
           range:
             override: false
@@ -2083,7 +2083,7 @@ items:
           duration:
             units: inst
             override: false
-            concentration: false
+            maintained power: false
           effects: []
           range:
             override: false
@@ -2127,7 +2127,7 @@ items:
           duration:
             units: inst
             override: false
-            concentration: false
+            maintained power: false
           effects: []
           range:
             override: false
@@ -2173,7 +2173,7 @@ items:
           duration:
             units: inst
             override: false
-            concentration: false
+            maintained power: false
           range:
             override: false
           target:
@@ -2371,7 +2371,7 @@ items:
           duration:
             units: inst
             override: false
-            concentration: false
+            maintained power: false
           range:
             override: false
           target:
@@ -2459,7 +2459,7 @@ items:
           lastModifiedBy: null
           exportSource: null
         _key: >-
-          !actors.items.effects!mmSeaHag00000000.GPfGPa68QrAt1JIl.dnd5espellchange
+          !actors.items.effects!mmSeaHag00000000.CRfCRa68QrAt1JIl.dnd5espellchange
     folder: pBaAAtXBCq9FVEnL
     sort: 106250
     ownership:
@@ -2477,8 +2477,8 @@ items:
       modifiedTime: 1745712726616
       lastModifiedBy: dnd5ebuilder0000
       exportSource: null
-    _id: GPfGPa68QrAt1JIl
-    _key: '!actors.items!mmSeaHag00000000.GPfGPa68QrAt1JIl'
+    _id: CRfCRa68QrAt1JIl
+    _key: '!actors.items!mmSeaHag00000000.CRfCRa68QrAt1JIl'
   - _id: mmVileAppearance
     name: Vile Appearance
     type: feat
@@ -2505,7 +2505,7 @@ items:
             chatFlavor: ''
           duration:
             units: inst
-            concentration: false
+            maintained power: false
             override: false
           effects:
             - _id: CiH2KTuvmdGmuz20
@@ -2657,7 +2657,7 @@ items:
           description: {}
           duration:
             units: inst
-            concentration: false
+            maintained power: false
             override: false
           effects: []
           range:
@@ -2705,7 +2705,7 @@ items:
         units: lb
       price:
         value: 0
-        denomination: gp
+        denomination: CR
       rarity: ''
       attunement: ''
       attuned: false
@@ -2796,7 +2796,7 @@ items:
             chatFlavor: ''
           duration:
             units: inst
-            concentration: false
+            maintained power: false
             override: false
           effects: []
           range:
@@ -2920,7 +2920,7 @@ items:
             chatFlavor: ''
           duration:
             units: hour
-            concentration: false
+            maintained power: false
             override: true
             value: '24'
           range:
@@ -2944,7 +2944,7 @@ items:
               override: false
             level: 1
             properties: []
-            spellbook: true
+            power list: true
             uuid: Compendium.dnd5e.spells24.Item.phbsplDisguiseSe
             ability: con
           name: ''
@@ -2956,7 +2956,7 @@ items:
         value: >-
           <p class="feature">The [[lookup @name lowercase]] casts
           <em>@UUID[Compendium.dnd5e.spells24.Item.phbsplDisguiseSe]{Disguise
-          Self}</em>, using Constitution as the spellcasting ability (spell save
+          Self}</em>, using Constitution as the power system ability (spell save
           DC [[lookup @attributes.spell.dc]]). The spell's duration is [[lookup
           @duration.value activity=qY8e7Xm7QYQDXqsd]] [[lookup @duration.units
           activity=qY8e7Xm7QYQDXqsd]]s.</p>
@@ -3076,7 +3076,7 @@ items:
           duration:
             units: inst
             override: false
-            concentration: false
+            maintained power: false
           effects:
             - _id: SrIb7dbaZs5F4zi9
           range:
@@ -3151,7 +3151,7 @@ items:
         changes:
           - key: system.duration
             mode: 5
-            value: '{"units":"hour","concentration":false,"value":"24"}'
+            value: '{"units":"hour","maintained power":false,"value":"24"}'
             priority: null
           - key: system.ability
             mode: 5

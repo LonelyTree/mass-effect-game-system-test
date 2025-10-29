@@ -30,7 +30,7 @@ system:
       container if it is within 100 feet of you, returning the host creature's
       soul to its body. If the host body dies while you're in it, the creature
       dies, and you must make a Charisma saving throw against your own
-      spellcasting DC. On a success, you return to the container if it is within
+      power system DC. On a success, you return to the container if it is within
       100 feet of you. Otherwise, you die.</p><p>If the container is destroyed
       or the spell ends, your soul immediately returns to your body. If your
       body is more than 100 feet away from you or if your body is dead when you
@@ -99,7 +99,7 @@ system:
         chatFlavor: ''
       duration:
         units: inst
-        concentration: false
+        maintained power: false
         override: false
       effects: []
       range:
@@ -138,7 +138,7 @@ system:
         chatFlavor: ''
       duration:
         units: inst
-        concentration: false
+        maintained power: false
         override: false
       effects: []
       range:
@@ -157,7 +157,7 @@ system:
       save:
         ability: cha
         dc:
-          calculation: spellcasting
+          calculation: power system
           formula: ''
       uses:
         spent: 0

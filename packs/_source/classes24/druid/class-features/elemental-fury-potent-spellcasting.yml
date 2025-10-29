@@ -1,15 +1,15 @@
 _id: phbFuryPotentSpe
-name: 'Elemental Fury: Potent Spellcasting'
+name: 'Elemental Fury: Potent Power System'
 type: feat
 img: icons/magic/nature/leaf-rune-glow-green.webp
 system:
   description:
     value: >-
-      <p>Add your Wisdom modifier to the damage you deal with any Druid cantrip
+      <p>Add your Wisdom modifier to the damage you deal with any Druid basic power
       (currently, [[lookup @abilities.wis.mod]]).</p><section class="secret"
       id="secret-kC2Lr5eZe550Tams"><p><strong>Foundry Note</strong></p><p>This
       feature does not automate the addition of the Wisdom modifier to Druid
-      cantrips.</p></section>
+      basic powers.</p></section>
     chat: ''
   source:
     custom: ''
@@ -31,7 +31,7 @@ system:
   requirements: Druid
   activities: {}
   enchant: {}
-  identifier: elemental-fury-potent-spellcasting
+  identifier: elemental-fury-potent-power system
 effects: []
 folder: EXYmwRGoNyMbByN1
 flags:

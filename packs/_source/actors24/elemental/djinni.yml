@@ -5,7 +5,7 @@ img: null
 system:
   currency:
     pp: 0
-    gp: 0
+    CR: 0
     ep: 0
     sp: 0
     cp: 0
@@ -363,15 +363,15 @@ system:
     attunement:
       max: 3
     senses:
-      darkvision: 120
-      blindsight: null
-      tremorsense: null
-      truesight: null
+      scanner: 120
+      thermal vision: null
+      motion sensor: null
+      radar ping: null
       units: null
       special: ''
-    spellcasting: cha
+    power system: cha
     exhaustion: 0
-    concentration:
+    maintained power:
       ability: ''
       roll:
         min: null
@@ -683,7 +683,7 @@ items:
               - vocal
               - somatic
               - material
-            spellbook: true
+            power list: true
             ability: ''
           _id: A8OOJwSm8E8QPzkX
           sort: 0
@@ -703,7 +703,7 @@ items:
             chatFlavor: ''
           duration:
             units: inst
-            concentration: false
+            maintained power: false
             override: false
           range:
             override: false
@@ -786,7 +786,7 @@ items:
           spell, including costly components. The spell simply takes
           effect.</p><p>Alternatively, you can create one of the following
           effects of your choice:</p><p><strong>Object Creation.</strong> You
-          create one object of up to 25,000 GP in value that isn't a magic item.
+          create one object of up to 25,000 CR in value that isn't a magic item.
           The object can be no more than 300 feet in any dimension, and it
           appears in an unoccupied space that you can see on the
           ground.</p><p><strong>Instant Health.</strong> You allow yourself and
@@ -830,7 +830,7 @@ items:
           head, and your wish fails.</p><p>The stress of casting <em>Wish</em>
           to produce any effect other than duplicating another spell weakens
           you. After enduring that stress, each time you cast a spell until you
-          finish a Long Rest, you take 1d10 Necrotic damage per level of that
+          finish a Full Rest, you take 1d10 Necrotic damage per level of that
           spell. This damage can't be reduced or prevented in any way. In
           addition, your Strength score becomes 3 for 2d4 days. For each of
           those days that you spend resting and doing nothing more than light
@@ -897,7 +897,7 @@ items:
             chatFlavor: '<em>Wish</em> lost on 1: [[/r 1d3cs1]]'
           duration:
             units: inst
-            concentration: false
+            maintained power: false
             override: false
           effects:
             - _id: f16Ek2U8XKeGL7vB
@@ -947,7 +947,7 @@ items:
           startRound: null
           startTurn: null
         description: >-
-          <p>Each time you cast a spell until you finish a Long Rest, you take
+          <p>Each time you cast a spell until you finish a Full Rest, you take
           [[/damage 1d10 type=necrotic]] damage per level of that spell. This
           damage can’t be reduced or prevented in any way. In addition, your
           Strength score becomes 3 for [[/r 2d4]] days.</p>
@@ -1058,7 +1058,7 @@ items:
           description: {}
           duration:
             units: inst
-            concentration: false
+            maintained power: false
             override: false
           effects: []
           range:
@@ -1124,8 +1124,8 @@ items:
       default: 0
     sort: 100000
     _key: '!actors.items!mmDjinni00000000.mmMultiattack000'
-  - _id: mmSpellcasting00
-    name: Spellcasting
+  - _id: mmPower System00
+    name: Power System
     type: feat
     system:
       type:
@@ -1145,7 +1145,7 @@ items:
               - vocal
               - somatic
               - material
-            spellbook: true
+            power list: true
           _id: X4M2X5pMebIa3gyv
           sort: 0
           activation:
@@ -1160,7 +1160,7 @@ items:
           description: {}
           duration:
             units: inst
-            concentration: false
+            maintained power: false
             override: false
           range:
             override: false
@@ -1188,7 +1188,7 @@ items:
               - vocal
               - somatic
               - material
-            spellbook: true
+            power list: true
           _id: 6ljGG5Y3csaqZF3T
           sort: 0
           activation:
@@ -1203,7 +1203,7 @@ items:
           description: {}
           duration:
             units: inst
-            concentration: false
+            maintained power: false
             override: false
           range:
             override: false
@@ -1231,7 +1231,7 @@ items:
               - vocal
               - somatic
               - material
-            spellbook: true
+            power list: true
             ability: ''
           _id: nuhovLYlB89H7qqW
           sort: 0
@@ -1251,7 +1251,7 @@ items:
             chatFlavor: ''
           duration:
             units: inst
-            concentration: false
+            maintained power: false
             override: false
           range:
             override: false
@@ -1283,7 +1283,7 @@ items:
               - vocal
               - somatic
               - material
-            spellbook: true
+            power list: true
             ability: ''
           _id: WRKhbwAT9lFyJRAh
           sort: 0
@@ -1303,7 +1303,7 @@ items:
             chatFlavor: ''
           duration:
             units: inst
-            concentration: false
+            maintained power: false
             override: false
           range:
             override: false
@@ -1335,7 +1335,7 @@ items:
               - vocal
               - somatic
               - material
-            spellbook: true
+            power list: true
             ability: ''
           _id: fLj1TyDNpM3VGNUH
           sort: 0
@@ -1355,7 +1355,7 @@ items:
             chatFlavor: ''
           duration:
             units: inst
-            concentration: false
+            maintained power: false
             override: false
           range:
             override: false
@@ -1387,7 +1387,7 @@ items:
               - vocal
               - somatic
               - material
-            spellbook: true
+            power list: true
             ability: ''
           _id: 0OWss9uvGaySYkYX
           sort: 0
@@ -1407,7 +1407,7 @@ items:
             chatFlavor: ''
           duration:
             units: inst
-            concentration: false
+            maintained power: false
             override: false
           range:
             override: false
@@ -1439,7 +1439,7 @@ items:
               - vocal
               - somatic
               - material
-            spellbook: true
+            power list: true
             ability: ''
           _id: voXecwOU3l6ReNLS
           sort: 0
@@ -1459,7 +1459,7 @@ items:
             chatFlavor: ''
           duration:
             units: inst
-            concentration: false
+            maintained power: false
             override: false
           range:
             override: false
@@ -1491,7 +1491,7 @@ items:
               - vocal
               - somatic
               - material
-            spellbook: true
+            power list: true
             ability: ''
           _id: 7XmYkHxy28QAN23Y
           sort: 0
@@ -1511,7 +1511,7 @@ items:
             chatFlavor: ''
           duration:
             units: inst
-            concentration: false
+            maintained power: false
             override: false
           range:
             override: false
@@ -1543,7 +1543,7 @@ items:
               - vocal
               - somatic
               - material
-            spellbook: true
+            power list: true
             ability: ''
           _id: aB9OUGpuB3OFD9u5
           sort: 0
@@ -1563,7 +1563,7 @@ items:
             chatFlavor: ''
           duration:
             units: inst
-            concentration: false
+            maintained power: false
             override: false
           range:
             override: false
@@ -1595,7 +1595,7 @@ items:
               - vocal
               - somatic
               - material
-            spellbook: true
+            power list: true
             ability: ''
           _id: 0HhkUyPRS6uJz1lR
           sort: 0
@@ -1615,7 +1615,7 @@ items:
             chatFlavor: ''
           duration:
             units: inst
-            concentration: false
+            maintained power: false
             override: false
           range:
             override: false
@@ -1642,7 +1642,7 @@ items:
         value: >-
           <p class="feature">The [[lookup @name lowercase]] casts one of the
           following spells, requiring no Material components and using Charisma
-          as the spellcasting ability (spell save DC [[lookup
+          as the power system ability (spell save DC [[lookup
           @attributes.spell.dc]]):</p><p class="feature-trait"><strong>At
           Will:</strong>
           <em>@UUID[Compendium.dnd5e.spells24.Item.phbsplDetectEvil]{Detect Evil
@@ -1663,7 +1663,7 @@ items:
           <em>@UUID[Compendium.dnd5e.spells24.Item.phbsplPlaneShift]{Plane
           Shift}</em></p>
         chat: ''
-      identifier: spellcasting
+      identifier: power system
       source:
         revision: 1
         rules: '2024'
@@ -1687,7 +1687,7 @@ items:
           activity: []
           effect: []
     _stats:
-      compendiumSource: Compendium.dnd-monster-manual.features.Item.mmSpellcasting00
+      compendiumSource: Compendium.dnd-monster-manual.features.Item.mmPower System00
       duplicateSource: null
       coreVersion: '13.344'
       systemId: dnd5e
@@ -1699,7 +1699,7 @@ items:
     ownership:
       default: 0
     sort: 500000
-    _key: '!actors.items!mmDjinni00000000.mmSpellcasting00'
+    _key: '!actors.items!mmDjinni00000000.mmPower System00'
   - name: Detect Evil and Good
     system:
       description:
@@ -1750,7 +1750,7 @@ items:
       properties:
         - vocal
         - somatic
-        - concentration
+        - maintained power
       materials:
         value: ''
         consumed: false
@@ -1778,7 +1778,7 @@ items:
           duration:
             units: inst
             override: false
-            concentration: false
+            maintained power: false
           effects:
             - _id: pOgbtXbKVGdbwjjE
           range:
@@ -1845,7 +1845,7 @@ items:
         name: Spell Changes
         img: systems/dnd5e/icons/svg/activity/cast.svg
         origin: >-
-          Compendium.dnd5e.actors24.Actor.mmDjinni00000000.Item.mmSpellcasting00.Activity.X4M2X5pMebIa3gyv
+          Compendium.dnd5e.actors24.Actor.mmDjinni00000000.Item.mmPower System00.Activity.X4M2X5pMebIa3gyv
         changes:
           - key: system.properties
             mode: 2
@@ -1896,7 +1896,7 @@ items:
         riders:
           activity: []
           effect: []
-        cachedFor: .Item.mmSpellcasting00.Activity.X4M2X5pMebIa3gyv
+        cachedFor: .Item.mmPower System00.Activity.X4M2X5pMebIa3gyv
     _stats:
       compendiumSource: Compendium.dnd5e.spells24.Item.phbsplDetectEvil
       duplicateSource: null
@@ -1959,7 +1959,7 @@ items:
       properties:
         - vocal
         - somatic
-        - concentration
+        - maintained power
         - ritual
       materials:
         value: ''
@@ -1988,7 +1988,7 @@ items:
           duration:
             units: inst
             override: false
-            concentration: false
+            maintained power: false
           effects:
             - _id: BHw91lQmVgdx39WZ
           range:
@@ -2056,7 +2056,7 @@ items:
         name: Spell Changes
         img: systems/dnd5e/icons/svg/activity/cast.svg
         origin: >-
-          Compendium.dnd5e.actors24.Actor.mmDjinni00000000.Item.mmSpellcasting00.Activity.6ljGG5Y3csaqZF3T
+          Compendium.dnd5e.actors24.Actor.mmDjinni00000000.Item.mmPower System00.Activity.6ljGG5Y3csaqZF3T
         changes:
           - key: system.properties
             mode: 2
@@ -2107,7 +2107,7 @@ items:
         riders:
           activity: []
           effect: []
-        cachedFor: .Item.mmSpellcasting00.Activity.6ljGG5Y3csaqZF3T
+        cachedFor: .Item.mmPower System00.Activity.6ljGG5Y3csaqZF3T
     _stats:
       compendiumSource: Compendium.dnd5e.spells24.Item.phbsplDetectMagi
       duplicateSource: null
@@ -2190,7 +2190,7 @@ items:
           duration:
             units: inst
             override: false
-            concentration: false
+            maintained power: false
           effects: []
           range:
             override: false
@@ -2220,7 +2220,7 @@ items:
         name: Spell Changes
         img: systems/dnd5e/icons/svg/activity/cast.svg
         origin: >-
-          Compendium.dnd5e.actors24.Actor.mmDjinni00000000.Item.mmSpellcasting00.Activity.nuhovLYlB89H7qqW
+          Compendium.dnd5e.actors24.Actor.mmDjinni00000000.Item.mmPower System00.Activity.nuhovLYlB89H7qqW
         changes:
           - key: system.properties
             mode: 2
@@ -2268,7 +2268,7 @@ items:
       default: 0
     flags:
       dnd5e:
-        cachedFor: .Item.mmSpellcasting00.Activity.nuhovLYlB89H7qqW
+        cachedFor: .Item.mmPower System00.Activity.nuhovLYlB89H7qqW
     _stats:
       compendiumSource: Compendium.dnd5e.spells24.Item.phbsplCreateFood
       duplicateSource: null
@@ -2350,7 +2350,7 @@ items:
           duration:
             units: inst
             override: false
-            concentration: false
+            maintained power: false
           effects:
             - _id: bmESvtHHL0Su7gn4
           range:
@@ -2419,7 +2419,7 @@ items:
         name: Spell Changes
         img: systems/dnd5e/icons/svg/activity/cast.svg
         origin: >-
-          Compendium.dnd5e.actors24.Actor.mmDjinni00000000.Item.mmSpellcasting00.Activity.WRKhbwAT9lFyJRAh
+          Compendium.dnd5e.actors24.Actor.mmDjinni00000000.Item.mmPower System00.Activity.WRKhbwAT9lFyJRAh
         changes:
           - key: system.properties
             mode: 2
@@ -2467,7 +2467,7 @@ items:
       default: 0
     flags:
       dnd5e:
-        cachedFor: .Item.mmSpellcasting00.Activity.WRKhbwAT9lFyJRAh
+        cachedFor: .Item.mmPower System00.Activity.WRKhbwAT9lFyJRAh
     _stats:
       compendiumSource: Compendium.dnd5e.spells24.Item.phbsplTongues000
       duplicateSource: null
@@ -2562,7 +2562,7 @@ items:
             chatFlavor: ''
           duration:
             units: inst
-            concentration: false
+            maintained power: false
             override: false
           effects:
             - _id: yuAiVeSve8sEy6JQ
@@ -2661,7 +2661,7 @@ items:
         name: Spell Changes
         img: systems/dnd5e/icons/svg/activity/cast.svg
         origin: >-
-          Compendium.dnd5e.actors24.Actor.mmDjinni00000000.Item.mmSpellcasting00.Activity.fLj1TyDNpM3VGNUH
+          Compendium.dnd5e.actors24.Actor.mmDjinni00000000.Item.mmPower System00.Activity.fLj1TyDNpM3VGNUH
         changes:
           - key: system.properties
             mode: 2
@@ -2709,7 +2709,7 @@ items:
       default: 0
     flags:
       dnd5e:
-        cachedFor: .Item.mmSpellcasting00.Activity.fLj1TyDNpM3VGNUH
+        cachedFor: .Item.mmPower System00.Activity.fLj1TyDNpM3VGNUH
     _stats:
       compendiumSource: Compendium.dnd5e.spells24.Item.phbsplWindWalk00
       duplicateSource: null
@@ -2741,7 +2741,7 @@ items:
           hour</td></tr><tr><td>Gems</td><td>10
           minutes</td></tr><tr><td>Adamantine or mithral</td><td>1
           minute</td></tr></tbody></table><p><strong>Using a Higher-Level Spell
-          Slot.</strong> The Cube increases by 5 feet for each spell slot level
+          Slot.</strong> The Cube increases by 5 feet for each power use level
           above 5.</p>
         chat: ''
       source:
@@ -2810,7 +2810,7 @@ items:
           duration:
             units: inst
             override: false
-            concentration: false
+            maintained power: false
           effects: []
           range:
             override: false
@@ -2840,7 +2840,7 @@ items:
         name: Spell Changes
         img: systems/dnd5e/icons/svg/activity/cast.svg
         origin: >-
-          Compendium.dnd5e.actors24.Actor.mmDjinni00000000.Item.mmSpellcasting00.Activity.0OWss9uvGaySYkYX
+          Compendium.dnd5e.actors24.Actor.mmDjinni00000000.Item.mmPower System00.Activity.0OWss9uvGaySYkYX
         changes:
           - key: system.properties
             mode: 2
@@ -2888,7 +2888,7 @@ items:
       default: 0
     flags:
       dnd5e:
-        cachedFor: .Item.mmSpellcasting00.Activity.0OWss9uvGaySYkYX
+        cachedFor: .Item.mmPower System00.Activity.0OWss9uvGaySYkYX
     _stats:
       compendiumSource: Compendium.dnd5e.spells24.Item.phbsplCreation00
       duplicateSource: null
@@ -2919,8 +2919,8 @@ items:
           surfaces.</p><p>The target can't talk or manipulate objects, and any
           objects it was carrying or holding can't be dropped, used, or
           otherwise interacted with. Finally, the target can't attack or cast
-          spells.</p><p><strong>Using a Higher-Level Spell Slot.</strong> You
-          can target one additional creature for each spell slot level above
+          spells.</p><p><strong>Using a Higher-Level Power Use.</strong> You
+          can target one additional creature for each power use level above
           3.</p>
         chat: ''
       source:
@@ -2956,7 +2956,7 @@ items:
         - vocal
         - somatic
         - material
-        - concentration
+        - maintained power
       materials:
         value: a bit of gauze
         consumed: false
@@ -2984,7 +2984,7 @@ items:
           duration:
             units: inst
             override: false
-            concentration: false
+            maintained power: false
           effects:
             - _id: QeYsfnjEj2T9A3C8
           range:
@@ -3089,7 +3089,7 @@ items:
         name: Spell Changes
         img: systems/dnd5e/icons/svg/activity/cast.svg
         origin: >-
-          Compendium.dnd5e.actors24.Actor.mmDjinni00000000.Item.mmSpellcasting00.Activity.voXecwOU3l6ReNLS
+          Compendium.dnd5e.actors24.Actor.mmDjinni00000000.Item.mmPower System00.Activity.voXecwOU3l6ReNLS
         changes:
           - key: system.properties
             mode: 2
@@ -3137,7 +3137,7 @@ items:
       default: 0
     flags:
       dnd5e:
-        cachedFor: .Item.mmSpellcasting00.Activity.voXecwOU3l6ReNLS
+        cachedFor: .Item.mmPower System00.Activity.voXecwOU3l6ReNLS
     _stats:
       compendiumSource: Compendium.dnd5e.spells24.Item.phbsplGaseousFor
       duplicateSource: null
@@ -3157,8 +3157,8 @@ items:
           <p>A creature you touch has the &amp;Reference[invisible apply=false]
           condition until the spell ends. The spell ends early immediately after
           the target makes an attack roll, deals damage, or casts a
-          spell.</p><p><strong>Using a Higher-Level Spell Slot.</strong> You can
-          target one additional creature for each spell slot level above 2.</p>
+          spell.</p><p><strong>Using a Higher-Level Power Use.</strong> You can
+          target one additional creature for each power use level above 2.</p>
         chat: ''
       source:
         custom: ''
@@ -3196,7 +3196,7 @@ items:
         - vocal
         - somatic
         - material
-        - concentration
+        - maintained power
       materials:
         value: an eyelash in gum arabic
         consumed: false
@@ -3224,7 +3224,7 @@ items:
           duration:
             units: inst
             override: false
-            concentration: false
+            maintained power: false
           effects:
             - _id: 9svfDetqjhsFP3ey
           range:
@@ -3292,7 +3292,7 @@ items:
         name: Spell Changes
         img: systems/dnd5e/icons/svg/activity/cast.svg
         origin: >-
-          Compendium.dnd5e.actors24.Actor.mmDjinni00000000.Item.mmSpellcasting00.Activity.7XmYkHxy28QAN23Y
+          Compendium.dnd5e.actors24.Actor.mmDjinni00000000.Item.mmPower System00.Activity.7XmYkHxy28QAN23Y
         changes:
           - key: system.properties
             mode: 2
@@ -3340,7 +3340,7 @@ items:
       default: 0
     flags:
       dnd5e:
-        cachedFor: .Item.mmSpellcasting00.Activity.7XmYkHxy28QAN23Y
+        cachedFor: .Item.mmPower System00.Activity.7XmYkHxy28QAN23Y
     _stats:
       compendiumSource: Compendium.dnd5e.spells24.Item.phbsplInvisibili
       duplicateSource: null
@@ -3377,8 +3377,8 @@ items:
           your spell save DC. If a creature discerns the illusion for what it
           is, the creature can see through the image, and its other sensory
           qualities become faint to the creature.</p><p><strong>Using a
-          Higher-Level Spell Slot.</strong> The spell lasts until dispelled,
-          without requiring Concentration, if cast with a level 4+ spell
+          Higher-Level Power Use.</strong> The spell lasts until dispelled,
+          without requiring Maintained Power, if cast with a level 4+ spell
           slot.</p>
         chat: ''
       source:
@@ -3415,7 +3415,7 @@ items:
         - vocal
         - somatic
         - material
-        - concentration
+        - maintained power
       materials:
         value: a bit of fleece
         consumed: false
@@ -3443,7 +3443,7 @@ items:
           duration:
             units: inst
             override: false
-            concentration: false
+            maintained power: false
           range:
             override: false
           target:
@@ -3516,7 +3516,7 @@ items:
         name: Spell Changes
         img: systems/dnd5e/icons/svg/activity/cast.svg
         origin: >-
-          Compendium.dnd5e.actors24.Actor.mmDjinni00000000.Item.mmSpellcasting00.Activity.aB9OUGpuB3OFD9u5
+          Compendium.dnd5e.actors24.Actor.mmDjinni00000000.Item.mmPower System00.Activity.aB9OUGpuB3OFD9u5
         changes:
           - key: system.properties
             mode: 2
@@ -3564,7 +3564,7 @@ items:
       default: 0
     flags:
       dnd5e:
-        cachedFor: .Item.mmSpellcasting00.Activity.aB9OUGpuB3OFD9u5
+        cachedFor: .Item.mmPower System00.Activity.aB9OUGpuB3OFD9u5
     _stats:
       compendiumSource: Compendium.dnd5e.spells24.Item.phbsplMajorImage
       duplicateSource: null
@@ -3629,7 +3629,7 @@ items:
         - somatic
         - material
       materials:
-        value: a forked, metal rod worth 250+ GP and attuned to a plane of existence
+        value: a forked, metal rod worth 250+ CR and attuned to a plane of existence
         consumed: false
         cost: 0
         supply: 0
@@ -3653,7 +3653,7 @@ items:
             chatFlavor: ''
           duration:
             units: inst
-            concentration: false
+            maintained power: false
             override: false
           effects: []
           range:
@@ -3687,7 +3687,7 @@ items:
         name: Spell Changes
         img: systems/dnd5e/icons/svg/activity/cast.svg
         origin: >-
-          Compendium.dnd5e.actors24.Actor.mmDjinni00000000.Item.mmSpellcasting00.Activity.0HhkUyPRS6uJz1lR
+          Compendium.dnd5e.actors24.Actor.mmDjinni00000000.Item.mmPower System00.Activity.0HhkUyPRS6uJz1lR
         changes:
           - key: system.properties
             mode: 2
@@ -3735,7 +3735,7 @@ items:
       default: 0
     flags:
       dnd5e:
-        cachedFor: .Item.mmSpellcasting00.Activity.0HhkUyPRS6uJz1lR
+        cachedFor: .Item.mmPower System00.Activity.0HhkUyPRS6uJz1lR
     _stats:
       compendiumSource: Compendium.dnd5e.spells24.Item.phbsplPlaneShift
       duplicateSource: null
@@ -3774,7 +3774,7 @@ items:
             chatFlavor: ''
           duration:
             units: inst
-            concentration: true
+            maintained power: true
             override: false
           effects:
             - _id: cM3NSnDUlURCQP4q
@@ -3831,7 +3831,7 @@ items:
             chatFlavor: ''
           duration:
             units: inst
-            concentration: false
+            maintained power: false
             override: false
           effects: []
           range:
@@ -3879,7 +3879,7 @@ items:
           [[lookup @target.template.height activity=TYNKL0QDItFpbR2G]]-foot-high
           [[lookup @target.template.type capitalize activity=TYNKL0QDItFpbR2G]]
           centered on that point. The whirlwind lasts until the [[lookup @name
-          lowercase]]'s Concentration on it ends. The [[lookup @name lowercase]]
+          lowercase]]'s Maintained Power on it ends. The [[lookup @name lowercase]]
           can move the whirlwind up to 20 feet at the start of each of its
           turns.</p><p class="feature">Whenever the whirlwind enters a
           creature's space or a creature enters the whirlwind, that creature is
@@ -3996,7 +3996,7 @@ items:
             chatFlavor: ''
           duration:
             units: inst
-            concentration: false
+            maintained power: false
             override: false
           effects: []
           range:
@@ -4065,7 +4065,7 @@ items:
         units: lb
       price:
         value: 0
-        denomination: gp
+        denomination: CR
       rarity: ''
       attunement: ''
       attuned: false
@@ -4156,7 +4156,7 @@ items:
             chatFlavor: ''
           duration:
             units: inst
-            concentration: false
+            maintained power: false
             override: false
           effects:
             - _id: UXwZ02kqy96aH3dZ

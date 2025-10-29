@@ -5,9 +5,9 @@ system:
       <p>Up to five creatures of your choice who remain within range for the
       spell's entire casting gain the benefits of a &amp;Reference[shortrest]
       and also regain 2d8 Hit Points. A creature can't be affected by this spell
-      again until that creature finishes a Long Rest.</p><p><strong>Using a
-      Higher-Level Spell Slot. </strong>The healing increases by 1d8 for each
-      spell slot level above 2.</p>
+      again until that creature finishes a Full Rest.</p><p><strong>Using a
+      Higher-Level Power Use. </strong>The healing increases by 1d8 for each
+      power use level above 2.</p>
     chat: ''
   source:
     custom: ''
@@ -120,7 +120,7 @@ effects:
     description: >-
       <p>A creature can’t be affected by the
       @UUID[Compendium.dnd5e.spells24.Item.phbsplPrayerofHe] spell again until
-      that creature finishes a Long Rest.</p>
+      that creature finishes a Full Rest.</p>
     tint: '#ffffff'
     transfer: false
     statuses: []

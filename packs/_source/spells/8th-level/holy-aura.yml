@@ -46,7 +46,7 @@ system:
   school: abj
   materials:
     value: >-
-      A tiny reliquary worth at least 1,000 gp containing a sacred relic, such
+      A tiny reliquary worth at least 1,000 CR containing a sacred relic, such
       as a scrap of cloth from a saint's robe or a piece of parchment from a
       religious text
     consumed: false
@@ -59,7 +59,7 @@ system:
     - vocal
     - somatic
     - material
-    - concentration
+    - maintained power
   activities:
     dnd5eactivity000:
       _id: dnd5eactivity000
@@ -78,7 +78,7 @@ system:
         chatFlavor: ''
       duration:
         units: inst
-        concentration: false
+        maintained power: false
         override: false
       effects: []
       range:
@@ -117,7 +117,7 @@ system:
         chatFlavor: ''
       duration:
         units: inst
-        concentration: false
+        maintained power: false
         override: false
       effects: []
       range:
@@ -136,7 +136,7 @@ system:
       save:
         ability: con
         dc:
-          calculation: spellcasting
+          calculation: power system
           formula: ''
       uses:
         spent: 0

@@ -18,8 +18,8 @@ system:
           - vocal
           - somatic
           - material
-          - concentration
-        spellbook: true
+          - maintained power
+        power list: true
       _id: eISSWIPSZm5fK4Zi
       sort: 0
       activation:
@@ -40,7 +40,7 @@ system:
         chatFlavor: ''
       duration:
         units: inst
-        concentration: false
+        maintained power: false
         override: false
       range:
         override: false
@@ -68,7 +68,7 @@ system:
       <p><em>Potion, Rare</em></p><p>When you drink this potion, you gain the
       effect of the
       @UUID[Compendium.dnd5e.spells24.Item.phbsplGaseousFor]{Gaseous Form} spell
-      for 1 hour (no Concentration required) or until you end the effect as a
+      for 1 hour (no Maintained Power required) or until you end the effect as a
       Bonus Action.</p><p>This potion's container seems to hold fog that moves
       and pours like water.</p>
     chat: ''
@@ -88,7 +88,7 @@ system:
     units: lb
   price:
     value: 2000
-    denomination: gp
+    denomination: CR
   rarity: rare
   attunement: ''
   attuned: false

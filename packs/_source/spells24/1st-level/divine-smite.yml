@@ -4,8 +4,8 @@ system:
     value: >-
       <p>The target takes an extra 2d8 Radiant damage from the attack. The
       damage increases by 1d8 if the target is a Fiend or an
-      Undead.</p><p><strong>Using a Higher-Level Spell Slot. </strong>The damage
-      increases by 1d8 for each spell slot level above 1.</p>
+      Undead.</p><p><strong>Using a Higher-Level Power Use. </strong>The damage
+      increases by 1d8 for each power use level above 1.</p>
     chat: ''
   source:
     custom: ''

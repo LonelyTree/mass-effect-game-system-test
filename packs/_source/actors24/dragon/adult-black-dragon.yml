@@ -5,7 +5,7 @@ img: null
 system:
   currency:
     pp: 0
-    gp: 0
+    CR: 0
     ep: 0
     sp: 0
     cp: 0
@@ -363,15 +363,15 @@ system:
     attunement:
       max: 3
     senses:
-      darkvision: 120
-      blindsight: 60
-      tremorsense: null
-      truesight: null
+      scanner: 120
+      thermal vision: 60
+      motion sensor: null
+      radar ping: null
       units: null
       special: ''
-    spellcasting: cha
+    power system: cha
     exhaustion: 0
-    concentration:
+    maintained power:
       ability: ''
       roll:
         min: null
@@ -628,7 +628,7 @@ items:
             chatFlavor: ''
           duration:
             units: inst
-            concentration: false
+            maintained power: false
             override: false
           effects: []
           range:
@@ -732,7 +732,7 @@ items:
           description: {}
           duration:
             units: inst
-            concentration: false
+            maintained power: false
             override: false
           effects: []
           range:
@@ -758,7 +758,7 @@ items:
       description:
         value: >-
           <p>The [[lookup @name lowercase]] makes three [[/item Rend]] attacks.
-          It can replace one attack with a use of [[/item Spellcasting]] to cast
+          It can replace one attack with a use of [[/item Power System]] to cast
           <em>@UUID[Compendium.dnd5e.spells24.Item.phbsplMelfsAcidA]{Melf's Acid
           Arrow}</em> (level 3 version).</p>
         chat: ''
@@ -825,7 +825,7 @@ items:
             chatFlavor: ''
           duration:
             units: inst
-            concentration: false
+            maintained power: false
             override: false
           effects: []
           range:
@@ -892,7 +892,7 @@ items:
         units: lb
       price:
         value: 0
-        denomination: gp
+        denomination: CR
       rarity: ''
       attunement: ''
       attuned: false
@@ -986,7 +986,7 @@ items:
             chatFlavor: ''
           duration:
             units: inst
-            concentration: false
+            maintained power: false
             override: false
           effects: []
           range:
@@ -1087,8 +1087,8 @@ items:
       default: 0
     sort: 4
     _key: '!actors.items!mmAdultBlackDrag.mmAcidBreath0000'
-  - _id: mmSpellcasting00
-    name: Spellcasting
+  - _id: mmPower System00
+    name: Power System
     type: feat
     system:
       type:
@@ -1106,7 +1106,7 @@ items:
             level: 1
             properties:
               - material
-            spellbook: true
+            power list: true
             ability: ''
           _id: TcBLW088E4dOgGRD
           sort: 0
@@ -1123,7 +1123,7 @@ items:
             chatFlavor: ''
           duration:
             units: inst
-            concentration: false
+            maintained power: false
             override: false
           range:
             override: false
@@ -1151,7 +1151,7 @@ items:
             level: 3
             properties:
               - material
-            spellbook: true
+            power list: true
             ability: ''
           _id: fjwUS5UvTBBRHbJC
           sort: 0
@@ -1168,7 +1168,7 @@ items:
             chatFlavor: ''
           duration:
             units: inst
-            concentration: false
+            maintained power: false
             override: false
           range:
             override: false
@@ -1196,7 +1196,7 @@ items:
             level: 3
             properties:
               - material
-            spellbook: true
+            power list: true
             ability: ''
           _id: 2DB38Qs0OA59Vo7p
           sort: 0
@@ -1213,7 +1213,7 @@ items:
             chatFlavor: ''
           duration:
             units: inst
-            concentration: false
+            maintained power: false
             override: false
           range:
             override: false
@@ -1241,7 +1241,7 @@ items:
             level: 3
             properties:
               - material
-            spellbook: true
+            power list: true
             ability: ''
           _id: h2avt8aUaFmisIII
           sort: 0
@@ -1261,7 +1261,7 @@ items:
             chatFlavor: ''
           duration:
             units: inst
-            concentration: false
+            maintained power: false
             override: false
           range:
             override: false
@@ -1291,7 +1291,7 @@ items:
             level: 4
             properties:
               - material
-            spellbook: true
+            power list: true
             ability: ''
           _id: YHrCbAZxiFbRb6Hp
           sort: 0
@@ -1311,7 +1311,7 @@ items:
             chatFlavor: ''
           duration:
             units: inst
-            concentration: false
+            maintained power: false
             override: false
           range:
             override: false
@@ -1338,7 +1338,7 @@ items:
         value: >-
           <p class="feature">The [[lookup @name lowercase]] casts one of the
           following spells, requiring no Material components and using Charisma
-          as the spellcasting ability (spell save DC [[lookup
+          as the power system ability (spell save DC [[lookup
           @attributes.spell.dc]], +9 to hit with spell attacks):</p><p
           class="feature-trait"><strong>At Will:</strong>
           <em>@UUID[Compendium.dnd5e.spells24.Item.phbsplDetectMagi]{Detect
@@ -1352,7 +1352,7 @@ items:
           <em>@UUID[Compendium.dnd5e.spells24.Item.phbsplVitriolicS]{Vitriolic
           Sphere}</em></p>
         chat: ''
-      identifier: spellcasting
+      identifier: power system
       source:
         revision: 1
         rules: '2024'
@@ -1376,7 +1376,7 @@ items:
           activity: []
           effect: []
     _stats:
-      compendiumSource: Compendium.dnd-monster-manual.features.Item.mmSpellcasting00
+      compendiumSource: Compendium.dnd-monster-manual.features.Item.mmPower System00
       duplicateSource: null
       coreVersion: '13.344'
       systemId: dnd5e
@@ -1388,7 +1388,7 @@ items:
     ownership:
       default: 0
     sort: 5
-    _key: '!actors.items!mmAdultBlackDrag.mmSpellcasting00'
+    _key: '!actors.items!mmAdultBlackDrag.mmPower System00'
   - name: Detect Magic
     system:
       description:
@@ -1439,7 +1439,7 @@ items:
       properties:
         - vocal
         - somatic
-        - concentration
+        - maintained power
         - ritual
       materials:
         value: ''
@@ -1468,7 +1468,7 @@ items:
           duration:
             units: inst
             override: false
-            concentration: false
+            maintained power: false
           effects:
             - _id: BHw91lQmVgdx39WZ
           range:
@@ -1536,7 +1536,7 @@ items:
         name: Spell Changes
         img: systems/dnd5e/icons/svg/activity/cast.svg
         origin: >-
-          Compendium.dnd5e.actors24.Actor.mmAdultBlackDrag.Item.mmSpellcasting00.Activity.TcBLW088E4dOgGRD
+          Compendium.dnd5e.actors24.Actor.mmAdultBlackDrag.Item.mmPower System00.Activity.TcBLW088E4dOgGRD
         changes:
           - key: system.properties
             mode: 2
@@ -1579,7 +1579,7 @@ items:
         riders:
           activity: []
           effect: []
-        cachedFor: .Item.mmSpellcasting00.Activity.TcBLW088E4dOgGRD
+        cachedFor: .Item.mmPower System00.Activity.TcBLW088E4dOgGRD
     _stats:
       compendiumSource: Compendium.dnd5e.spells24.Item.phbsplDetectMagi
       duplicateSource: null
@@ -1639,7 +1639,7 @@ items:
         - vocal
         - somatic
         - material
-        - concentration
+        - maintained power
       materials:
         value: a white feather
         consumed: false
@@ -1667,7 +1667,7 @@ items:
           duration:
             units: inst
             override: false
-            concentration: false
+            maintained power: false
           effects:
             - _id: ijiWLu6EJZmEJPOZ
               onSave: false
@@ -1688,7 +1688,7 @@ items:
             ability:
               - wis
             dc:
-              calculation: spellcasting
+              calculation: power system
               formula: ''
           uses:
             spent: 0
@@ -1744,7 +1744,7 @@ items:
         name: Spell Changes
         img: systems/dnd5e/icons/svg/activity/cast.svg
         origin: >-
-          Compendium.dnd5e.actors24.Actor.mmAdultBlackDrag.Item.mmSpellcasting00.Activity.fjwUS5UvTBBRHbJC
+          Compendium.dnd5e.actors24.Actor.mmAdultBlackDrag.Item.mmPower System00.Activity.fjwUS5UvTBBRHbJC
         changes:
           - key: system.properties
             mode: 2
@@ -1784,7 +1784,7 @@ items:
       default: 0
     flags:
       dnd5e:
-        cachedFor: .Item.mmSpellcasting00.Activity.fjwUS5UvTBBRHbJC
+        cachedFor: .Item.mmPower System00.Activity.fjwUS5UvTBBRHbJC
     _stats:
       compendiumSource: Compendium.dnd5e.spells24.Item.phbsplFear000000
       duplicateSource: null
@@ -1802,12 +1802,12 @@ items:
       description:
         value: >-
           <p>A shimmering green arrow streaks toward a target within range and
-          bursts in a spray of acid. Make a ranged spell attack against the
+          bursts in a spray of acid. Make a ranged power attack against the
           target. On a hit, the target takes 4d4 Acid damage and 2d4 Acid damage
           at the end of its next turn. On a miss, the arrow splashes the target
           with acid for half as much of the initial damage
-          only.</p><p><strong>Using a Higher-Level Spell Slot.</strong> The
-          damage (both initial and later) increases by 1d4 for each spell slot
+          only.</p><p><strong>Using a Higher-Level Power Use.</strong> The
+          damage (both initial and later) increases by 1d4 for each power use
           level above 2.</p>
         chat: ''
       source:
@@ -1873,7 +1873,7 @@ items:
             chatFlavor: ''
           duration:
             units: inst
-            concentration: false
+            maintained power: false
             override: false
           effects:
             - _id: NgglkyjzTbDh5Loa
@@ -1934,7 +1934,7 @@ items:
             chatFlavor: ''
           duration:
             units: inst
-            concentration: false
+            maintained power: false
             override: false
           effects: []
           range:
@@ -1989,7 +1989,7 @@ items:
           startTurn: null
         description: >-
           <p>On a hit, the target takes 4d4 Acid damage and [[/damage 2d4
-          type=acid]] (plus 1d4 per spell slot level above 2) Acid damage at the
+          type=acid]] (plus 1d4 per power use level above 2) Acid damage at the
           end of its next turn.</p>
         tint: '#ffffff'
         statuses: []
@@ -2012,7 +2012,7 @@ items:
         name: Spell Changes
         img: systems/dnd5e/icons/svg/activity/cast.svg
         origin: >-
-          Compendium.dnd5e.actors24.Actor.mmAdultBlackDrag.Item.mmSpellcasting00.Activity.2DB38Qs0OA59Vo7p
+          Compendium.dnd5e.actors24.Actor.mmAdultBlackDrag.Item.mmPower System00.Activity.2DB38Qs0OA59Vo7p
         changes:
           - key: system.properties
             mode: 2
@@ -2055,7 +2055,7 @@ items:
         riders:
           activity: []
           effect: []
-        cachedFor: .Item.mmSpellcasting00.Activity.2DB38Qs0OA59Vo7p
+        cachedFor: .Item.mmPower System00.Activity.2DB38Qs0OA59Vo7p
     _stats:
       compendiumSource: Compendium.dnd5e.spells24.Item.phbsplMelfsAcidA
       duplicateSource: null
@@ -2150,7 +2150,7 @@ items:
           duration:
             units: inst
             override: false
-            concentration: false
+            maintained power: false
           effects: []
           range:
             override: false
@@ -2180,7 +2180,7 @@ items:
         name: Spell Changes
         img: systems/dnd5e/icons/svg/activity/cast.svg
         origin: >-
-          Compendium.dnd5e.actors24.Actor.mmAdultBlackDrag.Item.mmSpellcasting00.Activity.h2avt8aUaFmisIII
+          Compendium.dnd5e.actors24.Actor.mmAdultBlackDrag.Item.mmPower System00.Activity.h2avt8aUaFmisIII
         changes:
           - key: system.properties
             mode: 2
@@ -2220,7 +2220,7 @@ items:
       default: 0
     flags:
       dnd5e:
-        cachedFor: .Item.mmSpellcasting00.Activity.h2avt8aUaFmisIII
+        cachedFor: .Item.mmPower System00.Activity.h2avt8aUaFmisIII
     _stats:
       compendiumSource: Compendium.dnd5e.spells24.Item.phbsplSpeakwithD
       duplicateSource: null
@@ -2243,8 +2243,8 @@ items:
           saving throw. On a failed save, a creature takes 10d4 Acid damage and
           another [[/damage 5d4 type=acid]] damage at the end of its next turn.
           On a successful save, a creature takes half the initial damage
-          only.</p><p><strong>Using a Higher-Level Spell Slot. </strong>The
-          initial damage increases by 2d4 for each spell slot level above 4.</p>
+          only.</p><p><strong>Using a Higher-Level Power Use. </strong>The
+          initial damage increases by 2d4 for each power use level above 4.</p>
         chat: ''
       source:
         custom: ''
@@ -2311,7 +2311,7 @@ items:
           duration:
             units: inst
             override: false
-            concentration: false
+            maintained power: false
           effects:
             - _id: WHhf4PFHQBDkCAyb
               onSave: false
@@ -2344,7 +2344,7 @@ items:
             ability:
               - dex
             dc:
-              calculation: spellcasting
+              calculation: power system
               formula: ''
           uses:
             spent: 0
@@ -2371,7 +2371,7 @@ items:
           duration:
             units: inst
             override: true
-            concentration: false
+            maintained power: false
           effects: []
           range:
             override: true
@@ -2457,7 +2457,7 @@ items:
         name: Spell Changes
         img: systems/dnd5e/icons/svg/activity/cast.svg
         origin: >-
-          Compendium.dnd5e.actors24.Actor.mmAdultBlackDrag.Item.mmSpellcasting00.Activity.YHrCbAZxiFbRb6Hp
+          Compendium.dnd5e.actors24.Actor.mmAdultBlackDrag.Item.mmPower System00.Activity.YHrCbAZxiFbRb6Hp
         changes:
           - key: system.properties
             mode: 2
@@ -2500,7 +2500,7 @@ items:
         riders:
           activity: []
           effect: []
-        cachedFor: .Item.mmSpellcasting00.Activity.YHrCbAZxiFbRb6Hp
+        cachedFor: .Item.mmPower System00.Activity.YHrCbAZxiFbRb6Hp
     _stats:
       compendiumSource: Compendium.dnd5e.spells24.Item.phbsplVitriolicS
       duplicateSource: null
@@ -2539,7 +2539,7 @@ items:
             chatFlavor: ''
           duration:
             units: inst
-            concentration: false
+            maintained power: false
             override: false
           effects:
             - _id: owuEyJBslYKvxqeX
@@ -2596,7 +2596,7 @@ items:
           lowercase]] can see within [[lookup @range.value
           activity=0OkFhjOM80ipoNKy]] feet.</p><p><em>Failure:</em> [[/damage
           average]] damage, and the target has Disadvantage on saving throws to
-          maintain &amp;Reference[Concentration} until the end of its next
+          maintain &amp;Reference[Maintained Power} until the end of its next
           turn.</p><p><em>Failure or Success:</em> The [[lookup @name
           lowercase]] can't take this action again until the start of its next
           turn.</p>
@@ -2619,7 +2619,7 @@ items:
     folder: 4T18pEvubPMQLzvD
     img: icons/creatures/invertebrates/fly-wasp-mosquito-green.webp
     effects:
-      - name: Concentration Disadvantage
+      - name: Maintained Power Disadvantage
         img: icons/creatures/invertebrates/fly-wasp-mosquito-green.webp
         origin: Compendium.dnd-monster-manual.features.Item.mmCloudOfInsects
         transfer: false
@@ -2638,7 +2638,7 @@ items:
           startTurn: null
         description: >-
           <p>The target has Disadvantage on saving throws to maintain
-          Concentration until the end of its next turn</p>
+          Maintained Power until the end of its next turn</p>
         tint: '#ffffff'
         statuses: []
         sort: 0
@@ -2700,7 +2700,7 @@ items:
             chatFlavor: ''
           duration:
             units: inst
-            concentration: false
+            maintained power: false
             override: false
           range:
             override: false
@@ -2724,7 +2724,7 @@ items:
             level: 3
             properties:
               - material
-            spellbook: true
+            power list: true
             uuid: Compendium.dnd5e.spells24.Item.phbsplFear000000
             ability: cha
           name: ''
@@ -2737,7 +2737,7 @@ items:
           <p class="feature">The [[lookup @name lowercase]] casts
           <em>@UUID[Compendium.dnd5e.spells24.Item.phbsplFear000000]{Fear}</em>,
           requiring no Material components and using Charisma as the
-          spellcasting ability (spell save DC [[lookup @abilities.cha.dc]]). The
+          power system ability (spell save DC [[lookup @abilities.cha.dc]]). The
           [[lookup @name lowercase]] can't take this action again until the
           start of its next turn.</p>
         chat: ''
@@ -2825,7 +2825,7 @@ items:
         - vocal
         - somatic
         - material
-        - concentration
+        - maintained power
       materials:
         value: a white feather
         consumed: false
@@ -2853,7 +2853,7 @@ items:
           duration:
             units: inst
             override: false
-            concentration: false
+            maintained power: false
           effects:
             - _id: ijiWLu6EJZmEJPOZ
               onSave: false
@@ -2874,7 +2874,7 @@ items:
             ability:
               - wis
             dc:
-              calculation: spellcasting
+              calculation: power system
               formula: ''
           uses:
             spent: 0
@@ -3020,7 +3020,7 @@ items:
             chatFlavor: ''
           duration:
             units: inst
-            concentration: false
+            maintained power: false
             override: false
           effects: []
           range:

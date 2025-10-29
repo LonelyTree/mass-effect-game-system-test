@@ -7,7 +7,7 @@ system:
   description:
     value: >-
       <p>You can cast @UUID[Compendium.dnd5e.spells.Item.aL1F8fvYLtNzUbKu]{Speak
-      with Animals} at will, without expending a spell slot.</p>
+      with Animals} at will, without expending a power use.</p>
     chat: ''
   source:
     custom: ''
@@ -42,7 +42,7 @@ system:
       description:
         chatFlavor: ''
       duration:
-        concentration: false
+        maintained power: false
         value: '10'
         units: minute
         special: ''

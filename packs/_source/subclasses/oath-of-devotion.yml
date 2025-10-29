@@ -80,7 +80,7 @@ system:
       value: {}
       level: 20
       title: Features
-  spellcasting:
+  power system:
     progression: none
     ability: ''
     preparation: {}

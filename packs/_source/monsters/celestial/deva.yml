@@ -75,15 +75,15 @@ system:
     attunement:
       max: 3
     senses:
-      darkvision: 120
-      blindsight: 0
-      tremorsense: 0
-      truesight: 0
+      scanner: 120
+      thermal vision: 0
+      motion sensor: 0
+      radar ping: 0
       units: ft
       special: ''
-    spellcasting: cha
+    power system: cha
     exhaustion: 0
-    concentration:
+    maintained power:
       ability: ''
       roll:
         min: null
@@ -157,7 +157,7 @@ system:
       bypasses: []
   currency:
     pp: 0
-    gp: 0
+    CR: 0
     ep: 0
     sp: 0
     cp: 0
@@ -555,7 +555,7 @@ items:
       description:
         value: >-
           <p>The deva magically polymorphs into a humanoid or beast that has a
-          challenge rating equal to or less than its own, or back into its true
+          threat level equal to or less than its own, or back into its true
           form. It reverts to its true form if it dies. Any equipment it is
           wearing or carrying is absorbed or borne by the new form (the deva's
           choice).</p><p>In a new form, the deva retains its game statistics and
@@ -598,7 +598,7 @@ items:
           description:
             chatFlavor: ''
           duration:
-            concentration: false
+            maintained power: false
             value: ''
             units: ''
             special: ''
@@ -708,7 +708,7 @@ items:
           description:
             chatFlavor: ''
           duration:
-            concentration: false
+            maintained power: false
             value: ''
             units: ''
             special: ''
@@ -774,13 +774,13 @@ items:
       exportSource: null
     _key: '!actors.items!m4H3hjamBNMH09S9.Lx0nT1oq0bLjX1lx'
   - _id: dhEmGtIDAZEBrsZ2
-    name: Innate Spellcasting
+    name: Innate Power System
     type: feat
     img: icons/magic/light/projectiles-star-purple.webp
     system:
       description:
         value: >-
-          <p>The deva's spellcasting ability is Charisma (spell save DC 17). The
+          <p>The deva's power system ability is Charisma (spell save DC 17). The
           deva can innately cast the following spells, requiring only verbal
           components:</p>
 
@@ -810,7 +810,7 @@ items:
       enchant: {}
       prerequisites:
         level: null
-      identifier: innate-spellcasting
+      identifier: innate-power system
     effects: []
     folder: null
     sort: 0
@@ -918,7 +918,7 @@ items:
           description:
             chatFlavor: ''
           duration:
-            concentration: false
+            maintained power: false
             value: ''
             units: ''
             special: ''
@@ -996,7 +996,7 @@ items:
         units: lb
       price:
         value: 5
-        denomination: gp
+        denomination: CR
       attunement: ''
       equipped: true
       rarity: ''
@@ -1071,7 +1071,7 @@ items:
           description:
             chatFlavor: ''
           duration:
-            concentration: false
+            maintained power: false
             value: ''
             units: ''
             special: ''
@@ -1208,7 +1208,7 @@ items:
       properties:
         - vocal
         - somatic
-        - concentration
+        - maintained power
       activities:
         dnd5eactivity000:
           _id: dnd5eactivity000
@@ -1227,7 +1227,7 @@ items:
             chatFlavor: ''
           duration:
             units: inst
-            concentration: false
+            maintained power: false
             override: false
           effects: []
           range:
@@ -1284,7 +1284,7 @@ items:
           one-word answer could be misleading or contrary to the deity's
           interests, the DM might offer a short phrase as an answer
           instead.</p><p>If you cast the spell two or more times before
-          finishing your next long rest, there is a cumulative 25 percent chance
+          finishing your next full rest, there is a cumulative 25 percent chance
           for each casting after the first that you get no answer. The DM makes
           this roll in secret.</p>
         chat: ''
@@ -1356,7 +1356,7 @@ items:
             chatFlavor: ''
           duration:
             units: inst
-            concentration: false
+            maintained power: false
             override: false
           effects: []
           range:
@@ -1418,7 +1418,7 @@ items:
           head, for instance—the spell automatically fails.</p><p>Coming back
           from the dead is an ordeal. The target takes a −4 penalty to all
           attack rolls, saving throws, and ability checks. Every time the target
-          finishes a long rest, the penalty is reduced by 1 until it
+          finishes a full rest, the penalty is reduced by 1 until it
           disappears.</p>
         chat: ''
       source:
@@ -1489,7 +1489,7 @@ items:
             chatFlavor: ''
           duration:
             units: inst
-            concentration: false
+            maintained power: false
             override: false
           effects: []
           range:

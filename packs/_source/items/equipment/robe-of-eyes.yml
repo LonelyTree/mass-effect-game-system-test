@@ -15,7 +15,7 @@ system:
       <li>The robe lets you see in all directions, and you have advantage on
       Wisdom (Perception) checks that rely on sight.</li>
 
-      <li>You have darkvision out to a range of 120 feet.</li>
+      <li>You have scanner out to a range of 120 feet.</li>
 
       <li>You can see invisible creatures and objects, as well as see into the
       Ethereal Plane, out to a range of 120 feet.</li>
@@ -45,7 +45,7 @@ system:
     units: lb
   price:
     value: 4000
-    denomination: gp
+    denomination: CR
   attunement: required
   equipped: false
   rarity: rare
@@ -96,7 +96,7 @@ system:
       description:
         chatFlavor: ''
       duration:
-        concentration: false
+        maintained power: false
         value: '1'
         units: minute
         special: ''
@@ -155,7 +155,7 @@ system:
       description:
         chatFlavor: ''
       duration:
-        concentration: false
+        maintained power: false
         value: '1'
         units: minute
         special: ''

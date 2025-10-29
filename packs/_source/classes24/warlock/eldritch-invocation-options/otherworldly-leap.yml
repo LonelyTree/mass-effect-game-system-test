@@ -7,7 +7,7 @@ system:
     value: >-
       <blockquote><p>Prerequisite: Level 2+ Warlock</p></blockquote><p>You can
       cast @UUID[Compendium.dnd5e.spells24.Item.phbsplJump000000]{Jump} on
-      yourself without expending a spell slot.</p><section
+      yourself without expending a power use.</p><section
       id="secret-JpQyXOJAkEKVXxff" class="secret"><p><strong>Foundry
       Note</strong></p><p>This feature can be used in place of the Jump spell
       and includes an Active Effect for tracking.</p></section>
@@ -50,7 +50,7 @@ system:
       duration:
         units: minute
         override: false
-        concentration: false
+        maintained power: false
         value: '1'
       effects:
         - _id: Esyd01OZ3NCv8gtp

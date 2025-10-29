@@ -24,7 +24,7 @@ system:
         chatFlavor: Adjust up to two levers up or down
       duration:
         units: inst
-        concentration: false
+        maintained power: false
         override: false
       effects: []
       range:
@@ -91,7 +91,7 @@ system:
     units: lb
   price:
     value: 200000
-    denomination: gp
+    denomination: CR
   rarity: legendary
   attunement: ''
   attuned: false

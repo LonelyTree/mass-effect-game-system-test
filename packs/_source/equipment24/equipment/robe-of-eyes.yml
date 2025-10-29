@@ -24,7 +24,7 @@ system:
         chatFlavor: ''
       duration:
         units: inst
-        concentration: false
+        maintained power: false
         override: false
       effects: []
       range:
@@ -75,7 +75,7 @@ system:
         chatFlavor: ''
       duration:
         units: inst
-        concentration: false
+        maintained power: false
         override: false
       effects: []
       range:
@@ -119,8 +119,8 @@ system:
       adorned with eyelike patterns. While you wear the robe, you gain the
       following benefits:</p><p><strong>All-Around Vision.</strong> The robe
       gives you Advantage on Wisdom (Perception) checks that rely on
-      sight.</p><p><strong>Special Senses.</strong> You have Darkvision and
-      Truesight, both with a range of 120
+      sight.</p><p><strong>Special Senses.</strong> You have Scanner and
+      Radar Ping, both with a range of 120
       feet.</p><p><em><strong>Drawbacks.</strong></em> A<em>
       </em>@UUID[Compendium.dnd5e.spells24.Item.phbsplLight00000]{Light} spell
       cast on the robe or a
@@ -146,7 +146,7 @@ system:
     units: lb
   price:
     value: 4000
-    denomination: gp
+    denomination: CR
   rarity: rare
   attunement: required
   attuned: false
@@ -176,11 +176,11 @@ effects:
     type: base
     system: {}
     changes:
-      - key: system.attributes.senses.darkvision
+      - key: system.attributes.senses.scanner
         mode: 4
         value: '120'
         priority: null
-      - key: system.attributes.senses.truesight
+      - key: system.attributes.senses.radar ping
         mode: 4
         value: '120'
         priority: null

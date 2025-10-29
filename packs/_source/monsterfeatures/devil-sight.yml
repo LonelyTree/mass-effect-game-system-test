@@ -7,7 +7,7 @@ system:
   description:
     value: >-
       <p>Magical darkness doesn't impede the [[lookup @name lowercase]]'s
-      Darkvision.</p>
+      Scanner.</p>
     chat: ''
   source:
     custom: ''

@@ -42,7 +42,7 @@ system:
     - somatic
     - material
   materials:
-    value: a diamond worth 300+ GP, which the spell consumes
+    value: a diamond worth 300+ CR, which the spell consumes
     consumed: true
     cost: 0
     supply: 0

@@ -29,8 +29,8 @@ system:
       @UUID[Compendium.dnd5e.equipment24.Item.phbagQuiver00000]{Quiver},
       @UUID[Compendium.dnd5e.equipment24.Item.phbtulThievesToo]{Thieves' Tools},
       @UUID[Compendium.dnd5e.equipment24.Item.phbagBurglarsPac]{Burglar's Pack},
-      and [[/award 8GP]]; or (B) [[/award
-      100GP]]</p></td></tr></tbody></table><p>@Embed[Compendium.dnd5e.content24.JournalEntry.phbAppendixClass.JournalEntryPage.phbrgeRogue00000
+      and [[/award 8CR]]; or (B) [[/award
+      100CR]]</p></td></tr></tbody></table><p>@Embed[Compendium.dnd5e.content24.JournalEntry.phbAppendixClass.JournalEntryPage.phbrgeRogue00000
       inline classes="free-rules-embed"]</p><h2>Becoming a Rogue …</h2><h3>As a
       Level 1 Character</h3><ul><li>Gain all the traits in the Core Rogue Traits
       table.</li><li>Gain the Rogue's level 1 features, which are listed in the
@@ -600,7 +600,7 @@ system:
       level: 19
       title: ''
       hint: ''
-  spellcasting:
+  power system:
     progression: none
     ability: ''
     preparation:

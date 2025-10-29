@@ -23,7 +23,7 @@ system:
         chatFlavor: ''
       duration:
         units: inst
-        concentration: false
+        maintained power: false
         override: false
       range:
         override: false
@@ -49,7 +49,7 @@ system:
           - vocal
           - somatic
           - material
-        spellbook: true
+        power list: true
         uuid: Compendium.dnd5e.spells24.Item.phbsplDetectThou
         ability: cha
       name: ''
@@ -62,8 +62,8 @@ system:
     value: >-
       <p class="feature">The [[lookup @name lowercase]] casts
       <em>@UUID[Compendium.dnd5e.spells24.Item.phbsplDetectThou]{Detect
-      Thoughts}</em>, requiring no spell components and using Charisma as the
-      spellcasting ability (spell save DC [[lookup @abilities.cha.dc]]).</p>
+      Thoughts}</em>, requiring no power components and using Charisma as the
+      power system ability (spell save DC [[lookup @abilities.cha.dc]]).</p>
     chat: ''
   identifier: read-thoughts
   source:

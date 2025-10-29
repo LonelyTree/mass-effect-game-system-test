@@ -1,17 +1,17 @@
 <section class="tab {{ tab.cssClass }}" data-tab="{{ tab.id }}" data-group="{{ tab.group }}">
     {{!-- Spellcasting --}}
     <section class="top">
-        {{#each spellcasting}}
-        <div class="spellcasting card {{#if primary}}primary{{/if}}" data-ability="{{ ability.ability }}">
+        {{#each powerSystem}}
+        <div class="powerSystem card {{#if primary}}primary{{/if}}" data-ability="{{ ability.ability }}">
             <div class="header">
                 <h3>{{ label }}</h3>
                 {{#if @root.isNPC}}
                 {{#if (and @root.editable noSpellcaster)}}
-                <select name="system.attributes.spellcasting">
+                <select name="system.attributes.powerSystem">
                     {{ selectOptions @root.CONFIG.abilities selected=ability.ability labelAttr="label" blank="" }}
                 </select>
                 {{else}}
-                <span class="spellcasting-ability subtitle">{{ ability.label }}</span>
+                <span class="powerSystem-ability subtitle">{{ ability.label }}</span>
                 {{/if}}
                 {{else}}
                 <button type="button" class="radio-button" data-action="setSpellcastingAbility"

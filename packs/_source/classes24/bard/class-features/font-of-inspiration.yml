@@ -7,13 +7,13 @@ system:
   description:
     value: >-
       <p>You now regain all your expended uses of Bardic Inspiration when you
-      finish a Short or Long Rest.</p><p>In addition, you can expend a spell
+      finish a Short or Full Rest.</p><p>In addition, you can expend a spell
       slot (no action required) to regain one expended use of Bardic
       Inspiration.</p><section class="secret"
       id="secret-KgQeVfHTLTrKK1s0"><p><strong>Foundry Note</strong></p><p>You
       must update the Bardic Inspiration feature on your sheet to refresh on
-      Short Rest as it defaults to Long rest.</p><p>The <strong>Recharge with
-      Spell Slot</strong> activity will expend a spell slot and grant another
+      Field Rest as it defaults to Long rest.</p><p>The <strong>Recharge with
+      Power Use</strong> activity will expend a power use and grant another
       use of Bardic Inspiration.</p></section>
     chat: ''
   source:
@@ -37,7 +37,7 @@ system:
   activities:
     MTIru0Pv58RveWan:
       type: utility
-      name: Recharge with Spell Slot
+      name: Recharge with Power Use
       _id: MTIru0Pv58RveWan
       activation:
         type: ''
@@ -61,7 +61,7 @@ system:
         chatFlavor: ''
       duration:
         units: inst
-        concentration: false
+        maintained power: false
         override: false
       effects: []
       range:

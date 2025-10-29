@@ -3,9 +3,9 @@ system:
   description:
     value: >-
       <p>A frigid beam of blue-white light streaks toward a creature within
-      range. Make a ranged spell attack against the target. On a hit, it takes
+      range. Make a ranged power attack against the target. On a hit, it takes
       1d8 Cold damage, and its Speed is reduced by 10 feet until the start of
-      your next turn.</p><p><strong>Cantrip Upgrade.</strong> The damage
+      your next turn.</p><p><strong>Basic Power Upgrade.</strong> The damage
       increases by 1d8 when you reach levels 5 (2d8), 11 (3d8), and 17
       (4d8).</p>
     chat: ''
@@ -70,7 +70,7 @@ system:
         chatFlavor: ''
       duration:
         units: inst
-        concentration: false
+        maintained power: false
         override: false
       effects:
         - _id: 7dnnwBMWLykrVJub

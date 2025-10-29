@@ -3,8 +3,8 @@ system:
   description:
     value: >-
       <p>You touch a creature. The target's Speed increases by 10 feet until the
-      spell ends.</p><p><strong>Using a Higher-Level Spell Slot.</strong> You
-      can target one additional creature for each spell slot level above 1.</p>
+      spell ends.</p><p><strong>Using a Higher-Level Power Use.</strong> You
+      can target one additional creature for each power use level above 1.</p>
     chat: ''
   source:
     custom: ''

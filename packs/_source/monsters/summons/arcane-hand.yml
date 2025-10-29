@@ -6,7 +6,7 @@ img: null
 system:
   currency:
     pp: 0
-    gp: 0
+    CR: 0
     ep: 0
     sp: 0
     cp: 0
@@ -304,15 +304,15 @@ system:
     attunement:
       max: 3
     senses:
-      darkvision: null
-      blindsight: null
-      tremorsense: null
-      truesight: null
+      scanner: null
+      thermal vision: null
+      motion sensor: null
+      radar ping: null
       units: null
       special: ''
-    spellcasting: int
+    power system: int
     exhaustion: 0
-    concentration:
+    maintained power:
       ability: ''
       roll:
         min: null
@@ -497,7 +497,7 @@ items:
         units: lb
       price:
         value: 0
-        denomination: gp
+        denomination: CR
       rarity: ''
       attunement: ''
       equipped: true
@@ -566,7 +566,7 @@ items:
           description:
             chatFlavor: ''
           duration:
-            concentration: false
+            maintained power: false
             value: ''
             units: ''
             special: ''
@@ -643,7 +643,7 @@ items:
           contested by the [[/skill strength athletics]] check of the target. If
           the target is Medium or smaller, you have advantage on the check. If
           you succeed, the hand pushes the target up to 5 feet plus a number of
-          feet equal to five times your Spellcasting ability modifier. The hand
+          feet equal to five times your Power System ability modifier. The hand
           moves with the target to remain within 5 feet of it.</p>
         chat: ''
       source:
@@ -678,7 +678,7 @@ items:
           description:
             chatFlavor: ''
           duration:
-            concentration: false
+            maintained power: false
             value: ''
             units: ''
             special: ''
@@ -745,7 +745,7 @@ items:
           If the target is Medium or smaller, you have advantage on the check.
           While the hand is Grappling the target, you can use a Bonus Action to
           have the hand crush it. When you do so, the target takes bludgeoning
-          damage equal to 2d6 + your Spellcasting ability modifier.</p>
+          damage equal to 2d6 + your Power System ability modifier.</p>
         chat: ''
       source:
         rules: '2014'
@@ -779,7 +779,7 @@ items:
           description:
             chatFlavor: ''
           duration:
-            concentration: false
+            maintained power: false
             value: ''
             units: ''
             special: ''
@@ -887,7 +887,7 @@ items:
           description:
             chatFlavor: ''
           duration:
-            concentration: false
+            maintained power: false
             value: ''
             units: ''
             special: ''

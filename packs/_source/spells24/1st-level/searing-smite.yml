@@ -6,8 +6,8 @@ system:
       attack. At the start of each of its turns until the spell ends, the target
       takes 1d6 Fire damage and then makes a Constitution saving throw. On a
       failed save, the spell continues. On a successful save, the spell
-      ends.</p><p><strong>Using a Higher-Level Spell Slot. </strong>All the
-      damage increases by 1d6 for each spell slot level above 1.</p>
+      ends.</p><p><strong>Using a Higher-Level Power Use. </strong>All the
+      damage increases by 1d6 for each power use level above 1.</p>
     chat: ''
   source:
     custom: ''
@@ -105,7 +105,7 @@ system:
       save:
         ability: con
         dc:
-          calculation: spellcasting
+          calculation: power system
           formula: ''
       uses:
         spent: 0
@@ -133,7 +133,7 @@ system:
         chatFlavor: ''
       duration:
         units: inst
-        concentration: false
+        maintained power: false
         override: false
       effects:
         - _id: A0tTvLeRetrC708K

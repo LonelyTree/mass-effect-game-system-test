@@ -5,7 +5,7 @@ img: null
 system:
   currency:
     pp: 0
-    gp: 0
+    CR: 0
     ep: 0
     sp: 0
     cp: 0
@@ -363,15 +363,15 @@ system:
     attunement:
       max: 3
     senses:
-      darkvision: 120
-      blindsight: null
-      tremorsense: null
-      truesight: null
+      scanner: 120
+      thermal vision: null
+      motion sensor: null
+      radar ping: null
       units: null
       special: ''
-    spellcasting: wis
+    power system: wis
     exhaustion: 0
-    concentration:
+    maintained power:
       ability: ''
       roll:
         min: null
@@ -629,7 +629,7 @@ items:
             chatFlavor: ''
           duration:
             units: inst
-            concentration: false
+            maintained power: false
             override: false
           effects: []
           range:
@@ -686,7 +686,7 @@ items:
         units: lb
       price:
         value: 0
-        denomination: gp
+        denomination: CR
       rarity: ''
       attunement: ''
       attuned: false
@@ -751,8 +751,8 @@ items:
       default: 0
     sort: 1
     _key: '!actors.items!mmGiantOwl000000.mmTalons00000000'
-  - _id: mmSpellcasting00
-    name: Spellcasting
+  - _id: mmPower System00
+    name: Power System
     type: feat
     system:
       type:
@@ -772,7 +772,7 @@ items:
               - vocal
               - somatic
               - material
-            spellbook: true
+            power list: true
           _id: ITEsNWkCvRcZk9Bt
           sort: 0
           activation:
@@ -787,7 +787,7 @@ items:
           description: {}
           duration:
             units: inst
-            concentration: false
+            maintained power: false
             override: false
           range:
             override: false
@@ -815,7 +815,7 @@ items:
               - vocal
               - somatic
               - material
-            spellbook: true
+            power list: true
           _id: 2UplUlqKAgPmAZ3h
           sort: 0
           activation:
@@ -830,7 +830,7 @@ items:
           description: {}
           duration:
             units: inst
-            concentration: false
+            maintained power: false
             override: false
           range:
             override: false
@@ -858,7 +858,7 @@ items:
               - vocal
               - somatic
               - material
-            spellbook: true
+            power list: true
             ability: ''
           _id: d3PpQotp7DC0Jeml
           sort: 0
@@ -878,7 +878,7 @@ items:
             chatFlavor: ''
           duration:
             units: inst
-            concentration: false
+            maintained power: false
             override: false
           range:
             override: false
@@ -904,8 +904,8 @@ items:
       description:
         value: >-
           <p class="feature">The [[lookup @name lowercase]] casts one of the
-          following spells, requiring no spell components and using Wisdom as
-          the spellcasting ability:</p><p class="feature-trait"><strong>At
+          following spells, requiring no power components and using Wisdom as
+          the power system ability:</p><p class="feature-trait"><strong>At
           Will:</strong>
           <em>@UUID[Compendium.dnd5e.spells24.Item.phbsplDetectEvil]{Detect Evil
           and Good},
@@ -913,7 +913,7 @@ items:
           Magic}</em></p><p class="feature-trait"><strong>1/Day Each:</strong>
           <em>@UUID[Compendium.dnd5e.spells24.Item.phbsplClairvoyan]{Clairvoyance}</em></p>
         chat: ''
-      identifier: spellcasting
+      identifier: power system
       source:
         revision: 1
         rules: '2024'
@@ -937,7 +937,7 @@ items:
           activity: []
           effect: []
     _stats:
-      compendiumSource: Compendium.dnd-monster-manual.features.Item.mmSpellcasting00
+      compendiumSource: Compendium.dnd-monster-manual.features.Item.mmPower System00
       duplicateSource: null
       coreVersion: '13.344'
       systemId: dnd5e
@@ -949,7 +949,7 @@ items:
     ownership:
       default: 0
     sort: 2
-    _key: '!actors.items!mmGiantOwl000000.mmSpellcasting00'
+    _key: '!actors.items!mmGiantOwl000000.mmPower System00'
   - name: Detect Evil and Good
     system:
       description:
@@ -1000,7 +1000,7 @@ items:
       properties:
         - vocal
         - somatic
-        - concentration
+        - maintained power
       materials:
         value: ''
         consumed: false
@@ -1028,7 +1028,7 @@ items:
           duration:
             units: inst
             override: false
-            concentration: false
+            maintained power: false
           effects:
             - _id: pOgbtXbKVGdbwjjE
           range:
@@ -1095,7 +1095,7 @@ items:
         name: Spell Changes
         img: systems/dnd5e/icons/svg/activity/cast.svg
         origin: >-
-          Compendium.dnd5e.actors24.Actor.mmGiantOwl000000.Item.mmSpellcasting00.Activity.ITEsNWkCvRcZk9Bt
+          Compendium.dnd5e.actors24.Actor.mmGiantOwl000000.Item.mmPower System00.Activity.ITEsNWkCvRcZk9Bt
         changes:
           - key: system.properties
             mode: 2
@@ -1146,7 +1146,7 @@ items:
         riders:
           activity: []
           effect: []
-        cachedFor: .Item.mmSpellcasting00.Activity.ITEsNWkCvRcZk9Bt
+        cachedFor: .Item.mmPower System00.Activity.ITEsNWkCvRcZk9Bt
     _stats:
       compendiumSource: Compendium.dnd5e.spells24.Item.phbsplDetectEvil
       duplicateSource: null
@@ -1209,7 +1209,7 @@ items:
       properties:
         - vocal
         - somatic
-        - concentration
+        - maintained power
         - ritual
       materials:
         value: ''
@@ -1238,7 +1238,7 @@ items:
           duration:
             units: inst
             override: false
-            concentration: false
+            maintained power: false
           effects:
             - _id: BHw91lQmVgdx39WZ
           range:
@@ -1306,7 +1306,7 @@ items:
         name: Spell Changes
         img: systems/dnd5e/icons/svg/activity/cast.svg
         origin: >-
-          Compendium.dnd5e.actors24.Actor.mmGiantOwl000000.Item.mmSpellcasting00.Activity.2UplUlqKAgPmAZ3h
+          Compendium.dnd5e.actors24.Actor.mmGiantOwl000000.Item.mmPower System00.Activity.2UplUlqKAgPmAZ3h
         changes:
           - key: system.properties
             mode: 2
@@ -1357,7 +1357,7 @@ items:
         riders:
           activity: []
           effect: []
-        cachedFor: .Item.mmSpellcasting00.Activity.2UplUlqKAgPmAZ3h
+        cachedFor: .Item.mmPower System00.Activity.2UplUlqKAgPmAZ3h
     _stats:
       compendiumSource: Compendium.dnd5e.spells24.Item.phbsplDetectMagi
       duplicateSource: null
@@ -1383,7 +1383,7 @@ items:
           sensor as if you were in its space. As a Bonus Action, you can switch
           between seeing and hearing.</p><p>A creature that sees the sensor
           (such as a creature benefiting from <em>See Invisibility</em> or
-          &amp;Reference[truesight]) sees a luminous orb about the size of your
+          &amp;Reference[radar ping]) sees a luminous orb about the size of your
           fist.</p>
         chat: ''
       source:
@@ -1423,10 +1423,10 @@ items:
         - vocal
         - somatic
         - material
-        - concentration
+        - maintained power
       materials:
         value: >-
-          a focus worth 100+ GP, either a jeweled horn for hearing or a glass
+          a focus worth 100+ CR, either a jeweled horn for hearing or a glass
           eye for seeing
         consumed: false
         cost: 0
@@ -1453,7 +1453,7 @@ items:
           duration:
             units: inst
             override: false
-            concentration: false
+            maintained power: false
           range:
             override: false
           target:
@@ -1504,7 +1504,7 @@ items:
         name: Spell Changes
         img: systems/dnd5e/icons/svg/activity/cast.svg
         origin: >-
-          Compendium.dnd5e.actors24.Actor.mmGiantOwl000000.Item.mmSpellcasting00.Activity.d3PpQotp7DC0Jeml
+          Compendium.dnd5e.actors24.Actor.mmGiantOwl000000.Item.mmPower System00.Activity.d3PpQotp7DC0Jeml
         changes:
           - key: system.properties
             mode: 2
@@ -1552,7 +1552,7 @@ items:
       default: 0
     flags:
       dnd5e:
-        cachedFor: .Item.mmSpellcasting00.Activity.d3PpQotp7DC0Jeml
+        cachedFor: .Item.mmPower System00.Activity.d3PpQotp7DC0Jeml
     _stats:
       compendiumSource: Compendium.dnd5e.spells24.Item.phbsplClairvoyan
       duplicateSource: null

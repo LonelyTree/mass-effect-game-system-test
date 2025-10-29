@@ -85,10 +85,10 @@ system:
     units: ft
     hover: false
   senses:
-    darkvision: null
-    blindsight: null
-    tremorsense: null
-    truesight: null
+    scanner: null
+    thermal vision: null
+    motion sensor: null
+    radar ping: null
     units: ft
     special: ''
   type:

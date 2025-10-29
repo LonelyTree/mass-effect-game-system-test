@@ -178,7 +178,7 @@ pages:
         recoverable after the creature is slain and whether any of that
         equipment is still usable.</p><p>Beware of giving a monster
         combat-oriented magic items, since those might alter the monster's
-        Challenge Rating. If you do give a monster a magic item, the monster can
+        Threat Level. If you do give a monster a magic item, the monster can
         have Attunement with magic items as noted in Equipment. A monster with a
         class tag after its creature type is considered a member of that class
         for Attunement purposes.</p><h2>Senses</h2><p>The Senses entry specifies
@@ -193,13 +193,13 @@ pages:
         allows a creature to communicate mentally with another creature within a
         specified range. See
         @UUID[Compendium.dnd5e.content24.JournalEntry.phbAppendixCRule]{Rules
-        Glossary} for more information.</p><h2>Challenge Rating</h2><p>Challenge
+        Glossary} for more information.</p><h2>Threat Level</h2><p>Challenge
         Rating is defined in Rules Glossary, while guidance on using CR to plan
         potential combat encounters is in<em>
         </em>@UUID[Compendium.dnd5e.content24.JournalEntry.dmgDmsToolbox000]{Gameplay
         Toolbox}.</p><h3>Experience Points</h3><p>The number of Experience
         Points (XP) a monster is worth is based on its CR, as detailed in the
-        Experience Points by Challenge Rating table. XP is awarded for defeating
+        Experience Points by Threat Level table. XP is awarded for defeating
         the monster in combat or otherwise neutralizing it.</p><p>Unless a rule
         says otherwise, a monster summoned by a spell or another magical ability
         is worth the XP noted in its stat block.</p><table><caption>Experience
@@ -208,7 +208,7 @@ pages:
         or
         10</p></td><td></td><td><p>14</p></td><td><p>11,500</p></td></tr><tr><td><p>1/8</p></td><td><p>25</p></td><td></td><td><p>15</p></td><td><p>13,000</p></td></tr><tr><td><p>1/4</p></td><td><p>50</p></td><td></td><td><p>16</p></td><td><p>15,000</p></td></tr><tr><td><p>1/2</p></td><td><p>100</p></td><td></td><td><p>17</p></td><td><p>18,000</p></td></tr><tr><td><p>1</p></td><td><p>200</p></td><td></td><td><p>18</p></td><td><p>20,000</p></td></tr><tr><td><p>2</p></td><td><p>450</p></td><td></td><td><p>19</p></td><td><p>22,000</p></td></tr><tr><td><p>3</p></td><td><p>700</p></td><td></td><td><p>20</p></td><td><p>25,000</p></td></tr><tr><td><p>4</p></td><td><p>1,100</p></td><td></td><td><p>21</p></td><td><p>33,000</p></td></tr><tr><td><p>5</p></td><td><p>1,800</p></td><td></td><td><p>22</p></td><td><p>41,000</p></td></tr><tr><td><p>6</p></td><td><p>2,300</p></td><td></td><td><p>23</p></td><td><p>50,000</p></td></tr><tr><td><p>7</p></td><td><p>2,900</p></td><td></td><td><p>24</p></td><td><p>62,000</p></td></tr><tr><td><p>8</p></td><td><p>3,900</p></td><td></td><td><p>25</p></td><td><p>75,000</p></td></tr><tr><td><p>9</p></td><td><p>5,000</p></td><td></td><td><p>26</p></td><td><p>90,000</p></td></tr><tr><td><p>10</p></td><td><p>5,900</p></td><td></td><td><p>27</p></td><td><p>105,000</p></td></tr><tr><td><p>11</p></td><td><p>7,200</p></td><td></td><td><p>28</p></td><td><p>120,000</p></td></tr><tr><td><p>12</p></td><td><p>8,400</p></td><td></td><td><p>29</p></td><td><p>135,000</p></td></tr><tr><td><p>13</p></td><td><p>10,000</p></td><td></td><td><p>30</p></td><td><p>155,000</p></td></tr></tbody></table><h3>Proficiency
         Bonus</h3><p>A monster's Proficiency Bonus (PB) is determined by its CR,
-        as shown in the Proficiency Bonus by Challenge Rating table, and is
+        as shown in the Proficiency Bonus by Threat Level table, and is
         reflected in saving throws, skills, and other statistics where the
         monster's exceptional aptitude is a
         factor.</p><table><caption>Proficiency Bonus by Challenge
@@ -216,7 +216,7 @@ pages:
         monster's traits, if any, are features that are active at all times or
         in certain situations.</p><aside class="notable right four"><h4>Running
         a Monster</h4><p>To ensure a monster acts in accordance with its
-        Challenge Rating, follow these rules during
+        Threat Level, follow these rules during
         combat:</p><p><strong>Special Abilities.</strong> If the monster has a
         special ability that deals a lot of damage but has a limited number of
         uses, such as a recharging breath weapon or a spell it can cast only
@@ -259,8 +259,8 @@ pages:
         Multiattack entry in the “Actions” section of their stat block. This
         entry details the attacks a creature can make, as well as any additional
         abilities it can use, as part of the Attack
-        action.</p><h3>Spellcasting</h3><p>If a monster can cast any spells, its
-        stat block lists the spells and provides the monster's spellcasting
+        action.</p><h3>Power System</h3><p>If a monster can cast any spells, its
+        stat block lists the spells and provides the monster's power system
         ability, spell save DC (if any spells require a saving throw), and spell
         attack bonus (if any spells require an attack roll). Unless noted
         otherwise, a spell of level 1 or higher is always cast at its lowest
@@ -268,17 +268,17 @@ pages:
         spell can have special rules or restrictions. For example, a green slaad
         can cast the <em>Invisibility</em> spell, but the spell has a “self
         only” restriction, which means the spell affects only the
-        slaad.</p><p><em><strong>Spell Components.</strong></em> The
-        Spellcasting trait notes whether the monster's spellcasting ignores the
-        need for certain spell components. If any spell components are required,
+        slaad.</p><p><em><strong>Power Components.</strong></em> The
+        Power System trait notes whether the monster's power system ignores the
+        need for certain power components. If any power components are required,
         describe the monster's use of Verbal, Somatic, or Material components to
         signal to characters that it is casting a spell. A monster that requires
-        Material components has them.</p><p><em><strong>Casting Times of 1+
-        Minutes.</strong></em> If a spell has a casting time of 1 minute or more
-        yet is listed in a spellcasting action, the monster doesn't cast the
+        Material components has them.</p><p><em><strong>Activation Times of 1+
+        Minutes.</strong></em> If a spell has a activation time of 1 minute or more
+        yet is listed in a power system action, the monster doesn't cast the
         spell in just one action unless the action's description states
         otherwise; the monster must take the Magic action on each of its turns
-        and maintain Concentration to cast the spell, as described in Rules
+        and maintain Maintained Power to cast the spell, as described in Rules
         Glossary.</p><h2>Bonus Action</h2><p>If a monster has Bonus Action
         options, they are listed in this section. See Playing the Game for
         details on Bonus Actions.</p><h2>Reactions</h2><p>If the monster has
@@ -298,20 +298,20 @@ pages:
         of times they can be used. Here are the most common ways that usage is
         limited:</p><ul><li><p><strong>X/Day.</strong> This notation means the
         stat block part can be used a certain number of times (represented by X)
-        and that a monster must finish a Long Rest to regain expended uses. For
+        and that a monster must finish a Full Rest to regain expended uses. For
         example, a Reaction that includes “1/Day” means the Reaction can be
-        taken once and that the monster must finish a Long Rest to take it
+        taken once and that the monster must finish a Full Rest to take it
         again.</p></li><li><p><strong>Recharge X–Y.</strong> This notation means
         a monster can use the stat block part once. At the start of each of the
         monster's turns, roll 1d6. If the roll is within the number range given
         in the notation (represented by X–Y), the monster regains the use of
         that part, which also recharges when the monster finishes a Short or
-        Long Rest. For example, “Recharge 5–6” in an action means a monster can
+        Full Rest. For example, “Recharge 5–6” in an action means a monster can
         take the action once. Then, at the start of each of the monster's turns,
         it regains the use of that action if it rolls a 5 or 6 on
         1d6.</p></li><li><p><strong>Recharge after a Short or Long
         Rest.</strong> This notation means the monster can use the stat block
-        part once and must then finish a Short or Long Rest to use it
+        part once and must then finish a Short or Full Rest to use it
         again.</p></li></ul>
     video:
       controls: true

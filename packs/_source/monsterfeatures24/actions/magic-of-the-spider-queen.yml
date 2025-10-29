@@ -27,7 +27,7 @@ system:
         chatFlavor: ''
       duration:
         units: inst
-        concentration: false
+        maintained power: false
         override: false
       range:
         override: false
@@ -53,7 +53,7 @@ system:
           - vocal
           - material
           - somatic
-        spellbook: true
+        power list: true
         uuid: Compendium.dnd5e.spells24.Item.phbsplDarkness00
         ability: wis
       name: ''
@@ -79,7 +79,7 @@ system:
         chatFlavor: ''
       duration:
         units: inst
-        concentration: false
+        maintained power: false
         override: false
       range:
         override: false
@@ -105,7 +105,7 @@ system:
           - vocal
           - material
           - somatic
-        spellbook: true
+        power list: true
         uuid: Compendium.dnd5e.spells24.Item.phbsplFaerieFire
         ability: wis
       name: ''
@@ -131,7 +131,7 @@ system:
         chatFlavor: ''
       duration:
         units: inst
-        concentration: false
+        maintained power: false
         override: false
       range:
         override: false
@@ -157,7 +157,7 @@ system:
           - vocal
           - material
           - somatic
-        spellbook: true
+        power list: true
         uuid: Compendium.dnd5e.spells24.Item.phbsplWeb0000000
         ability: wis
       name: ''
@@ -176,7 +176,7 @@ system:
       <em>@UUID[Compendium.dnd5e.spells24.Item.phbsplFaerieFire]{Faerie
       Fire}</em>, or
       <em>@UUID[Compendium.dnd5e.spells24.Item.phbsplWeb0000000]{Web}</em>,
-      requiring no Material components and using Wisdom as the spellcasting
+      requiring no Material components and using Wisdom as the power system
       ability (spell save DC [[lookup @attributes.spell.dc]]).</p>
     chat: ''
   identifier: magic-of-the-spider-queen

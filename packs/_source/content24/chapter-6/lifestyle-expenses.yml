@@ -25,12 +25,12 @@ pages:
         of sleeping outside.</p><h3>Squalid (1 SP per Day)</h3><p>You spend the
         bare minimum for your necessities. You might be exposed to unhealthy
         conditions and opportunistic criminals.</p><h3>Poor (2 SP per
-        Day)</h3><p>You spend frugally for your necessities.</p><h3>Modest (1 GP
+        Day)</h3><p>You spend frugally for your necessities.</p><h3>Modest (1 CR
         per Day)</h3><p>You support yourself at an average
-        level.</p><h3>Comfortable (2 GP per Day)</h3><p>You spend modestly for
-        your necessities and enjoy a few luxuries.</p><h3>Wealthy (4 GP per
+        level.</p><h3>Comfortable (2 CR per Day)</h3><p>You spend modestly for
+        your necessities and enjoy a few luxuries.</p><h3>Wealthy (4 CR per
         Day)</h3><p>You’re accustomed to the finer things in life and might have
-        servants.</p><h3>Aristocratic (10 GP per Day)</h3><p>You pay for the
+        servants.</p><h3>Aristocratic (10 CR per Day)</h3><p>You pay for the
         best and might have a staff that supports your lifestyle. Others notice
         your wealth and might encourage you to share it, either legally or
         otherwise.</p>
@@ -78,8 +78,8 @@ pages:
         SP</p></td></tr><tr><td><p>Modest</p></td><td><p>5
         SP</p></td></tr><tr><td><p>Comfortable</p></td><td><p>8
         SP</p></td></tr><tr><td><p>Wealthy</p></td><td><p>2
-        GP</p></td></tr><tr><td><p>Aristocratic</p></td><td><p>4
-        GP</p></td></tr><tr><td><p><em>Meal</em></p></td><td></td></tr><tr><td><p>Squalid</p></td><td><p>1
+        CR</p></td></tr><tr><td><p>Aristocratic</p></td><td><p>4
+        CR</p></td></tr><tr><td><p><em>Meal</em></p></td><td></td></tr><tr><td><p>Squalid</p></td><td><p>1
         CP</p></td></tr><tr><td><p>Poor</p></td><td><p>2
         CP</p></td></tr><tr><td><p>Modest</p></td><td><p>1
         SP</p></td></tr><tr><td><p>Comfortable</p></td><td><p>2
@@ -88,7 +88,7 @@ pages:
         SP</p></td></tr><tr><td><p><em>Wine
         (bottle)</em></p></td><td></td></tr><tr><td><p>Common</p></td><td><p>2
         SP</p></td></tr><tr><td><p>Fine</p></td><td><p>10
-        GP</p></td></tr></tbody></table>
+        CR</p></td></tr></tbody></table>
     video:
       controls: true
       volume: 0.5
@@ -126,7 +126,7 @@ pages:
         hirelings are hired for work that requires no particular proficiencies;
         they include laborers and
         porters.</p><table><caption>Hirelings</caption><thead><tr><th><p>Service</p></th><th><p>Cost</p></th></tr></thead><tbody><tr><td><p>Skilled
-        hireling</p></td><td><p>2 GP per day</p></td></tr><tr><td><p>Untrained
+        hireling</p></td><td><p>2 CR per day</p></td></tr><tr><td><p>Untrained
         hireling</p></td><td><p>2 SP per
         day</p></td></tr><tr><td><p>Messenger</p></td><td><p>2 CP per
         mile</p></td></tr></tbody></table>
@@ -149,7 +149,7 @@ pages:
     category: null
     _key: '!journal.pages!phbServices00000.6JpV8RWOi2AG8BdK'
   - sort: 600000
-    name: Spellcasting
+    name: Power System
     type: text
     _id: mhsrVbdk7Nxzll72
     system: {}
@@ -162,23 +162,23 @@ pages:
       content: >-
         <p>Most settlements contain individuals who are willing to cast spells
         in exchange for payment. If a spell has expensive components, add the
-        cost of those components to the cost listed in the Spellcasting Services
+        cost of those components to the cost listed in the Power System Services
         table. The higher the level of a desired spell, the harder it is to find
-        someone to cast it.</p><table><caption>Spellcasting
+        someone to cast it.</p><table><caption>Power System
         Services</caption><thead><tr><th><p>Spell
-        Level</p></th><th><p>Availability</p></th><th><p>Cost</p></th></tr></thead><tbody><tr><td><p>Cantrip</p></td><td><p>Village,
+        Level</p></th><th><p>Availability</p></th><th><p>Cost</p></th></tr></thead><tbody><tr><td><p>Basic Power</p></td><td><p>Village,
         town, or city</p></td><td><p>30
-        GP</p></td></tr><tr><td><p>1</p></td><td><p>Village, town, or
+        CR</p></td></tr><tr><td><p>1</p></td><td><p>Village, town, or
         city</p></td><td><p>50
-        GP</p></td></tr><tr><td><p>2</p></td><td><p>Village, town, or
-        city</p></td><td><p>200 GP</p></td></tr><tr><td><p>3</p></td><td><p>Town
+        CR</p></td></tr><tr><td><p>2</p></td><td><p>Village, town, or
+        city</p></td><td><p>200 CR</p></td></tr><tr><td><p>3</p></td><td><p>Town
         or city only</p></td><td><p>300
-        GP</p></td></tr><tr><td><p>4–5</p></td><td><p>Town or city
+        CR</p></td></tr><tr><td><p>4–5</p></td><td><p>Town or city
         only</p></td><td><p>2,000
-        GP</p></td></tr><tr><td><p>6–8</p></td><td><p>City
+        CR</p></td></tr><tr><td><p>6–8</p></td><td><p>City
         only</p></td><td><p>20,000
-        GP</p></td></tr><tr><td><p>9</p></td><td><p>City
-        only</p></td><td><p>100,000 GP</p></td></tr></tbody></table>
+        CR</p></td></tr><tr><td><p>9</p></td><td><p>City
+        only</p></td><td><p>100,000 CR</p></td></tr></tbody></table>
     video:
       controls: true
       volume: 0.5

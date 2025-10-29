@@ -184,7 +184,7 @@ system:
         Poison.
                         
                         You have Resistance to that damage type.
-  spellcasting:
+  power system:
     progression: none
     ability: ''
     preparation:

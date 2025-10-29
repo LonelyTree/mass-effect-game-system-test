@@ -8,7 +8,7 @@ system:
     value: >-
       <p>You have a marvelous knack for succeeding when you need to. If you fail
       a D20 Test, you can turn the roll into a 20.</p><p>Once you use this
-      feature, you can't use it again until you finish a Short or Long Rest.</p>
+      feature, you can't use it again until you finish a Short or Full Rest.</p>
     chat: ''
   source:
     custom: ''
@@ -52,7 +52,7 @@ system:
         chatFlavor: ''
       duration:
         units: inst
-        concentration: false
+        maintained power: false
         override: false
       effects: []
       range:

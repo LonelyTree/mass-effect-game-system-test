@@ -62,10 +62,10 @@ system:
     - vocal
     - somatic
     - material
-    - concentration
+    - maintained power
   materials:
     value: >-
-      a focus worth 1,000+ GP, such as a crystal ball, mirror, or water-filled
+      a focus worth 1,000+ CR, such as a crystal ball, mirror, or water-filled
       font
     consumed: false
     cost: 0

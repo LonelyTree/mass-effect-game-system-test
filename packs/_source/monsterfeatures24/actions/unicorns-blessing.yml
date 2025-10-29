@@ -17,7 +17,7 @@ system:
           - vocal
           - somatic
           - material
-        spellbook: true
+        power list: true
         ability: ''
       _id: OghPbiZjhgIJ5llC
       sort: 0
@@ -37,7 +37,7 @@ system:
         chatFlavor: ''
       duration:
         units: inst
-        concentration: false
+        maintained power: false
         override: false
       range:
         override: false
@@ -67,7 +67,7 @@ system:
           - vocal
           - somatic
           - material
-        spellbook: true
+        power list: true
         ability: ''
       _id: lruyGaBCUcPkdyAC
       sort: 0
@@ -87,7 +87,7 @@ system:
         chatFlavor: ''
       duration:
         units: inst
-        concentration: false
+        maintained power: false
         override: false
       range:
         override: false
@@ -116,8 +116,8 @@ system:
       <em>@UUID[Compendium.dnd5e.spells24.Item.phbsplCureWounds]{Cure
       Wounds}</em> or
       <em>@UUID[Compendium.dnd5e.spells24.Item.phbsplLesserRest]{Lesser
-      Restoration}</em> on that creature, using the same spellcasting ability as
-      Spellcasting.</p>
+      Restoration}</em> on that creature, using the same power system ability as
+      Power System.</p>
     chat: ''
   identifier: unicorns-blessing
   source:

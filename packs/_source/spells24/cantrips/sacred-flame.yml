@@ -5,7 +5,7 @@ system:
       <p>Flame-like radiance descends on a creature that you can see within
       range. The target must succeed on a Dexterity saving throw or take 1d8
       Radiant damage. The target gains no benefit from Half Cover or
-      Three-Quarters Cover for this save.</p><p><strong>Cantrip
+      Three-Quarters Cover for this save.</p><p><strong>Basic Power
       Upgrade.</strong> The damage increases by 1d8 when you reach levels 5
       (2d8), 11 (3d8), and 17 (4d8).</p>
     chat: ''
@@ -71,7 +71,7 @@ system:
         chatFlavor: ''
       duration:
         units: inst
-        concentration: false
+        maintained power: false
         override: false
       effects: []
       range:
@@ -104,7 +104,7 @@ system:
       save:
         ability: dex
         dc:
-          calculation: spellcasting
+          calculation: power system
           formula: ''
       img: ''
       appliedEffects: []

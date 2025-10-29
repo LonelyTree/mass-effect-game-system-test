@@ -8,8 +8,8 @@
     "verified": "13"
   },
   "url": "https://github.com/LonelyTree/mass-effect-game-system-test",
-  "manifest": "https://raw.githubusercontent.com/LonelyTree/mass-effect-game-system-test/refs/heads/main/system.json",
-  "download": "https://github.com/LonelyTree/mass-effect-game-system-test/archive/refs/tags/test.zip",
+  "manifest": "https://raw.githubusercontent.com/LonelyTree/mass-effect-game-system-test/main/system.json",
+  "download": "https://github.com/LonelyTree/mass-effect-game-system-test/archive/refs/heads/main.zip",
   "authors": [
     {
       "name": "Atropos",

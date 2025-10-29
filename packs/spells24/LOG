@@ -1,0 +1,5 @@
+2025/10/29-15:05:47.563583 173437000 Delete type=3 #1
+2025/10/29-15:05:47.568817 173ccf000 Level-0 table #5: started
+2025/10/29-15:05:47.573951 173ccf000 Level-0 table #5: 601365 bytes OK
+2025/10/29-15:05:47.574085 173ccf000 Delete type=0 #3
+2025/10/29-15:05:47.574377 173ccf000 Manual compaction at level-0 from '!folders!3SjcO2acsFnWegp4' @ 72057594037927935 : 1 .. '!items.effects!phbsplZoneofTrut.BgkyT4A5qyArRveO' @ 0 : 0; will stop at (end)

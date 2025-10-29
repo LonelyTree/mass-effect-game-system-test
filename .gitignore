@@ -1,10 +1,9 @@
 # Build Artifacts
-dnd5e.css
-dnd5e.css.map
-dnd5e-compiled*
-dnd5e.lock
-packs/*
-!packs/_source/
+# dnd5e.css - Required for Foundry installation, must be committed
+# dnd5e.css.map
+# dnd5e-compiled*
+# dnd5e.lock
+# packs/*
 
 # IDE
 .idea/
@@ -16,7 +15,7 @@ packs/*
 *.swp
 
 # Node Modules
-node_modules/
+#node_modules/
 
 # OS Specific
 .DS_Store

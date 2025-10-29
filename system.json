@@ -8,8 +8,8 @@
     "verified": "13"
   },
   "url": "https://github.com/foundryvtt/dnd5e/",
-  "manifest": "https://raw.githubusercontent.com/foundryvtt/dnd5e/master/system.json",
-  "download": "https://github.com/foundryvtt/dnd5e/releases/download/release-5.1.10/dnd5e-release-5.1.10.zip",
+  "manifest": "https://raw.githubusercontent.com/LonelyTree/mass-effect-game-system-test/refs/heads/main/system.json",
+  "download": "https://github.com/LonelyTree/mass-effect-game-system-test/archive/refs/tags/test.zip",
   "authors": [
     {
       "name": "Atropos",

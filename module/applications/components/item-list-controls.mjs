@@ -166,7 +166,7 @@ export default class ItemListControlsElement extends HTMLElement {
    * @type {TabPreferences5e}
    */
   get prefs() {
-    return game.user.getFlag(game.system.id, `sheetPrefs.${this.app.document.type}.tabs.${this.tab}`);
+    return game.user.getFlag(game?.system?.id ?? "massEffect", `sheetPrefs.${this.app.document.type}.tabs.${this.tab}`);
   }
 
   /**
@@ -443,8 +443,8 @@ export default class ItemListControlsElement extends HTMLElement {
     const { action } = event.currentTarget.dataset;
     const flag = `sheetPrefs.${this.app.document.type}.tabs.${this.tab}.${action}`;
     const modes = Object.keys(action === "group" ? this.#groups : this.#modes);
-    const current = Math.max(0, modes.indexOf(game.user.getFlag(game.system.id, flag)));
-    await game.user.setFlag(game.system.id, flag, modes[(current + 1) % modes.length]);
+    const current = Math.max(0, modes.indexOf(game.user.getFlag(game?.system?.id ?? "massEffect", flag)));
+    await game.user.setFlag(game?.system?.id ?? "massEffect", flag, modes[(current + 1) % modes.length]);
     if ( action === "group" ) {
       this._initGrouping();
       this._applyGrouping();

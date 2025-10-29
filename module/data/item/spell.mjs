@@ -483,7 +483,7 @@ export default class SpellData extends ItemDataModel.mixin(ActivitiesTemplate, I
 
   /** @override */
   get criticalThreshold() {
-    return this.parent?.actor?.flags[game.system.id]?.spellCriticalThreshold ?? Infinity;
+    return this.parent?.actor?.flags[game?.system?.id ?? "massEffect"]?.spellCriticalThreshold ?? Infinity;
   }
 
   /* -------------------------------------------- */
@@ -494,13 +494,13 @@ export default class SpellData extends ItemDataModel.mixin(ActivitiesTemplate, I
    */
   get linkedActivity() {
     const relative = this.parent.actor;
-    const uuid = this.parent.getFlag(game.system.id, "cachedFor");
+    const uuid = this.parent.getFlag(game?.system?.id ?? "massEffect", "cachedFor");
     if ( !relative || !uuid ) return null;
     const data = foundry.utils.parseUuid(uuid, { relative });
     const [itemId, , activityId] = (data?.embedded ?? []).slice(-3);
     return relative.items.get(itemId)?.system.activities?.get(activityId) ?? null;
     // TODO: Swap back to fromUuidSync once https://github.com/foundryvtt/foundryvtt/issues/11214 is resolved
-    // return fromUuidSync(this.parent.getFlag(game.system.id, "cachedFor"), { relative, strict: false }) ?? null;
+    // return fromUuidSync(this.parent.getFlag(game?.system?.id ?? "massEffect", "cachedFor"), { relative, strict: false }) ?? null;
   }
 
   /* -------------------------------------------- */
@@ -559,7 +559,7 @@ export default class SpellData extends ItemDataModel.mixin(ActivitiesTemplate, I
   /** @inheritDoc */
   getRollData(...options) {
     const data = super.getRollData(...options);
-    data.item.level = data.item.level + (this.parent.getFlag(game.system.id, "scaling") ?? 0);
+    data.item.level = data.item.level + (this.parent.getFlag(game?.system?.id ?? "massEffect", "scaling") ?? 0);
     return data;
   }
 

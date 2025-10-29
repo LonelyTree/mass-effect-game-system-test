@@ -40,7 +40,7 @@ export default class Bastion {
    */
   async advanceAllBastions() {
     // TODO: Should this advance game.time?
-    const { duration } = game.settings.get(game.system.id, "bastionConfiguration");
+    const { duration } = game.settings.get(game?.system?.id ?? "massEffect", "bastionConfiguration");
     const haveBastions = game.actors.filter(a => (a.type === "character") && a.itemTypes.facility.length);
     for ( const actor of haveBastions ) await this.advanceAllFacilities(actor, { duration });
   }
@@ -347,7 +347,7 @@ export default class Bastion {
    * @returns {Promise<ChatMessage5e|void>}
    */
   async #onClaimGold(message) {
-    const results = message.getFlag(game.system.id, "bastion");
+    const results = message.getFlag(game?.system?.id ?? "massEffect", "bastion");
     const { gold } = results;
     const actor = message.getAssociatedActor();
     const { gp } = actor?.system?.currency ?? {};
@@ -382,7 +382,7 @@ export default class Bastion {
    * @returns {Promise<ChatMessage5e|void>}
    */
   async #onResolveAttack(message) {
-    const results = message.getFlag(game.system.id, "bastion") ?? {};
+    const results = message.getFlag(game?.system?.id ?? "massEffect", "bastion") ?? {};
     const { deaths, undefended } = results;
     const actor = message.getAssociatedActor();
     if ( (!deaths && !undefended) || !actor ) return;
@@ -542,7 +542,7 @@ export default class Bastion {
    */
   initializeUI() {
     const turnButton = document.getElementById("bastion-turn");
-    const { button, enabled } = game.settings.get(game.system.id, "bastionConfiguration");
+    const { button, enabled } = game.settings.get(game?.system?.id ?? "massEffect", "bastionConfiguration");
 
     if ( !enabled || !button || !game.user.isGM) {
       turnButton?.remove();

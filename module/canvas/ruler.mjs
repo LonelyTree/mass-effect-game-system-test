@@ -86,7 +86,7 @@ export default class TokenRuler5e extends foundry.canvas.placeables.tokens.Token
    */
   #getSpeedBasedStyle(waypoint, style) {
     // If movement automation disabled, or if showing a different client's measurement, use default style
-    const noAutomation = game.settings.get(game.system.id, "disableMovementAutomation");
+    const noAutomation = game.settings.get(game?.system?.id ?? "massEffect", "disableMovementAutomation");
     const isSameClient = game.user.id in this.token._plannedMovement;
     if ( noAutomation || !isSameClient || CONFIG.Token.movement.actions[waypoint.action]?.teleport ) return style;
 

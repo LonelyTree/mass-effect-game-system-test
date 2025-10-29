@@ -258,7 +258,7 @@ export default class Advancement extends PseudoDocumentMixin(BaseAdvancement) {
   /** @inheritDoc */
   async delete(options={}) {
     if ( this.item.actor?.system.metadata?.supportsAdvancement
-        && !game.settings.get(game.system.id, "disableAdvancements") ) {
+        && !game.settings.get(game?.system?.id ?? "massEffect", "disableAdvancements") ) {
       const manager = dnd5e.applications.advancement.AdvancementManager
         .forDeletedAdvancement(this.item.actor, this.item.id, this.id);
       if ( manager.steps.length ) return manager.render(true);

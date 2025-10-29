@@ -131,7 +131,7 @@ export default class Item5e extends SystemDocumentMixin(Item) {
    * @type {boolean}
    */
   get canDelete() {
-    return !this.flags[game.system.id]?.cachedFor;
+    return !this.flags[game?.system?.id ?? "massEffect"]?.cachedFor;
   }
 
   /* -------------------------------------------- */
@@ -142,7 +142,7 @@ export default class Item5e extends SystemDocumentMixin(Item) {
    */
   get canDuplicate() {
     return !this.system.metadata?.singleton && !["class", "subclass"].includes(this.type)
-      && !this.flags[game.system.id]?.cachedFor;
+      && !this.flags[game?.system?.id ?? "massEffect"]?.cachedFor;
   }
 
   /* --------------------------------------------- */
@@ -374,7 +374,7 @@ export default class Item5e extends SystemDocumentMixin(Item) {
    * @type {number}
    */
   get scalingIncrease() {
-    return this.system?.scalingIncrease ?? this.getFlag(game.system.id, "scaling") ?? 0;
+    return this.system?.scalingIncrease ?? this.getFlag(game?.system?.id ?? "massEffect", "scaling") ?? 0;
   }
 
   /* -------------------------------------------- */
@@ -1113,7 +1113,7 @@ export default class Item5e extends SystemDocumentMixin(Item) {
   /** @inheritDoc */
   async deleteDialog(options={}) {
     // If item has advancement, handle it separately
-    if ( this.actor?.system.metadata?.supportsAdvancement && !game.settings.get(game.system.id, "disableAdvancements") ) {
+    if ( this.actor?.system.metadata?.supportsAdvancement && !game.settings.get(game?.system?.id ?? "massEffect", "disableAdvancements") ) {
       const manager = AdvancementManager.forDeletedItem(this.actor, this.id);
       if ( manager.steps.length ) {
         try {
@@ -1259,7 +1259,7 @@ export default class Item5e extends SystemDocumentMixin(Item) {
     if ( spell.pack ) return this.createScrollFromCompendiumSpell(spell.uuid, config);
 
     const values = {};
-    if ( (spell instanceof Item5e) && spell.isOwned && (game.settings.get(game.system.id, "rulesVersion") === "modern") ) {
+    if ( (spell instanceof Item5e) && spell.isOwned && (game.settings.get(game?.system?.id ?? "massEffect", "rulesVersion") === "modern") ) {
       const spellcastingClass = spell.actor.spellcastingClasses?.[spell.system.sourceClass];
       if ( spellcastingClass ) {
         values.bonus = spellcastingClass.spellcasting.attack;
@@ -1271,7 +1271,7 @@ export default class Item5e extends SystemDocumentMixin(Item) {
     }
 
     config = foundry.utils.mergeObject({
-      explanation: game.user.getFlag(game.system.id, "creation.scrollExplanation") ?? "reference",
+      explanation: game.user.getFlag(game?.system?.id ?? "massEffect", "creation.scrollExplanation") ?? "reference",
       level: spell.system.level,
       values
     }, config);
@@ -1280,16 +1280,16 @@ export default class Item5e extends SystemDocumentMixin(Item) {
       const result = await CreateScrollDialog.create(spell, config);
       if ( !result ) return;
       foundry.utils.mergeObject(config, result);
-      await game.user.setFlag(game.system.id, "creation.scrollExplanation", config.explanation);
+      await game.user.setFlag(game?.system?.id ?? "massEffect", "creation.scrollExplanation", config.explanation);
     }
 
     // Get spell data
     const itemData = (spell instanceof Item5e) ? spell.toObject() : spell;
     const flags = itemData.flags ?? {};
     if ( Number.isNumeric(config.level) ) {
-      flags[game.system.id] ??= {};
-      flags[game.system.id].scaling = Math.max(0, config.level - spell.system.level);
-      flags[game.system.id].spellLevel = {
+      flags[game?.system?.id ?? "massEffect"] ??= {};
+      flags[game?.system?.id ?? "massEffect"].scaling = Math.max(0, config.level - spell.system.level);
+      flags[game?.system?.id ?? "massEffect"].spellLevel = {
         value: config.level,
         base: spell.system.level
       };
@@ -1394,7 +1394,7 @@ export default class Item5e extends SystemDocumentMixin(Item) {
     const values = {};
 
     config = foundry.utils.mergeObject({
-      explanation: game.user.getFlag(game.system.id, "creation.scrollExplanation") ?? "reference",
+      explanation: game.user.getFlag(game?.system?.id ?? "massEffect", "creation.scrollExplanation") ?? "reference",
       level: spell.system.level,
       values
     }, config);
@@ -1403,7 +1403,7 @@ export default class Item5e extends SystemDocumentMixin(Item) {
       const result = await CreateScrollDialog.create(spell, config);
       if ( !result ) return;
       foundry.utils.mergeObject(config, result);
-      await game.user.setFlag(game.system.id, "creation.scrollExplanation", config.explanation);
+      await game.user.setFlag(game?.system?.id ?? "massEffect", "creation.scrollExplanation", config.explanation);
     }
 
     /**

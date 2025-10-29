@@ -65,7 +65,7 @@ export default class ActiveEffect5e extends ActiveEffect {
     if ( this.target?.testUserPermission(game.user, "OBSERVER") ) return false;
 
     // Hide bloodied status effect from players unless the token is friendly
-    if ( (this.id === this.constructor.ID.BLOODIED) && (game.settings.get(game.system.id, "bloodied") === "player") ) {
+    if ( (this.id === this.constructor.ID.BLOODIED) && (game.settings.get(game?.system?.id ?? "massEffect", "bloodied") === "player") ) {
       return this.target?.token?.disposition !== foundry.CONST.TOKEN_DISPOSITIONS.FRIENDLY;
     }
 
@@ -118,9 +118,9 @@ export default class ActiveEffect5e extends ActiveEffect {
   _initializeSource(data, options={}) {
     if ( data instanceof foundry.abstract.DataModel ) data = data.toObject();
 
-    if ( data.flags?.[game.system.id]?.type === "enchantment" ) {
+    if ( data.flags?.[game?.system?.id ?? "massEffect"]?.type === "enchantment" ) {
       data.type = "enchantment";
-      delete data.flags[game.system.id].type;
+      delete data.flags[game?.system?.id ?? "massEffect"].type;
       foundry.utils.setProperty(data, `flags.${game.system.id}.persistSourceMigration`, true);
     }
 
@@ -334,7 +334,7 @@ export default class ActiveEffect5e extends ActiveEffect {
    */
   _prepareExhaustionLevel() {
     const config = CONFIG.DND5E.conditionTypes.exhaustion;
-    let level = this.getFlag(game.system.id, "exhaustionLevel");
+    let level = this.getFlag(game?.system?.id ?? "massEffect", "exhaustionLevel");
     if ( !Number.isFinite(level) ) level = 1;
     this.img = this.constructor._getExhaustionImage(level);
     this.name = `${game.i18n.localize("DND5E.Exhaustion")} ${level}`;
@@ -369,7 +369,7 @@ export default class ActiveEffect5e extends ActiveEffect {
   async createRiderConditions() {
     const riders = new Set();
 
-    for ( const status of this.getFlag(game.system.id, "riders.statuses") ?? [] ) {
+    for ( const status of this.getFlag(game?.system?.id ?? "massEffect", "riders.statuses") ?? [] ) {
       riders.add(status);
     }
 
@@ -407,7 +407,7 @@ export default class ActiveEffect5e extends ActiveEffect {
       const message = game.messages.get(options?.chatMessageOrigin);
       item = message?.getAssociatedItem();
       const activity = message?.getAssociatedActivity();
-      profile = activity?.effects.find(e => e._id === message?.getFlag(game.system.id, "use.enchantmentProfile"));
+      profile = activity?.effects.find(e => e._id === message?.getFlag(game?.system?.id ?? "massEffect", "use.enchantmentProfile"));
     } else if ( enchantmentProfile && activityId ) {
       let activity;
       const origin = await fromUuid(this.origin);
@@ -446,7 +446,7 @@ export default class ActiveEffect5e extends ActiveEffect {
       const effectData = item.effects.get(id)?.toObject();
       if ( effectData ) {
         delete effectData._id;
-        delete effectData.flags?.[game.system.id]?.rider;
+        delete effectData.flags?.[game?.system?.id ?? "massEffect"]?.rider;
         effectData.origin = this.origin;
       }
       return effectData;
@@ -654,7 +654,7 @@ export default class ActiveEffect5e extends ActiveEffect {
       hint: game.i18n.localize("DND5E.CONDITIONS.RiderConditions.hint")
     }, {
       name: `flags.${game.system.id}.riders.statuses`,
-      value: app.document.getFlag(game.system.id, "riders.statuses") ?? [],
+      value: app.document.getFlag(game?.system?.id ?? "massEffect", "riders.statuses") ?? [],
       options: CONFIG.statusEffects.map(se => ({ value: se.id, label: se.name })),
       disabled: !context.editable
     });
@@ -762,7 +762,7 @@ export default class ActiveEffect5e extends ActiveEffect {
       return;
     }
     const choices = effects.reduce((acc, effect) => {
-      const data = effect.getFlag(game.system.id, "item");
+      const data = effect.getFlag(game?.system?.id ?? "massEffect", "item");
       acc[effect.id] = data?.name ?? actor.items.get(data?.id)?.name ?? game.i18n.localize("DND5E.ConcentratingItemless");
       return acc;
     }, {});
@@ -796,9 +796,9 @@ export default class ActiveEffect5e extends ActiveEffect {
    * @returns {Promise<ActiveEffect5e>}
    */
   addDependent(...dependent) {
-    const dependents = this.getFlag(game.system.id, "dependents") ?? [];
+    const dependents = this.getFlag(game?.system?.id ?? "massEffect", "dependents") ?? [];
     dependents.push(...dependent.map(d => ({ uuid: d.uuid })));
-    return this.setFlag(game.system.id, "dependents", dependents);
+    return this.setFlag(game?.system?.id ?? "massEffect", "dependents", dependents);
   }
 
   /* -------------------------------------------- */
@@ -808,7 +808,7 @@ export default class ActiveEffect5e extends ActiveEffect {
    * @returns {Array<ActiveEffect5e|Item5e>}
    */
   getDependents() {
-    return (this.getFlag(game.system.id, "dependents") || []).reduce((arr, { uuid }) => {
+    return (this.getFlag(game?.system?.id ?? "massEffect", "dependents") || []).reduce((arr, { uuid }) => {
       let effect;
       // TODO: Remove this special casing once https://github.com/foundryvtt/foundryvtt/issues/11214 is resolved
       if ( this.parent.pack && uuid.includes(this.parent.uuid) ) {

@@ -61,7 +61,7 @@ export default class BaseSettingsConfig extends Application5e {
       field: new Field({
         label: game.i18n.localize(setting.name), hint: game.i18n.localize(setting.hint), required: true, blank: false
       }),
-      value: game.settings.get(game.system.id, name)
+      value: game.settings.get(game?.system?.id ?? "massEffect", name)
     };
     if ( setting.type === Boolean ) data.input = createCheckboxInput;
     if ( setting.choices ) data.options = Object.entries(setting.choices)
@@ -87,7 +87,7 @@ export default class BaseSettingsConfig extends Application5e {
     let requiresWorldReload = false;
     for ( const [key, value] of Object.entries(foundry.utils.expandObject(formData.object)) ) {
       const setting = game.settings.settings.get(`dnd5e.${key}`);
-      const current = game.settings.get(game.system.id, key, { document: true });
+      const current = game.settings.get(game?.system?.id ?? "massEffect", key, { document: true });
       const prior = current?._source?.value ?? current;
       const updated = await game.settings.set(game.system.id, key, value, { document: true });
       if ( prior === (updated?._source?.value ?? updated) ) continue;

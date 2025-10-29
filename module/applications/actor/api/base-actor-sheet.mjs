@@ -47,7 +47,7 @@ export default class BaseActorSheet extends PrimarySheetMixin(
   constructor(options={}) {
     // Set initial size based on saved size
     const key = `${options.document?.type}${options.document?.limited ? ":limited" : ""}`;
-    const { width, height } = game.user.getFlag(game.system.id, `sheetPrefs.${key}`) ?? {};
+    const { width, height } = game.user.getFlag(game?.system?.id ?? "massEffect", `sheetPrefs.${key}`) ?? {};
     options.position ??= {};
     if ( width && !("width" in options.position) ) options.position.width = width;
     if ( height && !("height" in options.position) ) options.position.height = height;
@@ -193,9 +193,9 @@ export default class BaseActorSheet extends PrimarySheetMixin(
       limited: this.actor.limited,
       modernRules: this.actor.system.source?.rules
         ? this.actor.system.source.rules === "2024"
-        : game.settings.get(game.system.id, "rulesVersion") === "modern",
+        : game.settings.get(game?.system?.id ?? "massEffect", "rulesVersion") === "modern",
       rollableClass: this.isEditable ? "rollable" : "",
-      sidebarCollapsed: !!game.user.getFlag(game.system.id, this._sidebarCollapsedKeyPath),
+      sidebarCollapsed: !!game.user.getFlag(game?.system?.id ?? "massEffect", this._sidebarCollapsedKeyPath),
       system: this.actor.system,
       user: game.user,
       warnings: foundry.utils.deepClone(this.actor._preparationWarnings)
@@ -337,13 +337,13 @@ export default class BaseActorSheet extends PrimarySheetMixin(
       classes: Object.values(this.document.classes)
         .map(cls => ({ value: cls.id, label: cls.name }))
         .sort((lhs, rhs) => lhs.label.localeCompare(rhs.label, game.i18n.lang)),
-      data: source.flags?.[game.system.id] ?? {},
+      data: source.flags?.[game?.system?.id ?? "massEffect"] ?? {},
       disabled: this._mode === this.constructor.MODES.PLAY
     };
 
     // Character Flags
     for ( const [key, config] of Object.entries(CONFIG.DND5E.characterFlags) ) {
-      const flag = { ...config, name: `flags[game.system.id].${key}`, value: foundry.utils.getProperty(flags.data, key) };
+      const flag = { ...config, name: `flags[game?.system?.id ?? "massEffect"].${key}`, value: foundry.utils.getProperty(flags.data, key) };
       const fieldOptions = { label: config.name, hint: config.hint };
       if ( config.type === Boolean ) {
         flag.field = new BooleanField(fieldOptions);
@@ -487,7 +487,7 @@ export default class BaseActorSheet extends PrimarySheetMixin(
    * @protected
    */
   async _preparePortrait(context) {
-    const showTokenPortrait = this.actor.getFlag(game.system.id, "showTokenPortrait") === true;
+    const showTokenPortrait = this.actor.getFlag(game?.system?.id ?? "massEffect", "showTokenPortrait") === true;
     const token = this.actor.isToken ? this.actor.token : this.actor.prototypeToken;
     const defaultArtwork = Actor.implementation.getDefaultArtwork(this.actor._source)?.img;
     let action = "editImage";
@@ -625,7 +625,7 @@ export default class BaseActorSheet extends PrimarySheetMixin(
       method = spellcasting?.getSpellSlotKey?.(level) ?? method;
 
       // Spells from items
-      if ( spell.getFlag(game.system.id, "cachedFor") ) {
+      if ( spell.getFlag(game?.system?.id ?? "massEffect", "cachedFor") ) {
         method = "item";
         if ( !spell.system.linkedActivity?.displayInSpellbook ) return;
         registerSection(method);
@@ -850,7 +850,7 @@ export default class BaseActorSheet extends PrimarySheetMixin(
       : game.i18n.localize("DND5E.AbbreviationDC") : null;
 
     // Linked Uses
-    const cachedFor = fromUuidSync(item.flags[game.system.id]?.cachedFor, { relative: this.actor, strict: false });
+    const cachedFor = fromUuidSync(item.flags[game?.system?.id ?? "massEffect"]?.cachedFor, { relative: this.actor, strict: false });
     if ( cachedFor ) {
       const targetItemUses = cachedFor.consumption?.targets.find(t => t.type === "itemUses");
       ctx.linkedUses = cachedFor.consumption?.targets.find(t => t.type === "activityUses")
@@ -1118,7 +1118,7 @@ export default class BaseActorSheet extends PrimarySheetMixin(
 
     // Collapse sidebar
     if ( this.tabGroups.primary ) {
-      const sidebarCollapsed = !!game.user.getFlag(game.system.id, this._sidebarCollapsedKeyPath);
+      const sidebarCollapsed = !!game.user.getFlag(game?.system?.id ?? "massEffect", this._sidebarCollapsedKeyPath);
       this.element.classList.toggle("sidebar-collapsed", sidebarCollapsed);
     }
 
@@ -1211,7 +1211,7 @@ export default class BaseActorSheet extends PrimarySheetMixin(
     const classId = event.target.closest("[data-item-id]")?.dataset.itemId;
     if ( !delta || !classId ) return;
     const classItem = this.actor.items.get(classId);
-    if ( !game.settings.get(game.system.id, "disableAdvancements") ) {
+    if ( !game.settings.get(game?.system?.id ?? "massEffect", "disableAdvancements") ) {
       const manager = AdvancementManager.forLevelChange(this.actor, classId, delta);
       if ( manager.steps.length ) {
         if ( delta > 0 ) return manager.render({ force: true });
@@ -1241,7 +1241,7 @@ export default class BaseActorSheet extends PrimarySheetMixin(
     }));
 
     // Toggle sidebar
-    const sidebarCollapsed = game.user.getFlag(game.system.id, this._sidebarCollapsedKeyPath);
+    const sidebarCollapsed = game.user.getFlag(game?.system?.id ?? "massEffect", this._sidebarCollapsedKeyPath);
     if ( sidebarCollapsed !== undefined ) this._toggleSidebar(sidebarCollapsed);
   }
 
@@ -1455,7 +1455,7 @@ export default class BaseActorSheet extends PrimarySheetMixin(
     if ( height !== "auto" ) prefs.height = height;
     if ( foundry.utils.isEmpty(prefs) ) return;
     const key = `${this.actor.type}${this.actor.limited ? ":limited": ""}`;
-    game.user.setFlag(game.system.id, `sheetPrefs.${key}`, prefs);
+    game.user.setFlag(game?.system?.id ?? "massEffect", `sheetPrefs.${key}`, prefs);
   }
 
   /* -------------------------------------------- */
@@ -1595,7 +1595,7 @@ export default class BaseActorSheet extends PrimarySheetMixin(
    */
   static #toggleSidebar(event, target) {
     const collapsed = this._toggleSidebar();
-    game.user.setFlag(game.system.id, this._sidebarCollapsedKeyPath, collapsed);
+    game.user.setFlag(game?.system?.id ?? "massEffect", this._sidebarCollapsedKeyPath, collapsed);
   }
 
   /* -------------------------------------------- */
@@ -1628,11 +1628,11 @@ export default class BaseActorSheet extends PrimarySheetMixin(
     const submitData = super._processFormData(event, form, formData);
 
     // Remove any flags that are false-ish
-    for ( const [key, value] of Object.entries(submitData.flags?.[game.system.id] ?? {}) ) {
+    for ( const [key, value] of Object.entries(submitData.flags?.[game?.system?.id ?? "massEffect"] ?? {}) ) {
       if ( value ) continue;
-      delete submitData.flags[game.system.id][key];
-      if ( foundry.utils.hasProperty(this.document._source, `flags[game.system.id].${key}`) ) {
-        submitData.flags[game.system.id][`-=${key}`] = null;
+      delete submitData.flags[game?.system?.id ?? "massEffect"][key];
+      if ( foundry.utils.hasProperty(this.document._source, `flags[game?.system?.id ?? "massEffect"].${key}`) ) {
+        submitData.flags[game?.system?.id ?? "massEffect"][`-=${key}`] = null;
       }
     }
 
@@ -1723,12 +1723,12 @@ export default class BaseActorSheet extends PrimarySheetMixin(
 
   /** @override */
   async _onDropActor(event, actor) {
-    const canPolymorph = game.user.isGM || (this.actor.isOwner && game.settings.get(game.system.id, "allowPolymorphing"));
+    const canPolymorph = game.user.isGM || (this.actor.isOwner && game.settings.get(game?.system?.id ?? "massEffect", "allowPolymorphing"));
     if ( !canPolymorph || (this.tabGroups.primary === "bastion") ) return;
 
     // Configure the transformation
     const settings = await TransformDialog.promptSettings(this.actor, actor, {
-      transform: { settings: game.settings.get(game.system.id, "transformationSettings") }
+      transform: { settings: game.settings.get(game?.system?.id ?? "massEffect", "transformationSettings") }
     });
     if ( !settings ) return;
     await game.settings.set(game.system.id, "transformationSettings", settings.toObject());
@@ -1779,7 +1779,7 @@ export default class BaseActorSheet extends PrimarySheetMixin(
     behavior ??= event._behavior;
     const itemsWithoutAdvancement = items.filter(i => !i.system.advancement?.length);
     const multipleAdvancements = (items.length - itemsWithoutAdvancement.length) > 1;
-    if ( multipleAdvancements && !game.settings.get(game.system.id, "disableAdvancements") ) {
+    if ( multipleAdvancements && !game.settings.get(game?.system?.id ?? "massEffect", "disableAdvancements") ) {
       ui.notifications.warn(game.i18n.format("DND5E.WarnCantAddMultipleAdvancements"));
       items = itemsWithoutAdvancement;
     }
@@ -1838,7 +1838,7 @@ export default class BaseActorSheet extends PrimarySheetMixin(
 
     // Bypass normal creation flow for any items with advancement
     if ( this.actor.system.metadata?.supportsAdvancement && itemData.system.advancement?.length
-        && !game.settings.get(game.system.id, "disableAdvancements") ) {
+        && !game.settings.get(game?.system?.id ?? "massEffect", "disableAdvancements") ) {
       // Ensure that this item isn't violating the singleton rule
       const dataModel = CONFIG.Item.dataModels[itemData.type];
       const singleton = dataModel?.metadata.singleton ?? false;

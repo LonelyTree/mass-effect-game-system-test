@@ -110,7 +110,7 @@ export default class Award extends Application5e {
     }, {});
     context.destinations = Award.prepareDestinations(this.transferDestinations, this.award.savedDestinations);
     context.each = this.award.each ?? false;
-    context.hideXP = game.settings.get(game.system.id, "levelingMode") === "noxp";
+    context.hideXP = game.settings.get(game?.system?.id ?? "massEffect", "levelingMode") === "noxp";
     context.noPrimaryParty = !game.actors.party && !this.isPartyAward;
     context.xp = this.award.xp ?? this.origin?.system.details?.xp?.value;
 
@@ -201,7 +201,7 @@ export default class Award extends Application5e {
    */
   _saveDestinations(destinations) {
     const target = this.isPartyAward ? this.origin : game.user;
-    target.setFlag(game.system.id, "awardDestinations", destinations);
+    target.setFlag(game?.system?.id ?? "massEffect", "awardDestinations", destinations);
   }
 
   /* -------------------------------------------- */
@@ -390,7 +390,7 @@ export default class Award extends Application5e {
 
       // Otherwise show the UI with defaults
       else {
-        const savedDestinations = game.user.getFlag(game.system.id, "awardDestinations");
+        const savedDestinations = game.user.getFlag(game?.system?.id ?? "massEffect", "awardDestinations");
         const app = new Award({ award: { currency, xp, each, savedDestinations } });
         app.render({ force: true });
       }

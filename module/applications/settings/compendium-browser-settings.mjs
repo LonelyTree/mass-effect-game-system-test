@@ -213,7 +213,7 @@ export default class CompendiumBrowserSettingsConfig extends Application5e {
         let tag = "";
         // Special case handling for D&D SRD.
         if ( packageName === game.system.id ) {
-          tag = flags?.[game.system.id]?.sourceBook?.replace("SRD ", "");
+          tag = flags?.[game?.system?.id ?? "massEffect"]?.sourceBook?.replace("SRD ", "");
         }
         return {
           tag, title,
@@ -334,7 +334,7 @@ export default class CompendiumBrowserSettingsConfig extends Application5e {
       case "package": packs = this._onTogglePackage(target); break;
       default: return;
     }
-    const setting = { ...game.settings.get(game.system.id, "packSourceConfiguration"), ...packs };
+    const setting = { ...game.settings.get(game?.system?.id ?? "massEffect", "packSourceConfiguration"), ...packs };
     await game.settings.set(game.system.id, "packSourceConfiguration", setting);
     this.render();
   }
@@ -378,7 +378,7 @@ export default class CompendiumBrowserSettingsConfig extends Application5e {
    */
   static collateSources() {
     const sources = new Set();
-    const setting = game.settings.get(game.system.id, "packSourceConfiguration");
+    const setting = game.settings.get(game?.system?.id ?? "massEffect", "packSourceConfiguration");
     for ( const { collection, documentName } of game.packs ) {
       if ( (documentName !== "Actor") && (documentName !== "Item") ) continue;
       if ( setting[collection] !== false ) sources.add(collection);

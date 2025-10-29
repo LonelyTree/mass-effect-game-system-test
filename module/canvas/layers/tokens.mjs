@@ -10,8 +10,8 @@ export default class TokenLayer5e extends foundry.canvas.layers.TokenLayer {
   isOccupiedGridSpaceBlocking(gridSpace, token, { preview=false }={}) {
     const found = this.#getRelevantOccupyingTokens(gridSpace, token, { preview });
     const tokenSize = CONFIG.DND5E.actorSizes[token.actor?.system.traits?.size]?.numerical ?? 2;
-    const modernRules = game.settings.get(game.system.id, "rulesVersion") === "modern";
-    const halflingNimbleness = token.actor?.getFlag(game.system.id, "halflingNimbleness");
+    const modernRules = game.settings.get(game?.system?.id ?? "massEffect", "rulesVersion") === "modern";
+    const halflingNimbleness = token.actor?.getFlag(game?.system?.id ?? "massEffect", "halflingNimbleness");
     return found.some(t => {
       // Only creatures block movement.
       if ( !t.actor?.system.isCreature ) return false;
@@ -47,7 +47,7 @@ export default class TokenLayer5e extends foundry.canvas.layers.TokenLayer {
    */
   isOccupiedGridSpaceDifficult(gridSpace, token, { preview=false }={}) {
     const found = this.#getRelevantOccupyingTokens(gridSpace, token, { preview });
-    const modernRules = game.settings.get(game.system.id, "rulesVersion") === "modern";
+    const modernRules = game.settings.get(game?.system?.id ?? "massEffect", "rulesVersion") === "modern";
     return found.some(t => {
       // Only consider creatures as difficult terrain for now.
       if ( !t.actor?.system.isCreature ) return false;

@@ -19,7 +19,7 @@ export default function ActorSheetV2Mixin(Base) {
   return class ActorSheetV2 extends DocumentSheetV2Mixin(Base) {
     constructor(object, options={}) {
       const key = `${object.type}${object.limited ? ":limited" : ""}`;
-      const { width, height } = game.user.getFlag(game.system.id, `sheetPrefs.${key}`) ?? {};
+      const { width, height } = game.user.getFlag(game?.system?.id ?? "massEffect", `sheetPrefs.${key}`) ?? {};
       if ( width && !("width" in options) ) options.width = width;
       if ( height && !("height" in options) ) options.height = height;
       super(object, options);
@@ -106,12 +106,12 @@ export default function ActorSheetV2Mixin(Base) {
         : "biography";
       const sheetPrefs = `sheetPrefs.${this.actor.type}.tabs.${activeTab}`;
       context.cssClass += ` tab-${activeTab}`;
-      context.sidebarCollapsed = !!game.user.getFlag(game.system.id, `${sheetPrefs}.collapseSidebar`);
+      context.sidebarCollapsed = !!game.user.getFlag(game?.system?.id ?? "massEffect", `${sheetPrefs}.collapseSidebar`);
       if ( context.sidebarCollapsed ) context.cssClass += " collapsed";
       const { attributes } = this.actor.system;
 
       // Portrait
-      const showTokenPortrait = this.actor.getFlag(game.system.id, "showTokenPortrait") === true;
+      const showTokenPortrait = this.actor.getFlag(game?.system?.id ?? "massEffect", "showTokenPortrait") === true;
       const token = this.actor.isToken ? this.actor.token : this.actor.prototypeToken;
       const defaultArtwork = Actor.implementation.getDefaultArtwork(context.source)?.img;
       context.portrait = {
@@ -223,7 +223,7 @@ export default function ActorSheetV2Mixin(Base) {
       const sourceVersion = context.system.source?.rules;
       context.modernRules = sourceVersion
         ? sourceVersion === "2024"
-        : game.settings.get(game.system.id, "rulesVersion") === "modern";
+        : game.settings.get(game?.system?.id ?? "massEffect", "rulesVersion") === "modern";
 
       return context;
     }
@@ -241,13 +241,13 @@ export default function ActorSheetV2Mixin(Base) {
         classes: Object.values(this.document.classes)
           .map(cls => ({ value: cls.id, label: cls.name }))
           .sort((lhs, rhs) => lhs.label.localeCompare(rhs.label, game.i18n.lang)),
-        data: source.flags?.[game.system.id] ?? {},
+        data: source.flags?.[game?.system?.id ?? "massEffect"] ?? {},
         disabled: this._mode === this.constructor.MODES.PLAY
       };
 
       // Character Flags
       for ( const [key, config] of Object.entries(CONFIG.DND5E.characterFlags) ) {
-        const flag = { ...config, name: `flags[game.system.id].${key}`, value: foundry.utils.getProperty(flags.data, key) };
+        const flag = { ...config, name: `flags[game?.system?.id ?? "massEffect"].${key}`, value: foundry.utils.getProperty(flags.data, key) };
         const fieldOptions = { label: config.name, hint: config.hint };
         if ( config.type === Boolean ) {
           flag.field = new foundry.data.fields.BooleanField(fieldOptions);
@@ -511,11 +511,11 @@ export default function ActorSheetV2Mixin(Base) {
 
       // Activities
       ctx.activities = item.system.activities
-        ?.filter(a => !item.getFlag(game.system.id, "riders.activity")?.includes(a.id))
+        ?.filter(a => !item.getFlag(game?.system?.id ?? "massEffect", "riders.activity")?.includes(a.id))
         ?.map(this._prepareActivity.bind(this));
 
       // Linked Uses
-      const cachedFor = fromUuidSync(item.flags[game.system.id]?.cachedFor, { relative: this.actor, strict: false });
+      const cachedFor = fromUuidSync(item.flags[game?.system?.id ?? "massEffect"]?.cachedFor, { relative: this.actor, strict: false });
       if ( cachedFor ) ctx.linkedUses = cachedFor.consumption?.targets.find(t => t.type === "activityUses")
         ? cachedFor.uses : cachedFor.consumption?.targets.find(t => t.type === "itemUses")
           ? cachedFor.item.system.uses : null;
@@ -619,7 +619,7 @@ export default function ActorSheetV2Mixin(Base) {
     _onChangeTab(event, tabs, active) {
       super._onChangeTab(event, tabs, active);
       const sheetPrefs = `sheetPrefs.${this.actor.type}.tabs.${active}`;
-      const sidebarCollapsed = game.user.getFlag(game.system.id, `${sheetPrefs}.collapseSidebar`);
+      const sidebarCollapsed = game.user.getFlag(game?.system?.id ?? "massEffect", `${sheetPrefs}.collapseSidebar`);
       if ( sidebarCollapsed !== undefined ) this._toggleSidebar(sidebarCollapsed);
       const createChild = this.form.querySelector(".create-child");
       createChild.setAttribute("aria-label", game.i18n.format("SIDEBAR.Create", {
@@ -778,7 +778,7 @@ export default function ActorSheetV2Mixin(Base) {
       super._onResize(event);
       const { width, height } = this.position;
       const key = `${this.actor.type}${this.actor.limited ? ":limited": ""}`;
-      game.user.setFlag(game.system.id, `sheetPrefs.${key}`, { width, height });
+      game.user.setFlag(game?.system?.id ?? "massEffect", `sheetPrefs.${key}`, { width, height });
     }
 
     /* -------------------------------------------- */
@@ -788,7 +788,7 @@ export default function ActorSheetV2Mixin(Base) {
      * @protected
      */
     _onShowPortrait() {
-      const showTokenPortrait = this.actor.getFlag(game.system.id, "showTokenPortrait") === true;
+      const showTokenPortrait = this.actor.getFlag(game?.system?.id ?? "massEffect", "showTokenPortrait") === true;
       const token = this.actor.isToken ? this.actor.token : this.actor.prototypeToken;
       const img = showTokenPortrait ? token.texture.src : this.actor.img;
       if ( game.release.generation < 13 ) {
@@ -829,7 +829,7 @@ export default function ActorSheetV2Mixin(Base) {
     _onToggleSidebar() {
       const collapsed = this._toggleSidebar();
       const activeTab = this._tabs?.[0]?.active ?? "details";
-      game.user.setFlag(game.system.id, `sheetPrefs.${this.actor.type}.tabs.${activeTab}.collapseSidebar`, collapsed);
+      game.user.setFlag(game?.system?.id ?? "massEffect", `sheetPrefs.${this.actor.type}.tabs.${activeTab}.collapseSidebar`, collapsed);
     }
 
     /* -------------------------------------------- */

@@ -75,7 +75,7 @@ export default class SaveActivity extends ActivityMixin(SaveActivityData) {
   /** @inheritDoc */
   async rollDamage(config={}, dialog={}, message={}) {
     message = foundry.utils.mergeObject({
-      "data.flags[game.system.id].roll": {
+      "data.flags[game?.system?.id ?? "massEffect"].roll": {
         damageOnSave: this.damage.onSave
       }
     }, message);

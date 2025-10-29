@@ -62,8 +62,8 @@ export default class SubclassAdvancement extends Advancement {
     let itemData = useRetained ? retainedData : null;
     if ( !itemData ) {
       itemData = await this.createItemData(data.uuid);
-      delete itemData.flags?.[game.system.id]?.advancementOrigin;
-      delete itemData.flags?.[game.system.id]?.advancementRoot;
+      delete itemData.flags?.[game?.system?.id ?? "massEffect"]?.advancementOrigin;
+      delete itemData.flags?.[game?.system?.id ?? "massEffect"]?.advancementRoot;
       foundry.utils.setProperty(itemData, "system.classIdentifier", this.item.identifier);
     }
     if ( itemData ) {
@@ -80,7 +80,7 @@ export default class SubclassAdvancement extends Advancement {
     this.actor.updateSource({ items: [data] });
     this.updateSource({
       value: {
-        document: data._id, uuid: data._stats?.compendiumSource ?? data.flags?.[game.system.id]?.sourceId
+        document: data._id, uuid: data._stats?.compendiumSource ?? data.flags?.[game?.system?.id ?? "massEffect"]?.sourceId
       }
     });
   }

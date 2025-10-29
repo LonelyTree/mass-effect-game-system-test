@@ -87,8 +87,8 @@ export default class DamageRoll extends BasicRoll {
   /** @inheritDoc */
   static async build(config={}, dialog={}, message={}) {
     config.critical ??= {};
-    config.critical.multiplyNumeric ??= game.settings.get(game.system.id, "criticalDamageModifiers");
-    config.critical.powerfulCritical ??= game.settings.get(game.system.id, "criticalDamageMaxDice");
+    config.critical.multiplyNumeric ??= game.settings.get(game?.system?.id ?? "massEffect", "criticalDamageModifiers");
+    config.critical.powerfulCritical ??= game.settings.get(game?.system?.id ?? "massEffect", "criticalDamageMaxDice");
     return super.build(config, dialog, message);
   }
 

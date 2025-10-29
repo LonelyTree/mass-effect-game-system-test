@@ -320,7 +320,7 @@ export default class ItemSheet5e extends PrimarySheetMixin(DocumentSheet5e) {
 
     // If using modern rules, do not show redundant artificer progression unless it is already selected.
     context.spellProgression = { ...CONFIG.DND5E.spellProgression };
-    if ( (game.settings.get(game.system.id, "rulesVersion") === "modern")
+    if ( (game.settings.get(game?.system?.id ?? "massEffect", "rulesVersion") === "modern")
       && (this.item.system.spellcasting?.progression !== "artificer") ) delete context.spellProgression.artificer;
     context.spellProgression = Object.entries(context.spellProgression).map(([value, config]) => {
       const group = CONFIG.DND5E.spellcasting[config.type]?.label ?? "";
@@ -988,7 +988,7 @@ export default class ItemSheet5e extends PrimarySheetMixin(DocumentSheet5e) {
     }
 
     if ( !advancements.length ) return false;
-    if ( this.item.actor?.system.metadata?.supportsAdvancement && !game.settings.get(game.system.id, "disableAdvancements") ) {
+    if ( this.item.actor?.system.metadata?.supportsAdvancement && !game.settings.get(game?.system?.id ?? "massEffect", "disableAdvancements") ) {
       const manager = AdvancementManager.forNewAdvancement(this.item.actor, this.item.id, advancements);
       if ( manager.steps.length ) return manager.render(true);
     }

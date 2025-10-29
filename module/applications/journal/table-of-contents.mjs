@@ -85,7 +85,7 @@ export default class TableOfContentsCompendium extends foundry.applications.side
     context.chapters = [];
     const specialEntries = [];
     for ( const entry of documents ) {
-      const flags = entry.flags?.[game.system.id];
+      const flags = entry.flags?.[game?.system?.id ?? "massEffect"];
       if ( !flags ) continue;
       const type = flags.type ?? "chapter";
 
@@ -104,7 +104,7 @@ export default class TableOfContentsCompendium extends foundry.applications.side
         name: flags.title ?? entry.name,
         pages: Array.from(entry.pages).map(({ flags, id, name, sort }) => ({
           id, sort, flags,
-          name: flags[game.system.id]?.title ?? name,
+          name: flags[game?.system?.id ?? "massEffect"]?.title ?? name,
           entryId: entry.id
         }))
       };

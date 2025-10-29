@@ -103,12 +103,12 @@ export default class AttackActivity extends ActivityMixin(AttackActivityData) {
     const buildConfig = this._buildAttackConfig.bind(this);
 
     const rollConfig = foundry.utils.mergeObject({
-      ammunition: this.item.getFlag(game.system.id, `last.${this.id}.ammunition`),
-      attackMode: this.item.getFlag(game.system.id, `last.${this.id}.attackMode`),
-      elvenAccuracy: this.actor?.getFlag(game.system.id, "elvenAccuracy")
+      ammunition: this.item.getFlag(game?.system?.id ?? "massEffect", `last.${this.id}.ammunition`),
+      attackMode: this.item.getFlag(game?.system?.id ?? "massEffect", `last.${this.id}.attackMode`),
+      elvenAccuracy: this.actor?.getFlag(game?.system?.id ?? "massEffect", "elvenAccuracy")
         && CONFIG.DND5E.characterFlags.elvenAccuracy.abilities.includes(this.ability),
-      halflingLucky: this.actor?.getFlag(game.system.id, "halflingLucky"),
-      mastery: this.item.getFlag(game.system.id, `last.${this.id}.mastery`),
+      halflingLucky: this.actor?.getFlag(game?.system?.id ?? "massEffect", "halflingLucky"),
+      mastery: this.item.getFlag(game?.system?.id ?? "massEffect", `last.${this.id}.mastery`),
       target: targets.length === 1 ? targets[0].ac : undefined
     }, config);
 
@@ -177,7 +177,7 @@ export default class AttackActivity extends ActivityMixin(AttackActivityData) {
     if ( !rolls.length ) return null;
     for ( const key of ["ammunition", "attackMode", "mastery"] ) {
       if ( !rolls[0].options[key] ) continue;
-      foundry.utils.setProperty(messageConfig.data, `flags[game.system.id].roll.${key}`, rolls[0].options[key]);
+      foundry.utils.setProperty(messageConfig.data, `flags[game?.system?.id ?? "massEffect"].roll.${key}`, rolls[0].options[key]);
     }
     await CONFIG.Dice.D20Roll.buildPost(rolls, rollConfig, messageConfig);
 
@@ -203,7 +203,7 @@ export default class AttackActivity extends ActivityMixin(AttackActivityData) {
     else if ( rollConfig.attackMode ) rolls[0].options.attackMode = rollConfig.attackMode;
     if ( rolls[0].options.mastery ) flags.mastery = rolls[0].options.mastery;
     if ( canUpdate && !foundry.utils.isEmpty(flags) && (this.actor && this.actor.items.has(this.item.id)) ) {
-      await this.item.setFlag(game.system.id, `last.${this.id}`, flags);
+      await this.item.setFlag(game?.system?.id ?? "massEffect", `last.${this.id}`, flags);
     }
 
     /**
@@ -222,10 +222,10 @@ export default class AttackActivity extends ActivityMixin(AttackActivityData) {
     if ( canUpdate && ammoUpdate?.destroy ) {
       // If ammunition was deleted, store a copy of it in the roll message
       const data = this.actor.items.get(ammoUpdate.id).toObject();
-      const messageId = messageConfig.data?.flags?.[game.system.id]?.originatingMessage
+      const messageId = messageConfig.data?.flags?.[game?.system?.id ?? "massEffect"]?.originatingMessage
         ?? rollConfig.event?.target.closest("[data-message-id]")?.dataset.messageId;
       const attackMessage = dnd5e.registry.messages.get(messageId, "attack")?.pop();
-      await attackMessage?.setFlag(game.system.id, "roll.ammunitionData", data);
+      await attackMessage?.setFlag(game?.system?.id ?? "massEffect", "roll.ammunitionData", data);
       await this.actor.deleteEmbeddedDocuments("Item", [ammoUpdate.id]);
     }
     else if ( canUpdate && ammoUpdate ) await this.actor?.updateEmbeddedDocuments("Item", [
@@ -297,16 +297,16 @@ export default class AttackActivity extends ActivityMixin(AttackActivityData) {
    */
   static #rollDamage(event, target, message) {
     const lastAttack = message.getAssociatedRolls("attack").pop();
-    const attackMode = lastAttack?.getFlag(game.system.id, "roll.attackMode");
+    const attackMode = lastAttack?.getFlag(game?.system?.id ?? "massEffect", "roll.attackMode");
 
     // Fetch the ammunition used with the last attack roll
     let ammunition;
     const actor = lastAttack?.getAssociatedActor();
     if ( actor ) {
-      const storedData = lastAttack.getFlag(game.system.id, "roll.ammunitionData");
+      const storedData = lastAttack.getFlag(game?.system?.id ?? "massEffect", "roll.ammunitionData");
       ammunition = storedData
         ? new Item.implementation(storedData, { parent: actor })
-        : actor.items.get(lastAttack.getFlag(game.system.id, "roll.ammunition"));
+        : actor.items.get(lastAttack.getFlag(game?.system?.id ?? "massEffect", "roll.ammunition"));
     }
 
     const isCritical = lastAttack?.rolls[0]?.isCritical;

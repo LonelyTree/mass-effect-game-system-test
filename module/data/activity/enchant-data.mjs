@@ -119,9 +119,9 @@ export default class EnchantActivityData extends BaseActivityData {
   static transformEffectsData(source, options) {
     const effects = [];
     for ( const effect of source.effects ) {
-      if ( (effect.type !== "enchantment") && (effect.flags?.[game.system.id]?.type !== "enchantment") ) continue;
-      effects.push({ _id: effect._id, ...(effect.flags?.[game.system.id]?.enchantment ?? {}) });
-      delete effect.flags?.[game.system.id]?.enchantment;
+      if ( (effect.type !== "enchantment") && (effect.flags?.[game?.system?.id ?? "massEffect"]?.type !== "enchantment") ) continue;
+      effects.push({ _id: effect._id, ...(effect.flags?.[game?.system?.id ?? "massEffect"]?.enchantment ?? {}) });
+      delete effect.flags?.[game?.system?.id ?? "massEffect"]?.enchantment;
     }
     return effects;
   }

@@ -21,7 +21,7 @@ export default function SystemFlagsMixin(Base) {
     /** @inheritDoc */
     prepareData() {
       super.prepareData();
-      const flagScope = game.system.id;
+      const flagScope = game?.system?.id ?? "massEffect";
       if ( (flagScope in this.flags) && this._systemFlagsDataModel ) {
         this.flags[flagScope] = new this._systemFlagsDataModel(this._source.flags[flagScope], { parent: this });
       }
@@ -31,7 +31,7 @@ export default function SystemFlagsMixin(Base) {
 
     /** @inheritDoc */
     async setFlag(scope, key, value) {
-      const flagScope = game.system.id;
+      const flagScope = game?.system?.id ?? "massEffect";
       if ( (scope === flagScope) && this._systemFlagsDataModel ) {
         let diff;
         const changes = foundry.utils.expandObject({ [key]: value });

@@ -6,7 +6,7 @@ import ModuleArt from "../../module-art.mjs";
 export default class ModuleArtSettingsConfig extends FormApplication {
   /** @inheritDoc */
   constructor(object={}, options={}) {
-    object = foundry.utils.mergeObject(game.settings.get(game.system.id, "moduleArtConfiguration"), object, {inplace: false});
+    object = foundry.utils.mergeObject(game.settings.get(game?.system?.id ?? "massEffect", "moduleArtConfiguration"), object, {inplace: false});
     super(object, options);
   }
 

@@ -323,7 +323,7 @@ export default class ActivitiesTemplate extends SystemDataModel {
   async recoverUses(periods, rollData) {
     const updates = {};
     const rolls = [];
-    const autoRecharge = game.settings.get(game.system.id, "autoRecharge");
+    const autoRecharge = game.settings.get(game?.system?.id ?? "massEffect", "autoRecharge");
     const shouldRecharge = periods.includes("turnStart") && (this.parent.actor.type === "npc")
       && (autoRecharge !== "no");
     const recharge = async doc => {

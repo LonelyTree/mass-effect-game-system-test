@@ -25,7 +25,7 @@ export default class EnchantUsageDialog extends ActivityUsageDialog {
 
     const enchantments = this.activity.availableEnchantments;
     if ( (enchantments.length > 1) && this._shouldDisplay("create.enchantment") ) {
-      const existingProfile = this.activity.existingEnchantment?.flags[game.system.id]?.enchantmentProfile;
+      const existingProfile = this.activity.existingEnchantment?.flags[game?.system?.id ?? "massEffect"]?.enchantmentProfile;
       context.hasCreation = true;
       context.enchantment = {
         field: new StringField({ required: true, blank: false, label: game.i18n.localize("DND5E.ENCHANTMENT.Label") }),

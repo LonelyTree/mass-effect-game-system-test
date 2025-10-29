@@ -27,7 +27,7 @@ export default class ChatMessage5e extends ChatMessage {
    * @type {boolean}
    */
   get canApplyDamage() {
-    const type = this.flags[game.system.id]?.roll?.type;
+    const type = this.flags[game?.system?.id ?? "massEffect"]?.roll?.type;
     if ( type && (type !== "damage") ) return false;
     return this.isRoll && this.isContentVisible && !!canvas.tokens?.controlled.length;
   }
@@ -39,7 +39,7 @@ export default class ChatMessage5e extends ChatMessage {
    * @type {boolean}
    */
   get canSelectTargets() {
-    if ( this.flags[game.system.id]?.roll?.type !== "attack" ) return false;
+    if ( this.flags[game?.system?.id ?? "massEffect"]?.roll?.type !== "attack" ) return false;
     return this.isRoll && this.isContentVisible;
   }
 
@@ -48,7 +48,7 @@ export default class ChatMessage5e extends ChatMessage {
   /** @inheritDoc */
   get isRoll() {
     if ( this.system?.isRoll !== undefined ) return this.system.isRoll;
-    return super.isRoll && !this.flags[game.system.id]?.rest;
+    return super.isRoll && !this.flags[game?.system?.id ?? "massEffect"]?.rest;
   }
 
   /* -------------------------------------------- */
@@ -59,7 +59,7 @@ export default class ChatMessage5e extends ChatMessage {
    */
   get shouldDisplayChallenge() {
     if ( game.user.isGM || (this.author === game.user) ) return true;
-    switch ( game.settings.get(game.system.id, "challengeVisibility") ) {
+    switch ( game.settings.get(game?.system?.id ?? "massEffect", "challengeVisibility") ) {
       case "all": return true;
       case "player": return !this.author.isGM;
       default: return false;
@@ -83,11 +83,11 @@ export default class ChatMessage5e extends ChatMessage {
   static migrateData(source) {
     source = super.migrateData(source);
     if ( foundry.utils.hasProperty(source, `flags.${game.system.id}.') ) {
-      foundry.utils.setProperty(source, `flags.${game.system.id}.', source.flags[game.system.id].itemData);
-      delete source.flags[game.system.id].itemData;
+      foundry.utils.setProperty(source, `flags.${game.system.id}.', source.flags[game?.system?.id ?? "massEffect"].itemData);
+      delete source.flags[game?.system?.id ?? "massEffect"].itemData;
     }
     if ( foundry.utils.hasProperty(source, `flags.${game.system.id}.') ) {
-      const use = source.flags[game.system.id].use;
+      const use = source.flags[game?.system?.id ?? "massEffect"].use;
       foundry.utils.setProperty(source, `flags.${game.system.id}.');
       if ( use.type ) foundry.utils.setProperty(source, `flags.${game.system.id}.', use.type);
       if ( use.itemId ) foundry.utils.setProperty(source, `flags.${game.system.id}.', use.itemId);
@@ -103,9 +103,9 @@ export default class ChatMessage5e extends ChatMessage {
   /** @inheritDoc */
   prepareData() {
     super.prepareData();
-    if ( !this.flags[game.system.id]?.item?.data && this.flags[game.system.id]?.item?.id ) {
-      const itemData = this.getFlag(game.system.id, "use.consumed.deleted")?.find(i => i._id === this.flags[game.system.id].item.id);
-      if ( itemData ) Object.defineProperty(this.flags[game.system.id].item, "data", { value: itemData });
+    if ( !this.flags[game?.system?.id ?? "massEffect"]?.item?.data && this.flags[game?.system?.id ?? "massEffect"]?.item?.id ) {
+      const itemData = this.getFlag(game?.system?.id ?? "massEffect", "use.consumed.deleted")?.find(i => i._id === this.flags[game?.system?.id ?? "massEffect"].item.id);
+      if ( itemData ) Object.defineProperty(this.flags[game?.system?.id ?? "massEffect"].item, "data", { value: itemData });
     }
     dnd5e.registry.messages.track(this);
   }
@@ -125,7 +125,7 @@ export default class ChatMessage5e extends ChatMessage {
 
     this._displayChatActionButtons(html);
     this._highlightCriticalSuccessFailure(html);
-    if ( game.settings.get(game.system.id, "autoCollapseItemCards") ) {
+    if ( game.settings.get(game?.system?.id ?? "massEffect", "autoCollapseItemCards") ) {
       html.querySelectorAll(".description.collapsible").forEach(el => el.classList.add("collapsed"));
     }
 
@@ -154,7 +154,7 @@ export default class ChatMessage5e extends ChatMessage {
    */
   _collapseTrays(html) {
     let collapse;
-    switch ( game.settings.get(game.system.id, "autoCollapseChatTrays") ) {
+    switch ( game.settings.get(game?.system?.id ?? "massEffect", "autoCollapseChatTrays") ) {
       case "always": collapse = true; break;
       case "never":
       case "manual": collapse = false; break;
@@ -207,8 +207,8 @@ export default class ChatMessage5e extends ChatMessage {
     if ( !this.isContentVisible || !this.rolls.length ) return;
     const originatingMessage = this.getOriginatingMessage();
     const displayChallenge = originatingMessage?.shouldDisplayChallenge;
-    const displayAttackResult = game.user.isGM || (game.settings.get(game.system.id, "attackRollVisibility") !== "none");
-    const forceSuccess = this.flags[game.system.id]?.roll?.forceSuccess === true;
+    const displayAttackResult = game.user.isGM || (game.settings.get(game?.system?.id ?? "massEffect", "attackRollVisibility") !== "none");
+    const forceSuccess = this.flags[game?.system?.id ?? "massEffect"]?.roll?.forceSuccess === true;
 
     /**
      * Create an icon to indicate success or failure.
@@ -239,8 +239,8 @@ export default class ChatMessage5e extends ChatMessage {
       const total = totals[index];
       if ( !total ) continue;
       // Only attack rolls and death saves can crit or fumble.
-      const canCrit = ["attack", "death"].includes(this.getFlag(game.system.id, "roll.type"));
-      const isAttack = this.getFlag(game.system.id, "roll.type") === "attack";
+      const canCrit = ["attack", "death"].includes(this.getFlag(game?.system?.id ?? "massEffect", "roll.type"));
+      const isAttack = this.getFlag(game?.system?.id ?? "massEffect", "roll.type") === "attack";
       const showResult = isAttack ? displayAttackResult : displayChallenge;
       if ( d.options.target && showResult ) {
         if ( d20Roll.isSuccess || forceSuccess ) total.classList.add("success");
@@ -328,7 +328,7 @@ export default class ChatMessage5e extends ChatMessage {
     });
 
     // Enriched roll flavor
-    const roll = this.getFlag(game.system.id, "roll");
+    const roll = this.getFlag(game?.system?.id ?? "massEffect", "roll");
     const item = this.getAssociatedItem();
     const activity = this.getAssociatedActivity();
     if ( this.isContentVisible && item && roll ) {
@@ -434,11 +434,11 @@ export default class ChatMessage5e extends ChatMessage {
       (html.querySelector(".chat-card") ?? html.querySelector(".message-content"))?.appendChild(p);
     }
 
-    const visibility = game.settings.get(game.system.id, "attackRollVisibility");
+    const visibility = game.settings.get(game?.system?.id ?? "massEffect", "attackRollVisibility");
     const isVisible = game.user.isGM || (visibility !== "none");
     if ( !isVisible ) return;
 
-    const targets = this.getFlag(game.system.id, "targets");
+    const targets = this.getFlag(game?.system?.id ?? "massEffect", "targets");
     if ( !targets?.length ) return;
     const tray = document.createElement("div");
     tray.innerHTML = `
@@ -544,7 +544,7 @@ export default class ChatMessage5e extends ChatMessage {
     `;
     html.querySelector(".message-content").appendChild(roll);
 
-    const damageOnSave = this.getFlag(game.system.id, "roll.damageOnSave");
+    const damageOnSave = this.getFlag(game?.system?.id ?? "massEffect", "roll.damageOnSave");
     if ( damageOnSave ) {
       const p = document.createElement("p");
       p.classList.add("supplement");
@@ -606,11 +606,11 @@ export default class ChatMessage5e extends ChatMessage {
    * @protected
    */
   _enrichEnchantmentTooltip(html) {
-    const enchantmentProfile = this.getFlag(game.system.id, "use.enchantmentProfile");
+    const enchantmentProfile = this.getFlag(game?.system?.id ?? "massEffect", "use.enchantmentProfile");
     if ( !enchantmentProfile ) return;
 
     // Ensure concentration is still being maintained
-    const concentrationId = this.getFlag(game.system.id, "use.concentrationId");
+    const concentrationId = this.getFlag(game?.system?.id ?? "massEffect", "use.concentrationId");
     if ( concentrationId && !this.getAssociatedActor()?.effects.get(concentrationId) ) return;
 
     // Create the enchantment tray
@@ -629,7 +629,7 @@ export default class ChatMessage5e extends ChatMessage {
    */
   _enrichSaveTooltip(html) {
     const actor = this.getAssociatedActor();
-    const roll = this.getFlag(game.system.id, "roll");
+    const roll = this.getFlag(game?.system?.id ?? "massEffect", "roll");
     if ( (actor?.type !== "npc") || (roll?.type !== "save") || this.rolls.some(r => r.isSuccess) ) return;
 
     const content = document.createElement("div");
@@ -670,9 +670,9 @@ export default class ChatMessage5e extends ChatMessage {
    * @protected
    */
   _enrichUsageEffects(html) {
-    if ( this.getFlag(game.system.id, "messageType") !== "usage" ) return;
+    if ( this.getFlag(game?.system?.id ?? "massEffect", "messageType") !== "usage" ) return;
     const item = this.getAssociatedItem();
-    const effects = this.getFlag(game.system.id, "use.effects")
+    const effects = this.getFlag(game?.system?.id ?? "massEffect", "use.effects")
       ?.map(id => item?.effects.get(id))
       .filter(e => e && (game.user.isGM || (e.transfer && (this.author.id === game.user.id))));
     if ( !effects?.length ) return;
@@ -916,7 +916,7 @@ export default class ChatMessage5e extends ChatMessage {
       const notifications = document.getElementById("chat-notifications");
       if ( notifications ) notifications.dataset.gmUser = "";
     }
-    if ( !game.settings.get(game.system.id, "autoCollapseItemCards") ) {
+    if ( !game.settings.get(game?.system?.id ?? "massEffect", "autoCollapseItemCards") ) {
       requestAnimationFrame(() => {
         // FIXME: Allow time for transitions to complete. Adding a transitionend listener does not appear to work, so
         // the transition time is hard-coded for now.
@@ -982,9 +982,9 @@ export default class ChatMessage5e extends ChatMessage {
    * @returns {Activity|void}
    */
   getAssociatedActivity() {
-    const activity = fromUuidSync(this.getFlag(game.system.id, "activity.uuid"), { strict: false });
+    const activity = fromUuidSync(this.getFlag(game?.system?.id ?? "massEffect", "activity.uuid"), { strict: false });
     if ( activity ) return activity;
-    return this.getAssociatedItem()?.system.activities?.get(this.getFlag(game.system.id, "activity.id"));
+    return this.getAssociatedItem()?.system.activities?.get(this.getFlag(game?.system?.id ?? "massEffect", "activity.id"));
   }
 
   /* -------------------------------------------- */
@@ -1009,11 +1009,11 @@ export default class ChatMessage5e extends ChatMessage {
    * @returns {Item5e|void}
    */
   getAssociatedItem() {
-    const item = fromUuidSync(this.getFlag(game.system.id, "item.uuid"), { strict: false });
+    const item = fromUuidSync(this.getFlag(game?.system?.id ?? "massEffect", "item.uuid"), { strict: false });
     if ( item ) return item;
     const actor = this.getAssociatedActor();
     if ( !actor ) return;
-    const storedData = this.getFlag(game.system.id, "item.data") ?? this.getOriginatingMessage().getFlag(game.system.id, "item.data");
+    const storedData = this.getFlag(game?.system?.id ?? "massEffect", "item.data") ?? this.getOriginatingMessage().getFlag(game?.system?.id ?? "massEffect", "item.data");
     if ( storedData ) return new Item.implementation(storedData, { parent: actor });
   }
 
@@ -1036,6 +1036,6 @@ export default class ChatMessage5e extends ChatMessage {
    * @type {ChatMessage5e}
    */
   getOriginatingMessage() {
-    return game.messages.get(this.getFlag(game.system.id, "originatingMessage")) ?? this;
+    return game.messages.get(this.getFlag(game?.system?.id ?? "massEffect", "originatingMessage")) ?? this;
   }
 }

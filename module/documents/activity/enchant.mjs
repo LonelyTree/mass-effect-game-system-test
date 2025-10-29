@@ -67,7 +67,7 @@ export default class EnchantActivity extends ActivityMixin(EnchantActivityData) 
   /** @inheritDoc */
   _prepareUsageConfig(config) {
     config = super._prepareUsageConfig(config);
-    const existingProfile = this.existingEnchantment?.flags[game.system.id]?.enchantmentProfile;
+    const existingProfile = this.existingEnchantment?.flags[game?.system?.id ?? "massEffect"]?.enchantmentProfile;
     config.enchantmentProfile ??= this.item.effects.has(existingProfile) ? existingProfile
       : this.availableEnchantments[0]?._id;
     return config;
@@ -88,11 +88,11 @@ export default class EnchantActivity extends ActivityMixin(EnchantActivityData) 
 
     // Store selected enchantment profile in message flag
     if ( usageConfig.enchantmentProfile ) foundry.utils.setProperty(
-      messageConfig, "data.flags[game.system.id].use.enchantmentProfile", usageConfig.enchantmentProfile
+      messageConfig, "data.flags[game?.system?.id ?? "massEffect"].use.enchantmentProfile", usageConfig.enchantmentProfile
     );
 
     // Don't display message if just auto-disabling existing enchantment
-    if ( this.existingEnchantment?.flags[game.system.id]?.enchantmentProfile === usageConfig.enchantmentProfile ) {
+    if ( this.existingEnchantment?.flags[game?.system?.id ?? "massEffect"]?.enchantmentProfile === usageConfig.enchantmentProfile ) {
       messageConfig.create = false;
     }
   }
@@ -108,7 +108,7 @@ export default class EnchantActivity extends ActivityMixin(EnchantActivityData) 
     if ( existingEnchantment ) await existingEnchantment?.delete({ chatMessageOrigin: results.message?.id });
 
     // If no existing enchantment, or existing enchantment profile doesn't match provided one, create new enchantment
-    if ( !existingEnchantment || (existingEnchantment.flags[game.system.id]?.enchantmentProfile !== config.enchantmentProfile) ) {
+    if ( !existingEnchantment || (existingEnchantment.flags[game?.system?.id ?? "massEffect"]?.enchantmentProfile !== config.enchantmentProfile) ) {
       const concentration = results.effects.find(e => e.statuses.has(CONFIG.specialStatusEffects.CONCENTRATING));
       this.applyEnchantment(config.enchantmentProfile, this.item, {
         chatMessage: results.message, concentration, strict: false

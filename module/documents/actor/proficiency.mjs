@@ -72,7 +72,7 @@ export default class Proficiency {
    * @type {string}
    */
   get term() {
-    return (game.settings.get(game.system.id, "proficiencyModifier") === "dice") && !this.deterministic
+    return (game.settings.get(game?.system?.id ?? "massEffect", "proficiencyModifier") === "dice") && !this.deterministic
       ? this.dice : String(this.flat);
   }
 

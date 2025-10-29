@@ -28,7 +28,7 @@ export default class BastionSettingsConfig extends BaseSettingsConfig {
   async _preparePartContext(partId, context, options) {
     context = await super._preparePartContext(partId, context, options);
     context.fields = BastionSetting.schema.fields;
-    context.source = game.settings.get(game.system.id, "bastionConfiguration");
+    context.source = game.settings.get(game?.system?.id ?? "massEffect", "bastionConfiguration");
     return context;
   }
 }

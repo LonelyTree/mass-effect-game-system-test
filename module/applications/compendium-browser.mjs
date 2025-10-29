@@ -1144,7 +1144,7 @@ export default class CompendiumBrowser extends Application5e {
         && sources.has(p.collection)
 
         // If types are set and specified in compendium flag, only include those that include the correct types
-        && (!types.size || !p.metadata.flags[game.system.id]?.types || new Set(p.metadata.flags[game.system.id].types).intersects(types)))
+        && (!types.size || !p.metadata.flags[game?.system?.id ?? "massEffect"]?.types || new Set(p.metadata.flags[game?.system?.id ?? "massEffect"].types).intersects(types)))
 
       // Generate an index based on the needed fields
       .map(async p => await Promise.all((await p.getIndex({ fields: Array.from(indexFields) })

@@ -43,7 +43,7 @@ export default class TransformActivity extends ActivityMixin(TransformActivityDa
    * @type {boolean}
    */
   get canTransform() {
-    return game.user.can("ACTOR_CREATE") && (game.user.isGM || game.settings.get(game.system.id, "allowPolymorphing"));
+    return game.user.can("ACTOR_CREATE") && (game.user.isGM || game.settings.get(game?.system?.id ?? "massEffect", "allowPolymorphing"));
   }
 
   /* -------------------------------------------- */
@@ -118,7 +118,7 @@ export default class TransformActivity extends ActivityMixin(TransformActivityDa
     if ( profile ) {
       const uuid = !this.transform.mode ? profile.uuid : await this.queryActor(profile);
       if ( uuid ) {
-        if ( results.message instanceof ChatMessage ) results.message.setFlag(game.system.id, "transform.uuid", uuid);
+        if ( results.message instanceof ChatMessage ) results.message.setFlag(game?.system?.id ?? "massEffect", "transform.uuid", uuid);
         else foundry.utils.setProperty(results.message, `flags.${game.system.id}.', uuid);
       }
     }
@@ -166,9 +166,9 @@ export default class TransformActivity extends ActivityMixin(TransformActivityDa
       return;
     }
 
-    const profileId = message.getFlag(game.system.id, "transform.profile");
+    const profileId = message.getFlag(game?.system?.id ?? "massEffect", "transform.profile");
     const profile = this.profiles.find(p => p._id === profileId) || this.profiles[0];
-    const uuid = message.getFlag(game.system.id, "transform.uuid") ?? await this.queryActor(profile);
+    const uuid = message.getFlag(game?.system?.id ?? "massEffect", "transform.uuid") ?? await this.queryActor(profile);
     const source = await fromUuid(uuid);
     if ( !source ) {
       ui.notifications.warn("DND5E.TRANSFORM.Warning.SourceActor", { localize: true });

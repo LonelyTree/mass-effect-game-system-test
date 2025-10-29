@@ -337,7 +337,7 @@ export default class GroupData extends GroupTemplate {
      */
     Hooks.callAll("dnd5e.groupRestCompleted", this.parent, results);
 
-    if ( config.advanceBastionTurn && game.user.isGM && game.settings.get(game.system.id, "bastionConfiguration").enabled ) {
+    if ( config.advanceBastionTurn && game.user.isGM && game.settings.get(game?.system?.id ?? "massEffect", "bastionConfiguration").enabled ) {
       await dnd5e.bastion.advanceAllBastions();
     }
 

@@ -582,12 +582,12 @@ export function migrateEffects(parent, migrationData, itemUpdateData, flags={}) 
   return parent.effects.reduce((arr, e) => {
     const effectData = e instanceof CONFIG.ActiveEffect.documentClass ? e.toObject() : e;
     let effectUpdate = migrateEffectData(effectData, migrationData, { parent });
-    if ( effectData.flags?.[game.system.id]?.rider ) {
+    if ( effectData.flags?.[game?.system?.id ?? "massEffect"]?.rider ) {
       itemUpdateData[`flags.${game.system.id}.riders.effect`] ??= [];
       itemUpdateData[`flags.${game.system.id}.riders.effect`].push(effectData._id);
       effectUpdate[`flags.${game.system.id}.-=rider`] = null;
     }
-    if ( effectData.flags?.[game.system.id]?.persistSourceMigration ) {
+    if ( effectData.flags?.[game?.system?.id ?? "massEffect"]?.persistSourceMigration ) {
       flags.persistSourceMigration = true;
       effectUpdate[`flags.${game.system.id}.-=persistSourceMigration`] = null;
     }
@@ -965,7 +965,7 @@ function _migrateMacroCommands(macro, updateData) {
  */
 export async function purgeFlags(pack) {
   const cleanFlags = flags => {
-    const flags5e = flags[game.system.id] || null;
+    const flags5e = flags[game?.system?.id ?? "massEffect"] || null;
     return flags5e ? {dnd5e: flags5e} : {};
   };
   await pack.configure({locked: false});

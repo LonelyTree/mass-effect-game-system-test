@@ -27,26 +27,26 @@ const registerMethods = [registerSourceBooks, registerSpellLists];
 /* -------------------------------------------- */
 
 /**
- * Register package source books from `flags[game.system.id].sourceBooks`.
+ * Register package source books from `flags[game?.system?.id ?? "massEffect"].sourceBooks`.
  * @param {Module|System|World} manifest  Manifest from which to register data.
  * @returns {string|void}                 Description of the data registered.
  */
 function registerSourceBooks(manifest) {
-  if ( !manifest.flags[game.system.id]?.sourceBooks ) return;
-  Object.assign(CONFIG.DND5E.sourceBooks, manifest.flags[game.system.id].sourceBooks);
+  if ( !manifest.flags[game?.system?.id ?? "massEffect"]?.sourceBooks ) return;
+  Object.assign(CONFIG.DND5E.sourceBooks, manifest.flags[game?.system?.id ?? "massEffect"].sourceBooks);
   return "source books";
 }
 
 /* -------------------------------------------- */
 
 /**
- * Register package spell lists from `flags[game.system.id].spellLists`.
+ * Register package spell lists from `flags[game?.system?.id ?? "massEffect"].spellLists`.
  * @param {Module|System|World} manifest  Manifest from which to register data.
  * @returns {string|void}                 Description of the data registered.
  */
 function registerSpellLists(manifest) {
-  if ( foundry.utils.getType(manifest.flags[game.system.id]?.spellLists) !== "Array" ) return;
-  manifest.flags[game.system.id].spellLists.forEach(uuid => dnd5e.registry.spellLists.register(uuid));
+  if ( foundry.utils.getType(manifest.flags[game?.system?.id ?? "massEffect"]?.spellLists) !== "Array" ) return;
+  manifest.flags[game?.system?.id ?? "massEffect"].spellLists.forEach(uuid => dnd5e.registry.spellLists.register(uuid));
   return "spell lists";
 }
 
@@ -77,12 +77,12 @@ const setupMethods = [setupPackDisplay, setupPackSorting];
 /* -------------------------------------------- */
 
 /**
- * Set application based on `flags[game.system.id].display`.
+ * Set application based on `flags[game?.system?.id ?? "massEffect"].display`.
  * @param {Compendium} pack  Pack to set up.
  * @returns {string|void}    Description of the step.
  */
 function setupPackDisplay(pack) {
-  const display = pack.metadata.flags.display ?? pack.metadata.flags[game.system.id]?.display;
+  const display = pack.metadata.flags.display ?? pack.metadata.flags[game?.system?.id ?? "massEffect"]?.display;
   if ( display !== "table-of-contents" ) return;
   pack.applicationClass = TableOfContentsCompendium;
   return "table of contents";
@@ -94,14 +94,14 @@ let collectionSortingModes;
 let sortingChanged = false;
 
 /**
- * Set default sorting order based on `flags[game.system.id].sorting`.
+ * Set default sorting order based on `flags[game?.system?.id ?? "massEffect"].sorting`.
  * @param {Compendium} pack  Pack to set up.
  * @returns {string|void}    Description of the step.
  */
 function setupPackSorting(pack) {
   collectionSortingModes ??= game.settings.get("core", "collectionSortingModes") ?? {};
-  if ( !pack.metadata.flags[game.system.id]?.sorting || collectionSortingModes[pack.metadata.id] ) return;
-  collectionSortingModes[pack.metadata.id] = pack.metadata.flags[game.system.id].sorting;
+  if ( !pack.metadata.flags[game?.system?.id ?? "massEffect"]?.sorting || collectionSortingModes[pack.metadata.id] ) return;
+  collectionSortingModes[pack.metadata.id] = pack.metadata.flags[game?.system?.id ?? "massEffect"].sorting;
   sortingChanged = true;
   return "default sorting";
 }

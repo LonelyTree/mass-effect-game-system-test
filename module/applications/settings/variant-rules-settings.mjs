@@ -39,7 +39,7 @@ export default class VariantRulesSettingsConfig extends BaseSettingsConfig {
     switch ( partId ) {
       case "general":
         context.fields = [
-          game.settings.get(game.system.id, "rulesVersion") === "legacy" ? this.createSettingField("allowFeats") : null,
+          game.settings.get(game?.system?.id ?? "massEffect", "rulesVersion") === "legacy" ? this.createSettingField("allowFeats") : null,
           this.createSettingField("restVariant"),
           this.createSettingField("proficiencyModifier"),
           this.createSettingField("levelingMode")

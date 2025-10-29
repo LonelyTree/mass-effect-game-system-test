@@ -489,8 +489,8 @@ export default class CharacterActorSheet extends BaseActorSheet {
     }
 
     // Visibility
-    context.showExperience = game.settings.get(game.system.id, "levelingMode") !== "noxp";
-    context.showRests = game.user.isGM || (this.actor.isOwner && game.settings.get(game.system.id, "allowRests"));
+    context.showExperience = game.settings.get(game?.system?.id ?? "massEffect", "levelingMode") !== "noxp";
+    context.showRests = game.user.isGM || (this.actor.isOwner && game.settings.get(game?.system?.id ?? "massEffect", "allowRests"));
 
     return context;
   }
@@ -611,7 +611,7 @@ export default class CharacterActorSheet extends BaseActorSheet {
   async _prepareTabsContext(context, options) {
     const { basic, special } = CONFIG.DND5E.facilities.advancement;
     const threshold = Math.min(...Object.keys(basic), ...Object.keys(special));
-    const showBastion = game.settings.get(game.system.id, "bastionConfiguration")?.enabled
+    const showBastion = game.settings.get(game?.system?.id ?? "massEffect", "bastionConfiguration")?.enabled
       && (this.actor.system.details.level >= threshold);
     if ( !showBastion && (this.tabGroups.primary === "bastion") ) this.tabGroups.primary = "details";
 
@@ -856,7 +856,7 @@ export default class CharacterActorSheet extends BaseActorSheet {
 
     super._prepareItemFeature(item, ctx);
 
-    const [originId] = (item.getFlag(game.system.id, "advancementRoot") ?? item.getFlag(game.system.id, "advancementOrigin"))
+    const [originId] = (item.getFlag(game?.system?.id ?? "massEffect", "advancementRoot") ?? item.getFlag(game?.system?.id ?? "massEffect", "advancementOrigin"))
       ?.split(".") ?? [];
     const group = this.actor.items.get(originId);
     ctx.groups.origin = "other";
@@ -1258,7 +1258,7 @@ export default class CharacterActorSheet extends BaseActorSheet {
       const cls = this.actor.itemTypes.class.find(c => c.identifier === itemData.system.identifier);
       if ( cls ) {
         const priorLevel = cls.system.levels;
-        if ( !game.settings.get(game.system.id, "disableAdvancements") ) {
+        if ( !game.settings.get(game?.system?.id ?? "massEffect", "disableAdvancements") ) {
           const manager = AdvancementManager.forLevelChange(this.actor, cls.id, itemData.system.levels);
           if ( manager.steps.length ) {
             manager.render({ force: true });

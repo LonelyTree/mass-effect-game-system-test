@@ -44,7 +44,7 @@ export default class SummonActivity extends ActivityMixin(SummonActivityData) {
    * @type {boolean}
    */
   get canSummon() {
-    return game.user.can("TOKEN_CREATE") && (game.user.isGM || game.settings.get(game.system.id, "allowSummoning"));
+    return game.user.can("TOKEN_CREATE") && (game.user.isGM || game.settings.get(game?.system?.id ?? "massEffect", "allowSummoning"));
   }
 
   /* -------------------------------------------- */

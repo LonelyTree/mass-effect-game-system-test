@@ -166,7 +166,7 @@ export default class BasicRoll extends Roll {
     }
 
     // Store the roll type in roll.options so it can be accessed from only the roll
-    const rollType = foundry.utils.getProperty(message, "data.flags[game.system.id].roll.type");
+    const rollType = foundry.utils.getProperty(message, "data.flags[game?.system?.id ?? "massEffect"].roll.type");
     if ( rollType ) rolls.forEach(roll => roll.options.rollType ??= rollType);
 
     /**

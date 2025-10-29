@@ -125,7 +125,8 @@ export default class Actor5e extends SystemDocumentMixin(Actor) {
    * @type {boolean}
    */
   get isPolymorphed() {
-    return this.getFlag(game.system.id, "isPolymorphed") || false;
+    const systemId = game?.system?.id ?? "massEffect";
+    return this.getFlag(systemId, "isPolymorphed") || false;
   }
 
   /* -------------------------------------------- */
@@ -165,7 +166,7 @@ export default class Actor5e extends SystemDocumentMixin(Actor) {
 
     for ( const effect of this.effects ) {
       if ( !effect.statuses.has(CONFIG.specialStatusEffects.CONCENTRATING) ) continue;
-      const data = effect.getFlag(game.system.id, "item");
+      const data = effect.getFlag(game?.system?.id ?? "massEffect", "item");
       concentration.effects.add(effect);
       if ( data ) {
         let item = this.items.get(data.id);
@@ -280,7 +281,7 @@ export default class Actor5e extends SystemDocumentMixin(Actor) {
   *allApplicableEffects() {
     for ( const effect of super.allApplicableEffects() ) {
       if ( effect.type === "enchantment" ) continue;
-      if ( effect.parent?.getFlag(game.system.id, "riders.effect")?.includes(effect.id) ) continue;
+      if ( effect.parent?.getFlag(game?.system?.id ?? "massEffect", "riders.effect")?.includes(effect.id) ) continue;
       yield effect;
     }
   }
@@ -313,7 +314,7 @@ export default class Actor5e extends SystemDocumentMixin(Actor) {
     const localActor = game.actors.find(a => {
       const matchesOrigin = !origin || (foundry.utils.getProperty(a, origin.key) === origin.value);
       // Has been auto-imported by this process.
-      return (a.getFlag(game.system.id, "isAutoImported") || a.getFlag(game.system.id, "summonedCopy")) // Back-compat
+      return (a.getFlag(game?.system?.id ?? "massEffect", "isAutoImported") || a.getFlag(game?.system?.id ?? "massEffect", "summonedCopy")) // Back-compat
       // Sourced from the desired actor UUID.
       && ((a._stats?.compendiumSource === uuid) || (a._stats?.duplicateSource === uuid))
       // Unlinked or created from a specific source.
@@ -344,7 +345,7 @@ export default class Actor5e extends SystemDocumentMixin(Actor) {
 
   /** @inheritDoc */
   prepareDerivedData() {
-    const origin = this.getFlag(game.system.id, "summon.origin");
+    const origin = this.getFlag(game?.system?.id ?? "massEffect", "summon.origin");
     if ( origin && this.token?.id ) {
       const { collection, primaryId } = foundry.utils.parseUuid(origin);
       dnd5e.registry.summons.track(collection?.get?.(primaryId)?.uuid, this.uuid);
@@ -360,7 +361,7 @@ export default class Actor5e extends SystemDocumentMixin(Actor) {
    */
   getConcentrationDC(damage) {
     return Math.clamp(
-      Math.floor(damage / 2), 10, game.settings.get(game.system.id, "rulesVersion") === "modern" ? 30 : Infinity
+      Math.floor(damage / 2), 10, game.settings.get(game?.system?.id ?? "massEffect", "rulesVersion") === "modern" ? 30 : Infinity
     );
   }
 
@@ -424,7 +425,7 @@ export default class Actor5e extends SystemDocumentMixin(Actor) {
     const level = this.system.attributes?.exhaustion ?? null;
     const imms = this.system.traits?.ci?.value ?? new Set();
     const applyExhaustion = (level !== null) && !imms.has("exhaustion")
-      && (game.settings.get(game.system.id, "rulesVersion") === "legacy");
+      && (game.settings.get(game?.system?.id ?? "massEffect", "rulesVersion") === "legacy");
     const statuses = this.statuses;
     return props.some(k => {
       const l = Number(k.split("-").pop());
@@ -988,7 +989,7 @@ export default class Actor5e extends SystemDocumentMixin(Actor) {
     else if ( target instanceof ActiveEffect5e ) effect = effects.has(target) ? target : null;
     else if ( target instanceof Item5e ) {
       effect = effects.find(e => {
-        const data = e.getFlag(game.system.id, "item") ?? {};
+        const data = e.getFlag(game?.system?.id ?? "massEffect", "item") ?? {};
         return (data.id === target._id) || (data.data?._id === target._id);
       });
     }
@@ -1068,7 +1069,7 @@ export default class Actor5e extends SystemDocumentMixin(Actor) {
    * @private
    */
   _isRemarkableAthlete(ability) {
-    return (game.settings.get(game.system.id, "rulesVersion") === "legacy") && this.getFlag(game.system.id, "remarkableAthlete")
+    return (game.settings.get(game?.system?.id ?? "massEffect", "rulesVersion") === "legacy") && this.getFlag(game?.system?.id ?? "massEffect", "remarkableAthlete")
       && CONFIG.DND5E.characterFlags.remarkableAthlete.abilities.includes(ability);
   }
 
@@ -1082,7 +1083,7 @@ export default class Actor5e extends SystemDocumentMixin(Actor) {
    * @param {object} data     Roll data.
    */
   addRollExhaustion(parts, data) {
-    if ( (game.settings.get(game.system.id, "rulesVersion") !== "modern") || !this.system.attributes?.exhaustion ) return;
+    if ( (game.settings.get(game?.system?.id ?? "massEffect", "rulesVersion") !== "modern") || !this.system.attributes?.exhaustion ) return;
     const amount = this.system.attributes.exhaustion * (CONFIG.DND5E.conditionTypes.exhaustion?.reduction?.rolls ?? 0);
     if ( amount ) {
       parts.push("@exhaustion");
@@ -1195,8 +1196,8 @@ export default class Actor5e extends SystemDocumentMixin(Actor) {
     const alternate = type === "skill" ? this.system.tools?.[config.tool] : this.system.skills?.[config.skill];
     const abilityId = config.ability ?? relevant?.ability ?? (type === "skill" ? skillConfig.ability : toolConfig.ability);
     const ability = this.system.abilities?.[abilityId];
-    const hostActor = this.isPolymorphed && this.flags?.[game.system.id]?.transformOptions?.mergeSkills && (type === "skill")
-      ? game.actors.get(this.flags[game.system.id]?.originalActor) : null;
+    const hostActor = this.isPolymorphed && this.flags?.[game?.system?.id ?? "massEffect"]?.transformOptions?.mergeSkills && (type === "skill")
+      ? game.actors.get(this.flags[game?.system?.id ?? "massEffect"]?.originalActor) : null;
     const buildConfig = this._buildSkillToolConfig.bind(this, type, hostActor);
     const doubleProf = !!relevant?.prof.hasProficiency && !!alternate?.prof.hasProficiency;
     const pace = MovementField.getTravelPaceMode(config.pace, config.skill);
@@ -1212,8 +1213,8 @@ export default class Actor5e extends SystemDocumentMixin(Actor) {
     const rollConfig = foundry.utils.mergeObject({
       advantage, disadvantage,
       ability: relevant?.ability ?? (type === "skill" ? skillConfig.ability : toolConfig?.ability),
-      halflingLucky: this.getFlag(game.system.id, "halflingLucky"),
-      reliableTalent: (relevant?.value >= 1) && this.getFlag(game.system.id, "reliableTalent")
+      halflingLucky: this.getFlag(game?.system?.id ?? "massEffect", "halflingLucky"),
+      reliableTalent: (relevant?.value >= 1) && this.getFlag(game?.system?.id ?? "massEffect", "reliableTalent")
     }, config);
     rollConfig.hookNames = [...(config.hookNames ?? []), type, "abilityCheck", "d20Test"];
     rollConfig.rolls = [CONFIG.Dice.D20Roll.mergeConfigs({
@@ -1426,7 +1427,7 @@ export default class Actor5e extends SystemDocumentMixin(Actor) {
     };
 
     const rollConfig = foundry.utils.mergeObject({
-      halflingLucky: this.getFlag(game.system.id, "halflingLucky")
+      halflingLucky: this.getFlag(game?.system?.id ?? "massEffect", "halflingLucky")
     }, config);
     rollConfig.hookNames = [...(config.hookNames ?? []), name, "d20Test"];
     rollConfig.rolls = [
@@ -1509,7 +1510,7 @@ export default class Actor5e extends SystemDocumentMixin(Actor) {
     };
 
     // Diamond Soul adds proficiency
-    if ( this.getFlag(game.system.id, "diamondSoul") ) {
+    if ( this.getFlag(game?.system?.id ?? "massEffect", "diamondSoul") ) {
       parts.push("@prof");
       data.prof = new Proficiency(this.system.attributes.prof, 1).term;
     }
@@ -1728,7 +1729,7 @@ export default class Actor5e extends SystemDocumentMixin(Actor) {
    */
   getInitiativeRollConfig(options={}) {
     const init = this.system.attributes?.init;
-    const flags = this.flags[game.system.id] ?? {};
+    const flags = this.flags[game?.system?.id ?? "massEffect"] ?? {};
     const abilityId = init?.ability || CONFIG.DND5E.defaultAbilities.initiative;
     const ability = this.system.abilities?.[abilityId];
 
@@ -1739,7 +1740,7 @@ export default class Actor5e extends SystemDocumentMixin(Actor) {
       initiativeBonus: init.bonus,
       [`${abilityId}AbilityCheckBonus`]: ability?.bonuses?.check,
       abilityCheckBonus: this.system.bonuses?.abilities?.check,
-      alert: flags.initiativeAlert && (game.settings.get(game.system.id, "rulesVersion") === "legacy") ? 5 : null
+      alert: flags.initiativeAlert && (game.settings.get(game?.system?.id ?? "massEffect", "rulesVersion") === "legacy") ? 5 : null
     }, rollData);
 
     const { advantage, disadvantage } = AdvantageModeField.combineFields(this.system, [
@@ -1751,11 +1752,11 @@ export default class Actor5e extends SystemDocumentMixin(Actor) {
     this.addRollExhaustion(parts, data);
 
     // Ability score tiebreaker
-    const tiebreaker = game.settings.get(game.system.id, "initiativeDexTiebreaker");
+    const tiebreaker = game.settings.get(game?.system?.id ?? "massEffect", "initiativeDexTiebreaker");
     if ( tiebreaker && Number.isNumeric(ability?.value) ) parts.push(String(ability.value / 100));
 
     // Fixed initiative score
-    const scoreMode = game.settings.get(game.system.id, "initiativeScore");
+    const scoreMode = game.settings.get(game?.system?.id ?? "massEffect", "initiativeScore");
     const useScore = (scoreMode === "all") || ((scoreMode === "npcs") && game.user.isGM && (this.type === "npc"));
 
     options = foundry.utils.mergeObject({
@@ -2132,7 +2133,7 @@ export default class Actor5e extends SystemDocumentMixin(Actor) {
    */
   async shortRest(config={}) {
     if ( this.type === "vehicle" ) return;
-    if ( !game.user.isGM && !game.settings.get(game.system.id, "allowRests") && !config.request ) {
+    if ( !game.user.isGM && !game.settings.get(game?.system?.id ?? "massEffect", "allowRests") && !config.request ) {
       ui.notifications.warn("DND5E.REST.Warning.OnlyByRequest", { localize: true, log: false });
       return;
     }
@@ -2141,7 +2142,7 @@ export default class Actor5e extends SystemDocumentMixin(Actor) {
     const restConfig = CONFIG.DND5E.restTypes.short;
     config = foundry.utils.mergeObject({
       type: "short", dialog: true, chat: true, newDay: false, advanceTime: false, autoHD: false, autoHDThreshold: 3,
-      duration: CONFIG.DND5E.restTypes.short.duration[game.settings.get(game.system.id, "restVariant")],
+      duration: CONFIG.DND5E.restTypes.short.duration[game.settings.get(game?.system?.id ?? "massEffect", "restVariant")],
       recoverTemp: restConfig.recoverTemp, recoverTempMax: restConfig.recoverTempMax,
       exhaustionDelta: restConfig.exhaustionDelta
     }, config);
@@ -2195,7 +2196,7 @@ export default class Actor5e extends SystemDocumentMixin(Actor) {
    */
   async longRest(config={}) {
     if ( this.type === "vehicle" ) return;
-    if ( !game.user.isGM && !game.settings.get(game.system.id, "allowRests") && !config.request ) {
+    if ( !game.user.isGM && !game.settings.get(game?.system?.id ?? "massEffect", "allowRests") && !config.request ) {
       ui.notifications.warn("DND5E.REST.Warning.OnlyByRequest", { localize: true, log: false });
       return;
     }
@@ -2204,7 +2205,7 @@ export default class Actor5e extends SystemDocumentMixin(Actor) {
     const restConfig = CONFIG.DND5E.restTypes.long;
     config = foundry.utils.mergeObject({
       type: "long", dialog: true, chat: true, newDay: true, advanceTime: false,
-      duration: restConfig.duration[game.settings.get(game.system.id, "restVariant")],
+      duration: restConfig.duration[game.settings.get(game?.system?.id ?? "massEffect", "restVariant")],
       recoverTemp: restConfig.recoverTemp, recoverTempMax: restConfig.recoverTempMax,
       exhaustionDelta: restConfig.exhaustionDelta
     }, config);
@@ -2332,7 +2333,7 @@ export default class Actor5e extends SystemDocumentMixin(Actor) {
      */
     Hooks.callAll("dnd5e.restCompleted", this, result, config);
 
-    if ( config.advanceBastionTurn && game.user.isGM && game.settings.get(game.system.id, "bastionConfiguration").enabled
+    if ( config.advanceBastionTurn && game.user.isGM && game.settings.get(game?.system?.id ?? "massEffect", "bastionConfiguration").enabled
       && this.itemTypes.facility.length ) await dnd5e.bastion.advanceAllFacilities(this);
 
     // Return data summarizing the rest effects
@@ -2443,7 +2444,7 @@ export default class Actor5e extends SystemDocumentMixin(Actor) {
   _getRestHitDiceRecovery({ maxHitDice, fraction, ...config }={}, result={}) {
     const restConfig = CONFIG.DND5E.restTypes[config.type];
     if ( !this.system.attributes.hd || !restConfig?.recoverHitDice ) return;
-    fraction ??= game.settings.get(game.system.id, "rulesVersion") === "modern" ? 1 : 0.5;
+    fraction ??= game.settings.get(game?.system?.id ?? "massEffect", "rulesVersion") === "modern" ? 1 : 0.5;
 
     // Handle simpler HD recovery for NPCs
     if ( this.type === "npc" ) {
@@ -2737,8 +2738,8 @@ export default class Actor5e extends SystemDocumentMixin(Actor) {
     let originalSaves = null;
     let originalSkills = null;
     if ( this.isPolymorphed ) {
-      const transformOptions = this.flags[game.system.id]?.transformOptions;
-      const original = game.actors?.get(this.flags[game.system.id]?.originalActor);
+      const transformOptions = this.flags[game?.system?.id ?? "massEffect"]?.transformOptions;
+      const original = game.actors?.get(this.flags[game?.system?.id ?? "massEffect"]?.originalActor);
       if ( original ) {
         if ( transformOptions.mergeSaves ) originalSaves = original.system.abilities;
         if ( transformOptions.mergeSkills ) originalSkills = original.system.skills;
@@ -2768,7 +2769,7 @@ export default class Actor5e extends SystemDocumentMixin(Actor) {
     }
 
     // Ensure the player is allowed to polymorph
-    const allowed = game.settings.get(game.system.id, "allowPolymorphing");
+    const allowed = game.settings.get(game?.system?.id ?? "massEffect", "allowPolymorphing");
     if ( !allowed && !game.user.isGM ) {
       ui.notifications.warn("DND5E.TRANSFORM.Warning.NoPermission", { localize: true });
       return null;
@@ -2776,8 +2777,8 @@ export default class Actor5e extends SystemDocumentMixin(Actor) {
 
     // Get the original Actor data and the new source data
     const o = this.toObject();
-    o.flags[game.system.id] = o.flags[game.system.id] || {};
-    o.flags[game.system.id].transformOptions = {
+    o.flags[game?.system?.id ?? "massEffect"] = o.flags[game?.system?.id ?? "massEffect"] || {};
+    o.flags[game?.system?.id ?? "massEffect"].transformOptions = {
       ...settings.toObject(),
       mergeSaves: settings.merge.has("saves"),
       mergeSkills: settings.merge.has("skills")
@@ -3010,11 +3011,11 @@ export default class Actor5e extends SystemDocumentMixin(Actor) {
     }
 
     // Set new data flags
-    if ( !this.isPolymorphed || !d.flags[game.system.id].originalActor ) d.flags[game.system.id].originalActor = this.id;
-    d.flags[game.system.id].isPolymorphed = true;
+    if ( !this.isPolymorphed || !d.flags[game?.system?.id ?? "massEffect"].originalActor ) d.flags[game?.system?.id ?? "massEffect"].originalActor = this.id;
+    d.flags[game?.system?.id ?? "massEffect"].isPolymorphed = true;
 
     // Gather previous actor data
-    const previousActorIds = this.getFlag(game.system.id, "previousActorIds") || [];
+    const previousActorIds = this.getFlag(game?.system?.id ?? "massEffect", "previousActorIds") || [];
     previousActorIds.push(this._id);
     foundry.utils.setProperty(d.flags, "dnd5e.previousActorIds", previousActorIds);
 
@@ -3124,13 +3125,13 @@ export default class Actor5e extends SystemDocumentMixin(Actor) {
      */
     Hooks.callAll("dnd5e.revertOriginalForm", this, options);
 
-    const transformOptions = this.getFlag(game.system.id, "transformOptions");
-    const previousActorIds = this.getFlag(game.system.id, "previousActorIds") ?? [];
+    const transformOptions = this.getFlag(game?.system?.id ?? "massEffect", "transformOptions");
+    const previousActorIds = this.getFlag(game?.system?.id ?? "massEffect", "previousActorIds") ?? [];
     const isOriginalActor = !previousActorIds.length;
     const isRendered = this.sheet.rendered;
 
     // Obtain a reference to the original actor
-    const original = game.actors.get(this.getFlag(game.system.id, "originalActor"));
+    const original = game.actors.get(this.getFlag(game?.system?.id ?? "massEffect", "originalActor"));
 
     const update = {};
     if ( transformOptions?.keep?.includes("hp") ) {
@@ -3147,12 +3148,12 @@ export default class Actor5e extends SystemDocumentMixin(Actor) {
       const baseActor = original ? original : game.actors.get(this.token.actorId);
       if ( !baseActor ) {
         ui.notifications.warn(game.i18n.format("DND5E.TRANSFORM.Warning.OriginalActor", {
-          reference: this.getFlag(game.system.id, "originalActor")
+          reference: this.getFlag(game?.system?.id ?? "massEffect", "originalActor")
         }));
         return;
       }
       const prototypeTokenData = (await baseActor.getTokenDocument()).toObject();
-      const actorData = this.token.getFlag(game.system.id, "previousActorData");
+      const actorData = this.token.getFlag(game?.system?.id ?? "massEffect", "previousActorData");
       foundry.utils.mergeObject(actorData, update);
       const tokenUpdate = this.token.toObject();
       actorData._id = tokenUpdate.delta._id;
@@ -3172,9 +3173,9 @@ export default class Actor5e extends SystemDocumentMixin(Actor) {
       const token = await TokenDocument.implementation.create(tokenUpdate, { parent: this.token.parent, render: true });
       await this.token.delete({ replacements: { [this.token._id]: token.uuid } });
       if ( isOriginalActor ) {
-        await this.unsetFlag(game.system.id, "isPolymorphed");
-        await this.unsetFlag(game.system.id, "previousActorIds");
-        await this.token.unsetFlag(game.system.id, "previousActorData");
+        await this.unsetFlag(game?.system?.id ?? "massEffect", "isPolymorphed");
+        await this.unsetFlag(game?.system?.id ?? "massEffect", "previousActorIds");
+        await this.token.unsetFlag(game?.system?.id ?? "massEffect", "previousActorData");
       }
       if ( isRendered && options.renderSheet ) token.actor?.sheet?.render(true);
       return token;
@@ -3182,7 +3183,7 @@ export default class Actor5e extends SystemDocumentMixin(Actor) {
 
     if ( !original ) {
       ui.notifications.warn(game.i18n.format("DND5E.TRANSFORM.Warning.OriginalActor", {
-        reference: this.getFlag(game.system.id, "originalActor")
+        reference: this.getFlag(game?.system?.id ?? "massEffect", "originalActor")
       }));
       return;
     }
@@ -3204,8 +3205,8 @@ export default class Actor5e extends SystemDocumentMixin(Actor) {
       await canvas.scene.updateEmbeddedDocuments("Token", tokenUpdates, { diff: false, recursive: false });
     }
     if ( isOriginalActor ) {
-      await this.unsetFlag(game.system.id, "isPolymorphed");
-      await this.unsetFlag(game.system.id, "previousActorIds");
+      await this.unsetFlag(game?.system?.id ?? "massEffect", "isPolymorphed");
+      await this.unsetFlag(game?.system?.id ?? "massEffect", "previousActorIds");
     }
 
     // Delete the polymorphed version(s) of the actor, if possible
@@ -3241,7 +3242,7 @@ export default class Actor5e extends SystemDocumentMixin(Actor) {
         return actor.revertOriginalForm();
       },
       condition: li => {
-        const allowed = game.settings.get(game.system.id, "allowPolymorphing");
+        const allowed = game.settings.get(game?.system?.id ?? "massEffect", "allowPolymorphing");
         if ( !allowed && !game.user.isGM ) return false;
         const actor = game.actors.get(li.dataset.documentId ?? li.dataset.entryId);
         return actor && actor.isPolymorphed;
@@ -3341,7 +3342,7 @@ export default class Actor5e extends SystemDocumentMixin(Actor) {
 
       if ( Number.isInteger(changes.total) && (changes.total !== 0) ) {
         this._displayTokenEffect(changes);
-        if ( !game.settings.get(game.system.id, "disableConcentration") && (userId === game.userId)
+        if ( !game.settings.get(game?.system?.id ?? "massEffect", "disableConcentration") && (userId === game.userId)
           && (options.[game.system.id]?.concentrationCheck !== false)
           && (changes.total < 0) && ((changes.temp < 0) || (curr.value < curr.effectiveMax)) ) {
           this.challengeConcentration({ dc: this.getConcentrationDC(-changes.total) });
@@ -3374,7 +3375,7 @@ export default class Actor5e extends SystemDocumentMixin(Actor) {
 
     super._onDelete(options, userId);
 
-    const origin = this.getFlag(game.system.id, "summon.origin");
+    const origin = this.getFlag(game?.system?.id ?? "massEffect", "summon.origin");
     if ( origin ) {
       const { collection, primaryId } = foundry.utils.parseUuid(origin);
       dnd5e.registry.summons.untrack(collection?.get?.(primaryId)?.uuid, this.uuid);
@@ -3504,7 +3505,7 @@ export default class Actor5e extends SystemDocumentMixin(Actor) {
    */
   updateBloodied(options) {
     const hp = this.system.attributes?.hp;
-    if ( !hp?.effectiveMax || (game.settings.get(game.system.id, "bloodied") === "none") ) return;
+    if ( !hp?.effectiveMax || (game.settings.get(game?.system?.id ?? "massEffect", "bloodied") === "none") ) return;
 
     const effect = this.effects.get(ActiveEffect5e.ID.BLOODIED);
     if ( hp.value > hp.effectiveMax * CONFIG.DND5E.bloodied.threshold ) return effect?.delete();
@@ -3527,9 +3528,9 @@ export default class Actor5e extends SystemDocumentMixin(Actor) {
    */
   updateEncumbrance(options) {
     const encumbrance = this.system.attributes?.encumbrance;
-    if ( !encumbrance || (game.settings.get(game.system.id, "encumbrance") === "none") ) return;
+    if ( !encumbrance || (game.settings.get(game?.system?.id ?? "massEffect", "encumbrance") === "none") ) return;
     const statuses = [];
-    const variant = game.settings.get(game.system.id, "encumbrance") === "variant";
+    const variant = game.settings.get(game?.system?.id ?? "massEffect", "encumbrance") === "variant";
     if ( encumbrance.value > encumbrance.thresholds.maximum ) statuses.push("exceedingCarryingCapacity");
     if ( (encumbrance.value > encumbrance.thresholds.heavilyEncumbered) && variant ) statuses.push("heavilyEncumbered");
     if ( (encumbrance.value > encumbrance.thresholds.encumbered) && variant ) statuses.push("encumbered");

@@ -206,7 +206,7 @@ export default class OrderActivity extends ActivityMixin(OrderActivityData) {
   _prepareUsageScaling(usageConfig, messageConfig, item) {
     // FIXME: No scaling happening here, but this is the only context we have both usageConfig and messageConfig.
     const { costs, craft, trade } = usageConfig;
-    messageConfig.data.flags[game.system.id].order = { costs, craft, trade };
+    messageConfig.data.flags[game?.system?.id ?? "massEffect"].order = { costs, craft, trade };
   }
 
   /* -------------------------------------------- */
@@ -220,7 +220,7 @@ export default class OrderActivity extends ActivityMixin(OrderActivityData) {
 
   /** @override */
   _usageChatButtons(message) {
-    const { costs } = message.data.flags[game.system.id].order;
+    const { costs } = message.data.flags[game?.system?.id ?? "massEffect"].order;
     if ( !costs.gold || costs.paid ) return [];
     return [{
       label: game.i18n.localize("DND5E.FACILITY.Costs.Automatic"),
@@ -237,7 +237,7 @@ export default class OrderActivity extends ActivityMixin(OrderActivityData) {
 
   /** @override */
   async _usageChatContext(message) {
-    const { costs, craft, trade } = message.data.flags[game.system.id].order;
+    const { costs, craft, trade } = message.data.flags[game?.system?.id ?? "massEffect"].order;
     const { type } = this.item.system;
     const supplements = [];
     if ( costs.days ) supplements.push(`
@@ -303,8 +303,8 @@ export default class OrderActivity extends ActivityMixin(OrderActivityData) {
    */
   static async #onPayOrder(event, target, message) {
     const { method } = target.dataset;
-    const order = message.getFlag(game.system.id, "order");
-    const config = foundry.utils.expandObject({ "data.flags[game.system.id].order": order });
+    const order = message.getFlag(game?.system?.id ?? "massEffect", "order");
+    const config = foundry.utils.expandObject({ "data.flags[game?.system?.id ?? "massEffect"].order": order });
     if ( method === "automatic" ) {
       try {
         await CurrencyManager.deductActorCurrency(this.actor, order.costs.gold, "gp", {
@@ -316,7 +316,7 @@ export default class OrderActivity extends ActivityMixin(OrderActivityData) {
         return;
       }
     }
-    foundry.utils.setProperty(config, "data.flags[game.system.id].order.costs.paid", true);
+    foundry.utils.setProperty(config, "data.flags[game?.system?.id ?? "massEffect"].order.costs.paid", true);
     const context = await this._usageChatContext(config);
     const content = await foundry.applications.handlebars.renderTemplate(this.metadata.usage.chatCard, context);
     await message.update({ content, flags: config.data.flags });

@@ -128,7 +128,7 @@ export default class ItemGrantAdvancement extends Advancement {
     const updates = {};
     for ( const item of data.items ) {
       this.actor.updateSource({items: [item]});
-      updates[item._id] = item.flags[game.system.id].sourceId;
+      updates[item._id] = item.flags[game?.system?.id ?? "massEffect"].sourceId;
     }
     this.updateSource({
       "value.ability": data.ability,

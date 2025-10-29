@@ -162,7 +162,7 @@ export default class RaceData extends ItemDataModel.mixin(AdvancementTemplate, I
 
   /** @override */
   _advancementToCreate(options) {
-    if ( game.settings.get(game.system.id, "rulesVersion") === "legacy" ) return [
+    if ( game.settings.get(game?.system?.id ?? "massEffect", "rulesVersion") === "legacy" ) return [
       { type: "AbilityScoreImprovement" },
       { type: "Size" },
       { type: "Trait", configuration: { grants: ["languages:standard:common"] } }

@@ -54,7 +54,7 @@ export default class OrderUsageDialog extends ActivityUsageDialog {
    * @protected
    */
   _prepareCostsContext(context, { days, gold }) {
-    const { duration } = game.settings.get(game.system.id, "bastionConfiguration");
+    const { duration } = game.settings.get(game?.system?.id ?? "massEffect", "bastionConfiguration");
     context.costs = {
       days: {
         field: new NumberField({ nullable: true, integer: true, min: 0, label: "DND5E.TimeDay" }),
@@ -175,7 +175,7 @@ export default class OrderUsageDialog extends ActivityUsageDialog {
       return;
     }
 
-    let { duration } = game.settings.get(game.system.id, "bastionConfiguration");
+    let { duration } = game.settings.get(game?.system?.id ?? "massEffect", "bastionConfiguration");
     if ( (this.activity.order === "craft") || (this.activity.order === "harvest") ) {
       await this._prepareCraftContext(context, options);
     }

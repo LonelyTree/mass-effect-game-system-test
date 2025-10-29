@@ -167,7 +167,7 @@ export default class EffectApplicationElement extends TargetedApplicationMixin(C
    */
   async _applyEffectToActor(effect, actor) {
     const concentration = this.chatMessage.getAssociatedActor()?.effects
-      .get(this.chatMessage.getFlag(game.system.id, "use.concentrationId"));
+      .get(this.chatMessage.getFlag(game?.system?.id ?? "massEffect", "use.concentrationId"));
     const origin = concentration ?? effect;
     if ( !game.user.isGM && !actor.isOwner ) {
       throw new Error(game.i18n.localize("DND5E.EffectApplyWarningOwnership"));
@@ -176,8 +176,8 @@ export default class EffectApplicationElement extends TargetedApplicationMixin(C
     const effectFlags = {
       flags: {
         dnd5e: {
-          scaling: this.chatMessage.getFlag(game.system.id, "scaling"),
-          spellLevel: this.chatMessage.getFlag(game.system.id, "use.spellLevel")
+          scaling: this.chatMessage.getFlag(game?.system?.id ?? "massEffect", "scaling"),
+          spellLevel: this.chatMessage.getFlag(game?.system?.id ?? "massEffect", "use.spellLevel")
         }
       }
     };
@@ -226,7 +226,7 @@ export default class EffectApplicationElement extends TargetedApplicationMixin(C
         Hooks.onError("EffectApplicationElement._applyEffectToToken", err, { notify: "warn", log: "warn" });
       }
     }
-    if ( game.settings.get(game.system.id, "autoCollapseChatTrays") !== "manual" ) {
+    if ( game.settings.get(game?.system?.id ?? "massEffect", "autoCollapseChatTrays") !== "manual" ) {
       this.querySelector(".collapsible").dispatchEvent(new PointerEvent("click", { bubbles: true, cancelable: true }));
     }
   }

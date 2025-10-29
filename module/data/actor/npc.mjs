@@ -519,7 +519,7 @@ export default class NPCData extends CreatureTemplate {
     if ( !max ) return "";
     const pr = getPluralRules().select(max);
     const rulesVersion = this.source?.rules
-      || (game.settings.get(game.system.id, "rulesVersion") === "modern" ? "2024" : "2014");
+      || (game.settings.get(game?.system?.id ?? "massEffect", "rulesVersion") === "modern" ? "2024" : "2014");
     return game.i18n.format(`DND5E.LegendaryAction.Description${rulesVersion === "2014" ? "Legacy" : ""}`, {
       name: name.toLowerCase(),
       uses: this.resources.lair.value ? game.i18n.format("DND5E.LegendaryAction.LairUses", {
@@ -559,10 +559,10 @@ export default class NPCData extends CreatureTemplate {
    */
   async resistSave(message) {
     if ( this.resources.legres.value === 0 ) throw new Error("No legendary resistances remaining.");
-    if ( message.flags[game.system.id]?.roll?.type !== "save" ) throw new Error("Chat message must contain a save roll.");
-    if ( message.flags[game.system.id]?.roll?.forceSuccess ) throw new Error("Save has already been resisted.");
+    if ( message.flags[game?.system?.id ?? "massEffect"]?.roll?.type !== "save" ) throw new Error("Chat message must contain a save roll.");
+    if ( message.flags[game?.system?.id ?? "massEffect"]?.roll?.forceSuccess ) throw new Error("Save has already been resisted.");
     await this.parent.update({ "system.resources.legres.spent": this.resources.legres.spent + 1 });
-    await message.setFlag(game.system.id, "roll.forceSuccess", true);
+    await message.setFlag(game?.system?.id ?? "massEffect", "roll.forceSuccess", true);
   }
 
   /* -------------------------------------------- */

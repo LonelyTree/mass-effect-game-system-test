@@ -686,7 +686,7 @@ function _convertSystemUnits(value, from, to, config, { message, strict }) {
  */
 export function defaultUnits(type) {
   const settingKey = type === "travel" ? "metricLengthUnits" : `metric${type.capitalize()}Units`;
-  return CONFIG.DND5E.defaultUnits[type]?.[game.settings.get(game.system.id, settingKey) ? "metric" : "imperial"];
+  return CONFIG.DND5E.defaultUnits[type]?.[game.settings.get(game?.system?.id ?? "massEffect", settingKey) ? "metric" : "imperial"];
 }
 
 /* -------------------------------------------- */

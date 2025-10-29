@@ -70,7 +70,7 @@ export default class InitiativeConfig extends BaseConfigSheet {
       alert: {
         field: new BooleanField({ label: game.i18n.localize("DND5E.FlagsAlert") }),
         name: `flags.${game.system.id}.',
-        value: source.flags[game.system.id]?.initiativeAlert
+        value: source.flags[game?.system?.id ?? "massEffect"]?.initiativeAlert
       }
     };
 

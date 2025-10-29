@@ -585,10 +585,10 @@ export function registerDeferredSettings() {
   });
 
   matchMedia("(prefers-color-scheme: dark)").addEventListener("change", () => {
-    setTheme(document.body, game.settings.get(game.system.id, "theme"));
+    setTheme(document.body, game.settings.get(game?.system?.id ?? "massEffect", "theme"));
   });
   matchMedia("(prefers-contrast: more)").addEventListener("change", () => {
-    setTheme(document.body, game.settings.get(game.system.id, "theme"));
+    setTheme(document.body, game.settings.get(game?.system?.id ?? "massEffect", "theme"));
   });
 
   // Hook into core color scheme setting.

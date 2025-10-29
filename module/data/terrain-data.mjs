@@ -26,7 +26,7 @@ export default class TerrainData5e extends foundry.data.TerrainData {
 
   /** @override */
   static resolveTerrainEffects(effects) {
-    const noAutomation = game.settings.get(game.system.id, "disableMovementAutomation");
+    const noAutomation = game.settings.get(game?.system?.id ?? "massEffect", "disableMovementAutomation");
     let data = super.resolveTerrainEffects(effects);
     if ( noAutomation || !effects.some(e => e.name === "difficultTerrain") ) return data;
     if ( !data ) return new this({ difficulty: 2, difficultTerrain: true });

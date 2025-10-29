@@ -183,7 +183,7 @@ export default class BaseActivityData extends foundry.abstract.DataModel {
    * @type {boolean}
    */
   get isScaledScroll() {
-    return !!this.item.getFlag(game.system.id, "spellLevel");
+    return !!this.item.getFlag(game?.system?.id ?? "massEffect", "spellLevel");
   }
 
   /* -------------------------------------------- */
@@ -424,7 +424,7 @@ export default class BaseActivityData extends foundry.abstract.DataModel {
    */
   static transformEffectsData(source, options) {
     return source.effects
-      .filter(e => !e.transfer && (e.type !== "enchantment") && (e.flags?.[game.system.id]?.type !== "enchantment"))
+      .filter(e => !e.transfer && (e.type !== "enchantment") && (e.flags?.[game?.system?.id ?? "massEffect"]?.type !== "enchantment"))
       .map(e => ({ _id: e._id }));
   }
 
@@ -734,7 +734,7 @@ export default class BaseActivityData extends foundry.abstract.DataModel {
       if ( this.item.system.damageBonus ) parts.push(String(this.item.system.damageBonus));
     }
 
-    const lastType = this.item.getFlag(game.system.id, `last.${this.id}.damageType.${index}`);
+    const lastType = this.item.getFlag(game?.system?.id ?? "massEffect", `last.${this.id}.damageType.${index}`);
 
     return {
       data, parts,

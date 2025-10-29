@@ -86,7 +86,7 @@ export default function ActivityMixin(Base) {
      * @type {boolean}
      */
     get canUse() {
-      return !this.item.getFlag(game.system.id, "riders.activity")?.includes(this.id);
+      return !this.item.getFlag(game?.system?.id ?? "massEffect", "riders.activity")?.includes(this.id);
     }
 
     /* -------------------------------------------- */
@@ -351,10 +351,10 @@ export default function ActivityMixin(Base) {
 
       const consumed = await this.#applyUsageUpdates(updates);
       if ( !foundry.utils.isEmpty(consumed) ) {
-        foundry.utils.setProperty(messageConfig, "data.flags[game.system.id].use.consumed", consumed);
+        foundry.utils.setProperty(messageConfig, "data.flags[game?.system?.id ?? "massEffect"].use.consumed", consumed);
       }
       if ( usageConfig.cause?.activity ) {
-        foundry.utils.setProperty(messageConfig, "data.flags[game.system.id].use.cause", usageConfig.cause.activity);
+        foundry.utils.setProperty(messageConfig, "data.flags[game?.system?.id ?? "massEffect"].use.cause", usageConfig.cause.activity);
       }
 
       /**
@@ -499,7 +499,7 @@ export default function ActivityMixin(Base) {
           || (!linked && hasSpellSlotConsumption);
       }
 
-      const levelingFlag = this.item.getFlag(game.system.id, "spellLevel");
+      const levelingFlag = this.item.getFlag(game?.system?.id ?? "massEffect", "spellLevel");
       if ( levelingFlag ) {
         // Handle fixed scaling from spell scrolls
         config.scaling = false;
@@ -526,13 +526,13 @@ export default function ActivityMixin(Base) {
         config.scaling ??= 0;
       }
 
-      if ( this.requiresConcentration && !game.settings.get(game.system.id, "disableConcentration") ) {
+      if ( this.requiresConcentration && !game.settings.get(game?.system?.id ?? "massEffect", "disableConcentration") ) {
         config.concentration ??= {};
         config.concentration.begin ??= true;
         const { effects } = this.actor.concentration;
         const limit = this.actor.system.attributes?.concentration?.limit ?? 0;
         if ( limit && (limit <= effects.size) ) config.concentration.end ??= effects.find(e => {
-          const data = e.flags[game.system.id]?.item?.data ?? {};
+          const data = e.flags[game?.system?.id ?? "massEffect"]?.item?.data ?? {};
           return (data === this.id) || (data._id === this.id);
         })?.id ?? effects.first()?.id ?? null;
       }
@@ -556,20 +556,20 @@ export default function ActivityMixin(Base) {
      * @protected
      */
     async _prepareUsageScaling(usageConfig, messageConfig, item) {
-      const levelingFlag = this.item.getFlag(game.system.id, "spellLevel");
+      const levelingFlag = this.item.getFlag(game?.system?.id ?? "massEffect", "spellLevel");
       if ( levelingFlag ) {
         usageConfig.scaling = Math.max(0, levelingFlag.value - levelingFlag.base);
       } else if ( this.isSpell ) {
         const level = this.actor.system.spells?.[usageConfig.spell?.slot]?.level;
         if ( level ) {
           usageConfig.scaling = level - item.system.level;
-          foundry.utils.setProperty(messageConfig, "data.flags[game.system.id].use.spellLevel", level);
+          foundry.utils.setProperty(messageConfig, "data.flags[game?.system?.id ?? "massEffect"].use.spellLevel", level);
         }
       }
 
       if ( usageConfig.scaling ) {
-        foundry.utils.setProperty(messageConfig, "data.flags[game.system.id].scaling", usageConfig.scaling);
-        if ( usageConfig.scaling !== item.flags[game.system.id]?.scaling ) {
+        foundry.utils.setProperty(messageConfig, "data.flags[game?.system?.id ?? "massEffect"].scaling", usageConfig.scaling);
+        if ( usageConfig.scaling !== item.flags[game?.system?.id ?? "massEffect"]?.scaling ) {
           item.actor._embeddedPreparation = true;
           item.updateSource({ `flags.${game.system.id}.': usageConfig.scaling });
           delete item.actor._embeddedPreparation;
@@ -665,7 +665,7 @@ export default function ActivityMixin(Base) {
             const otherLinkedActivity = linkedActivity.type === "forward"
               ? linkedActivity.item.system.activities.get(linkedActivity.activity.id) : linkedActivity;
             if ( updates.delete.includes(linkedActivity.item.id)
-              && (this.item.getFlag(game.system.id, "cachedFor") === otherLinkedActivity?.relativeUUID) ) {
+              && (this.item.getFlag(game?.system?.id ?? "massEffect", "cachedFor") === otherLinkedActivity?.relativeUUID) ) {
               updates.delete.push(this.item.id);
             }
           } else if ( results?.length ) {
@@ -756,7 +756,7 @@ export default function ActivityMixin(Base) {
 
       // Include spell level in the subtitle.
       if ( this.item.type === "spell" ) {
-        const spellLevel = foundry.utils.getProperty(message, "data.flags[game.system.id].use.spellLevel");
+        const spellLevel = foundry.utils.getProperty(message, "data.flags[game?.system?.id ?? "massEffect"].use.spellLevel");
         const { spellLevels, spellSchools } = CONFIG.DND5E;
         data.subtitle = [spellLevels[spellLevel], spellSchools[this.item.system.school]?.label].filterJoin(" &bull; ");
       }
@@ -840,7 +840,7 @@ export default function ActivityMixin(Base) {
      * @returns {boolean}
      */
     shouldHideChatButton(button, message) {
-      const flag = message.getFlag(game.system.id, "use.consumed");
+      const flag = message.getFlag(game?.system?.id ?? "massEffect", "use.consumed");
       switch ( button.dataset.action ) {
         case "consumeResource": return !!flag;
         case "refundResource": return !flag;
@@ -970,7 +970,7 @@ export default function ActivityMixin(Base) {
       }, {});
       if ( canUpdate && !foundry.utils.isEmpty(lastDamageTypes)
         && (this.actor && this.actor.items.has(this.item.id)) ) {
-        await this.item.setFlag(game.system.id, `last.${this.id}.damageType`, lastDamageTypes);
+        await this.item.setFlag(game?.system?.id ?? "massEffect", `last.${this.id}.damageType`, lastDamageTypes);
       }
 
       /**
@@ -1066,7 +1066,7 @@ export default function ActivityMixin(Base) {
      * @param {ChatMessage5e} message  Message associated with the activation.
      */
     async #onChatAction(event, target, message) {
-      const scaling = message.getFlag(game.system.id, "scaling") ?? 0;
+      const scaling = message.getFlag(game?.system?.id ?? "massEffect", "scaling") ?? 0;
       const item = scaling ? this.item.clone({ `flags.${game.system.id}.': scaling }, { keepId: true }) : this.item;
       const activity = item.system.activities.get(this.id);
 
@@ -1133,9 +1133,9 @@ export default function ActivityMixin(Base) {
      */
     async #consumeResource(event, target, message) {
       const messageConfig = {};
-      const scaling = message.getFlag(game.system.id, "scaling");
+      const scaling = message.getFlag(game?.system?.id ?? "massEffect", "scaling");
       const usageConfig = { consume: true, event, scaling };
-      const linkedActivity = this.getLinkedActivity(message.getFlag(game.system.id, "use.cause"));
+      const linkedActivity = this.getLinkedActivity(message.getFlag(game?.system?.id ?? "massEffect", "use.cause"));
       if ( linkedActivity ) usageConfig.cause = {
         activity: linkedActivity.relativeUUID, resources: linkedActivity.consumption.targets.length > 0
       };
@@ -1152,10 +1152,10 @@ export default function ActivityMixin(Base) {
      * @param {ChatMessage5e} message  Message associated with the activation.
      */
     async #refundResource(event, target, message) {
-      const consumed = message.getFlag(game.system.id, "use.consumed");
+      const consumed = message.getFlag(game?.system?.id ?? "massEffect", "use.consumed");
       if ( !foundry.utils.isEmpty(consumed) ) {
         await this.refund(consumed);
-        await message.unsetFlag(game.system.id, "use.consumed");
+        await message.unsetFlag(game?.system?.id ?? "massEffect", "use.consumed");
       }
     }
 
@@ -1209,7 +1209,7 @@ export default function ActivityMixin(Base) {
      */
     getLinkedActivity(relativeUUID) {
       if ( !this.actor ) return null;
-      relativeUUID ??= this.item.getFlag(game.system.id, "cachedFor");
+      relativeUUID ??= this.item.getFlag(game?.system?.id ?? "massEffect", "cachedFor");
       return fromUuidSync(relativeUUID, { relative: this.actor, strict: false });
     }
 

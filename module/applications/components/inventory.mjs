@@ -363,7 +363,7 @@ export default class InventoryElement extends HTMLElement {
       name: "DND5E.Scroll.CreateScroll",
       icon: '<i class="fa-solid fa-scroll"></i>',
       condition: () => {
-        const isSpell = (item.type === "spell") && !item.getFlag(game.system.id, "cachedFor");
+        const isSpell = (item.type === "spell") && !item.getFlag(game?.system?.id ?? "massEffect", "cachedFor");
         const canEdit = this.actor.isOwner && !this.actor.collection.locked;
         return isSpell && canEdit;
       },
@@ -403,7 +403,7 @@ export default class InventoryElement extends HTMLElement {
         const isPrepared = CONFIG.DND5E.spellcasting[item.system.method]?.prepares;
         const isAlways = item.system.prepared === CONFIG.DND5E.spellPreparationStates.always.value;
         const canEdit = item.isOwner && !compendiumLocked;
-        return !item.hasRecharge && isPrepared && !isAlways && canEdit && !item.getFlag(game.system.id, "cachedFor");
+        return !item.hasRecharge && isPrepared && !isAlways && canEdit && !item.getFlag(game?.system?.id ?? "massEffect", "cachedFor");
       },
       callback: li => this._onAction(li, "prepare"),
       group: "state"

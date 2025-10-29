@@ -364,7 +364,7 @@ export default class WeaponData extends ItemDataModel.mixin(
       });
     }
 
-    const isLight = this.properties.has("lgt") || (this.parent.actor?.getFlag(game.system.id, "enhancedDualWielding")
+    const isLight = this.properties.has("lgt") || (this.parent.actor?.getFlag(game?.system?.id ?? "massEffect", "enhancedDualWielding")
       && ((this.attackType === "melee") && !this.properties.has("two")));
 
     // Weapons with the "Light" property will have Offhand attack
@@ -455,7 +455,7 @@ export default class WeaponData extends ItemDataModel.mixin(
 
   /** @override */
   get criticalThreshold() {
-    return this.parent?.actor?.flags[game.system.id]?.weaponCriticalThreshold ?? Infinity;
+    return this.parent?.actor?.flags[game?.system?.id ?? "massEffect"]?.weaponCriticalThreshold ?? Infinity;
   }
 
   /* -------------------------------------------- */
@@ -543,7 +543,7 @@ export default class WeaponData extends ItemDataModel.mixin(
     const itemProf = config[this.type.value];
     const actorProfs = actor.system.traits?.weaponProf?.value ?? new Set();
     const natural = this.type.value === "natural";
-    const improvised = (this.type.value === "improv") && !!actor.getFlag(game.system.id, "tavernBrawlerFeat");
+    const improvised = (this.type.value === "improv") && !!actor.getFlag(game?.system?.id ?? "massEffect", "tavernBrawlerFeat");
     const isProficient = natural || improvised || actorProfs.has(itemProf) || actorProfs.has(this.type.baseItem);
     return Number(isProficient);
   }

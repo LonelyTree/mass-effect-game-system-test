@@ -62,7 +62,7 @@ export default class ItemDataModel extends SystemDataModel {
    * @type {Item5e|void}
    */
   get advancementRootItem() {
-    return this.parent?.actor?.items.get(this.parent.getFlag(game.system.id, "advancementRoot")?.split(".")?.[0]);
+    return this.parent?.actor?.items.get(this.parent.getFlag(game?.system?.id ?? "massEffect", "advancementRoot")?.split(".")?.[0]);
   }
 
   /* -------------------------------------------- */
@@ -140,7 +140,7 @@ export default class ItemDataModel extends SystemDataModel {
   prepareBaseData() {
     if ( this.parent.isEmbedded && this.parent.actor?.items.has(this.parent.id) ) {
       this.parent.actor.identifiedItems?.set(this.parent.identifier, this.parent);
-      const sourceId = this.parent.flags[game.system.id]?.sourceId ?? this.parent._stats.compendiumSource
+      const sourceId = this.parent.flags[game?.system?.id ?? "massEffect"]?.sourceId ?? this.parent._stats.compendiumSource
         ?? this.parent.flags.core?.sourceId;
       if ( sourceId ) this.parent.actor.sourcedItems?.set(sourceId, this.parent);
     }
@@ -200,7 +200,7 @@ export default class ItemDataModel extends SystemDataModel {
     const context = {
       name, type, img, price, weight, uses, school, materials,
       config: CONFIG.DND5E,
-      controlHints: game.settings.get(game.system.id, "controlHints"),
+      controlHints: game.settings.get(game?.system?.id ?? "massEffect", "controlHints"),
       labels: foundry.utils.deepClone((activity ?? this.parent).labels),
       tags: this.parent.labels?.components?.tags,
       subtitle: subtitle.filterJoin(" &bull; "),
@@ -211,7 +211,7 @@ export default class ItemDataModel extends SystemDataModel {
         chat: await TextEditor.enrichHTML(chat ?? "", {
           rollData, relativeTo: this.parent, ...enrichmentOptions
         }),
-        concealed: game.user.isGM && game.settings.get(game.system.id, "concealItemDescriptions") && !description.chat
+        concealed: game.user.isGM && game.settings.get(game?.system?.id ?? "massEffect", "concealItemDescriptions") && !description.chat
       }
     };
 

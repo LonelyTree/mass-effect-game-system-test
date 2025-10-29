@@ -191,7 +191,7 @@ export default class ActorSheet5eVehicle extends ActorSheet5e {
       this._prepareCrewedItem(item, ctx);
 
       // Handle cargo explicitly
-      const isCargo = item.flags[game.system.id]?.vehicleCargo === true;
+      const isCargo = item.flags[game?.system?.id ?? "massEffect"]?.vehicleCargo === true;
       if ( isCargo ) {
         cargo.cargo.items.push(item);
         continue;

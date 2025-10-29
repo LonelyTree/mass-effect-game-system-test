@@ -6,7 +6,7 @@ import ModuleArt from "../../module-art.mjs";
 export default class ModuleArtSettingsConfig extends FormApplication {
   /** @inheritDoc */
   constructor(object={}, options={}) {
-    object = foundry.utils.mergeObject(game.settings.get("dnd5e", "moduleArtConfiguration"), object, {inplace: false});
+    object = foundry.utils.mergeObject(game.settings.get(game.system.id, "moduleArtConfiguration"), object, {inplace: false});
     super(object, options);
   }
 
@@ -83,7 +83,7 @@ export default class ModuleArtSettingsConfig extends FormApplication {
 
   /** @inheritDoc */
   async _updateObject(event, formData) {
-    await game.settings.set("dnd5e", "moduleArtConfiguration", foundry.utils.expandObject(formData));
+    await game.settings.set(game.system.id, "moduleArtConfiguration", foundry.utils.expandObject(formData));
     return SettingsConfig.reloadConfirm({world: true});
   }
 }

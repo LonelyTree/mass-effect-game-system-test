@@ -489,8 +489,8 @@ export default class CharacterActorSheet extends BaseActorSheet {
     }
 
     // Visibility
-    context.showExperience = game.settings.get("dnd5e", "levelingMode") !== "noxp";
-    context.showRests = game.user.isGM || (this.actor.isOwner && game.settings.get("dnd5e", "allowRests"));
+    context.showExperience = game.settings.get(game.system.id, "levelingMode") !== "noxp";
+    context.showRests = game.user.isGM || (this.actor.isOwner && game.settings.get(game.system.id, "allowRests"));
 
     return context;
   }
@@ -611,7 +611,7 @@ export default class CharacterActorSheet extends BaseActorSheet {
   async _prepareTabsContext(context, options) {
     const { basic, special } = CONFIG.DND5E.facilities.advancement;
     const threshold = Math.min(...Object.keys(basic), ...Object.keys(special));
-    const showBastion = game.settings.get("dnd5e", "bastionConfiguration")?.enabled
+    const showBastion = game.settings.get(game.system.id, "bastionConfiguration")?.enabled
       && (this.actor.system.details.level >= threshold);
     if ( !showBastion && (this.tabGroups.primary === "bastion") ) this.tabGroups.primary = "details";
 
@@ -856,7 +856,7 @@ export default class CharacterActorSheet extends BaseActorSheet {
 
     super._prepareItemFeature(item, ctx);
 
-    const [originId] = (item.getFlag("dnd5e", "advancementRoot") ?? item.getFlag("dnd5e", "advancementOrigin"))
+    const [originId] = (item.getFlag(game.system.id, "advancementRoot") ?? item.getFlag(game.system.id, "advancementOrigin"))
       ?.split(".") ?? [];
     const group = this.actor.items.get(originId);
     ctx.groups.origin = "other";
@@ -1125,7 +1125,7 @@ export default class CharacterActorSheet extends BaseActorSheet {
 
   /** @override */
   _defaultDropBehavior(event, data) {
-    if ( data.dnd5e?.action === "favorite" || (["Activity", "Item"].includes(data.type)
+    if ( data.[game.system.id]?.action === "favorite" || (["Activity", "Item"].includes(data.type)
       && event.target.closest(".favorites")) ) return "link";
     return super._defaultDropBehavior(event, data);
   }
@@ -1149,8 +1149,8 @@ export default class CharacterActorSheet extends BaseActorSheet {
     game.tooltip.deactivate();
 
     const dragData = { dnd5e: { action: "favorite", type } };
-    if ( type === "slots" ) dragData.dnd5e.id = methods[method].getSpellSlotKey(Number(level));
-    else dragData.dnd5e.id = key;
+    if ( type === "slots" ) dragData.[game.system.id].id = methods[method].getSpellSlotKey(Number(level));
+    else dragData.[game.system.id].id = key;
     event.dataTransfer.setData("application/json", JSON.stringify(dragData));
     event.dataTransfer.effectAllowed = "link";
   }
@@ -1169,7 +1169,7 @@ export default class CharacterActorSheet extends BaseActorSheet {
       console.error(e);
       return;
     }
-    const { action, type, id } = data.dnd5e ?? {};
+    const { action, type, id } = data.[game.system.id] ?? {};
     if ( action === "favorite" ) return this._onDropFavorite(event, { type, id });
     if ( data.type === "Activity" ) {
       const activity = await fromUuid(data.uuid);
@@ -1258,7 +1258,7 @@ export default class CharacterActorSheet extends BaseActorSheet {
       const cls = this.actor.itemTypes.class.find(c => c.identifier === itemData.system.identifier);
       if ( cls ) {
         const priorLevel = cls.system.levels;
-        if ( !game.settings.get("dnd5e", "disableAdvancements") ) {
+        if ( !game.settings.get(game.system.id, "disableAdvancements") ) {
           const manager = AdvancementManager.forLevelChange(this.actor, cls.id, itemData.system.levels);
           if ( manager.steps.length ) {
             manager.render({ force: true });

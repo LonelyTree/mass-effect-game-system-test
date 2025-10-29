@@ -92,7 +92,7 @@ export default class GroupActorSheet extends MultiActorSheet {
    * @protected
    */
   async _prepareHeaderContext(context, options) {
-    context.showXP = game.settings.get("dnd5e", "levelingMode") !== "noxp";
+    context.showXP = game.settings.get(game.system.id, "levelingMode") !== "noxp";
     return context;
   }
 
@@ -196,7 +196,7 @@ export default class GroupActorSheet extends MultiActorSheet {
     const { pct, max, value } = actor.system.attributes.encumbrance;
     const defaultUnits = CONFIG.DND5E.encumbrance.baseUnits.default;
     const baseUnits = CONFIG.DND5E.encumbrance.baseUnits[actor.type] ?? defaultUnits;
-    const systemUnits = game.settings.get("dnd5e", "metricWeightUnits") ? "metric" : "imperial";
+    const systemUnits = game.settings.get(game.system.id, "metricWeightUnits") ? "metric" : "imperial";
     context.encumbrance = {
       pct,
       max: convertWeight(max, baseUnits[systemUnits], defaultUnits[systemUnits]),
@@ -267,7 +267,7 @@ export default class GroupActorSheet extends MultiActorSheet {
    */
   static #onAward() {
     new Award({
-      award: { savedDestinations: this.actor.getFlag("dnd5e", "awardDestinations") },
+      award: { savedDestinations: this.actor.getFlag(game.system.id, "awardDestinations") },
       origin: this.actor
     }).render({ force: true });
   }

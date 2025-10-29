@@ -123,8 +123,8 @@ export default class RequestMessageData extends ChatMessageDataModel {
   static async #handleRequest(event, target) {
     const actor = fromUuidSync(target.closest("[data-uuid]").dataset.uuid);
     const result = await CONFIG.DND5E.requests[this.handler](actor, this.parent, this.data, { event });
-    if ( (result instanceof ChatMessage) && !result.getFlag("dnd5e", "requestResult") ) {
-      return result.setFlag("dnd5e", "requestResult", { actorUuid: actor.uuid, requestId: this.parent.id });
+    if ( (result instanceof ChatMessage) && !result.getFlag(game.system.id, "requestResult") ) {
+      return result.setFlag(game.system.id, "requestResult", { actorUuid: actor.uuid, requestId: this.parent.id });
     }
   }
 
@@ -135,7 +135,7 @@ export default class RequestMessageData extends ChatMessageDataModel {
    * @param {ChatMessage5e} message  The created chat message.
    */
   static onCreateMessage(message) {
-    const flag = message.getFlag("dnd5e", "requestResult");
+    const flag = message.getFlag(game.system.id, "requestResult");
     if ( flag && (game.users.activeGM === game.user) ) RequestMessageData.#updateRequestTargets(message, flag);
   }
 
@@ -149,7 +149,7 @@ export default class RequestMessageData extends ChatMessageDataModel {
    * @param {string} userId
    */
   static onUpdateResultMessage(message, changes, options, userId) {
-    const flag = foundry.utils.getProperty(changes, "flags.dnd5e.requestResult");
+    const flag = foundry.utils.getProperty(changes, `flags.${game.system.id}.');
     if ( flag && (game.users.activeGM === game.user) ) RequestMessageData.#updateRequestTargets(message, flag);
   }
 

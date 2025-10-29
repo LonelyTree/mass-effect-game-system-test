@@ -407,7 +407,7 @@ export default class RollConfigurationDialog extends Dialog5e {
 
   /** @override */
   _onClose(options={}) {
-    if ( !options.dnd5e?.submitted ) this.#rolls = [];
+    if ( !options.[game.system.id]?.submitted ) this.#rolls = [];
   }
 
   /* -------------------------------------------- */

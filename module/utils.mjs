@@ -412,7 +412,7 @@ export function areKeysPressed(event, action) {
   addModifiers(MODIFIER_KEYS.CONTROL, event.ctrlKey);
   addModifiers("Meta", event.metaKey);
   addModifiers(MODIFIER_KEYS.SHIFT, event.shiftKey);
-  return game.keybindings.get("dnd5e", action).some(b => {
+  return game.keybindings.get(game.system.id, action).some(b => {
     if ( game.keyboard.downKeys.has(b.key) && b.modifiers.every(m => activeModifiers[m]) ) return true;
     if ( b.modifiers.length ) return false;
     return activeModifiers[b.key];
@@ -686,7 +686,7 @@ function _convertSystemUnits(value, from, to, config, { message, strict }) {
  */
 export function defaultUnits(type) {
   const settingKey = type === "travel" ? "metricLengthUnits" : `metric${type.capitalize()}Units`;
-  return CONFIG.DND5E.defaultUnits[type]?.[game.settings.get("dnd5e", settingKey) ? "metric" : "imperial"];
+  return CONFIG.DND5E.defaultUnits[type]?.[game.settings.get(game.system.id, settingKey) ? "metric" : "imperial"];
 }
 
 /* -------------------------------------------- */

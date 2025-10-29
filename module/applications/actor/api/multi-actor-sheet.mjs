@@ -78,7 +78,7 @@ export default class MultiActorSheet extends BaseActorSheet {
    * @protected
    */
   async _prepareMemberPortrait(actor, context) {
-    const showTokenPortrait = this.actor.getFlag("dnd5e", "showTokenPortrait");
+    const showTokenPortrait = this.actor.getFlag(game.system.id, "showTokenPortrait");
     const token = actor.isToken ? actor.token : actor.prototypeToken;
     const defaults = Actor.implementation.getDefaultArtwork(actor._source);
     let src = showTokenPortrait ? token.texture.src : actor.img;
@@ -208,7 +208,7 @@ export default class MultiActorSheet extends BaseActorSheet {
    */
   static addDocumentSheetConfigOptions(app, html) {
     const { document: doc } = app.options;
-    const showTokenPortrait = doc.getFlag("dnd5e", "showTokenPortrait");
+    const showTokenPortrait = doc.getFlag(game.system.id, "showTokenPortrait");
     const artOptions = {
       false: game.i18n.localize("DND5E.Group.Config.Art.portraits"),
       true: game.i18n.localize("DND5E.Group.Config.Art.tokens")
@@ -219,7 +219,7 @@ export default class MultiActorSheet extends BaseActorSheet {
       <div class="form-group">
         <label>${game.i18n.localize("DND5E.Group.Config.Art.Label")}</label>
         <div class="form-fields">
-          <select name="flags.dnd5e.showTokenPortrait" data-dtype="Boolean">
+          <select name=`flags.${game.system.id}.'>
             ${foundry.applications.handlebars.selectOptions(artOptions, { hash: { selected: showTokenPortrait } })}
           </select>
         </div>

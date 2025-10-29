@@ -29,9 +29,9 @@ export default class SheetConfig5e extends foundry.applications.apps.DocumentShe
     delete formData.defaultClass;
     this.object.update(formData);
 
-    if ( "flags.dnd5e.theme" in formData ) {
+    if ( `flags.${game.system.id}.' in formData ) {
       const sheet = this.object.sheet.element?.[0];
-      if ( sheet ) setTheme(sheet, formData["flags.dnd5e.theme"]);
+      if ( sheet ) setTheme(sheet, formData[`flags.${game.system.id}.']);
     }
   }
 }

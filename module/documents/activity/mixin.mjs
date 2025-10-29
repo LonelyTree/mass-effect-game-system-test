@@ -86,7 +86,7 @@ export default function ActivityMixin(Base) {
      * @type {boolean}
      */
     get canUse() {
-      return !this.item.getFlag("dnd5e", "riders.activity")?.includes(this.id);
+      return !this.item.getFlag(game.system.id, "riders.activity")?.includes(this.id);
     }
 
     /* -------------------------------------------- */
@@ -275,11 +275,11 @@ export default function ActivityMixin(Base) {
 
       // Create concentration effect & end previous effects
       if ( usageConfig.concentration?.begin ) {
-        const effect = await item.actor.beginConcentrating(activity, { "flags.dnd5e.scaling": usageConfig.scaling });
+        const effect = await item.actor.beginConcentrating(activity, { `flags.${game.system.id}.': usageConfig.scaling });
         if ( effect ) {
           results.effects ??= [];
           results.effects.push(effect);
-          foundry.utils.setProperty(messageConfig.data, "flags.dnd5e.use.concentrationId", effect.id);
+          foundry.utils.setProperty(messageConfig.data, `flags.${game.system.id}.', effect.id);
         }
         if ( usageConfig.concentration?.end ) {
           const deleted = await item.actor.endConcentration(usageConfig.concentration.end);
@@ -351,10 +351,10 @@ export default function ActivityMixin(Base) {
 
       const consumed = await this.#applyUsageUpdates(updates);
       if ( !foundry.utils.isEmpty(consumed) ) {
-        foundry.utils.setProperty(messageConfig, "data.flags.dnd5e.use.consumed", consumed);
+        foundry.utils.setProperty(messageConfig, "data.flags[game.system.id].use.consumed", consumed);
       }
       if ( usageConfig.cause?.activity ) {
-        foundry.utils.setProperty(messageConfig, "data.flags.dnd5e.use.cause", usageConfig.cause.activity);
+        foundry.utils.setProperty(messageConfig, "data.flags[game.system.id].use.cause", usageConfig.cause.activity);
       }
 
       /**
@@ -499,7 +499,7 @@ export default function ActivityMixin(Base) {
           || (!linked && hasSpellSlotConsumption);
       }
 
-      const levelingFlag = this.item.getFlag("dnd5e", "spellLevel");
+      const levelingFlag = this.item.getFlag(game.system.id, "spellLevel");
       if ( levelingFlag ) {
         // Handle fixed scaling from spell scrolls
         config.scaling = false;
@@ -526,13 +526,13 @@ export default function ActivityMixin(Base) {
         config.scaling ??= 0;
       }
 
-      if ( this.requiresConcentration && !game.settings.get("dnd5e", "disableConcentration") ) {
+      if ( this.requiresConcentration && !game.settings.get(game.system.id, "disableConcentration") ) {
         config.concentration ??= {};
         config.concentration.begin ??= true;
         const { effects } = this.actor.concentration;
         const limit = this.actor.system.attributes?.concentration?.limit ?? 0;
         if ( limit && (limit <= effects.size) ) config.concentration.end ??= effects.find(e => {
-          const data = e.flags.dnd5e?.item?.data ?? {};
+          const data = e.flags[game.system.id]?.item?.data ?? {};
           return (data === this.id) || (data._id === this.id);
         })?.id ?? effects.first()?.id ?? null;
       }
@@ -556,22 +556,22 @@ export default function ActivityMixin(Base) {
      * @protected
      */
     async _prepareUsageScaling(usageConfig, messageConfig, item) {
-      const levelingFlag = this.item.getFlag("dnd5e", "spellLevel");
+      const levelingFlag = this.item.getFlag(game.system.id, "spellLevel");
       if ( levelingFlag ) {
         usageConfig.scaling = Math.max(0, levelingFlag.value - levelingFlag.base);
       } else if ( this.isSpell ) {
         const level = this.actor.system.spells?.[usageConfig.spell?.slot]?.level;
         if ( level ) {
           usageConfig.scaling = level - item.system.level;
-          foundry.utils.setProperty(messageConfig, "data.flags.dnd5e.use.spellLevel", level);
+          foundry.utils.setProperty(messageConfig, "data.flags[game.system.id].use.spellLevel", level);
         }
       }
 
       if ( usageConfig.scaling ) {
-        foundry.utils.setProperty(messageConfig, "data.flags.dnd5e.scaling", usageConfig.scaling);
-        if ( usageConfig.scaling !== item.flags.dnd5e?.scaling ) {
+        foundry.utils.setProperty(messageConfig, "data.flags[game.system.id].scaling", usageConfig.scaling);
+        if ( usageConfig.scaling !== item.flags[game.system.id]?.scaling ) {
           item.actor._embeddedPreparation = true;
-          item.updateSource({ "flags.dnd5e.scaling": usageConfig.scaling });
+          item.updateSource({ `flags.${game.system.id}.': usageConfig.scaling });
           delete item.actor._embeddedPreparation;
           item.prepareFinalAttributes();
         }
@@ -665,7 +665,7 @@ export default function ActivityMixin(Base) {
             const otherLinkedActivity = linkedActivity.type === "forward"
               ? linkedActivity.item.system.activities.get(linkedActivity.activity.id) : linkedActivity;
             if ( updates.delete.includes(linkedActivity.item.id)
-              && (this.item.getFlag("dnd5e", "cachedFor") === otherLinkedActivity?.relativeUUID) ) {
+              && (this.item.getFlag(game.system.id, "cachedFor") === otherLinkedActivity?.relativeUUID) ) {
               updates.delete.push(this.item.id);
             }
           } else if ( results?.length ) {
@@ -756,7 +756,7 @@ export default function ActivityMixin(Base) {
 
       // Include spell level in the subtitle.
       if ( this.item.type === "spell" ) {
-        const spellLevel = foundry.utils.getProperty(message, "data.flags.dnd5e.use.spellLevel");
+        const spellLevel = foundry.utils.getProperty(message, "data.flags[game.system.id].use.spellLevel");
         const { spellLevels, spellSchools } = CONFIG.DND5E;
         data.subtitle = [spellLevels[spellLevel], spellSchools[this.item.system.school]?.label].filterJoin(" &bull; ");
       }
@@ -840,7 +840,7 @@ export default function ActivityMixin(Base) {
      * @returns {boolean}
      */
     shouldHideChatButton(button, message) {
-      const flag = message.getFlag("dnd5e", "use.consumed");
+      const flag = message.getFlag(game.system.id, "use.consumed");
       switch ( button.dataset.action ) {
         case "consumeResource": return !!flag;
         case "refundResource": return !flag;
@@ -970,7 +970,7 @@ export default function ActivityMixin(Base) {
       }, {});
       if ( canUpdate && !foundry.utils.isEmpty(lastDamageTypes)
         && (this.actor && this.actor.items.has(this.item.id)) ) {
-        await this.item.setFlag("dnd5e", `last.${this.id}.damageType`, lastDamageTypes);
+        await this.item.setFlag(game.system.id, `last.${this.id}.damageType`, lastDamageTypes);
       }
 
       /**
@@ -1066,8 +1066,8 @@ export default function ActivityMixin(Base) {
      * @param {ChatMessage5e} message  Message associated with the activation.
      */
     async #onChatAction(event, target, message) {
-      const scaling = message.getFlag("dnd5e", "scaling") ?? 0;
-      const item = scaling ? this.item.clone({ "flags.dnd5e.scaling": scaling }, { keepId: true }) : this.item;
+      const scaling = message.getFlag(game.system.id, "scaling") ?? 0;
+      const item = scaling ? this.item.clone({ `flags.${game.system.id}.': scaling }, { keepId: true }) : this.item;
       const activity = item.system.activities.get(this.id);
 
       const action = target.dataset.action;
@@ -1133,9 +1133,9 @@ export default function ActivityMixin(Base) {
      */
     async #consumeResource(event, target, message) {
       const messageConfig = {};
-      const scaling = message.getFlag("dnd5e", "scaling");
+      const scaling = message.getFlag(game.system.id, "scaling");
       const usageConfig = { consume: true, event, scaling };
-      const linkedActivity = this.getLinkedActivity(message.getFlag("dnd5e", "use.cause"));
+      const linkedActivity = this.getLinkedActivity(message.getFlag(game.system.id, "use.cause"));
       if ( linkedActivity ) usageConfig.cause = {
         activity: linkedActivity.relativeUUID, resources: linkedActivity.consumption.targets.length > 0
       };
@@ -1152,10 +1152,10 @@ export default function ActivityMixin(Base) {
      * @param {ChatMessage5e} message  Message associated with the activation.
      */
     async #refundResource(event, target, message) {
-      const consumed = message.getFlag("dnd5e", "use.consumed");
+      const consumed = message.getFlag(game.system.id, "use.consumed");
       if ( !foundry.utils.isEmpty(consumed) ) {
         await this.refund(consumed);
-        await message.unsetFlag("dnd5e", "use.consumed");
+        await message.unsetFlag(game.system.id, "use.consumed");
       }
     }
 
@@ -1209,7 +1209,7 @@ export default function ActivityMixin(Base) {
      */
     getLinkedActivity(relativeUUID) {
       if ( !this.actor ) return null;
-      relativeUUID ??= this.item.getFlag("dnd5e", "cachedFor");
+      relativeUUID ??= this.item.getFlag(game.system.id, "cachedFor");
       return fromUuidSync(relativeUUID, { relative: this.actor, strict: false });
     }
 

@@ -212,8 +212,8 @@ export default class CompendiumBrowserSettingsConfig extends Application5e {
         const { packageName, flags } = metadata;
         let tag = "";
         // Special case handling for D&D SRD.
-        if ( packageName === "dnd5e" ) {
-          tag = flags?.dnd5e?.sourceBook?.replace("SRD ", "");
+        if ( packageName === game.system.id ) {
+          tag = flags?.[game.system.id]?.sourceBook?.replace("SRD ", "");
         }
         return {
           tag, title,
@@ -334,8 +334,8 @@ export default class CompendiumBrowserSettingsConfig extends Application5e {
       case "package": packs = this._onTogglePackage(target); break;
       default: return;
     }
-    const setting = { ...game.settings.get("dnd5e", "packSourceConfiguration"), ...packs };
-    await game.settings.set("dnd5e", "packSourceConfiguration", setting);
+    const setting = { ...game.settings.get(game.system.id, "packSourceConfiguration"), ...packs };
+    await game.settings.set(game.system.id, "packSourceConfiguration", setting);
     this.render();
   }
 
@@ -378,7 +378,7 @@ export default class CompendiumBrowserSettingsConfig extends Application5e {
    */
   static collateSources() {
     const sources = new Set();
-    const setting = game.settings.get("dnd5e", "packSourceConfiguration");
+    const setting = game.settings.get(game.system.id, "packSourceConfiguration");
     for ( const { collection, documentName } of game.packs ) {
       if ( (documentName !== "Actor") && (documentName !== "Item") ) continue;
       if ( setting[collection] !== false ) sources.add(collection);

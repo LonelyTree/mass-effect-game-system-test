@@ -43,7 +43,7 @@ export default class CastActivity extends ActivityMixin(CastActivityData) {
    */
   get cachedSpell() {
     return this.actor?.sourcedItems.get(this.spell.uuid)
-      ?.find(i => i.getFlag("dnd5e", "cachedFor") === this.relativeUUID);
+      ?.find(i => i.getFlag(game.system.id, "cachedFor") === this.relativeUUID);
   }
 
   /* -------------------------------------------- */

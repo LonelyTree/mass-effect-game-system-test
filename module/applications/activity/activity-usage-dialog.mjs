@@ -154,7 +154,7 @@ export default class ActivityUsageDialog extends Dialog5e {
   /** @inheritDoc */
   async _prepareContext(options) {
     if ( "scaling" in this.config ) {
-      this.#item = this.#item.clone({ "flags.dnd5e.scaling": this.config.scaling }, { keepId: true });
+      this.#item = this.#item.clone({ `flags.${game.system.id}.': this.config.scaling }, { keepId: true });
     }
     return {
       ...await super._prepareContext(options),
@@ -187,7 +187,7 @@ export default class ActivityUsageDialog extends Dialog5e {
    * @protected
    */
   async _prepareConcentrationContext(context, options) {
-    if ( !this.activity.requiresConcentration || game.settings.get("dnd5e", "disableConcentration")
+    if ( !this.activity.requiresConcentration || game.settings.get(game.system.id, "disableConcentration")
       || !this._shouldDisplay("concentration") ) return context;
     context.hasConcentration = true;
     context.notes = [];
@@ -200,7 +200,7 @@ export default class ActivityUsageDialog extends Dialog5e {
     }];
     if ( this.config.concentration?.begin ) {
       const existingConcentration = Array.from(this.actor.concentration.effects).map(effect => {
-        const data = effect.getFlag("dnd5e", "item");
+        const data = effect.getFlag(game.system.id, "item");
         return {
           value: effect.id,
           label: data?.data?.name ?? this.actor.items.get(data?.id)?.name

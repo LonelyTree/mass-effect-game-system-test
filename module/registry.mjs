@@ -225,8 +225,8 @@ class MessageRegistry {
    * @param {ChatMessage5e} message  Message to add to the registry.
    */
   static track(message) {
-    const origin = message.getFlag("dnd5e", "originatingMessage");
-    const type = message.getFlag("dnd5e", "roll.type");
+    const origin = message.getFlag(game.system.id, "originatingMessage");
+    const type = message.getFlag(game.system.id, "roll.type");
     if ( !origin || !type ) return;
     if ( !MessageRegistry.#messages.has(origin) ) MessageRegistry.#messages.set(origin, new Map());
     const originMap = MessageRegistry.#messages.get(origin);
@@ -241,8 +241,8 @@ class MessageRegistry {
    * @param {ChatMessage5e} message  Message to remove from the registry.
    */
   static untrack(message) {
-    const origin = message.getFlag("dnd5e", "originatingMessage");
-    const type = message.getFlag("dnd5e", "roll.type");
+    const origin = message.getFlag(game.system.id, "originatingMessage");
+    const type = message.getFlag(game.system.id, "roll.type");
     MessageRegistry.#messages.get(origin)?.get(type)?.delete(message.id);
   }
 }

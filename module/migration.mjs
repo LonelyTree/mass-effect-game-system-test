@@ -174,7 +174,7 @@ export async function migrateWorld({ bypassVersionCheck=false }={}) {
   if ( legacyFolder ) legacyFolder.update({ name: "D&D Legacy Content" });
 
   // Set the migration as complete
-  game.settings.set("dnd5e", "systemMigrationVersion", game.system.version);
+  game.settings.set(game.system.id, "systemMigrationVersion", game.system.version);
   progress.element?.classList.add(hasErrors ? "warning" : "success");
   progress.update({ message: "MIGRATION.5eComplete", format: { version }, pct: 1 });
 }
@@ -429,7 +429,7 @@ export async function migrateSettings() {
     ?.find(s => s.key === "dnd5e.disableExperienceTracking")?.value;
   const levelingMode = game.settings.storage.get("world")?.find(s => s.key === "dnd5e.levelingMode")?.value;
   if ( (disableExperienceTracking !== undefined) && (levelingMode === undefined) ) {
-    await game.settings.set("dnd5e", "levelingMode", "noxp");
+    await game.settings.set(game.system.id, "levelingMode", "noxp");
   }
 }
 
@@ -532,11 +532,11 @@ export function migrateItemData(item, itemData, migrationData, flags={}) {
 
   // Migrate embedded effects
   if ( itemData.effects ) {
-    const riders = foundry.utils.getProperty(itemData, "flags.dnd5e.riders.effect");
-    if ( riders?.length ) updateData["flags.dnd5e.riders.effect"] = riders;
+    const riders = foundry.utils.getProperty(itemData, `flags.${game.system.id}.riders.effect`);
+    if ( riders?.length ) updateData[`flags.${game.system.id}.riders.effect`] = riders;
     const effects = migrateEffects(itemData, migrationData, updateData, flags);
-    if ( riders?.length === updateData["flags.dnd5e.riders.effect"]?.length ) {
-      delete updateData["flags.dnd5e.riders.effect"];
+    if ( riders?.length === updateData[`flags.${game.system.id}.riders.effect`]?.length ) {
+      delete updateData[`flags.${game.system.id}.riders.effect`];
     }
     if ( effects.length > 0 ) updateData.effects = effects;
   }
@@ -550,18 +550,18 @@ export function migrateItemData(item, itemData, migrationData, flags={}) {
   }
 
   // Migrate properties
-  const migratedProperties = foundry.utils.getProperty(itemData, "flags.dnd5e.migratedProperties");
+  const migratedProperties = foundry.utils.getProperty(itemData, `flags.${game.system.id}.migratedProperties`);
   if ( migratedProperties?.length ) {
     flags.persistSourceMigration = true;
     const properties = new Set(foundry.utils.getProperty(itemData, "system.properties") ?? [])
       .union(new Set(migratedProperties));
     updateData["system.properties"] = Array.from(properties);
-    updateData["flags.dnd5e.-=migratedProperties"] = null;
+    updateData[`flags.${game.system.id}.-=migratedProperties`] = null;
   }
 
-  if ( foundry.utils.getProperty(itemData, "flags.dnd5e.persistSourceMigration") ) {
+  if ( foundry.utils.getProperty(itemData, `flags.${game.system.id}.persistSourceMigration`) ) {
     flags.persistSourceMigration = true;
-    updateData["flags.dnd5e.-=persistSourceMigration"] = null;
+    updateData[`flags.${game.system.id}.-=persistSourceMigration`] = null;
   }
 
   return updateData;
@@ -582,14 +582,14 @@ export function migrateEffects(parent, migrationData, itemUpdateData, flags={}) 
   return parent.effects.reduce((arr, e) => {
     const effectData = e instanceof CONFIG.ActiveEffect.documentClass ? e.toObject() : e;
     let effectUpdate = migrateEffectData(effectData, migrationData, { parent });
-    if ( effectData.flags?.dnd5e?.rider ) {
-      itemUpdateData["flags.dnd5e.riders.effect"] ??= [];
-      itemUpdateData["flags.dnd5e.riders.effect"].push(effectData._id);
-      effectUpdate["flags.dnd5e.-=rider"] = null;
+    if ( effectData.flags?.[game.system.id]?.rider ) {
+      itemUpdateData[`flags.${game.system.id}.riders.effect`] ??= [];
+      itemUpdateData[`flags.${game.system.id}.riders.effect`].push(effectData._id);
+      effectUpdate[`flags.${game.system.id}.-=rider`] = null;
     }
-    if ( effectData.flags?.dnd5e?.persistSourceMigration ) {
+    if ( effectData.flags?.[game.system.id]?.persistSourceMigration ) {
       flags.persistSourceMigration = true;
-      effectUpdate["flags.dnd5e.-=persistSourceMigration"] = null;
+      effectUpdate[`flags.${game.system.id}.-=persistSourceMigration`] = null;
     }
     if ( !foundry.utils.isEmpty(effectUpdate) ) {
       effectUpdate._id = effectData._id;
@@ -803,11 +803,11 @@ function _migrateActorAC(actorData, updateData) {
  * @private
  */
 function _migrateActorFlags(actorData, updateData) {
-  const initiativeAdv = foundry.utils.getProperty(actorData, "flags.dnd5e.initiativeAdv");
+  const initiativeAdv = foundry.utils.getProperty(actorData, `flags.${game.system.id}.initiativeAdv`);
   if ( initiativeAdv ) {
     const key = "system.attributes.init.roll.mode";
     updateData[key] = Math.min(1, (foundry.utils.getProperty(actorData, key) ?? 0) + 1);
-    updateData["flags.dnd5e.-=initiativeAdv"] = null;
+    updateData[`flags.${game.system.id}.-=initiativeAdv`] = null;
   }
   return updateData;
 }
@@ -908,13 +908,13 @@ function _migrateEffectArmorClass(effect, updateData) {
  * @param {object} flags       Track the needs migration flag.
  */
 function _migrateItemUses(item, itemData, updateData, flags) {
-  const value = foundry.utils.getProperty(itemData, "flags.dnd5e.migratedUses");
+  const value = foundry.utils.getProperty(itemData, `flags.${game.system.id}.migratedUses`);
   const max = foundry.utils.getProperty(item, "system.uses.max");
   if ( (value !== undefined) && (max !== undefined) && Number.isNumeric(value) && Number.isNumeric(max) ) {
     foundry.utils.setProperty(updateData, "system.uses.spent", parseInt(max) - parseInt(value));
     flags.persistSourceMigration = true;
   }
-  if ( value !== undefined ) updateData["flags.dnd5e.-=migratedUses"] = null;
+  if ( value !== undefined ) updateData[`flags.${game.system.id}.-=migratedUses`] = null;
 }
 
 /* -------------------------------------------- */
@@ -948,10 +948,10 @@ function _migrateTransferEffect(effect, parent, updateData) {
  * @returns {object}           The updateData to apply.
  */
 function _migrateMacroCommands(macro, updateData) {
-  if ( macro.command.includes("game.dnd5e.rollItemMacro") ) {
-    updateData.command = macro.command.replaceAll("game.dnd5e.rollItemMacro", "dnd5e.documents.macro.rollItem");
-  } else if ( macro.command.includes("game.dnd5e.macros.") ) {
-    updateData.command = macro.command.replaceAll("game.dnd5e.macros.", "dnd5e.documents.macro.");
+  if ( macro.command.includes("game.[game.system.id].rollItemMacro") ) {
+    updateData.command = macro.command.replaceAll("game.[game.system.id].rollItemMacro", "dnd5e.documents.macro.rollItem");
+  } else if ( macro.command.includes("game.[game.system.id].macros.") ) {
+    updateData.command = macro.command.replaceAll("game.[game.system.id].macros.", "dnd5e.documents.macro.");
   }
   return updateData;
 }
@@ -965,7 +965,7 @@ function _migrateMacroCommands(macro, updateData) {
  */
 export async function purgeFlags(pack) {
   const cleanFlags = flags => {
-    const flags5e = flags.dnd5e || null;
+    const flags5e = flags[game.system.id] || null;
     return flags5e ? {dnd5e: flags5e} : {};
   };
   await pack.configure({locked: false});

@@ -166,7 +166,7 @@ export default class BasicRoll extends Roll {
     }
 
     // Store the roll type in roll.options so it can be accessed from only the roll
-    const rollType = foundry.utils.getProperty(message, "data.flags.dnd5e.roll.type");
+    const rollType = foundry.utils.getProperty(message, "data.flags[game.system.id].roll.type");
     if ( rollType ) rolls.forEach(roll => roll.options.rollType ??= rollType);
 
     /**
@@ -216,7 +216,7 @@ export default class BasicRoll extends Roll {
   static async buildPost(rolls, config, message) {
     message.data = foundry.utils.expandObject(message.data ?? {});
     const messageId = config.event?.target.closest("[data-message-id]")?.dataset.messageId;
-    if ( messageId ) foundry.utils.setProperty(message.data, "flags.dnd5e.originatingMessage", messageId);
+    if ( messageId ) foundry.utils.setProperty(message.data, `flags.${game.system.id}.', messageId);
 
     if ( rolls?.length && (config.evaluate !== false) ) {
       message[message.create !== false ? "document" : "data"] = await this.toMessage(

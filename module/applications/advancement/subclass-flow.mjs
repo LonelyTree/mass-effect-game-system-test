@@ -27,7 +27,7 @@ export default class SubclassFlow extends AdvancementFlow {
   /** @inheritDoc */
   async retainData(data) {
     await super.retainData(data);
-    const uuid = foundry.utils.getProperty(data, "flags.dnd5e.sourceId");
+    const uuid = foundry.utils.getProperty(data, `flags.${game.system.id}.');
     if ( uuid ) this.subclass = await fromUuid(uuid);
   }
 

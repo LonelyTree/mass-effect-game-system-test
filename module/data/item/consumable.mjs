@@ -259,7 +259,7 @@ export default class ConsumableData extends ItemDataModel.mixin(
    * @returns {number}
    */
   get proficiencyMultiplier() {
-    const isProficient = this.parent?.actor?.getFlag("dnd5e", "tavernBrawlerFeat");
+    const isProficient = this.parent?.actor?.getFlag(game.system.id, "tavernBrawlerFeat");
     return isProficient ? 1 : 0;
   }
 
@@ -309,7 +309,7 @@ export default class ConsumableData extends ItemDataModel.mixin(
   /** @inheritDoc */
   getRollData(...options) {
     const data = super.getRollData(...options);
-    const spellLevel = this.parent.getFlag("dnd5e", "spellLevel");
+    const spellLevel = this.parent.getFlag(game.system.id, "spellLevel");
     if ( spellLevel ) data.item.level = spellLevel.value ?? spellLevel.base;
     return data;
   }

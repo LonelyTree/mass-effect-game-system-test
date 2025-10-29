@@ -21,8 +21,9 @@ export default function SystemFlagsMixin(Base) {
     /** @inheritDoc */
     prepareData() {
       super.prepareData();
-      if ( ("dnd5e" in this.flags) && this._systemFlagsDataModel ) {
-        this.flags.dnd5e = new this._systemFlagsDataModel(this._source.flags.dnd5e, { parent: this });
+      const flagScope = game.system.id;
+      if ( (flagScope in this.flags) && this._systemFlagsDataModel ) {
+        this.flags[flagScope] = new this._systemFlagsDataModel(this._source.flags[flagScope], { parent: this });
       }
     }
 
@@ -30,12 +31,13 @@ export default function SystemFlagsMixin(Base) {
 
     /** @inheritDoc */
     async setFlag(scope, key, value) {
-      if ( (scope === "dnd5e") && this._systemFlagsDataModel ) {
+      const flagScope = game.system.id;
+      if ( (scope === flagScope) && this._systemFlagsDataModel ) {
         let diff;
         const changes = foundry.utils.expandObject({ [key]: value });
-        if ( this.flags.dnd5e ) diff = this.flags.dnd5e.updateSource(changes, { dryRun: true });
+        if ( this.flags[flagScope] ) diff = this.flags[flagScope].updateSource(changes, { dryRun: true });
         else diff = new this._systemFlagsDataModel(changes, { parent: this }).toObject();
-        return this.update({ flags: { dnd5e: diff } });
+        return this.update({ flags: { [flagScope]: diff } });
       }
       return super.setFlag(scope, key, value);
     }

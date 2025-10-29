@@ -13,27 +13,27 @@ import * as LEGACY from "./config-legacy.mjs";
  * Register all of the system's keybindings.
  */
 export function registerSystemKeybindings() {
-  game.keybindings.register("dnd5e", "skipDialogNormal", {
+  game.keybindings.register(game.system.id, "skipDialogNormal", {
     name: "KEYBINDINGS.DND5E.SkipDialogNormal",
     editable: [{ key: "ShiftLeft" }, { key: "ShiftRight" }]
   });
 
-  game.keybindings.register("dnd5e", "skipDialogAdvantage", {
+  game.keybindings.register(game.system.id, "skipDialogAdvantage", {
     name: "KEYBINDINGS.DND5E.SkipDialogAdvantage",
     editable: [{ key: "AltLeft" }, { key: "AltRight" }]
   });
 
-  game.keybindings.register("dnd5e", "skipDialogDisadvantage", {
+  game.keybindings.register(game.system.id, "skipDialogDisadvantage", {
     name: "KEYBINDINGS.DND5E.SkipDialogDisadvantage",
     editable: [{ key: "ControlLeft" }, { key: "ControlRight" }, { key: "OsLeft" }, { key: "OsRight" }]
   });
 
-  game.keybindings.register("dnd5e", "dragCopy", {
+  game.keybindings.register(game.system.id, "dragCopy", {
     name: "KEYBINDINGS.DND5E.DragCopy",
     editable: [{ key: "ControlLeft" }, { key: "ControlRight" }, { key: "AltLeft" }, { key: "AltRight" }]
   });
 
-  game.keybindings.register("dnd5e", "dragMove", {
+  game.keybindings.register(game.system.id, "dragMove", {
     name: "KEYBINDINGS.DND5E.DragMove",
     editable: [{ key: "ShiftLeft" }, { key: "ShiftRight" }, { key: "OsLeft" }, { key: "OsRight" }]
   });
@@ -46,7 +46,7 @@ export function registerSystemKeybindings() {
  */
 export function registerSystemSettings() {
   // Internal System Migration Version
-  game.settings.register("dnd5e", "systemMigrationVersion", {
+  game.settings.register(game.system.id, "systemMigrationVersion", {
     name: "System Migration Version",
     scope: "world",
     config: false,
@@ -55,14 +55,14 @@ export function registerSystemSettings() {
   });
 
   // Polymorph Settings
-  game.settings.register("dnd5e", "transformationSettings", {
+  game.settings.register(game.system.id, "transformationSettings", {
     scope: "client",
     config: false,
     type: TransformationSetting
   });
 
   // Rules version
-  game.settings.register("dnd5e", "rulesVersion", {
+  game.settings.register(game.system.id, "rulesVersion", {
     name: "SETTINGS.DND5E.RULESVERSION.Name",
     hint: "SETTINGS.DND5E.RULESVERSION.Hint",
     scope: "world",
@@ -77,7 +77,7 @@ export function registerSystemSettings() {
   });
 
   // Movement automation
-  game.settings.register("dnd5e", "disableMovementAutomation", {
+  game.settings.register(game.system.id, "disableMovementAutomation", {
     name: "SETTINGS.DND5E.AUTOMATION.Movement.Name",
     hint: "SETTINGS.DND5E.AUTOMATION.Movement.Hint",
     scope: "world",
@@ -87,7 +87,7 @@ export function registerSystemSettings() {
   });
 
   // Allow rotating square templates
-  game.settings.register("dnd5e", "gridAlignedSquareTemplates", {
+  game.settings.register(game.system.id, "gridAlignedSquareTemplates", {
     name: "SETTINGS.5eGridAlignedSquareTemplatesN",
     hint: "SETTINGS.5eGridAlignedSquareTemplatesL",
     scope: "world",
@@ -97,7 +97,7 @@ export function registerSystemSettings() {
   });
 
   // Loyalty
-  game.settings.register("dnd5e", "loyaltyScore", {
+  game.settings.register(game.system.id, "loyaltyScore", {
     name: "SETTINGS.DND5E.LOYALTY.Name",
     hint: "SETTINGS.DND5E.LOYALTY.Hint",
     scope: "world",
@@ -107,7 +107,7 @@ export function registerSystemSettings() {
   });
 
   // Disable Advancements
-  game.settings.register("dnd5e", "disableAdvancements", {
+  game.settings.register(game.system.id, "disableAdvancements", {
     name: "SETTINGS.5eNoAdvancementsN",
     hint: "SETTINGS.5eNoAdvancementsL",
     scope: "world",
@@ -117,7 +117,7 @@ export function registerSystemSettings() {
   });
 
   // Disable Concentration Tracking
-  game.settings.register("dnd5e", "disableConcentration", {
+  game.settings.register(game.system.id, "disableConcentration", {
     name: "SETTINGS.5eNoConcentrationN",
     hint: "SETTINGS.5eNoConcentrationL",
     scope: "world",
@@ -127,7 +127,7 @@ export function registerSystemSettings() {
   });
 
   // Collapse Item Cards (by default)
-  game.settings.register("dnd5e", "autoCollapseItemCards", {
+  game.settings.register(game.system.id, "autoCollapseItemCards", {
     name: "SETTINGS.5eAutoCollapseCardN",
     hint: "SETTINGS.5eAutoCollapseCardL",
     scope: "client",
@@ -140,7 +140,7 @@ export function registerSystemSettings() {
   });
 
   // Collapse Chat Card Trays
-  game.settings.register("dnd5e", "autoCollapseChatTrays", {
+  game.settings.register(game.system.id, "autoCollapseChatTrays", {
     name: "SETTINGS.DND5E.COLLAPSETRAYS.Name",
     hint: "SETTINGS.DND5E.COLLAPSETRAYS.Hint",
     scope: "client",
@@ -156,7 +156,7 @@ export function registerSystemSettings() {
   });
 
   // Allow Rests from Sheet
-  game.settings.register("dnd5e", "allowRests", {
+  game.settings.register(game.system.id, "allowRests", {
     name: "SETTINGS.DND5E.PERMISSIONS.AllowRests.Name",
     hint: "SETTINGS.DND5E.PERMISSIONS.AllowRests.Hint",
     scope: "world",
@@ -166,7 +166,7 @@ export function registerSystemSettings() {
   });
 
   // Allow Polymorphing
-  game.settings.register("dnd5e", "allowPolymorphing", {
+  game.settings.register(game.system.id, "allowPolymorphing", {
     name: "SETTINGS.DND5E.PERMISSIONS.AllowTransformation.Name",
     hint: "SETTINGS.DND5E.PERMISSIONS.AllowTransformation.Hint",
     scope: "world",
@@ -176,7 +176,7 @@ export function registerSystemSettings() {
   });
 
   // Allow Summoning
-  game.settings.register("dnd5e", "allowSummoning", {
+  game.settings.register(game.system.id, "allowSummoning", {
     name: "SETTINGS.DND5E.PERMISSIONS.AllowSummoning.Name",
     hint: "SETTINGS.DND5E.PERMISSIONS.AllowSummoning.Hint",
     scope: "world",
@@ -186,7 +186,7 @@ export function registerSystemSettings() {
   });
 
   // Metric Length Weights
-  game.settings.register("dnd5e", "metricLengthUnits", {
+  game.settings.register(game.system.id, "metricLengthUnits", {
     name: "SETTINGS.DND5E.METRIC.LengthUnits.Name",
     hint: "SETTINGS.DND5E.METRIC.LengthUnits.Hint",
     scope: "world",
@@ -196,7 +196,7 @@ export function registerSystemSettings() {
   });
 
   // Metric Volume Weights
-  game.settings.register("dnd5e", "metricVolumeUnits", {
+  game.settings.register(game.system.id, "metricVolumeUnits", {
     name: "SETTINGS.DND5E.METRIC.VolumeUnits.Name",
     hint: "SETTINGS.DND5E.METRIC.VolumeUnits.Hint",
     scope: "world",
@@ -206,7 +206,7 @@ export function registerSystemSettings() {
   });
 
   // Metric Unit Weights
-  game.settings.register("dnd5e", "metricWeightUnits", {
+  game.settings.register(game.system.id, "metricWeightUnits", {
     name: "SETTINGS.DND5E.METRIC.WeightUnits.Name",
     hint: "SETTINGS.DND5E.METRIC.WeightUnits.Hint",
     scope: "world",
@@ -216,7 +216,7 @@ export function registerSystemSettings() {
   });
 
   // Strict validation
-  game.settings.register("dnd5e", "strictValidation", {
+  game.settings.register(game.system.id, "strictValidation", {
     scope: "world",
     config: false,
     type: Boolean,
@@ -224,7 +224,7 @@ export function registerSystemSettings() {
   });
 
   // Dynamic art.
-  game.settings.registerMenu("dnd5e", "moduleArtConfiguration", {
+  game.settings.registerMenu(game.system.id, "moduleArtConfiguration", {
     name: "DND5E.ModuleArtConfigN",
     label: "DND5E.ModuleArtConfigL",
     hint: "DND5E.ModuleArtConfigH",
@@ -233,7 +233,7 @@ export function registerSystemSettings() {
     restricted: true
   });
 
-  game.settings.register("dnd5e", "moduleArtConfiguration", {
+  game.settings.register(game.system.id, "moduleArtConfiguration", {
     name: "Module Art Configuration",
     scope: "world",
     config: false,
@@ -247,7 +247,7 @@ export function registerSystemSettings() {
   });
 
   // Compendium Browser source exclusion
-  game.settings.registerMenu("dnd5e", "packSourceConfiguration", {
+  game.settings.registerMenu(game.system.id, "packSourceConfiguration", {
     name: "DND5E.CompendiumBrowser.Sources.Name",
     label: "DND5E.CompendiumBrowser.Sources.Label",
     hint: "DND5E.CompendiumBrowser.Sources.Hint",
@@ -256,7 +256,7 @@ export function registerSystemSettings() {
     restricted: true
   });
 
-  game.settings.register("dnd5e", "packSourceConfiguration", {
+  game.settings.register(game.system.id, "packSourceConfiguration", {
     name: "Pack Source Configuration",
     scope: "world",
     config: false,
@@ -265,7 +265,7 @@ export function registerSystemSettings() {
   });
 
   // Bastions
-  game.settings.registerMenu("dnd5e", "bastionConfiguration", {
+  game.settings.registerMenu(game.system.id, "bastionConfiguration", {
     name: "DND5E.Bastion.Configuration.Name",
     label: "DND5E.Bastion.Configuration.Label",
     hint: "DND5E.Bastion.Configuration.Hint",
@@ -274,7 +274,7 @@ export function registerSystemSettings() {
     restricted: true
   });
 
-  game.settings.register("dnd5e", "bastionConfiguration", {
+  game.settings.register(game.system.id, "bastionConfiguration", {
     name: "Bastion Configuration",
     scope: "world",
     config: false,
@@ -284,11 +284,11 @@ export function registerSystemSettings() {
       enabled: false,
       duration: 7
     },
-    onChange: () => game.dnd5e.bastion.initializeUI()
+    onChange: () => game.[game.system.id].bastion.initializeUI()
   });
 
   // Combat Settings
-  game.settings.registerMenu("dnd5e", "combatConfiguration", {
+  game.settings.registerMenu(game.system.id, "combatConfiguration", {
     name: "SETTINGS.DND5E.COMBAT.Name",
     label: "SETTINGS.DND5E.COMBAT.Label",
     hint: "SETTINGS.DND5E.COMBAT.Hint",
@@ -297,7 +297,7 @@ export function registerSystemSettings() {
     restricted: true
   });
 
-  game.settings.register("dnd5e", "autoRecharge", {
+  game.settings.register(game.system.id, "autoRecharge", {
     name: "SETTINGS.DND5E.NPCS.AutoRecharge.Name",
     hint: "SETTINGS.DND5E.NPCS.AutoRecharge.Hint",
     scope: "world",
@@ -311,7 +311,7 @@ export function registerSystemSettings() {
     }
   });
 
-  game.settings.register("dnd5e", "autoRollNPCHP", {
+  game.settings.register(game.system.id, "autoRollNPCHP", {
     name: "SETTINGS.DND5E.NPCS.AutoRollNPCHP.Name",
     hint: "SETTINGS.DND5E.NPCS.AutoRollNPCHP.Hint",
     scope: "world",
@@ -325,7 +325,7 @@ export function registerSystemSettings() {
     }
   });
 
-  game.settings.register("dnd5e", "criticalDamageModifiers", {
+  game.settings.register(game.system.id, "criticalDamageModifiers", {
     name: "SETTINGS.DND5E.CRITICAL.MultiplyModifiers.Name",
     hint: "SETTINGS.DND5E.CRITICAL.MultiplyModifiers.Hint",
     scope: "world",
@@ -334,7 +334,7 @@ export function registerSystemSettings() {
     default: false
   });
 
-  game.settings.register("dnd5e", "criticalDamageMaxDice", {
+  game.settings.register(game.system.id, "criticalDamageMaxDice", {
     name: "SETTINGS.DND5E.CRITICAL.MaxDice.Name",
     hint: "SETTINGS.DND5E.CRITICAL.MaxDice.Hint",
     scope: "world",
@@ -343,7 +343,7 @@ export function registerSystemSettings() {
     default: false
   });
 
-  game.settings.register("dnd5e", "initiativeDexTiebreaker", {
+  game.settings.register(game.system.id, "initiativeDexTiebreaker", {
     name: "SETTINGS.DND5E.COMBAT.DexTiebreaker.Name",
     hint: "SETTINGS.DND5E.COMBAT.DexTiebreaker.Hint",
     scope: "world",
@@ -352,7 +352,7 @@ export function registerSystemSettings() {
     type: Boolean
   });
 
-  game.settings.register("dnd5e", "initiativeScore", {
+  game.settings.register(game.system.id, "initiativeScore", {
     name: "SETTINGS.DND5E.COMBAT.InitiativeScore.Name",
     hint: "SETTINGS.DND5E.COMBAT.InitiativeScore.Hint",
     scope: "world",
@@ -367,7 +367,7 @@ export function registerSystemSettings() {
   });
 
   // Variant Rules
-  game.settings.registerMenu("dnd5e", "variantRulesConfiguration", {
+  game.settings.registerMenu(game.system.id, "variantRulesConfiguration", {
     name: "SETTINGS.DND5E.VARIANT.Name",
     label: "SETTINGS.DND5E.VARIANT.Label",
     hint: "SETTINGS.DND5E.VARIANT.Hint",
@@ -376,7 +376,7 @@ export function registerSystemSettings() {
     restricted: true
   });
 
-  game.settings.register("dnd5e", "allowFeats", {
+  game.settings.register(game.system.id, "allowFeats", {
     name: "SETTINGS.DND5E.VARIANT.AllowFeats.Name",
     hint: "SETTINGS.DND5E.VARIANT.AllowFeats.Hint",
     scope: "world",
@@ -385,7 +385,7 @@ export function registerSystemSettings() {
     type: Boolean
   });
 
-  game.settings.register("dnd5e", "currencyWeight", {
+  game.settings.register(game.system.id, "currencyWeight", {
     name: "SETTINGS.DND5E.VARIANT.CurrencyWeight.Name",
     hint: "SETTINGS.DND5E.VARIANT.CurrencyWeight.Hint",
     scope: "world",
@@ -394,7 +394,7 @@ export function registerSystemSettings() {
     type: Boolean
   });
 
-  game.settings.register("dnd5e", "encumbrance", {
+  game.settings.register(game.system.id, "encumbrance", {
     name: "SETTINGS.DND5E.VARIANT.Encumbrance.Name",
     hint: "SETTINGS.DND5E.VARIANT.Encumbrance.Hint",
     scope: "world",
@@ -408,7 +408,7 @@ export function registerSystemSettings() {
     }
   });
 
-  game.settings.register("dnd5e", "honorScore", {
+  game.settings.register(game.system.id, "honorScore", {
     name: "SETTINGS.DND5E.VARIANT.HonorScore.Name",
     hint: "SETTINGS.DND5E.VARIANT.HonorScore.Hint",
     scope: "world",
@@ -418,7 +418,7 @@ export function registerSystemSettings() {
     requiresReload: true
   });
 
-  game.settings.register("dnd5e", "levelingMode", {
+  game.settings.register(game.system.id, "levelingMode", {
     name: "SETTINGS.DND5E.VARIANT.LevelingMode.Name",
     hint: "SETTINGS.DND5E.VARIANT.LevelingMode.Hint",
     scope: "world",
@@ -432,7 +432,7 @@ export function registerSystemSettings() {
     }
   });
 
-  game.settings.register("dnd5e", "proficiencyModifier", {
+  game.settings.register(game.system.id, "proficiencyModifier", {
     name: "SETTINGS.DND5E.VARIANT.ProficiencyModifier.Name",
     hint: "SETTINGS.DND5E.VARIANT.ProficiencyModifier.Hint",
     scope: "world",
@@ -445,7 +445,7 @@ export function registerSystemSettings() {
     }
   });
 
-  game.settings.register("dnd5e", "restVariant", {
+  game.settings.register(game.system.id, "restVariant", {
     name: "SETTINGS.DND5E.VARIANT.Rest.Name",
     hint: "SETTINGS.DND5E.VARIANT.Rest.Hint",
     scope: "world",
@@ -459,7 +459,7 @@ export function registerSystemSettings() {
     }
   });
 
-  game.settings.register("dnd5e", "sanityScore", {
+  game.settings.register(game.system.id, "sanityScore", {
     name: "SETTINGS.DND5E.VARIANT.SanityScore.Name",
     hint: "SETTINGS.DND5E.VARIANT.SanityScore.Hint",
     scope: "world",
@@ -470,7 +470,7 @@ export function registerSystemSettings() {
   });
 
   // Visibility Settings
-  game.settings.registerMenu("dnd5e", "visibilityConfiguration", {
+  game.settings.registerMenu(game.system.id, "visibilityConfiguration", {
     name: "SETTINGS.DND5E.VISIBILITY.Name",
     label: "SETTINGS.DND5E.VISIBILITY.Label",
     hint: "SETTINGS.DND5E.VISIBILITY.Hint",
@@ -479,7 +479,7 @@ export function registerSystemSettings() {
     restricted: true
   });
 
-  game.settings.register("dnd5e", "attackRollVisibility", {
+  game.settings.register(game.system.id, "attackRollVisibility", {
     name: "SETTINGS.DND5E.VISIBILITY.Attack.Name",
     hint: "SETTINGS.DND5E.VISIBILITY.Attack.Hint",
     scope: "world",
@@ -493,7 +493,7 @@ export function registerSystemSettings() {
     }
   });
 
-  game.settings.register("dnd5e", "bloodied", {
+  game.settings.register(game.system.id, "bloodied", {
     name: "SETTINGS.DND5E.BLOODIED.Name",
     hint: "SETTINGS.DND5E.BLOODIED.Hint",
     scope: "world",
@@ -507,7 +507,7 @@ export function registerSystemSettings() {
     }
   });
 
-  game.settings.register("dnd5e", "challengeVisibility", {
+  game.settings.register(game.system.id, "challengeVisibility", {
     name: "SETTINGS.DND5E.VISIBILITY.Challenge.Name",
     hint: "SETTINGS.DND5E.VISIBILITY.Challenge.Hint",
     scope: "world",
@@ -521,7 +521,7 @@ export function registerSystemSettings() {
     }
   });
 
-  game.settings.register("dnd5e", "concealItemDescriptions", {
+  game.settings.register(game.system.id, "concealItemDescriptions", {
     name: "SETTINGS.DND5E.VISIBILITY.ItemDescriptions.Name",
     hint: "SETTINGS.DND5E.VISIBILITY.ItemDescriptions.Hint",
     scope: "world",
@@ -531,7 +531,7 @@ export function registerSystemSettings() {
   });
 
   // Primary Group
-  game.settings.register("dnd5e", "primaryParty", {
+  game.settings.register(game.system.id, "primaryParty", {
     name: "Primary Party",
     scope: "world",
     config: false,
@@ -541,7 +541,7 @@ export function registerSystemSettings() {
   });
 
   // Control hints
-  game.settings.register("dnd5e", "controlHints", {
+  game.settings.register(game.system.id, "controlHints", {
     name: "DND5E.Controls.Name",
     hint: "DND5E.Controls.Hint",
     scope: "client",
@@ -551,7 +551,7 @@ export function registerSystemSettings() {
   });
 
   // NPC sheet default skills
-  game.settings.register("dnd5e", "defaultSkills", {
+  game.settings.register(game.system.id, "defaultSkills", {
     name: "SETTINGS.DND5E.DEFAULTSKILLS.Name",
     hint: "SETTINGS.DND5E.DEFAULTSKILLS.Hint",
     type: new foundry.data.fields.SetField(
@@ -570,7 +570,7 @@ export function registerSystemSettings() {
  * Register additional settings after modules have had a chance to initialize to give them a chance to modify choices.
  */
 export function registerDeferredSettings() {
-  game.settings.register("dnd5e", "theme", {
+  game.settings.register(game.system.id, "theme", {
     name: "SETTINGS.DND5E.THEME.Name",
     hint: "SETTINGS.DND5E.THEME.Hint",
     scope: "client",
@@ -585,10 +585,10 @@ export function registerDeferredSettings() {
   });
 
   matchMedia("(prefers-color-scheme: dark)").addEventListener("change", () => {
-    setTheme(document.body, game.settings.get("dnd5e", "theme"));
+    setTheme(document.body, game.settings.get(game.system.id, "theme"));
   });
   matchMedia("(prefers-contrast: more)").addEventListener("change", () => {
-    setTheme(document.body, game.settings.get("dnd5e", "theme"));
+    setTheme(document.body, game.settings.get(game.system.id, "theme"));
   });
 
   // Hook into core color scheme setting.

@@ -222,7 +222,7 @@ export default class ActivitiesTemplate extends SystemDataModel {
     if ( this.#shouldCreateInitialActivity(source) ) this.#createInitialActivity(source);
     const uses = source.system?.uses ?? {};
     if ( source._id && source.type && ("value" in uses) && uses.max ) {
-      foundry.utils.setProperty(source, "flags.dnd5e.migratedUses", uses.value);
+      foundry.utils.setProperty(source, `flags.${game.system.id}.', uses.value);
     }
   }
 
@@ -323,7 +323,7 @@ export default class ActivitiesTemplate extends SystemDataModel {
   async recoverUses(periods, rollData) {
     const updates = {};
     const rolls = [];
-    const autoRecharge = game.settings.get("dnd5e", "autoRecharge");
+    const autoRecharge = game.settings.get(game.system.id, "autoRecharge");
     const shouldRecharge = periods.includes("turnStart") && (this.parent.actor.type === "npc")
       && (autoRecharge !== "no");
     const recharge = async doc => {
@@ -397,9 +397,9 @@ export default class ActivitiesTemplate extends SystemDataModel {
       return riders;
     }, { activity: new Set(), effect: new Set() });
     if ( !riders.activity.size && !riders.effect.size ) {
-      foundry.utils.setProperty(changed, "flags.dnd5e.-=riders", null);
+      foundry.utils.setProperty(changed, `flags.${game.system.id}.', null);
     } else {
-      foundry.utils.setProperty(changed, "flags.dnd5e.riders", Object.entries(riders)
+      foundry.utils.setProperty(changed, `flags.${game.system.id}.', Object.entries(riders)
         .reduce((updates, [key, value]) => {
           if ( value.size ) updates[key] = Array.from(value);
           else updates[`-=${key}`] = null;
@@ -436,8 +436,8 @@ export default class ActivitiesTemplate extends SystemDataModel {
       || !foundry.utils.hasProperty(changed, "system.activities") ) return;
 
     // If any Cast activities were removed, or their spells changed, remove old cached spells
-    if ( options.dnd5e?.removedCachedItems ) {
-      await this.parent.actor.deleteEmbeddedDocuments("Item", options.dnd5e.removedCachedItems);
+    if ( options.[game.system.id]?.removedCachedItems ) {
+      await this.parent.actor.deleteEmbeddedDocuments("Item", options.[game.system.id].removedCachedItems);
     }
 
     // Create any new cached spells & update existing ones as necessary

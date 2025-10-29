@@ -44,7 +44,7 @@ export default class SummonActivity extends ActivityMixin(SummonActivityData) {
    * @type {boolean}
    */
   get canSummon() {
-    return game.user.can("TOKEN_CREATE") && (game.user.isGM || game.settings.get("dnd5e", "allowSummoning"));
+    return game.user.can("TOKEN_CREATE") && (game.user.isGM || game.settings.get(game.system.id, "allowSummoning"));
   }
 
   /* -------------------------------------------- */
@@ -156,7 +156,7 @@ export default class SummonActivity extends ActivityMixin(SummonActivityData) {
     const summonUuid = this.summon.mode === "cr" ? await this.queryActor(profile) : profile.uuid;
     if ( !summonUuid ) return;
     const actor = await dnd5e.documents.Actor5e.fetchExisting(summonUuid, {
-      origin: { key: "flags.dnd5e.summon.origin", value: this.item?.uuid }
+      origin: { key: `flags.${game.system.id}.', value: this.item?.uuid }
     });
 
     // Verify ownership of actor
@@ -267,7 +267,7 @@ export default class SummonActivity extends ActivityMixin(SummonActivityData) {
     const prof = rollData.attributes?.prof ?? 0;
 
     // Add flags
-    actorUpdates["flags.dnd5e.summon"] = {
+    actorUpdates[`flags.${game.system.id}.'] = {
       level: this.relevantLevel,
       mod: rollData.mod,
       origin: this.item.uuid,
@@ -615,7 +615,7 @@ export default class SummonActivity extends ActivityMixin(SummonActivityData) {
     foundry.utils.logCompatibilityWarning("SummonActivity#fetchActor is deprecated. "
       + "Please use Actor5e.fetchExisting instead.", { since: "DnD5e 5.1", until: "DnD5e 5.3" });
     return dnd5e.documents.Actor5e.fetchExisting(uuid, {
-      origin: { key: "flags.dnd5e.summon.origin", value: this.item?.uuid }
+      origin: { key: `flags.${game.system.id}.', value: this.item?.uuid }
     });
   }
 }

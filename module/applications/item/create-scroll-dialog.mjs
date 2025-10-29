@@ -148,7 +148,7 @@ export default class CreateScrollDialog extends Dialog5e {
 
   /** @override */
   _onClose(options={}) {
-    if ( !options.dnd5e?.submitted ) this.#config = null;
+    if ( !options.[game.system.id]?.submitted ) this.#config = null;
   }
 
   /* -------------------------------------------- */

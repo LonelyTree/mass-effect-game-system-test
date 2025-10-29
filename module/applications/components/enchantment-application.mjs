@@ -71,8 +71,8 @@ export default class EnchantmentApplicationElement extends HTMLElement {
 
     // Calculate the maximum targets
     let item = this.enchantmentItem;
-    const scaling = this.chatMessage.getFlag("dnd5e", "scaling");
-    if ( scaling ) item = item.clone({ "flags.dnd5e.scaling": scaling });
+    const scaling = this.chatMessage.getFlag(game.system.id, "scaling");
+    if ( scaling ) item = item.clone({ `flags.${game.system.id}.': scaling });
     const activity = item.system.activities.get(this.enchantmentActivity.id);
     const maxTargets = activity.target?.affects?.count;
     if ( maxTargets ) {
@@ -141,7 +141,7 @@ export default class EnchantmentApplicationElement extends HTMLElement {
     if ( !droppedItem ) return;
 
     // If concentration is required, ensure it is still being maintained & GM is present
-    const concentrationId = this.chatMessage.getFlag("dnd5e", "use.concentrationId");
+    const concentrationId = this.chatMessage.getFlag(game.system.id, "use.concentrationId");
     const concentration = this.enchantmentActivity.actor.effects.get(concentrationId);
     if ( concentrationId && !concentration ) {
       ui.notifications.error("DND5E.ENCHANT.Warning.ConcentrationEnded", { console: false, localize: true });
@@ -149,7 +149,7 @@ export default class EnchantmentApplicationElement extends HTMLElement {
     }
 
     this.enchantmentActivity.applyEnchantment(
-      this.chatMessage.getFlag("dnd5e", "use.enchantmentProfile"),
+      this.chatMessage.getFlag(game.system.id, "use.enchantmentProfile"),
       droppedItem,
       { chatMessage: this.chatMessage, concentration }
     );

@@ -22,7 +22,7 @@ export default class SourceField extends SchemaField {
       license: new StringField(),
       revision: new NumberField({ initial: 1 }),
       rules: new StringField({
-        initial: () => game.settings.get("dnd5e", "rulesVersion") === "modern" ? "2024" : "2014"
+        initial: () => game.settings.get(game.system.id, "rulesVersion") === "modern" ? "2024" : "2014"
       }),
       ...fields
     };
@@ -42,7 +42,7 @@ export default class SourceField extends SchemaField {
   static prepareData(uuid) {
     const collection = foundry.utils.parseUuid(uuid)?.collection;
     const pkg = SourceField.getPackage(collection);
-    this.bookPlaceholder = collection?.metadata?.flags?.dnd5e?.sourceBook ?? SourceField.getModuleBook(pkg) ?? "";
+    this.bookPlaceholder = collection?.metadata?.flags?.[game.system.id]?.sourceBook ?? SourceField.getModuleBook(pkg) ?? "";
     if ( !this.book ) this.book = this.bookPlaceholder;
 
     if ( this.custom ) this.label = this.custom;
@@ -72,7 +72,7 @@ export default class SourceField extends SchemaField {
    */
   static getModuleBook(pkg) {
     if ( !pkg ) return null;
-    const sourceBooks = pkg.flags?.dnd5e?.sourceBooks;
+    const sourceBooks = pkg.flags?.[game.system.id]?.sourceBooks;
     const keys = Object.keys(sourceBooks ?? {});
     if ( keys.length !== 1 ) return null;
     return keys[0];

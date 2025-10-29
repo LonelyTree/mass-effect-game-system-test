@@ -103,7 +103,7 @@ export function getRulesVersion(config={}, options={}) {
   if ( Number.isNumeric(config.rules) ) return String(config.rules);
   return options.relativeTo?.parent?.system?.source?.rules
     || options.relativeTo?.system?.source?.rules
-    || (game.settings.get("dnd5e", "rulesVersion") === "modern" ? "2024" : "2014");
+    || (game.settings.get(game.system.id, "rulesVersion") === "modern" ? "2024" : "2014");
 }
 
 /* -------------------------------------------- */
@@ -991,7 +991,7 @@ function enrichLookup(config, fallback, options) {
  * ```html
  * <span class="reference-link">
  *   <a class="content-link" draggable="true"
- *      data-uuid="Compendium.dnd5e.rules.JournalEntry.w7eitkpD7QQTB6j0.JournalEntryPage.UWw13ISmMxDzmwbd"
+ *      data-uuid="Compendium.[game.system.id].rules.JournalEntry.w7eitkpD7QQTB6j0.JournalEntryPage.UWw13ISmMxDzmwbd"
  *      data-type="JournalEntryPage" data-tooltip="Text Page">
  *     <i class="fas fa-book-open"></i> Label
  *   </a>
@@ -1570,7 +1570,7 @@ async function rollDamage(event) {
 async function _fetchActivity(uuid, scaling) {
   const activity = await fromUuid(uuid);
   if ( !activity || !scaling ) return activity;
-  const item = activity.item.clone({ "flags.dnd5e.scaling": scaling }, { keepId: true });
+  const item = activity.item.clone({ `flags.${game.system.id}.': scaling }, { keepId: true });
   return item.system.activities.get(activity.id);
 }
 

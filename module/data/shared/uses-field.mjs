@@ -169,7 +169,7 @@ export default class UsesField extends SchemaField {
           : { item: this.item.id, keyPath: `system.activities.${this.id}.uses.spent` };
         roll = new CONFIG.Dice.BasicRoll(profile.formula, rollData, { delta });
         if ( ["day", "dawn", "dusk"].includes(profile.period)
-          && (game.settings.get("dnd5e", "restVariant") === "gritty") ) {
+          && (game.settings.get(game.system.id, "restVariant") === "gritty") ) {
           roll.alter(7, 0, { multiplyNumeric: true });
         }
         total = (await roll.evaluate()).total;

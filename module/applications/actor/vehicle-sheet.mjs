@@ -8,7 +8,7 @@ export default class ActorSheet5eVehicle extends ActorSheet5e {
   /** @inheritDoc */
   static get defaultOptions() {
     return foundry.utils.mergeObject(super.defaultOptions, {
-      classes: ["dnd5e", "sheet", "actor", "vehicle"]
+      classes: [game.system.id, "sheet", "actor", "vehicle"]
     });
   }
 
@@ -191,7 +191,7 @@ export default class ActorSheet5eVehicle extends ActorSheet5e {
       this._prepareCrewedItem(item, ctx);
 
       // Handle cargo explicitly
-      const isCargo = item.flags.dnd5e?.vehicleCargo === true;
+      const isCargo = item.flags[game.system.id]?.vehicleCargo === true;
       if ( isCargo ) {
         cargo.cargo.items.push(item);
         continue;
@@ -320,7 +320,7 @@ export default class ActorSheet5eVehicle extends ActorSheet5e {
   async _onDropSingleItem(itemData, event) {
     const cargoTypes = ["weapon", "equipment", "consumable", "tool", "loot", "container"];
     const isCargo = cargoTypes.includes(itemData.type) && (this._tabs[0].active === "cargo");
-    foundry.utils.setProperty(itemData, "flags.dnd5e.vehicleCargo", isCargo);
+    foundry.utils.setProperty(itemData, `flags.${game.system.id}.', isCargo);
     return super._onDropSingleItem(itemData, event);
   }
 }

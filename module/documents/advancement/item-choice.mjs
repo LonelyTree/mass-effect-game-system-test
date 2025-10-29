@@ -65,7 +65,7 @@ export default class ItemChoiceAdvancement extends ItemGrantAdvancement {
   summaryForLevel(level, { configMode=false }={}) {
     const items = this.value.added?.[level];
     if ( !items || configMode ) return "";
-    return Object.values(items).reduce((html, uuid) => html + game.dnd5e.utils.linkForUuid(uuid), "");
+    return Object.values(items).reduce((html, uuid) => html + game.[game.system.id].utils.linkForUuid(uuid), "");
   }
 
   /* -------------------------------------------- */

@@ -50,7 +50,7 @@ DND5E.abilities = {
     abbreviation: "DND5E.AbilityStrAbbr",
     type: "physical",
     fullKey: "strength",
-    reference: "Compendium.dnd5e.content24.JournalEntry.phbAppendixDRule.JournalEntryPage.nUPv6C66Ur64BIUH",
+    reference: "Compendium.[game.system.id].content24.JournalEntry.phbAppendixDRule.JournalEntryPage.nUPv6C66Ur64BIUH",
     icon: "systems/dnd5e/icons/svg/abilities/strength.svg"
   },
   dex: {
@@ -58,7 +58,7 @@ DND5E.abilities = {
     abbreviation: "DND5E.AbilityDexAbbr",
     type: "physical",
     fullKey: "dexterity",
-    reference: "Compendium.dnd5e.content24.JournalEntry.phbAppendixDRule.JournalEntryPage.ER8CKDUWLsFXuARJ",
+    reference: "Compendium.[game.system.id].content24.JournalEntry.phbAppendixDRule.JournalEntryPage.ER8CKDUWLsFXuARJ",
     icon: "systems/dnd5e/icons/svg/abilities/dexterity.svg"
   },
   con: {
@@ -66,7 +66,7 @@ DND5E.abilities = {
     abbreviation: "DND5E.AbilityConAbbr",
     type: "physical",
     fullKey: "constitution",
-    reference: "Compendium.dnd5e.content24.JournalEntry.phbAppendixDRule.JournalEntryPage.MpA4jnwD17Q0RPg7",
+    reference: "Compendium.[game.system.id].content24.JournalEntry.phbAppendixDRule.JournalEntryPage.MpA4jnwD17Q0RPg7",
     icon: "systems/dnd5e/icons/svg/abilities/constitution.svg"
   },
   int: {
@@ -74,7 +74,7 @@ DND5E.abilities = {
     abbreviation: "DND5E.AbilityIntAbbr",
     type: "mental",
     fullKey: "intelligence",
-    reference: "Compendium.dnd5e.content24.JournalEntry.phbAppendixDRule.JournalEntryPage.WzWWcTIppki35YvF",
+    reference: "Compendium.[game.system.id].content24.JournalEntry.phbAppendixDRule.JournalEntryPage.WzWWcTIppki35YvF",
     icon: "systems/dnd5e/icons/svg/abilities/intelligence.svg",
     defaults: { vehicle: 0 }
   },
@@ -83,7 +83,7 @@ DND5E.abilities = {
     abbreviation: "DND5E.AbilityWisAbbr",
     type: "mental",
     fullKey: "wisdom",
-    reference: "Compendium.dnd5e.content24.JournalEntry.phbAppendixDRule.JournalEntryPage.v3IPyTtqvXqN934s",
+    reference: "Compendium.[game.system.id].content24.JournalEntry.phbAppendixDRule.JournalEntryPage.v3IPyTtqvXqN934s",
     icon: "systems/dnd5e/icons/svg/abilities/wisdom.svg",
     defaults: { vehicle: 0 }
   },
@@ -92,7 +92,7 @@ DND5E.abilities = {
     abbreviation: "DND5E.AbilityChaAbbr",
     type: "mental",
     fullKey: "charisma",
-    reference: "Compendium.dnd5e.content24.JournalEntry.phbAppendixDRule.JournalEntryPage.9FyghudYFV5QJOuG",
+    reference: "Compendium.[game.system.id].content24.JournalEntry.phbAppendixDRule.JournalEntryPage.9FyghudYFV5QJOuG",
     icon: "systems/dnd5e/icons/svg/abilities/charisma.svg",
     defaults: { vehicle: 0 }
   },
@@ -154,56 +154,56 @@ DND5E.skills = {
     label: "DND5E.SkillAcr",
     ability: "dex",
     fullKey: "acrobatics",
-    reference: "Compendium.dnd5e.content24.JournalEntry.phbAppendixDRule.JournalEntryPage.AvvBLEHNl7kuwPkN",
+    reference: "Compendium.[game.system.id].content24.JournalEntry.phbAppendixDRule.JournalEntryPage.AvvBLEHNl7kuwPkN",
     icon: "icons/equipment/feet/shoes-simple-leaf-green.webp"
   },
   ani: {
     label: "DND5E.SkillAni",
     ability: "wis",
     fullKey: "animalHandling",
-    reference: "Compendium.dnd5e.content24.JournalEntry.phbAppendixDRule.JournalEntryPage.xb3MCjUvopOU4viE",
+    reference: "Compendium.[game.system.id].content24.JournalEntry.phbAppendixDRule.JournalEntryPage.xb3MCjUvopOU4viE",
     icon: "icons/environment/creatures/horse-brown.webp"
   },
   arc: {
     label: "DND5E.SkillArc",
     ability: "int",
     fullKey: "arcana",
-    reference: "Compendium.dnd5e.content24.JournalEntry.phbAppendixDRule.JournalEntryPage.h3bYSPge8IOqne1N",
+    reference: "Compendium.[game.system.id].content24.JournalEntry.phbAppendixDRule.JournalEntryPage.h3bYSPge8IOqne1N",
     icon: "icons/sundries/books/book-embossed-jewel-silver-green.webp"
   },
   ath: {
     label: "DND5E.SkillAth",
     ability: "str",
     fullKey: "athletics",
-    reference: "Compendium.dnd5e.content24.JournalEntry.phbAppendixDRule.JournalEntryPage.rIR7ttYDUpH3tMzv",
+    reference: "Compendium.[game.system.id].content24.JournalEntry.phbAppendixDRule.JournalEntryPage.rIR7ttYDUpH3tMzv",
     icon: "icons/magic/control/buff-strength-muscle-damage-orange.webp"
   },
   dec: {
     label: "DND5E.SkillDec",
     ability: "cha",
     fullKey: "deception",
-    reference: "Compendium.dnd5e.content24.JournalEntry.phbAppendixDRule.JournalEntryPage.mqVZ2fz0L7a9VeKJ",
+    reference: "Compendium.[game.system.id].content24.JournalEntry.phbAppendixDRule.JournalEntryPage.mqVZ2fz0L7a9VeKJ",
     icon: "icons/magic/control/mouth-smile-deception-purple.webp"
   },
   his: {
     label: "DND5E.SkillHis",
     ability: "int",
     fullKey: "history",
-    reference: "Compendium.dnd5e.content24.JournalEntry.phbAppendixDRule.JournalEntryPage.kRBZbdWMGW9K3wdY",
+    reference: "Compendium.[game.system.id].content24.JournalEntry.phbAppendixDRule.JournalEntryPage.kRBZbdWMGW9K3wdY",
     icon: "icons/sundries/books/book-embossed-bound-brown.webp"
   },
   ins: {
     label: "DND5E.SkillIns",
     ability: "wis",
     fullKey: "insight",
-    reference: "Compendium.dnd5e.content24.JournalEntry.phbAppendixDRule.JournalEntryPage.8R5SMbAGbECNgO8z",
+    reference: "Compendium.[game.system.id].content24.JournalEntry.phbAppendixDRule.JournalEntryPage.8R5SMbAGbECNgO8z",
     icon: "icons/magic/perception/orb-crystal-ball-scrying-blue.webp"
   },
   itm: {
     label: "DND5E.SkillItm",
     ability: "cha",
     fullKey: "intimidation",
-    reference: "Compendium.dnd5e.content24.JournalEntry.phbAppendixDRule.JournalEntryPage.4VHHI2gJ1jEsppfg",
+    reference: "Compendium.[game.system.id].content24.JournalEntry.phbAppendixDRule.JournalEntryPage.4VHHI2gJ1jEsppfg",
     icon: "icons/skills/social/intimidation-impressing.webp"
   },
   inv: {
@@ -228,7 +228,7 @@ DND5E.skills = {
     label: "DND5E.SkillPrc",
     ability: "wis",
     fullKey: "perception",
-    reference: "Compendium.dnd5e.content24.JournalEntry.phbAppendixDRule.JournalEntryPage.zjEeHCUqfuprfzhY",
+    reference: "Compendium.[game.system.id].content24.JournalEntry.phbAppendixDRule.JournalEntryPage.zjEeHCUqfuprfzhY",
     icon: "icons/magic/perception/eye-ringed-green.webp",
     pace: {
       advantage: new Set(["slow"]),
@@ -239,35 +239,35 @@ DND5E.skills = {
     label: "DND5E.SkillPrf",
     ability: "cha",
     fullKey: "performance",
-    reference: "Compendium.dnd5e.content24.JournalEntry.phbAppendixDRule.JournalEntryPage.hYT7Z06yDNBcMtGe",
+    reference: "Compendium.[game.system.id].content24.JournalEntry.phbAppendixDRule.JournalEntryPage.hYT7Z06yDNBcMtGe",
     icon: "icons/tools/instruments/lute-gold-brown.webp"
   },
   per: {
     label: "DND5E.SkillPer",
     ability: "cha",
     fullKey: "persuasion",
-    reference: "Compendium.dnd5e.content24.JournalEntry.phbAppendixDRule.JournalEntryPage.4R5H8iIsdFQTsj3X",
+    reference: "Compendium.[game.system.id].content24.JournalEntry.phbAppendixDRule.JournalEntryPage.4R5H8iIsdFQTsj3X",
     icon: "icons/skills/social/diplomacy-handshake.webp"
   },
   rel: {
     label: "DND5E.SkillRel",
     ability: "int",
     fullKey: "religion",
-    reference: "Compendium.dnd5e.content24.JournalEntry.phbAppendixDRule.JournalEntryPage.CXVzERHdP4qLhJXM",
+    reference: "Compendium.[game.system.id].content24.JournalEntry.phbAppendixDRule.JournalEntryPage.CXVzERHdP4qLhJXM",
     icon: "icons/magic/holy/saint-glass-portrait-halo.webp"
   },
   slt: {
     label: "DND5E.SkillSlt",
     ability: "dex",
     fullKey: "sleightOfHand",
-    reference: "Compendium.dnd5e.content24.JournalEntry.phbAppendixDRule.JournalEntryPage.yg6SRpGNVz9nDW0A",
+    reference: "Compendium.[game.system.id].content24.JournalEntry.phbAppendixDRule.JournalEntryPage.yg6SRpGNVz9nDW0A",
     icon: "icons/sundries/gaming/playing-cards.webp"
   },
   ste: {
     label: "DND5E.SkillSte",
     ability: "dex",
     fullKey: "stealth",
-    reference: "Compendium.dnd5e.content24.JournalEntry.phbAppendixDRule.JournalEntryPage.4MfrpERNiQXmvgCI",
+    reference: "Compendium.[game.system.id].content24.JournalEntry.phbAppendixDRule.JournalEntryPage.4MfrpERNiQXmvgCI",
     icon: "icons/magic/perception/shadow-stealth-eyes-purple.webp",
     pace: {
       disadvantage: new Set(["normal", "fast"])
@@ -277,7 +277,7 @@ DND5E.skills = {
     label: "DND5E.SkillSur",
     ability: "wis",
     fullKey: "survival",
-    reference: "Compendium.dnd5e.content24.JournalEntry.phbAppendixDRule.JournalEntryPage.t3EzDU5b9BVAIEVi",
+    reference: "Compendium.[game.system.id].content24.JournalEntry.phbAppendixDRule.JournalEntryPage.t3EzDU5b9BVAIEVi",
     icon: "icons/magic/fire/flame-burning-campfire-yellow-blue.webp",
     pace: {
       advantage: new Set(["slow"]),
@@ -382,35 +382,35 @@ preLocalize("weaponProficiencies");
 DND5E.weaponMasteries = {
   cleave: {
     label: "DND5E.WEAPON.Mastery.Cleave",
-    reference: "Compendium.dnd5e.content24.JournalEntry.phbAppendixDRule.JournalEntryPage.ULDpodOdTxTTiNEx"
+    reference: "Compendium.[game.system.id].content24.JournalEntry.phbAppendixDRule.JournalEntryPage.ULDpodOdTxTTiNEx"
   },
   graze: {
     label: "DND5E.WEAPON.Mastery.Graze",
-    reference: "Compendium.dnd5e.content24.JournalEntry.phbAppendixDRule.JournalEntryPage.PPnaXKPsQvAZp0J4"
+    reference: "Compendium.[game.system.id].content24.JournalEntry.phbAppendixDRule.JournalEntryPage.PPnaXKPsQvAZp0J4"
   },
   nick: {
     label: "DND5E.WEAPON.Mastery.Nick",
-    reference: "Compendium.dnd5e.content24.JournalEntry.phbAppendixDRule.JournalEntryPage.l0uao3UVco5ptQso"
+    reference: "Compendium.[game.system.id].content24.JournalEntry.phbAppendixDRule.JournalEntryPage.l0uao3UVco5ptQso"
   },
   push: {
     label: "DND5E.WEAPON.Mastery.Push",
-    reference: "Compendium.dnd5e.content24.JournalEntry.phbAppendixDRule.JournalEntryPage.BPD7ScnLyuPwl145"
+    reference: "Compendium.[game.system.id].content24.JournalEntry.phbAppendixDRule.JournalEntryPage.BPD7ScnLyuPwl145"
   },
   sap: {
     label: "DND5E.WEAPON.Mastery.Sap",
-    reference: "Compendium.dnd5e.content24.JournalEntry.phbAppendixDRule.JournalEntryPage.fPkZQ7TkKCCA3nTc"
+    reference: "Compendium.[game.system.id].content24.JournalEntry.phbAppendixDRule.JournalEntryPage.fPkZQ7TkKCCA3nTc"
   },
   slow: {
     label: "DND5E.WEAPON.Mastery.Slow",
-    reference: "Compendium.dnd5e.content24.JournalEntry.phbAppendixDRule.JournalEntryPage.OQQ7hAp6OAxX1rXY"
+    reference: "Compendium.[game.system.id].content24.JournalEntry.phbAppendixDRule.JournalEntryPage.OQQ7hAp6OAxX1rXY"
   },
   topple: {
     label: "DND5E.WEAPON.Mastery.Topple",
-    reference: "Compendium.dnd5e.content24.JournalEntry.phbAppendixDRule.JournalEntryPage.IMnpuysdrSalmZJg"
+    reference: "Compendium.[game.system.id].content24.JournalEntry.phbAppendixDRule.JournalEntryPage.IMnpuysdrSalmZJg"
   },
   vex: {
     label: "DND5E.WEAPON.Mastery.Vex",
-    reference: "Compendium.dnd5e.content24.JournalEntry.phbAppendixDRule.JournalEntryPage.hg3adn9O1O5Z2QxL"
+    reference: "Compendium.[game.system.id].content24.JournalEntry.phbAppendixDRule.JournalEntryPage.hg3adn9O1O5Z2QxL"
   }
 };
 preLocalize("weaponMasteries", { key: "label", sort: true });
@@ -465,44 +465,44 @@ DND5E.weaponTypeMap = {
  * @enum {string}
  */
 DND5E.weaponIds = {
-  battleaxe: "Compendium.dnd5e.equipment24.Item.phbwepBattleaxe0",
-  blowgun: "Compendium.dnd5e.equipment24.Item.phbwepBlowgun000",
-  club: "Compendium.dnd5e.equipment24.Item.phbwepClub000000",
-  dagger: "Compendium.dnd5e.equipment24.Item.phbwepDagger0000",
-  dart: "Compendium.dnd5e.equipment24.Item.phbwepDart000000",
-  flail: "Compendium.dnd5e.equipment24.Item.phbwepFlail00000",
-  glaive: "Compendium.dnd5e.equipment24.Item.phbwepGlaive0000",
-  greataxe: "Compendium.dnd5e.equipment24.Item.phbwepGreataxe00",
-  greatclub: "Compendium.dnd5e.equipment24.Item.phbwepGreatclub0",
-  greatsword: "Compendium.dnd5e.equipment24.Item.phbwepGreatsword",
-  halberd: "Compendium.dnd5e.equipment24.Item.phbwepHalberd000",
-  handaxe: "Compendium.dnd5e.equipment24.Item.phbwepHandaxe000",
-  handcrossbow: "Compendium.dnd5e.equipment24.Item.phbwepHandCrossb",
-  heavycrossbow: "Compendium.dnd5e.equipment24.Item.phbwepHeavyCross",
-  javelin: "Compendium.dnd5e.equipment24.Item.phbwepJavelin000",
-  lance: "Compendium.dnd5e.equipment24.Item.phbwepLance00000",
-  lightcrossbow: "Compendium.dnd5e.equipment24.Item.phbwepLightCross",
-  lighthammer: "Compendium.dnd5e.equipment24.Item.phbwepLightHamme",
-  longbow: "Compendium.dnd5e.equipment24.Item.phbwepLongbow000",
-  longsword: "Compendium.dnd5e.equipment24.Item.phbwepLongsword0",
-  mace: "Compendium.dnd5e.equipment24.Item.phbwepMace000000",
-  maul: "Compendium.dnd5e.equipment24.Item.phbwepMaul000000",
-  morningstar: "Compendium.dnd5e.equipment24.Item.phbwepMorningsta",
-  musket: "Compendium.dnd5e.equipment24.Item.phbwepMusket0000",
-  pike: "Compendium.dnd5e.equipment24.Item.phbwepPike000000",
-  pistol: "Compendium.dnd5e.equipment24.Item.phbwepPistol0000",
-  quarterstaff: "Compendium.dnd5e.equipment24.Item.phbwepQuartersta",
-  rapier: "Compendium.dnd5e.equipment24.Item.phbwepRapier0000",
-  scimitar: "Compendium.dnd5e.equipment24.Item.phbwepScimitar00",
-  shortsword: "Compendium.dnd5e.equipment24.Item.phbwepShortsword",
-  sickle: "Compendium.dnd5e.equipment24.Item.phbwepSickle0000",
-  spear: "Compendium.dnd5e.equipment24.Item.phbwepSpear00000",
-  shortbow: "Compendium.dnd5e.equipment24.Item.phbwepShortbow00",
-  sling: "Compendium.dnd5e.equipment24.Item.phbwepSling00000",
-  trident: "Compendium.dnd5e.equipment24.Item.phbwepTrident000",
-  warpick: "Compendium.dnd5e.equipment24.Item.phbwepWarPick000",
-  warhammer: "Compendium.dnd5e.equipment24.Item.phbwepWarhammer0",
-  whip: "Compendium.dnd5e.equipment24.Item.phbwepWhip000000"
+  battleaxe: "Compendium.[game.system.id].equipment24.Item.phbwepBattleaxe0",
+  blowgun: "Compendium.[game.system.id].equipment24.Item.phbwepBlowgun000",
+  club: "Compendium.[game.system.id].equipment24.Item.phbwepClub000000",
+  dagger: "Compendium.[game.system.id].equipment24.Item.phbwepDagger0000",
+  dart: "Compendium.[game.system.id].equipment24.Item.phbwepDart000000",
+  flail: "Compendium.[game.system.id].equipment24.Item.phbwepFlail00000",
+  glaive: "Compendium.[game.system.id].equipment24.Item.phbwepGlaive0000",
+  greataxe: "Compendium.[game.system.id].equipment24.Item.phbwepGreataxe00",
+  greatclub: "Compendium.[game.system.id].equipment24.Item.phbwepGreatclub0",
+  greatsword: "Compendium.[game.system.id].equipment24.Item.phbwepGreatsword",
+  halberd: "Compendium.[game.system.id].equipment24.Item.phbwepHalberd000",
+  handaxe: "Compendium.[game.system.id].equipment24.Item.phbwepHandaxe000",
+  handcrossbow: "Compendium.[game.system.id].equipment24.Item.phbwepHandCrossb",
+  heavycrossbow: "Compendium.[game.system.id].equipment24.Item.phbwepHeavyCross",
+  javelin: "Compendium.[game.system.id].equipment24.Item.phbwepJavelin000",
+  lance: "Compendium.[game.system.id].equipment24.Item.phbwepLance00000",
+  lightcrossbow: "Compendium.[game.system.id].equipment24.Item.phbwepLightCross",
+  lighthammer: "Compendium.[game.system.id].equipment24.Item.phbwepLightHamme",
+  longbow: "Compendium.[game.system.id].equipment24.Item.phbwepLongbow000",
+  longsword: "Compendium.[game.system.id].equipment24.Item.phbwepLongsword0",
+  mace: "Compendium.[game.system.id].equipment24.Item.phbwepMace000000",
+  maul: "Compendium.[game.system.id].equipment24.Item.phbwepMaul000000",
+  morningstar: "Compendium.[game.system.id].equipment24.Item.phbwepMorningsta",
+  musket: "Compendium.[game.system.id].equipment24.Item.phbwepMusket0000",
+  pike: "Compendium.[game.system.id].equipment24.Item.phbwepPike000000",
+  pistol: "Compendium.[game.system.id].equipment24.Item.phbwepPistol0000",
+  quarterstaff: "Compendium.[game.system.id].equipment24.Item.phbwepQuartersta",
+  rapier: "Compendium.[game.system.id].equipment24.Item.phbwepRapier0000",
+  scimitar: "Compendium.[game.system.id].equipment24.Item.phbwepScimitar00",
+  shortsword: "Compendium.[game.system.id].equipment24.Item.phbwepShortsword",
+  sickle: "Compendium.[game.system.id].equipment24.Item.phbwepSickle0000",
+  spear: "Compendium.[game.system.id].equipment24.Item.phbwepSpear00000",
+  shortbow: "Compendium.[game.system.id].equipment24.Item.phbwepShortbow00",
+  sling: "Compendium.[game.system.id].equipment24.Item.phbwepSling00000",
+  trident: "Compendium.[game.system.id].equipment24.Item.phbwepTrident000",
+  warpick: "Compendium.[game.system.id].equipment24.Item.phbwepWarPick000",
+  warhammer: "Compendium.[game.system.id].equipment24.Item.phbwepWarhammer0",
+  whip: "Compendium.[game.system.id].equipment24.Item.phbwepWhip000000"
 };
 
 /* -------------------------------------------- */
@@ -512,11 +512,11 @@ DND5E.weaponIds = {
  * @enum {string}
  */
 DND5E.ammoIds = {
-  arrow: "Compendium.dnd5e.equipment24.Item.phbamoArrows0000",
-  blowgunNeedle: "Compendium.dnd5e.equipment24.Item.phbamoNeedles000",
-  crossbowBolt: "Compendium.dnd5e.equipment24.Item.phbamoBolts00000",
-  firearmBullet: "Compendium.dnd5e.equipment24.Item.phbamoBulletsFir",
-  slingBullet: "Compendium.dnd5e.equipment24.Item.phbamoBulletsSli"
+  arrow: "Compendium.[game.system.id].equipment24.Item.phbamoArrows0000",
+  blowgunNeedle: "Compendium.[game.system.id].equipment24.Item.phbamoNeedles000",
+  crossbowBolt: "Compendium.[game.system.id].equipment24.Item.phbamoBolts00000",
+  firearmBullet: "Compendium.[game.system.id].equipment24.Item.phbamoBulletsFir",
+  slingBullet: "Compendium.[game.system.id].equipment24.Item.phbamoBulletsSli"
 };
 
 /* -------------------------------------------- */
@@ -721,147 +721,147 @@ preLocalize("toolProficiencies", { sort: true });
 DND5E.tools = {
   alchemist: {
     ability: "int",
-    id: "Compendium.dnd5e.equipment24.Item.phbtulAlchemists"
+    id: "Compendium.[game.system.id].equipment24.Item.phbtulAlchemists"
   },
   bagpipes: {
     ability: "cha",
-    id: "Compendium.dnd5e.equipment24.Item.phbmusBagpipes00"
+    id: "Compendium.[game.system.id].equipment24.Item.phbmusBagpipes00"
   },
   brewer: {
     ability: "int",
-    id: "Compendium.dnd5e.equipment24.Item.phbtulBrewersSup"
+    id: "Compendium.[game.system.id].equipment24.Item.phbtulBrewersSup"
   },
   calligrapher: {
     ability: "dex",
-    id: "Compendium.dnd5e.equipment24.Item.phbtulCalligraph"
+    id: "Compendium.[game.system.id].equipment24.Item.phbtulCalligraph"
   },
   card: {
     ability: "wis",
-    id: "Compendium.dnd5e.equipment24.Item.phbgstPlayingcar"
+    id: "Compendium.[game.system.id].equipment24.Item.phbgstPlayingcar"
   },
   carpenter: {
     ability: "str",
-    id: "Compendium.dnd5e.equipment24.Item.phbtulCarpenters"
+    id: "Compendium.[game.system.id].equipment24.Item.phbtulCarpenters"
   },
   cartographer: {
     ability: "wis",
-    id: "Compendium.dnd5e.equipment24.Item.phbtulCartograph"
+    id: "Compendium.[game.system.id].equipment24.Item.phbtulCartograph"
   },
   chess: {
     ability: "wis",
-    id: "Compendium.dnd5e.equipment24.Item.phbgstDragonches"
+    id: "Compendium.[game.system.id].equipment24.Item.phbgstDragonches"
   },
   cobbler: {
     ability: "dex",
-    id: "Compendium.dnd5e.equipment24.Item.phbtulCobblersTo"
+    id: "Compendium.[game.system.id].equipment24.Item.phbtulCobblersTo"
   },
   cook: {
     ability: "wis",
-    id: "Compendium.dnd5e.equipment24.Item.phbtulCooksUtens"
+    id: "Compendium.[game.system.id].equipment24.Item.phbtulCooksUtens"
   },
   dice: {
     ability: "wis",
-    id: "Compendium.dnd5e.equipment24.Item.phbgstDice000000"
+    id: "Compendium.[game.system.id].equipment24.Item.phbgstDice000000"
   },
   disg: {
     ability: "cha",
-    id: "Compendium.dnd5e.equipment24.Item.phbtulDisguiseKi"
+    id: "Compendium.[game.system.id].equipment24.Item.phbtulDisguiseKi"
   },
   drum: {
     ability: "cha",
-    id: "Compendium.dnd5e.equipment24.Item.phbmusDrum000000"
+    id: "Compendium.[game.system.id].equipment24.Item.phbmusDrum000000"
   },
   dulcimer: {
     ability: "cha",
-    id: "Compendium.dnd5e.equipment24.Item.phbmusDulcimer00"
+    id: "Compendium.[game.system.id].equipment24.Item.phbmusDulcimer00"
   },
   flute: {
     ability: "cha",
-    id: "Compendium.dnd5e.equipment24.Item.phbmusFlute00000"
+    id: "Compendium.[game.system.id].equipment24.Item.phbmusFlute00000"
   },
   forg: {
     ability: "dex",
-    id: "Compendium.dnd5e.equipment24.Item.phbtulForgeryKit"
+    id: "Compendium.[game.system.id].equipment24.Item.phbtulForgeryKit"
   },
   glassblower: {
     ability: "int",
-    id: "Compendium.dnd5e.equipment24.Item.phbtulGlassblowe"
+    id: "Compendium.[game.system.id].equipment24.Item.phbtulGlassblowe"
   },
   herb: {
     ability: "int",
-    id: "Compendium.dnd5e.equipment24.Item.phbtulHerbalismK"
+    id: "Compendium.[game.system.id].equipment24.Item.phbtulHerbalismK"
   },
   horn: {
     ability: "cha",
-    id: "Compendium.dnd5e.equipment24.Item.phbmusHorn000000"
+    id: "Compendium.[game.system.id].equipment24.Item.phbmusHorn000000"
   },
   jeweler: {
     ability: "int",
-    id: "Compendium.dnd5e.equipment24.Item.phbtulJewelersTo"
+    id: "Compendium.[game.system.id].equipment24.Item.phbtulJewelersTo"
   },
   leatherworker: {
     ability: "dex",
-    id: "Compendium.dnd5e.equipment24.Item.phbtulLeatherwor"
+    id: "Compendium.[game.system.id].equipment24.Item.phbtulLeatherwor"
   },
   lute: {
     ability: "cha",
-    id: "Compendium.dnd5e.equipment24.Item.phbmusLute000000"
+    id: "Compendium.[game.system.id].equipment24.Item.phbmusLute000000"
   },
   lyre: {
     ability: "cha",
-    id: "Compendium.dnd5e.equipment24.Item.phbmusLyre000000"
+    id: "Compendium.[game.system.id].equipment24.Item.phbmusLyre000000"
   },
   mason: {
     ability: "str",
-    id: "Compendium.dnd5e.equipment24.Item.phbtulMasonsTool"
+    id: "Compendium.[game.system.id].equipment24.Item.phbtulMasonsTool"
   },
   navg: {
     ability: "wis",
-    id: "Compendium.dnd5e.equipment24.Item.phbtulNavigators"
+    id: "Compendium.[game.system.id].equipment24.Item.phbtulNavigators"
   },
   painter: {
     ability: "wis",
-    id: "Compendium.dnd5e.equipment24.Item.phbtulPaintersSu"
+    id: "Compendium.[game.system.id].equipment24.Item.phbtulPaintersSu"
   },
   panflute: {
     ability: "cha",
-    id: "Compendium.dnd5e.equipment24.Item.phbmusPanflute00"
+    id: "Compendium.[game.system.id].equipment24.Item.phbmusPanflute00"
   },
   pois: {
     ability: "int",
-    id: "Compendium.dnd5e.equipment24.Item.phbtulPoisonersK"
+    id: "Compendium.[game.system.id].equipment24.Item.phbtulPoisonersK"
   },
   potter: {
     ability: "int",
-    id: "Compendium.dnd5e.equipment24.Item.phbtulPottersToo"
+    id: "Compendium.[game.system.id].equipment24.Item.phbtulPottersToo"
   },
   shawm: {
     ability: "cha",
-    id: "Compendium.dnd5e.equipment24.Item.phbmusShawm00000"
+    id: "Compendium.[game.system.id].equipment24.Item.phbmusShawm00000"
   },
   smith: {
     ability: "str",
-    id: "Compendium.dnd5e.equipment24.Item.phbtulSmithsTool"
+    id: "Compendium.[game.system.id].equipment24.Item.phbtulSmithsTool"
   },
   thief: {
     ability: "dex",
-    id: "Compendium.dnd5e.equipment24.Item.phbtulThievesToo"
+    id: "Compendium.[game.system.id].equipment24.Item.phbtulThievesToo"
   },
   tinker: {
     ability: "dex",
-    id: "Compendium.dnd5e.equipment24.Item.phbtulTinkersToo"
+    id: "Compendium.[game.system.id].equipment24.Item.phbtulTinkersToo"
   },
   viol: {
     ability: "cha",
-    id: "Compendium.dnd5e.equipment24.Item.phbmusViol000000"
+    id: "Compendium.[game.system.id].equipment24.Item.phbmusViol000000"
   },
   weaver: {
     ability: "dex",
-    id: "Compendium.dnd5e.equipment24.Item.phbtulWeaversToo"
+    id: "Compendium.[game.system.id].equipment24.Item.phbtulWeaversToo"
   },
   woodcarver: {
     ability: "dex",
-    id: "Compendium.dnd5e.equipment24.Item.phbtulWoodcarver"
+    id: "Compendium.[game.system.id].equipment24.Item.phbtulWoodcarver"
   }
 };
 
@@ -1651,18 +1651,18 @@ DND5E.armorProficienciesMap = {
  * @enum {string}
  */
 DND5E.armorIds = {
-  breastplate: "Compendium.dnd5e.equipment24.Item.phbarmBreastplat",
-  chainmail: "Compendium.dnd5e.equipment24.Item.phbarmChainMail0",
-  chainshirt: "Compendium.dnd5e.equipment24.Item.phbarmChainShirt",
-  halfplate: "Compendium.dnd5e.equipment24.Item.phbarmHalfPlateA",
-  hide: "Compendium.dnd5e.equipment24.Item.phbarmHideArmor0",
-  leather: "Compendium.dnd5e.equipment24.Item.phbarmLeatherArm",
-  padded: "Compendium.dnd5e.equipment24.Item.phbarmPaddedArmo",
-  plate: "Compendium.dnd5e.equipment24.Item.phbarmPlateArmor",
-  ringmail: "Compendium.dnd5e.equipment24.Item.phbarmRingMail00",
-  scalemail: "Compendium.dnd5e.equipment24.Item.phbarmScaleMail0",
-  splint: "Compendium.dnd5e.equipment24.Item.phbarmSplintArmo",
-  studded: "Compendium.dnd5e.equipment24.Item.phbarmStuddedLea"
+  breastplate: "Compendium.[game.system.id].equipment24.Item.phbarmBreastplat",
+  chainmail: "Compendium.[game.system.id].equipment24.Item.phbarmChainMail0",
+  chainshirt: "Compendium.[game.system.id].equipment24.Item.phbarmChainShirt",
+  halfplate: "Compendium.[game.system.id].equipment24.Item.phbarmHalfPlateA",
+  hide: "Compendium.[game.system.id].equipment24.Item.phbarmHideArmor0",
+  leather: "Compendium.[game.system.id].equipment24.Item.phbarmLeatherArm",
+  padded: "Compendium.[game.system.id].equipment24.Item.phbarmPaddedArmo",
+  plate: "Compendium.[game.system.id].equipment24.Item.phbarmPlateArmor",
+  ringmail: "Compendium.[game.system.id].equipment24.Item.phbarmRingMail00",
+  scalemail: "Compendium.[game.system.id].equipment24.Item.phbarmScaleMail0",
+  splint: "Compendium.[game.system.id].equipment24.Item.phbarmSplintArmo",
+  studded: "Compendium.[game.system.id].equipment24.Item.phbarmStuddedLea"
 };
 
 /**
@@ -1670,7 +1670,7 @@ DND5E.armorIds = {
  * @enum {string}
  */
 DND5E.shieldIds = {
-  shield: "Compendium.dnd5e.equipment24.Item.phbarmShield0000"
+  shield: "Compendium.[game.system.id].equipment24.Item.phbarmShield0000"
 };
 
 /**
@@ -1923,7 +1923,7 @@ DND5E.itemProperties = {
     label: "DND5E.ITEM.Property.Concentration",
     abbreviation: "DND5E.ConcentrationAbbr",
     icon: "systems/dnd5e/icons/svg/statuses/concentrating.svg",
-    reference: "Compendium.dnd5e.rules.JournalEntry.NizgRXLNUqtdlC1s.JournalEntryPage.ow58p27ctAnr4VPH",
+    reference: "Compendium.[game.system.id].rules.JournalEntry.NizgRXLNUqtdlC1s.JournalEntryPage.ow58p27ctAnr4VPH",
     isTag: true
   },
   fin: {
@@ -1947,7 +1947,7 @@ DND5E.itemProperties = {
   material: {
     label: "DND5E.ITEM.Property.Material",
     abbreviation: "DND5E.ComponentMaterialAbbr",
-    reference: "Compendium.dnd5e.rules.JournalEntry.NizgRXLNUqtdlC1s.JournalEntryPage.AeH5eDS4YeM9RETC"
+    reference: "Compendium.[game.system.id].rules.JournalEntry.NizgRXLNUqtdlC1s.JournalEntryPage.AeH5eDS4YeM9RETC"
   },
   mgc: {
     label: "DND5E.ITEM.Property.Magical",
@@ -1967,7 +1967,7 @@ DND5E.itemProperties = {
     label: "DND5E.ITEM.Property.Ritual",
     abbreviation: "DND5E.RitualAbbr",
     icon: "systems/dnd5e/icons/svg/items/spell.svg",
-    reference: "Compendium.dnd5e.rules.JournalEntry.NizgRXLNUqtdlC1s.JournalEntryPage.FjWqT5iyJ89kohdA",
+    reference: "Compendium.[game.system.id].rules.JournalEntry.NizgRXLNUqtdlC1s.JournalEntryPage.FjWqT5iyJ89kohdA",
     isTag: true
   },
   sidekick: {
@@ -1980,7 +1980,7 @@ DND5E.itemProperties = {
   somatic: {
     label: "DND5E.ITEM.Property.Somatic",
     abbreviation: "DND5E.ComponentSomaticAbbr",
-    reference: "Compendium.dnd5e.rules.JournalEntry.NizgRXLNUqtdlC1s.JournalEntryPage.qwUNgUNilEmZkSC9"
+    reference: "Compendium.[game.system.id].rules.JournalEntry.NizgRXLNUqtdlC1s.JournalEntryPage.qwUNgUNilEmZkSC9"
   },
   spc: {
     label: "DND5E.ITEM.Property.Special"
@@ -2003,7 +2003,7 @@ DND5E.itemProperties = {
   vocal: {
     label: "DND5E.ITEM.Property.Verbal",
     abbreviation: "DND5E.ComponentVerbalAbbr",
-    reference: "Compendium.dnd5e.rules.JournalEntry.NizgRXLNUqtdlC1s.JournalEntryPage.6UXTNWMCQ0nSlwwx"
+    reference: "Compendium.[game.system.id].rules.JournalEntry.NizgRXLNUqtdlC1s.JournalEntryPage.6UXTNWMCQ0nSlwwx"
   },
   weightlessContents: {
     label: "DND5E.ITEM.Property.WeightlessContents"
@@ -2794,7 +2794,7 @@ DND5E.areaTargetTypes = {
     label: "DND5E.TARGET.Type.Cone.Label",
     counted: "DND5E.TARGET.Type.Cone.Counted",
     template: "cone",
-    reference: "Compendium.dnd5e.rules.JournalEntry.NizgRXLNUqtdlC1s.JournalEntryPage.DqqAOr5JnX71OCOw",
+    reference: "Compendium.[game.system.id].rules.JournalEntry.NizgRXLNUqtdlC1s.JournalEntryPage.DqqAOr5JnX71OCOw",
     sizes: ["length"],
     standard: true
   },
@@ -2802,7 +2802,7 @@ DND5E.areaTargetTypes = {
     label: "DND5E.TARGET.Type.Cube.Label",
     counted: "DND5E.TARGET.Type.Cube.Counted",
     template: "rect",
-    reference: "Compendium.dnd5e.rules.JournalEntry.NizgRXLNUqtdlC1s.JournalEntryPage.dRfDIwuaHmUQ06uA",
+    reference: "Compendium.[game.system.id].rules.JournalEntry.NizgRXLNUqtdlC1s.JournalEntryPage.dRfDIwuaHmUQ06uA",
     sizes: ["width"],
     standard: true
   },
@@ -2810,7 +2810,7 @@ DND5E.areaTargetTypes = {
     label: "DND5E.TARGET.Type.Cylinder.Label",
     counted: "DND5E.TARGET.Type.Cylinder.Counted",
     template: "circle",
-    reference: "Compendium.dnd5e.rules.JournalEntry.NizgRXLNUqtdlC1s.JournalEntryPage.jZFp4R7tXsIqkiG3",
+    reference: "Compendium.[game.system.id].rules.JournalEntry.NizgRXLNUqtdlC1s.JournalEntryPage.jZFp4R7tXsIqkiG3",
     sizes: ["radius", "height"],
     standard: true
   },
@@ -2818,7 +2818,7 @@ DND5E.areaTargetTypes = {
     label: "DND5E.TARGET.Type.Line.Label",
     counted: "DND5E.TARGET.Type.Line.Counted",
     template: "ray",
-    reference: "Compendium.dnd5e.rules.JournalEntry.NizgRXLNUqtdlC1s.JournalEntryPage.6DOoBgg7okm9gBc6",
+    reference: "Compendium.[game.system.id].rules.JournalEntry.NizgRXLNUqtdlC1s.JournalEntryPage.6DOoBgg7okm9gBc6",
     sizes: ["length", "width"],
     standard: true
   },
@@ -2832,7 +2832,7 @@ DND5E.areaTargetTypes = {
     label: "DND5E.TARGET.Type.Sphere.Label",
     counted: "DND5E.TARGET.Type.Sphere.Counted",
     template: "circle",
-    reference: "Compendium.dnd5e.rules.JournalEntry.NizgRXLNUqtdlC1s.JournalEntryPage.npdEWb2egUPnB5Fa",
+    reference: "Compendium.[game.system.id].rules.JournalEntry.NizgRXLNUqtdlC1s.JournalEntryPage.npdEWb2egUPnB5Fa",
     sizes: ["radius"],
     standard: true
   },
@@ -3221,22 +3221,22 @@ preLocalize("spellPreparationStates", { key: "label" });
  * @type {string[]}
  */
 DND5E.SPELL_LISTS = Object.freeze([
-  "Compendium.dnd5e.content24.JournalEntry.phbSpells0000000.JournalEntryPage.wwia6Wwo4BgE9GSI",
-  "Compendium.dnd5e.content24.JournalEntry.phbSpells0000000.JournalEntryPage.SkHptN2PTzFGDaEj",
-  "Compendium.dnd5e.content24.JournalEntry.phbSpells0000000.JournalEntryPage.LhvuDQEyrCdg5EfU",
-  "Compendium.dnd5e.content24.JournalEntry.phbSpells0000000.JournalEntryPage.8yD9Jgp404hfZ9ie",
-  "Compendium.dnd5e.content24.JournalEntry.phbSpells0000000.JournalEntryPage.5HnIk6HsrSxkvkz5",
-  "Compendium.dnd5e.content24.JournalEntry.phbSpells0000000.JournalEntryPage.VfZ5mH2ZuyFq82Ga",
-  "Compendium.dnd5e.content24.JournalEntry.phbSpells0000000.JournalEntryPage.sSzagq8GvYXpfmfs",
-  "Compendium.dnd5e.content24.JournalEntry.phbSpells0000000.JournalEntryPage.6AnqLUowgdsqMFvz",
-  "Compendium.dnd5e.content24.JournalEntry.phbAppendixDRule.JournalEntryPage.spellsLife000000",
-  "Compendium.dnd5e.content24.JournalEntry.phbAppendixDRule.JournalEntryPage.spellsLandArid00",
-  "Compendium.dnd5e.content24.JournalEntry.phbAppendixDRule.JournalEntryPage.spellsLandPolar0",
-  "Compendium.dnd5e.content24.JournalEntry.phbAppendixDRule.JournalEntryPage.spellsLandTemper",
-  "Compendium.dnd5e.content24.JournalEntry.phbAppendixDRule.JournalEntryPage.spellsLandTropic",
-  "Compendium.dnd5e.content24.JournalEntry.phbAppendixDRule.JournalEntryPage.spellsDevotion00",
-  "Compendium.dnd5e.content24.JournalEntry.phbAppendixDRule.JournalEntryPage.spellsDraconic00",
-  "Compendium.dnd5e.content24.JournalEntry.phbAppendixDRule.JournalEntryPage.spellsFiend00000"
+  "Compendium.[game.system.id].content24.JournalEntry.phbSpells0000000.JournalEntryPage.wwia6Wwo4BgE9GSI",
+  "Compendium.[game.system.id].content24.JournalEntry.phbSpells0000000.JournalEntryPage.SkHptN2PTzFGDaEj",
+  "Compendium.[game.system.id].content24.JournalEntry.phbSpells0000000.JournalEntryPage.LhvuDQEyrCdg5EfU",
+  "Compendium.[game.system.id].content24.JournalEntry.phbSpells0000000.JournalEntryPage.8yD9Jgp404hfZ9ie",
+  "Compendium.[game.system.id].content24.JournalEntry.phbSpells0000000.JournalEntryPage.5HnIk6HsrSxkvkz5",
+  "Compendium.[game.system.id].content24.JournalEntry.phbSpells0000000.JournalEntryPage.VfZ5mH2ZuyFq82Ga",
+  "Compendium.[game.system.id].content24.JournalEntry.phbSpells0000000.JournalEntryPage.sSzagq8GvYXpfmfs",
+  "Compendium.[game.system.id].content24.JournalEntry.phbSpells0000000.JournalEntryPage.6AnqLUowgdsqMFvz",
+  "Compendium.[game.system.id].content24.JournalEntry.phbAppendixDRule.JournalEntryPage.spellsLife000000",
+  "Compendium.[game.system.id].content24.JournalEntry.phbAppendixDRule.JournalEntryPage.spellsLandArid00",
+  "Compendium.[game.system.id].content24.JournalEntry.phbAppendixDRule.JournalEntryPage.spellsLandPolar0",
+  "Compendium.[game.system.id].content24.JournalEntry.phbAppendixDRule.JournalEntryPage.spellsLandTemper",
+  "Compendium.[game.system.id].content24.JournalEntry.phbAppendixDRule.JournalEntryPage.spellsLandTropic",
+  "Compendium.[game.system.id].content24.JournalEntry.phbAppendixDRule.JournalEntryPage.spellsDevotion00",
+  "Compendium.[game.system.id].content24.JournalEntry.phbAppendixDRule.JournalEntryPage.spellsDraconic00",
+  "Compendium.[game.system.id].content24.JournalEntry.phbAppendixDRule.JournalEntryPage.spellsFiend00000"
 ]);
 
 /* -------------------------------------------- */
@@ -3824,19 +3824,19 @@ DND5E.conditionTypes = {
   blinded: {
     name: "DND5E.ConBlinded",
     img: "systems/dnd5e/icons/svg/statuses/blinded.svg",
-    reference: "Compendium.dnd5e.content24.JournalEntry.phbAppendixCRule.JournalEntryPage.uDogReMO6QtH6NDw",
+    reference: "Compendium.[game.system.id].content24.JournalEntry.phbAppendixCRule.JournalEntryPage.uDogReMO6QtH6NDw",
     special: "BLIND"
   },
   burning: {
     name: "EFFECT.DND5E.StatusBurning",
     img: "systems/dnd5e/icons/svg/statuses/burning.svg",
-    reference: "Compendium.dnd5e.content24.JournalEntry.phbAppendixCRule.JournalEntryPage.mPBGM1vguT5IPzxT",
+    reference: "Compendium.[game.system.id].content24.JournalEntry.phbAppendixCRule.JournalEntryPage.mPBGM1vguT5IPzxT",
     pseudo: true
   },
   charmed: {
     name: "DND5E.ConCharmed",
     img: "systems/dnd5e/icons/svg/statuses/charmed.svg",
-    reference: "Compendium.dnd5e.content24.JournalEntry.phbAppendixCRule.JournalEntryPage.vLAsIUa0FhZNsyLk"
+    reference: "Compendium.[game.system.id].content24.JournalEntry.phbAppendixCRule.JournalEntryPage.vLAsIUa0FhZNsyLk"
   },
   cursed: {
     name: "EFFECT.DND5E.StatusCursed",
@@ -3846,86 +3846,86 @@ DND5E.conditionTypes = {
   dehydration: {
     name: "EFFECT.DND5E.StatusDehydration",
     img: "systems/dnd5e/icons/svg/statuses/dehydration.svg",
-    reference: "Compendium.dnd5e.content24.JournalEntry.phbAppendixCRule.JournalEntryPage.FZFvLNOX0lHaHZ1k",
+    reference: "Compendium.[game.system.id].content24.JournalEntry.phbAppendixCRule.JournalEntryPage.FZFvLNOX0lHaHZ1k",
     pseudo: true
   },
   deafened: {
     name: "DND5E.ConDeafened",
     img: "systems/dnd5e/icons/svg/statuses/deafened.svg",
-    reference: "Compendium.dnd5e.content24.JournalEntry.phbAppendixCRule.JournalEntryPage.qlRw66tJhk0zLnwq"
+    reference: "Compendium.[game.system.id].content24.JournalEntry.phbAppendixCRule.JournalEntryPage.qlRw66tJhk0zLnwq"
   },
   diseased: {
     name: "DND5E.ConDiseased",
     img: "systems/dnd5e/icons/svg/statuses/diseased.svg",
     pseudo: true,
-    reference: "Compendium.dnd5e.rules.JournalEntry.NizgRXLNUqtdlC1s.JournalEntryPage.oNQWvyRZkTOJ8PBq"
+    reference: "Compendium.[game.system.id].rules.JournalEntry.NizgRXLNUqtdlC1s.JournalEntryPage.oNQWvyRZkTOJ8PBq"
   },
   exhaustion: {
     name: "DND5E.ConExhaustion",
     img: "systems/dnd5e/icons/svg/statuses/exhaustion.svg",
-    reference: "Compendium.dnd5e.content24.JournalEntry.phbAppendixCRule.JournalEntryPage.jSQtPgNm0i4f3Qi3",
+    reference: "Compendium.[game.system.id].content24.JournalEntry.phbAppendixCRule.JournalEntryPage.jSQtPgNm0i4f3Qi3",
     levels: 6,
     reduction: { rolls: 2, speed: 5 }
   },
   falling: {
     name: "EFFECT.DND5E.StatusFalling",
     img: "systems/dnd5e/icons/svg/statuses/falling.svg",
-    reference: "Compendium.dnd5e.content24.JournalEntry.phbAppendixDRule.JournalEntryPage.kREHL5pgNUOhay9f",
+    reference: "Compendium.[game.system.id].content24.JournalEntry.phbAppendixDRule.JournalEntryPage.kREHL5pgNUOhay9f",
     pseudo: true
   },
   frightened: {
     name: "DND5E.ConFrightened",
     img: "systems/dnd5e/icons/svg/statuses/frightened.svg",
-    reference: "Compendium.dnd5e.content24.JournalEntry.phbAppendixCRule.JournalEntryPage.93uaingTESo8N1qL"
+    reference: "Compendium.[game.system.id].content24.JournalEntry.phbAppendixCRule.JournalEntryPage.93uaingTESo8N1qL"
   },
   grappled: {
     name: "DND5E.ConGrappled",
     img: "systems/dnd5e/icons/svg/statuses/grappled.svg",
-    reference: "Compendium.dnd5e.content24.JournalEntry.phbAppendixCRule.JournalEntryPage.KbQ1k0OIowtZeQgp"
+    reference: "Compendium.[game.system.id].content24.JournalEntry.phbAppendixCRule.JournalEntryPage.KbQ1k0OIowtZeQgp"
   },
   incapacitated: {
     name: "DND5E.ConIncapacitated",
     img: "systems/dnd5e/icons/svg/statuses/incapacitated.svg",
-    reference: "Compendium.dnd5e.content24.JournalEntry.phbAppendixCRule.JournalEntryPage.4i3G895hy99piand",
+    reference: "Compendium.[game.system.id].content24.JournalEntry.phbAppendixCRule.JournalEntryPage.4i3G895hy99piand",
     neverBlockMovement: true
   },
   invisible: {
     name: "DND5E.ConInvisible",
     img: "systems/dnd5e/icons/svg/statuses/invisible.svg",
-    reference: "Compendium.dnd5e.content24.JournalEntry.phbAppendixCRule.JournalEntryPage.MQIZ1zRLWRcNOtPN"
+    reference: "Compendium.[game.system.id].content24.JournalEntry.phbAppendixCRule.JournalEntryPage.MQIZ1zRLWRcNOtPN"
   },
   malnutrition: {
     name: "EFFECT.DND5E.StatusMalnutrition",
     img: "systems/dnd5e/icons/svg/statuses/malnutrition.svg",
-    reference: "Compendium.dnd5e.content24.JournalEntry.phbAppendixCRule.JournalEntryPage.earBo4vQPC1ti4g7",
+    reference: "Compendium.[game.system.id].content24.JournalEntry.phbAppendixCRule.JournalEntryPage.earBo4vQPC1ti4g7",
     pseudo: true
   },
   paralyzed: {
     name: "DND5E.ConParalyzed",
     img: "systems/dnd5e/icons/svg/statuses/paralyzed.svg",
-    reference: "Compendium.dnd5e.content24.JournalEntry.phbAppendixCRule.JournalEntryPage.RnxZoTglPnLc6UPb",
+    reference: "Compendium.[game.system.id].content24.JournalEntry.phbAppendixCRule.JournalEntryPage.RnxZoTglPnLc6UPb",
     statuses: ["incapacitated"]
   },
   petrified: {
     name: "DND5E.ConPetrified",
     img: "systems/dnd5e/icons/svg/statuses/petrified.svg",
-    reference: "Compendium.dnd5e.content24.JournalEntry.phbAppendixCRule.JournalEntryPage.6vtLuQT9lwZ9N299",
+    reference: "Compendium.[game.system.id].content24.JournalEntry.phbAppendixCRule.JournalEntryPage.6vtLuQT9lwZ9N299",
     statuses: ["incapacitated"]
   },
   poisoned: {
     name: "DND5E.ConPoisoned",
     img: "systems/dnd5e/icons/svg/statuses/poisoned.svg",
-    reference: "Compendium.dnd5e.content24.JournalEntry.phbAppendixCRule.JournalEntryPage.HWs8kEojffqwTSJz"
+    reference: "Compendium.[game.system.id].content24.JournalEntry.phbAppendixCRule.JournalEntryPage.HWs8kEojffqwTSJz"
   },
   prone: {
     name: "DND5E.ConProne",
     img: "systems/dnd5e/icons/svg/statuses/prone.svg",
-    reference: "Compendium.dnd5e.content24.JournalEntry.phbAppendixCRule.JournalEntryPage.QxCrRcgMdUd3gfzz"
+    reference: "Compendium.[game.system.id].content24.JournalEntry.phbAppendixCRule.JournalEntryPage.QxCrRcgMdUd3gfzz"
   },
   restrained: {
     name: "DND5E.ConRestrained",
     img: "systems/dnd5e/icons/svg/statuses/restrained.svg",
-    reference: "Compendium.dnd5e.content24.JournalEntry.phbAppendixCRule.JournalEntryPage.dqLeGdpHtb8FfcxX"
+    reference: "Compendium.[game.system.id].content24.JournalEntry.phbAppendixCRule.JournalEntryPage.dqLeGdpHtb8FfcxX"
   },
   silenced: {
     name: "EFFECT.DND5E.StatusSilenced",
@@ -3935,13 +3935,13 @@ DND5E.conditionTypes = {
   stunned: {
     name: "DND5E.ConStunned",
     img: "systems/dnd5e/icons/svg/statuses/stunned.svg",
-    reference: "Compendium.dnd5e.content24.JournalEntry.phbAppendixCRule.JournalEntryPage.EjbXjvyQAMlDyANI",
+    reference: "Compendium.[game.system.id].content24.JournalEntry.phbAppendixCRule.JournalEntryPage.EjbXjvyQAMlDyANI",
     statuses: ["incapacitated"]
   },
   suffocation: {
     name: "EFFECT.DND5E.StatusSuffocation",
     img: "systems/dnd5e/icons/svg/statuses/suffocation.svg",
-    reference: "Compendium.dnd5e.content24.JournalEntry.phbAppendixCRule.JournalEntryPage.gAvV8TLyS8UGq00x",
+    reference: "Compendium.[game.system.id].content24.JournalEntry.phbAppendixCRule.JournalEntryPage.gAvV8TLyS8UGq00x",
     pseudo: true
   },
   surprised: {
@@ -3957,7 +3957,7 @@ DND5E.conditionTypes = {
   unconscious: {
     name: "DND5E.ConUnconscious",
     img: "systems/dnd5e/icons/svg/statuses/unconscious.svg",
-    reference: "Compendium.dnd5e.content24.JournalEntry.phbAppendixCRule.JournalEntryPage.fZCRaKEJd4KoQCqH",
+    reference: "Compendium.[game.system.id].content24.JournalEntry.phbAppendixCRule.JournalEntryPage.fZCRaKEJd4KoQCqH",
     statuses: ["incapacitated"],
     riders: ["prone"]
   }
@@ -4837,174 +4837,174 @@ preLocalize("ruleTypes", { key: "label" });
  * @enum {string}
  */
 DND5E.rules = {
-  inspiration: "Compendium.dnd5e.content24.JournalEntry.phbAppendixDRule.JournalEntryPage.nkEPI89CiQnOaLYh",
-  carryingcapacity: "Compendium.dnd5e.content24.JournalEntry.phbAppendixDRule.JournalEntryPage.1PnjDBKbQJIVyc2t",
-  push: "Compendium.dnd5e.content24.JournalEntry.phbAppendixDRule.JournalEntryPage.Hni8DjqLzoqsVjb6",
-  lift: "Compendium.dnd5e.content24.JournalEntry.phbAppendixDRule.JournalEntryPage.Hni8DjqLzoqsVjb6",
-  drag: "Compendium.dnd5e.content24.JournalEntry.phbAppendixDRule.JournalEntryPage.Hni8DjqLzoqsVjb6",
-  encumbrance: "Compendium.dnd5e.content24.JournalEntry.phbAppendixDRule.JournalEntryPage.JwqYf9qb6gJAWZKs",
-  hiding: "Compendium.dnd5e.content24.JournalEntry.phbAppendixDRule.JournalEntryPage.plHuoNdS0j3umPNS",
-  passiveperception: "Compendium.dnd5e.content24.JournalEntry.phbAppendixDRule.JournalEntryPage.988C2hQNyvqkdbND",
-  time: "Compendium.dnd5e.content24.JournalEntry.phbAppendixDRule.JournalEntryPage.eihqNjwpZ3HM4IqY",
-  speed: "Compendium.dnd5e.content24.JournalEntry.phbAppendixDRule.JournalEntryPage.HhqeIiSj8sE1v1qZ",
-  travelpace: "Compendium.dnd5e.content24.JournalEntry.phbAppendixDRule.JournalEntryPage.eFAISahBloR2X8MX",
-  forcedmarch: "Compendium.dnd5e.content24.JournalEntry.phbAppendixDRule.JournalEntryPage.uQWQpRKQ1kWhuvjZ",
-  difficultterrainpace: "Compendium.dnd5e.content24.JournalEntry.phbAppendixDRule.JournalEntryPage.hFW5BR2yHHwwgurD",
-  climbing: "Compendium.dnd5e.content24.JournalEntry.phbAppendixDRule.JournalEntryPage.KxUXbMrUCIAhv4AF",
-  swimming: "Compendium.dnd5e.content24.JournalEntry.phbAppendixDRule.JournalEntryPage.KxUXbMrUCIAhv4AF",
-  longjump: "Compendium.dnd5e.content24.JournalEntry.phbAppendixDRule.JournalEntryPage.1U0myNrOvIVBUdJV",
-  highjump: "Compendium.dnd5e.content24.JournalEntry.phbAppendixDRule.JournalEntryPage.raPwIkqKSv60ELmy",
-  falling: "Compendium.dnd5e.content24.JournalEntry.phbAppendixDRule.JournalEntryPage.kREHL5pgNUOhay9f",
-  suffocating: "Compendium.dnd5e.content24.JournalEntry.phbAppendixDRule.JournalEntryPage.BIlnr0xYhqt4TGsi",
-  vision: "Compendium.dnd5e.content24.JournalEntry.phbAppendixDRule.JournalEntryPage.O6hamUbI9kVASN8b",
-  light: "Compendium.dnd5e.content24.JournalEntry.phbAppendixDRule.JournalEntryPage.O6hamUbI9kVASN8b",
-  lightlyobscured: "Compendium.dnd5e.content24.JournalEntry.phbAppendixDRule.JournalEntryPage.MAxtfJyvJV7EpzWN",
-  heavilyobscured: "Compendium.dnd5e.content24.JournalEntry.phbAppendixDRule.JournalEntryPage.wPFjfRruboxhtL4b",
-  brightlight: "Compendium.dnd5e.content24.JournalEntry.phbAppendixDRule.JournalEntryPage.RnMokVPyKGbbL8vi",
-  dimlight: "Compendium.dnd5e.content24.JournalEntry.phbAppendixDRule.JournalEntryPage.n1Ocpbyhr6HhgbCG",
-  darkness: "Compendium.dnd5e.content24.JournalEntry.phbAppendixDRule.JournalEntryPage.4dfREIDjG5N4fvxd",
-  blindsight: "Compendium.dnd5e.content24.JournalEntry.phbAppendixDRule.JournalEntryPage.sacjsfm9ZXnw4Tqc",
-  darkvision: "Compendium.dnd5e.content24.JournalEntry.phbAppendixDRule.JournalEntryPage.ldmA1PbnEGVkmE11",
-  tremorsense: "Compendium.dnd5e.rules.JournalEntry.eVtpEGXjA2tamEIJ.JournalEntryPage.8AIlZ95v54mL531X",
-  truesight: "Compendium.dnd5e.content24.JournalEntry.phbAppendixDRule.JournalEntryPage.kNa8rJFbtaTM3Rmk",
-  food: "Compendium.dnd5e.content24.JournalEntry.phbAppendixDRule.JournalEntryPage.jayo7XVgGnRCpTW0",
-  water: "Compendium.dnd5e.content24.JournalEntry.phbAppendixDRule.JournalEntryPage.iIEI87J7lr2sqtb5",
-  resting: "Compendium.dnd5e.content24.JournalEntry.phbAppendixDRule.JournalEntryPage.dpHJXYLigIdEseIb",
-  shortrest: "Compendium.dnd5e.content24.JournalEntry.phbAppendixDRule.JournalEntryPage.1s2swI3UsjUUgbt2",
-  longrest: "Compendium.dnd5e.content24.JournalEntry.phbAppendixDRule.JournalEntryPage.6cLtjbHn4KV2R7G9",
-  surprise: "Compendium.dnd5e.content24.JournalEntry.phbAppendixDRule.JournalEntryPage.YmOt8HderKveA19K",
-  initiative: "Compendium.dnd5e.content24.JournalEntry.phbAppendixDRule.JournalEntryPage.RcwElV4GAcVXKWxo",
-  bonusaction: "Compendium.dnd5e.content24.JournalEntry.phbAppendixDRule.JournalEntryPage.2fu2CXsDg8gQmGGw",
-  reaction: "Compendium.dnd5e.content24.JournalEntry.phbAppendixDRule.JournalEntryPage.2VqLyxMyMxgXe2wC",
-  difficultterrain: "Compendium.dnd5e.content24.JournalEntry.phbAppendixDRule.JournalEntryPage.6tqz947qO8vPyxvD",
-  beingprone: "Compendium.dnd5e.content24.JournalEntry.phbAppendixDRule.JournalEntryPage.bV8akkBdVUUG21CO",
-  droppingprone: "Compendium.dnd5e.content24.JournalEntry.phbAppendixDRule.JournalEntryPage.hwTLpAtSS5OqQsI1",
-  standingup: "Compendium.dnd5e.content24.JournalEntry.phbAppendixDRule.JournalEntryPage.hwTLpAtSS5OqQsI1",
-  crawling: "Compendium.dnd5e.content24.JournalEntry.phbAppendixDRule.JournalEntryPage.VWG9qe8PUNtS28Pw",
-  movingaroundothercreatures: "Compendium.dnd5e.content24.JournalEntry.phbAppendixDRule.JournalEntryPage.9ZWCknaXCOdhyOrX",
-  flying: "Compendium.dnd5e.content24.JournalEntry.phbAppendixDRule.JournalEntryPage.0B1fxfmw0a48tPsc",
-  size: "Compendium.dnd5e.content24.JournalEntry.phbAppendixDRule.JournalEntryPage.HWHRQVBVG7K0RVVW",
-  space: "Compendium.dnd5e.content24.JournalEntry.phbAppendixDRule.JournalEntryPage.WIA5bs3P45PmO3OS",
-  squeezing: "Compendium.dnd5e.content24.JournalEntry.phbAppendixDRule.JournalEntryPage.wKtOwagDAiNfVoPS",
-  attack: "Compendium.dnd5e.content24.JournalEntry.phbAppendixCRule.JournalEntryPage.f4fZHwBvpbpzRyn4",
-  castaspell: "Compendium.dnd5e.content24.JournalEntry.phbAppendixDRule.JournalEntryPage.GLwN36E4WXn3Cp4Z",
-  dash: "Compendium.dnd5e.content24.JournalEntry.phbAppendixCRule.JournalEntryPage.6l6nBKip4LqB1sCU",
-  disengage: "Compendium.dnd5e.content24.JournalEntry.phbAppendixCRule.JournalEntryPage.w1AGsemFERfjqWNx",
-  dodge: "Compendium.dnd5e.content24.JournalEntry.phbAppendixCRule.JournalEntryPage.3YJIuyCMmuUrfmuX",
-  help: "Compendium.dnd5e.content24.JournalEntry.phbAppendixCRule.JournalEntryPage.5S8i59qskkd9GGcJ",
-  hide: "Compendium.dnd5e.content24.JournalEntry.phbAppendixCRule.JournalEntryPage.rqhOsUY4wWa1oHTy",
-  ready: "Compendium.dnd5e.content24.JournalEntry.phbAppendixCRule.JournalEntryPage.nI9tN6Oq7fCV7hcA",
-  search: "Compendium.dnd5e.content24.JournalEntry.phbAppendixCRule.JournalEntryPage.ySj4gYZ4ADZoia7R",
-  useanobject: "Compendium.dnd5e.content24.JournalEntry.phbAppendixDRule.JournalEntryPage.ljqhJx8Qxu2ivo69",
-  attackrolls: "Compendium.dnd5e.content24.JournalEntry.phbAppendixCRule.JournalEntryPage.W8uJrd1D8NeOuawp",
-  unseenattackers: "Compendium.dnd5e.content24.JournalEntry.phbAppendixDRule.JournalEntryPage.5ZJNwEPlsGurecg5",
-  unseentargets: "Compendium.dnd5e.content24.JournalEntry.phbAppendixDRule.JournalEntryPage.5ZJNwEPlsGurecg5",
-  rangedattacks: "Compendium.dnd5e.content24.JournalEntry.phbAppendixDRule.JournalEntryPage.S9aclVOCbusLE3kC",
-  range: "Compendium.dnd5e.content24.JournalEntry.phbAppendixDRule.JournalEntryPage.HjKXuB8ndjcqOds7",
-  rangedattacksinclosecombat: "Compendium.dnd5e.content24.JournalEntry.phbAppendixDRule.JournalEntryPage.qEZvxW0NM7ixSQP5",
-  meleeattacks: "Compendium.dnd5e.content24.JournalEntry.phbAppendixDRule.JournalEntryPage.GTk6emvzNxl8Oosl",
-  reach: "Compendium.dnd5e.content24.JournalEntry.phbAppendixDRule.JournalEntryPage.hgZ5ZN4B3y7tmFlt",
-  unarmedstrike: "Compendium.dnd5e.content24.JournalEntry.phbAppendixDRule.JournalEntryPage.xJjJ4lhymAYXAOvO",
-  opportunityattacks: "Compendium.dnd5e.content24.JournalEntry.phbAppendixDRule.JournalEntryPage.zeU0NyCyP10lkLg3",
-  twoweaponfighting: "Compendium.dnd5e.content24.JournalEntry.phbAppendixDRule.JournalEntryPage.FQTS08uH74A6psL2",
-  grappling: "Compendium.dnd5e.content24.JournalEntry.phbAppendixCRule.JournalEntryPage.YSLWJcQCP6kzsPql",
-  escapingagrapple: "Compendium.dnd5e.content24.JournalEntry.phbAppendixDRule.JournalEntryPage.2TZKy9YbMN3ZY3h8",
-  movingagrappledcreature: "Compendium.dnd5e.content24.JournalEntry.phbAppendixDRule.JournalEntryPage.x5bUdhAD7u5Bt2rg",
-  shoving: "Compendium.dnd5e.content24.JournalEntry.phbAppendixDRule.JournalEntryPage.hrdqMF8hRXJdNzJx",
-  cover: "Compendium.dnd5e.content24.JournalEntry.phbAppendixDRule.JournalEntryPage.W7f7PcRubNUMIq2S",
-  halfcover: "Compendium.dnd5e.content24.JournalEntry.phbAppendixDRule.JournalEntryPage.hv0J61IAfofuhy3Q",
-  threequarterscover: "Compendium.dnd5e.content24.JournalEntry.phbAppendixDRule.JournalEntryPage.zAMStUjUrPV10dFm",
-  totalcover: "Compendium.dnd5e.content24.JournalEntry.phbAppendixDRule.JournalEntryPage.BKUAxXuPEzxiEOeL",
-  hitpoints: "Compendium.dnd5e.content24.JournalEntry.phbAppendixDRule.JournalEntryPage.PFbzoMBviI2DD9QP",
-  damagerolls: "Compendium.dnd5e.content24.JournalEntry.phbAppendixDRule.JournalEntryPage.hd26AqKrCqtcQBWy",
-  criticalhits: "Compendium.dnd5e.content24.JournalEntry.phbAppendixDRule.JournalEntryPage.gFL1VhSEljL1zvje",
-  damagetypes: "Compendium.dnd5e.content24.JournalEntry.phbAppendixDRule.JournalEntryPage.jVOgf7DNEhkzYNIe",
-  damageresistance: "Compendium.dnd5e.content24.JournalEntry.phbAppendixDRule.JournalEntryPage.v0WE18nT5SJO8Ft7",
-  damagevulnerability: "Compendium.dnd5e.content24.JournalEntry.phbAppendixDRule.JournalEntryPage.v0WE18nT5SJO8Ft7",
-  healing: "Compendium.dnd5e.content24.JournalEntry.phbAppendixDRule.JournalEntryPage.ICketFqbFslqKiX9",
-  instantdeath: "Compendium.dnd5e.content24.JournalEntry.phbAppendixDRule.JournalEntryPage.8BG05mA0mEzwmrHU",
-  deathsavingthrows: "Compendium.dnd5e.content24.JournalEntry.phbAppendixDRule.JournalEntryPage.JL8LePEJQYFdNuLL",
-  deathsaves: "Compendium.dnd5e.content24.JournalEntry.phbAppendixDRule.JournalEntryPage.JL8LePEJQYFdNuLL",
-  stabilizing: "Compendium.dnd5e.content24.JournalEntry.phbAppendixDRule.JournalEntryPage.r1CgZXLcqFop6Dlx",
-  knockingacreatureout: "Compendium.dnd5e.content24.JournalEntry.phbAppendixDRule.JournalEntryPage.uEwjgKGuCRTNADYv",
-  temporaryhitpoints: "Compendium.dnd5e.content24.JournalEntry.phbAppendixDRule.JournalEntryPage.AW6HpJZHqxfESXaq",
-  temphp: "Compendium.dnd5e.content24.JournalEntry.phbAppendixDRule.JournalEntryPage.AW6HpJZHqxfESXaq",
-  mounting: "Compendium.dnd5e.content24.JournalEntry.phbAppendixDRule.JournalEntryPage.MFpyvUIdcBpC9kIE",
-  dismounting: "Compendium.dnd5e.content24.JournalEntry.phbAppendixDRule.JournalEntryPage.MFpyvUIdcBpC9kIE",
-  controllingamount: "Compendium.dnd5e.content24.JournalEntry.phbAppendixDRule.JournalEntryPage.khmR2xFk1NxoQUgZ",
-  underwatercombat: "Compendium.dnd5e.content24.JournalEntry.phbAppendixDRule.JournalEntryPage.6zVOeLyq4iMnrQT4",
-  spelllevel: "Compendium.dnd5e.content24.JournalEntry.phbAppendixDRule.JournalEntryPage.A6k5fS0kFqPXTW3v",
-  knownspells: "Compendium.dnd5e.content24.JournalEntry.phbAppendixDRule.JournalEntryPage.oezg742GlxmEwT85",
-  preparedspells: "Compendium.dnd5e.content24.JournalEntry.phbAppendixDRule.JournalEntryPage.oezg742GlxmEwT85",
-  spellslots: "Compendium.dnd5e.content24.JournalEntry.phbAppendixDRule.JournalEntryPage.Su6wbb0O9UN4ZDIH",
-  castingatahigherlevel: "Compendium.dnd5e.content24.JournalEntry.phbAppendixDRule.JournalEntryPage.4H9SLM95OCLfFizz",
-  upcasting: "Compendium.dnd5e.content24.JournalEntry.phbAppendixDRule.JournalEntryPage.4H9SLM95OCLfFizz",
-  castinginarmor: "Compendium.dnd5e.content24.JournalEntry.phbAppendixDRule.JournalEntryPage.z4A8vHSK2pb8YA9X",
-  cantrips: "Compendium.dnd5e.content24.JournalEntry.phbAppendixDRule.JournalEntryPage.jZD5mCTnMPJ9jW67",
-  rituals: "Compendium.dnd5e.content24.JournalEntry.phbAppendixDRule.JournalEntryPage.FjWqT5iyJ89kohdA",
-  castingtime: "Compendium.dnd5e.content24.JournalEntry.phbAppendixDRule.JournalEntryPage.zRVW8Tvyk6BECjZD",
-  bonusactioncasting: "Compendium.dnd5e.content24.JournalEntry.phbAppendixDRule.JournalEntryPage.RP1WL9FXI3aknlxZ",
-  reactioncasting: "Compendium.dnd5e.content24.JournalEntry.phbAppendixDRule.JournalEntryPage.t62lCfinwU9H7Lji",
-  longercastingtimes: "Compendium.dnd5e.content24.JournalEntry.phbAppendixDRule.JournalEntryPage.gOAIRFCyPUx42axn",
-  spellrange: "Compendium.dnd5e.content24.JournalEntry.phbAppendixDRule.JournalEntryPage.RBYPyE5z5hAZSbH6",
-  components: "Compendium.dnd5e.content24.JournalEntry.phbAppendixDRule.JournalEntryPage.xeHthAF9lxfn2tII",
-  verbal: "Compendium.dnd5e.content24.JournalEntry.phbAppendixDRule.JournalEntryPage.6UXTNWMCQ0nSlwwx",
-  spellduration: "Compendium.dnd5e.content24.JournalEntry.phbAppendixDRule.JournalEntryPage.9mp0SRsptjvJcq1e",
-  instantaneous: "Compendium.dnd5e.content24.JournalEntry.phbAppendixDRule.JournalEntryPage.kdlgZOpRMB6bGCod",
-  concentrating: "Compendium.dnd5e.content24.JournalEntry.phbAppendixDRule.JournalEntryPage.ow58p27ctAnr4VPH",
-  spelltargets: "Compendium.dnd5e.content24.JournalEntry.phbAppendixDRule.JournalEntryPage.G80AIQr04sxdVpw4",
-  areaofeffect: "Compendium.dnd5e.content24.JournalEntry.phbAppendixDRule.JournalEntryPage.wvtCeGHgnUmh0cuj",
-  pointoforigin: "Compendium.dnd5e.content24.JournalEntry.phbAppendixDRule.JournalEntryPage.8HxbRceQQUAhyWRt",
-  spellsavingthrows: "Compendium.dnd5e.content24.JournalEntry.phbAppendixDRule.JournalEntryPage.8DajfNll90eeKcmB",
-  spellattackrolls: "Compendium.dnd5e.content24.JournalEntry.phbAppendixDRule.JournalEntryPage.qAFzmGZKhVvAEUF3",
-  combiningmagicaleffects: "Compendium.dnd5e.content24.JournalEntry.phbAppendixDRule.JournalEntryPage.TMIN963hG773yZzO",
-  schoolsofmagic: "Compendium.dnd5e.content24.JournalEntry.phbAppendixDRule.JournalEntryPage.TeF6CKMDRpYpsLd4",
-  detectingtraps: "Compendium.dnd5e.content24.JournalEntry.phbAppendixDRule.JournalEntryPage.DZ7AhdQ94xggG4bj",
-  disablingtraps: "Compendium.dnd5e.content24.JournalEntry.phbAppendixDRule.JournalEntryPage.DZ7AhdQ94xggG4bj",
-  curingmadness: "Compendium.dnd5e.content24.JournalEntry.phbAppendixDRule.JournalEntryPage.6Icem7G3CICdNOkM",
-  damagethreshold: "Compendium.dnd5e.content24.JournalEntry.phbAppendixDRule.JournalEntryPage.9LJZhqvCburpags3",
-  poisontypes: "Compendium.dnd5e.content24.JournalEntry.phbAppendixDRule.JournalEntryPage.I6OMMWUaYCWR9xip",
-  contactpoison: "Compendium.dnd5e.content24.JournalEntry.phbAppendixDRule.JournalEntryPage.kXnCEqqGUWRZeZDj",
-  ingestedpoison: "Compendium.dnd5e.content24.JournalEntry.phbAppendixDRule.JournalEntryPage.Y0vsJYSWeQcFpJ27",
-  inhaledpoison: "Compendium.dnd5e.content24.JournalEntry.phbAppendixDRule.JournalEntryPage.KUyN4eK1xTBzXsjP",
-  injurypoison: "Compendium.dnd5e.content24.JournalEntry.phbAppendixDRule.JournalEntryPage.LUL48OUq6SJeMGc7",
-  attunement: "Compendium.dnd5e.content24.JournalEntry.phbAppendixDRule.JournalEntryPage.UQ65OwIyGK65eiOK",
-  wearingitems: "Compendium.dnd5e.content24.JournalEntry.phbAppendixDRule.JournalEntryPage.iPB8mGKuQx3X0Z2J",
-  wieldingitems: "Compendium.dnd5e.content24.JournalEntry.phbAppendixDRule.JournalEntryPage.iPB8mGKuQx3X0Z2J",
-  multipleitemsofthesamekind: "Compendium.dnd5e.content24.JournalEntry.phbAppendixDRule.JournalEntryPage.rLJdvz4Mde8GkEYQ",
-  paireditems: "Compendium.dnd5e.content24.JournalEntry.phbAppendixDRule.JournalEntryPage.rd9pCH8yFraSGN34",
-  commandword: "Compendium.dnd5e.content24.JournalEntry.phbAppendixDRule.JournalEntryPage.HiXixxLYesv6Ff3t",
-  consumables: "Compendium.dnd5e.content24.JournalEntry.phbAppendixDRule.JournalEntryPage.UEPAcZFzQ5x196zE",
-  itemspells: "Compendium.dnd5e.content24.JournalEntry.phbAppendixDRule.JournalEntryPage.DABoaeeF6w31UCsj",
-  charges: "Compendium.dnd5e.content24.JournalEntry.phbAppendixDRule.JournalEntryPage.NLRXcgrpRCfsA5mO",
-  spellscroll: "Compendium.dnd5e.content24.JournalEntry.phbAppendixDRule.JournalEntryPage.gi8IKhtOlBVhMJrN",
-  creaturetags: "Compendium.dnd5e.content24.JournalEntry.phbAppendixDRule.JournalEntryPage.9jV1fFF163dr68vd",
-  telepathy: "Compendium.dnd5e.content24.JournalEntry.phbAppendixDRule.JournalEntryPage.geTidcFIYWuUvD2L",
-  legendaryactions: "Compendium.dnd5e.content24.JournalEntry.phbAppendixDRule.JournalEntryPage.C1awOyZh78pq1xmY",
-  lairactions: "Compendium.dnd5e.content24.JournalEntry.phbAppendixDRule.JournalEntryPage.07PtjpMxiRIhkBEp",
-  regionaleffects: "Compendium.dnd5e.content24.JournalEntry.phbAppendixDRule.JournalEntryPage.uj8W27NKFyzygPUd",
-  disease: "Compendium.dnd5e.content24.JournalEntry.phbAppendixDRule.JournalEntryPage.oNQWvyRZkTOJ8PBq",
-  d20test: "Compendium.dnd5e.content24.JournalEntry.phbAppendixCRule.JournalEntryPage.nxPH59t3iNtWJxnU",
-  advantage: "Compendium.dnd5e.content24.JournalEntry.phbAppendixCRule.JournalEntryPage.lvs9RRDi1UA1Lff8",
-  disadvantage: "Compendium.dnd5e.content24.JournalEntry.phbAppendixCRule.JournalEntryPage.fFrHBgqKUMY0Nnco",
-  difficultyclass: "Compendium.dnd5e.content24.JournalEntry.phbAppendixCRule.JournalEntryPage.afnB0KZZk2hKtjv4",
-  armorclass: "Compendium.dnd5e.content24.JournalEntry.phbAppendixCRule.JournalEntryPage.IL73rq9BlQowdon7",
-  abilitycheck: "Compendium.dnd5e.content24.JournalEntry.phbAppendixCRule.JournalEntryPage.XBQqXCoTbvp5Dika",
-  savingthrow: "Compendium.dnd5e.content24.JournalEntry.phbAppendixCRule.JournalEntryPage.Vlri6Mp6grn9wt3g",
-  challengerating: "Compendium.dnd5e.content24.JournalEntry.phbAppendixCRule.JournalEntryPage.BMoxmXB8pX6bOBus",
-  expertise: "Compendium.dnd5e.content24.JournalEntry.phbAppendixCRule.JournalEntryPage.69nu4Sk3V5O15GFf",
-  influence: "Compendium.dnd5e.content24.JournalEntry.phbAppendixCRule.JournalEntryPage.4V59Q1dlWjNhpJGo",
-  magic: "Compendium.dnd5e.content24.JournalEntry.phbAppendixCRule.JournalEntryPage.iIIDUsmSOkL0xNzF",
-  study: "Compendium.dnd5e.content24.JournalEntry.phbAppendixCRule.JournalEntryPage.Nuz0Wx4a4aAPcC34",
-  utilize: "Compendium.dnd5e.content24.JournalEntry.phbAppendixCRule.JournalEntryPage.UDlogfdiT2uYEZz4",
-  friendly: "Compendium.dnd5e.content24.JournalEntry.phbAppendixCRule.JournalEntryPage.RVcWSqblHIs7SUzn",
-  indifferent: "Compendium.dnd5e.content24.JournalEntry.phbAppendixCRule.JournalEntryPage.eYX5eimGuYhHPoj4",
-  hostile: "Compendium.dnd5e.content24.JournalEntry.phbAppendixCRule.JournalEntryPage.BNxLbtJofbNGzjsp",
-  breakingobjects: "Compendium.dnd5e.content24.JournalEntry.phbAppendixCRule.JournalEntryPage.RXTLVpAwcGm1qtKf",
-  hazards: "Compendium.dnd5e.content24.JournalEntry.phbAppendixCRule.JournalEntryPage.5hyEitPd1Kb27fP5",
-  bloodied: "Compendium.dnd5e.content24.JournalEntry.phbAppendixCRule.JournalEntryPage.shZaSIlFPpHufPFn",
-  jumping: "Compendium.dnd5e.content24.JournalEntry.phbAppendixCRule.JournalEntryPage.aaJOlRhI1H6vAxt9",
-  resistance: "Compendium.dnd5e.content24.JournalEntry.phbAppendixCRule.JournalEntryPage.Uk3xhCTvEfx8BN1O"
+  inspiration: "Compendium.[game.system.id].content24.JournalEntry.phbAppendixDRule.JournalEntryPage.nkEPI89CiQnOaLYh",
+  carryingcapacity: "Compendium.[game.system.id].content24.JournalEntry.phbAppendixDRule.JournalEntryPage.1PnjDBKbQJIVyc2t",
+  push: "Compendium.[game.system.id].content24.JournalEntry.phbAppendixDRule.JournalEntryPage.Hni8DjqLzoqsVjb6",
+  lift: "Compendium.[game.system.id].content24.JournalEntry.phbAppendixDRule.JournalEntryPage.Hni8DjqLzoqsVjb6",
+  drag: "Compendium.[game.system.id].content24.JournalEntry.phbAppendixDRule.JournalEntryPage.Hni8DjqLzoqsVjb6",
+  encumbrance: "Compendium.[game.system.id].content24.JournalEntry.phbAppendixDRule.JournalEntryPage.JwqYf9qb6gJAWZKs",
+  hiding: "Compendium.[game.system.id].content24.JournalEntry.phbAppendixDRule.JournalEntryPage.plHuoNdS0j3umPNS",
+  passiveperception: "Compendium.[game.system.id].content24.JournalEntry.phbAppendixDRule.JournalEntryPage.988C2hQNyvqkdbND",
+  time: "Compendium.[game.system.id].content24.JournalEntry.phbAppendixDRule.JournalEntryPage.eihqNjwpZ3HM4IqY",
+  speed: "Compendium.[game.system.id].content24.JournalEntry.phbAppendixDRule.JournalEntryPage.HhqeIiSj8sE1v1qZ",
+  travelpace: "Compendium.[game.system.id].content24.JournalEntry.phbAppendixDRule.JournalEntryPage.eFAISahBloR2X8MX",
+  forcedmarch: "Compendium.[game.system.id].content24.JournalEntry.phbAppendixDRule.JournalEntryPage.uQWQpRKQ1kWhuvjZ",
+  difficultterrainpace: "Compendium.[game.system.id].content24.JournalEntry.phbAppendixDRule.JournalEntryPage.hFW5BR2yHHwwgurD",
+  climbing: "Compendium.[game.system.id].content24.JournalEntry.phbAppendixDRule.JournalEntryPage.KxUXbMrUCIAhv4AF",
+  swimming: "Compendium.[game.system.id].content24.JournalEntry.phbAppendixDRule.JournalEntryPage.KxUXbMrUCIAhv4AF",
+  longjump: "Compendium.[game.system.id].content24.JournalEntry.phbAppendixDRule.JournalEntryPage.1U0myNrOvIVBUdJV",
+  highjump: "Compendium.[game.system.id].content24.JournalEntry.phbAppendixDRule.JournalEntryPage.raPwIkqKSv60ELmy",
+  falling: "Compendium.[game.system.id].content24.JournalEntry.phbAppendixDRule.JournalEntryPage.kREHL5pgNUOhay9f",
+  suffocating: "Compendium.[game.system.id].content24.JournalEntry.phbAppendixDRule.JournalEntryPage.BIlnr0xYhqt4TGsi",
+  vision: "Compendium.[game.system.id].content24.JournalEntry.phbAppendixDRule.JournalEntryPage.O6hamUbI9kVASN8b",
+  light: "Compendium.[game.system.id].content24.JournalEntry.phbAppendixDRule.JournalEntryPage.O6hamUbI9kVASN8b",
+  lightlyobscured: "Compendium.[game.system.id].content24.JournalEntry.phbAppendixDRule.JournalEntryPage.MAxtfJyvJV7EpzWN",
+  heavilyobscured: "Compendium.[game.system.id].content24.JournalEntry.phbAppendixDRule.JournalEntryPage.wPFjfRruboxhtL4b",
+  brightlight: "Compendium.[game.system.id].content24.JournalEntry.phbAppendixDRule.JournalEntryPage.RnMokVPyKGbbL8vi",
+  dimlight: "Compendium.[game.system.id].content24.JournalEntry.phbAppendixDRule.JournalEntryPage.n1Ocpbyhr6HhgbCG",
+  darkness: "Compendium.[game.system.id].content24.JournalEntry.phbAppendixDRule.JournalEntryPage.4dfREIDjG5N4fvxd",
+  blindsight: "Compendium.[game.system.id].content24.JournalEntry.phbAppendixDRule.JournalEntryPage.sacjsfm9ZXnw4Tqc",
+  darkvision: "Compendium.[game.system.id].content24.JournalEntry.phbAppendixDRule.JournalEntryPage.ldmA1PbnEGVkmE11",
+  tremorsense: "Compendium.[game.system.id].rules.JournalEntry.eVtpEGXjA2tamEIJ.JournalEntryPage.8AIlZ95v54mL531X",
+  truesight: "Compendium.[game.system.id].content24.JournalEntry.phbAppendixDRule.JournalEntryPage.kNa8rJFbtaTM3Rmk",
+  food: "Compendium.[game.system.id].content24.JournalEntry.phbAppendixDRule.JournalEntryPage.jayo7XVgGnRCpTW0",
+  water: "Compendium.[game.system.id].content24.JournalEntry.phbAppendixDRule.JournalEntryPage.iIEI87J7lr2sqtb5",
+  resting: "Compendium.[game.system.id].content24.JournalEntry.phbAppendixDRule.JournalEntryPage.dpHJXYLigIdEseIb",
+  shortrest: "Compendium.[game.system.id].content24.JournalEntry.phbAppendixDRule.JournalEntryPage.1s2swI3UsjUUgbt2",
+  longrest: "Compendium.[game.system.id].content24.JournalEntry.phbAppendixDRule.JournalEntryPage.6cLtjbHn4KV2R7G9",
+  surprise: "Compendium.[game.system.id].content24.JournalEntry.phbAppendixDRule.JournalEntryPage.YmOt8HderKveA19K",
+  initiative: "Compendium.[game.system.id].content24.JournalEntry.phbAppendixDRule.JournalEntryPage.RcwElV4GAcVXKWxo",
+  bonusaction: "Compendium.[game.system.id].content24.JournalEntry.phbAppendixDRule.JournalEntryPage.2fu2CXsDg8gQmGGw",
+  reaction: "Compendium.[game.system.id].content24.JournalEntry.phbAppendixDRule.JournalEntryPage.2VqLyxMyMxgXe2wC",
+  difficultterrain: "Compendium.[game.system.id].content24.JournalEntry.phbAppendixDRule.JournalEntryPage.6tqz947qO8vPyxvD",
+  beingprone: "Compendium.[game.system.id].content24.JournalEntry.phbAppendixDRule.JournalEntryPage.bV8akkBdVUUG21CO",
+  droppingprone: "Compendium.[game.system.id].content24.JournalEntry.phbAppendixDRule.JournalEntryPage.hwTLpAtSS5OqQsI1",
+  standingup: "Compendium.[game.system.id].content24.JournalEntry.phbAppendixDRule.JournalEntryPage.hwTLpAtSS5OqQsI1",
+  crawling: "Compendium.[game.system.id].content24.JournalEntry.phbAppendixDRule.JournalEntryPage.VWG9qe8PUNtS28Pw",
+  movingaroundothercreatures: "Compendium.[game.system.id].content24.JournalEntry.phbAppendixDRule.JournalEntryPage.9ZWCknaXCOdhyOrX",
+  flying: "Compendium.[game.system.id].content24.JournalEntry.phbAppendixDRule.JournalEntryPage.0B1fxfmw0a48tPsc",
+  size: "Compendium.[game.system.id].content24.JournalEntry.phbAppendixDRule.JournalEntryPage.HWHRQVBVG7K0RVVW",
+  space: "Compendium.[game.system.id].content24.JournalEntry.phbAppendixDRule.JournalEntryPage.WIA5bs3P45PmO3OS",
+  squeezing: "Compendium.[game.system.id].content24.JournalEntry.phbAppendixDRule.JournalEntryPage.wKtOwagDAiNfVoPS",
+  attack: "Compendium.[game.system.id].content24.JournalEntry.phbAppendixCRule.JournalEntryPage.f4fZHwBvpbpzRyn4",
+  castaspell: "Compendium.[game.system.id].content24.JournalEntry.phbAppendixDRule.JournalEntryPage.GLwN36E4WXn3Cp4Z",
+  dash: "Compendium.[game.system.id].content24.JournalEntry.phbAppendixCRule.JournalEntryPage.6l6nBKip4LqB1sCU",
+  disengage: "Compendium.[game.system.id].content24.JournalEntry.phbAppendixCRule.JournalEntryPage.w1AGsemFERfjqWNx",
+  dodge: "Compendium.[game.system.id].content24.JournalEntry.phbAppendixCRule.JournalEntryPage.3YJIuyCMmuUrfmuX",
+  help: "Compendium.[game.system.id].content24.JournalEntry.phbAppendixCRule.JournalEntryPage.5S8i59qskkd9GGcJ",
+  hide: "Compendium.[game.system.id].content24.JournalEntry.phbAppendixCRule.JournalEntryPage.rqhOsUY4wWa1oHTy",
+  ready: "Compendium.[game.system.id].content24.JournalEntry.phbAppendixCRule.JournalEntryPage.nI9tN6Oq7fCV7hcA",
+  search: "Compendium.[game.system.id].content24.JournalEntry.phbAppendixCRule.JournalEntryPage.ySj4gYZ4ADZoia7R",
+  useanobject: "Compendium.[game.system.id].content24.JournalEntry.phbAppendixDRule.JournalEntryPage.ljqhJx8Qxu2ivo69",
+  attackrolls: "Compendium.[game.system.id].content24.JournalEntry.phbAppendixCRule.JournalEntryPage.W8uJrd1D8NeOuawp",
+  unseenattackers: "Compendium.[game.system.id].content24.JournalEntry.phbAppendixDRule.JournalEntryPage.5ZJNwEPlsGurecg5",
+  unseentargets: "Compendium.[game.system.id].content24.JournalEntry.phbAppendixDRule.JournalEntryPage.5ZJNwEPlsGurecg5",
+  rangedattacks: "Compendium.[game.system.id].content24.JournalEntry.phbAppendixDRule.JournalEntryPage.S9aclVOCbusLE3kC",
+  range: "Compendium.[game.system.id].content24.JournalEntry.phbAppendixDRule.JournalEntryPage.HjKXuB8ndjcqOds7",
+  rangedattacksinclosecombat: "Compendium.[game.system.id].content24.JournalEntry.phbAppendixDRule.JournalEntryPage.qEZvxW0NM7ixSQP5",
+  meleeattacks: "Compendium.[game.system.id].content24.JournalEntry.phbAppendixDRule.JournalEntryPage.GTk6emvzNxl8Oosl",
+  reach: "Compendium.[game.system.id].content24.JournalEntry.phbAppendixDRule.JournalEntryPage.hgZ5ZN4B3y7tmFlt",
+  unarmedstrike: "Compendium.[game.system.id].content24.JournalEntry.phbAppendixDRule.JournalEntryPage.xJjJ4lhymAYXAOvO",
+  opportunityattacks: "Compendium.[game.system.id].content24.JournalEntry.phbAppendixDRule.JournalEntryPage.zeU0NyCyP10lkLg3",
+  twoweaponfighting: "Compendium.[game.system.id].content24.JournalEntry.phbAppendixDRule.JournalEntryPage.FQTS08uH74A6psL2",
+  grappling: "Compendium.[game.system.id].content24.JournalEntry.phbAppendixCRule.JournalEntryPage.YSLWJcQCP6kzsPql",
+  escapingagrapple: "Compendium.[game.system.id].content24.JournalEntry.phbAppendixDRule.JournalEntryPage.2TZKy9YbMN3ZY3h8",
+  movingagrappledcreature: "Compendium.[game.system.id].content24.JournalEntry.phbAppendixDRule.JournalEntryPage.x5bUdhAD7u5Bt2rg",
+  shoving: "Compendium.[game.system.id].content24.JournalEntry.phbAppendixDRule.JournalEntryPage.hrdqMF8hRXJdNzJx",
+  cover: "Compendium.[game.system.id].content24.JournalEntry.phbAppendixDRule.JournalEntryPage.W7f7PcRubNUMIq2S",
+  halfcover: "Compendium.[game.system.id].content24.JournalEntry.phbAppendixDRule.JournalEntryPage.hv0J61IAfofuhy3Q",
+  threequarterscover: "Compendium.[game.system.id].content24.JournalEntry.phbAppendixDRule.JournalEntryPage.zAMStUjUrPV10dFm",
+  totalcover: "Compendium.[game.system.id].content24.JournalEntry.phbAppendixDRule.JournalEntryPage.BKUAxXuPEzxiEOeL",
+  hitpoints: "Compendium.[game.system.id].content24.JournalEntry.phbAppendixDRule.JournalEntryPage.PFbzoMBviI2DD9QP",
+  damagerolls: "Compendium.[game.system.id].content24.JournalEntry.phbAppendixDRule.JournalEntryPage.hd26AqKrCqtcQBWy",
+  criticalhits: "Compendium.[game.system.id].content24.JournalEntry.phbAppendixDRule.JournalEntryPage.gFL1VhSEljL1zvje",
+  damagetypes: "Compendium.[game.system.id].content24.JournalEntry.phbAppendixDRule.JournalEntryPage.jVOgf7DNEhkzYNIe",
+  damageresistance: "Compendium.[game.system.id].content24.JournalEntry.phbAppendixDRule.JournalEntryPage.v0WE18nT5SJO8Ft7",
+  damagevulnerability: "Compendium.[game.system.id].content24.JournalEntry.phbAppendixDRule.JournalEntryPage.v0WE18nT5SJO8Ft7",
+  healing: "Compendium.[game.system.id].content24.JournalEntry.phbAppendixDRule.JournalEntryPage.ICketFqbFslqKiX9",
+  instantdeath: "Compendium.[game.system.id].content24.JournalEntry.phbAppendixDRule.JournalEntryPage.8BG05mA0mEzwmrHU",
+  deathsavingthrows: "Compendium.[game.system.id].content24.JournalEntry.phbAppendixDRule.JournalEntryPage.JL8LePEJQYFdNuLL",
+  deathsaves: "Compendium.[game.system.id].content24.JournalEntry.phbAppendixDRule.JournalEntryPage.JL8LePEJQYFdNuLL",
+  stabilizing: "Compendium.[game.system.id].content24.JournalEntry.phbAppendixDRule.JournalEntryPage.r1CgZXLcqFop6Dlx",
+  knockingacreatureout: "Compendium.[game.system.id].content24.JournalEntry.phbAppendixDRule.JournalEntryPage.uEwjgKGuCRTNADYv",
+  temporaryhitpoints: "Compendium.[game.system.id].content24.JournalEntry.phbAppendixDRule.JournalEntryPage.AW6HpJZHqxfESXaq",
+  temphp: "Compendium.[game.system.id].content24.JournalEntry.phbAppendixDRule.JournalEntryPage.AW6HpJZHqxfESXaq",
+  mounting: "Compendium.[game.system.id].content24.JournalEntry.phbAppendixDRule.JournalEntryPage.MFpyvUIdcBpC9kIE",
+  dismounting: "Compendium.[game.system.id].content24.JournalEntry.phbAppendixDRule.JournalEntryPage.MFpyvUIdcBpC9kIE",
+  controllingamount: "Compendium.[game.system.id].content24.JournalEntry.phbAppendixDRule.JournalEntryPage.khmR2xFk1NxoQUgZ",
+  underwatercombat: "Compendium.[game.system.id].content24.JournalEntry.phbAppendixDRule.JournalEntryPage.6zVOeLyq4iMnrQT4",
+  spelllevel: "Compendium.[game.system.id].content24.JournalEntry.phbAppendixDRule.JournalEntryPage.A6k5fS0kFqPXTW3v",
+  knownspells: "Compendium.[game.system.id].content24.JournalEntry.phbAppendixDRule.JournalEntryPage.oezg742GlxmEwT85",
+  preparedspells: "Compendium.[game.system.id].content24.JournalEntry.phbAppendixDRule.JournalEntryPage.oezg742GlxmEwT85",
+  spellslots: "Compendium.[game.system.id].content24.JournalEntry.phbAppendixDRule.JournalEntryPage.Su6wbb0O9UN4ZDIH",
+  castingatahigherlevel: "Compendium.[game.system.id].content24.JournalEntry.phbAppendixDRule.JournalEntryPage.4H9SLM95OCLfFizz",
+  upcasting: "Compendium.[game.system.id].content24.JournalEntry.phbAppendixDRule.JournalEntryPage.4H9SLM95OCLfFizz",
+  castinginarmor: "Compendium.[game.system.id].content24.JournalEntry.phbAppendixDRule.JournalEntryPage.z4A8vHSK2pb8YA9X",
+  cantrips: "Compendium.[game.system.id].content24.JournalEntry.phbAppendixDRule.JournalEntryPage.jZD5mCTnMPJ9jW67",
+  rituals: "Compendium.[game.system.id].content24.JournalEntry.phbAppendixDRule.JournalEntryPage.FjWqT5iyJ89kohdA",
+  castingtime: "Compendium.[game.system.id].content24.JournalEntry.phbAppendixDRule.JournalEntryPage.zRVW8Tvyk6BECjZD",
+  bonusactioncasting: "Compendium.[game.system.id].content24.JournalEntry.phbAppendixDRule.JournalEntryPage.RP1WL9FXI3aknlxZ",
+  reactioncasting: "Compendium.[game.system.id].content24.JournalEntry.phbAppendixDRule.JournalEntryPage.t62lCfinwU9H7Lji",
+  longercastingtimes: "Compendium.[game.system.id].content24.JournalEntry.phbAppendixDRule.JournalEntryPage.gOAIRFCyPUx42axn",
+  spellrange: "Compendium.[game.system.id].content24.JournalEntry.phbAppendixDRule.JournalEntryPage.RBYPyE5z5hAZSbH6",
+  components: "Compendium.[game.system.id].content24.JournalEntry.phbAppendixDRule.JournalEntryPage.xeHthAF9lxfn2tII",
+  verbal: "Compendium.[game.system.id].content24.JournalEntry.phbAppendixDRule.JournalEntryPage.6UXTNWMCQ0nSlwwx",
+  spellduration: "Compendium.[game.system.id].content24.JournalEntry.phbAppendixDRule.JournalEntryPage.9mp0SRsptjvJcq1e",
+  instantaneous: "Compendium.[game.system.id].content24.JournalEntry.phbAppendixDRule.JournalEntryPage.kdlgZOpRMB6bGCod",
+  concentrating: "Compendium.[game.system.id].content24.JournalEntry.phbAppendixDRule.JournalEntryPage.ow58p27ctAnr4VPH",
+  spelltargets: "Compendium.[game.system.id].content24.JournalEntry.phbAppendixDRule.JournalEntryPage.G80AIQr04sxdVpw4",
+  areaofeffect: "Compendium.[game.system.id].content24.JournalEntry.phbAppendixDRule.JournalEntryPage.wvtCeGHgnUmh0cuj",
+  pointoforigin: "Compendium.[game.system.id].content24.JournalEntry.phbAppendixDRule.JournalEntryPage.8HxbRceQQUAhyWRt",
+  spellsavingthrows: "Compendium.[game.system.id].content24.JournalEntry.phbAppendixDRule.JournalEntryPage.8DajfNll90eeKcmB",
+  spellattackrolls: "Compendium.[game.system.id].content24.JournalEntry.phbAppendixDRule.JournalEntryPage.qAFzmGZKhVvAEUF3",
+  combiningmagicaleffects: "Compendium.[game.system.id].content24.JournalEntry.phbAppendixDRule.JournalEntryPage.TMIN963hG773yZzO",
+  schoolsofmagic: "Compendium.[game.system.id].content24.JournalEntry.phbAppendixDRule.JournalEntryPage.TeF6CKMDRpYpsLd4",
+  detectingtraps: "Compendium.[game.system.id].content24.JournalEntry.phbAppendixDRule.JournalEntryPage.DZ7AhdQ94xggG4bj",
+  disablingtraps: "Compendium.[game.system.id].content24.JournalEntry.phbAppendixDRule.JournalEntryPage.DZ7AhdQ94xggG4bj",
+  curingmadness: "Compendium.[game.system.id].content24.JournalEntry.phbAppendixDRule.JournalEntryPage.6Icem7G3CICdNOkM",
+  damagethreshold: "Compendium.[game.system.id].content24.JournalEntry.phbAppendixDRule.JournalEntryPage.9LJZhqvCburpags3",
+  poisontypes: "Compendium.[game.system.id].content24.JournalEntry.phbAppendixDRule.JournalEntryPage.I6OMMWUaYCWR9xip",
+  contactpoison: "Compendium.[game.system.id].content24.JournalEntry.phbAppendixDRule.JournalEntryPage.kXnCEqqGUWRZeZDj",
+  ingestedpoison: "Compendium.[game.system.id].content24.JournalEntry.phbAppendixDRule.JournalEntryPage.Y0vsJYSWeQcFpJ27",
+  inhaledpoison: "Compendium.[game.system.id].content24.JournalEntry.phbAppendixDRule.JournalEntryPage.KUyN4eK1xTBzXsjP",
+  injurypoison: "Compendium.[game.system.id].content24.JournalEntry.phbAppendixDRule.JournalEntryPage.LUL48OUq6SJeMGc7",
+  attunement: "Compendium.[game.system.id].content24.JournalEntry.phbAppendixDRule.JournalEntryPage.UQ65OwIyGK65eiOK",
+  wearingitems: "Compendium.[game.system.id].content24.JournalEntry.phbAppendixDRule.JournalEntryPage.iPB8mGKuQx3X0Z2J",
+  wieldingitems: "Compendium.[game.system.id].content24.JournalEntry.phbAppendixDRule.JournalEntryPage.iPB8mGKuQx3X0Z2J",
+  multipleitemsofthesamekind: "Compendium.[game.system.id].content24.JournalEntry.phbAppendixDRule.JournalEntryPage.rLJdvz4Mde8GkEYQ",
+  paireditems: "Compendium.[game.system.id].content24.JournalEntry.phbAppendixDRule.JournalEntryPage.rd9pCH8yFraSGN34",
+  commandword: "Compendium.[game.system.id].content24.JournalEntry.phbAppendixDRule.JournalEntryPage.HiXixxLYesv6Ff3t",
+  consumables: "Compendium.[game.system.id].content24.JournalEntry.phbAppendixDRule.JournalEntryPage.UEPAcZFzQ5x196zE",
+  itemspells: "Compendium.[game.system.id].content24.JournalEntry.phbAppendixDRule.JournalEntryPage.DABoaeeF6w31UCsj",
+  charges: "Compendium.[game.system.id].content24.JournalEntry.phbAppendixDRule.JournalEntryPage.NLRXcgrpRCfsA5mO",
+  spellscroll: "Compendium.[game.system.id].content24.JournalEntry.phbAppendixDRule.JournalEntryPage.gi8IKhtOlBVhMJrN",
+  creaturetags: "Compendium.[game.system.id].content24.JournalEntry.phbAppendixDRule.JournalEntryPage.9jV1fFF163dr68vd",
+  telepathy: "Compendium.[game.system.id].content24.JournalEntry.phbAppendixDRule.JournalEntryPage.geTidcFIYWuUvD2L",
+  legendaryactions: "Compendium.[game.system.id].content24.JournalEntry.phbAppendixDRule.JournalEntryPage.C1awOyZh78pq1xmY",
+  lairactions: "Compendium.[game.system.id].content24.JournalEntry.phbAppendixDRule.JournalEntryPage.07PtjpMxiRIhkBEp",
+  regionaleffects: "Compendium.[game.system.id].content24.JournalEntry.phbAppendixDRule.JournalEntryPage.uj8W27NKFyzygPUd",
+  disease: "Compendium.[game.system.id].content24.JournalEntry.phbAppendixDRule.JournalEntryPage.oNQWvyRZkTOJ8PBq",
+  d20test: "Compendium.[game.system.id].content24.JournalEntry.phbAppendixCRule.JournalEntryPage.nxPH59t3iNtWJxnU",
+  advantage: "Compendium.[game.system.id].content24.JournalEntry.phbAppendixCRule.JournalEntryPage.lvs9RRDi1UA1Lff8",
+  disadvantage: "Compendium.[game.system.id].content24.JournalEntry.phbAppendixCRule.JournalEntryPage.fFrHBgqKUMY0Nnco",
+  difficultyclass: "Compendium.[game.system.id].content24.JournalEntry.phbAppendixCRule.JournalEntryPage.afnB0KZZk2hKtjv4",
+  armorclass: "Compendium.[game.system.id].content24.JournalEntry.phbAppendixCRule.JournalEntryPage.IL73rq9BlQowdon7",
+  abilitycheck: "Compendium.[game.system.id].content24.JournalEntry.phbAppendixCRule.JournalEntryPage.XBQqXCoTbvp5Dika",
+  savingthrow: "Compendium.[game.system.id].content24.JournalEntry.phbAppendixCRule.JournalEntryPage.Vlri6Mp6grn9wt3g",
+  challengerating: "Compendium.[game.system.id].content24.JournalEntry.phbAppendixCRule.JournalEntryPage.BMoxmXB8pX6bOBus",
+  expertise: "Compendium.[game.system.id].content24.JournalEntry.phbAppendixCRule.JournalEntryPage.69nu4Sk3V5O15GFf",
+  influence: "Compendium.[game.system.id].content24.JournalEntry.phbAppendixCRule.JournalEntryPage.4V59Q1dlWjNhpJGo",
+  magic: "Compendium.[game.system.id].content24.JournalEntry.phbAppendixCRule.JournalEntryPage.iIIDUsmSOkL0xNzF",
+  study: "Compendium.[game.system.id].content24.JournalEntry.phbAppendixCRule.JournalEntryPage.Nuz0Wx4a4aAPcC34",
+  utilize: "Compendium.[game.system.id].content24.JournalEntry.phbAppendixCRule.JournalEntryPage.UDlogfdiT2uYEZz4",
+  friendly: "Compendium.[game.system.id].content24.JournalEntry.phbAppendixCRule.JournalEntryPage.RVcWSqblHIs7SUzn",
+  indifferent: "Compendium.[game.system.id].content24.JournalEntry.phbAppendixCRule.JournalEntryPage.eYX5eimGuYhHPoj4",
+  hostile: "Compendium.[game.system.id].content24.JournalEntry.phbAppendixCRule.JournalEntryPage.BNxLbtJofbNGzjsp",
+  breakingobjects: "Compendium.[game.system.id].content24.JournalEntry.phbAppendixCRule.JournalEntryPage.RXTLVpAwcGm1qtKf",
+  hazards: "Compendium.[game.system.id].content24.JournalEntry.phbAppendixCRule.JournalEntryPage.5hyEitPd1Kb27fP5",
+  bloodied: "Compendium.[game.system.id].content24.JournalEntry.phbAppendixCRule.JournalEntryPage.shZaSIlFPpHufPFn",
+  jumping: "Compendium.[game.system.id].content24.JournalEntry.phbAppendixCRule.JournalEntryPage.aaJOlRhI1H6vAxt9",
+  resistance: "Compendium.[game.system.id].content24.JournalEntry.phbAppendixCRule.JournalEntryPage.Uk3xhCTvEfx8BN1O"
 };
 
 /* -------------------------------------------- */

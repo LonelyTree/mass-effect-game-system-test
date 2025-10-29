@@ -233,7 +233,7 @@ export default class ActorSheet5e extends ActorSheetMixin(foundry.appv1?.sheets?
     }, {});
 
     // Proficiency
-    labels.proficiency = game.settings.get("dnd5e", "proficiencyModifier") === "dice"
+    labels.proficiency = game.settings.get(game.system.id, "proficiencyModifier") === "dice"
       ? `d${this.actor.system.attributes.prof * 2}`
       : `+${this.actor.system.attributes.prof}`;
 
@@ -466,7 +466,7 @@ export default class ActorSheet5e extends ActorSheetMixin(foundry.appv1?.sheets?
       const sl = `spell${s}`;
 
       // Spells from items
-      if ( spell.getFlag("dnd5e", "cachedFor") ) {
+      if ( spell.getFlag(game.system.id, "cachedFor") ) {
         s = "item";
         if ( !spell.system.linkedActivity?.displayInSpellbook ) return;
         if ( !spellbook[s] ) {
@@ -735,7 +735,7 @@ export default class ActorSheet5e extends ActorSheetMixin(foundry.appv1?.sheets?
     const classId = event.target.closest("[data-item-id]")?.dataset.itemId;
     if ( !delta || !classId ) return;
     const classItem = this.actor.items.get(classId);
-    if ( !game.settings.get("dnd5e", "disableAdvancements") ) {
+    if ( !game.settings.get(game.system.id, "disableAdvancements") ) {
       const manager = AdvancementManager.forLevelChange(this.actor, classId, delta);
       if ( manager.steps.length ) {
         if ( delta > 0 ) return manager.render(true);
@@ -864,7 +864,7 @@ export default class ActorSheet5e extends ActorSheetMixin(foundry.appv1?.sheets?
 
   /** @override */
   async _onDropActor(event, data) {
-    const canPolymorph = game.user.isGM || (this.actor.isOwner && game.settings.get("dnd5e", "allowPolymorphing"));
+    const canPolymorph = game.user.isGM || (this.actor.isOwner && game.settings.get(game.system.id, "allowPolymorphing"));
     if ( !canPolymorph || (this._tabs[0].active === "bastion") ) return false;
 
     // Get the target actor
@@ -874,10 +874,10 @@ export default class ActorSheet5e extends ActorSheetMixin(foundry.appv1?.sheets?
 
     // Configure the transformation
     const settings = await TransformDialog.promptSettings(this.actor, sourceActor, {
-      transform: { settings: game.settings.get("dnd5e", "transformationSettings") }
+      transform: { settings: game.settings.get(game.system.id, "transformationSettings") }
     });
     if ( !settings ) return;
-    await game.settings.set("dnd5e", "transformationSettings", settings.toObject());
+    await game.settings.set(game.system.id, "transformationSettings", settings.toObject());
 
     return this.actor.transformInto(sourceActor, settings);
   }
@@ -936,7 +936,7 @@ export default class ActorSheet5e extends ActorSheetMixin(foundry.appv1?.sheets?
     let items = itemData instanceof Array ? itemData : [itemData];
     const itemsWithoutAdvancement = items.filter(i => !i.system.advancement?.length);
     const multipleAdvancements = (items.length - itemsWithoutAdvancement.length) > 1;
-    if ( multipleAdvancements && !game.settings.get("dnd5e", "disableAdvancements") ) {
+    if ( multipleAdvancements && !game.settings.get(game.system.id, "disableAdvancements") ) {
       ui.notifications.warn(game.i18n.format("DND5E.WarnCantAddMultipleAdvancements"));
       items = itemsWithoutAdvancement;
     }
@@ -993,7 +993,7 @@ export default class ActorSheet5e extends ActorSheetMixin(foundry.appv1?.sheets?
 
     // Bypass normal creation flow for any items with advancement
     if ( this.actor.system.metadata?.supportsAdvancement && itemData.system.advancement?.length
-        && !game.settings.get("dnd5e", "disableAdvancements") ) {
+        && !game.settings.get(game.system.id, "disableAdvancements") ) {
       // Ensure that this item isn't violating the singleton rule
       const dataModel = CONFIG.Item.dataModels[itemData.type];
       const singleton = dataModel?.metadata.singleton ?? false;
@@ -1267,7 +1267,7 @@ export default class ActorSheet5e extends ActorSheetMixin(foundry.appv1?.sheets?
   async _updateObject(event, formData) {
     // Unset any flags which are "false"
     for ( const [k, v] of Object.entries(formData) ) {
-      if ( k.startsWith("flags.dnd5e.") && !v ) {
+      if ( k.startsWith(`flags.${game.system.id}.`) && !v ) {
         delete formData[k];
         if ( foundry.utils.hasProperty(this.document._source, k) ) formData[k.replace(/\.([\w\d]+)$/, ".-=$1")] = null;
       }

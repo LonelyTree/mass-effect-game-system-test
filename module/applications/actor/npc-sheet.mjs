@@ -293,10 +293,10 @@ export default class NPCActorSheet extends BaseActorSheet {
     // Visibility
     if ( this._mode === this.constructor.MODES.PLAY ) {
       context.showDeathSaves = context.important && !context.system.attributes.hp.value;
-      context.showInitiativeScore = game.settings.get("dnd5e", "rulesVersion") === "modern";
+      context.showInitiativeScore = game.settings.get(game.system.id, "rulesVersion") === "modern";
     }
-    context.showLoyalty = context.important && game.settings.get("dnd5e", "loyaltyScore") && game.user.isGM;
-    context.showRests = game.user.isGM || (this.actor.isOwner && game.settings.get("dnd5e", "allowRests"));
+    context.showLoyalty = context.important && game.settings.get(game.system.id, "loyaltyScore") && game.user.isGM;
+    context.showRests = game.user.isGM || (this.actor.isOwner && game.settings.get(game.system.id, "allowRests"));
 
     return context;
   }
@@ -348,7 +348,7 @@ export default class NPCActorSheet extends BaseActorSheet {
     });
 
     // Skills & Tools
-    const skillSetting = game.settings.get("dnd5e", "defaultSkills");
+    const skillSetting = game.settings.get(game.system.id, "defaultSkills");
     context.skills = this._prepareSkillsTools(context, "skills")
       .filter(v => v.value || skillSetting.has(v.key) || v.bonuses.check || v.bonuses.passive);
     context.tools = this._prepareSkillsTools(context, "tools");
